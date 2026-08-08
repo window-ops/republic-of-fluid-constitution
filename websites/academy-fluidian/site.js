@@ -62,10 +62,11 @@ function buildDictionary(rootId, countId, inputId, posId) {
 
 /* ---------- gloss tool ---------- */
 
-const F2E = {}, E2F = {};
+const F2E = {}, E2F = {}, PRE = {};
 function indexLexicon() {
   LEX.forEach(function (r) {
-    if (r.f.indexOf("-") === 0 || r.f.slice(-1) === "-") return;
+    if (r.f.slice(-1) === "-") { PRE[r.f] = r.e; return; }
+    if (r.f.indexOf("-") === 0) return;
     F2E[r.f] = r.e;
     r.e.split(",").forEach(function (g) {
       const key = norm(g);
@@ -90,8 +91,40 @@ function glossWords(text, dir) {
   const parts = words.map(function (w) {
     let hit = map[w];
     if (!hit && dir === "f2e") {
-      if (w.slice(-2) === "es" && map[w.slice(0, -2)]) hit = map[w.slice(0, -2)] + " (pl)";
-      else if (w.slice(-1) === "s" && map[w.slice(0, -1)]) hit = map[w.slice(0, -1)] + " (pl)";
+      /* -es on a consonant is the plural of the rule; -es on a stem that ends
+         in a vowel is the Ravelluri plural, where cosa gives coses and porta
+         gives portes. Both readings are given where both words exist. */
+      const stem = w.slice(0, -2);
+      const readings = [];
+      if (w.slice(-2) === "es") {
+        ["a", "e"].forEach(function (v) {
+          if (map[stem + v]) readings.push(map[stem + v].split(",")[0].trim());
+        });
+        if (map[stem]) readings.push(map[stem].split(",")[0].trim());
+      }
+      if (readings.length) hit = readings.join(" / ") + " (pl)";
+      else if (w.slice(-1) === "s" && map[w.slice(0, -1)]) {
+        hit = map[w.slice(0, -1)].split(",")[0].trim() + " (pl)";
+      } else if (w.slice(-1) === "t") {
+        /* the participle is made in -t on the bare stem, so lesa gives lesat
+           and cade gives cadut. The stem is tried whole, then with a final e
+           supplied or restored. */
+        const base = w.slice(0, -1);
+        const forms = [base, base + "e", base.slice(0, -1) + "e"];
+        for (let i = 0; i < forms.length; i++) {
+          if (map[forms[i]]) { hit = map[forms[i]].split(",")[0].trim() + " (past)"; break; }
+        }
+      }
+      if (!hit && w.indexOf("-") > 0) {
+        /* a prefixed word such as ex-ministru, and a compound numeral such as
+           dece-du, are glossed from their halves. */
+        const cut = w.indexOf("-");
+        const head = w.slice(0, cut + 1), rest = w.slice(cut + 1);
+        if (PRE[head] && map[rest]) hit = PRE[head].split(",")[0].trim() + " " + map[rest];
+        else if (map[w.slice(0, cut)] && map[rest]) {
+          hit = map[w.slice(0, cut)].split(",")[0].trim() + "-" + map[rest];
+        }
+      }
     }
     if (!hit) { unknown++; return '<span class="unk">' + w + "</span>"; }
     return hit.split(",")[0].trim();
