@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dictionary &middot; Academia de Lingua Fluidian</title>
+<meta name="description" content="The published Fluidian lexicon, searchable by headword or by English sense, with pronunciation.">
+<meta name="theme-color" content="#2b2620">
+<link rel="stylesheet" href="site.css">
+<link rel="icon" href="../../assets/flag.png">
+</head>
+<body>
+<a class="skip" href="#main">Skip to the content</a>
+<header class="head"><div class="wrap"><svg class="mark" viewBox="0 0 46 46" role="img" aria-label="Emblem of the Academy"><rect width="46" height="46" fill="#f2ece0"></rect><rect x="6" y="9" width="34" height="6" fill="#2b2620"></rect><rect x="6" y="21" width="22" height="3" fill="#2b2620"></rect><rect x="6" y="28" width="28" height="3" fill="#2b2620"></rect><path d="M30 34 L40 20" stroke="#a4232a" stroke-width="3.4" fill="none"></path></svg><span class="titles">
+<p class="wordmark"><a href="index.html">Academia de Lingua Fluidian</a></p>
+<p class="standfirst">Academy of the Fluidian language &middot; a cooperative of its users</p>
+</span><div class="langswitch"><span aria-current="true">EN</span><a href="flu/dictionary.html" lang="art-x-fluidian">FLU</a></div></div></header>
+<nav class="nav" aria-label="Sections of this site"><div class="wrap"><a href="index.html">Front</a><a href="language.html">The language</a><a href="rules.html">Rules</a><a href="irregulars.html">Registers</a><a href="phrasebook.html">Phrasebook</a><a href="dictionary.html" aria-current="page">Dictionary</a><a href="translator.html">Gloss tool</a><a href="names.html">Names</a><a href="decisions.html">Decisions</a><a href="academy.html">The academy</a></div></nav>
+<main id="main" class="wrap">
+<p class="crumbs"><a href="index.html">Academia</a> &rsaquo; Dictionary</p>
+<p class="eyebrow">Lexicon</p>
+<h1>Dictionary</h1>
+<p class="lede">The published lexicon. Search by Fluidian headword or by English sense. Pronunciation is given on every entry and follows the reading set out in the <a href="rules.html">rules</a>.</p>
+
+<div class="tool">
+<div class="row">
+<div><label for="q">Search</label><input type="search" id="q" placeholder="statiun, or station, or shortage" autocomplete="off"></div>
+<div><label for="pos">Part of speech</label><select id="pos">
+<option value="all">all</option>
+<option value="n">noun</option>
+<option value="v">verb</option>
+<option value="adj">adjective</option>
+<option value="adv">adverb</option>
+<option value="pron">pronoun</option>
+<option value="prep">preposition</option>
+<option value="conj">conjunction</option>
+<option value="det">determiner</option>
+<option value="art">article</option>
+<option value="num">numeral</option>
+<option value="int">interjection</option>
+<option value="pref">prefix</option>
+<option value="suf">suffix</option>
+</select></div>
+</div>
+<p class="count" id="count"></p>
+</div>
+<div id="entries"></div>
+
+<h2>How the lexicon is kept</h2>
+<p>An entry is added when the academy has found the word in use in two sub-regions, or in one sub-region and in print. A sense is added to an existing entry on the same footing. Nothing is removed for being coarse; a word is removed only when the survey can no longer find anybody who uses it, and the removals are listed in the <a href="decisions.html">decisions</a>.</p>
+<p>The file is published in the open and may be taken and used by anybody, for any purpose, with no condition attached: <a href="lexicon.js">lexicon.js</a>. The academy asks only that a copy which has been altered says so.</p>
+
+<script>document.addEventListener("DOMContentLoaded", function(){ buildDictionary("entries","count","q","pos"); });</script>
+
+</main>
+<footer class="foot"><div class="wrap"><div class="cols">
+<div><p class="h">The academy</p>
+<p>Academia de Lingua Fluidian, constituted 1946 at Sederna. A cooperative under Title III, licensed by the Congress of Planning, holding no public function and issuing no binding rule.</p></div>
+<div><p class="h">Standing</p>
+<p>The Republic has no official language. <a href="../../constitution/title-1.html#a16">Article 16</a>(1) gives every person the right to address public authority in a language they understand. Nothing on this site is law.</p>
+<p>Published in the open. No external resource is loaded.</p></div>
+</div></div></footer>
+<script src="lexicon.js"></script>
+<script src="site.js"></script>
+</body>
+</html>

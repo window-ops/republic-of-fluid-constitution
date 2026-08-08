@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Specifications and source - Meteorological Cooperative</title>
+<meta name="description" content="The published repositories at src.meteo.rof, the licence and its fallback, the known defects and the compatibility undertaking.">
+<link rel="stylesheet" href="../site.css">
+<link rel="icon" href="../../../assets/flag.png">
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <span class="marque"><svg viewBox="0 0 58 58" role="img" aria-label="Emblem of the Meteorological Cooperative">
+<circle cx="29" cy="31" r="20" fill="none" stroke="#9a6516" stroke-width="2.4"/>
+<circle cx="29" cy="31" r="12.5" fill="none" stroke="#9a6516" stroke-width="1.6"/>
+<circle cx="29" cy="31" r="5" fill="none" stroke="#9a6516" stroke-width="1.6"/>
+<path d="M29 31 L29 9" stroke="#5f3d0c" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M29 12 L38 15" stroke="#5f3d0c" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M29 18 L36 20.5" stroke="#5f3d0c" stroke-width="2.4" stroke-linecap="round"/>
+<circle cx="29" cy="31" r="2" fill="#5f3d0c"/>
+</svg></span>
+    <span class="idblock">
+      <p class="coopname"><a href="../index.html">Meteorological Cooperative of the Republic</a></p>
+      <p class="basis">Weather, climate, seismicity, landslide and flood &middot; mandate held under the organic law on observation and warning</p>
+    </span>
+  </div>
+</header>
+
+<nav class="mainnav" aria-label="Sections of this site">
+  <div class="wrap">
+    <a class="navtop" href="../index.html">Home</a>
+    <details class="grp">
+      <summary>Weather and climate</summary>
+      <ul>
+        <li><a href="../climate.html">Climate of the Republic</a></li>
+        <li><a href="../change.html">Observed change</a></li>
+        <li><a href="../forecasting.html">How a forecast is made</a></li>
+        <li class="has"><details class="sub">
+          <summary><a href="../emissions.html">Emissions position</a></summary>
+          <ul>
+            <li><a href="../periphery.html">Harm to the periphery</a></li>
+          </ul>
+        </details></li>
+      </ul>
+    </details>
+    <details class="grp">
+      <summary>Warning systems</summary>
+      <ul>
+        <li><a href="../rationale.html">Why these systems exist</a></li>
+        <li><a href="../seismicity.html">Seismicity of the Republic</a></li>
+        <li class="has"><details class="sub">
+          <summary><a href="../kjs.html">REP-KJS, earthquake</a></summary>
+          <ul>
+            <li><a href="../scale.html">REP intensity scale</a></li>
+            <li><a href="../kjs-method.html">Detection, latency and limits</a></li>
+          </ul>
+        </details></li>
+        <li><a href="../lew.html">REP-LEW, landslide</a></li>
+        <li><a href="../few.html">REP-FEW, flood</a></li>
+        <li><a href="../devices.html">Certified devices and RQUAK</a></li>
+      </ul>
+    </details>
+    <a class="navtop" href="../species.html">Species catalogue</a>
+    <a class="navtop" href="../network.html">Observing network</a>
+    <details class="grp">
+      <summary>Developers</summary>
+      <ul>
+        <li><a href="../dev/index.html">Specifications and source</a></li>
+        <li><a href="../dev/wire-format.html">Warning wire format</a></li>
+        <li><a href="../dev/vectors.html">Conformance test vectors</a></li>
+        <li><a href="../dev/hardware.html">Sensor and station hardware</a></li>
+        <li><a href="../dev/forking.html">Porting to another country</a></li>
+      </ul>
+    </details>
+    <a class="navtop" href="../about.html">About the cooperative</a>
+  </div>
+</nav>
+
+<main id="main" class="sheet">
+<p class="crumb"><a href="../index.html">Meteorological Cooperative</a> &rsaquo; Developers</p>
+<h1 class="page-title">Specifications and source</h1>
+<p class="lede">Everything the cooperative builds is published: the source of the three warning systems, the format their messages travel in, the vectors that test an implementation, the firmware and mechanical drawings of the stations, and the models behind the forecast. Any person, cooperative or country may take the whole of it, adapt it and operate it, under no condition and at no charge.</p>
+
+<ul class="figures">
+  <li><b>9</b> repositories</li>
+  <li><b>0</b> licences to sign</li>
+  <li><b>1,412</b> conformance vectors</li>
+  <li><b>3</b> systems published in full</li>
+</ul>
+
+<div class="facts">
+  <div class="row"><span class="k">Licence</span><span class="v">Public domain dedication, with a permissive fallback where the dedication has no effect in law</span></div>
+  <div class="row"><span class="k">Covers</span><span class="v">Source, wire format, test vectors, station firmware, mechanical drawings, model configurations</span></div>
+  <div class="row"><span class="k">Conditions</span><span class="v">None. No attribution requirement, no share-alike clause, no field-of-use restriction</span></div>
+  <div class="row"><span class="k">Patents</span><span class="v">The cooperative holds none and applies for none</span></div>
+  <div class="row"><span class="k">Asked, without obligation</span><span class="v">Notice of a fork, so the porting guide can record where the systems run</span></div>
+  <div class="row"><span class="k">Basis</span><span class="v">Technique developed under a public mandate passes into the knowledge commons</span></div>
+</div>
+
+<h2>The pages in this section</h2>
+<div class="cards">
+  <div class="card">
+    <h3><a href="wire-format.html">Warning wire format</a></h3>
+    <p>The message a warning travels in, field by field, shared by REP-KJS, REP-LEW and REP-FEW.</p>
+  </div>
+  <div class="card">
+    <h3><a href="vectors.html">Conformance test vectors</a></h3>
+    <p>The recorded events an implementation is tested against, including the four the cooperative got wrong, and the procedure for running them.</p>
+  </div>
+  <div class="card">
+    <h3><a href="hardware.html">Sensor and station hardware</a></h3>
+    <p>Circuit and mechanical drawings for the seismic, rainfall, river, tide and slope stations, and for the receiver boards.</p>
+  </div>
+  <div class="card">
+    <h3><a href="forking.html">Porting to another country</a></h3>
+    <p>What transfers unchanged, what requires local calibration, and how long each part took here.</p>
+  </div>
+</div>
+
+<h2>Repositories</h2>
+<div class="tablewrap">
+<table class="data">
+<caption>Published repositories</caption>
+<thead>
+<tr><th>Repository</th><th>Published at</th><th>Language</th><th class="num">Lines</th><th>What it is</th></tr>
+</thead>
+<tbody>
+<tr><td><code>rep-kjs</code></td><td><span class="host">src.meteo.rof/rep-kjs</span></td><td>C, Ada</td><td class="num">31,400</td><td>Detection, location, magnitude estimation, the intensity field and the issuing node. The node is Ada; the station code is C.</td></tr>
+<tr><td><code>rep-lew</code></td><td><span class="host">src.meteo.rof/rep-lew</span></td><td>C, Python</td><td class="num">18,900</td><td>Slope unit definitions, threshold model, probe ingest and the failure curve. The 1,860 slope units of the Republic ship as data.</td></tr>
+<tr><td><code>rep-few</code></td><td><span class="host">src.meteo.rof/rep-few</span></td><td>C, Python, Fortran</td><td class="num">44,600</td><td>Rainfall-runoff model, surge model, gauge ingest and the threshold levels. The hydrological core is Fortran and predates the system.</td></tr>
+<tr><td><code>rquak</code></td><td><span class="host">src.meteo.rof/rquak</span></td><td>C99</td><td class="num">9,700</td><td>The client, for every published platform. No dependency beyond the standard library and the platform sound interface.</td></tr>
+<tr><td><code>rep-wire</code></td><td><span class="host">src.meteo.rof/rep-wire</span></td><td>C99</td><td class="num">2,400</td><td>Encoder and decoder for the message format, with the specification text. Conformance is judged against this tree.</td></tr>
+<tr><td><code>rep-vectors</code></td><td><span class="host">src.meteo.rof/rep-vectors</span></td><td>Data, Python</td><td class="num">3,100</td><td>Recorded events, synthetic cases and expected outputs. About 4 GB of station records with the harness that runs them.</td></tr>
+<tr><td><code>rep-station</code></td><td><span class="host">src.meteo.rof/rep-station</span></td><td>C99, KiCad</td><td class="num">26,200</td><td>Station firmware, circuit boards and enclosure drawings. Dimensioned for parts obtainable inside the Republic.</td></tr>
+<tr><td><code>rep-model</code></td><td><span class="host">src.meteo.rof/rep-model</span></td><td>Fortran, Python</td><td class="num">112,000</td><td>Regional model configuration, assimilation settings and verification code. Reproduces any archived forecast exactly.</td></tr>
+<tr><td><code>rep-archive</code></td><td><span class="host">src.meteo.rof/rep-archive</span></td><td>Python</td><td class="num">14,800</td><td>The observation archive, the three quality-control passes and the correction records, including rejected observations.</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2>The licence</h2>
+<div class="prose">
+<p>The cooperative places the whole of this work in the public domain. Attribution is welcome and is not required.</p>
+<p>Some legal systems give no effect to a dedication of that kind, and some organisations need a document to hold. A permissive licence therefore applies as a fallback, and its terms require nothing of the user. Take it if any of the following describes you:</p>
+<ul>
+<li>You operate in a jurisdiction that gives no recognition to the public domain, or none to an author's power to place work in it.</li>
+<li>Your legal department requires a licence text on file before the code may be used.</li>
+<li>You are redistributing the work inside a larger product whose licence audit expects a named licence for every component.</li>
+</ul>
+<p>The fallback text sits at <span class="host">src.meteo.rof/rep-wire/LICENCE</span> and is identical in every tree.</p>
+<p>Two consequences follow. A fork may be modified without publishing the modification. A fork may be operated by a state, a company or an individual, for any purpose, including purposes the cooperative would decline to serve itself.</p>
+<p>REP-KJS exists because Japanese engineers published enough of their work for it to be reproduced. The flood and landslide models were built here at considerable expenditure of labour and material, and countries whose hazards resemble those of the peninsula should be spared that expenditure. The <a href="../rationale.html">rationale page</a> sets this out at length.</p>
+</div>
+
+<h2>Reporting a fault</h2>
+<div class="prose">
+<p>Faults in any published component go to the cooperative through the public information system, and every report receives a reasoned answer. Reports concerning the warning path are handled first, and the register of such reports is published with the answers.</p>
+<p>A fault found in a fork is equally welcome. The cooperative has taken corrections from three foreign implementations since 2022, and two of them concerned the message decoder.</p>
+</div>
+
+<h2>Known defects</h2>
+<div class="prose">
+<p>These are open. They are known, they are reproducible, and nobody has yet done the work. The list is kept here because a project that publishes no defect list is claiming to have none.</p>
+</div>
+
+<div class="tablewrap">
+<table class="data">
+<caption>Open defects, as of the last release</caption>
+<thead>
+<tr><th>Reference</th><th>Tree</th><th>Effect</th><th>Position</th></tr>
+</thead>
+<tbody>
+<tr><td><code>K-114</code></td><td><code>rep-kjs</code></td><td>Depth is unstable when the first four stations lie on one side of the epicentre</td><td>Two of the four misestimated events came from this. A geometry test is drafted and unmerged.</td></tr>
+<tr><td><code>K-131</code></td><td><code>rep-kjs</code></td><td>Soil amplification is understated over the Ravelluri sediment</td><td>The soil map is coarser than the ground varies. Survey work is in progress.</td></tr>
+<tr><td><code>W-042</code></td><td><code>rep-wire</code></td><td>An area record with an unknown area code is dropped silently by the reference decoder</td><td>It should be retained and presented as an unknown area. Reported by a fork in 2024.</td></tr>
+<tr><td><code>Q-208</code></td><td><code>rquak</code></td><td>The macOS build cannot override the mute setting</td><td>The platform provides no route. No fix is expected.</td></tr>
+<tr><td><code>Q-233</code></td><td><code>rquak</code></td><td>Android presentation may exceed 400 ms under aggressive background scheduling</td><td>Partial conformance is declared in the release notes. Under investigation.</td></tr>
+<tr><td><code>F-077</code></td><td><code>rep-few</code></td><td>Stage is modelled poorly under ice on the upper Marnaqui</td><td>Warnings issued in ice conditions state the qualification. No model work scheduled.</td></tr>
+<tr><td><code>L-019</code></td><td><code>rep-lew</code></td><td>Debris slides below about 500 m&sup3; fall under the resolution of the threshold model</td><td>The commonest failure in the Republic. No method known to the cooperative resolves it.</td></tr>
+</tbody>
+</table>
+</div>
+<p class="note">A defect reaching the warning path is handled first and is announced on every published channel. Nothing else in this list is.</p>
+
+<h2>Compatibility undertaking</h2>
+<div class="box">
+<span class="lbl">What will keep working</span>
+<p>The message format is versioned. A decoder written against version 2 continues to decode version 3 messages, ignoring fields it has no knowledge of. No field is ever removed from a version already published, and no field changes meaning.</p>
+<p>Where a change would break an existing decoder, a new version number is issued and both are broadcast in parallel for at least five years, which is the term of a device certificate. Version 1 and version 2 have run in parallel since 2024.</p>
+</div>
+
+<h2>See also</h2>
+<div class="prose">
+<ul>
+<li><a href="../devices.html">Certified devices and RQUAK</a>, and the conformance requirements</li>
+<li><a href="../rationale.html">Why these systems exist</a></li>
+<li><a href="../network.html">Observing network</a>, the stations these plans describe</li>
+</ul>
+</div>
+
+</main>
+
+<footer class="coopfoot">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <h4>Weather and climate</h4>
+        <ul>
+          <li><a href="../climate.html">Climate of the Republic</a></li>
+          <li><a href="../change.html">Observed change</a></li>
+          <li><a href="../forecasting.html">How a forecast is made</a></li>
+          <li><a href="../emissions.html">Emissions position</a></li>
+          <li><a href="../periphery.html">Harm to the periphery</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Warning systems</h4>
+        <ul>
+          <li><a href="../rationale.html">Why these systems exist</a></li>
+          <li><a href="../seismicity.html">Seismicity of the Republic</a></li>
+          <li><a href="../kjs.html">REP-KJS, earthquake</a></li>
+          <li><a href="../scale.html">REP intensity scale</a></li>
+          <li><a href="../kjs-method.html">Detection, latency and limits</a></li>
+          <li><a href="../lew.html">REP-LEW, landslide</a></li>
+          <li><a href="../few.html">REP-FEW, flood</a></li>
+          <li><a href="../devices.html">Certified devices and RQUAK</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Record and network</h4>
+        <ul>
+          <li><a href="../species.html">Species catalogue</a></li>
+          <li><a href="../network.html">Observing network</a></li>
+          <li><a href="../about.html">About the cooperative</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Developers</h4>
+        <ul>
+          <li><a href="../dev/index.html">Specifications and licence</a></li>
+          <li><a href="../dev/wire-format.html">Warning wire format</a></li>
+          <li><a href="../dev/vectors.html">Conformance test vectors</a></li>
+          <li><a href="../dev/hardware.html">Sensor and station hardware</a></li>
+          <li><a href="../dev/forking.html">Porting to another country</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="basis">Published by the Meteorological Cooperative of the Republic under the organic law on observation and warning. Free of charge, without licence, registration or account. No external resource is loaded by this page. See also the <a href="../../../index.html">Republic of Fluid</a> and the <a href="../../../register/">Public Register</a>.</p>
+  </div>
+</footer>
+
+<script src="../site.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="art-x-fluidian">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dictionar &middot; Academia de Lingua Fluidian</title>
+<meta name="description" content="Se lexic fluidian publicat, con cerca per parola o per senso anglez, con prononciatiun.">
+<meta name="theme-color" content="#2b2620">
+<link rel="stylesheet" href="../site.css">
+<link rel="icon" href="../../../assets/flag.png">
+</head>
+<body>
+<a class="skip" href="#main">Vai te se contenut</a>
+<header class="head"><div class="wrap"><svg class="mark" viewBox="0 0 46 46" role="img" aria-label="Emblem of the Academy"><rect width="46" height="46" fill="#f2ece0"></rect><rect x="6" y="9" width="34" height="6" fill="#2b2620"></rect><rect x="6" y="21" width="22" height="3" fill="#2b2620"></rect><rect x="6" y="28" width="28" height="3" fill="#2b2620"></rect><path d="M30 34 L40 20" stroke="#a4232a" stroke-width="3.4" fill="none"></path></svg><span class="titles">
+<p class="wordmark"><a href="index.html">Academia de Lingua Fluidian</a></p>
+<p class="standfirst">Academia de se lingua fluidian &middot; un cooperativa de sue usatores</p>
+</span><div class="langswitch"><a href="../dictionary.html">EN</a><span aria-current="true">FLU</span></div></div></header>
+<nav class="nav" aria-label="Sections of this site"><div class="wrap"><a href="index.html">Prim page</a><a href="language.html">Se lingua</a><a href="rules.html">Regulas</a><a href="irregulars.html">Registres</a><a href="phrasebook.html">Frases</a><a href="dictionary.html" aria-current="page">Dictionar</a><a href="translator.html">Traductor</a><a href="names.html">Nomes</a><a href="decisions.html">Decisiunes</a><a href="academy.html">Se academia</a></div></nav>
+<main id="main" class="wrap">
+<p class="crumbs"><a href="index.html">Academia</a> &rsaquo; Dictionar</p>
+<p class="eyebrow">Lexic</p>
+<h1>Dictionar</h1>
+<p class="lede">Se lexic publicat. Cerca per parola fluidian o per senso anglez. Se prononciatiun sta supra cada entrada e sequi se lectura de se <a href="rules.html">regulas</a>.</p>
+
+<div class="tool">
+<div class="row">
+<div><label for="q">Cerca</label><input type="search" id="q" placeholder="statiun, o station, o manc" autocomplete="off"></div>
+<div><label for="pos">Parte de parla</label><select id="pos">
+<option value="all">tot</option>
+<option value="n">substantiv</option>
+<option value="v">verbu</option>
+<option value="adj">adjectiv</option>
+<option value="adv">adverbu</option>
+<option value="pron">pronome</option>
+<option value="prep">prepositiun</option>
+<option value="conj">conjunctiun</option>
+<option value="det">determinante</option>
+<option value="art">articul</option>
+<option value="num">numer</option>
+<option value="int">interjectiun</option>
+<option value="pref">prefix</option>
+<option value="suf">sufix</option>
+</select></div>
+</div>
+<p class="count" id="count"></p>
+</div>
+<div id="entries"></div>
+
+<h2>Como se lexic es tenut</h2>
+<p>Un entrada es addit quando se academia trova se parola en usaj en du subregiunes, o en un subregiun e en presa. Un senso nove es addit te un entrada existente supra se mesme conditiun. Nule cosa es retirat per es grosier; un parola es retirat sol quando se enquesta no pote plus trova un persone que usa el, e se retirares sta en se <a href="decisions.html">decisiunes</a>.</p>
+<p>Se fil es publicat en apert e pote es prendit e usat per cada persone, per cada scop, con nule conditiun: <a href="../lexicon.js">lexicon.js</a>. Se academia peti sol que un copia mutat dice esto.</p>
+
+<script>document.addEventListener("DOMContentLoaded", function(){ buildDictionary("entries","count","q","pos"); });</script>
+
+</main>
+<footer class="foot"><div class="wrap"><div class="cols">
+<div><p class="h">Se academia</p>
+<p>Academia de Lingua Fluidian, constituta en 1946 te Sederna. Un cooperativa suz Titul III, licentiat per se Congre de Planificatiun, con nule functiun public e con nule regula obligatoriu.</p></div>
+<div><p class="h">Statut</p>
+<p>Se Republica ave nule lingua oficial. <a href="../../../constitution/title-1.html#a16">Articul 16</a>(1) dan te cada persone se dret de parla con se autoritate en un lingua que el comprende. Nule cosa supra et loc es lege.</p>
+<p>Publicat en apert. Nule resursa extern es cargat.</p></div>
+</div></div></footer>
+<script src="../lexicon.js"></script>
+<script src="../site.js"></script>
+</body>
+</html>

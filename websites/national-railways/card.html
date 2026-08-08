@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CARD-ROM &middot; National Railways Federation</title>
+<meta name="description" content="The CARD-ROM transport card of the Dubrazec standard: memory map, EEPROM layout, record structure, command set, electrical and antenna figures, and the FreeRTOS readers that mount it.">
+<meta name="theme-color" content="#0b4ea2">
+<link rel="stylesheet" href="site.css">
+<link rel="icon" href="../../assets/flag.png">
+</head>
+<body>
+<a class="skip" href="#main">Skip to the content</a>
+
+<header class="head">
+  <div class="wrap">
+    <svg class="mark" viewBox="0 0 48 48" role="img" aria-label="Emblem of the National Railways Federation">
+      <rect width="48" height="48" fill="#0b4ea2"></rect>
+      <path d="M0 20 Q6 14 12 20 T24 20 T36 20 T48 20 V30 H0 Z" fill="#ffffff"></path>
+      <rect x="0" y="30" width="48" height="3" fill="#08376f"></rect>
+      <rect x="14" y="34" width="3" height="14" fill="#ffffff"></rect>
+      <rect x="31" y="34" width="3" height="14" fill="#ffffff"></rect>
+    </svg>
+    <span>
+      <p class="wordmark"><a href="index.html">National Railways Federation</a></p>
+      <p class="standfirst">Branch federation of the railway operating cooperatives</p>
+    </span>
+  </div>
+</header>
+<div class="band" role="presentation"></div>
+
+<nav class="nav" aria-label="Sections of this site">
+  <div class="wrap">
+    <a class="navtop" href="index.html">Front</a>
+    <details class="grp">
+      <summary>Travelling</summary>
+      <ul>
+        <li><a href="network.html">Network and routes</a></li>
+        <li><a href="stations.html">Stations and equipment</a></li>
+        <li><a href="night.html">Night trains and sleepers</a></li>
+        <li><a href="access.html">Access and assistance</a></li>
+        <li><a href="carriage.html">Conditions of carriage</a></li>
+      </ul>
+    </details>
+    <details class="grp">
+      <summary class="on">Systems</summary>
+      <ul>
+        <li><a href="app.html">The application</a></li>
+        <li><a href="card.html" aria-current="page">CARD-ROM</a></li>
+        <li><a href="comparison.html">Comparison of card standards</a></li>
+      </ul>
+    </details>
+    <details class="grp">
+      <summary>Federation</summary>
+      <ul>
+        <li><a href="cooperatives.html">Member cooperatives</a></li>
+        <li><a href="about.html">About the federation</a></li>
+      </ul>
+    </details>
+    <a class="navtop" href="dev/">Developers</a>
+  </div>
+</nav>
+
+<main id="main">
+
+<section class="opening">
+  <div class="wrap">
+    <p class="eyebrow">CARD-ROM, Dubrazec standard, revision 3</p>
+    <h1>A card with three memories and no processor</h1>
+    <p class="lede">CARD-ROM is a removable storage device. A read-only block holds the identity, an 8 KB EEPROM keeps the options, the display language and 7.6 KB the holder may write, and a minified NAND stores the last ninety days of records. The gates and machines that read it run FreeRTOS and mount the card as a block device. Fluid issues these cards without a fare module, so nothing on the card holds money.</p>
+    <ul class="figures">
+      <li><b>3</b> memories</li>
+      <li><b>2 MB</b> NAND</li>
+      <li><b>8 KB</b> EEPROM</li>
+      <li><b>256 B</b> ROM identity</li>
+      <li><b>212</b> kbit/s</li>
+    </ul>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <p class="eyebrow">The object</p>
+    <h2>What is in your hand</h2>
+  </div>
+  <div class="wrap">
+    <ul class="plates four">
+      <li>
+        <h3>The card</h3>
+        <p>ID-1 format, 85.60 by 53.98 mm, 0.84 mm thick, polycarbonate, white with the blue band. It cannot store names or photographs. The UUID, shown as XX:XX:XX:XX:XX:XX:XX, is displayed on the panel when a machine reads it and not on its face.</p>
+      </li>
+      <li>
+        <h3>The hologram</h3>
+        <p>An authentic card issued in Iosmein, the Republic of Fluid or Reformed Luces Aporia will show the image and hologram of the building of the Ministry of Transportation of Reformed Luces Aporia at Dubrazec, where the standard was signed. A card without it still reads, and the machine will say where it came from.</p>
+      </li>
+      <li>
+        <h3>Two ways in</h3>
+        <p>A contactless coil at 13.56 MHz for the gates, and six contact pads for the machines. The machine uses the pads when writing options, language, and records can be transfered when two cards are merged.</p>
+      </li>
+      <li>
+        <h3>Issue and replacement</h3>
+        <p>Any machine on any concourse issues one, without charge and without a question asked. A lost card is replaced the same way. Records on the lost card stay and expire with it.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <p class="eyebrow">Memory</p>
+    <h2>The map</h2>
+    <p class="sub">Three regions, addressed separately. The reader selects a region before it addresses a byte.</p>
+  </div>
+  <div class="wrap">
+    <div class="tablewrap">
+      <table>
+        <caption>Regions of a Dubrazec revision 3 card</caption>
+        <thead><tr><th scope="col">Region</th><th scope="col">Size</th><th scope="col">Type</th><th scope="col">Write</th><th scope="col">Stores</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">ROM</th><td class="num">256 B</td><td>mask ROM</td><td>never</td><td>Card UUID of 7 bytes, standard revision, issuer, mint date, issuer public key, signature over the block.</td></tr>
+          <tr><th scope="row">EEPROM</th><td class="num">8 KB</td><td>EEPROM, 10<sup>6</sup> cycles</td><td>machine, by contact</td><td>410 bytes of options, language and counters. The other 7.6 KB belong to the holder.</td></tr>
+          <tr><th scope="row">NAND</th><td class="num">2 MB</td><td>SLC NAND, minified</td><td>gate and machine</td><td>Records. 512 B pages, 16 KiB blocks, 128 blocks. Four are held in reserve for bad blocks and one stores the commit journal, so a card pulled out of the field mid-write loses nothing.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="tablewrap">
+      <table>
+        <caption>EEPROM layout, byte offsets</caption>
+        <thead><tr><th scope="col">Offset</th><th scope="col">Length</th><th scope="col">Field</th><th scope="col">Note</th></tr></thead>
+        <tbody>
+          <tr><td class="num">0x0000</td><td class="num">2</td><td>Layout revision</td><td>0x0004 for this revision.</td></tr>
+          <tr><td class="num">0x0002</td><td class="num">2</td><td>Display language</td><td>Two letters, ISO 639-1. The machine writes what the holder picks from the list.</td></tr>
+          <tr><td class="num">0x0004</td><td class="num">1</td><td>Script</td><td>0 Latin, 1 Cyrillic, 2 kana and kanji, 3 Greek.</td></tr>
+          <tr><td class="num">0x0005</td><td class="num">1</td><td>Type size</td><td>0 standard, 1 large, 2 largest.</td></tr>
+          <tr><td class="num">0x0006</td><td class="num">1</td><td>Sound</td><td>Gate tone on or off, and its pitch.</td></tr>
+          <tr><td class="num">0x0007</td><td class="num">1</td><td>Assistance flag</td><td>Set by the holder. The gate holds open longer and the platform staff are told help was asked for.</td></tr>
+          <tr><td class="num">0x0008</td><td class="num">8</td><td>Home station</td><td>Station identifier, or zero. The machine sorts the section list by it.</td></tr>
+          <tr><td class="num">0x0010</td><td class="num">16</td><td>Reserved</td><td>Zero in Fluid. A network that compiles the purse module in uses it.</td></tr>
+          <tr><td class="num">0x0020</td><td class="num">224</td><td>Network options</td><td>Options a network may define. Fluid uses 12 bytes of it.</td></tr>
+          <tr><td class="num">0x0100</td><td class="num">154</td><td>Counters</td><td>Block wear, bad block table, and the count of records written since issue.</td></tr>
+          <tr><td class="num">0x019A</td><td class="num">7,782</td><td>The holder's area</td><td>7.6 KB, free. Emergency contact, medical information, other cards merged in, and up to 4 KB of plain text.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="notice card" style="margin-top:1.1rem">
+      <p>The holder's area is read by any terminal in the Republic, and the machine says so before it writes anything there. Written data is stored and returned; it is never executed. What goes in it is the holder's decision, and a card with nothing written in it works the same at every gate.</p>
+    </div>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <p class="eyebrow">Records</p>
+    <h2>Thirty-two bytes, ninety days</h2>
+    <p class="sub">The NAND stores a ring of records. A card holds about 60,000 of them, far past what is practically necessary, and the oldest are overwritten first.</p>
+  </div>
+  <div class="wrap">
+    <div class="tablewrap">
+      <table>
+        <caption>Record structure</caption>
+        <thead><tr><th scope="col">Offset</th><th scope="col">Length</th><th scope="col">Field</th><th scope="col">Note</th></tr></thead>
+        <tbody>
+          <tr><td class="num">0</td><td class="num">4</td><td>Stamp</td><td>Minutes since 1 January 2000, local standard time.</td></tr>
+          <tr><td class="num">4</td><td class="num">8</td><td>Station</td><td>Where the card was presented.</td></tr>
+          <tr><td class="num">12</td><td class="num">8</td><td>Section</td><td>The pair of stations the record covers, or zero for a presentation with no section chosen.</td></tr>
+          <tr><td class="num">20</td><td class="num">1</td><td>Count</td><td>How many people the record covers, 1 to 9.</td></tr>
+          <tr><td class="num">21</td><td class="num">1</td><td>Kind</td><td>0 gate, 1 machine, 2 on board, 3 merge, 4 issue.</td></tr>
+          <tr><td class="num">22</td><td class="num">2</td><td>Operator</td><td>The cooperative that took the record.</td></tr>
+          <tr><td class="num">24</td><td class="num">8</td><td>Seal</td><td>Truncated AES-CMAC over the record, under the key of the network that wrote it.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="notice">
+      <p>There is no value field, no balance, and no field a fare could be written into. The optional fare and purse modules of the Dubrazec standard are compiled out of every card and reader in the Republic. What a network outside the Republic compiles in is set out on the <a href="dev/build-flags.html">build flags page</a>.</p>
+    </div>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <p class="eyebrow">Command set</p>
+    <h2>Twelve commands, and what each one needs</h2>
+  </div>
+  <div class="wrap">
+    <div class="tablewrap">
+      <table>
+        <caption>Commands of the Dubrazec standard, revision 3</caption>
+        <thead><tr><th scope="col">Code</th><th scope="col">Command</th><th scope="col">Needs</th><th scope="col">Does</th></tr></thead>
+        <tbody>
+          <tr><td class="num">0x01</td><th scope="row">SELECT</th><td>field only</td><td>Wakes the card and returns the standard revision and the region sizes.</td></tr>
+          <tr><td class="num">0x02</td><th scope="row">READ_ID</th><td>field only</td><td>Returns the ROM block with its signature. Any reader may do this.</td></tr>
+          <tr><td class="num">0x03</td><th scope="row">AUTH</th><td>network key</td><td>Mutual authentication, AES-128, key diversified per card. Opens the record region.</td></tr>
+          <tr><td class="num">0x04</td><th scope="row">READ_OPT</th><td>AUTH</td><td>Reads a range of EEPROM.</td></tr>
+          <tr><td class="num">0x05</td><th scope="row">WRITE_OPT</th><td>AUTH, contact</td><td>Writes options, language and locale. Refused over the coil.</td></tr>
+          <tr><td class="num">0x06</td><th scope="row">READ_REC</th><td>AUTH</td><td>Reads records, newest first, up to 64 in a frame.</td></tr>
+          <tr><td class="num">0x07</td><th scope="row">APPEND_REC</th><td>AUTH</td><td>Journals a record and commits it. The gate uses this and nothing else.</td></tr>
+          <tr><td class="num">0x08</td><th scope="row">MERGE</th><td>AUTH on both cards, contact</td><td>Copies the records of a second card and marks that card spent. Also takes in a library card, a tool lending card or a membership card, which land in the holder's area.</td></tr>
+          <tr><td class="num">0x09</td><th scope="row">EXPIRE</th><td>AUTH</td><td>Drops records older than ninety days. The machine runs it on every presentation.</td></tr>
+          <tr><td class="num">0x0A</td><th scope="row">STATUS</th><td>AUTH</td><td>Returns wear counters, the bad block table and the record count.</td></tr>
+          <tr><td class="num">0x0B</td><th scope="row">READ_FREE</th><td>field only</td><td>Reads the holder's area. Open to any terminal, which is why the machine warns before writing there.</td></tr>
+          <tr><td class="num">0x0C</td><th scope="row">WRITE_FREE</th><td>contact</td><td>Writes the holder's area. Refused over the coil.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="notice card">
+      <p>WRITE_OPT, WRITE_FREE and MERGE are refused over the coil in every build. A card in a pocket cannot have its language changed, its options altered, or its records taken by a reader held near it.</p>
+    </div>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <p class="eyebrow">Electrical</p>
+    <h2>Field, coil and power</h2>
+  </div>
+  <div class="wrap">
+    <dl class="spec">
+      <dt>Carrier</dt><dd>13.56 MHz &plusmn; 7 kHz</dd>
+      <dt>Field strength</dt><dd>1.5 to 7.5 A/m rms</dd>
+      <dt>Modulation to card</dt><dd>ASK 10 per cent, Miller coded</dd>
+      <dt>Modulation from card</dt><dd>Load, subcarrier 847.5 kHz, BPSK</dd>
+      <dt>Bit rate</dt><dd>212 kbit/s, falling back to 106 kbit/s</dd>
+      <dt>Coil</dt><dd>4 turns, 68.0 by 42.0 mm, on layer 2</dd>
+      <dt>Inductance</dt><dd>2.02 &micro;H &plusmn; 5 per cent</dd>
+      <dt>Chip capacitance</dt><dd>68 pF &plusmn; 3 per cent</dd>
+      <dt>Resonance, unloaded</dt><dd>13.9 MHz, tuned 2.5 per cent high for card stacks</dd>
+      <dt>Quality factor</dt><dd>26 to 34</dd>
+      <dt>Power drawn</dt><dd>4.5 mW reading, 9.8 mW during a NAND commit</dd>
+      <dt>Reservoir</dt><dd>4.7 &micro;F, holds a commit through 40 ms out of field</dd>
+      <dt>Contact pads</dt><dd>6, ISO 7816-2 positions C1 to C4, C7, C8</dd>
+      <dt>Contact supply</dt><dd>3.0 V, 15 mA peak</dd>
+      <dt>Working range</dt><dd>0 to 45 mm from the gate antenna</dd>
+      <dt>Temperature</dt><dd>&minus;25 to +60 &deg;C operating</dd>
+    </dl>
+  </div>
+  <div class="wrap">
+    <div class="tablewrap">
+      <table>
+        <caption>Where the time goes in a gate transaction</caption>
+        <thead><tr><th scope="col">Step</th><th scope="col" class="num">Typical</th><th scope="col" class="num">Worst</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Field detect and SELECT</th><td class="num">12 ms</td><td class="num">21 ms</td></tr>
+          <tr><th scope="row">READ_ID and signature check</th><td class="num">28 ms</td><td class="num">44 ms</td></tr>
+          <tr><th scope="row">AUTH</th><td class="num">46 ms</td><td class="num">72 ms</td></tr>
+          <tr><th scope="row">EXPIRE, when due</th><td class="num">0 ms</td><td class="num">38 ms</td></tr>
+          <tr><th scope="row">APPEND_REC, journal and commit</th><td class="num">62 ms</td><td class="num">104 ms</td></tr>
+          <tr><th scope="row">Gate opens at</th><td class="num">148 ms</td><td class="num">279 ms</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <p class="eyebrow">The reader</p>
+    <h2>What runs FreeRTOS</h2>
+  </div>
+  <div class="wrap">
+    <div class="essay">
+      <p><strong>The card has no processor.</strong> It answers commands and holds bytes. Everything decided in a transaction is decided by the gate or the machine.</p>
+      <p><strong>The gates and machines run FreeRTOS.</strong> The gate is a Cortex-M4 at 120 MHz with 256 KiB of RAM and has been programmed with four tasks: field, transaction, door, and the panel. The transaction task holds a deadline of 300 ms, and the door task will not open on a transaction that missed it.</p>
+      <p><strong>The card mounts as a block device.</strong> The reference driver presents the three regions to FreeRTOS as read-only, read-write and append-only devices. It is 3,100 lines of C, it allocates nothing after start, and it is published with the standard.</p>
+      <p><strong>A machine is the same board with a slot.</strong> The concourse machine adds the contact carrier, the printer and the panel, and runs the same driver over the pads at 15 mA.</p>
+    </div>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <p class="eyebrow">Security</p>
+    <h2>What is protected, and what is simply absent</h2>
+  </div>
+  <div class="wrap">
+    <ul class="plates two">
+      <li>
+        <h3>Keys</h3>
+        <p>AES-128 mutual authentication, one master key per network, diversified per card over the ROM identifier. Keys sit in a secure element in the gate, and a gate that loses power comes back without them until a worker unlocks it.</p>
+      </li>
+      <li>
+        <h3>Signatures</h3>
+        <p>The ROM block is signed by the issuer with Ed25519. A reader anywhere in the Bloc can check that a card is authentic without holding any network key.</p>
+      </li>
+      <li>
+        <h3>Records are sealed</h3>
+        <p>Each record is sealed with a CMAC under the key of the network that wrote it. A record written by another network can be read and counted, and it cannot be forged.</p>
+      </li>
+      <li>
+        <h3>What is not there</h3>
+        <p>No name, no address, no date of birth, no photograph, no balance, and no field a score could be written into. Article 51(7) prohibits the scoring and profiling that such a field would allow.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <p class="eyebrow">The standard</p>
+    <h2>Dubrazec, and what a fork may change</h2>
+  </div>
+  <div class="wrap">
+    <div class="essay">
+      <p><strong>The standard is open.</strong> It was signed at the Ministry of Transportation at Dubrazec, in Reformed Luces Aporia, and it is published in full with its test vectors and its reference driver.</p>
+      <p><strong>It works across the Bloc.</strong> A card issued in Iosmein, the Republic of Fluid or Reformed Luces Aporia is read by the gates of all three. Sections crossing a frontier are recorded by whichever network the gate belongs to.</p>
+      <p><strong>A fork may add modules.</strong> The fare module and the purse module are part of the standard and are compiled out here. A transit system elsewhere may compile them in, keep the record structure, and stay readable by the gates of the Bloc. The <a href="dev/forking.html">forking guide</a> and the <a href="dev/build-flags.html">build flags</a> set out what changes and what may not.</p>
+      <p><strong>The comparison is published too.</strong> How CARD-ROM stands against MIFARE Classic, DESFire EV3, FeliCa and Calypso is on the <a href="comparison.html">comparison page</a>, with the figures each one is measured by.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<div class="band-foot" role="presentation"></div>
+<footer class="foot">
+  <div class="wrap">
+    <ul class="footlinks">
+      <li><a href="index.html">Front</a></li>
+      <li><a href="network.html">Network</a></li>
+      <li><a href="app.html">Application</a></li>
+      <li><a href="card.html">CARD-ROM</a></li>
+      <li><a href="dev/">Developers</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="../podnik/">Podnik</a></li>
+      <li><a href="../../register/links.html">Public Register</a></li>
+    </ul>
+    <p class="standing">A branch federation of the railway operating cooperatives, constituted under Article 89. It exercises no public authority and represents no organ. Its accounts, its minutes and its yearly reviews are public.</p>
+  </div>
+</footer>
+<script src="site.js" defer></script>
+</body>
+</html>

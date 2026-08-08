@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>REP-KJS, the earthquake warning system - Meteorological Cooperative</title>
+<meta name="description" content="How REP-KJS warns the whole territory, the anatomy and fixed order of a broadcast, the specimen of 3 August 2026, and cross-border broadcasting to Reformed Luces Aporia.">
+<link rel="stylesheet" href="site.css">
+<link rel="icon" href="../../assets/flag.png">
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <span class="marque"><svg viewBox="0 0 58 58" role="img" aria-label="Emblem of the Meteorological Cooperative">
+<circle cx="29" cy="31" r="20" fill="none" stroke="#9a6516" stroke-width="2.4"/>
+<circle cx="29" cy="31" r="12.5" fill="none" stroke="#9a6516" stroke-width="1.6"/>
+<circle cx="29" cy="31" r="5" fill="none" stroke="#9a6516" stroke-width="1.6"/>
+<path d="M29 31 L29 9" stroke="#5f3d0c" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M29 12 L38 15" stroke="#5f3d0c" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M29 18 L36 20.5" stroke="#5f3d0c" stroke-width="2.4" stroke-linecap="round"/>
+<circle cx="29" cy="31" r="2" fill="#5f3d0c"/>
+</svg></span>
+    <span class="idblock">
+      <p class="coopname"><a href="index.html">Meteorological Cooperative of the Republic</a></p>
+      <p class="basis">Weather, climate, seismicity, landslide and flood &middot; mandate held under the organic law on observation and warning</p>
+    </span>
+  </div>
+</header>
+
+<nav class="mainnav" aria-label="Sections of this site">
+  <div class="wrap">
+    <a class="navtop" href="index.html">Home</a>
+    <details class="grp">
+      <summary>Weather and climate</summary>
+      <ul>
+        <li><a href="climate.html">Climate of the Republic</a></li>
+        <li><a href="change.html">Observed change</a></li>
+        <li><a href="forecasting.html">How a forecast is made</a></li>
+        <li class="has"><details class="sub">
+          <summary><a href="emissions.html">Emissions position</a></summary>
+          <ul>
+            <li><a href="periphery.html">Harm to the periphery</a></li>
+          </ul>
+        </details></li>
+      </ul>
+    </details>
+    <details class="grp">
+      <summary>Warning systems</summary>
+      <ul>
+        <li><a href="rationale.html">Why these systems exist</a></li>
+        <li><a href="seismicity.html">Seismicity of the Republic</a></li>
+        <li class="has"><details class="sub">
+          <summary><a href="kjs.html">REP-KJS, earthquake</a></summary>
+          <ul>
+            <li><a href="scale.html">REP intensity scale</a></li>
+            <li><a href="kjs-method.html">Detection, latency and limits</a></li>
+          </ul>
+        </details></li>
+        <li><a href="lew.html">REP-LEW, landslide</a></li>
+        <li><a href="few.html">REP-FEW, flood</a></li>
+        <li><a href="devices.html">Certified devices and RQUAK</a></li>
+      </ul>
+    </details>
+    <a class="navtop" href="species.html">Species catalogue</a>
+    <a class="navtop" href="network.html">Observing network</a>
+    <details class="grp">
+      <summary>Developers</summary>
+      <ul>
+        <li><a href="dev/index.html">Specifications and source</a></li>
+        <li><a href="dev/wire-format.html">Warning wire format</a></li>
+        <li><a href="dev/vectors.html">Conformance test vectors</a></li>
+        <li><a href="dev/hardware.html">Sensor and station hardware</a></li>
+        <li><a href="dev/forking.html">Porting to another country</a></li>
+      </ul>
+    </details>
+    <a class="navtop" href="about.html">About the cooperative</a>
+  </div>
+</nav>
+
+<main id="main" class="sheet">
+<p class="crumb"><a href="index.html">Meteorological Cooperative</a> &rsaquo; Warning systems &rsaquo; REP-KJS</p>
+<h1 class="page-title">REP-KJS, the earthquake warning system</h1>
+<p class="lede">REP-KJS detects an earthquake at the stations nearest its origin, estimates the magnitude, the depth and the intensity expected at every point in the territory, and broadcasts that estimate ahead of the shaking. It entered service in 2021. The code name comes from kinkyu jishin sokuho, the Japanese term for such a broadcast, and the system is ordinarily called REP-KJS in the Republic.</p>
+
+<div class="facts">
+  <div class="row"><span class="k">In service</span><span class="v">Since March 2021</span></div>
+  <div class="row"><span class="k">Threshold</span><span class="v">A warning is broadcast wherever the estimated intensity exceeds REP 2</span></div>
+  <div class="row"><span class="k">Coverage of a warning</span><span class="v">The whole territory, with the estimate for each sub-region stated in the message</span></div>
+  <div class="row"><span class="k">First alert</span><span class="v">Ordinarily 4 to 9 seconds after origin time</span></div>
+  <div class="row"><span class="k">Languages</span><span class="v">Fluidian first, then English; a device may request either alone</span></div>
+  <div class="row"><span class="k">Foreign estimate</span><span class="v">Intensity for Aporean territory is stated alongside that for the Republic</span></div>
+  <div class="row"><span class="k">Occasions a year</span><span class="v">About nine, on the frequency of REP 3 and above</span></div>
+</div>
+
+<h2>What the system does</h2>
+<div class="prose">
+<p>Seismic waves travel through rock at some kilometres a second. A message travels through the network at close to the speed of light. Where an earthquake originates at a distance from a settlement, the difference between those two speeds is time in which people can move to the floor, trains can brake, lifts can open at the nearest landing, and machinery can be brought to a safe state. That interval is what the system exists to produce, and across the Republic it runs from nothing at all near the epicentre to above two minutes at Lindoma.</p>
+<p>The interval buys preparation and nothing more. No warning prevents an earthquake, reduces its magnitude or protects a building that was inadequately built. It converts an event arriving without notice into an event arriving with a few seconds of notice, and in the countries operating such systems those seconds have been measured to reduce injury substantially.</p>
+</div>
+
+<h2>Design and the reason for it</h2>
+<div class="prose">
+<p>Earthquakes in the Republic are infrequent enough that a resident may live a decade without feeling one. That fact governed the design in two respects.</p>
+<p>The system does not differentiate its broadcasts. A warning goes to the whole territory, with the estimated intensity for every sub-region stated in the message, so a person at REP 1 hears the same broadcast as a person at REP 5 and hears their own estimate within it. Differentiated systems assume a public that already understands what a warning means and needs only the local number; the Republic makes no such assumption.</p>
+<p>The message is long. A broadcast states the origin time, the epicentre, the depth, the magnitude, the intensity at the receiving device, the highest intensity anywhere, the equivalent value on four other scales, the sub-region breakdown, the coastal assessment and the action to take. Systems in countries where earthquakes are frequent state four or five words, because the schooling was done years earlier. The broadcast here does the schooling as well, and the length follows from that.</p>
+<p>The delivery is modelled on the flat, ordered reading used by the Japanese public broadcaster, and the ordering of items is deliberately fixed so a listener who has heard one broadcast knows where in the next one each fact will appear.</p>
+</div>
+
+<h2>Anatomy of a broadcast</h2>
+<div class="prose">
+<p>A broadcast comes in segments. The first is issued within seconds of detection and states what is needed to act. Later segments refine the estimate and add detail. Each segment opens with two rising tones sounded twice, followed by the flat voice in Fluidian and then in English.</p>
+<p>The specimen below reproduces the segments issued for the event of 3 August 2026, magnitude 5.4 beneath the Belvacius hills, as received aboard a train in the eastern region at an estimated REP 3.</p>
+</div>
+
+<div class="cast">
+  <div class="head">Specimen broadcast &middot; segment 1, first alert</div>
+  <div class="body">
+    <p class="tag">Segment 1, first alert &middot; Fluidian</p>
+    <p class="flu">Avert de terramotu. Un terramotu es facit supra se margin sud, suz se colines de Belvacius. Intensitate estimat aqui, 3 de 10. Tremor legier en circa quaranta secondes. Abaxa, va suz mobilie fixat o presso un sede fixat, tena, e resta lonx de portes e fenestres. Et tren fa frena. Nule avert costal es en forsa.</p>
+    <p class="tag">Segment 1, first alert &middot; English</p>
+    <p class="eng">Emergency earthquake warning. An earthquake has occurred on the southern margin, beneath the Belvacius hills. Estimated intensity here, 3 of 10. Slight shaking expected in about forty seconds. Move to the floor, get under the fixed furniture or beside a fixed seat frame, hold on, and keep clear of the doors and the windows. This train is braking. No coastal warning is in force.</p>
+    <div class="seg">
+      <p class="tag">Segment 2, detail &middot; Fluidian</p>
+      <p class="flu">Detalie de se seism. Temp de origine, hora quatre e dece-du minut. Epicentru es en se margin sud, suz se colines de Belvacius. Profundu vinte-quatre quilometru. Magnitud cinc punt quatre supra se scala de momentu, dat aqui anque en Richter. Intensitate estimat en esto loc, grad tri de dece supra se scala de se Republica, mesme quam shindo tri supra se scala japone, origine de se scala de se Republica, e mesme quam quatre supra se scalas Mercalli, EMS e MSK. Grad tri significa: tremor sentit de mas de se gent en se tren, lampas que mova, vitru e tassas que mova, nule structura lesat. Intensitate estimat mas alt en tot se Republica es grad cinc en se subregiun de Belvacius. Aqui se tremor comensa en circa vinte secundes.</p>
+      <p class="tag">Segment 2, detail &middot; English</p>
+      <p class="eng">Earthquake detail. Origin time 04:12. Epicentre on the southern margin beneath the Belvacius hills, depth 24 kilometres. Magnitude 5.4 on the moment scale, given here as Richter for comparison. Estimated intensity at this location, step 3 of 10 on the Republic scale, equal to shindo 3 on the Japanese scale from which the Republic scale is derived, and to IV on the Mercalli, European macroseismic and MSK scales. Step 3 means shaking felt by most people aboard, hanging objects swinging, glass and crockery moving, no damage to structures. Highest estimated intensity anywhere is step 5 in the Belvacius sub-region. Shaking here begins in about twenty seconds.</p>
+    </div>
+    <div class="seg">
+      <p class="tag">Segment 3, distribution by sub-region &middot; Fluidian</p>
+      <p class="flu">Intensitate estimat per subregiun. Grad cinc, Belvacius. Grad quatre, Ravelluri, Cortius, Quintorum, Sornorum. Grad tri, Anselaqui, Marnaqui, Thurioma, Esteveduson e Leriduson. Grad du, Kelvaqui, Tessilius, Durorilaqui, Halvorum, Aspreduson. Grad un o suz en se subregiunes de ovest que resta, e anque en Lindoma. Nule avis de onda es en vigor. Se tremor es aqui nunc.</p>
+      <p class="tag">Segment 3, distribution by sub-region &middot; English</p>
+      <p class="eng">Estimated intensity by sub-region. Step 5, Belvacius. Step 4, Ravelluri, Cortius, Quintorum, Sornorum. Step 3, Anselaqui, Marnaqui, Thurioma, Esteveduson, and Leriduson. Step 2, Kelvaqui, Tessilius, Durorilaqui, Halvorum, Aspreduson. Step 1 or below in the remaining western sub-regions, including Lindoma. No coastal warning is in force. Shaking now.</p>
+    </div>
+  </div>
+</div>
+<p class="note">Wording is fixed and tested. The emergency phrasing is registered with the <a href="../academy-fluidian/phrasebook.html">Academia de Lingua Fluidian</a>, and no operator may improvise it. Every segment runs in Fluidian and then in English. The Fluidian text runs first because it is the shorter of the two, and it finishes before the English does, which matters most in segment 1, where the whole pair has to clear before the shaking arrives.</p>
+
+<h2>The order of items</h2>
+<div class="tablewrap">
+<table class="data">
+<caption>Fixed order of a broadcast, by segment</caption>
+<thead>
+<tr><th class="num">Segment</th><th class="num">Issued</th><th>Items stated</th><th>Purpose</th></tr>
+</thead>
+<tbody>
+<tr><td class="num">1</td><td class="num">4 to 9 s after origin</td><td>Event, region of origin, intensity here, seconds remaining, action, transport state, coastal assessment</td><td>Everything needed to act; nothing else</td></tr>
+<tr><td class="num">2</td><td class="num">12 to 25 s</td><td>Origin time, epicentre, depth, magnitude, intensity here on five scales, meaning of the step, highest intensity anywhere, seconds remaining</td><td>The event described, and the number explained</td></tr>
+<tr><td class="num">3</td><td class="num">25 to 60 s</td><td>Intensity for every sub-region in descending order, coastal assessment, onset</td><td>The national picture, delivered before the shaking ends</td></tr>
+<tr><td class="num">4</td><td class="num">2 to 20 min</td><td>Revised magnitude and depth, observed intensities replacing estimates, corrections</td><td>The record, once observation replaces estimate</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2>Beyond the frontiers</h2>
+<div class="prose">
+<p>An event on the eastern segment of the Aporean boundary shakes ground in Reformed Luces Aporia as well as in the Republic. REP-KJS computes intensity across the whole affected area and states the Aporean estimate in the same broadcast, marked as foreign territory. Station data are exchanged in both directions under an arrangement agreed in 2023, so events on either side of the water are located from both networks.</p>
+<p>Devices in Reformed Luces Aporia receive the broadcast directly where their operator subscribes to the feed. The cooperative places no charge and no condition on that subscription, and the wire format is the published one.</p>
+</div>
+
+<h2>What a person is asked to do</h2>
+<div class="box">
+<span class="lbl">Action stated in the broadcast</span>
+<p>Move to the floor. Get under fixed furniture or beside a fixed seat frame. Hold on. Keep clear of doors, windows and anything hanging or stacked. Stay where you are until the shaking ends.</p>
+<p>Leaving a building during the shaking is more dangerous than staying inside it, since falling material at the entrance accounts for a large share of injuries. Lifts open at the nearest landing automatically in every certified installation, and a lift should be left at that landing.</p>
+<p>The action is the same at every step above REP 2. A person at REP 3 who takes the action loses ten seconds. A person at REP 7 who takes it may lose nothing at all.</p>
+</div>
+
+<h2>See also</h2>
+<div class="prose">
+<ul>
+<li><a href="scale.html">REP intensity scale</a>, the ten steps and their equivalents</li>
+<li><a href="kjs-method.html">Detection, latency and limits</a>, how the estimate is produced and where it fails</li>
+<li><a href="devices.html">Certified devices and RQUAK</a>, what receives a broadcast</li>
+<li><a href="dev/wire-format.html">Warning wire format</a>, the message as it travels</li>
+<li><a href="seismicity.html">Seismicity of the Republic</a></li>
+</ul>
+</div>
+
+</main>
+
+<footer class="coopfoot">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <h4>Weather and climate</h4>
+        <ul>
+          <li><a href="climate.html">Climate of the Republic</a></li>
+          <li><a href="change.html">Observed change</a></li>
+          <li><a href="forecasting.html">How a forecast is made</a></li>
+          <li><a href="emissions.html">Emissions position</a></li>
+          <li><a href="periphery.html">Harm to the periphery</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Warning systems</h4>
+        <ul>
+          <li><a href="rationale.html">Why these systems exist</a></li>
+          <li><a href="seismicity.html">Seismicity of the Republic</a></li>
+          <li><a href="kjs.html">REP-KJS, earthquake</a></li>
+          <li><a href="scale.html">REP intensity scale</a></li>
+          <li><a href="kjs-method.html">Detection, latency and limits</a></li>
+          <li><a href="lew.html">REP-LEW, landslide</a></li>
+          <li><a href="few.html">REP-FEW, flood</a></li>
+          <li><a href="devices.html">Certified devices and RQUAK</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Record and network</h4>
+        <ul>
+          <li><a href="species.html">Species catalogue</a></li>
+          <li><a href="network.html">Observing network</a></li>
+          <li><a href="about.html">About the cooperative</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Developers</h4>
+        <ul>
+          <li><a href="dev/index.html">Specifications and licence</a></li>
+          <li><a href="dev/wire-format.html">Warning wire format</a></li>
+          <li><a href="dev/vectors.html">Conformance test vectors</a></li>
+          <li><a href="dev/hardware.html">Sensor and station hardware</a></li>
+          <li><a href="dev/forking.html">Porting to another country</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="basis">Published by the Meteorological Cooperative of the Republic under the organic law on observation and warning. Free of charge, without licence, registration or account. No external resource is loaded by this page. See also the <a href="../../index.html">Republic of Fluid</a> and the <a href="../../register/">Public Register</a>.</p>
+  </div>
+</footer>
+
+<script src="site.js"></script>
+</body>
+</html>

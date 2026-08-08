@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dial-up and the voiceband &middot; Telephony</title>
+<meta name="description" content="Why nineteen per cent of households in the Republic of Fluid dial in by choice, how the domestic modem specifications get past 56K, how lines are bonded, and where each exchange answers.">
+<meta name="theme-color" content="#23201a">
+<link rel="stylesheet" href="site.css">
+<link rel="icon" href="../../assets/flag.png">
+</head>
+<body>
+<a class="skip" href="#main">Skip to the content</a>
+
+<header class="cover">
+  <div class="wrap">
+    <p class="title"><a href="index.html">Telephony</a></p>
+    <p class="imprint">Lines, exchanges and services of the <b>Republic of Fluid</b></p>
+  </div>
+</header>
+
+<nav class="thumbs" aria-label="Sections of this directory">
+  <div class="wrap">
+    <a href="index.html">Front</a>
+    <a href="connect.html">Get a line</a>
+    <a href="dialup.html" aria-current="page">Dial-up</a>
+    <a href="mobile.html">Mobile</a>
+    <a href="voice.html">Calling</a>
+    <a href="chat.html">Chat</a>
+    <a href="meet.html">Meet</a>
+    <a href="hardware.html">Hardware</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="about.html">About</a>
+  </div>
+</nav>
+
+<main id="main">
+<div class="wrap">
+
+<section class="opening">
+  <h1>The voiceband network</h1>
+  <p class="lede">1,368,000 households connect over a pair of copper wires and a modem, because their assembly voted against digging up the lane. The federation answered by making the modem better.</p>
+</section>
+
+<section class="sheet">
+  <p class="runhead">Why it persists<span class="span">1,368,000 households</span></p>
+  <h2>A choice the lane made</h2>
+<div class="prose">
+  <p><b>1,368,000 households dial in, and almost none of them are poor.</b> The copper is already in the ground. Laying fibre down a lane means a trencher, a road closure and a week of noise, and the assembly that would have to approve it is made up of the people who live on the lane. Proposals for a mast do worse, because somebody always objects to a crane behind their house.</p>
+  <p><b>So the federation went the other way.</b> Where the network could not be replaced it was made better, which meant designing modems that get more out of a voiceband pair than anybody outside expects. The specifications are published and any workshop may build to them.</p>
+</div>
+</section>
+
+<section class="sheet">
+  <p class="runhead">The modems<span class="span">TS-14 and TS-22</span></p>
+  <h2>Getting more out of a pair</h2>
+<div class="cols">
+  <div class="prose">
+    <h3>Past 56K, and how</h3>
+    <p>The 56K ceiling was never a property of copper. It came from assuming one end sits on a digital exchange feeding an eight-bit codec, and from leaving the upper voiceband unused.</p>
+    <p><b>TS-14</b> drops that assumption and shapes across the whole band the pair will pass, reaching 64 kbit/s on a clean line. <b>TS-22</b> adds echo cancellation on the two-wire loop and full-duplex shaping, reaching 96 kbit/s, and it falls back gracefully as the line gets worse.</p>
+  </div>
+  <div class="prose">
+    <h3>Bonding what you already have</h3>
+    <p>Most rural households hold more than one pair, because the copper was laid generously in the fifties. <b>TS-16</b> runs multi-link PPP across two or three of them and presents one connection.</p>
+    <p>Three bonded TS-22 lines give a hamlet 288 kbit/s, which is enough to access any static page or simple web content and video call.</p>
+  </div>
+</div>
+</section>
+
+<section class="sheet">
+  <p class="runhead">What it gives you<span class="span">2025 line survey</span></p>
+  <h2>Speeds you can expect</h2>
+<div class="tbl-scroll">
+  <table class="tbl">
+    <caption>Measured throughput, mean across the 2025 line survey</caption>
+    <thead><tr><th>Set-up</th><th>Specification</th><th>Clean line</th><th>Poor line</th></tr></thead>
+    <tbody>
+          <tr><td>One pair</td><td class="code">TS-14</td><td class="num">64 kbit/s</td><td class="num">31 kbit/s</td></tr>
+          <tr><td>One pair</td><td class="code">TS-22</td><td class="num">96 kbit/s</td><td class="num">42 kbit/s</td></tr>
+          <tr><td>Two pairs bonded</td><td class="code">TS-22 with TS-16</td><td class="num">192 kbit/s</td><td class="num">84 kbit/s</td></tr>
+          <tr><td>Three pairs bonded</td><td class="code">TS-22 with TS-16</td><td class="num">288 kbit/s</td><td class="num">126 kbit/s</td></tr>
+          <tr><td>ISDN, one basic rate</td><td class="code">TS-8</td><td class="num">128 kbit/s</td><td class="num">128 kbit/s</td></tr>
+          <tr><td>ISDN, three basic rates</td><td class="code">TS-8 with TS-16</td><td class="num">384 kbit/s</td><td class="num">384 kbit/s</td></tr>
+    </tbody>
+  </table>
+</div>
+<p class="tbl-note">ISDN functions the same way regardless of what the weather does. A single basic rate is more efficient than a single dial-up pair, and three bonded dial-up pairs are more efficient than a single basic rate.</p>
+</section>
+
+<section class="sheet">
+  <p class="runhead">The upgrade<span class="span">432,000 households and rising</span></p>
+  <h2>ISDN</h2>
+<div class="stock stock-blue prose">
+  <h3>ISDN is the upgrade, not the leftover</h3>
+  <p>Elsewhere ISDN was a thing that came before broadband and then went away. Here it is what a village could use when dial-up stops being enough and nobody will let a trencher down the lane. It runs on the same pair, it is unaffected by rain and line noise, and it comes up in under a second where a modem spends twenty seconds negotiating.</p>
+  <p>432,000 households use it and the number rises every year. Sixteen exchanges were re-equipped for basic rate service in 2024 alone, all of them in sub-regions with no fibre plan at all.</p>
+</div>
+</section>
+
+<section class="sheet">
+  <p class="runhead">Keeping the line clear<span class="span">Peer to peer by default</span></p>
+  <h2>Why calls do not go through a server</h2>
+<div class="prose">
+  <p>Calls between two residents are carried peer to peer over WebRTC wherever the two ends can reach each other, so the audio never climbs to a server and comes back down. On a bonded voiceband connection that reduces traffic.</p>
+  <p>Conference rooms of two or three people work the same way. Only above that does a mixer get involved, and the mixer at your own exchange is preferred over any other. See <a href="voice.html">calling</a> and <a href="meet.html">conferencing</a>.</p>
+</div>
+</section>
+
+<section class="sheet">
+  <p class="runhead">Dial-in numbers<span class="span">Lindoma to Torvena</span></p>
+  <h2>Where to dial</h2>
+  <p class="standfirst">Every number below answers at every supported specification and negotiates down. Dialling is free, as all calls are.</p>
+<ul class="listing">
+  <li class="entry"><span class="what">Lindoma and Vandorum</span><span class="lead" aria-hidden="true"></span><span class="host">2 18 000 001</span><span class="also">Nine hundred and sixty ports &middot; TS-22 and TS-14 &middot; ISDN basic rate at the same number</span></li>
+  <li class="entry"><span class="what">Sederna and the western line</span><span class="lead" aria-hidden="true"></span><span class="host">2 04 000 001</span><span class="also">Six hundred ports &middot; TS-22 and TS-14 &middot; ISDN basic rate</span></li>
+  <li class="entry"><span class="what">Cortius</span><span class="lead" aria-hidden="true"></span><span class="host">2 21 000 001</span><span class="also">Four hundred and eighty ports &middot; TS-22 and TS-14</span></li>
+  <li class="entry"><span class="what">Leriduson and the north coast</span><span class="lead" aria-hidden="true"></span><span class="host">2 07 000 001</span><span class="also">Three hundred and sixty ports &middot; TS-22 only</span></li>
+  <li class="entry"><span class="what">Sornorum and Lutoliluri</span><span class="lead" aria-hidden="true"></span><span class="host">2 33 000 001</span><span class="also">Four hundred and eighty ports &middot; TS-22 and TS-14 &middot; ISDN basic rate</span></li>
+  <li class="entry"><span class="what">Torvena and the moor</span><span class="lead" aria-hidden="true"></span><span class="host">2 41 000 001</span><span class="also">Two hundred and forty ports &middot; TS-22 only &middot; the two mountain groups are fed from here</span></li>
+  <li class="entry"><span class="what">Durorilaqui and the plain</span><span class="lead" aria-hidden="true"></span><span class="host">2 12 000 001</span><span class="also">Three hundred ports &middot; TS-22 and TS-14 &middot; ISDN basic rate</span></li>
+</ul>
+</section>
+
+</div>
+</main>
+
+<footer class="colophon">
+  <div class="wrap cols cols-3">
+    <div>
+      <h2>Lines</h2>
+      <ul>
+        <li><a href="connect.html">Get a line</a></li>
+        <li><a href="dialup.html">Dial-up and the voiceband</a></li>
+        <li><a href="mobile.html">Mobile, LTE and 5G</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Services</h2>
+      <ul>
+        <li><a href="voice.html">Calling and numbering</a></li>
+        <li><a href="chat.html">IRC and Matrix</a></li>
+        <li><a href="meet.html">Conferencing</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>The federation</h2>
+      <ul>
+        <li><a href="hardware.html">Published specifications</a></li>
+        <li><a href="privacy.html">What is never kept</a></li>
+        <li><a href="about.html">About Telephony</a></li>
+        <li><a href="../../register/links.html">Public Register of the Republic</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap">
+    <p>Telephony holds a licence the Republic grants and is audited in its use of common resources. It exercises no public authority and represents no organ.</p>
+  </div>
+</footer>
+</body>
+</html>

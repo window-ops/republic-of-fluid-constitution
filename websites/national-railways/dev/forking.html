@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Forking the standard &middot; National Railways Federation</title>
+<meta name="description" content="What a fork of the Dubrazec standard must hold for its cards to be read across the Bloc, what belongs to the fork, and the four steps to standing one up.">
+<meta name="theme-color" content="#0b4ea2">
+<link rel="stylesheet" href="../site.css">
+<link rel="icon" href="../../../assets/flag.png">
+</head>
+<body>
+<a class="skip" href="#main">Skip to the content</a>
+
+<header class="head">
+  <div class="wrap">
+    <svg class="mark" viewBox="0 0 48 48" role="img" aria-label="Emblem of the National Railways Federation">
+      <rect width="48" height="48" fill="#0b4ea2"></rect>
+      <path d="M0 20 Q6 14 12 20 T24 20 T36 20 T48 20 V30 H0 Z" fill="#ffffff"></path>
+      <rect x="0" y="30" width="48" height="3" fill="#08376f"></rect>
+      <rect x="14" y="34" width="3" height="14" fill="#ffffff"></rect>
+      <rect x="31" y="34" width="3" height="14" fill="#ffffff"></rect>
+    </svg>
+    <span>
+      <p class="wordmark"><a href="../index.html">National Railways Federation</a></p>
+      <p class="standfirst">Branch federation of the railway operating cooperatives</p>
+    </span>
+  </div>
+</header>
+<div class="band" role="presentation"></div>
+
+<nav class="nav" aria-label="Sections of this site">
+  <div class="wrap">
+    <a class="navtop" href="../index.html">Front</a>
+    <details class="grp">
+      <summary>Travelling</summary>
+      <ul>
+        <li><a href="../network.html">Network and routes</a></li>
+        <li><a href="../stations.html">Stations and equipment</a></li>
+        <li><a href="../night.html">Night trains and sleepers</a></li>
+        <li><a href="../access.html">Access and assistance</a></li>
+        <li><a href="../carriage.html">Conditions of carriage</a></li>
+      </ul>
+    </details>
+    <details class="grp">
+      <summary>Systems</summary>
+      <ul>
+        <li><a href="../app.html">The application</a></li>
+        <li><a href="../card.html">CARD-ROM</a></li>
+        <li><a href="../comparison.html">Comparison of card standards</a></li>
+      </ul>
+    </details>
+    <details class="grp">
+      <summary>Federation</summary>
+      <ul>
+        <li><a href="../cooperatives.html">Member cooperatives</a></li>
+        <li><a href="../about.html">About the federation</a></li>
+      </ul>
+    </details>
+    <a class="navtop" href="./" aria-current="page">Developers</a>
+  </div>
+</nav>
+
+<main id="main">
+
+<section class="opening">
+  <div class="wrap">
+    <p class="eyebrow">Taking the standard elsewhere</p>
+    <h1>Forking Dubrazec</h1>
+    <p class="lede">A transit system anywhere may build cards and readers to it, add the modules it needs, and change what it likes. This page sets out what a fork can change while its cards still read at the gates of the Bloc, and what it has to change if it wants to hold value.</p>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <p class="eyebrow">The line between the two</p>
+    <h2>What must hold, and what is yours</h2>
+  </div>
+  <div class="wrap">
+    <div class="tablewrap">
+      <table>
+        <caption>Interoperability with the gates of the Bloc</caption>
+        <thead><tr><th scope="col">Element</th><th scope="col">Must hold</th><th scope="col">Note</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">ROM identity block</th><td>yes</td><td>256 bytes, the same fields, signed by an issuer key a Bloc gate can obtain.</td></tr>
+          <tr><th scope="row">Record structure</th><td>yes</td><td>32 bytes, the same offsets. A gate elsewhere has to be able to count your records.</td></tr>
+          <tr><th scope="row">SELECT and READ_ID</th><td>yes</td><td>Answerable without any key, so any reader can learn what the card is.</td></tr>
+          <tr><th scope="row">Frame layout and CRC</th><td>yes</td><td>Otherwise nothing above it can be parsed.</td></tr>
+          <tr><th scope="row">AUTH and the record seal</th><td>yes</td><td>AES-128 as specified. Your network key stays yours.</td></tr>
+          <tr><th scope="row">EEPROM system area</th><td>first 32 bytes</td><td>Language, script, type size, sound and the assistance flag, so a traveller's settings survive a frontier.</td></tr>
+          <tr><th scope="row">EEPROM beyond that</th><td>no</td><td>Yours. The holder's area is a Fluid decision and not part of the standard.</td></tr>
+          <tr><th scope="row">Fare and purse modules</th><td>no</td><td>Compile them in and your cards still read here. What is charged is your business.</td></tr>
+          <tr><th scope="row">NAND size and layout</th><td>no</td><td>2 MiB is the Fluid choice. A smaller ring works if it holds the period you publish.</td></tr>
+          <tr><th scope="row">Physical card</th><td>no</td><td>Format, artwork, hologram and the contact pads are yours. The coil figures are fixed by ISO 14443.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <p class="eyebrow">Four steps</p>
+    <h2>Making a valid fork</h2>
+  </div>
+  <div class="wrap">
+    <ol class="steps">
+      <li>
+        <h3>Take the trees</h3>
+        <p>Clone from <span class="host">source.nrf.rof/cardrom-driver</span>, <span class="host">source.nrf.rof/gate-firmware</span> and <span class="host">source.nrf.rof/conformance</span>, or take the tarballs from the <a href="./">front of this section</a>. Nothing has to be signed and nobody has to be told.</p>
+      </li>
+      <li>
+        <h3>Choose your flags</h3>
+        <p>The <a href="build-flags.html">build flags</a> decide what your build contains, and they sit in <span class="host">cardrom_config.h</span> at the root of the firmware tree. A fare-taking network turns on two flags that are off here and accepts the memory cost.</p>
+      </li>
+      <li>
+        <h3>Mint an issuer key</h3>
+        <p>Use Ed25519. Publish the public half where a foreign reader can fetch it, and send it to <span class="host">keys@nrf.rof</span> if you want cards read here. What arrives is published at <span class="host">keys.nrf.rof/issuers</span>, which every gate in the Republic refreshes every night.</p>
+      </li>
+      <li>
+        <h3>Run the suite</h3>
+        <p>Run the test vectors, the twelve commands, the status words, the deadline, and a fuzz pass over the frame parser against your build with <code class="inline">python3 -m conformance --target ./build</code>, and publish the output beside your specification to claim conformance. Results sent to <span class="host">keys@nrf.rof</span> are listed at <span class="host">keys.nrf.rof/conformant</span>.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <p class="eyebrow">Questions that come up</p>
+    <h2>Four answers</h2>
+  </div>
+  <div class="wrap">
+    <ul class="plates two">
+      <li>
+        <h3>Can a fork be sold?</h3>
+        <p>Yes. There is no patent, no licence and no field-of-use limit, and a private operator may build and sell cards and readers to its modified standard.</p>
+      </li>
+      <li>
+        <h3>Will Fluid gates take a fare card?</h3>
+        <p>They will read it and record the journey. They will not touch the purse, because the code that would do it is not compiled into any reader here.</p>
+      </li>
+      <li>
+        <h3>What about the name?</h3>
+        <p>The standard is named after the building it was signed in. You can use it for a build that passes the suite.</p>
+      </li>
+      <li>
+        <h3>Who decides a revision?</h3>
+        <p>The three networks of the Bloc, together, in public. A fork is welcome at that table and is not bound by what it decides.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+</main>
+
+<div class="band-foot" role="presentation"></div>
+<footer class="foot">
+  <div class="wrap">
+    <ul class="footlinks">
+      <li><a href="../index.html">Front</a></li>
+      <li><a href="../network.html">Network</a></li>
+      <li><a href="../app.html">Application</a></li>
+      <li><a href="../card.html">CARD-ROM</a></li>
+      <li><a href="./">Developers</a></li>
+      <li><a href="../about.html">About</a></li>
+      <li><a href="../../podnik/">Podnik</a></li>
+      <li><a href="../../../register/links.html">Public Register</a></li>
+    </ul>
+    <p class="standing">A branch federation of the railway operating cooperatives, constituted under Article 89. It exercises no public authority and represents no organ. Its accounts, its minutes and its yearly reviews are public.</p>
+  </div>
+</footer>
+<script src="../site.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Conformance test vectors - Meteorological Cooperative</title>
+<meta name="description" content="The five vector families, the presentation tests a device must pass, the four events the cooperative misestimated, and how the set gates a merge.">
+<link rel="stylesheet" href="../site.css">
+<link rel="icon" href="../../../assets/flag.png">
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <span class="marque"><svg viewBox="0 0 58 58" role="img" aria-label="Emblem of the Meteorological Cooperative">
+<circle cx="29" cy="31" r="20" fill="none" stroke="#9a6516" stroke-width="2.4"/>
+<circle cx="29" cy="31" r="12.5" fill="none" stroke="#9a6516" stroke-width="1.6"/>
+<circle cx="29" cy="31" r="5" fill="none" stroke="#9a6516" stroke-width="1.6"/>
+<path d="M29 31 L29 9" stroke="#5f3d0c" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M29 12 L38 15" stroke="#5f3d0c" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M29 18 L36 20.5" stroke="#5f3d0c" stroke-width="2.4" stroke-linecap="round"/>
+<circle cx="29" cy="31" r="2" fill="#5f3d0c"/>
+</svg></span>
+    <span class="idblock">
+      <p class="coopname"><a href="../index.html">Meteorological Cooperative of the Republic</a></p>
+      <p class="basis">Weather, climate, seismicity, landslide and flood &middot; mandate held under the organic law on observation and warning</p>
+    </span>
+  </div>
+</header>
+
+<nav class="mainnav" aria-label="Sections of this site">
+  <div class="wrap">
+    <a class="navtop" href="../index.html">Home</a>
+    <details class="grp">
+      <summary>Weather and climate</summary>
+      <ul>
+        <li><a href="../climate.html">Climate of the Republic</a></li>
+        <li><a href="../change.html">Observed change</a></li>
+        <li><a href="../forecasting.html">How a forecast is made</a></li>
+        <li class="has"><details class="sub">
+          <summary><a href="../emissions.html">Emissions position</a></summary>
+          <ul>
+            <li><a href="../periphery.html">Harm to the periphery</a></li>
+          </ul>
+        </details></li>
+      </ul>
+    </details>
+    <details class="grp">
+      <summary>Warning systems</summary>
+      <ul>
+        <li><a href="../rationale.html">Why these systems exist</a></li>
+        <li><a href="../seismicity.html">Seismicity of the Republic</a></li>
+        <li class="has"><details class="sub">
+          <summary><a href="../kjs.html">REP-KJS, earthquake</a></summary>
+          <ul>
+            <li><a href="../scale.html">REP intensity scale</a></li>
+            <li><a href="../kjs-method.html">Detection, latency and limits</a></li>
+          </ul>
+        </details></li>
+        <li><a href="../lew.html">REP-LEW, landslide</a></li>
+        <li><a href="../few.html">REP-FEW, flood</a></li>
+        <li><a href="../devices.html">Certified devices and RQUAK</a></li>
+      </ul>
+    </details>
+    <a class="navtop" href="../species.html">Species catalogue</a>
+    <a class="navtop" href="../network.html">Observing network</a>
+    <details class="grp">
+      <summary>Developers</summary>
+      <ul>
+        <li><a href="../dev/index.html">Specifications and source</a></li>
+        <li><a href="../dev/wire-format.html">Warning wire format</a></li>
+        <li><a href="../dev/vectors.html">Conformance test vectors</a></li>
+        <li><a href="../dev/hardware.html">Sensor and station hardware</a></li>
+        <li><a href="../dev/forking.html">Porting to another country</a></li>
+      </ul>
+    </details>
+    <a class="navtop" href="../about.html">About the cooperative</a>
+  </div>
+</nav>
+
+<main id="main" class="sheet">
+<p class="crumb"><a href="../index.html">Meteorological Cooperative</a> &rsaquo; <a href="index.html">Developers</a> &rsaquo; Conformance test vectors</p>
+<h1 class="page-title">Conformance test vectors</h1>
+<p class="lede">A vector is a recorded or synthetic input together with the output an implementation should produce from it. The set covers detection, estimation, message encoding, decoding and device presentation. It is the same set the cooperative runs against its own code before any change reaches the warning path, and it is what a device is tested against for certification.</p>
+
+<ul class="figures">
+  <li><b>1,412</b> vectors</li>
+  <li><b>5</b> families</li>
+  <li><b>40</b> minutes for the whole set</li>
+  <li><b>4</b> events the cooperative got wrong</li>
+</ul>
+
+<div class="facts">
+  <div class="row"><span class="k">Repository</span><span class="v"><span class="host">src.meteo.rof/rep-vectors</span>, about 4 GB</span></div>
+  <div class="row"><span class="k">Vectors</span><span class="v">1,412 across five families</span></div>
+  <div class="row"><span class="k">Real events</span><span class="v">Every located event above magnitude 3.0 since 1962 with station records</span></div>
+  <div class="row"><span class="k">Run time</span><span class="v">About 40 minutes on one ordinary machine for the whole set</span></div>
+  <div class="row"><span class="k">Tolerance</span><span class="v">Stated per vector; exact match required for encoding and decoding</span></div>
+  <div class="row"><span class="k">Certification</span><span class="v">A device passes the presentation family; a full implementation passes all five</span></div>
+</div>
+
+<h2>The five families</h2>
+<div class="tablewrap">
+<table class="data">
+<caption>Vector families</caption>
+<thead>
+<tr><th>Family</th><th class="num">Vectors</th><th>Input</th><th>Expected output</th><th class="num">Tolerance</th></tr>
+</thead>
+<tbody>
+<tr><td>Detection</td><td class="num">318</td><td>Raw three-component station records</td><td>Trigger time at each station</td><td class="num">&plusmn;0.1 s</td></tr>
+<tr><td>Estimation</td><td class="num">318</td><td>Trigger times and the first seconds of P record</td><td>Location, depth, magnitude</td><td class="num">&plusmn;5 km, &plusmn;3 km, &plusmn;0.2</td></tr>
+<tr><td>Intensity</td><td class="num">406</td><td>Event parameters and receiving location</td><td>Continuous intensity and whole step</td><td class="num">&plusmn;0.05 step</td></tr>
+<tr><td>Encoding</td><td class="num">204</td><td>Message contents as a structure</td><td>The exact bytes of the frame</td><td class="num">Exact</td></tr>
+<tr><td>Presentation</td><td class="num">166</td><td>Frames on the wire, in order and out of order</td><td>What a device shows, sounds and withdraws</td><td class="num">Exact, with timing limits</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2>What the presentation family checks</h2>
+<div class="prose">
+<p>This is the family a device must pass for certification, and it exercises every rule in the <a href="wire-format.html">wire format</a>. A test harness plays frames at a device and observes what the device does.</p>
+</div>
+
+<div class="tablewrap">
+<table class="data">
+<caption>Selected presentation vectors</caption>
+<thead>
+<tr><th>Vector</th><th>Input</th><th>Required result</th></tr>
+</thead>
+<tbody>
+<tr><td><code>pres-001</code></td><td>Segment 1, REP 4, onset 22 s</td><td>Tone, message and falling onset count within 400 ms</td></tr>
+<tr><td><code>pres-014</code></td><td>Same frame delivered three times on three paths</td><td>One presentation; duplicates discarded silently</td></tr>
+<tr><td><code>pres-027</code></td><td>Segment 3 arriving before segment 2</td><td>Segment 3 presented; segment 2 discarded on arrival</td></tr>
+<tr><td><code>pres-039</code></td><td>Warning followed by a cancellation 12 s later</td><td>Presentation withdrawn within 400 ms; reason stated</td></tr>
+<tr><td><code>pres-051</code></td><td>Frame with the test flag set</td><td>Presented as a test, distinguishable by sound and wording</td></tr>
+<tr><td><code>pres-068</code></td><td>Frame with a bad signature</td><td>Nothing presented; failure recorded</td></tr>
+<tr><td><code>pres-072</code></td><td>Version 4 frame, unknown to the decoder</td><td>Known fields presented; unknown fields ignored</td></tr>
+<tr><td><code>pres-089</code></td><td>Frame arriving 40 s after its expiry</td><td>Age stated; message never presented as current</td></tr>
+<tr><td><code>pres-101</code></td><td>Device muted, screen off, in low power</td><td>Wakes, sounds at the fixed level, presents within 400 ms</td></tr>
+<tr><td><code>pres-118</code></td><td>Revision lowering REP 6 to REP 4</td><td>Values replaced; the revision stated in the presentation</td></tr>
+<tr><td><code>pres-133</code></td><td>Event with Aporean areas flagged foreign</td><td>Domestic areas first, foreign areas after and marked as beyond the frontier</td></tr>
+<tr><td><code>pres-147</code></td><td>Onset already negative on arrival</td><td>States that shaking has reached the location</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2>The four events the cooperative got wrong</h2>
+<div class="prose">
+<p>Four events since 2021 produced an intensity estimate two steps or more from the value observed. All four are in the vector set with the estimate the system made and the value that was afterwards measured. An implementation that reproduces the correct answer on easy events and the same error on these has learned nothing.</p>
+</div>
+
+<div class="tablewrap">
+<table class="data">
+<caption>The misestimated events, as vectors</caption>
+<thead>
+<tr><th>Vector</th><th>Event</th><th class="num">Estimated</th><th class="num">Observed</th><th>Cause</th></tr>
+</thead>
+<tbody>
+<tr><td><code>err-2022-06</code></td><td>June 2022, Belvacius margin</td><td class="num">REP 6</td><td class="num">REP 4</td><td>Depth estimated at 8 km against an actual 26 km</td></tr>
+<tr><td><code>err-2023-03</code></td><td>March 2023, Ravelluri</td><td class="num">REP 3</td><td class="num">REP 5</td><td>Soft lagoon sediment amplified the motion beyond the model</td></tr>
+<tr><td><code>err-2024-11</code></td><td>November 2024, Belvacius margin</td><td class="num">REP 5</td><td class="num">REP 3</td><td>Depth again, from a poor first station geometry</td></tr>
+<tr><td><code>err-2025-04</code></td><td>April 2025, Ravelluri</td><td class="num">REP 3</td><td class="num">REP 5</td><td>Same amplification; the soil map for the sub-region was revised afterwards</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="box limit">
+<span class="lbl">What the four have in common</span>
+<p>Two are depth errors and two are ground amplification errors, and both pairs remain open problems. Depth from the first three or four arrivals is unstable when the stations lie on one side of the epicentre. Amplification over soft sediment depends on a soil map whose resolution is coarser than the variation in the ground.</p>
+<p>An implementation is expected to fail some of these vectors. The expected outputs record what was observed, and reproducing them requires information the system did not hold at the moment of issue. They are published so that anyone working on either problem has the cases to work against.</p>
+</div>
+
+<h2>Synthetic vectors</h2>
+<div class="prose">
+<p>Recorded events cover what has occurred in the Republic, which stops at magnitude 6.4 and at REP 8. Synthetic vectors cover the rest: ruptures to magnitude 7.5, events at REP 9 and REP 10, shallow events beneath a settlement, two events forty seconds apart, and an event on the Aporean side of the boundary.</p>
+<p>The synthetic set also holds the failure cases. A station reporting nonsense, a station clock 400 ms out, three stations offline, the issuing node losing contact with half the network, and a frame injected with a valid structure and an invalid signature.</p>
+</div>
+
+<h2>Running the set</h2>
+<pre><code>git clone src.meteo.rof/rep-vectors
+cd rep-vectors
+./run --implementation /path/to/yours --family all
+
+# a single family, with the report written out
+./run --implementation /path/to/yours --family presentation --report report.txt
+
+# the four misestimated events alone
+./run --implementation /path/to/yours --select err-*</code></pre>
+
+<div class="prose">
+<p>The runner prints one line per vector with the expected and actual values and the margin by which each passed or failed. Its exit status is the count of failures. Nothing in the harness communicates with the cooperative, and a device may be tested without notifying anybody.</p>
+<p>Inside the cooperative the set gates the warning path. A change to any tree that touches detection, estimation, encoding or presentation runs the whole set before it may be merged, and a failure blocks the merge. Where a vector is expected to fail, the expectation is recorded in the tree with the reference of the defect it belongs to, and an unexplained failure blocks the merge regardless.</p>
+</div>
+
+<h2>Certification testing</h2>
+<div class="prose">
+<p>Certification consists of running the presentation family against the physical device, with the harness driving each of the five delivery paths in turn. The cooperative performs the test, and the results are published with the certificate, including the margin on the timing limits.</p>
+<p>Any person may run the same set and reach their own conclusion. The harness, the vectors and the test procedure are public, and the cooperative holds no monopoly on the assessment.</p>
+</div>
+
+<h2>See also</h2>
+<div class="prose">
+<ul>
+<li><a href="wire-format.html">Warning wire format</a>, the rules these vectors exercise</li>
+<li><a href="../devices.html">Certified devices and RQUAK</a></li>
+<li><a href="../kjs-method.html">Detection, latency and limits</a>, where the four errors are described</li>
+</ul>
+</div>
+
+</main>
+
+<footer class="coopfoot">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <h4>Weather and climate</h4>
+        <ul>
+          <li><a href="../climate.html">Climate of the Republic</a></li>
+          <li><a href="../change.html">Observed change</a></li>
+          <li><a href="../forecasting.html">How a forecast is made</a></li>
+          <li><a href="../emissions.html">Emissions position</a></li>
+          <li><a href="../periphery.html">Harm to the periphery</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Warning systems</h4>
+        <ul>
+          <li><a href="../rationale.html">Why these systems exist</a></li>
+          <li><a href="../seismicity.html">Seismicity of the Republic</a></li>
+          <li><a href="../kjs.html">REP-KJS, earthquake</a></li>
+          <li><a href="../scale.html">REP intensity scale</a></li>
+          <li><a href="../kjs-method.html">Detection, latency and limits</a></li>
+          <li><a href="../lew.html">REP-LEW, landslide</a></li>
+          <li><a href="../few.html">REP-FEW, flood</a></li>
+          <li><a href="../devices.html">Certified devices and RQUAK</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Record and network</h4>
+        <ul>
+          <li><a href="../species.html">Species catalogue</a></li>
+          <li><a href="../network.html">Observing network</a></li>
+          <li><a href="../about.html">About the cooperative</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Developers</h4>
+        <ul>
+          <li><a href="../dev/index.html">Specifications and licence</a></li>
+          <li><a href="../dev/wire-format.html">Warning wire format</a></li>
+          <li><a href="../dev/vectors.html">Conformance test vectors</a></li>
+          <li><a href="../dev/hardware.html">Sensor and station hardware</a></li>
+          <li><a href="../dev/forking.html">Porting to another country</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="basis">Published by the Meteorological Cooperative of the Republic under the organic law on observation and warning. Free of charge, without licence, registration or account. No external resource is loaded by this page. See also the <a href="../../../index.html">Republic of Fluid</a> and the <a href="../../../register/">Public Register</a>.</p>
+  </div>
+</footer>
+
+<script src="../site.js"></script>
+</body>
+</html>

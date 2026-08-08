@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shipment register &middot; Maasdelta Concentrates B.V.</title>
+<meta name="description" content="Consignments of uranium concentrate handled by Maasdelta, published under the disclosure condition of the licence.">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to the content</a>
+
+<header class="head">
+  <div class="wrap">
+    <p class="co"><a href="index.html"><b>MAASDELTA</b> <span>Concentrates B.V.</span></a></p>
+  </div>
+</header>
+
+<nav class="nav" aria-label="Sections of this site">
+  <div class="wrap">
+    <a href="index.html">Overview</a>
+    <a href="concentrate.html">The concentrate</a>
+    <a href="shipments.html">Shipment register</a>
+    <a href="licence.html">Licence</a>
+    <a href="disclosure.html">Disclosure</a>
+    <a href="company.html">The company</a>
+  </div>
+</nav>
+
+<main id="main" class="sheet">
+
+<p class="kicker">Disclosure &middot; published under the licence</p>
+<h1 class="title">Shipment register</h1>
+<p class="lede">The company began trading on 7 July 2026, the day the Constitution came into force, and the register starts there. Every consignment handled under the licence appears below, with its origin, mass, uranium content, destination and declared end use. The register is published because the licence requires it, and it is kept for ten years after the last entry.</p>
+
+<div class="controls" id="sh-controls">
+  <div class="field">
+    <label for="sq">Search</label>
+    <input id="sq" type="search" data-filter="search" placeholder="Lot, vessel or destination">
+  </div>
+  <div class="field">
+    <label for="sd">Destination</label>
+    <select id="sd" data-filter="dest">
+      <option value="">All destinations</option>
+      <option value="eu">European Union</option>
+      <option value="other">Other states</option>
+    </select>
+  </div>
+  <div class="field">
+    <label for="ss">Status</label>
+    <select id="ss" data-filter="status">
+      <option value="">All</option>
+      <option value="delivered">Delivered</option>
+      <option value="transit">In transit</option>
+      <option value="held">Held</option>
+    </select>
+  </div>
+  <button class="act" id="sh-reset" type="button">Clear</button>
+</div>
+<p class="count"><span id="sh-count"></span> &middot; <span id="sh-mass"></span></p>
+
+<div class="scroll">
+<table class="tbl">
+  <caption>Every consignment since the licence took effect on 7 July 2026. Mass is dry mass of concentrate.</caption>
+  <thead><tr><th>Lot</th><th>Loaded</th><th class="num">Drums</th><th class="num">Mass</th><th class="num">Content</th><th>Destination</th><th>End use</th><th>Status</th></tr></thead>
+  <tbody id="sh-rows">
+    <tr data-dest="eu" data-status="transit" data-mass="86.4" data-search="LIN-2026-014 Kelvaqui converter France European Union civil power">
+      <td class="mono">LIN-2026-014</td><td>2026-09-22</td><td class="num">212</td><td class="num">86.4 t</td><td class="num">85.1%</td>
+      <td>Converter, France</td><td>Civil power</td><td><span class="st open">In transit</span></td>
+    </tr>
+    <tr data-dest="eu" data-status="held" data-mass="41.2" data-search="LIN-2026-011 held molybdenum rejection umpire dispute third split">
+      <td class="mono">LIN-2026-011</td><td>2026-09-04</td><td class="num">101</td><td class="num">41.2 t</td><td class="num">81.0%</td>
+      <td>Converter, France</td><td>Civil power</td><td><span class="st no">Held</span></td>
+    </tr>
+    <tr data-dest="other" data-status="delivered" data-mass="120.5" data-search="LIN-2026-006 Ningbo China utility civil power">
+      <td class="mono">LIN-2026-006</td><td>2026-08-13</td><td class="num">295</td><td class="num">120.5 t</td><td class="num">84.6%</td>
+      <td>Utility, China</td><td>Civil power</td><td><span class="st done">Delivered</span></td>
+    </tr>
+    <tr data-dest="eu" data-status="delivered" data-mass="93.8" data-search="LIN-2026-001 Sillamae Estonia converter European Union civil power first cargo">
+      <td class="mono">LIN-2026-001</td><td>2026-07-24</td><td class="num">230</td><td class="num">93.8 t</td><td class="num">83.8%</td>
+      <td>Converter, Estonia</td><td>Civil power</td><td><span class="st done">Delivered</span></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<p class="empty" id="sh-empty" hidden>No consignment matches those terms.</p>
+
+<h2 style="margin-top:0">The held consignment</h2>
+<p>Lot LIN-2026-011 measured above the molybdenum limit at the laboratory the buyer named, and below it at the mill. The sealed third part of the sample has gone to the laboratory both parties named in the contract, and the lot stands in the bonded store at Lindoma until that result comes back. Neither party may move it in the meantime.</p>
+<p>The entry stays in the register whatever the outcome. A lot sent back to the mill is recorded as returned, with the ground stated.</p>
+
+<div class="note lic">
+  <h3>Why this register is public</h3>
+  <p>The licence attaches a disclosure duty stricter than the one borne by the cooperatives of the Republic. It reaches the volumes, the counterparties, the destinations and the declared end use of everything the company handles, and it reaches the ownership of the company itself.</p>
+  <p>The Audit Office may require the underlying documents at any time and does so at intervals it fixes. The Office of Democratic Integrity holds the ownership declarations. Neither needs the company's consent for either.</p>
+</div>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div>
+      <h2>Trade</h2>
+      <p><a href="concentrate.html">Product specification</a></p>
+      <p><a href="shipments.html">Shipment register</a></p>
+      <p><a href="company.html#contract">Contract terms</a></p>
+    </div>
+    <div>
+      <h2>Licence</h2>
+      <p><a href="licence.html">Conditions in force</a></p>
+      <p><a href="disclosure.html">Disclosure and reporting</a></p>
+      <p><a href="disclosure.html#disputes">Disputes and jurisdiction</a></p>
+    </div>
+    <div>
+      <h2>Registered office</h2>
+      <p>Waalhaven Oostzijde 41</p>
+      <p>3087 BM Rotterdam</p>
+      <p class="fine">Branch office at Lindoma, occupied under licence.</p>
+    </div>
+    <div>
+      <h2>Notice</h2>
+      <p class="fine">Maasdelta Concentrates B.V. is constituted under the law of the Netherlands. It is does not exercise any public function in the Republic of Fluid.</p>
+      <p class="fine">This page is published in the Republic under the disclosure condition of Licence RF-21/2026-09.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="site.js" defer></script>
+</body>
+</html>

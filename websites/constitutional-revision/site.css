@@ -1,0 +1,72 @@
+/* Office of Constitutional Revision - own skin over the shared frame.
+   The house style of the register it maintains: state blue, serif text,
+   and a coherence report set out as a list of defects found. */
+
+:root {
+  --accent:      #2f5680;
+  --accent-deep: #1d3a58;
+  --accent-soft: #dce6f0;
+  --accent-ink:  #ffffff;
+
+  --org-measure: 35rem;
+
+  --edge: #cdd8e3;
+}
+
+/* ---------- ground, masthead and navigation ---------- */
+
+body { background: #eaeef3; }
+
+.orghead { background: var(--f-paper); }
+.orghead .wrap { padding-top: 1.45rem; padding-bottom: 1.3rem; }
+.orghead .kicker { color: var(--f-ink-faint); }
+.orghead .orgname { font-size: 1.45rem; font-weight: 600; }
+
+.orgnav { background: var(--accent); }
+
+h2 {
+  font-weight: 600;
+  color: var(--accent-deep);
+  border-bottom: 1px solid var(--edge);
+  padding-bottom: .3rem;
+}
+
+.legal { background: var(--accent-soft); }
+
+/* ---------- coherence findings ---------- */
+
+.defects { margin: 1.1rem 0; }
+.defects article {
+  border: 1px solid var(--edge);
+  background: var(--f-paper);
+  padding: .9rem 1.05rem;
+  margin-bottom: .6rem;
+  border-left: 5px solid var(--accent);
+}
+.defects h3 { margin: 0 0 .2rem; font-size: 1rem; font-weight: 600; }
+.defects .kind {
+  font-family: var(--f-sans);
+  font-size: .72rem;
+  text-transform: uppercase;
+  letter-spacing: .09em;
+  color: var(--accent);
+  margin: 0 0 .35rem;
+}
+.defects p { margin: 0; font-size: .91rem; }
+.defects .unapplied { border-left-color: var(--f-ink-faint); }
+.defects .contradiction { border-left-color: var(--f-warn); }
+.defects .contradiction .kind { color: var(--f-warn); }
+
+/* ---------- editions of the text ---------- */
+
+.editions {
+  display: grid;
+  gap: .7rem;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  margin: 1.2rem 0;
+}
+.editions div { border: 1px solid var(--edge); background: var(--f-paper); padding: .8rem .95rem; }
+.editions h3 { margin: 0 0 .25rem; font-size: .95rem; font-family: var(--f-sans); }
+.editions p { margin: 0; font-size: .86rem; color: var(--f-ink-soft); max-width: none; }
+
+table.reg thead th { border-bottom-color: var(--accent); }

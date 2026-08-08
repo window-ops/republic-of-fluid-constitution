@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Catalogue &middot; External Currency Translation Cooperative</title>
+<meta name="description" content="What the cooperative can obtain abroad, the zone each seller sits in, and the mass and emissions each import carries.">
+<link rel="stylesheet" href="site.css">
+<link rel="icon" href="../../assets/flag.png">
+</head>
+<body>
+<a class="skip" href="#main">Skip to the content</a>
+
+<header class="head">
+  <div class="wrap">
+    <span class="badge"><svg viewBox="0 0 34 34" role="img" aria-label="Emblem of the cooperative">
+<path d="M4 9h9a4 4 0 0 1 4 4v8" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M30 25h-9a4 4 0 0 1-4-4v-8" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M17 2v3M17 9v3M17 22v3M17 29v3" stroke="#fff" stroke-width="2.4" stroke-linecap="round" opacity=".65"/>
+</svg></span>
+    <span>
+      <p class="name"><a href="index.html">External Currency Translation Cooperative</a></p>
+      <p class="licence">For external trade in the Republic</p>
+    </span>
+  </div>
+</header>
+
+<nav class="nav" aria-label="Sections of this site">
+  <div class="wrap">
+    <a href="index.html">Getting started</a>
+    <a href="accounts.html">Accounts and limits</a>
+    <a href="catalogue.html">Catalogue</a>
+    <a href="digital.html">Digital goods</a>
+    <a href="receiving.html">Bringing currency in</a>
+    <a href="about.html">About the cooperative</a>
+  </div>
+</nav>
+
+<main id="main" class="sheet">
+
+<p class="eyebrow">Catalogue</p>
+<h1 class="title">What the cooperative can obtain</h1>
+<p class="lede">The table below is only an example and does not represent the whole catalogue.</p>
+
+<div class="controls" id="cat-controls">
+  <div class="field">
+    <label for="cq">Search</label>
+    <input id="cq" type="search" data-filter="search" placeholder="Item or seller">
+  </div>
+  <div class="field">
+    <label for="cz">Zone</label>
+    <select id="cz" data-filter="zone">
+      <option value="">All zones</option>
+      <option value="euro">Euro area</option>
+      <option value="eea">EEA, other currency</option>
+      <option value="out">Outside the EEA</option>
+    </select>
+  </div>
+  <div class="field">
+    <label for="ck">Kind</label>
+    <select id="ck" data-filter="kind">
+      <option value="">All kinds</option>
+      <option value="repair">Repair parts</option>
+      <option value="device">Devices</option>
+      <option value="instrument">Instruments and reagents</option>
+      <option value="digital">Digital</option>
+      <option value="refused">Refused</option>
+    </select>
+  </div>
+  <button class="act" id="cat-reset" type="button">Clear</button>
+</div>
+<p class="count" id="cat-count"></p>
+
+<div class="scroll">
+<table class="tbl">
+  <thead><tr><th>Item</th><th>Seller and zone</th><th class="num">Price EUR</th><th class="num">Mass</th><th class="num">CO2e</th><th>Procedure</th></tr></thead>
+  <tbody id="cat-rows">
+    <tr data-zone="euro" data-kind="device" data-search="Fairphone 6 handset Netherlands euro area repairable">
+      <td>Fairphone 6 handset</td><td>Netherlands, euro area</td><td class="num">599.00</td><td class="num">0.21 kg</td><td class="num">41 kg</td>
+      <td><span class="tag easy">One step</span></td>
+    </tr>
+    <tr data-zone="euro" data-kind="repair" data-search="Fairphone battery module Netherlands euro area spare part">
+      <td>Fairphone battery module</td><td>Netherlands, euro area</td><td class="num">39.95</td><td class="num">0.05 kg</td><td class="num">4 kg</td>
+      <td><span class="tag easy">One step</span></td>
+    </tr>
+    <tr data-zone="euro" data-kind="repair" data-search="Fairphone display module Netherlands euro area screen spare">
+      <td>Fairphone display module</td><td>Netherlands, euro area</td><td class="num">89.95</td><td class="num">0.09 kg</td><td class="num">9 kg</td>
+      <td><span class="tag easy">One step</span></td>
+    </tr>
+    <tr data-zone="euro" data-kind="instrument" data-search="Spectrometer deuterium lamp Germany euro area laboratory">
+      <td>Spectrometer deuterium lamp</td><td>Germany, euro area</td><td class="num">412.00</td><td class="num">0.4 kg</td><td class="num">22 kg</td>
+      <td><span class="tag easy">One step</span></td>
+    </tr>
+    <tr data-zone="euro" data-kind="instrument" data-search="Reagent set for water analysis France euro area laboratory">
+      <td>Reagent set, water analysis</td><td>France, euro area</td><td class="num">168.40</td><td class="num">2.6 kg</td><td class="num">11 kg</td>
+      <td><span class="tag easy">One step</span></td>
+    </tr>
+    <tr data-zone="eea" data-kind="repair" data-search="Hearing aid receiver Denmark krone EEA other currency">
+      <td>Hearing aid receiver</td><td>Denmark, krone</td><td class="num">74.00</td><td class="num">0.01 kg</td><td class="num">2 kg</td>
+      <td><span class="tag extra">Cover step</span></td>
+    </tr>
+    <tr data-zone="eea" data-kind="repair" data-search="Bicycle hub gear internal Sweden krona EEA other currency">
+      <td>Bicycle hub gear, internal</td><td>Sweden, krona</td><td class="num">128.00</td><td class="num">1.7 kg</td><td class="num">14 kg</td>
+      <td><span class="tag extra">Cover step</span></td>
+    </tr>
+    <tr data-zone="eea" data-kind="instrument" data-search="Oscilloscope probe set Poland zloty EEA other currency">
+      <td>Oscilloscope probe set</td><td>Poland, zloty</td><td class="num">96.00</td><td class="num">0.6 kg</td><td class="num">5 kg</td>
+      <td><span class="tag extra">Cover step</span></td>
+    </tr>
+    <tr data-zone="out" data-kind="repair" data-search="Loom shuttle and reeds United Kingdom pound outside EEA">
+      <td>Loom shuttle and reeds</td><td>United Kingdom, pound</td><td class="num">210.00</td><td class="num">3.1 kg</td><td class="num">19 kg</td>
+      <td><span class="tag extra">Customs and screening</span></td>
+    </tr>
+    <tr data-zone="out" data-kind="instrument" data-search="Microscope objective Japan yen outside EEA optical">
+      <td>Microscope objective</td><td>Japan, yen</td><td class="num">1,340.00</td><td class="num">0.3 kg</td><td class="num">28 kg</td>
+      <td><span class="tag extra">Customs and screening</span></td>
+    </tr>
+    <tr data-zone="out" data-kind="digital" data-search="Game licence key Steam United States dollar outside EEA digital">
+      <td>Game licence, digital storefront</td><td>United States, dollar</td><td class="num">24.99</td><td class="num">0 kg</td><td class="num">1 kg</td>
+      <td><span class="tag extra">See <a href="digital.html">digital goods</a></span></td>
+    </tr>
+    <tr data-zone="euro" data-kind="digital" data-search="Academic journal single article access Netherlands euro area digital">
+      <td>Journal article, single access</td><td>Netherlands, euro area</td><td class="num">32.00</td><td class="num">0 kg</td><td class="num">0 kg</td>
+      <td><span class="tag easy">One step</span></td>
+    </tr>
+    <tr data-zone="euro" data-kind="refused" data-search="Electric kettle refused domestic equivalent unused capacity">
+      <td>Electric kettle</td><td>Germany, euro area</td><td class="num">-</td><td class="num">-</td><td class="num">-</td>
+      <td><span class="tag no">Refused: made at Ferrista</span></td>
+    </tr>
+    <tr data-zone="out" data-kind="refused" data-search="Private motor car refused intensity threshold common holding booking">
+      <td>Private motor car</td><td>Any zone</td><td class="num">-</td><td class="num">-</td><td class="num">-</td>
+      <td><span class="tag no">Refused: held in common, booked</span></td>
+    </tr>
+    <tr data-zone="euro" data-kind="refused" data-search="Sealed appliance no parts refused repair design service life">
+      <td>Sealed appliance, no parts sold</td><td>Ireland, euro area</td><td class="num">-</td><td class="num">-</td><td class="num">-</td>
+      <td><span class="tag no">Refused: cannot be repaired</span></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<p class="empty" id="cat-empty" hidden>No item matches those terms. Clear the filters, or ask at a teller for something the catalogue omits.</p>
+
+<h2>What the three procedures mean</h2>
+
+<div class="cards">
+  <article>
+    <h3>One step, euro area</h3>
+    <p>The cooperative pays the seller by ordinary transfer from Dublin. No currency is converted and no customs frontier is crossed. On average, it takes nine days to deliver a resouce after the request has been approved.</p>
+    <p class="fig">Handling 4.00 EUR</p>
+  </article>
+  <article>
+    <h3>Cover step, other EEA currency</h3>
+    <p>The seller wants krona, zloty or krone. The cooperative buys exactly the sum owed at the reference rate on the day, holds it for as long as the payment takes, and holds none of it afterwards.</p>
+    <p class="fig">Handling 4.00 EUR + three days</p>
+  </article>
+  <article>
+    <h3>Customs and screening, outside the EEA</h3>
+    <p>A customs declaration, a check against the sanctions lists binding an Irish payment institution, and tarrifs at the rate the goods attract. Four to seven weeks is usual.</p>
+    <p class="fig">Handling 4.00 EUR + tarrifs</p>
+  </article>
+</div>
+
+<h2>Grounds of refusal</h2>
+<p>Three grounds account for nearly every refusal:</p>
+<ul>
+  <li>Domestic capacity: Where the Republic makes the thing, or could make it with capacity standing idle, the import waits and the planning bodies are told that the need exists.</li>
+  <li>The intensity threshold: Goods heavy enough in energy, materials, land and emissions are held by the commune, the region or a public establishment and used by booking or rotation, so no personal allocation is possible whatever a member holds.</li>
+  <li>Repairability: A design without a minimum service life, without parts on sale and without a route of recovery fails the standard the Republic applies to its own production, and the same standard applies to imports.</li>
+</ul>
+
+<div class="note">
+  <p>A request for an item outside the catalogue may be made at any teller. It is examined on its own facts, and the answer usually comes within twenty-one days or less if possible.</p>
+</div>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div>
+      <h2>Members</h2>
+      <p><a href="accounts.html">Accounts and limits</a></p>
+      <p><a href="catalogue.html">Catalogue</a></p>
+      <p><a href="receiving.html">Bringing currency in</a></p>
+    </div>
+    <div>
+      <h2>The cooperative</h2>
+      <p><a href="about.html">Licence and legal basis</a></p>
+      <p><a href="about.html#governance">General meeting and board</a></p>
+      <p><a href="about.html#complaints">Complaints</a></p>
+    </div>
+    <div>
+      <h2>Teller locations</h2>
+      <p>At any communal office of the Republic</p>
+      <p>Port office, Lindoma quays</p>
+    </div>
+    <div>
+      <h2>Standing notice</h2>
+      <p class="fine">This is a cooperative with its own members and not an organ of the Republic.</p>
+      <p class="fine">Accounts, rates and ceilings are published each period, free of charge.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="site.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Why these systems exist - Meteorological Cooperative</title>
+<meta name="description" content="The reasoning behind REP-KJS, REP-LEW and REP-FEW, the debt owed to Japanese practice, the difficulty of extending early warning to landslide and flood, and why a warning that comes to nothing should be treated as real.">
+<link rel="stylesheet" href="site.css">
+<link rel="icon" href="../../assets/flag.png">
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <span class="marque"><svg viewBox="0 0 58 58" role="img" aria-label="Emblem of the Meteorological Cooperative">
+<circle cx="29" cy="31" r="20" fill="none" stroke="#9a6516" stroke-width="2.4"/>
+<circle cx="29" cy="31" r="12.5" fill="none" stroke="#9a6516" stroke-width="1.6"/>
+<circle cx="29" cy="31" r="5" fill="none" stroke="#9a6516" stroke-width="1.6"/>
+<path d="M29 31 L29 9" stroke="#5f3d0c" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M29 12 L38 15" stroke="#5f3d0c" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M29 18 L36 20.5" stroke="#5f3d0c" stroke-width="2.4" stroke-linecap="round"/>
+<circle cx="29" cy="31" r="2" fill="#5f3d0c"/>
+</svg></span>
+    <span class="idblock">
+      <p class="coopname"><a href="index.html">Meteorological Cooperative of the Republic</a></p>
+      <p class="basis">Weather, climate, seismicity, landslide and flood &middot; mandate held under the organic law on observation and warning</p>
+    </span>
+  </div>
+</header>
+
+<nav class="mainnav" aria-label="Sections of this site">
+  <div class="wrap">
+    <a class="navtop" href="index.html">Home</a>
+    <details class="grp">
+      <summary>Weather and climate</summary>
+      <ul>
+        <li><a href="climate.html">Climate of the Republic</a></li>
+        <li><a href="change.html">Observed change</a></li>
+        <li><a href="forecasting.html">How a forecast is made</a></li>
+        <li class="has"><details class="sub">
+          <summary><a href="emissions.html">Emissions position</a></summary>
+          <ul>
+            <li><a href="periphery.html">Harm to the periphery</a></li>
+          </ul>
+        </details></li>
+      </ul>
+    </details>
+    <details class="grp">
+      <summary>Warning systems</summary>
+      <ul>
+        <li><a href="rationale.html">Why these systems exist</a></li>
+        <li><a href="seismicity.html">Seismicity of the Republic</a></li>
+        <li class="has"><details class="sub">
+          <summary><a href="kjs.html">REP-KJS, earthquake</a></summary>
+          <ul>
+            <li><a href="scale.html">REP intensity scale</a></li>
+            <li><a href="kjs-method.html">Detection, latency and limits</a></li>
+          </ul>
+        </details></li>
+        <li><a href="lew.html">REP-LEW, landslide</a></li>
+        <li><a href="few.html">REP-FEW, flood</a></li>
+        <li><a href="devices.html">Certified devices and RQUAK</a></li>
+      </ul>
+    </details>
+    <a class="navtop" href="species.html">Species catalogue</a>
+    <a class="navtop" href="network.html">Observing network</a>
+    <details class="grp">
+      <summary>Developers</summary>
+      <ul>
+        <li><a href="dev/index.html">Specifications and source</a></li>
+        <li><a href="dev/wire-format.html">Warning wire format</a></li>
+        <li><a href="dev/vectors.html">Conformance test vectors</a></li>
+        <li><a href="dev/hardware.html">Sensor and station hardware</a></li>
+        <li><a href="dev/forking.html">Porting to another country</a></li>
+      </ul>
+    </details>
+    <a class="navtop" href="about.html">About the cooperative</a>
+  </div>
+</nav>
+
+<main id="main" class="sheet">
+<p class="crumb"><a href="index.html">Meteorological Cooperative</a> &rsaquo; Warning systems &rsaquo; Why these systems exist</p>
+<h1 class="page-title">Why these systems exist</h1>
+<p class="lede">The Republic has three warning systems for hazards that are, by international standards, rare and mild. This page sets out the reasoning that produced them, the debt owed to the Japanese arrangements from which the earthquake system is derived, the difficulty of extending the same idea to landslide and flood, and the request the cooperative makes of the public about warnings that come to nothing.</p>
+
+<h2>The case that was made</h2>
+<div class="prose">
+<p>The proposal reached the planning organs in 2019, some months after an event of magnitude 5.2 beneath the Belvacius hills reached REP 4 at Corcina and was felt in fourteen sub-regions. Nobody was injured. What the event exposed was the absence of any arrangement at all: no notice reached anybody, no train braked, no lift opened at a landing, and the first public information followed some forty minutes later.</p>
+<p>The argument against building anything ran as follows. Damaging earthquakes occur here roughly once in three generations, damaging landslides affect a handful of dwellings a year, and serious flooding had struck once in living memory. Resources spent on warning are resources unavailable to the renovation programme, to restoration, or to the many obligations the ecological budgets impose.</p>
+<p>The argument that prevailed rested on three points. Seconds of notice reduce injury by a large factor wherever such systems have been measured. The material and labour the systems consume are small in relation to what they protect, the seismic network having existed already for other purposes. And the rarity of the hazard is itself part of the problem, since a population that has never felt a strong earthquake has no practised response to one.</p>
+</div>
+
+<h2>The debt to Japan</h2>
+<div class="prose">
+<p>Japan operates the most developed earthquake warning system in the world, and REP-KJS is derived from it in substance, in method and in name. The cooperative states this openly, since the alternative would be to present borrowed engineering as invention.</p>
+</div>
+
+<div class="tablewrap">
+<table class="data">
+<caption>What was taken and what was altered</caption>
+<thead>
+<tr><th>Element</th><th>Japanese practice</th><th>As adopted here</th></tr>
+</thead>
+<tbody>
+<tr><td>Name</td><td>Kinkyu jishin sokuho, the emergency earthquake bulletin</td><td>Taken directly; abbreviated to KJS and used as REP-KJS</td></tr>
+<tr><td>Physical method</td><td>Detect the P wave, estimate the event, broadcast ahead of the S wave</td><td>Taken without change</td></tr>
+<tr><td>Intensity scale</td><td>Shindo, ten steps with suffixes at 5 and 6</td><td>Expanded into ten whole numbers; the correspondence is exact and reversible</td></tr>
+<tr><td>Delivery</td><td>Flat recorded voice, fixed item order, two rising tones</td><td>Taken, with the tones altered slightly and the item order fixed by the same principle</td></tr>
+<tr><td>Message length</td><td>Short; the schooling was done years earlier</td><td>Long; the broadcast performs the schooling as well</td></tr>
+<tr><td>Targeting</td><td>Differentiated by region</td><td>Undifferentiated; the whole territory receives one broadcast with every sub-region stated in it</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="prose">
+<p>The two alterations follow from the same fact. In Japan the public understands what a warning means before it arrives, so four words suffice. In the Republic a resident may live a decade without feeling an earthquake, so the broadcast states the depth, the magnitude, the scale equivalents, the meaning of the step and the whole national distribution. The length is a consequence of rarity.</p>
+</div>
+
+<h2>Extending the idea to landslide and flood</h2>
+<div class="prose">
+<p>Japan warns for landslide and for flood as well, and the cooperative took the concept from there. Building the systems took considerably longer than the earthquake system did, because the physics differs.</p>
+<p>An earthquake warning obtains its lead time for free. The P wave outruns the S wave, and a message outruns both, so the interval exists whether or not anybody models the ground. Detection is the whole of the problem, and detection is a solved problem.</p>
+<p>Landslide and flood offer no such shortcut. Rain that has already fallen produces a slide or a flood some hours later, and the interval between the two exists only if somebody can compute what the rainfall will do. That requires a model of every catchment and every slope in the territory: gradients, soils, drainage, antecedent wetness, channel capacity, the state of a dune barrier. None of it could be borrowed, since the geology of the peninsula, its rainfall regime and its patterns of settlement resemble no other country closely enough.</p>
+</div>
+
+<div class="tablewrap">
+<table class="data">
+<caption>Development, the three systems compared</caption>
+<thead>
+<tr><th>System</th><th class="num">Proposed</th><th class="num">In service</th><th class="num">Development</th><th>Principal difficulty</th></tr>
+</thead>
+<tbody>
+<tr><td>REP-KJS</td><td class="num">2019</td><td class="num">2021</td><td class="num">2 years</td><td>Densifying the seismic network and certifying receivers</td></tr>
+<tr><td>REP-FEW</td><td class="num">2018</td><td class="num">2025</td><td class="num">7 years</td><td>Calibrating a rainfall-runoff model over every basin; gauging the reaches</td></tr>
+<tr><td>REP-LEW</td><td class="num">2020</td><td class="num">2024</td><td class="num">4 years</td><td>Dividing the territory into slope units and fixing a threshold for each</td></tr>
+</tbody>
+</table>
+</div>
+<p class="note">REP-FEW was proposed first, following the Sornorum floods of 2017, and entered service last. Six of those seven years went to model calibration and to installing gauges where none existed.</p>
+
+<h2>Warning in the same manner for all three</h2>
+<div class="prose">
+<p>A deliberate decision made the three systems resemble one another as closely as the physics allows. They share the wire format, the delivery channels, the certification scheme, the client software, the fixed order of items in a message and the same flat voice. A person who has heard an earthquake broadcast recognises a flood broadcast immediately, and a device certified for one handles all three.</p>
+<p>This uniformity cost something. The flood and landslide messages state a probability and a window, quantities an earthquake message has no need of, and fitting them into the same structure took several revisions of the format. The benefit is that the public learns one form of message and one response pattern.</p>
+</div>
+
+<h2>On warnings that come to nothing</h2>
+<div class="box limit">
+<span class="lbl">A request to the public</span>
+<p>Over the period of record, REP-LEW issued 63 warnings followed by no movement and REP-FEW issued 88 followed by no flood. Those counts are the intended behaviour of the systems.</p>
+<p>A threshold tight enough to eliminate them would miss real events. The cooperative has set the thresholds to favour notice, on the reasoning that acting on a warning consumes some minutes of inconvenience, and ignoring a real one causes injury.</p>
+<p>A warning that came to nothing was correct at the moment it was issued. It stated that conditions had reached the level at which slides or floods occur. Whether one occurred at that particular place depends on details no method resolves.</p>
+<p>The cooperative therefore asks that every warning be treated as real, including the tenth in a row that came to nothing. A population that learns to dismiss warnings loses the protection the system was built to provide, and that loss is invisible until the day it matters.</p>
+</div>
+
+<h2>What the systems are worth</h2>
+<div class="prose">
+<p>Honest accounting is difficult. The systems have existed for a short time, the hazards are rare, and the injuries avoided cannot be counted directly. What the cooperative publishes is the measurable part: the lead times achieved, the events warned, the events missed, and the warnings that came to nothing. Those figures appear on the page for each system and are revised as the record lengthens.</p>
+<p>The greater share of the value falls on a day that has not occurred. The Republic has recorded no event above REP 8 since 1901. On the day one occurs, most of the eastern region receives between fifteen and forty seconds of notice, the western sub-regions rather more, and the schooling embedded in every ordinary broadcast will have been done many times over by then.</p>
+</div>
+
+<h2>Published and open to forking</h2>
+<div class="prose">
+<p>All three systems are published in full: source, wire format, conformance vectors, station firmware and the mechanical drawings of the sensor housings. Any country, cooperative or person may take them, adapt them and operate them, at no charge and under no condition.</p>
+<p>The earthquake system exists because Japanese engineers published enough of their work for it to be reproduced. The flood and landslide models were built here at considerable cost, and countries with hazards resembling those of the peninsula should be spared that cost.</p>
+<p><a href="dev/forking.html">The porting guide, with the parts requiring local calibration</a></p>
+</div>
+
+<h2>See also</h2>
+<div class="prose">
+<ul>
+<li><a href="kjs.html">REP-KJS</a>, the earthquake system</li>
+<li><a href="lew.html">REP-LEW</a>, the landslide system</li>
+<li><a href="few.html">REP-FEW</a>, the flood system</li>
+<li><a href="devices.html">Certified devices and RQUAK</a></li>
+</ul>
+</div>
+
+</main>
+
+<footer class="coopfoot">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <h4>Weather and climate</h4>
+        <ul>
+          <li><a href="climate.html">Climate of the Republic</a></li>
+          <li><a href="change.html">Observed change</a></li>
+          <li><a href="forecasting.html">How a forecast is made</a></li>
+          <li><a href="emissions.html">Emissions position</a></li>
+          <li><a href="periphery.html">Harm to the periphery</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Warning systems</h4>
+        <ul>
+          <li><a href="rationale.html">Why these systems exist</a></li>
+          <li><a href="seismicity.html">Seismicity of the Republic</a></li>
+          <li><a href="kjs.html">REP-KJS, earthquake</a></li>
+          <li><a href="scale.html">REP intensity scale</a></li>
+          <li><a href="kjs-method.html">Detection, latency and limits</a></li>
+          <li><a href="lew.html">REP-LEW, landslide</a></li>
+          <li><a href="few.html">REP-FEW, flood</a></li>
+          <li><a href="devices.html">Certified devices and RQUAK</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Record and network</h4>
+        <ul>
+          <li><a href="species.html">Species catalogue</a></li>
+          <li><a href="network.html">Observing network</a></li>
+          <li><a href="about.html">About the cooperative</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Developers</h4>
+        <ul>
+          <li><a href="dev/index.html">Specifications and licence</a></li>
+          <li><a href="dev/wire-format.html">Warning wire format</a></li>
+          <li><a href="dev/vectors.html">Conformance test vectors</a></li>
+          <li><a href="dev/hardware.html">Sensor and station hardware</a></li>
+          <li><a href="dev/forking.html">Porting to another country</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="basis">Published by the Meteorological Cooperative of the Republic under the organic law on observation and warning. Free of charge, without licence, registration or account. No external resource is loaded by this page. See also the <a href="../../index.html">Republic of Fluid</a> and the <a href="../../register/">Public Register</a>.</p>
+  </div>
+</footer>
+
+<script src="site.js"></script>
+</body>
+</html>

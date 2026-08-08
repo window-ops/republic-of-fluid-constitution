@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ceilings &middot; Audit Office</title>
+<meta name="description" content="The office that audits the use of common resources in physical units and in ecological accounts, and publishes every finding in full.">
+<link rel="stylesheet" href="../shared/frame.css">
+<link rel="stylesheet" href="site.css">
+<link rel="icon" href="../../assets/flag.png">
+</head>
+<body class="org-audit-office">
+<a class="skip" href="#main">Skip to the content</a>
+
+<div class="statebar">
+  <div class="wrap">
+    <a class="rep" href="../../index.html">Republic of Fluid</a>
+    <span class="sep">|</span>
+    <a href="../../constitution/">Constitution</a>
+    <a href="../../register/">Public Register</a>
+    <span class="grow"></span>
+    <a href="../../register/links.html">All Portals</a>
+  </div>
+</div>
+
+<header class="orghead">
+  <div class="wrap">
+    <span class="marque"><svg viewBox="0 0 56 56" role="img" aria-label="Emblem of the Audit Office">
+<rect x="9" y="7" width="38" height="42" fill="none" stroke="#37503f" stroke-width="2.6"/>
+<path d="M15 17h26M15 24h26M15 31h18M15 38h12" stroke="#37503f" stroke-width="2" stroke-linecap="round"/>
+<circle cx="38" cy="37" r="10" fill="#faf8f1" stroke="#37503f" stroke-width="2.6"/>
+<path d="M33.5 37.2 L36.6 40.5 L43 33.5" fill="none" stroke="#37503f" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></span>
+    <span class="idblock">
+      <p class="kicker">Oversight office of the Republic</p>
+      <p class="orgname"><a href="index.html">Audit Office</a></p>
+      <p class="basis">Established under Article 233 of the Constitution &middot; audits every organ in physical units</p>
+    </span>
+  </div>
+</header>
+
+<nav class="orgnav" aria-label="Sections of this site"><div class="wrap"><a href="index.html">Home</a><a href="reports.html">Audits</a><a href="how.html">How we audit</a><a href="ceilings.html">Ceilings</a><a href="request.html">Ask for an audit</a><a href="consequences.html">What follows</a><a href="accounts.html">Our own accounts</a></div></nav>
+
+<main id="main" class="sheet">
+
+<h1 class="page-title">Ceilings and departures</h1>
+<p class="lede">Each enterprise, establishment and commune holds a ceiling for the period, expressed in energy, materials, water, land, emissions and labour time. The ceiling binds.</p>
+
+<div class="legal">
+  <p><a href="../../constitution/title-4.html#a100">Article 100</a>(2): consumption beyond a ceiling halts the activity dependent upon the exhausted allocation.</p>
+  <p>Concealment or falsification of a physical account is an offence, and this office transmits the file where one appears.</p>
+</div>
+
+<h2>Register of the current period</h2>
+<div class="controls" id="ceiling-controls">
+  <div class="field"><label for="cq">Search</label><input id="cq" type="search" data-filter="search" placeholder="Body or quantity"></div>
+  <div class="field"><label for="ck">Body</label><select id="ck" data-filter="kind">
+    <option value="">All bodies</option><option value="enterprise">Enterprises</option>
+    <option value="commune">Communes</option><option value="federation">Federations</option>
+    <option value="establishment">Public establishments</option></select></div>
+  <div class="field"><label for="cs">Position</label><select id="cs" data-filter="side">
+    <option value="">Any position</option><option value="over">Above the ceiling</option>
+    <option value="under">At or below the ceiling</option></select></div>
+  <div><button class="ghost act" id="ceiling-reset" type="button">Reset</button></div>
+</div>
+<div class="scroller">
+<table class="reg" id="ceiling-table">
+  <caption>Ceilings against consumption, audited period. Columns may be sorted.</caption>
+  <thead><tr><th data-sort="text">Body</th><th data-sort="text">Quantity</th><th data-sort="number">Ceiling</th><th data-sort="number">Consumed</th><th data-sort="number">Departure</th></tr></thead>
+  <tbody id="ceiling-rows">
+    <tr data-kind="enterprise" data-side="over" data-search="Lindoma Yards Materials, steel"><td>Lindoma Yards</td><td>Materials, steel</td><td class="num">84,000 t</td><td class="num">91,100 t</td><td class="num over">+8.4%</td></tr>
+    <tr data-kind="enterprise" data-side="under" data-search="Lindoma Yards Labour time"><td>Lindoma Yards</td><td>Labour time</td><td class="num">6,240,000 h</td><td class="num">6,050,000 h</td><td class="num under">-3.0%</td></tr>
+    <tr data-kind="enterprise" data-side="under" data-search="Ferrista ironworks Energy"><td>Ferrista ironworks</td><td>Energy</td><td class="num">1,180 GWh</td><td class="num">1,164 GWh</td><td class="num under">-1.4%</td></tr>
+    <tr data-kind="enterprise" data-side="under" data-search="Ferrista ironworks Emissions"><td>Ferrista ironworks</td><td>Emissions</td><td class="num">412,000 t CO2e</td><td class="num">409,300 t CO2e</td><td class="num under">-0.7%</td></tr>
+    <tr data-kind="commune" data-side="under" data-search="Commune of Lindoma Water"><td>Commune of Lindoma</td><td>Water</td><td class="num">96,400 Ml</td><td class="num">94,900 Ml</td><td class="num under">-1.6%</td></tr>
+    <tr data-kind="commune" data-side="over" data-search="Commune of Ferrista Labour time"><td>Commune of Ferrista</td><td>Labour time</td><td class="num">2,910,000 h</td><td class="num">2,951,000 h</td><td class="num over">+1.4%</td></tr>
+    <tr data-kind="commune" data-side="under" data-search="Commune of Torvena Water"><td>Commune of Torvena</td><td>Water</td><td class="num">11,700 Ml</td><td class="num">10,296 Ml</td><td class="num under">-12.0%</td></tr>
+    <tr data-kind="federation" data-side="under" data-search="Transport federation Materials, rolling stock"><td>Transport federation</td><td>Materials, rolling stock</td><td class="num">23,400 t</td><td class="num">23,180 t</td><td class="num under">-0.9%</td></tr>
+    <tr data-kind="federation" data-side="under" data-search="Transport federation Land"><td>Transport federation</td><td>Land</td><td class="num">1,940 ha</td><td class="num">1,940 ha</td><td class="num under">0.0%</td></tr>
+    <tr data-kind="establishment" data-side="under" data-search="Reactor programme Land, custody stores"><td>Reactor programme</td><td>Land, custody stores</td><td class="num">86 ha</td><td class="num">86 ha</td><td class="num under">0.0%</td></tr>
+  </tbody>
+</table>
+</div>
+<p class="count" id="ceiling-count"></p>
+<p class="empty" id="ceiling-empty" hidden>No line matches those conditions.</p>
+
+<h2>What a departure sets going</h2>
+<div class="prose">
+<p>A departure from the plan or from a ceiling is transmitted to the National Planning Congress, which answers within sixty days. The Office states the quantity and the cause. What to do about it belongs to the bodies that make the plan, and this office proposes remedies without imposing any.</p>
+<p>The steel excess at the Lindoma Yards ran to 7,100 tonnes. The yard answered, published the cutting patterns that produced it, and accepted a reduced ceiling for the following period. A surplus of production would have been applied in the opposite case, in the order the plan sets: unmet registered needs first, then the reserve, then a reduction of the following ceiling where the surplus came from better technique.</p>
+</div>
+
+<h2>Compliance is published too</h2>
+<div class="prose">
+<p>Seven of the ten lines above sit at or below the ceiling. Torvena drew 12 per cent less water than its allocation while maintaining provision in full. Findings of compliance are published on the same terms as findings of default, so that the register states the full position and not the departures alone.</p>
+</div>
+
+</main>
+
+<footer class="orgfoot">
+  <div class="wrap">
+    <div>
+      <h2>Audit Office</h2>
+      <p><a href="reports.html">Register of audits</a></p><p><a href="request.html">Ask for an audit</a></p><p><a href="accounts.html">Our own accounts</a></p>
+    </div>
+    
+    <div>
+      <h2>Other organs</h2>
+      <p><a href="../electoral-commission/">Electoral Commission</a></p><p><a href="../defender-of-rights/">Defender of Rights</a></p><p><a href="../future-generations/">Commissioner for Future Generations</a></p><p><a href="../democratic-integrity/">Office of Democratic Integrity</a></p>
+    </div>
+    <div>
+      <h2>Publication</h2>
+      <p class="fine">Published under Articles 14(2), 242 and 314.</p>
+      <p class="fine">Free of charge, without licence, registration or account.</p>
+      <p class="fine">No external resource is loaded by this page.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="../shared/frame.js" defer></script>
+<script src="site.js" defer></script>
+</body>
+</html>

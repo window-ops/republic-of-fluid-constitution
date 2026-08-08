@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>National Railways Federation</title>
+<meta name="description" content="The branch federation of the railway operating cooperatives of the Republic of Fluid: eight route groups, twenty sub-regional operators, 145 stations, the CARD-ROM transport card and the application built on the Podnik feed.">
+<meta name="theme-color" content="#0b4ea2">
+<link rel="stylesheet" href="site.css">
+<link rel="icon" href="../../assets/flag.png">
+</head>
+<body>
+<a class="skip" href="#main">Skip to the content</a>
+
+<header class="head">
+  <div class="wrap">
+    <svg class="mark" viewBox="0 0 48 48" role="img" aria-label="Emblem of the National Railways Federation">
+      <rect width="48" height="48" fill="#0b4ea2"></rect>
+      <path d="M0 20 Q6 14 12 20 T24 20 T36 20 T48 20 V30 H0 Z" fill="#ffffff"></path>
+      <rect x="0" y="30" width="48" height="3" fill="#08376f"></rect>
+      <rect x="14" y="34" width="3" height="14" fill="#ffffff"></rect>
+      <rect x="31" y="34" width="3" height="14" fill="#ffffff"></rect>
+    </svg>
+    <span>
+      <p class="wordmark"><a href="index.html">National Railways Federation</a></p>
+      <p class="standfirst">Branch federation of the railway operating cooperatives</p>
+    </span>
+  </div>
+</header>
+<div class="band" role="presentation"></div>
+
+<nav class="nav" aria-label="Sections of this site">
+  <div class="wrap">
+    <a class="navtop" href="index.html" aria-current="page">Front</a>
+    <details class="grp">
+      <summary>Travelling</summary>
+      <ul>
+        <li><a href="network.html">Network and routes</a></li>
+        <li><a href="stations.html">Stations and equipment</a></li>
+        <li><a href="night.html">Night trains and sleepers</a></li>
+        <li><a href="access.html">Access and assistance</a></li>
+        <li><a href="carriage.html">Conditions of carriage</a></li>
+      </ul>
+    </details>
+    <details class="grp">
+      <summary>Systems</summary>
+      <ul>
+        <li><a href="app.html">The application</a></li>
+        <li><a href="card.html">CARD-ROM</a></li>
+        <li><a href="comparison.html">Comparison of card standards</a></li>
+      </ul>
+    </details>
+    <details class="grp">
+      <summary>Federation</summary>
+      <ul>
+        <li><a href="cooperatives.html">Member cooperatives</a></li>
+        <li><a href="about.html">About the federation</a></li>
+      </ul>
+    </details>
+    <a class="navtop" href="dev/">Developers</a>
+  </div>
+</nav>
+
+<main id="main">
+
+<section class="opening">
+  <div class="wrap">
+    <p class="eyebrow">The railway branch, federated since 1993</p>
+    <h1>Eight route groups, one timetable</h1>
+    <p class="lede">Every cooperative that runs a train in the Republic is a member here. Eight route groups operate the main lines. Twenty sub-regional operators run the branches inside them. The federation holds the timetable, the stations, the gate record and the card. Podnik builds the vehicles and publishes where they are. We run them.</p>
+    <ul class="figures">
+      <li><b>8</b> route groups</li>
+      <li><b>20</b> sub-regional members</li>
+      <li><b>145</b> stations</li>
+      <li><b>6,210</b> route km</li>
+      <li><b>88%</b> electrified</li>
+    </ul>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <p class="eyebrow">Sections of this site</p>
+    <h2>Where to go from here</h2>
+  </div>
+  <div class="wrap">
+    <ul class="plates four">
+      <li>
+        <h3>The network</h3>
+        <p>Thirty-six routes over 6,210 km, shown as a schematic with the sub-regional boundaries, and the list of 145 stations.</p>
+        <p><a class="go" href="network.html">Open the network</a></p>
+      </li>
+      <li>
+        <h3>The application</h3>
+        <p>Trains may be added to a wait list, schedules may be added to watchs for changes, and faults may be reported from the platform via the app.</p><p>It reads from the Podnik feed and anyone can use another client to interact with the system.</p>
+        <p><a class="go" href="app.html">About the application</a></p>
+      </li>
+      <li>
+        <h3>The card</h3>
+        <p>CARD-ROM is a removable device with no processor of its own. Minified NAND stores records, EEPROM saves the options and the display language, and the gates and machines that read it run FreeRTOS. It is issued without charge at any machine.</p>
+        <p><a class="go" href="card.html">How the card works</a></p>
+      </li>
+      <li>
+        <h3>The members</h3>
+        <p>Eight route-group cooperatives, with sub-regional operators inside them. Each has its own assembly and sends mandated delegates to the federation.</p>
+        <p><a class="go" href="cooperatives.html">Who runs what</a></p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <p class="eyebrow">The division of work</p>
+    <h2>The federation and Podnik</h2>
+  </div>
+  <div class="wrap">
+    <div class="essay">
+      <p><strong>Podnik builds, we operate.</strong> The thirteen factories of the transport federation build the rail vehicles, hold their drawings and guarantee their parts. The cooperatives here bring the vehicles into traffic, staff them, maintain them in the depots the sub-regions provide, and answer for the timetable. A route group that wants a different vehicle sends a design proposal to the Podnik assembly. The southern cooperative did that for the R8/A in 2026.</p>
+      <p><strong>The position feed comes from them.</strong> Every vehicle in traffic reports to <code class="inline">api.podnik.rof</code>. Our application reads that feed as any other client does, with no key and no privilege. The timetable, the station identifiers and the gate counts are ours, and we publish them on the same terms: no account, no quota, public domain under Article 10.</p>
+      <p><strong>The rail stock is electric.</strong> The wire is at 25 kV, 50 Hz over 5,425 km. The remaining 700 km are operated by the SED R8 and its variants on the 220 kWh reserve battery. The Torvena branch reopened in 2017 on that reserve. The railway keeps thirty-four diesel yard locomotives, and they stay within the yards and sidings.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<div class="band-foot" role="presentation"></div>
+<footer class="foot">
+  <div class="wrap">
+    <ul class="footlinks">
+      <li><a href="index.html">Front</a></li>
+      <li><a href="network.html">Network</a></li>
+      <li><a href="app.html">Application</a></li>
+      <li><a href="card.html">CARD-ROM</a></li>
+      <li><a href="dev/">Developers</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="../podnik/">Podnik</a></li>
+      <li><a href="../../register/links.html">Public Register</a></li>
+    </ul>
+    <p class="standing">A branch federation of the railway operating cooperatives, constituted under Article 89. It exercises no public authority and represents no organ. Its accounts, its minutes and its yearly reviews are public.</p>
+  </div>
+</footer>
+<script src="site.js" defer></script>
+</body>
+</html>

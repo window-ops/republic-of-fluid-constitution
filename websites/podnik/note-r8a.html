@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Design note: the SED R8/A &middot; Podnik</title>
+<meta name="description" content="How the SED R8/A was worked out: scale drawings against a Japanese commuter reference, the mass ladder, the corrected braking curve and the stopping record it was built to answer.">
+<meta name="theme-color" content="#14181b">
+<link rel="stylesheet" href="site.css">
+<link rel="icon" href="../../assets/flag.png">
+<style>
+/* Drawings for this note only. */
+.fig { background: var(--plate); padding: 1rem; margin: 0 0 0.4rem; }
+.fig svg { display: block; width: 100%; height: auto; }
+.fig figcaption {
+  margin: 0.7rem 0 0;
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+.key { display: flex; flex-wrap: wrap; gap: 0.4rem 1.2rem; margin: 0 0 0.7rem; padding: 0; list-style: none; font-size: 0.85rem; }
+.key li { display: flex; align-items: center; gap: 0.4rem; }
+.key i { width: 1.6rem; height: 3px; background: currentColor; display: inline-block; }
+.fig pre { margin: 0; overflow-x: auto; }
+.fig pre code { font-family: var(--mono); font-size: 0.82rem; line-height: 1.7; color: var(--ink); }
+.k-a { color: var(--train); }
+.k-b { color: var(--ink-3); }
+.k-c { color: var(--bus); }
+svg text { font-family: var(--mono); font-size: 11px; fill: var(--ink-2); }
+svg text.tk { font-size: 10px; fill: var(--ink-3); }
+svg text.ar { text-anchor: end; }
+svg text.mid { text-anchor: middle; }
+svg text.lb { font-size: 12px; fill: var(--ink); letter-spacing: 0.06em; }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to the content</a>
+
+<header class="head">
+  <div class="wrap">
+    <svg class="mark" viewBox="0 0 46 46" role="img" aria-label="Emblem of Podnik">
+      <rect width="46" height="46" fill="#ffd100"></rect>
+      <path d="M8 36V16a5 5 0 0 1 5-5h20a5 5 0 0 1 5 5v20" fill="none" stroke="#14181b" stroke-width="4.4"></path>
+      <path d="M23 36V11" stroke="#14181b" stroke-width="4.4"></path>
+      <circle cx="14" cy="38" r="3.4" fill="#14181b"></circle>
+      <circle cx="32" cy="38" r="3.4" fill="#14181b"></circle>
+    </svg>
+    <span>
+      <p class="wordmark"><a href="index.html">Podnik</a></p>
+      <p class="standfirst">Federation of transport cooperatives of the Republic of Fluid</p>
+    </span>
+  </div>
+</header>
+
+<nav class="nav" aria-label="Sections of this site">
+  <div class="wrap">
+    <a href="index.html">Front</a>
+    <a href="catalogue.html">Catalogue</a>
+    <a href="live.html">Live positions</a>
+    <a href="fleets.html">Fleet advice</a>
+    <a href="social.html">Social</a>
+    <a href="reserve.html">Reserve</a>
+    <a href="surplus.html">Surplus</a>
+    <a href="retired.html">Retired</a>
+    <a href="depots.html">Depots</a>
+    <a href="about.html">About</a>
+  </div>
+</nav>
+
+<main id="main">
+
+<section class="opening">
+  <div class="wrap">
+    <p class="eyebrow">Design note &middot; Southern operating cooperative with the Sederna Carriage Factory</p>
+    <h1>How the R8/A was worked out</h1>
+    <p class="lede">A relief driver kept a clock in his pocket and reported himself for half a second. This note gives the drawings, the mass ladder and the braking work that answer him, set against the Japanese commuter practice he was trained in. It is a working paper of the drafting group and states no decision of the federation.</p>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <p class="eyebrow">Drawing 1</p>
+    <h2>The unit against the reference, to scale</h2>
+    <p>The R8/A keeps the 56.20 m of the R8 over three cars and three door pairs a side. The Japanese reference is a three-car formation of 20 m cars with four door pairs a side, which is the arrangement the driver worked to in Osaka.</p>
+  </div>
+  <div class="wrap">
+    <figure class="fig">
+      <svg viewBox="0 0 640 250" role="img" aria-labelledby="t1 d1">
+        <title id="t1">Side elevations of the R8/A and of a three-car Japanese commuter reference at the same scale</title>
+        <desc id="d1">The R8/A measures 56.20 metres over three cars with three door pairs a side. The reference formation measures 60.00 metres over three cars of 20 metres with four door pairs a side.</desc>
+        <text x="40" y="24" class="lb">SED R8/A &middot; 56.20 m &middot; three cars</text>
+        <rect x="40.0" y="34.0" width="183.0" height="37.0" rx="3" fill="var(--plate)" stroke="var(--ink)" stroke-width="1.6"/><rect x="41.6" y="47.0" width="179.8" height="3.2" fill="var(--bus)"/><rect x="61.5" y="42.0" width="18" height="29.0" fill="none" stroke="var(--ink-3)" stroke-width="1.1"/><rect x="122.5" y="42.0" width="18" height="29.0" fill="none" stroke="var(--ink-3)" stroke-width="1.1"/><rect x="183.5" y="42.0" width="18" height="29.0" fill="none" stroke="var(--ink-3)" stroke-width="1.1"/><circle cx="80.3" cy="75.0" r="4.4" fill="none" stroke="var(--ink)" stroke-width="1.6"/><circle cx="182.7" cy="75.0" r="4.4" fill="none" stroke="var(--ink)" stroke-width="1.6"/><rect x="224.2" y="34.0" width="193.6" height="37.0" rx="3" fill="var(--plate)" stroke="var(--ink)" stroke-width="1.6"/><rect x="225.8" y="47.0" width="190.4" height="3.2" fill="var(--bus)"/><rect x="247.5" y="42.0" width="18" height="29.0" fill="none" stroke="var(--ink-3)" stroke-width="1.1"/><rect x="312.0" y="42.0" width="18" height="29.0" fill="none" stroke="var(--ink-3)" stroke-width="1.1"/><rect x="376.5" y="42.0" width="18" height="29.0" fill="none" stroke="var(--ink-3)" stroke-width="1.1"/><circle cx="266.8" cy="75.0" r="4.4" fill="none" stroke="var(--ink)" stroke-width="1.6"/><circle cx="375.2" cy="75.0" r="4.4" fill="none" stroke="var(--ink)" stroke-width="1.6"/><rect x="419.0" y="34.0" width="183.0" height="37.0" rx="3" fill="var(--plate)" stroke="var(--ink)" stroke-width="1.6"/><rect x="420.6" y="47.0" width="179.8" height="3.2" fill="var(--bus)"/><rect x="440.5" y="42.0" width="18" height="29.0" fill="none" stroke="var(--ink-3)" stroke-width="1.1"/><rect x="501.5" y="42.0" width="18" height="29.0" fill="none" stroke="var(--ink-3)" stroke-width="1.1"/><rect x="562.5" y="42.0" width="18" height="29.0" fill="none" stroke="var(--ink-3)" stroke-width="1.1"/><circle cx="459.3" cy="75.0" r="4.4" fill="none" stroke="var(--ink)" stroke-width="1.6"/><circle cx="561.7" cy="75.0" r="4.4" fill="none" stroke="var(--ink)" stroke-width="1.6"/>
+        <line x1="40" y1="88" x2="602" y2="88" stroke="var(--ink-3)" stroke-width="1"/>
+        <line x1="40" y1="84" x2="40" y2="92" stroke="var(--ink-3)"/>
+        <line x1="602" y1="84" x2="602" y2="92" stroke="var(--ink-3)"/>
+        <text x="321" y="104" class="mid tk">56.20 m over couplers</text>
+        <text x="40" y="140" class="lb">Japanese commuter reference &middot; 60.00 m &middot; three cars</text>
+        <rect x="40.0" y="150.0" width="199.2" height="36.0" rx="3" fill="var(--plate)" stroke="var(--ink)" stroke-width="1.6"/><rect x="41.6" y="163.0" width="196.0" height="3.2" fill="var(--ink-3)"/><rect x="55.9" y="158.0" width="18" height="28.0" fill="none" stroke="var(--ink-3)" stroke-width="1.1"/><rect x="105.7" y="158.0" width="18" height="28.0" fill="none" stroke="var(--ink-3)" stroke-width="1.1"/><rect x="155.5" y="158.0" width="18" height="28.0" fill="none" stroke="var(--ink-3)" stroke-width="1.1"/><rect x="205.3" y="158.0" width="18" height="28.0" fill="none" stroke="var(--ink-3)" stroke-width="1.1"/><circle cx="83.8" cy="190.0" r="4.4" fill="none" stroke="var(--ink)" stroke-width="1.6"/><circle cx="195.4" cy="190.0" r="4.4" fill="none" stroke="var(--ink)" stroke-width="1.6"/><rect x="240.4" y="150.0" width="199.2" height="36.0" rx="3" fill="var(--plate)" stroke="var(--ink)" stroke-width="1.6"/><rect x="242.0" y="163.0" width="196.0" height="3.2" fill="var(--ink-3)"/><rect x="256.3" y="158.0" width="18" height="28.0" fill="none" stroke="var(--ink-3)" stroke-width="1.1"/><rect x="306.1" y="158.0" width="18" height="28.0" fill="none" stroke="var(--ink-3)" stroke-width="1.1"/><rect x="355.9" y="158.0" width="18" height="28.0" fill="none" stroke="var(--ink-3)" stroke-width="1.1"/><rect x="405.7" y="158.0" width="18" height="28.0" fill="none" stroke="var(--ink-3)" stroke-width="1.1"/><circle cx="284.2" cy="190.0" r="4.4" fill="none" stroke="var(--ink)" stroke-width="1.6"/><circle cx="395.8" cy="190.0" r="4.4" fill="none" stroke="var(--ink)" stroke-width="1.6"/><rect x="440.8" y="150.0" width="199.2" height="36.0" rx="3" fill="var(--plate)" stroke="var(--ink)" stroke-width="1.6"/><rect x="442.4" y="163.0" width="196.0" height="3.2" fill="var(--ink-3)"/><rect x="456.7" y="158.0" width="18" height="28.0" fill="none" stroke="var(--ink-3)" stroke-width="1.1"/><rect x="506.5" y="158.0" width="18" height="28.0" fill="none" stroke="var(--ink-3)" stroke-width="1.1"/><rect x="556.3" y="158.0" width="18" height="28.0" fill="none" stroke="var(--ink-3)" stroke-width="1.1"/><rect x="606.1" y="158.0" width="18" height="28.0" fill="none" stroke="var(--ink-3)" stroke-width="1.1"/><circle cx="484.6" cy="190.0" r="4.4" fill="none" stroke="var(--ink)" stroke-width="1.6"/><circle cx="596.2" cy="190.0" r="4.4" fill="none" stroke="var(--ink)" stroke-width="1.6"/>
+        <line x1="40" y1="204" x2="640" y2="204" stroke="var(--ink-3)" stroke-width="1"/>
+        <line x1="40" y1="200" x2="40" y2="208" stroke="var(--ink-3)"/>
+        <line x1="640" y1="200" x2="640" y2="208" stroke="var(--ink-3)"/>
+        <text x="340" y="220" class="mid tk">60.00 m over couplers, 20.00 m a car</text>
+        <line x1="40" y1="238" x2="140" y2="238" stroke="var(--ink)" stroke-width="2"/>
+        <line x1="40" y1="233" x2="40" y2="243" stroke="var(--ink)" stroke-width="2"/>
+        <line x1="140" y1="233" x2="140" y2="243" stroke="var(--ink)" stroke-width="2"/>
+        <text x="146" y="242" class="tk">10 m</text>
+      </svg>
+      <figcaption>Scale 1:200 at the drawn size. Door positions are indicative and the pantograph is omitted.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <p class="eyebrow">Drawing 2</p>
+    <h2>End elevation and what sits under it</h2>
+    <p>The body is narrowed by 150 millimetres so the unit stays inside the gauge on the 110 m curves of the southern route at the approach speeds this proposal implies. The reference runs on 1,067 mm track, which we do not have.</p>
+  </div>
+  <div class="wrap">
+    <figure class="fig">
+      <svg viewBox="0 0 640 300" role="img" aria-labelledby="t2 d2">
+        <title id="t2">End elevations of the R8/A and of the Japanese commuter reference</title>
+        <desc id="d2">The R8/A is 2.80 metres wide and 3.70 metres high over a track gauge of 1,435 millimetres. The reference is 2.95 metres wide and 3.62 metres high over a track gauge of 1,067 millimetres.</desc>
+
+        <text x="60" y="17" class="lb">SED R8/A</text>
+        <rect x="76" y="40" width="168" height="222" rx="10" fill="var(--plate)" stroke="var(--ink)" stroke-width="1.8"/>
+        <rect x="76" y="126" width="168" height="4" fill="var(--bus)"/>
+        <line x1="76" y1="196" x2="244" y2="196" stroke="var(--ink-3)" stroke-width="1"/>
+        <line x1="117" y1="284" x2="203" y2="284" stroke="var(--ink)" stroke-width="2"/>
+        <circle cx="117" cy="276" r="8" fill="none" stroke="var(--ink)" stroke-width="1.6"/>
+        <circle cx="203" cy="276" r="8" fill="none" stroke="var(--ink)" stroke-width="1.6"/>
+        <text x="160" y="34" class="mid tk">2.80 m</text>
+        <text x="160" y="212" class="mid tk">floor 1.10 m</text>
+        <text x="160" y="298" class="mid tk">gauge 1,435 mm</text>
+        <text x="252" y="130" class="tk">3.70 m</text>
+
+        <text x="396" y="17" class="lb">Commuter reference</text>
+        <rect x="404" y="46" width="177" height="216" rx="10" fill="var(--plate)" stroke="var(--ink-3)" stroke-width="1.8"/>
+        <rect x="404" y="130" width="177" height="4" fill="var(--ink-3)"/>
+        <line x1="404" y1="194" x2="581" y2="194" stroke="var(--ink-3)" stroke-width="1"/>
+        <line x1="461" y1="284" x2="525" y2="284" stroke="var(--ink-3)" stroke-width="2"/>
+        <circle cx="461" cy="276" r="8" fill="none" stroke="var(--ink-3)" stroke-width="1.6"/>
+        <circle cx="525" cy="276" r="8" fill="none" stroke="var(--ink-3)" stroke-width="1.6"/>
+        <text x="492" y="38" class="mid tk">2.95 m</text>
+        <text x="492" y="210" class="mid tk">floor 1.13 m</text>
+        <text x="492" y="298" class="mid tk">gauge 1,067 mm</text>
+        <text x="590" y="136" class="tk">3.62 m</text>
+      </svg>
+      <figcaption>Scale 1:60 at the drawn size. Roof equipment and the coupler are omitted.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <p class="eyebrow">Drawing 3</p>
+    <h2>The mass ladder</h2>
+    <p>Twelve tonnes come out of the shell. An aluminium extrusion carries the load at 84.0 tonnes empty against 96.0 tonnes for the steel R8, and the loaded axle falls from 21.6 to 18.4 tonnes. The reference sits heavier as a formation and far lighter on the axle, because it spreads 99 tonnes over twelve axles on lighter track.</p>
+  </div>
+  <div class="wrap">
+    <figure class="fig">
+      <svg viewBox="0 0 640 210" role="img" aria-labelledby="t3 d3">
+        <title id="t3">Empty weight and loaded axle weight compared</title>
+        <desc id="d3">Empty weight: R8 96 tonnes, R8/A 84 tonnes, reference 99 tonnes. Loaded axle weight: R8 21.6 tonnes, R8/A 18.4 tonnes, reference 11.5 tonnes.</desc>
+        <text x="20" y="20" class="lb">Empty weight, tonnes</text>
+        <rect x="20" y="32" width="384" height="18" fill="var(--ink-3)"/><text x="412" y="46">SED R8 &middot; 96.0</text>
+        <rect x="20" y="56" width="336" height="18" fill="var(--train)"/><text x="364" y="70">SED R8/A &middot; 84.0</text>
+        <rect x="20" y="80" width="396" height="18" fill="var(--rule)"/><text x="424" y="94">Reference &middot; 99.0</text>
+        <text x="20" y="132" class="lb">Loaded axle weight, tonnes</text>
+        <rect x="20" y="144" width="346" height="18" fill="var(--ink-3)"/><text x="374" y="158">SED R8 &middot; 21.6</text>
+        <rect x="20" y="168" width="294" height="18" fill="var(--train)"/><text x="322" y="182">SED R8/A &middot; 18.4</text>
+        <rect x="20" y="192" width="184" height="12" fill="var(--rule)"/><text x="212" y="202">Reference &middot; 11.5</text>
+      </svg>
+      <figcaption>Bars share a scale within each pair. Axle figures are for a full car in the peak count.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <p class="eyebrow">Drawing 4</p>
+    <h2>The last two hundred metres</h2>
+    <p>It is where most of the delay can be reduced. The R8 brakes softly and blends the regeneration, so the driver commits early and corrects by feel. The R8/A computes the curve for the measured load and the measured rail, follows it, and releases into the target stop. The reference is drawn at the deceleration a pattern-controlled commuter set works to.</p>
+    <ul class="key">
+      <li class="k-b"><i></i> SED R8 in service, 0.90 m/s&sup2;</li>
+      <li class="k-a"><i></i> SED R8/A corrected, 1.10 m/s&sup2;</li>
+      <li class="k-c"><i></i> Commuter reference, 1.25 m/s&sup2;</li>
+    </ul>
+  </div>
+  <div class="wrap">
+    <figure class="fig">
+      <svg viewBox="0 0 640 290" role="img" aria-labelledby="t4 d4">
+        <title id="t4">Speed against distance to the stopping mark over the last two hundred metres</title>
+        <desc id="d4">Three braking curves. The R8 in service decelerates at 0.90 metres per second squared, the R8/A at 1.10, and the commuter reference at 1.25. All three reach zero at the mark.</desc>
+        <line x1="40" y1="30" x2="40" y2="250" stroke="var(--rule)"/>
+        <line x1="40" y1="250" x2="600" y2="250" stroke="var(--rule)"/>
+        <line x1="40.0" y1="250" x2="40.0" y2="256" stroke="var(--rule)"/><text x="40.0" y="270" class="tk">200</text><line x1="170.0" y1="250" x2="170.0" y2="256" stroke="var(--rule)"/><text x="170.0" y="270" class="tk">150</text><line x1="300.0" y1="250" x2="300.0" y2="256" stroke="var(--rule)"/><text x="300.0" y="270" class="tk">100</text><line x1="430.0" y1="250" x2="430.0" y2="256" stroke="var(--rule)"/><text x="430.0" y="270" class="tk">50</text><line x1="560.0" y1="250" x2="560.0" y2="256" stroke="var(--rule)"/><text x="560.0" y="270" class="tk">0</text><line x1="34" y1="250.0" x2="40" y2="250.0" stroke="var(--rule)"/><text x="30" y="254.0" class="tk ar">0</text><line x1="34" y1="206.0" x2="40" y2="206.0" stroke="var(--rule)"/><text x="30" y="210.0" class="tk ar">20</text><line x1="34" y1="162.0" x2="40" y2="162.0" stroke="var(--rule)"/><text x="30" y="166.0" class="tk ar">40</text><line x1="34" y1="118.0" x2="40" y2="118.0" stroke="var(--rule)"/><text x="30" y="122.0" class="tk ar">60</text><line x1="34" y1="74.0" x2="40" y2="74.0" stroke="var(--rule)"/><text x="30" y="78.0" class="tk ar">80</text>
+        <text x="320" y="286" class="mid tk">metres to the mark</text>
+        <text x="14" y="24" class="tk">km/h</text>
+        <polyline points="40.0,99.7 50.4,101.2 60.8,102.8 71.2,104.3 81.6,105.9 92.0,107.4 102.4,109.0 112.8,110.6 123.2,112.3 133.6,113.9 144.0,115.6 154.4,117.3 164.8,119.0 175.2,120.7 185.6,122.5 196.0,124.3 206.4,126.1 216.8,127.9 227.2,129.8 237.6,131.7 248.0,133.6 258.4,135.6 268.8,137.5 279.2,139.6 289.6,141.6 300.0,143.7 310.4,145.9 320.8,148.1 331.2,150.3 341.6,152.6 352.0,155.0 362.4,157.4 372.8,159.8 383.2,162.4 393.6,165.0 404.0,167.7 414.4,170.5 424.8,173.4 435.2,176.4 445.6,179.5 456.0,182.8 466.4,186.2 476.8,189.9 487.2,193.8 497.6,197.9 508.0,202.5 518.4,207.5 528.8,213.2 539.2,219.9 549.6,228.7 560.0,250.0" fill="none" stroke="var(--ink-3)" stroke-width="2.2"/>
+        <polyline points="40.0,83.9 50.4,85.5 60.8,87.2 71.2,88.9 81.6,90.7 92.0,92.4 102.4,94.2 112.8,95.9 123.2,97.7 133.6,99.6 144.0,101.4 154.4,103.3 164.8,105.2 175.2,107.1 185.6,109.0 196.0,111.0 206.4,113.0 216.8,115.0 227.2,117.1 237.6,119.2 248.0,121.3 258.4,123.5 268.8,125.7 279.2,127.9 289.6,130.2 300.0,132.5 310.4,134.9 320.8,137.3 331.2,139.8 341.6,142.3 352.0,144.9 362.4,147.6 372.8,150.3 383.2,153.1 393.6,156.0 404.0,159.0 414.4,162.1 424.8,165.3 435.2,168.6 445.6,172.1 456.0,175.7 466.4,179.5 476.8,183.5 487.2,187.8 497.6,192.5 508.0,197.5 518.4,203.0 528.8,209.3 539.2,216.8 549.6,226.5 560.0,250.0" fill="none" stroke="var(--train)" stroke-width="2.2"/>
+        <polyline points="40.0,72.9 50.4,74.7 60.8,76.5 71.2,78.3 81.6,80.1 92.0,82.0 102.4,83.9 112.8,85.8 123.2,87.7 133.6,89.6 144.0,91.6 154.4,93.6 164.8,95.6 175.2,97.7 185.6,99.7 196.0,101.8 206.4,104.0 216.8,106.1 227.2,108.3 237.6,110.6 248.0,112.8 258.4,115.1 268.8,117.5 279.2,119.9 289.6,122.3 300.0,124.8 310.4,127.3 320.8,129.9 331.2,132.5 341.6,135.2 352.0,138.0 362.4,140.8 372.8,143.7 383.2,146.7 393.6,149.8 404.0,153.0 414.4,156.3 424.8,159.7 435.2,163.2 445.6,166.9 456.0,170.8 466.4,174.9 476.8,179.2 487.2,183.7 497.6,188.7 508.0,194.0 518.4,199.9 528.8,206.6 539.2,214.6 549.6,225.0 560.0,250.0" fill="none" stroke="var(--bus)" stroke-width="2.2" stroke-dasharray="6 4"/>
+        <line x1="560" y1="30" x2="560" y2="250" stroke="var(--signal)" stroke-width="3"/>
+        <text x="556" y="26" class="ar tk">the mark</text>
+      </svg>
+      <figcaption>Curves are v equal to the square root of twice the deceleration by the remaining distance. Jerk limiting at the release is omitted.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <p class="eyebrow">Drawing 5</p>
+    <h2>What the pocket clock recorded</h2>
+    <p>The driver logged twenty-four stops on the southern route through one week in June, measured from the front of the cab to the end of the platform less one metre, which is the rule he set himself. The band is the tolerance specified for the R8/A, and it is the figure Japanese automatic stopping equipment is tuned to.</p>
+  </div>
+  <div class="wrap">
+    <figure class="fig">
+      <svg viewBox="0 0 640 210" role="img" aria-labelledby="t5 d5">
+        <title id="t5">Stopping positions recorded on the R8 and specified for the R8/A</title>
+        <desc id="d5">Twenty-four recorded stops on the R8 spread from 1.9 metres short to 2.9 metres beyond the mark. The R8/A is specified to stop within 0.35 metres either side of the target.</desc>
+        <rect x="289" y="40" width="62" height="136" fill="var(--signal)" opacity="0.5"/>
+        <line x1="320" y1="34" x2="320" y2="182" stroke="var(--ink)" stroke-width="1.4"/>
+        <text x="320" y="28" class="mid tk">the mark</text>
+        <text x="20" y="60" class="lb">SED R8, recorded</text>
+        <g fill="var(--ink-3)"><circle cx="152.8" cy="74.0" r="3.4"/><circle cx="196.8" cy="74.0" r="3.4"/><circle cx="214.4" cy="74.0" r="3.4"/><circle cx="240.8" cy="74.0" r="3.4"/><circle cx="249.6" cy="74.0" r="3.4"/><circle cx="267.2" cy="74.0" r="3.4"/><circle cx="276.0" cy="74.0" r="3.4"/><circle cx="284.8" cy="74.0" r="3.4"/><circle cx="302.4" cy="74.0" r="3.4"/><circle cx="311.2" cy="74.0" r="3.4"/><circle cx="328.8" cy="74.0" r="3.4"/><circle cx="337.6" cy="74.0" r="3.4"/><circle cx="350.8" cy="74.0" r="3.4"/><circle cx="364.0" cy="74.0" r="3.4"/><circle cx="372.8" cy="74.0" r="3.4"/><circle cx="390.4" cy="74.0" r="3.4"/><circle cx="399.2" cy="74.0" r="3.4"/><circle cx="416.8" cy="74.0" r="3.4"/><circle cx="434.4" cy="74.0" r="3.4"/><circle cx="452.0" cy="74.0" r="3.4"/><circle cx="469.6" cy="74.0" r="3.4"/><circle cx="504.8" cy="74.0" r="3.4"/><circle cx="531.2" cy="74.0" r="3.4"/><circle cx="575.2" cy="74.0" r="3.4"/></g>
+        <text x="20" y="132" class="lb">SED R8/A, specified</text>
+        <g fill="var(--train)"><circle cx="292.7" cy="146.0" r="3.4"/><circle cx="295.4" cy="146.0" r="3.4"/><circle cx="300.6" cy="146.0" r="3.4"/><circle cx="303.3" cy="146.0" r="3.4"/><circle cx="306.8" cy="146.0" r="3.4"/><circle cx="309.4" cy="146.0" r="3.4"/><circle cx="312.1" cy="146.0" r="3.4"/><circle cx="313.8" cy="146.0" r="3.4"/><circle cx="315.6" cy="146.0" r="3.4"/><circle cx="317.4" cy="146.0" r="3.4"/><circle cx="318.2" cy="146.0" r="3.4"/><circle cx="320.9" cy="146.0" r="3.4"/><circle cx="322.6" cy="146.0" r="3.4"/><circle cx="324.4" cy="146.0" r="3.4"/><circle cx="327.0" cy="146.0" r="3.4"/><circle cx="329.7" cy="146.0" r="3.4"/><circle cx="332.3" cy="146.0" r="3.4"/><circle cx="335.0" cy="146.0" r="3.4"/><circle cx="337.6" cy="146.0" r="3.4"/><circle cx="341.1" cy="146.0" r="3.4"/><circle cx="343.8" cy="146.0" r="3.4"/><circle cx="346.4" cy="146.0" r="3.4"/><circle cx="348.2" cy="146.0" r="3.4"/><circle cx="349.9" cy="146.0" r="3.4"/></g>
+        <line x1="40" y1="176" x2="600" y2="176" stroke="var(--rule)"/>
+        <line x1="56.0" y1="176" x2="56.0" y2="182" stroke="var(--rule)"/><text x="56.0" y="196" class="tk">-3</text><line x1="144.0" y1="176" x2="144.0" y2="182" stroke="var(--rule)"/><text x="144.0" y="196" class="tk">-2</text><line x1="232.0" y1="176" x2="232.0" y2="182" stroke="var(--rule)"/><text x="232.0" y="196" class="tk">-1</text><line x1="320.0" y1="176" x2="320.0" y2="182" stroke="var(--rule)"/><text x="320.0" y="196" class="tk">0</text><line x1="408.0" y1="176" x2="408.0" y2="182" stroke="var(--rule)"/><text x="408.0" y="196" class="tk">+1</text><line x1="496.0" y1="176" x2="496.0" y2="182" stroke="var(--rule)"/><text x="496.0" y="196" class="tk">+2</text><line x1="584.0" y1="176" x2="584.0" y2="182" stroke="var(--rule)"/><text x="584.0" y="196" class="tk">+3</text>
+        <text x="320" y="208" class="mid tk">metres from the mark, beyond to the right</text>
+      </svg>
+      <figcaption>Band drawn at 0.35 m either side. Recorded stops are from the driver's own log and are not official benchmarks.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <p class="eyebrow">The numbers</p>
+    <h2>Side by side</h2>
+    <div class="tbl-scroll">
+      <table class="tbl">
+        <thead><tr><th>Quantity</th><th>SED R8 in service</th><th>SED R8/A</th><th>Commuter reference</th></tr></thead>
+        <tbody>
+          <tr><td>Formation</td><td>Three cars</td><td>Three cars</td><td>Three cars of 20 m</td></tr>
+          <tr><td>Length over couplers</td><td class="num">56.20 m</td><td class="num">56.20 m</td><td class="num">60.00 m</td></tr>
+          <tr><td>Width</td><td class="num">2.95 m</td><td class="num">2.80 m</td><td class="num">2.95 m</td></tr>
+          <tr><td>Height to the roof</td><td class="num">3.70 m</td><td class="num">3.70 m</td><td class="num">3.62 m</td></tr>
+          <tr><td>Floor height</td><td class="num">1.10 m</td><td class="num">1.10 m</td><td class="num">1.13 m</td></tr>
+          <tr><td>Track gauge</td><td class="num">1,435 mm</td><td class="num">1,435 mm</td><td class="num">1,067 mm</td></tr>
+          <tr><td>Body</td><td>Steel shell</td><td>Aluminium extrusion, welded</td><td>Stainless steel</td></tr>
+          <tr><td>Empty weight</td><td class="num">96.0 t</td><td class="num">84.0 t</td><td class="num">99.0 t</td></tr>
+          <tr><td>Axle weight, loaded</td><td class="num">21.6 t</td><td class="num">18.4 t</td><td class="num">11.5 t</td></tr>
+          <tr><td>Doors a side, each car</td><td class="num">3 pairs</td><td class="num">3 pairs</td><td class="num">4 pairs</td></tr>
+          <tr><td>Power</td><td>25 kV 50 Hz AC</td><td>25 kV 50 Hz AC, 220 kWh reserve</td><td>1,500 V DC</td></tr>
+          <tr><td>Service deceleration</td><td class="num">0.90 m/s&sup2;</td><td class="num">1.10 m/s&sup2;</td><td class="num">1.25 m/s&sup2;</td></tr>
+          <tr><td>Stopping accuracy</td><td>Not specified</td><td class="num">0.35 m at the cab</td><td class="num">0.35 m under automatic control</td></tr>
+          <tr><td>Expected life</td><td class="num">40 years</td><td class="num">40 years</td><td class="num">Replacement at 20 to 25 years</td></tr>
+          <tr><td>Build account</td><td class="num">250 t CO2e</td><td class="num">268 t CO2e</td><td>Not published</td></tr>
+          <tr><td>Running account</td><td class="num">14 g CO2e per vehicle-km</td><td class="num">12 g CO2e per vehicle-km</td><td>Not published</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="tbl-note">Reference figures are the published dimensions of current Japanese commuter stock and the tolerance quoted for automatic stopping equipment. They are held here for comparison and no vehicle of that kind is offered to the Republic.</p>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <p class="eyebrow">The cost of the aluminium</p>
+    <h2>What the drafting group argued about</h2>
+    <div class="essay">
+      <p><strong>The build account rises and the running account falls.</strong> An aluminium shell costs 18 tonnes of CO2e more to make than the steel one it replaces, and returns it through 2 grams a vehicle-kilometre over a forty year life. The group records that a vehicle bought for punctuality alone would fail the test, and that this one passes it on the energy.</p>
+      <p><strong>Repair had to survive the change.</strong> A welded extrusion is harder to open than a bolted steel shell, so the sections are drawn to be cut and replaced whole at the half-life rebuild, and the factory holds the jigs. Nothing in the design leaves a depot mechanic unable to work on it.</p>
+      <p><strong>The correction does not directly assist the driver.</strong> The system follows the computed curve over the last two hundred metres and releases at any touch of the brake handle instead of keeping it. The group considered a full automatic stop of the Japanese kind and rejected it, since it needs marked platforms, gates and a signalling system that regulates a train to the second, none of which exists here and none of which is proposed.</p>
+      <p><strong>Fifteen centimetres of width cost seats.</strong> The narrowed body takes the seated count from 138 to 132 and the total from 306 to 292. On a route running eight-minute headways at the peak the group accepted the loss. On a busier route it would refuse it, and the R8 remains the standard vehicle everywhere else.</p>
+    </div>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <p class="eyebrow">Drawing 6</p>
+    <h2>The platform, and where trains actually stop</h2>
+    <p>A southern route platform is 70 m of unpainted concrete with a name board, a shelter and no gates. The target stop puts the front of the cab one metre inside the far end, which brings all three cars alongside and every door onto the surface. The lower panel repeats that point at an expanded scale, with the same twenty-four recorded stops and the tolerance the R8/A is specified to meet.</p>
+  </div>
+  <div class="wrap">
+    <figure class="fig">
+      <svg viewBox="0 0 640 300" role="img" aria-labelledby="t6 d6">
+        <title id="t6">Plan of a southern route platform with the unit at the target stop, and a detail of the stopping positions</title>
+        <desc id="d6">Panel one: a 70 metre platform 4.5 metres deep, with a body 2.80 metres wide standing over a track of 1,435 millimetres, the cab front one metre inside the far end. Panel two, at an expanded scale: twenty-four recorded stops on the R8 spread from 1.9 metres short to 2.9 metres beyond the target, against the specified tolerance of 0.35 metres either side.</desc>
+
+        <text x="40" y="26" class="lb">1. Platform of 70 m, no gates and no painted marks</text>
+        <rect x="40" y="46.0" width="518" height="33.3" fill="var(--plate)" stroke="var(--ink-3)" stroke-width="1.4"/>
+        <rect x="52" y="54.0" width="86" height="15" fill="none" stroke="var(--rule)" stroke-width="1.2"/>
+        <text x="146" y="66.0" class="tk">shelter and name board</text>
+        <rect x="40" y="75.3" width="518" height="4" fill="var(--signal)"/>
+        <line x1="24" y1="86.9" x2="616" y2="86.9" stroke="var(--ink-3)" stroke-width="1.2"/>
+        <line x1="24" y1="97.6" x2="616" y2="97.6" stroke="var(--ink-3)" stroke-width="1.2"/>
+        <rect x="134.7" y="81.9" width="415.9" height="20.7" rx="3" fill="none" stroke="var(--ink)" stroke-width="1.6"/>
+        <rect x="154.3" y="80.2" width="6" height="3.4" fill="var(--ink-3)"/><rect x="199.4" y="80.2" width="6" height="3.4" fill="var(--ink-3)"/><rect x="244.6" y="80.2" width="6" height="3.4" fill="var(--ink-3)"/><rect x="291.9" y="80.2" width="6" height="3.4" fill="var(--ink-3)"/><rect x="339.7" y="80.2" width="6" height="3.4" fill="var(--ink-3)"/><rect x="387.4" y="80.2" width="6" height="3.4" fill="var(--ink-3)"/><rect x="434.8" y="80.2" width="6" height="3.4" fill="var(--ink-3)"/><rect x="479.9" y="80.2" width="6" height="3.4" fill="var(--ink-3)"/><rect x="525.1" y="80.2" width="6" height="3.4" fill="var(--ink-3)"/>
+        <text x="24" y="114.6" class="tk">track 1,435 mm, body 2.80 m over it, doors marked on the platform side</text>
+        <line x1="558" y1="34" x2="558" y2="81.3" stroke="var(--ink-3)" stroke-width="1.2" stroke-dasharray="4 3"/>
+        <text x="554" y="30" class="ar tk">end of platform</text>
+        <line x1="550.6" y1="81.3" x2="550.6" y2="138.0" stroke="var(--ink)" stroke-width="1.6"/>
+        <text x="542.6" y="132.0" class="ar tk">target stop: cab front 1 m inside the end</text>
+
+        <text x="40" y="152" class="lb">2. Detail at the target stop, expanded scale</text>
+        <rect x="309.7" y="170" width="40.6" height="58" fill="var(--train)" opacity="0.18"/>
+        <line x1="330.0" y1="166" x2="330.0" y2="234" stroke="var(--ink)" stroke-width="1.6"/>
+        <line x1="144.4" y1="228" x2="515.6" y2="228" stroke="var(--rule)"/>
+        <line x1="156.0" y1="228" x2="156.0" y2="234" stroke="var(--rule)"/><text x="156.0" y="248" class="tk mid">-3</text><line x1="214.0" y1="228" x2="214.0" y2="234" stroke="var(--rule)"/><text x="214.0" y="248" class="tk mid">-2</text><line x1="272.0" y1="228" x2="272.0" y2="234" stroke="var(--rule)"/><text x="272.0" y="248" class="tk mid">-1</text><line x1="330.0" y1="228" x2="330.0" y2="234" stroke="var(--rule)"/><text x="330.0" y="248" class="tk mid">0</text><line x1="388.0" y1="228" x2="388.0" y2="234" stroke="var(--rule)"/><text x="388.0" y="248" class="tk mid">+1</text><line x1="446.0" y1="228" x2="446.0" y2="234" stroke="var(--rule)"/><text x="446.0" y="248" class="tk mid">+2</text><line x1="504.0" y1="228" x2="504.0" y2="234" stroke="var(--rule)"/><text x="504.0" y="248" class="tk mid">+3</text>
+        <g fill="var(--ink-3)"><circle cx="219.8" cy="188.0" r="3"/><circle cx="248.8" cy="198.0" r="3"/><circle cx="260.4" cy="208.0" r="3"/><circle cx="277.8" cy="188.0" r="3"/><circle cx="283.6" cy="198.0" r="3"/><circle cx="295.2" cy="208.0" r="3"/><circle cx="301.0" cy="188.0" r="3"/><circle cx="306.8" cy="198.0" r="3"/><circle cx="318.4" cy="208.0" r="3"/><circle cx="324.2" cy="188.0" r="3"/><circle cx="335.8" cy="198.0" r="3"/><circle cx="341.6" cy="208.0" r="3"/><circle cx="350.3" cy="188.0" r="3"/><circle cx="359.0" cy="198.0" r="3"/><circle cx="364.8" cy="208.0" r="3"/><circle cx="376.4" cy="188.0" r="3"/><circle cx="382.2" cy="198.0" r="3"/><circle cx="393.8" cy="208.0" r="3"/><circle cx="405.4" cy="188.0" r="3"/><circle cx="417.0" cy="198.0" r="3"/><circle cx="428.6" cy="208.0" r="3"/><circle cx="451.8" cy="188.0" r="3"/><circle cx="469.2" cy="198.0" r="3"/><circle cx="498.2" cy="208.0" r="3"/></g>
+        <text x="330.0" y="264" class="mid tk">metres from the target stop, beyond it to the right</text>
+        <circle cx="46" cy="280" r="3" fill="var(--ink-3)"/>
+        <text x="58" y="284" class="tk">recorded stops, R8 in service: 24 of them, total spread 4.8 m</text>
+        <rect x="42" y="290" width="9" height="9" fill="var(--train)" opacity="0.18"/>
+        <text x="58" y="298" class="tk">specified tolerance, R8/A: 0.35 m either side of the target</text>
+      </svg>
+      <figcaption>Panel one at one scale in both directions. Panel two at about eight times that scale, so the tolerance can be read.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <p class="eyebrow">Drawing 7</p>
+    <h2>How the correction works</h2>
+    <p>Everything in the loop is measurement the train already takes. The line record is the published survey of gradient and curve for the route, held as a file in the register. The load comes off the air suspension pressure, which is how the brake already knows the weight of the car. Adhesion is estimated from the slip the wheels report under the first application. The solver returns one braking curve and the blend follows it.</p>
+  </div>
+  <div class="wrap">
+    <figure class="fig">
+      <svg viewBox="0 0 800 340" role="img" aria-labelledby="t7 d7">
+        <title id="t7">Block diagram of the stopping correction</title>
+        <desc id="d7">Line record, odometer and doppler, suspension load and adhesion estimate feed a curve solver. The solver sets a brake demand which the blended brake applies to the train. Position and speed return to the solver. The driver handle overrides the demand at any point.</desc>
+        <g stroke="var(--ink)" stroke-width="1.5" fill="var(--plate)">
+          <rect x="10" y="30" width="170" height="48" rx="3"/>
+          <rect x="10" y="88" width="170" height="48" rx="3"/>
+          <rect x="10" y="146" width="170" height="48" rx="3"/>
+          <rect x="10" y="204" width="170" height="48" rx="3"/>
+          <rect x="230" y="110" width="165" height="76" rx="3"/>
+          <rect x="430" y="110" width="145" height="76" rx="3"/>
+          <rect x="615" y="110" width="145" height="76" rx="3"/>
+          <rect x="430" y="240" width="145" height="60" rx="3"/>
+        </g>
+        <text x="24" y="52" class="lb">Line record</text><text x="24" y="68" class="tk">published survey file</text>
+        <text x="24" y="110" class="lb">Odometer</text><text x="24" y="126" class="tk">wheel pulses, doppler</text>
+        <text x="24" y="168" class="lb">Load</text><text x="24" y="184" class="tk">suspension pressure</text>
+        <text x="24" y="226" class="lb">Adhesion</text><text x="24" y="242" class="tk">slip, first application</text>
+        <text x="244" y="136" class="lb">Curve solver</text><text x="244" y="154" class="tk">one curve, recomputed</text><text x="244" y="170" class="tk">every 100 ms</text>
+        <text x="444" y="136" class="lb">Brake demand</text><text x="444" y="154" class="tk">a deceleration,</text><text x="444" y="170" class="tk">never a brake step</text>
+        <text x="629" y="136" class="lb">Blend</text><text x="629" y="154" class="tk">electric first,</text><text x="629" y="170" class="tk">friction after</text>
+        <text x="444" y="266" class="lb">Driver handle</text><text x="444" y="284" class="tk">releases the loop</text>
+        <g stroke="var(--ink)" stroke-width="1.4" fill="none" marker-end="url(#ar)">
+          <path d="M180 54 H206 V130 H226"/>
+          <path d="M180 112 H206 V140 H226"/>
+          <path d="M180 170 H206 V150 H226"/>
+          <path d="M180 228 H206 V160 H226"/>
+          <path d="M395 148 H426"/>
+          <path d="M575 148 H611"/>
+          <path d="M502 240 V190"/>
+        </g>
+        <path d="M687 186 V320 H312 V190" stroke="var(--train)" stroke-width="1.6" fill="none" stroke-dasharray="5 4" marker-end="url(#arb)"/>
+        <text x="330" y="314" class="tk">measured position and speed return</text>
+        <defs>
+          <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="var(--ink)"/></marker>
+          <marker id="arb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="var(--train)"/></marker>
+        </defs>
+      </svg>
+      <figcaption>Nothing in the loop reads a wayside beacon, since the southern route has none.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <p class="eyebrow">Drawing 8</p>
+    <h2>The four states, and the way out of all of them</h2>
+    <p>The system arms itself when the line record says a stop is 400 m ahead and the driver has made no application. It follows the curve, releases into the target stop and reports the error it finished with. A touch of the handle at any point drops it to standby for the rest of the approach, and it stays there until the train has left the platform.</p>
+  </div>
+  <div class="wrap">
+    <figure class="fig">
+      <svg viewBox="0 0 640 240" role="img" aria-labelledby="t8 d8">
+        <title id="t8">State diagram of the stopping correction</title>
+        <desc id="d8">States are standby, armed, holding, releasing and stopped. The driver handle sends any state to standby. Standby is left only after the train departs.</desc>
+        <g fill="var(--plate)" stroke="var(--ink)" stroke-width="1.5">
+          <rect x="20" y="40" width="104" height="46" rx="23"/>
+          <rect x="168" y="40" width="104" height="46" rx="23"/>
+          <rect x="316" y="40" width="104" height="46" rx="23"/>
+          <rect x="464" y="40" width="104" height="46" rx="23"/>
+          <rect x="242" y="164" width="156" height="46" rx="23" stroke="var(--bus)"/>
+        </g>
+        <text x="72" y="68" class="mid lb">ARMED</text>
+        <text x="220" y="68" class="mid lb">HOLDING</text>
+        <text x="368" y="68" class="mid lb">RELEASING</text>
+        <text x="516" y="68" class="mid lb">STOPPED</text>
+        <text x="320" y="192" class="mid lb">STANDBY</text>
+        <g stroke="var(--ink)" stroke-width="1.4" fill="none" marker-end="url(#ar2)">
+          <path d="M124 63 H164"/>
+          <path d="M272 63 H312"/>
+          <path d="M420 63 H460"/>
+        </g>
+        <text x="144" y="34" class="mid tk">400 m</text>
+        <text x="292" y="34" class="mid tk">curve met</text>
+        <text x="440" y="34" class="mid tk">last 6 m</text>
+        <g stroke="var(--bus)" stroke-width="1.4" fill="none" marker-end="url(#ar3)">
+          <path d="M72 86 V150 H252 V158"/>
+          <path d="M220 86 V128 H300 V158"/>
+          <path d="M368 86 V128 H340 V158"/>
+        </g>
+        <text x="84" y="144" class="tk">handle touched, from any state</text>
+        <path d="M568 63 H600 V214 H320 V212" stroke="var(--ink-3)" stroke-width="1.4" fill="none" stroke-dasharray="5 4" marker-end="url(#ar4)"/>
+        <text x="596" y="230" class="ar tk">error reported, then standby until departure</text>
+        <defs>
+          <marker id="ar2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="var(--ink)"/></marker>
+          <marker id="ar3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="var(--bus)"/></marker>
+          <marker id="ar4" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="var(--ink-3)"/></marker>
+        </defs>
+      </svg>
+      <figcaption>The handle has priority over every transition. No state can be entered against it.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <p class="eyebrow">Drawing 9</p>
+    <h2>Where the uncertainty goes</h2>
+    <p>Position error is largest far out and collapses as the train closes on the mark, because the wheel count has less distance left in which to drift and the slip is measured rather than assumed. The line record is the one term that stays flat, since it is the resolution the survey was taken at. Reaching below it would mean surveying the route again at a finer step.</p>
+  </div>
+  <div class="wrap">
+    <figure class="fig">
+      <svg viewBox="0 0 640 220" role="img" aria-labelledby="t9 d9">
+        <title id="t9">Position uncertainty at three points in the approach</title>
+        <desc id="d9">At 200 metres the terms total 1.77 metres, at 50 metres 0.88 metres, and at the mark 0.40 metres. The line record term stays at 0.20 metres throughout.</desc>
+        <line x1="106.0" y1="44" x2="106.0" y2="184" stroke="var(--rule-2)"/><text x="106.0" y="200" class="tk mid">0.0</text><line x1="218.0" y1="44" x2="218.0" y2="184" stroke="var(--rule-2)"/><text x="218.0" y="200" class="tk mid">0.5</text><line x1="330.0" y1="44" x2="330.0" y2="184" stroke="var(--rule-2)"/><text x="330.0" y="200" class="tk mid">1.0</text><line x1="442.0" y1="44" x2="442.0" y2="184" stroke="var(--rule-2)"/><text x="442.0" y="200" class="tk mid">1.5</text><line x1="554.0" y1="44" x2="554.0" y2="184" stroke="var(--rule-2)"/><text x="554.0" y="200" class="tk mid">2.0</text><text x="98.0" y="67.0" class="ar tk">200 m out</text><rect x="106.0" y="52.0" width="138.9" height="22" fill="var(--train)"/><rect x="244.9" y="52.0" width="98.6" height="22" fill="var(--bus)"/><rect x="343.4" y="52.0" width="44.8" height="22" fill="var(--coach)"/><rect x="388.2" y="52.0" width="114.2" height="22" fill="var(--ink-3)"/><text x="510.5" y="68.0" class="tk">1.77 m</text><text x="98.0" y="111.0" class="ar tk">50 m out</text><rect x="106.0" y="96.0" width="47.0" height="22" fill="var(--train)"/><rect x="153.0" y="96.0" width="40.3" height="22" fill="var(--bus)"/><rect x="193.4" y="96.0" width="44.8" height="22" fill="var(--coach)"/><rect x="238.2" y="96.0" width="65.0" height="22" fill="var(--ink-3)"/><text x="311.1" y="112.0" class="tk">0.88 m</text><text x="98.0" y="155.0" class="ar tk">At the mark</text><rect x="106.0" y="140.0" width="11.2" height="22" fill="var(--train)"/><rect x="117.2" y="140.0" width="9.0" height="22" fill="var(--bus)"/><rect x="126.2" y="140.0" width="44.8" height="22" fill="var(--coach)"/><rect x="171.0" y="140.0" width="24.6" height="22" fill="var(--ink-3)"/><text x="203.6" y="156.0" class="tk">0.40 m</text>
+        <text x="106" y="216" class="tk">metres of uncertainty</text>
+        <g class="tk">
+          <rect x="376" y="16" width="12" height="10" fill="var(--train)"/><text x="394" y="25">Odometer drift</text>
+          <rect x="376" y="30" width="12" height="10" fill="var(--bus)"/><text x="394" y="39">Wheel slip</text>
+          <rect x="500" y="16" width="12" height="10" fill="var(--coach)"/><text x="518" y="25">Line record</text>
+          <rect x="500" y="30" width="12" height="10" fill="var(--ink-3)"/><text x="518" y="39">Brake response</text>
+        </g>
+      </svg>
+      <figcaption>Terms are added as they arrive at the solver. The specified 0.35 m sits inside the final bar because the last term is measured during the stop itself.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <p class="eyebrow">Drawing 10</p>
+    <h2>A wet patch at 120 metres</h2>
+    <p>This is one recorded approach on the test track with water laid down deliberately, taken as the worst case for the specification. The demand stays flat while the measured deceleration falls under the wet. The lower panel gives what that costs in position, in centimetres, on a scale of its own. The solver recovers it over the remaining hundred metres by asking for slightly more than the curve requires, and the error is zero at the target stop.</p>
+    <ul class="key">
+      <li class="k-a"><i></i> demanded deceleration</li>
+      <li class="k-c"><i></i> measured deceleration</li>
+      <li class="k-b"><i></i> position error, lower panel</li>
+    </ul>
+  </div>
+  <div class="wrap">
+    <figure class="fig">
+      <svg viewBox="0 0 640 420" role="img" aria-labelledby="t10 d10">
+        <title id="t10">Demanded and measured deceleration over the last two hundred metres, with the position error below</title>
+        <desc id="d10">The demand stays at 1.10 metres per second squared. The measured value falls to about 0.99 in the wet patch between 140 and 100 metres, and the position error reaches about 38 centimetres. The solver recovers it over the remaining hundred metres and the error is zero at the target stop.</desc>
+
+        <text x="40" y="20" class="lb">1. Deceleration, demanded and measured, m/s2</text>
+        <line x1="60" y1="46" x2="60" y2="214" stroke="var(--rule)"/>
+        <line x1="60" y1="214" x2="600" y2="214" stroke="var(--rule)"/>
+        <line x1="60.0" y1="214" x2="60.0" y2="220" stroke="var(--rule)"/><text x="60.0" y="234" class="tk mid">200</text><line x1="195.0" y1="214" x2="195.0" y2="220" stroke="var(--rule)"/><text x="195.0" y="234" class="tk mid">150</text><line x1="330.0" y1="214" x2="330.0" y2="220" stroke="var(--rule)"/><text x="330.0" y="234" class="tk mid">100</text><line x1="465.0" y1="214" x2="465.0" y2="220" stroke="var(--rule)"/><text x="465.0" y="234" class="tk mid">50</text><line x1="600.0" y1="214" x2="600.0" y2="220" stroke="var(--rule)"/><text x="600.0" y="234" class="tk mid">0</text><line x1="54" y1="214.0" x2="60" y2="214.0" stroke="var(--rule)"/><text x="50" y="218.0" class="tk ar">0.90</text><line x1="54" y1="184.0" x2="60" y2="184.0" stroke="var(--rule)"/><text x="50" y="188.0" class="tk ar">1.00</text><line x1="54" y1="154.0" x2="60" y2="154.0" stroke="var(--rule)"/><text x="50" y="158.0" class="tk ar">1.10</text><line x1="54" y1="124.0" x2="60" y2="124.0" stroke="var(--rule)"/><text x="50" y="128.0" class="tk ar">1.20</text><line x1="54" y1="94.0" x2="60" y2="94.0" stroke="var(--rule)"/><text x="50" y="98.0" class="tk ar">1.30</text>
+        <rect x="222.0" y="46" width="108.0" height="168" fill="var(--signal)" opacity="0.35"/>
+        <text x="276.0" y="38" class="mid tk">water laid on, 140 m to 100 m</text>
+        <polyline points="60.0,154.0 65.4,154.0 70.8,154.0 76.2,154.0 81.6,154.0 87.0,154.0 92.4,154.0 97.8,154.0 103.2,154.0 108.6,154.0 114.0,154.0 119.4,154.0 124.8,154.0 130.2,154.0 135.6,154.0 141.0,154.0 146.4,154.0 151.8,154.0 157.2,154.0 162.6,154.0 168.0,154.0 173.4,154.0 178.8,154.0 184.2,154.0 189.6,154.0 195.0,154.0 200.4,154.0 205.8,154.0 211.2,154.0 216.6,154.0 222.0,154.0 227.4,154.0 232.8,154.0 238.2,154.0 243.6,154.0 249.0,154.0 254.4,154.0 259.8,154.0 265.2,154.0 270.6,154.0 276.0,154.0 281.4,154.0 286.8,154.0 292.2,154.0 297.6,154.0 303.0,154.0 308.4,154.0 313.8,154.0 319.2,154.0 324.6,154.0 330.0,154.0 335.4,154.0 340.8,154.0 346.2,154.0 351.6,154.0 357.0,154.0 362.4,154.0 367.8,154.0 373.2,154.0 378.6,154.0 384.0,154.0 389.4,154.0 394.8,154.0 400.2,154.0 405.6,154.0 411.0,154.0 416.4,154.0 421.8,154.0 427.2,154.0 432.6,154.0 438.0,154.0 443.4,154.0 448.8,154.0 454.2,154.0 459.6,154.0 465.0,154.0 470.4,154.0 475.8,154.0 481.2,154.0 486.6,154.0 492.0,154.0 497.4,154.0 502.8,154.0 508.2,154.0 513.6,154.0 519.0,154.0 524.4,154.0 529.8,154.0 535.2,154.0 540.6,154.0 546.0,154.0 551.4,154.0 556.8,154.0 562.2,154.0 567.6,154.0 573.0,154.0 578.4,154.0 583.8,154.0 589.2,154.0 594.6,154.0 600.0,154.0" fill="none" stroke="var(--train)" stroke-width="2"/>
+        <polyline points="60.0,154.9 65.4,154.0 70.8,153.2 76.2,152.4 81.6,151.8 87.0,151.3 92.4,151.0 97.8,151.0 103.2,151.3 108.6,151.7 114.0,152.4 119.4,153.1 124.8,154.0 130.2,154.8 135.6,155.6 141.0,156.2 146.4,156.7 151.8,157.0 157.2,157.0 162.6,156.8 168.0,156.3 173.4,155.7 178.8,155.0 184.2,154.2 189.6,153.5 195.0,153.0 200.4,152.7 205.8,152.8 211.2,153.4 216.6,154.7 222.0,156.6 227.4,159.3 232.8,162.7 238.2,166.7 243.6,171.1 249.0,175.7 254.4,180.2 259.8,184.2 265.2,187.3 270.6,189.3 276.0,189.8 281.4,189.0 286.8,186.7 292.2,183.3 297.6,179.1 303.0,174.4 308.4,169.6 313.8,165.1 319.2,161.0 324.6,157.5 330.0,154.7 335.4,152.7 340.8,151.3 346.2,150.4 351.6,149.9 357.0,149.7 362.4,149.6 367.8,149.6 373.2,149.6 378.6,149.4 384.0,148.9 389.4,148.3 394.8,147.4 400.2,146.3 405.6,144.9 411.0,143.5 416.4,141.9 421.8,140.3 427.2,138.9 432.6,137.6 438.0,136.5 443.4,135.8 448.8,135.4 454.2,135.4 459.6,135.8 465.0,136.5 470.4,137.6 475.8,138.9 481.2,140.3 486.6,141.9 492.0,143.4 497.4,144.9 502.8,146.3 508.2,147.4 513.6,148.3 519.0,148.9 524.4,149.3 529.8,149.5 535.2,149.5 540.6,149.3 546.0,149.2 551.4,149.0 556.8,148.9 562.2,148.9 567.6,149.0 573.0,149.4 578.4,149.9 583.8,150.6 589.2,151.5 594.6,152.5 600.0,153.5" fill="none" stroke="var(--bus)" stroke-width="2"/>
+
+        <text x="40" y="260" class="lb">2. Position error against the target stop, centimetres</text>
+        <line x1="60" y1="346.0" x2="600" y2="346.0" stroke="var(--rule-2)"/><line x1="60" y1="326.0" x2="600" y2="326.0" stroke="var(--rule-2)"/><line x1="60" y1="306.0" x2="600" y2="306.0" stroke="var(--rule-2)"/><line x1="60" y1="286.0" x2="600" y2="286.0" stroke="var(--rule-2)"/>
+        <polygon points="60,366 60.0,365.8 65.4,365.8 70.8,366.0 76.2,366.3 81.6,366.7 87.0,367.2 92.4,367.8 97.8,368.3 103.2,368.8 108.6,369.3 114.0,369.6 119.4,369.7 124.8,369.7 130.2,369.6 135.6,369.3 141.0,368.9 146.4,368.4 151.8,367.8 157.2,367.2 162.6,366.7 168.0,366.3 173.4,366.0 178.8,365.8 184.2,365.8 189.6,365.9 195.0,366.1 200.4,366.3 205.8,366.5 211.2,366.6 216.6,366.5 222.0,366.0 227.4,365.0 232.8,363.4 238.2,361.1 243.6,357.9 249.0,353.8 254.4,348.9 259.8,343.3 265.2,337.0 270.6,330.5 276.0,323.8 281.4,317.2 286.8,311.1 292.2,305.7 297.6,301.0 303.0,297.2 308.4,294.2 313.8,292.2 319.2,290.9 324.6,290.2 330.0,290.1 335.4,290.3 340.8,290.8 346.2,291.5 351.6,292.3 357.0,293.1 362.4,293.9 367.8,294.7 373.2,295.6 378.6,296.4 384.0,297.4 389.4,298.4 394.8,299.7 400.2,301.1 405.6,302.8 411.0,304.8 416.4,307.0 421.8,309.6 427.2,312.4 432.6,315.5 438.0,318.7 443.4,322.1 448.8,325.6 454.2,329.1 459.6,332.5 465.0,335.7 470.4,338.8 475.8,341.6 481.2,344.2 486.6,346.4 492.0,348.4 497.4,350.1 502.8,351.5 508.2,352.8 513.6,353.8 519.0,354.8 524.4,355.6 529.8,356.5 535.2,357.3 540.6,358.2 546.0,359.1 551.4,360.1 556.8,361.0 562.2,362.0 567.6,362.9 573.0,363.8 578.4,364.5 583.8,365.1 589.2,365.6 594.6,365.9 600.0,366.0 600,366" fill="var(--ink-3)" opacity="0.16"/>
+        <polyline points="60.0,365.8 65.4,365.8 70.8,366.0 76.2,366.3 81.6,366.7 87.0,367.2 92.4,367.8 97.8,368.3 103.2,368.8 108.6,369.3 114.0,369.6 119.4,369.7 124.8,369.7 130.2,369.6 135.6,369.3 141.0,368.9 146.4,368.4 151.8,367.8 157.2,367.2 162.6,366.7 168.0,366.3 173.4,366.0 178.8,365.8 184.2,365.8 189.6,365.9 195.0,366.1 200.4,366.3 205.8,366.5 211.2,366.6 216.6,366.5 222.0,366.0 227.4,365.0 232.8,363.4 238.2,361.1 243.6,357.9 249.0,353.8 254.4,348.9 259.8,343.3 265.2,337.0 270.6,330.5 276.0,323.8 281.4,317.2 286.8,311.1 292.2,305.7 297.6,301.0 303.0,297.2 308.4,294.2 313.8,292.2 319.2,290.9 324.6,290.2 330.0,290.1 335.4,290.3 340.8,290.8 346.2,291.5 351.6,292.3 357.0,293.1 362.4,293.9 367.8,294.7 373.2,295.6 378.6,296.4 384.0,297.4 389.4,298.4 394.8,299.7 400.2,301.1 405.6,302.8 411.0,304.8 416.4,307.0 421.8,309.6 427.2,312.4 432.6,315.5 438.0,318.7 443.4,322.1 448.8,325.6 454.2,329.1 459.6,332.5 465.0,335.7 470.4,338.8 475.8,341.6 481.2,344.2 486.6,346.4 492.0,348.4 497.4,350.1 502.8,351.5 508.2,352.8 513.6,353.8 519.0,354.8 524.4,355.6 529.8,356.5 535.2,357.3 540.6,358.2 546.0,359.1 551.4,360.1 556.8,361.0 562.2,362.0 567.6,362.9 573.0,363.8 578.4,364.5 583.8,365.1 589.2,365.6 594.6,365.9 600.0,366.0" fill="none" stroke="var(--ink-3)" stroke-width="2"/>
+        <line x1="60" y1="366" x2="600" y2="366" stroke="var(--ink)" stroke-width="1.2"/>
+        <line x1="60" y1="282" x2="60" y2="372" stroke="var(--rule)"/>
+        <line x1="60.0" y1="366" x2="60.0" y2="372" stroke="var(--rule)"/><text x="60.0" y="386" class="tk mid">200</text><line x1="195.0" y1="366" x2="195.0" y2="372" stroke="var(--rule)"/><text x="195.0" y="386" class="tk mid">150</text><line x1="330.0" y1="366" x2="330.0" y2="372" stroke="var(--rule)"/><text x="330.0" y="386" class="tk mid">100</text><line x1="465.0" y1="366" x2="465.0" y2="372" stroke="var(--rule)"/><text x="465.0" y="386" class="tk mid">50</text><line x1="600.0" y1="366" x2="600.0" y2="372" stroke="var(--rule)"/><text x="600.0" y="386" class="tk mid">0</text><line x1="54" y1="366.0" x2="60" y2="366.0" stroke="var(--rule)"/><text x="50" y="370.0" class="tk ar">0</text><line x1="54" y1="346.0" x2="60" y2="346.0" stroke="var(--rule)"/><text x="50" y="350.0" class="tk ar">10</text><line x1="54" y1="326.0" x2="60" y2="326.0" stroke="var(--rule)"/><text x="50" y="330.0" class="tk ar">20</text><line x1="54" y1="306.0" x2="60" y2="306.0" stroke="var(--rule)"/><text x="50" y="310.0" class="tk ar">30</text><line x1="54" y1="286.0" x2="60" y2="286.0" stroke="var(--rule)"/><text x="50" y="290.0" class="tk ar">40</text>
+        <circle cx="330.0" cy="290.1" r="3" fill="var(--ink-3)"/>
+        <text x="330.0" y="281.1" class="mid tk">worst error 38 cm</text>
+        <text x="600" y="400" class="ar tk">metres to the target stop, zero at the right</text>
+      </svg>
+      <figcaption>One approach from the Sederna test track, 4 June. Sampled at two metres and drawn without smoothing.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <p class="eyebrow">Drawing 11</p>
+    <h2>What the rail does to the stop</h2>
+    <p>Braking distance from 70 km/h under the three conditions the southern route actually offers. The R8 loses most in leaf fall because the driver has to commit early and cannot know what the rail will be like. The corrected unit measures the slip and pays for the wet in distance rather than in accuracy, which is the whole trade.</p>
+  </div>
+  <div class="wrap">
+    <figure class="fig">
+      <svg viewBox="0 0 640 220" role="img" aria-labelledby="t11 d11">
+        <title id="t11">Braking distance from 70 kilometres an hour under three rail conditions</title>
+        <desc id="d11">Dry rail: R8 210 metres, R8/A 172 metres. Wet rail: R8 246 metres, R8/A 198 metres. Leaf fall: R8 312 metres, R8/A 244 metres.</desc>
+        <text x="126" y="44" class="ar lb">Dry</text>
+        <rect x="140" y="28" width="252" height="20" fill="var(--ink-3)"/><text x="400" y="44" class="tk">R8 &middot; 210 m</text>
+        <rect x="140" y="52" width="206" height="20" fill="var(--train)"/><text x="354" y="68" class="tk">R8/A &middot; 172 m</text>
+        <text x="126" y="112" class="ar lb">Wet</text>
+        <rect x="140" y="96" width="295" height="20" fill="var(--ink-3)"/><text x="443" y="112" class="tk">R8 &middot; 246 m</text>
+        <rect x="140" y="120" width="238" height="20" fill="var(--train)"/><text x="386" y="136" class="tk">R8/A &middot; 198 m</text>
+        <text x="126" y="180" class="ar lb">Leaf fall</text>
+        <rect x="140" y="164" width="374" height="20" fill="var(--ink-3)"/><text x="522" y="180" class="tk">R8 &middot; 312 m</text>
+        <rect x="140" y="188" width="293" height="20" fill="var(--train)"/><text x="441" y="204" class="tk">R8/A &middot; 244 m</text>
+        <line x1="140" y1="24" x2="140" y2="212" stroke="var(--rule)"/>
+      </svg>
+      <figcaption>Distances include the reaction and build-up of the blend. Sanding is not assumed on any of the three.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <p class="eyebrow">Nothing here is proprietary</p>
+    <h2>The correction is published, and so is the route it reads</h2>
+    <p>A vehicle that stops itself is a vehicle that decides something about a passenger, so the deciding part is public. The solver, the estimator and the line record format are held in the federation repository, the survey of every route is a file anybody may download from <code class="inline">vcs.podnik.rof/rolling/surveys</code>, and a depot that changes anything writes the change into its own register. A cooperative may run the unit with the correction switched out entirely.</p>
+    <div class="fig">
+      <pre><code>git clone https://vcs.podnik.rof/rolling/r8a-approach
+cd r8a-approach
+./configure --with-line-record --without-telemetry
+make &amp;&amp; make check
+make record ROUTE=southern    # rebuilds the survey file from the register</code></pre>
+    </div>
+    <div class="tbl-scroll">
+      <table class="tbl">
+        <thead><tr><th>Piece</th><th>What it is</th><th>Where it is</th><th>Terms</th></tr></thead>
+        <tbody>
+          <tr><td>Curve solver</td><td>The braking curve and the release</td><td>Federation repository, <code class="inline">vcs.podnik.rof/rolling/r8a-approach</code></td><td>Published, modifiable, no signature required to run</td></tr>
+          <tr><td>Estimator</td><td>Position, speed, load and adhesion</td><td>Federation repository, <code class="inline">vcs.podnik.rof/rolling/r8a-approach</code></td><td>Published, modifiable</td></tr>
+          <tr><td>Line record</td><td>Gradient, curve and stop positions at 0.20 m</td><td>Public register of the route</td><td>Free of charge, without account</td></tr>
+          <tr><td>Record format</td><td>Plain text, one row a chain</td><td>Annex to this note</td><td>Published, no licence sought</td></tr>
+          <tr><td>Stop log</td><td>The error every stop finished with</td><td>Published nightly by the depot</td><td>Free of charge, no driver named</td></tr>
+          <tr><td>Brake blend</td><td>Electric first, friction after</td><td>Sederna Carriage Factory</td><td>Drawings publicly released on request</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="tbl-note">A deviation from the reference build is recorded in the register of the operating cooperative, in the manner Organic Law 44 requires of a home server.</p>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <p class="eyebrow">Drawing 12</p>
+    <h2>Where the work stands</h2>
+    <p>The group has the shell and the estimator. The braking work is done on the test track and undone on the route, which is the part that takes a year. Nothing is promised for a date, and the entry in the catalogue counts one unit because one unit is what exists.</p>
+  </div>
+  <div class="wrap">
+    <figure class="fig">
+      <svg viewBox="0 0 700 210" role="img" aria-labelledby="t12 d12">
+        <title id="t12">Programme of work</title>
+        <desc id="d12">Proposal sent, shell drawn, estimator written and test track running are complete. Route trials, the assembly decision and series build are outstanding.</desc>
+        <line x1="262" y1="28" x2="262" y2="182" stroke="var(--rule)"/>
+        <text x="252" y="47" class="ar tk">Proposal to the federation</text><rect x="262" y="34" width="96" height="16" fill="var(--train)"/><text x="252" y="75" class="ar tk">Shell and gauge drawn</text><rect x="262" y="62" width="150" height="16" fill="var(--train)"/><text x="252" y="103" class="ar tk">Estimator written</text><rect x="262" y="90" width="196" height="16" fill="var(--train)"/><text x="252" y="131" class="ar tk">Test track running</text><rect x="262" y="118" width="238" height="16" fill="var(--train)"/><text x="252" y="159" class="ar tk">Route trials</text><rect x="262" y="146" width="300" height="16" fill="none" stroke="var(--ink-3)" stroke-dasharray="4 3"/><text x="252" y="187" class="ar tk">Assembly decision, then series</text><rect x="262" y="174" width="392" height="16" fill="none" stroke="var(--ink-3)" stroke-dasharray="4 3"/>
+        <text x="262" y="205" class="tk">solid is done, dashed is not</text>
+      </svg>
+      <figcaption>The first unit enters service with the correction as fitted. Every later change goes through the same publication.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <div class="notice">
+      <p><b>Standing of this note.</b> A working paper of the drafting group, published because everything is published while it is being drafted. The proposal itself sits with the assembly of the federation. Nothing here binds a cooperative, a commune or a factory, and the figures for the reference vehicle are taken from published sources abroad.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-cols">
+    <div>
+      <h2>The register</h2>
+      <ul>
+        <li><a href="catalogue.html">Vehicles in service</a></li>
+        <li><a href="retired.html">Retired models</a></li>
+        <li><a href="depots.html">Depots and maintenance</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Data and services</h2>
+      <ul>
+        <li><a href="live.html">Live position feed</a></li>
+        <li><a href="fleets.html">Fleet advice</a></li>
+        <li><a href="surplus.html">Surplus abroad</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Standing</h2>
+      <ul>
+        <li><a href="about.html">About the federation</a></li>
+        <li><a href="../../register/links.html">Public Register of the Republic</a></li>
+      </ul>
+      <p>Podnik holds a licence the Republic grants and is audited in its use of common resources. It exercises no public authority and represents no organ.</p>
+    </div>
+  </div>
+</footer>
+<script src="site.js" defer></script>
+</body>
+</html>

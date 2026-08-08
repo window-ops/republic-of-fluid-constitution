@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Developers &middot; National Railways Federation</title>
+<meta name="description" content="The interfaces, specifications and source the federation publishes: the card wire protocol, the application interfaces, the forking guide, the build flags, and the sample code.">
+<meta name="theme-color" content="#0b4ea2">
+<link rel="stylesheet" href="../site.css">
+<link rel="icon" href="../../../assets/flag.png">
+</head>
+<body>
+<a class="skip" href="#main">Skip to the content</a>
+
+<header class="head">
+  <div class="wrap">
+    <svg class="mark" viewBox="0 0 48 48" role="img" aria-label="Emblem of the National Railways Federation">
+      <rect width="48" height="48" fill="#0b4ea2"></rect>
+      <path d="M0 20 Q6 14 12 20 T24 20 T36 20 T48 20 V30 H0 Z" fill="#ffffff"></path>
+      <rect x="0" y="30" width="48" height="3" fill="#08376f"></rect>
+      <rect x="14" y="34" width="3" height="14" fill="#ffffff"></rect>
+      <rect x="31" y="34" width="3" height="14" fill="#ffffff"></rect>
+    </svg>
+    <span>
+      <p class="wordmark"><a href="../index.html">National Railways Federation</a></p>
+      <p class="standfirst">Branch federation of the railway operating cooperatives</p>
+    </span>
+  </div>
+</header>
+<div class="band" role="presentation"></div>
+
+<nav class="nav" aria-label="Sections of this site">
+  <div class="wrap">
+    <a class="navtop" href="../index.html">Front</a>
+    <details class="grp">
+      <summary>Travelling</summary>
+      <ul>
+        <li><a href="../network.html">Network and routes</a></li>
+        <li><a href="../stations.html">Stations and equipment</a></li>
+        <li><a href="../night.html">Night trains and sleepers</a></li>
+        <li><a href="../access.html">Access and assistance</a></li>
+        <li><a href="../carriage.html">Conditions of carriage</a></li>
+      </ul>
+    </details>
+    <details class="grp">
+      <summary>Systems</summary>
+      <ul>
+        <li><a href="../app.html">The application</a></li>
+        <li><a href="../card.html">CARD-ROM</a></li>
+        <li><a href="../comparison.html">Comparison of card standards</a></li>
+      </ul>
+    </details>
+    <details class="grp">
+      <summary>Federation</summary>
+      <ul>
+        <li><a href="../cooperatives.html">Member cooperatives</a></li>
+        <li><a href="../about.html">About the federation</a></li>
+      </ul>
+    </details>
+    <a class="navtop" href="./" aria-current="page">Developers</a>
+  </div>
+</nav>
+
+<main id="main">
+
+<section class="opening">
+  <div class="wrap">
+    <p class="eyebrow">Interfaces, specifications and source</p>
+    <h1>Everything the railway runs on</h1>
+    <p class="lede">Article 10 puts technical knowledge in the knowledge commons and prohibits a patent over it. What follows is the whole of what the federation holds: the wire protocol of the card, the interfaces the application reads, the guide for a transit system that wants to fork the standard, and the flags that decide what a build contains.</p>
+    <ul class="figures">
+      <li><b>4</b> documents</li>
+      <li><b>0</b> licences to sign</li>
+      <li><b>3,100</b> lines in the driver</li>
+      <li><b>2</b> interfaces to read</li>
+    </ul>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <p class="eyebrow">The four documents</p>
+    <h2>Where to start</h2>
+  </div>
+  <div class="wrap">
+    <ul class="plates four">
+      <li>
+        <h3>Card wire protocol</h3>
+        <p>Frames, command encoding, the authentication sequence, record encoding, the CMAC, status words and test vectors. The overview of the card sits on the <a href="../card.html">CARD-ROM page</a>; this is what a reader has to send.</p>
+        <p><a class="go" href="card-spec.html">Read the protocol</a></p>
+      </li>
+      <li>
+        <h3>Application interfaces</h3>
+        <p>What the federation publishes at <code class="inline">api.nrf.rof</code>: timetable, platforms, changes, reports, stations and routes.</p><p>The vehicle positions come from Podnik and are documented by them.</p>
+        <p><a class="go" href="app-api.html">Read the interfaces</a></p>
+      </li>
+      <li>
+        <h3>Forking the standard</h3>
+        <p>What a transit system outside the Bloc may change and still be read by the gates here, how to register an issuer key, and how the conformance suite is run.</p>
+        <p><a class="go" href="forking.html">Read the guide</a></p>
+      </li>
+      <li>
+        <h3>Build flags</h3>
+        <p>Every flag in the reader firmware and the card personalisation tool, its default here, and what compiling it in costs in memory. The fare and purse modules live here.</p>
+        <p><a class="go" href="build-flags.html">Read the flags</a></p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <p class="eyebrow">Source</p>
+    <h2>What can be taken away</h2>
+  </div>
+  <div class="wrap">
+    <div class="tablewrap">
+      <table>
+        <caption>Published trees, all public domain under Article 10</caption>
+        <thead><tr><th scope="col">Tree</th><th scope="col">Published at</th><th scope="col">Language</th><th scope="col" class="num">Lines</th><th scope="col">What it is</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">cardrom-driver</th><td><span class="host">source.nrf.rof/cardrom-driver</span></td><td>C99</td><td class="num">3,100</td><td>Reference driver. Mounts the three regions of a card as block devices under FreeRTOS. Allocates nothing after start.</td></tr>
+          <tr><th scope="row">gate-firmware</th><td><span class="host">source.nrf.rof/gate-firmware</span></td><td>C99</td><td class="num">11,400</td><td>The gate as it stands on the platform: four tasks, the 300 ms deadline, the panel in twelve languages.</td></tr>
+          <tr><th scope="row">machine-firmware</th><td><span class="host">source.nrf.rof/machine-firmware</span></td><td>C99</td><td class="num">18,900</td><td>The concourse machine. Adds the contact carrier, the printer and the section list.</td></tr>
+          <tr><th scope="row">railways-app</th><td><span class="host">source.nrf.rof/railways-app</span></td><td>C++ and QML</td><td class="num">26,000</td><td>The application, Qt and Kirigami.</td></tr>
+          <tr><th scope="row">conformance</th><td><span class="host">source.nrf.rof/conformance</span></td><td>Python</td><td class="num">4,700</td><td>The suite a fork runs against its own build, with the test vectors.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="tablewrap">
+      <table>
+        <caption>Samples on this page</caption>
+        <thead><tr><th scope="col">File</th><th scope="col">Shows</th><th scope="col">Take it</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">cardrom_read.c</th><td>Selecting a card, authenticating, and reading the last records under FreeRTOS.</td><td><a href="samples/cardrom_read.c" download>cardrom_read.c</a></td></tr>
+          <tr><th scope="row">append_record.c</th><td>Journalling a record and committing it inside the gate deadline.</td><td><a href="samples/append_record.c" download>append_record.c</a></td></tr>
+          <tr><th scope="row">board.py</th><td>A departure board client: the federation timetable joined to the Podnik positions.</td><td><a href="samples/board.py" download>board.py</a></td></tr>
+          <tr><th scope="row">vectors.txt</th><td>Test vectors for diversification, authentication and the record CMAC.</td><td><a href="samples/vectors.txt" download>vectors.txt</a></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="notice" style="margin-top:1.1rem">
+      <p>The addresses above resolve inside the Republic. <span class="host">source.nrf.rof</span> serves each tree over git and as a tarball, and a mirror sits at <span class="host">mirror.podnik.rof/nrf</span>. The four samples are served from this site as well, so that a reader outside the Republic can take them.</p>
+    </div>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <p class="eyebrow">Versions</p>
+    <h2>What changes, and how it is announced</h2>
+  </div>
+  <div class="wrap">
+    <ul class="plates two">
+      <li>
+        <h3>The standard</h3>
+        <p>Revision 3 since 2021. A revision is agreed between the three networks of the Bloc and published a year before any gate requires it. Revision 3 cards are read by every gate and will be until the last of them expires.</p>
+      </li>
+      <li>
+        <h3>The interfaces</h3>
+        <p>Versioned in the path. <code class="inline">/v1</code> has stood since 2019 and will stand for two years past the announcement of a successor. Fields are added and never removed inside a version.</p>
+      </li>
+      <li>
+        <h3>The firmware</h3>
+        <p>Released with the signature beside it. A gate refuses an image whose signature does not check, and a worker at the station has to unlock a gate that has been reflashed.</p>
+      </li>
+      <li>
+        <h3>The station and route identifiers</h3>
+        <p>An identifier is retired and never reused, and the retirement is in the change feed for a year before it takes effect.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+</main>
+
+<div class="band-foot" role="presentation"></div>
+<footer class="foot">
+  <div class="wrap">
+    <ul class="footlinks">
+      <li><a href="../index.html">Front</a></li>
+      <li><a href="../network.html">Network</a></li>
+      <li><a href="../app.html">Application</a></li>
+      <li><a href="../card.html">CARD-ROM</a></li>
+      <li><a href="./">Developers</a></li>
+      <li><a href="../about.html">About</a></li>
+      <li><a href="../../podnik/">Podnik</a></li>
+      <li><a href="../../../register/links.html">Public Register</a></li>
+    </ul>
+    <p class="standing">A branch federation of the railway operating cooperatives, constituted under Article 89. It exercises no public authority and represents no organ. Its accounts, its minutes and its yearly reviews are public.</p>
+  </div>
+</footer>
+<script src="../site.js" defer></script>
+</body>
+</html>

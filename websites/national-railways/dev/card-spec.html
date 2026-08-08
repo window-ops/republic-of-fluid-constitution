@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Card wire protocol &middot; National Railways Federation</title>
+<meta name="description" content="The Dubrazec revision 3 wire protocol: frame layout, the twelve commands and their encoding, the authentication sequence, record encoding and the seal, and the status words.">
+<meta name="theme-color" content="#0b4ea2">
+<link rel="stylesheet" href="../site.css">
+<link rel="icon" href="../../../assets/flag.png">
+</head>
+<body>
+<a class="skip" href="#main">Skip to the content</a>
+
+<header class="head">
+  <div class="wrap">
+    <svg class="mark" viewBox="0 0 48 48" role="img" aria-label="Emblem of the National Railways Federation">
+      <rect width="48" height="48" fill="#0b4ea2"></rect>
+      <path d="M0 20 Q6 14 12 20 T24 20 T36 20 T48 20 V30 H0 Z" fill="#ffffff"></path>
+      <rect x="0" y="30" width="48" height="3" fill="#08376f"></rect>
+      <rect x="14" y="34" width="3" height="14" fill="#ffffff"></rect>
+      <rect x="31" y="34" width="3" height="14" fill="#ffffff"></rect>
+    </svg>
+    <span>
+      <p class="wordmark"><a href="../index.html">National Railways Federation</a></p>
+      <p class="standfirst">Branch federation of the railway operating cooperatives</p>
+    </span>
+  </div>
+</header>
+<div class="band" role="presentation"></div>
+
+<nav class="nav" aria-label="Sections of this site">
+  <div class="wrap">
+    <a class="navtop" href="../index.html">Front</a>
+    <details class="grp">
+      <summary>Travelling</summary>
+      <ul>
+        <li><a href="../network.html">Network and routes</a></li>
+        <li><a href="../stations.html">Stations and equipment</a></li>
+        <li><a href="../night.html">Night trains and sleepers</a></li>
+        <li><a href="../access.html">Access and assistance</a></li>
+        <li><a href="../carriage.html">Conditions of carriage</a></li>
+      </ul>
+    </details>
+    <details class="grp">
+      <summary>Systems</summary>
+      <ul>
+        <li><a href="../app.html">The application</a></li>
+        <li><a href="../card.html">CARD-ROM</a></li>
+        <li><a href="../comparison.html">Comparison of card standards</a></li>
+      </ul>
+    </details>
+    <details class="grp">
+      <summary>Federation</summary>
+      <ul>
+        <li><a href="../cooperatives.html">Member cooperatives</a></li>
+        <li><a href="../about.html">About the federation</a></li>
+      </ul>
+    </details>
+    <a class="navtop" href="./" aria-current="page">Developers</a>
+  </div>
+</nav>
+
+<main id="main">
+
+<section class="opening">
+  <div class="wrap">
+    <p class="eyebrow">Dubrazec standard, revision 3, wire protocol</p>
+    <h1>What a reader sends, and what comes back</h1>
+    <p class="lede">The layout of the card, its memories and its electrical figures are on the <a href="../card.html">CARD-ROM page</a>. This document is the protocol: frame format, the twelve commands in their encoding, the authentication sequence, how a record is sealed, and the status words a reader must handle.</p>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <p class="eyebrow">Frames</p>
+    <h2>Above ISO 14443-3</h2>
+  </div>
+  <div class="wrap">
+    <div class="essay">
+      <p>Anticollision and the half-duplex block protocol are ISO 14443-3 Type A, unchanged. Above them the standard defines its own frame rather than ISO 14443-4, because the deadline at a gate does not survive the block chaining negotiation. A frame is at most 264 bytes over the coil and 1,032 over the pads.</p>
+    </div>
+    <div class="tablewrap">
+      <table>
+        <caption>Frame layout</caption>
+        <thead><tr><th scope="col">Offset</th><th scope="col">Length</th><th scope="col">Field</th><th scope="col">Note</th></tr></thead>
+        <tbody>
+          <tr><td class="num">0</td><td class="num">1</td><td>CMD</td><td>Command code, 0x01 to 0x0C.</td></tr>
+          <tr><td class="num">1</td><td class="num">1</td><td>FLG</td><td>Bit 0 session open, bit 1 contact interface, bit 2 more frames follow, bits 3 to 7 zero.</td></tr>
+          <tr><td class="num">2</td><td class="num">2</td><td>LEN</td><td>Payload length, big endian.</td></tr>
+          <tr><td class="num">4</td><td class="num">LEN</td><td>Payload</td><td>Command arguments, or the reply.</td></tr>
+          <tr><td class="num">4+LEN</td><td class="num">2</td><td>SW</td><td>Status word. Present in replies only.</td></tr>
+          <tr><td class="num">6+LEN</td><td class="num">2</td><td>CRC</td><td>CRC-16 as in ISO 14443-3, over the whole frame.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <p class="eyebrow">Commands</p>
+    <h2>Encoding and arguments</h2>
+  </div>
+  <div class="wrap">
+    <div class="tablewrap">
+      <table>
+        <caption>The twelve commands</caption>
+        <thead><tr><th scope="col">Code</th><th scope="col">Command</th><th scope="col">Payload out</th><th scope="col">Payload back</th><th scope="col" class="num">Typical</th></tr></thead>
+        <tbody>
+          <tr><td class="num">0x01</td><th scope="row">SELECT</th><td>none</td><td>revision, region sizes, capability bits</td><td class="num">12 ms</td></tr>
+          <tr><td class="num">0x02</td><th scope="row">READ_ID</th><td>none</td><td>256 B ROM block</td><td class="num">28 ms</td></tr>
+          <tr><td class="num">0x03</td><th scope="row">AUTH</th><td>key ref, reader nonce, 8 B</td><td>card nonce and MAC, 24 B</td><td class="num">46 ms</td></tr>
+          <tr><td class="num">0x04</td><th scope="row">READ_OPT</th><td>offset, length</td><td>bytes</td><td class="num">9 ms</td></tr>
+          <tr><td class="num">0x05</td><th scope="row">WRITE_OPT</th><td>offset, bytes</td><td>none</td><td class="num">22 ms</td></tr>
+          <tr><td class="num">0x06</td><th scope="row">READ_REC</th><td>from index, count, max 64</td><td>records, 32 B each</td><td class="num">18 ms</td></tr>
+          <tr><td class="num">0x07</td><th scope="row">APPEND_REC</th><td>record, 32 B</td><td>index written</td><td class="num">62 ms</td></tr>
+          <tr><td class="num">0x08</td><th scope="row">MERGE</th><td>source UUID, session token</td><td>count copied</td><td class="num">340 ms</td></tr>
+          <tr><td class="num">0x09</td><th scope="row">EXPIRE</th><td>cut-off stamp</td><td>count dropped</td><td class="num">38 ms</td></tr>
+          <tr><td class="num">0x0A</td><th scope="row">STATUS</th><td>none</td><td>wear counters, bad blocks, record count</td><td class="num">11 ms</td></tr>
+          <tr><td class="num">0x0B</td><th scope="row">READ_FREE</th><td>offset, length</td><td>bytes</td><td class="num">14 ms</td></tr>
+          <tr><td class="num">0x0C</td><th scope="row">WRITE_FREE</th><td>offset, bytes</td><td>none</td><td class="num">26 ms</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="notice card">
+      <p>WRITE_OPT, WRITE_FREE and MERGE return 0x6982 over the coil in every build. A card in a pocket cannot be written to by a reader held near it.</p>
+    </div>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <p class="eyebrow">Authentication</p>
+    <h2>Four passes, AES-128</h2>
+  </div>
+  <div class="wrap">
+    <pre class="code">reader -&gt; card   <b>SELECT</b>
+card   -&gt; reader  rev=04 rom=0100 eep=2000 nand=200000 caps=0x0F
+
+reader -&gt; card   <b>READ_ID</b>
+card   -&gt; reader  uuid=04:9C:2E:7B:41:80:00 issuer=... sig=Ed25519(...)
+                 <i>reader checks sig against the issuer key it holds</i>
+
+                 <i>K = AES-128-CMAC(Kmaster, uuid || 0x01)   per-card key</i>
+
+reader -&gt; card   <b>AUTH</b> keyref=00 rndR=8B
+card   -&gt; reader  rndC=8B  macC=AES-CMAC(K, rndR || rndC)[0..7]
+reader -&gt; card   <b>AUTH</b> keyref=00 macR=AES-CMAC(K, rndC || rndR)[0..7]
+card   -&gt; reader  SW=9000   <i>session open, SK = AES-CMAC(K, rndR || rndC)</i></pre>
+    <div class="essay">
+      <p>The session key seals every frame that follows until the field drops or 0x0F is sent. A reader that fails the second pass gets 0x6300 and three attempts before the card refuses the key reference for 200 ms, which is long enough to make a search pointless at a gate and short enough that a person who taps twice notices nothing.</p>
+    </div>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <p class="eyebrow">Records</p>
+    <h2>Encoding and the seal</h2>
+  </div>
+  <div class="wrap">
+    <pre class="code"><i>32 bytes, big endian throughout</i>
+0   u32  stamp      <i>minutes since 2000-01-01 00:00 local standard time</i>
+4   u64  station    <i>station identifier, see /v1/stations</i>
+12  u64  section    <i>pair of station identifiers, 32 bits each, or zero</i>
+20  u8   count      <i>1 to 9</i>
+21  u8   kind       <i>0 gate 1 machine 2 aboard 3 merge 4 issue</i>
+22  u16  operator   <i>cooperative identifier</i>
+24  u64  seal       <i>AES-CMAC(Knet, bytes 0..23 || uuid)[0..7]</i></pre>
+    <div class="essay">
+      <p>The seal is taken under the network key, not the per-card key, so a record written in Iosmein is checkable by a Fluid gate that holds the Iosmein network key and by nothing else. A gate that cannot check a seal counts the record and marks it unverified in its own log; it never refuses passage over it.</p>
+      <p>A record with kind 3 puts the UUID of the card it came from in the section field, and the count field says how many records followed it.</p>
+    </div>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <p class="eyebrow">Status words</p>
+    <h2>What a reader has to handle</h2>
+  </div>
+  <div class="wrap">
+    <div class="tablewrap">
+      <table>
+        <caption>Status words, revision 3</caption>
+        <thead><tr><th scope="col">SW</th><th scope="col">Meaning</th><th scope="col">What a gate does</th></tr></thead>
+        <tbody>
+          <tr><td class="num">0x9000</td><td>Done.</td><td>Continues.</td></tr>
+          <tr><td class="num">0x6300</td><td>Authentication failed.</td><td>Retries once, then shows the panel that names the card and refuses passage.</td></tr>
+          <tr><td class="num">0x6581</td><td>NAND write failed after retries.</td><td>Opens anyway and logs the card as unwritable, so the counter can replace it.</td></tr>
+          <tr><td class="num">0x6700</td><td>Bad length.</td><td>Firmware fault. Logged and reported.</td></tr>
+          <tr><td class="num">0x6982</td><td>Refused on this interface.</td><td>Only over the coil, for the three write commands.</td></tr>
+          <tr><td class="num">0x6A82</td><td>Region not present.</td><td>Card of an older revision. Falls back to READ_ID and the count is taken without a section.</td></tr>
+          <tr><td class="num">0x6A84</td><td>No space, all blocks worn.</td><td>Opens, and the panel asks the holder to take a new card at the machine.</td></tr>
+          <tr><td class="num">0x6F00</td><td>Card lost the field mid-command.</td><td>Nothing is committed. The journal replays on the next presentation.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="notice">
+      <p>Test vectors for diversification, both authentication passes and the record seal are in <a href="samples/vectors.txt" download>vectors.txt</a> here, and in the tree at <span class="host">source.nrf.rof/conformance/vectors</span>. A build that reproduces them is a build the conformance suite will run against.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<div class="band-foot" role="presentation"></div>
+<footer class="foot">
+  <div class="wrap">
+    <ul class="footlinks">
+      <li><a href="../index.html">Front</a></li>
+      <li><a href="../network.html">Network</a></li>
+      <li><a href="../app.html">Application</a></li>
+      <li><a href="../card.html">CARD-ROM</a></li>
+      <li><a href="./">Developers</a></li>
+      <li><a href="../about.html">About</a></li>
+      <li><a href="../../podnik/">Podnik</a></li>
+      <li><a href="../../../register/links.html">Public Register</a></li>
+    </ul>
+    <p class="standing">A branch federation of the railway operating cooperatives, constituted under Article 89. It exercises no public authority and represents no organ. Its accounts, its minutes and its yearly reviews are public.</p>
+  </div>
+</footer>
+<script src="../site.js" defer></script>
+</body>
+</html>

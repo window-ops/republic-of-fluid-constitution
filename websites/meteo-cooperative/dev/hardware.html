@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sensor and station hardware - Meteorological Cooperative</title>
+<meta name="description" content="Documented designs for the seismic, rainfall, river, tide, soil, slope and synoptic stations, with siting rules, calibration intervals and the receiver board.">
+<link rel="stylesheet" href="../site.css">
+<link rel="icon" href="../../../assets/flag.png">
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <span class="marque"><svg viewBox="0 0 58 58" role="img" aria-label="Emblem of the Meteorological Cooperative">
+<circle cx="29" cy="31" r="20" fill="none" stroke="#9a6516" stroke-width="2.4"/>
+<circle cx="29" cy="31" r="12.5" fill="none" stroke="#9a6516" stroke-width="1.6"/>
+<circle cx="29" cy="31" r="5" fill="none" stroke="#9a6516" stroke-width="1.6"/>
+<path d="M29 31 L29 9" stroke="#5f3d0c" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M29 12 L38 15" stroke="#5f3d0c" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M29 18 L36 20.5" stroke="#5f3d0c" stroke-width="2.4" stroke-linecap="round"/>
+<circle cx="29" cy="31" r="2" fill="#5f3d0c"/>
+</svg></span>
+    <span class="idblock">
+      <p class="coopname"><a href="../index.html">Meteorological Cooperative of the Republic</a></p>
+      <p class="basis">Weather, climate, seismicity, landslide and flood &middot; mandate held under the organic law on observation and warning</p>
+    </span>
+  </div>
+</header>
+
+<nav class="mainnav" aria-label="Sections of this site">
+  <div class="wrap">
+    <a class="navtop" href="../index.html">Home</a>
+    <details class="grp">
+      <summary>Weather and climate</summary>
+      <ul>
+        <li><a href="../climate.html">Climate of the Republic</a></li>
+        <li><a href="../change.html">Observed change</a></li>
+        <li><a href="../forecasting.html">How a forecast is made</a></li>
+        <li class="has"><details class="sub">
+          <summary><a href="../emissions.html">Emissions position</a></summary>
+          <ul>
+            <li><a href="../periphery.html">Harm to the periphery</a></li>
+          </ul>
+        </details></li>
+      </ul>
+    </details>
+    <details class="grp">
+      <summary>Warning systems</summary>
+      <ul>
+        <li><a href="../rationale.html">Why these systems exist</a></li>
+        <li><a href="../seismicity.html">Seismicity of the Republic</a></li>
+        <li class="has"><details class="sub">
+          <summary><a href="../kjs.html">REP-KJS, earthquake</a></summary>
+          <ul>
+            <li><a href="../scale.html">REP intensity scale</a></li>
+            <li><a href="../kjs-method.html">Detection, latency and limits</a></li>
+          </ul>
+        </details></li>
+        <li><a href="../lew.html">REP-LEW, landslide</a></li>
+        <li><a href="../few.html">REP-FEW, flood</a></li>
+        <li><a href="../devices.html">Certified devices and RQUAK</a></li>
+      </ul>
+    </details>
+    <a class="navtop" href="../species.html">Species catalogue</a>
+    <a class="navtop" href="../network.html">Observing network</a>
+    <details class="grp">
+      <summary>Developers</summary>
+      <ul>
+        <li><a href="../dev/index.html">Specifications and source</a></li>
+        <li><a href="../dev/wire-format.html">Warning wire format</a></li>
+        <li><a href="../dev/vectors.html">Conformance test vectors</a></li>
+        <li><a href="../dev/hardware.html">Sensor and station hardware</a></li>
+        <li><a href="../dev/forking.html">Porting to another country</a></li>
+      </ul>
+    </details>
+    <a class="navtop" href="../about.html">About the cooperative</a>
+  </div>
+</nav>
+
+<main id="main" class="sheet">
+<p class="crumb"><a href="../index.html">Meteorological Cooperative</a> &rsaquo; <a href="index.html">Developers</a> &rsaquo; Sensor and station hardware</p>
+<h1 class="page-title">Sensor and station hardware</h1>
+<p class="lede">Every station the cooperative operates is documented well enough to be built again. The repository holds circuit boards, firmware, enclosure drawings, mounting details and a bill of materials for each class, together with the calibration procedure. The designs use parts obtainable inside the Republic and tolerate substitution where a part becomes unavailable.</p>
+
+<div class="facts">
+  <div class="row"><span class="k">Repository</span><span class="v"><span class="host">src.meteo.rof/rep-station</span>: KiCad boards, C firmware, mechanical drawings, calibration procedures</span></div>
+  <div class="row"><span class="k">Design rule</span><span class="v">Parts obtainable inside the Republic, with a stated substitute for each</span></div>
+  <div class="row"><span class="k">Service life</span><span class="v">Twenty years for the enclosure, ten for the electronics</span></div>
+  <div class="row"><span class="k">Power</span><span class="v">Mains where present, otherwise solar with four days of battery reserve</span></div>
+  <div class="row"><span class="k">Time</span><span class="v">Satellite time with a disciplined oscillator; 2 ms holdover for 24 hours</span></div>
+  <div class="row"><span class="k">Repair</span><span class="v">Through-hole where a technician may need to work in the field</span></div>
+</div>
+
+<h2>Station classes</h2>
+<div class="tablewrap">
+<table class="data">
+<caption>Documented station designs</caption>
+<thead>
+<tr><th>Class</th><th>Sensor</th><th class="num">Sampling</th><th class="num">Power</th><th>Enclosure</th></tr>
+</thead>
+<tbody>
+<tr><td>Strong motion</td><td>Three-axis MEMS accelerometer, &plusmn;4 g</td><td class="num">200 Hz</td><td class="num">1.8 W</td><td>Cast box bolted to a floor slab or a pier</td></tr>
+<tr><td>Broadband seismic</td><td>Three-component velocity sensor in a sealed vault</td><td class="num">100 Hz</td><td class="num">4.5 W</td><td>Buried vault, thermally isolated, on bedrock where available</td></tr>
+<tr><td>Rainfall</td><td>Tipping bucket, 0.2 mm, with a heated funnel</td><td class="num">Per tip</td><td class="num">0.4 W, 26 W heated</td><td>Post-mounted, aerodynamic rim</td></tr>
+<tr><td>River stage</td><td>Radar level sensor above the channel</td><td class="num">1 min</td><td class="num">0.9 W</td><td>Bridge or gantry mount clear of debris</td></tr>
+<tr><td>Tide gauge</td><td>Pressure transducer in a stilling well, with a radar check</td><td class="num">1 s</td><td class="num">1.2 W</td><td>Well set into the quay, with an access hatch</td></tr>
+<tr><td>Soil moisture</td><td>Capacitance probes at three depths</td><td class="num">5 min</td><td class="num">0.3 W</td><td>Buried, with a surface junction box</td></tr>
+<tr><td>Slope probe</td><td>Wire extensometer, tilt sensor, vibrating-wire piezometer</td><td class="num">1 min to hourly</td><td class="num">0.7 W</td><td>Anchored to rock or to a driven pile</td></tr>
+<tr><td>Surface synoptic</td><td>Temperature, humidity, pressure, wind, radiation, visibility</td><td class="num">1 s to 1 min</td><td class="num">6 W</td><td>Screen and mast to the standard dimensions</td></tr>
+<tr><td>Receiver board</td><td>Broadcast and data receiver with the wire decoder</td><td class="num">Event driven</td><td class="num">0.2 W</td><td>Module for embedding in other equipment</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2>The seismic station in detail</h2>
+<div class="prose">
+<p>Detection time governs everything REP-KJS achieves, so a fork will spend most of its hardware effort here. Three parts determine the performance: the sensor, the timing and the link.</p>
+<p>The strong motion station uses a three-axis MEMS accelerometer sampled at 200 Hz through a 24-bit converter. Noise floor is about 30 micro-g per root hertz, which is adequate for intensity and inadequate for locating small events. The broadband station handles the second task, and the two are deployed together at 21 sites on the margin.</p>
+<p>Timing comes from satellite time with a temperature-compensated oscillator disciplined to it. Arrival times are the basis of every location, so a station clock 400 ms out corrupts the estimate for every event it contributes to. The firmware reports its own time uncertainty in each packet, and the issuing node discounts any station reporting above 20 ms.</p>
+<p>Triggering happens at the station. Sending continuous data from 296 seismic stations would exceed the links available in the upland, so each station computes its own trigger and sends a short packet on firing, followed by the first seconds of the record. Continuous data flows from the 21 margin sites only, where the links support it.</p>
+</div>
+
+<div class="box">
+<span class="lbl">Cost of the seismic network in material</span>
+<p>A strong motion station is roughly 340 items on the bill of materials, of which the accelerometer, the converter and the timing receiver dominate. The remainder is enclosure, mounting and power.</p>
+<p>The design was constrained to parts with at least two sources and a stated substitute for each, because the whole network was built during a period when the external catalogue was narrowing. Four substitutions have been made since 2021, and each is recorded in the repository with the calibration difference it introduced.</p>
+</div>
+
+<h2>Siting</h2>
+<div class="prose">
+<p>The drawings state where a station may stand, and the constraint differs by class. A strong motion station must sit on ground representative of the settlement it reports for, since an instrument bolted to rock beside a town built on sediment will understate what the town experiences. A rainfall gauge must stand clear of obstacles by at least twice their height. A river gauge must be clear of the debris line and above the highest recorded stage.</p>
+<p>Departures from the siting rule are recorded in the station metadata and published, so a user can judge a series against the conditions it was measured in. Eleven stations in the network sit in positions the rules would exclude, mostly for want of any alternative in the sub-region.</p>
+</div>
+
+<h2>Calibration</h2>
+<div class="tablewrap">
+<table class="data">
+<caption>Calibration intervals</caption>
+<thead>
+<tr><th>Class</th><th class="num">Interval</th><th>Method</th><th>Record</th></tr>
+</thead>
+<tbody>
+<tr><td>Strong motion</td><td class="num">Yearly</td><td>Shake table against a reference instrument</td><td>Response curve published per station</td></tr>
+<tr><td>Broadband seismic</td><td class="num">Yearly</td><td>Step response through the calibration coil</td><td>Published with the poles and zeros</td></tr>
+<tr><td>Rainfall</td><td class="num">Six months</td><td>Volumetric, at three rates</td><td>Correction factor per gauge</td></tr>
+<tr><td>River stage</td><td class="num">Six months</td><td>Staff gauge comparison, plus discharge gauging twice a year</td><td>Stage-discharge relation republished</td></tr>
+<tr><td>Tide gauge</td><td class="num">Yearly</td><td>Levelling to the benchmark; datum check</td><td>Datum history published with the series</td></tr>
+<tr><td>Slope probe</td><td class="num">Two years</td><td>Known displacement applied to the wire</td><td>Zero and scale recorded</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2>Building one</h2>
+<div class="prose">
+<p>The repository holds enough to build a station without asking anybody. Clone <span class="host">src.meteo.rof/rep-station</span>. Board files open in KiCad, the firmware compiles with an ordinary toolchain, the mechanical drawings are dimensioned, and the bill of materials names each part with its substitutes. The calibration procedures state the equipment required and the tolerance to be met.</p>
+<p>What the repository cannot supply is the local information. A fork must establish its own ground-motion model, its own soil map, its own station spacing and its own thresholds. Those are the subject of the <a href="forking.html">porting guide</a>.</p>
+</div>
+
+<h2>See also</h2>
+<div class="prose">
+<ul>
+<li><a href="forking.html">Porting to another country</a></li>
+<li><a href="../network.html">Observing network</a>, the stations these designs describe</li>
+<li><a href="../kjs-method.html">Detection, latency and limits</a>, on station spacing and detection time</li>
+</ul>
+</div>
+
+</main>
+
+<footer class="coopfoot">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <h4>Weather and climate</h4>
+        <ul>
+          <li><a href="../climate.html">Climate of the Republic</a></li>
+          <li><a href="../change.html">Observed change</a></li>
+          <li><a href="../forecasting.html">How a forecast is made</a></li>
+          <li><a href="../emissions.html">Emissions position</a></li>
+          <li><a href="../periphery.html">Harm to the periphery</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Warning systems</h4>
+        <ul>
+          <li><a href="../rationale.html">Why these systems exist</a></li>
+          <li><a href="../seismicity.html">Seismicity of the Republic</a></li>
+          <li><a href="../kjs.html">REP-KJS, earthquake</a></li>
+          <li><a href="../scale.html">REP intensity scale</a></li>
+          <li><a href="../kjs-method.html">Detection, latency and limits</a></li>
+          <li><a href="../lew.html">REP-LEW, landslide</a></li>
+          <li><a href="../few.html">REP-FEW, flood</a></li>
+          <li><a href="../devices.html">Certified devices and RQUAK</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Record and network</h4>
+        <ul>
+          <li><a href="../species.html">Species catalogue</a></li>
+          <li><a href="../network.html">Observing network</a></li>
+          <li><a href="../about.html">About the cooperative</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Developers</h4>
+        <ul>
+          <li><a href="../dev/index.html">Specifications and licence</a></li>
+          <li><a href="../dev/wire-format.html">Warning wire format</a></li>
+          <li><a href="../dev/vectors.html">Conformance test vectors</a></li>
+          <li><a href="../dev/hardware.html">Sensor and station hardware</a></li>
+          <li><a href="../dev/forking.html">Porting to another country</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="basis">Published by the Meteorological Cooperative of the Republic under the organic law on observation and warning. Free of charge, without licence, registration or account. No external resource is loaded by this page. See also the <a href="../../../index.html">Republic of Fluid</a> and the <a href="../../../register/">Public Register</a>.</p>
+  </div>
+</footer>
+
+<script src="../site.js"></script>
+</body>
+</html>

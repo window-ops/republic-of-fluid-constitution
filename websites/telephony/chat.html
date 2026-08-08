@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IRC and Matrix &middot; Telephony</title>
+<meta name="description" content="The IRC and Matrix servers of the Republic of Fluid: where to point Polari and Element, the bridge between them, the channels worth knowing, and how identity and moderation work without logs.">
+<meta name="theme-color" content="#23201a">
+<link rel="stylesheet" href="site.css">
+<link rel="icon" href="../../assets/flag.png">
+</head>
+<body>
+<a class="skip" href="#main">Skip to the content</a>
+
+<header class="cover">
+  <div class="wrap">
+    <p class="title"><a href="index.html">Telephony</a></p>
+    <p class="imprint">Lines, exchanges and services of the <b>Republic of Fluid</b></p>
+  </div>
+</header>
+
+<nav class="thumbs" aria-label="Sections of this directory">
+  <div class="wrap">
+    <a href="index.html">Front</a>
+    <a href="connect.html">Get a line</a>
+    <a href="dialup.html">Dial-up</a>
+    <a href="mobile.html">Mobile</a>
+    <a href="voice.html">Calling</a>
+    <a href="chat.html" aria-current="page">Chat</a>
+    <a href="meet.html">Meet</a>
+    <a href="hardware.html">Hardware</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="about.html">About</a>
+  </div>
+</nav>
+
+<main id="main">
+<div class="wrap">
+
+<section class="opening">
+  <h1>Chat</h1>
+  <p class="lede">Two networks, bridged in both directions, open to every resident and to anyone the Bloc homeservers federate with.</p>
+</section>
+
+<section class="sheet">
+  <p class="runhead">Addresses<span class="span">IRC to bridge</span></p>
+  <h2>Where to connect</h2>
+<div class="stock stock-blue">
+<ul class="listing">
+  <li class="entry"><span class="what">IRC</span><span class="lead" aria-hidden="true"></span><span class="host">irc.telephony.rof</span><span class="also">Alias <code>polari.telephony.rof</code> &middot; 6697 over TLS &middot; SASL &middot; plain 6667 on the internal network only</span></li>
+  <li class="entry"><span class="what">Matrix</span><span class="lead" aria-hidden="true"></span><span class="host">matrix.telephony.rof</span><span class="also">Alias <code>element.telephony.rof</code> &middot; server name <code>telephony.rof</code> &middot; delegation served at <code>/.well-known/matrix/server</code></span></li>
+  <li class="entry"><span class="what">Matrix media</span><span class="lead" aria-hidden="true"></span><span class="host">media.telephony.rof</span><span class="also">Kept for thirty days, then gone. Nothing is scanned and nothing is indexed.</span></li>
+  <li class="entry"><span class="what">IRC to Matrix bridge</span><span class="lead" aria-hidden="true"></span><span class="host">bridge.telephony.rof</span><span class="also">Every <code>#name</code> on IRC appears as <code>#name:telephony.rof</code>, and the bridge is two-way</span></li>
+</ul>
+</div>
+</section>
+
+<section class="sheet">
+  <p class="runhead">Clients<span class="span">Tested, not required</span></p>
+  <h2>What to type in</h2>
+<div class="tbl-scroll">
+  <table class="tbl">
+    <caption>Clients the federation tests against, and what to type into them</caption>
+    <thead><tr><th>Client</th><th>Service</th><th>What you enter</th></tr></thead>
+    <tbody>
+          <tr><td>Polari</td><td>IRC</td><td class="code">polari.telephony.rof</td></tr>
+          <tr><td>WeeChat, irssi, HexChat</td><td>IRC</td><td class="code">irc.telephony.rof/6697</td></tr>
+          <tr><td>Element</td><td>Matrix</td><td class="code">telephony.rof</td></tr>
+          <tr><td>Fractal, NeoChat, gomuks</td><td>Matrix</td><td class="code">telephony.rof</td></tr>
+          <tr><td>Any other</td><td>Either</td><td>Both names resolve to the same machines</td></tr>
+    </tbody>
+  </table>
+</div>
+<p class="tbl-note">The federation tests against these because they are what people here run. Nothing is blocked, and a client it has never heard of will work if it speaks the protocol.</p>
+</section>
+
+<section class="sheet">
+  <p class="runhead">Channels<span class="span">1,340 communes and six standing rooms</span></p>
+  <h2>Worth knowing</h2>
+  <p class="standfirst">Each of these exists on IRC and on Matrix at the same name, and a message sent on one appears on the other.</p>
+<ul class="listing">
+  <li class="entry"><span class="what">Your commune</span><span class="lead" aria-hidden="true"></span><span class="host">#lindoma-centre</span><span class="also">One channel for every commune.</span></li>
+  <li class="entry"><span class="what">Line faults, live</span><span class="lead" aria-hidden="true"></span><span class="host">#faults</span><span class="also">The fault desk posts here as it works. Read-only unless you are reporting.</span></li>
+  <li class="entry"><span class="what">The register</span><span class="lead" aria-hidden="true"></span><span class="host">#register</span><span class="also">Every publication of the Public Register, as it appears.</span></li>
+  <li class="entry"><span class="what">Assemblies</span><span class="lead" aria-hidden="true"></span><span class="host">#assembly-lindoma</span><span class="also">One per sub-regional assembly, running during sittings.</span></li>
+  <li class="entry"><span class="what">Repair and tool libraries</span><span class="lead" aria-hidden="true"></span><span class="host">#repair</span><span class="also">Where to ask before you take the back off something.</span></li>
+  <li class="entry"><span class="what">The federation itself</span><span class="lead" aria-hidden="true"></span><span class="host">#telephony</span><span class="also">Where the people who run this answer questions in public.</span></li>
+</ul>
+</section>
+
+<section class="sheet">
+  <p class="runhead">Identity<span class="span">As many as you want</span></p>
+  <h2>Who you are here</h2>
+<div class="cols">
+  <div class="prose">
+    <h3>One identity, and as many more as you like</h3>
+    <p>Your resident identity works on both services without registration. Beyond that you may hold any number of further identities under names you choose, and you never have to give a reason for wanting one.</p>
+    <p>The federation holds no link between your identities. This is not a promise about restraint. There is no table in which such a link could be written, and the audit checks for the absence of one.</p>
+  </div>
+  <div class="prose">
+    <h3>Moderation without logs</h3>
+    <p>Channel operators are elected by the people in the channel and act on what is in front of them. There is no message history for the federation to consult, no reporting queue holding old traffic and no appeal that turns on what somebody typed last March.</p>
+    <p>This makes moderation weaker in some ways and the federation accepts that. A rule that could only be enforced by keeping records of everyone is a rule the Republic has decided not to have.</p>
+  </div>
+</div>
+</section>
+
+</div>
+</main>
+
+<footer class="colophon">
+  <div class="wrap cols cols-3">
+    <div>
+      <h2>Lines</h2>
+      <ul>
+        <li><a href="connect.html">Get a line</a></li>
+        <li><a href="dialup.html">Dial-up and the voiceband</a></li>
+        <li><a href="mobile.html">Mobile, LTE and 5G</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Services</h2>
+      <ul>
+        <li><a href="voice.html">Calling and numbering</a></li>
+        <li><a href="chat.html">IRC and Matrix</a></li>
+        <li><a href="meet.html">Conferencing</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>The federation</h2>
+      <ul>
+        <li><a href="hardware.html">Published specifications</a></li>
+        <li><a href="privacy.html">What is never kept</a></li>
+        <li><a href="about.html">About Telephony</a></li>
+        <li><a href="../../register/links.html">Public Register of the Republic</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap">
+    <p>Telephony holds a licence the Republic grants and is audited in its use of common resources. It exercises no public authority and represents no organ.</p>
+  </div>
+</footer>
+</body>
+</html>

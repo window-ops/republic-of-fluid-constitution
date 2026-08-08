@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Catalogue of endemic species - Meteorological Cooperative</title>
+<meta name="description" content="The species recorded from the Republic of Fluid and nowhere else, with red list category and evidence, including the lagoon weed of Ravelluri and the tracer fungus of the Corcina galleries.">
+<link rel="stylesheet" href="site.css">
+<link rel="icon" href="../../assets/flag.png">
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <span class="marque"><svg viewBox="0 0 58 58" role="img" aria-label="Emblem of the Meteorological Cooperative">
+<circle cx="29" cy="31" r="20" fill="none" stroke="#9a6516" stroke-width="2.4"/>
+<circle cx="29" cy="31" r="12.5" fill="none" stroke="#9a6516" stroke-width="1.6"/>
+<circle cx="29" cy="31" r="5" fill="none" stroke="#9a6516" stroke-width="1.6"/>
+<path d="M29 31 L29 9" stroke="#5f3d0c" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M29 12 L38 15" stroke="#5f3d0c" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M29 18 L36 20.5" stroke="#5f3d0c" stroke-width="2.4" stroke-linecap="round"/>
+<circle cx="29" cy="31" r="2" fill="#5f3d0c"/>
+</svg></span>
+    <span class="idblock">
+      <p class="coopname"><a href="index.html">Meteorological Cooperative of the Republic</a></p>
+      <p class="basis">Weather, climate, seismicity, landslide and flood &middot; mandate held under the organic law on observation and warning</p>
+    </span>
+  </div>
+</header>
+
+<nav class="mainnav" aria-label="Sections of this site">
+  <div class="wrap">
+    <a class="navtop" href="index.html">Home</a>
+    <details class="grp">
+      <summary>Weather and climate</summary>
+      <ul>
+        <li><a href="climate.html">Climate of the Republic</a></li>
+        <li><a href="change.html">Observed change</a></li>
+        <li><a href="forecasting.html">How a forecast is made</a></li>
+        <li class="has"><details class="sub">
+          <summary><a href="emissions.html">Emissions position</a></summary>
+          <ul>
+            <li><a href="periphery.html">Harm to the periphery</a></li>
+          </ul>
+        </details></li>
+      </ul>
+    </details>
+    <details class="grp">
+      <summary>Warning systems</summary>
+      <ul>
+        <li><a href="rationale.html">Why these systems exist</a></li>
+        <li><a href="seismicity.html">Seismicity of the Republic</a></li>
+        <li class="has"><details class="sub">
+          <summary><a href="kjs.html">REP-KJS, earthquake</a></summary>
+          <ul>
+            <li><a href="scale.html">REP intensity scale</a></li>
+            <li><a href="kjs-method.html">Detection, latency and limits</a></li>
+          </ul>
+        </details></li>
+        <li><a href="lew.html">REP-LEW, landslide</a></li>
+        <li><a href="few.html">REP-FEW, flood</a></li>
+        <li><a href="devices.html">Certified devices and RQUAK</a></li>
+      </ul>
+    </details>
+    <a class="navtop" href="species.html">Species catalogue</a>
+    <a class="navtop" href="network.html">Observing network</a>
+    <details class="grp">
+      <summary>Developers</summary>
+      <ul>
+        <li><a href="dev/index.html">Specifications and source</a></li>
+        <li><a href="dev/wire-format.html">Warning wire format</a></li>
+        <li><a href="dev/vectors.html">Conformance test vectors</a></li>
+        <li><a href="dev/hardware.html">Sensor and station hardware</a></li>
+        <li><a href="dev/forking.html">Porting to another country</a></li>
+      </ul>
+    </details>
+    <a class="navtop" href="about.html">About the cooperative</a>
+  </div>
+</nav>
+
+<main id="main" class="sheet">
+<p class="crumb"><a href="index.html">Meteorological Cooperative</a> &rsaquo; Species catalogue</p>
+<h1 class="page-title">Catalogue of endemic species</h1>
+<p class="lede">Thirty-three species are recorded from the territory of the Republic and from nowhere else. The cooperative maintains the catalogue jointly with the university hydrobiology and mycology groups and with the coastal and cave monitoring stations, and publishes the red list category held by each together with the evidence behind it. Most entries stand at Vulnerable or have never been formally assessed.</p>
+
+<div class="facts">
+  <div class="row"><span class="k">Entries</span><span class="v">33 species known from the Republic alone</span></div>
+  <div class="row"><span class="k">Assessment</span><span class="v">IUCN criteria, applied by the assessing group and published with the underlying counts</span></div>
+  <div class="row"><span class="k">Commonest categories</span><span class="v">Vulnerable and Not Evaluated</span></div>
+  <div class="row"><span class="k">Under active dispute</span><span class="v">One, <i>Ravellura marendensis</i></span></div>
+  <div class="row"><span class="k">Legal protection</span><span class="v">Habitat protection under Article 30 (1); rights of nature under Article 18</span></div>
+  <div class="row"><span class="k">Monitoring</span><span class="v">Continuous for the moor, marsh, lagoon and remaining old growth; periodic elsewhere</span></div>
+</div>
+
+<h2>Reading the categories</h2>
+<div class="prose">
+<p>Six categories appear in the table. CR, EN and VU are the threatened categories, in descending order of risk. NT stands one step below, and covers a species that would qualify as threatened were its position to worsen. DD applies where the data available cannot support any category. NE applies where no assessment has been made at all. No endemic species of the Republic stands at Least Concern.</p>
+<p>The number of entries at NE reflects the composition of the list. Soil invertebrates, springtails and small beetles are described from a handful of collections and have never been surveyed at a scale that would support an assessment. A species at NE has simply never been counted, and five of the six NE entries were described since 1988.</p>
+</div>
+
+<div class="filters">
+  <div class="field">
+    <label for="q">Search</label>
+    <input type="search" id="q" data-filter="search" placeholder="Name, habitat or sub-region">
+  </div>
+  <div class="field">
+    <label for="grp">Group</label>
+    <select id="grp" data-filter="group">
+      <option value="">All groups</option>
+      <option value="plant">Vascular plant</option>
+      <option value="bryo">Bryophyte and lichen</option>
+      <option value="fungus">Fungus and alga</option>
+      <option value="insect">Insect</option>
+      <option value="arthropod">Other arthropod</option>
+      <option value="mollusc">Mollusc and annelid</option>
+      <option value="vertebrate">Vertebrate</option>
+    </select>
+  </div>
+  <div class="field">
+    <label for="rl">Red list</label>
+    <select id="rl" data-filter="rl">
+      <option value="">All categories</option>
+      <option value="CR">CR, Critically Endangered</option>
+      <option value="EN">EN, Endangered</option>
+      <option value="VU">VU, Vulnerable</option>
+      <option value="NT">NT, Near Threatened</option>
+      <option value="DD">DD, Data Deficient</option>
+      <option value="NE">NE, Not Evaluated</option>
+    </select>
+  </div>
+  <button type="button" id="reset">Reset</button>
+</div>
+<p class="count" id="count" aria-live="polite">33 species</p>
+
+<div class="tablewrap">
+<table class="data" id="species">
+<caption>Species known from the Republic alone</caption>
+<thead>
+<tr>
+<th data-sort="text">Species</th>
+<th data-sort="text">Usual name</th>
+<th data-sort="text">Group</th>
+<th>Habitat and sub-region</th>
+<th data-sort="text">Red list</th>
+<th data-sort="number">Described</th>
+</tr>
+</thead>
+<tbody>
+<tr data-group="fungus" data-rl="EN" data-search="ravellura marendensis lagoon weed rope weed ravelluri alga"><td class="sci">Ravellura marendensis</td><td>Lagoon weed</td><td>Alga</td><td>Inner lagoon and two channels, Ravelluri</td><td><span class="rl rl-EN">EN</span></td><td class="num">1974</td></tr>
+<tr data-group="fungus" data-rl="NT" data-search="radiotropha corcinensis tracer fungus string finding thread belvacius karst uranium"><td class="sci">Radiotropha corcinensis</td><td>Tracer fungus</td><td>Fungus</td><td>Karst galleries and caves, Belvacius</td><td><span class="rl rl-NT">NT</span></td><td class="num">1969</td></tr>
+<tr data-group="plant" data-rl="CR" data-search="sorbus ferristana whitebeam vandorum upland tree"><td class="sci">Sorbus ferristana</td><td>Ferrista whitebeam</td><td>Vascular plant</td><td>Old-growth fragments above Ferrista, Vandorum</td><td><span class="rl rl-CR">CR</span></td><td class="num">1918</td></tr>
+<tr data-group="plant" data-rl="EN" data-search="drosera torvenensis sundew kelvaqui moor peat blanket bog"><td class="sci">Drosera torvenensis</td><td>Torvena sundew</td><td>Vascular plant</td><td>Blanket peat, Kelvaqui moor</td><td><span class="rl rl-EN">EN</span></td><td class="num">1936</td></tr>
+<tr data-group="plant" data-rl="EN" data-search="silene ravelluriana dune campion ravelluri barrier sand"><td class="sci">Silene ravelluriana</td><td>Ravelluri dune campion</td><td>Vascular plant</td><td>Mobile dune of the barrier, Ravelluri</td><td><span class="rl rl-EN">EN</span></td><td class="num">1929</td></tr>
+<tr data-group="plant" data-rl="EN" data-search="astragalus solvenensis milk vetch quintorum basin dry grassland"><td class="sci">Astragalus solvenensis</td><td>Solvena milk-vetch</td><td>Vascular plant</td><td>Dry grassland, Quintorum basin</td><td><span class="rl rl-EN">EN</span></td><td class="num">1957</td></tr>
+<tr data-group="plant" data-rl="VU" data-search="salicornia merrisomensis glasswort merrisoma salt marsh intertidal"><td class="sci">Salicornia merrisomensis</td><td>Merrisoma glasswort</td><td>Vascular plant</td><td>Lower salt marsh, Merrisoma</td><td><span class="rl rl-VU">VU</span></td><td class="num">1953</td></tr>
+<tr data-group="plant" data-rl="VU" data-search="stipa quintorensis feather grass steppe quintorum dry"><td class="sci">Stipa quintorensis</td><td>Quintorum feather grass</td><td>Vascular plant</td><td>Dry grassland on shallow soil, Quintorum</td><td><span class="rl rl-VU">VU</span></td><td class="num">1922</td></tr>
+<tr data-group="plant" data-rl="VU" data-search="alyssum ravellurense monazite sand thorium rare earth metal tolerant"><td class="sci">Alyssum ravellurense</td><td>Monazite alyssum</td><td>Vascular plant</td><td>Monazite sands behind the dune, Ravelluri</td><td><span class="rl rl-VU">VU</span></td><td class="num">1998</td></tr>
+<tr data-group="plant" data-rl="NT" data-search="limonium merrisomense sea lavender upper marsh merrisoma"><td class="sci">Limonium merrisomense</td><td>Merrisoma sea-lavender</td><td>Vascular plant</td><td>Upper salt marsh, Merrisoma</td><td><span class="rl rl-NT">NT</span></td><td class="num">1961</td></tr>
+<tr data-group="plant" data-rl="NT" data-search="vitis ombraquiensis wild vine ombraqui woodland edge venasca"><td class="sci">Vitis ombraquiensis</td><td>Ombraqui wild vine</td><td>Vascular plant</td><td>Woodland edge and river terrace, Ombraqui</td><td><span class="rl rl-NT">NT</span></td><td class="num">1904</td></tr>
+<tr data-group="bryo" data-rl="EN" data-search="lobaria vandorensis lungwort lichen old growth vandorum forest"><td class="sci">Lobaria vandorensis</td><td>Vandorum lungwort</td><td>Lichen</td><td>Old-growth bark, Vandorum</td><td><span class="rl rl-EN">EN</span></td><td class="num">1907</td></tr>
+<tr data-group="bryo" data-rl="VU" data-search="sphagnum kelvaquianum bog moss peat kelvaqui moor"><td class="sci">Sphagnum kelvaquianum</td><td>Kelvaqui bog moss</td><td>Bryophyte</td><td>Blanket peat hollows, Kelvaqui</td><td><span class="rl rl-VU">VU</span></td><td class="num">1948</td></tr>
+<tr data-group="bryo" data-rl="DD" data-search="verrucaria cortiana cliff lichen cortius coastal splash zone"><td class="sci">Verrucaria cortiana</td><td>Cortius splash lichen</td><td>Lichen</td><td>Splash zone of the cliff, Cortius</td><td><span class="rl rl-DD">DD</span></td><td class="num">1983</td></tr>
+<tr data-group="insect" data-rl="VU" data-search="carabus kelvaquiensis ground beetle moor kelvaqui peat"><td class="sci">Carabus kelvaquiensis</td><td>Moor ground beetle</td><td>Insect</td><td>Blanket peat and moor edge, Kelvaqui</td><td><span class="rl rl-VU">VU</span></td><td class="num">1912</td></tr>
+<tr data-group="insect" data-rl="VU" data-search="cicindela marendensis tiger beetle dune ravelluri marendo sand"><td class="sci">Cicindela marendensis</td><td>Marendo tiger beetle</td><td>Insect</td><td>Bare dune sand, Ravelluri</td><td><span class="rl rl-VU">VU</span></td><td class="num">1967</td></tr>
+<tr data-group="insect" data-rl="VU" data-search="rhysodes vandorensis bark beetle deadwood old growth vandorum"><td class="sci">Rhysodes vandorensis</td><td>Vandorum bark beetle</td><td>Insect</td><td>Standing deadwood in old growth, Vandorum</td><td><span class="rl rl-VU">VU</span></td><td class="num">1955</td></tr>
+<tr data-group="insect" data-rl="VU" data-search="andrena venascana mining bee orchard ombraqui venasca pollinator"><td class="sci">Andrena venascana</td><td>Venasca mining bee</td><td>Insect</td><td>Orchard margin and dry bank, Ombraqui</td><td><span class="rl rl-VU">VU</span></td><td class="num">1976</td></tr>
+<tr data-group="insect" data-rl="DD" data-search="hydropsyche solvenensis caddisfly quintorum stream intermittent"><td class="sci">Hydropsyche solvenensis</td><td>Solvena caddisfly</td><td>Insect</td><td>Intermittent streams, Quintorum</td><td><span class="rl rl-DD">DD</span></td><td class="num">1979</td></tr>
+<tr data-group="insect" data-rl="NE" data-search="bledius maravelensis rove beetle merrisoma marsh mud"><td class="sci">Bledius maravelensis</td><td>Maravel rove beetle</td><td>Insect</td><td>Marsh mud and creek bank, Merrisoma</td><td><span class="rl rl-NE">NE</span></td><td class="num">1994</td></tr>
+<tr data-group="insect" data-rl="NE" data-search="trechus halvorensis ground beetle halvorum southern border scree"><td class="sci">Trechus halvorensis</td><td>Halvorum ground beetle</td><td>Insect</td><td>Shaded scree, Halvorum</td><td><span class="rl rl-NE">NE</span></td><td class="num">2001</td></tr>
+<tr data-group="insect" data-rl="NE" data-search="zygaena sarnovensis burnet moth aspreduson sarnova grassland"><td class="sci">Zygaena sarnovensis</td><td>Sarnova burnet moth</td><td>Insect</td><td>Unimproved grassland, Aspreduson</td><td><span class="rl rl-NE">NE</span></td><td class="num">1991</td></tr>
+<tr data-group="insect" data-rl="NE" data-search="onychiurus prevessensis springtail soil anselaqui prevessa"><td class="sci">Onychiurus prevessensis</td><td>Prevessa springtail</td><td>Insect</td><td>Deep soil of the mixed farmland, Anselaqui</td><td><span class="rl rl-NE">NE</span></td><td class="num">2009</td></tr>
+<tr data-group="arthropod" data-rl="VU" data-search="niphargus belvacianus cave amphipod karst groundwater belvacius"><td class="sci">Niphargus belvacianus</td><td>Belvacius cave amphipod</td><td>Crustacean</td><td>Karst groundwater, Belvacius</td><td><span class="rl rl-VU">VU</span></td><td class="num">1958</td></tr>
+<tr data-group="arthropod" data-rl="DD" data-search="proasellus corcinensis well isopod groundwater corcina belvacius"><td class="sci">Proasellus corcinensis</td><td>Corcina well isopod</td><td>Crustacean</td><td>Wells and gallery seepage, Belvacius</td><td><span class="rl rl-DD">DD</span></td><td class="num">1981</td></tr>
+<tr data-group="arthropod" data-rl="DD" data-search="neobisium ossirense pseudoscorpion cave corvaluri ossira"><td class="sci">Neobisium ossirense</td><td>Ossira cave pseudoscorpion</td><td>Arachnid</td><td>Cave entrance zone, Corvaluri</td><td><span class="rl rl-DD">DD</span></td><td class="num">1986</td></tr>
+<tr data-group="mollusc" data-rl="VU" data-search="chondrina cortiana cliff snail limestone cortius coastal"><td class="sci">Chondrina cortiana</td><td>Cortius cliff snail</td><td>Mollusc</td><td>Limestone cliff face, Cortius</td><td><span class="rl rl-VU">VU</span></td><td class="num">1965</td></tr>
+<tr data-group="mollusc" data-rl="NE" data-search="cerastoderma ravellurense lagoon cockle brackish ravelluri"><td class="sci">Cerastoderma ravellurense</td><td>Lagoon cockle</td><td>Mollusc</td><td>Brackish lagoon floor, Ravelluri</td><td><span class="rl rl-NE">NE</span></td><td class="num">1988</td></tr>
+<tr data-group="mollusc" data-rl="NE" data-search="lumbricus durorilaquensis earthworm loam arable durorilaqui plain"><td class="sci">Lumbricus durorilaquensis</td><td>Durorilaqui earthworm</td><td>Annelid</td><td>Deep loam of the arable plain, Durorilaqui</td><td><span class="rl rl-NE">NE</span></td><td class="num">2013</td></tr>
+<tr data-group="vertebrate" data-rl="EN" data-search="barbus tavrinensis barbel marnaqui river chemical works remediation"><td class="sci">Barbus tavrinensis</td><td>Tavrino barbel</td><td>Fish</td><td>Middle Marnaqui below Tavrino, Marnaqui</td><td><span class="rl rl-EN">EN</span></td><td class="num">1931</td></tr>
+<tr data-group="vertebrate" data-rl="VU" data-search="cottus marnaquiensis bullhead river marnaqui gravel"><td class="sci">Cottus marnaquiensis</td><td>Marnaqui bullhead</td><td>Fish</td><td>Gravel reaches of the Marnaqui</td><td><span class="rl rl-VU">VU</span></td><td class="num">1964</td></tr>
+<tr data-group="vertebrate" data-rl="VU" data-search="pomatoschistus ravellurensis lagoon goby brackish ravelluri fish"><td class="sci">Pomatoschistus ravellurensis</td><td>Ravelluri lagoon goby</td><td>Fish</td><td>Brackish lagoon and channels, Ravelluri</td><td><span class="rl rl-VU">VU</span></td><td class="num">1972</td></tr>
+<tr data-group="vertebrate" data-rl="VU" data-search="lissotriton ilvarensis newt upland pool thurioma ilvara amphibian"><td class="sci">Lissotriton ilvarensis</td><td>Ilvara upland newt</td><td>Amphibian</td><td>Upland pools near the divide, Thurioma</td><td><span class="rl rl-VU">VU</span></td><td class="num">1943</td></tr>
+</tbody>
+</table>
+</div>
+<p id="empty" hidden class="note">No species matches those filters.</p>
+
+<h2>Ravellura marendensis, the lagoon weed</h2>
+<div class="prose">
+<p>Division Chlorophyta, class Ulvophyceae, order Ulvales, family Ravelluriaceae.</p>
+<p>Described in 1974 from the inner lagoon at Ravelluri and the only member of its family. Local usage is lagoon weed; the older fishing term is rope weed, which refers to the handling of it.</p>
+<p>Thalli are strap shaped, 40 to 120 cm long and 8 to 20 mm wide, olive green above and blue green in the lower third, attached by a discoid holdfast to shell fragments and buried stone. Growth continues through the year, with the greatest extension between March and July. The recorded depth range in the lagoon is 0.4 to 3.1 m.</p>
+<p>The wall of the thallus holds a matrix of sulfated polysaccharide cross-linked by calcium bridges and by disulfide bonds between the wall proteins. In the oxygenated water of the lagoon those bonds stay oxidised and the cross-linking is at its densest, so rupture of a fragment 10 mm wide requires a load of about 50 kg, a force near 490 N. In a reductive environment, meaning water or sediment low in oxygen and high in dissolved sulfide, the disulfide bonds are reduced to free thiol groups, the cross-linking is lost, and the tissue tears under light finger pressure. That condition is met in the anoxic mud of the lagoon floor, where fallen thalli break down within a season.</p>
+</div>
+
+<div class="box water">
+<span class="lbl">The listing under dispute</span>
+<p>The species stands at EN B1ab(iii)+2ab(iii). The code states that the listing rests on the small area the species occupies, on that area being a single location, and on a continuing decline in the quality of its habitat. The area assessed was 31 km&sup2;, and the decline recorded came through coastal retreat and the narrowing of the channels.</p>
+<p>Survey of the Anselura outflow and the eastern shelf from 2019 to 2026 records establishment at 31 of 44 stations, continuous cover from kilometre 4 of the outflow to the bar, and holdfasts on hard substrate at four shelf stations between 2 and 6 m depth. Extent of occurrence on the 2026 stations is 407 km&sup2;. Mean annual advance along the outflow over the last four years is 1.9 km. On criterion B the species no longer meets the thresholds for Endangered, and Vulnerable is the defensible reading of the current data.</p>
+<p>Downstream establishment differs from the lagoon population in three respects. Thalli reach 180 cm against a lagoon maximum of 120. Cover at the four densest outflow stations exceeded 80 per cent of available substrate, with <i>Zostera</i> and two native red algae absent from quadrats above 60 per cent cover. Fragments detached by current retain holdfast tissue and re-attach, a route of spread absent inside the lagoon. The species is native to the catchment and behaves on the outflow and the shelf as an invasive one.</p>
+<p>A third position holds that the correct category is CR, on the reading that the lagoon population is the species and the downstream population is a distinct ecological entity. The assessing group has recommended that any revision be taken together with a decision on control of the downstream populations, since the arguments for downlisting and the arguments for control rest on the same observations. The category in the table remains EN until that decision is made.</p>
+</div>
+
+<div class="prose">
+<p>The lagoon and its seagrass and weed beds are protected against conversion under Article 30 (1). Collection, removal and possession of any part of the species are prohibited, and the prohibition extends to detached material found on the shore. Enquiries go to the coastal monitoring station at Marendo.</p>
+</div>
+
+<h2>Radiotropha corcinensis, the tracer fungus</h2>
+<div class="prose">
+<p>Division Ascomycota, class Eurotiomycetes, order Chaetothyriales.</p>
+<p>Described in 1969 from the abandoned upper galleries at Corcina. Miners called it the string, and the older survey records call it the finding thread.</p>
+<p>It is a filamentous fungus forming flat cords 1 to 4 mm across on bare rock, brown to near black, growing in unbranched lines that may run twelve metres or more. Where a cord reaches an ore body it stops extending and forms a dense mat around it. Growth runs at 20 to 60 cm a year, and the cords persist for decades once formed.</p>
+<p>Extension is faster on the side of the tip receiving the greater ionising dose, so a cord curves toward any source and arrives at it. In the galleries the sources are pitchblende and the secondary uranium minerals of the fracture walls, and the fungus also tracks the daughter products, so a cord may end at a radium enrichment with no uranium behind it. Shallow deposits under intact rock are found the same way, to depths of about four metres, by cords that stop and mat over ground with nothing visible in it. The mine survey records these as an indication and drills them.</p>
+<p>The pigment of the cord wall is a melanin absorbing a large part of the incident energy before it reaches the cell. Within the cell, repair of double-strand breaks runs continuously, and the genome is held in several copies, so a break is repaired against an intact template. Cultures have been held at doses some hundreds of times the natural background with no loss of growth. The mat secretes oxalic and citric acids and a siderophore binding uranium in preference to iron, which over years dissolves the carbonate and part of the silicate around the ore body and leaves the uranium fixed in the mat and in a covering of oxalate crystals.</p>
+</div>
+
+<div class="box">
+<span class="lbl">Status</span>
+<p>Assessed as Near Threatened. The species is common through the karst of the sub-region, occurs in nine other cave systems, and grows readily on artificial substrate. It sits one step above the threatened categories because its whole range lies in one karst system, and because a change in the drainage of the galleries would reach every population at once. No collection restriction applies.</p>
+<p>Visitors are asked to leave the cords in place, since a broken cord is a survey record destroyed.</p>
+</div>
+
+<h2>How the catalogue is maintained</h2>
+<div class="prose">
+<p>The catalogue lists species recorded from the Republic and from nowhere else. A species found subsequently beyond the frontiers leaves the catalogue and remains in the general species register, and this has happened four times since 1970. Two of the four were found in Iosmein after the western crossing opened in 1989.</p>
+<p>Assessment is done by the group holding the relevant expertise, the hydrobiology and mycology groups of the University of Sederna in most cases, and the counts, survey stations and criteria applied are published with each category. The cooperative supplies the physical monitoring and takes no part in assigning a category.</p>
+<p>Nature holds rights of its own under Article 18, and any person may go to court on behalf of a river, a marsh or a population, without a fee and without showing a personal interest. Habitat connectivity is a condition of validity for every spatial plan, so the protected areas are designed as a linked network.</p>
+</div>
+
+<h2>See also</h2>
+<div class="prose">
+<ul>
+<li><a href="network.html">Observing network</a>, including the coastal and marsh monitoring stations</li>
+<li><a href="change.html">Observed change</a>, on the coastal retreat affecting the lagoon</li>
+<li><a href="climate.html">Climate of the Republic</a>, on lagoon temperature and the marsh</li>
+<li><a href="../ecological-budget-authority/">Ecological Budget Authority</a>, which fixes the habitat and restoration figures</li>
+</ul>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var table = document.getElementById('species');
+  if (!table) { return; }
+  var controls = document.querySelectorAll('.filters [data-filter]');
+  var apply = window.Meteo.filter({
+    items: table.tBodies[0].rows,
+    controls: controls,
+    count: document.getElementById('count'),
+    empty: document.getElementById('empty'),
+    noun: 'species'
+  });
+  window.Meteo.resetOn(document.getElementById('reset'), controls, apply);
+  window.Meteo.sortable(table);
+});
+</script>
+
+</main>
+
+<footer class="coopfoot">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <h4>Weather and climate</h4>
+        <ul>
+          <li><a href="climate.html">Climate of the Republic</a></li>
+          <li><a href="change.html">Observed change</a></li>
+          <li><a href="forecasting.html">How a forecast is made</a></li>
+          <li><a href="emissions.html">Emissions position</a></li>
+          <li><a href="periphery.html">Harm to the periphery</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Warning systems</h4>
+        <ul>
+          <li><a href="rationale.html">Why these systems exist</a></li>
+          <li><a href="seismicity.html">Seismicity of the Republic</a></li>
+          <li><a href="kjs.html">REP-KJS, earthquake</a></li>
+          <li><a href="scale.html">REP intensity scale</a></li>
+          <li><a href="kjs-method.html">Detection, latency and limits</a></li>
+          <li><a href="lew.html">REP-LEW, landslide</a></li>
+          <li><a href="few.html">REP-FEW, flood</a></li>
+          <li><a href="devices.html">Certified devices and RQUAK</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Record and network</h4>
+        <ul>
+          <li><a href="species.html">Species catalogue</a></li>
+          <li><a href="network.html">Observing network</a></li>
+          <li><a href="about.html">About the cooperative</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Developers</h4>
+        <ul>
+          <li><a href="dev/index.html">Specifications and licence</a></li>
+          <li><a href="dev/wire-format.html">Warning wire format</a></li>
+          <li><a href="dev/vectors.html">Conformance test vectors</a></li>
+          <li><a href="dev/hardware.html">Sensor and station hardware</a></li>
+          <li><a href="dev/forking.html">Porting to another country</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="basis">Published by the Meteorological Cooperative of the Republic under the organic law on observation and warning. Free of charge, without licence, registration or account. No external resource is loaded by this page. See also the <a href="../../index.html">Republic of Fluid</a> and the <a href="../../register/">Public Register</a>.</p>
+  </div>
+</footer>
+
+<script src="site.js"></script>
+</body>
+</html>

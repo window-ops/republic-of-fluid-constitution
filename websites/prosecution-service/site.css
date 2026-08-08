@@ -1,0 +1,71 @@
+/* Prosecution service - own skin over the shared state frame.
+   Case files: warm charcoal, red rules, tabbed file headings, and every
+   instruction shown in the written form Article 225(3) requires. */
+
+:root {
+  --accent:      #3b3236;
+  --accent-deep: #241d20;
+  --accent-soft: #e8e4e5;
+  --accent-ink:  #ffffff;
+
+  --org-measure: 37rem;
+  --seal: #a8131b;
+  --manila: #f7f3ec;
+}
+
+/* ---------- ground, masthead and navigation ---------- */
+
+body { background: #ded9d9; }
+.sheet { background: var(--manila); }
+
+.orghead { background: var(--accent-deep); }
+.orghead .wrap { padding-top: 1.4rem; padding-bottom: 1.3rem; }
+.orghead .kicker { color: var(--seal); letter-spacing: .18em; font-weight: 700; }
+.orghead .orgname { color: #fff; font-weight: 600; font-size: 1.48rem; letter-spacing: -.015em; }
+.orghead .orgname a { color: #fff; }
+.orghead .basis { color: #9d9498; }
+
+.orgnav { background: var(--accent); }
+.orgnav a { color: #ddd6d8; font-size: .84rem; }
+.orgnav a[aria-current="page"] { border-bottom-color: var(--seal); color: #fff; }
+
+h2 { font-weight: 600; letter-spacing: -.015em; font-size: 1.26rem; }
+h2::after { content: ""; display: block; width: 2.4rem; border-top: 3px solid var(--seal); margin-top: .35rem; }
+
+.legal { background: var(--accent-soft); border-left-color: var(--seal); }
+
+/* ---------- case files with a tabbed heading ---------- */
+.files { margin: 1.2rem 0; }
+.files article { background: var(--f-paper); border: 1px solid var(--f-rule); margin-bottom: .8rem; }
+.files .tab {
+  display: inline-block; background: var(--accent); color: #fff;
+  font-family: var(--f-mono); font-size: .73rem; padding: .28rem .8rem;
+  letter-spacing: .04em;
+}
+.files .in { padding: .55rem .95rem 1rem; }
+.files h3 { margin: .35rem 0 .3rem; font-size: 1rem; font-weight: 600; }
+.files dl { display: grid; grid-template-columns: 9rem 1fr; gap: .28rem .9rem; margin: .5rem 0 0; font-size: .89rem; }
+.files dt { color: var(--accent); font-weight: 600; }
+.files dd { margin: 0; }
+.files .status { border-top: 1px solid var(--f-rule); margin-top: .7rem; padding-top: .5rem; font-size: .86rem; font-weight: 600; }
+.files .status.declined { color: var(--seal); }
+
+/* ---------- published general instructions ---------- */
+.instructions { margin: 1.2rem 0; }
+.instructions .note {
+  border-left: 4px solid var(--seal); background: var(--f-paper);
+  padding: .8rem 1rem; margin-bottom: .6rem;
+}
+.instructions .ref { font-family: var(--f-mono); font-size: .74rem; color: var(--seal); }
+.instructions h3 { margin: .2rem 0 .3rem; font-size: .97rem; }
+.instructions p { margin: 0; font-size: .9rem; }
+
+table.reg thead th { border-bottom-color: var(--seal); }
+table.reg td.mono { font-family: var(--f-mono); font-size: .82rem; }
+
+/* ---------- narrow screens ---------- */
+
+@media (max-width: 40rem) {
+  .files dl { grid-template-columns: 1fr; gap: .1rem; }
+  .files dd { margin-bottom: .4rem; }
+}

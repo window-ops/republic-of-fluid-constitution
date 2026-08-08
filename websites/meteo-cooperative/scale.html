@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>REP intensity scale - Meteorological Cooperative</title>
+<meta name="description" content="The ten-step REP intensity scale, its correspondence with shindo, MSK-64, EMS-98 and Modified Mercalli, the effect observed at each step, and how the value is computed.">
+<link rel="stylesheet" href="site.css">
+<link rel="icon" href="../../assets/flag.png">
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <span class="marque"><svg viewBox="0 0 58 58" role="img" aria-label="Emblem of the Meteorological Cooperative">
+<circle cx="29" cy="31" r="20" fill="none" stroke="#9a6516" stroke-width="2.4"/>
+<circle cx="29" cy="31" r="12.5" fill="none" stroke="#9a6516" stroke-width="1.6"/>
+<circle cx="29" cy="31" r="5" fill="none" stroke="#9a6516" stroke-width="1.6"/>
+<path d="M29 31 L29 9" stroke="#5f3d0c" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M29 12 L38 15" stroke="#5f3d0c" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M29 18 L36 20.5" stroke="#5f3d0c" stroke-width="2.4" stroke-linecap="round"/>
+<circle cx="29" cy="31" r="2" fill="#5f3d0c"/>
+</svg></span>
+    <span class="idblock">
+      <p class="coopname"><a href="index.html">Meteorological Cooperative of the Republic</a></p>
+      <p class="basis">Weather, climate, seismicity, landslide and flood &middot; mandate held under the organic law on observation and warning</p>
+    </span>
+  </div>
+</header>
+
+<nav class="mainnav" aria-label="Sections of this site">
+  <div class="wrap">
+    <a class="navtop" href="index.html">Home</a>
+    <details class="grp">
+      <summary>Weather and climate</summary>
+      <ul>
+        <li><a href="climate.html">Climate of the Republic</a></li>
+        <li><a href="change.html">Observed change</a></li>
+        <li><a href="forecasting.html">How a forecast is made</a></li>
+        <li class="has"><details class="sub">
+          <summary><a href="emissions.html">Emissions position</a></summary>
+          <ul>
+            <li><a href="periphery.html">Harm to the periphery</a></li>
+          </ul>
+        </details></li>
+      </ul>
+    </details>
+    <details class="grp">
+      <summary>Warning systems</summary>
+      <ul>
+        <li><a href="rationale.html">Why these systems exist</a></li>
+        <li><a href="seismicity.html">Seismicity of the Republic</a></li>
+        <li class="has"><details class="sub">
+          <summary><a href="kjs.html">REP-KJS, earthquake</a></summary>
+          <ul>
+            <li><a href="scale.html">REP intensity scale</a></li>
+            <li><a href="kjs-method.html">Detection, latency and limits</a></li>
+          </ul>
+        </details></li>
+        <li><a href="lew.html">REP-LEW, landslide</a></li>
+        <li><a href="few.html">REP-FEW, flood</a></li>
+        <li><a href="devices.html">Certified devices and RQUAK</a></li>
+      </ul>
+    </details>
+    <a class="navtop" href="species.html">Species catalogue</a>
+    <a class="navtop" href="network.html">Observing network</a>
+    <details class="grp">
+      <summary>Developers</summary>
+      <ul>
+        <li><a href="dev/index.html">Specifications and source</a></li>
+        <li><a href="dev/wire-format.html">Warning wire format</a></li>
+        <li><a href="dev/vectors.html">Conformance test vectors</a></li>
+        <li><a href="dev/hardware.html">Sensor and station hardware</a></li>
+        <li><a href="dev/forking.html">Porting to another country</a></li>
+      </ul>
+    </details>
+    <a class="navtop" href="about.html">About the cooperative</a>
+  </div>
+</nav>
+
+<main id="main" class="sheet">
+<p class="crumb"><a href="index.html">Meteorological Cooperative</a> &rsaquo; Warning systems &rsaquo; <a href="kjs.html">REP-KJS</a> &rsaquo; REP intensity scale</p>
+<h1 class="page-title">The REP intensity scale</h1>
+<p class="lede">Intensity describes what an earthquake does at a place. The Republic uses a ten-step scale derived from the Japanese shindo scale, which is itself descended from Mercalli. The two shindo steps that admit a minus and a plus, 5 and 6, are expanded into four whole steps here, and shindo 7 is divided into two. Magnitude, by contrast with intensity, describes the event itself and takes one value everywhere.</p>
+
+<div class="facts">
+  <div class="row"><span class="k">Range</span><span class="v">REP 1 to REP 10, whole numbers only</span></div>
+  <div class="row"><span class="k">Derived from</span><span class="v">The Japanese shindo scale, itself derived from Mercalli</span></div>
+  <div class="row"><span class="k">Expansion</span><span class="v">Shindo 5-, 5+, 6- and 6+ become REP 5, 6, 7 and 8; shindo 7 becomes REP 9 and REP 10</span></div>
+  <div class="row"><span class="k">Computed from</span><span class="v">Instrumental intensity, filtered three-component acceleration, rounded down to the step</span></div>
+  <div class="row"><span class="k">Warning threshold</span><span class="v">A warning is issued wherever the estimated step exceeds REP 2</span></div>
+  <div class="row"><span class="k">Also stated</span><span class="v">Shindo, MSK-64, EMS-98 and Modified Mercalli, in every broadcast</span></div>
+</div>
+
+<h2>Why the scale was expanded</h2>
+<div class="prose">
+<p>The shindo scale distinguishes 5-minus from 5-plus and 6-minus from 6-plus, and the distinction matters, since the damage at 6-plus differs from the damage at 6-minus by more than the damage at 4 differs from that at 5. Suffixed steps travel poorly. They defeat numeric comparison in firmware, they require a convention for the suffix in every text encoding, and they oblige every device manufacturer to handle a value that sorts as a string.</p>
+<p>The Republic therefore promoted each suffixed step to a whole number. The correspondence is exact and reversible, so a REP value converts to shindo and back without loss. Shindo 7 is open-ended, and the cooperative divided it at 6.0 m/s&sup2; into REP 9 and REP 10, so that the top of the scale distinguishes severe destruction from total destruction. No event in the record of the Republic has reached either.</p>
+</div>
+
+<h2>The scale</h2>
+<div class="tablewrap">
+<table class="data">
+<caption>REP intensity, correspondence and observed effect</caption>
+<thead>
+<tr><th class="num">REP</th><th>Name</th><th>Shindo</th><th>MSK-64</th><th>EMS-98</th><th>Mercalli</th><th class="num">Peak acceleration</th><th>Effect at the place</th></tr>
+</thead>
+<tbody>
+<tr>
+<td class="step s1">1</td><td>Imperceptible</td><td>0 to 1</td><td>I to II</td><td>I to II</td><td>I to II</td><td class="num">below 0.025 m/s&sup2;</td>
+<td>Recorded by instruments. Felt by nobody, or by a few persons at rest on an upper floor.</td>
+</tr>
+<tr>
+<td class="step s2">2</td><td>Slight</td><td>2</td><td>III</td><td>III</td><td>III</td><td class="num">0.025 to 0.08</td>
+<td>Felt indoors by some persons at rest. Hanging objects swing a little. Sleepers are rarely woken. No warning is issued at this step.</td>
+</tr>
+<tr>
+<td class="step s3">3</td><td>Light</td><td>3</td><td>IV</td><td>IV</td><td>IV</td><td class="num">0.08 to 0.25</td>
+<td>Felt indoors by most persons and outdoors by a few. Hanging objects swing, glass and crockery move, sleepers wake. No damage to structures.</td>
+</tr>
+<tr>
+<td class="step s4">4</td><td>Moderate</td><td>4</td><td>V</td><td>V</td><td>V</td><td class="num">0.25 to 0.80</td>
+<td>Felt by everybody indoors and by many outdoors. Unstable objects fall, doors swing, hanging lamps swing strongly. Slight cracking of old plaster.</td>
+</tr>
+<tr>
+<td class="step s5">5</td><td>Rather strong</td><td>5-</td><td>VI</td><td>VI</td><td>VI</td><td class="num">0.80 to 1.4</td>
+<td>Alarm is general and many leave buildings. Furniture shifts, unsecured shelving empties, tiles fall. Cracks appear in weak masonry.</td>
+</tr>
+<tr>
+<td class="step s6">6</td><td>Strong</td><td>5+</td><td>VI to VII</td><td>VI to VII</td><td>VI to VII</td><td class="num">1.4 to 2.5</td>
+<td>Standing becomes difficult. Heavy furniture moves, chimneys and parapets fall, unreinforced masonry cracks widely. Reinforced structures are undamaged.</td>
+</tr>
+<tr>
+<td class="step s7">7</td><td>Very strong</td><td>6-</td><td>VII to VIII</td><td>VII to VIII</td><td>VII to VIII</td><td class="num">2.5 to 3.15</td>
+<td>Standing without support is impossible. Weak masonry buildings sustain serious damage and some partially collapse. Cracks in reinforced concrete walls. Ground fissures on soft soil.</td>
+</tr>
+<tr>
+<td class="step s8">8</td><td>Severe</td><td>6+</td><td>VIII to IX</td><td>VIII to IX</td><td>VIII to IX</td><td class="num">3.15 to 4.0</td>
+<td>Many weak masonry buildings collapse. Reinforced buildings sustain structural damage. Underground pipes break. Landslide on steep ground is common.</td>
+</tr>
+<tr>
+<td class="step s9">9</td><td>Violent</td><td>7</td><td>IX to X</td><td>IX to X</td><td>IX to X</td><td class="num">4.0 to 6.0</td>
+<td>Most masonry buildings collapse. Reinforced buildings lean or fail. Rails bend, roads rupture, extensive ground deformation. No instance since 1901.</td>
+</tr>
+<tr>
+<td class="step s10">10</td><td>Extreme</td><td>7</td><td>X to XII</td><td>X to XII</td><td>X to XII</td><td class="num">above 6.0</td>
+<td>Destruction is general and includes structures built to the standard. Ground surface visibly deformed. No instance in the record of the Republic.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="note">Acceleration bands are indicative. The step is computed from instrumental intensity and not from peak acceleration alone, so a value near a boundary may fall on either side according to the frequency content and duration of the motion.</p>
+
+<h2>How the value is computed</h2>
+<div class="prose">
+<p>The station computes an instrumental intensity from the three components of ground acceleration. The three components are filtered to the frequency band that shakes buildings and combined into a single motion. The size that motion reaches, for a total of 0.3 s during the event, is taken as the amplitude. That amplitude enters a logarithmic expression producing a continuous number, which is rounded down to the whole step.</p>
+<pre><code>I_R = 2 * log10(a) + 0.94         a in m/s^2, vector amplitude
+REP = floor(I_R)                  clipped to the range 1 to 10</code></pre>
+<p>The continuous value is retained everywhere it is used. A broadcast states the whole step, and the archive, the shake maps and the conformance vectors hold the continuous number to two decimal places.</p>
+</div>
+
+<h2>Intensity and magnitude</h2>
+<div class="box">
+<span class="lbl">Two different quantities</span>
+<p>Magnitude describes the event and takes a single value. Intensity describes a place and takes a different value at every place. The event of 3 August 2026 was magnitude 5.4 everywhere; its intensity was REP 5 in the Belvacius sub-region, REP 4 at Cortius, REP 3 at Leriduson and REP 1 at Lindoma.</p>
+<p>The value stated first in a broadcast is the intensity estimated for the receiving device, since that is the number governing what a person should do. Magnitude follows, together with the highest intensity estimated anywhere in the territory.</p>
+</div>
+
+<h2>Correspondence with the other scales</h2>
+<div class="prose">
+<p>MSK-64, EMS-98 and Modified Mercalli are macroseismic scales assessed from observed effect, and shindo and REP are computed from instrument records. The correspondence between the two families is approximate at every step and is stated as a range wherever a REP step spans two macroseismic degrees. It rests on the pairs observed in the Republic since 1962, supplemented by the published Japanese correspondence for shindo.</p>
+<p>Every REP-KJS broadcast states all four correspondences, so that residents who learned an intensity scale in another country, and visitors present in the Republic, can place the number without consulting a table.</p>
+</div>
+
+<h2>See also</h2>
+<div class="prose">
+<ul>
+<li><a href="kjs.html">REP-KJS</a>, the warning system that states these values</li>
+<li><a href="kjs-method.html">Detection, latency and limits</a>, including how an intensity is estimated ahead of the shaking</li>
+<li><a href="seismicity.html">Seismicity of the Republic</a>, the frequency with which each step occurs</li>
+<li><a href="dev/wire-format.html">Warning wire format</a>, where the intensity fields are specified</li>
+</ul>
+</div>
+
+</main>
+
+<footer class="coopfoot">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <h4>Weather and climate</h4>
+        <ul>
+          <li><a href="climate.html">Climate of the Republic</a></li>
+          <li><a href="change.html">Observed change</a></li>
+          <li><a href="forecasting.html">How a forecast is made</a></li>
+          <li><a href="emissions.html">Emissions position</a></li>
+          <li><a href="periphery.html">Harm to the periphery</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Warning systems</h4>
+        <ul>
+          <li><a href="rationale.html">Why these systems exist</a></li>
+          <li><a href="seismicity.html">Seismicity of the Republic</a></li>
+          <li><a href="kjs.html">REP-KJS, earthquake</a></li>
+          <li><a href="scale.html">REP intensity scale</a></li>
+          <li><a href="kjs-method.html">Detection, latency and limits</a></li>
+          <li><a href="lew.html">REP-LEW, landslide</a></li>
+          <li><a href="few.html">REP-FEW, flood</a></li>
+          <li><a href="devices.html">Certified devices and RQUAK</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Record and network</h4>
+        <ul>
+          <li><a href="species.html">Species catalogue</a></li>
+          <li><a href="network.html">Observing network</a></li>
+          <li><a href="about.html">About the cooperative</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Developers</h4>
+        <ul>
+          <li><a href="dev/index.html">Specifications and licence</a></li>
+          <li><a href="dev/wire-format.html">Warning wire format</a></li>
+          <li><a href="dev/vectors.html">Conformance test vectors</a></li>
+          <li><a href="dev/hardware.html">Sensor and station hardware</a></li>
+          <li><a href="dev/forking.html">Porting to another country</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="basis">Published by the Meteorological Cooperative of the Republic under the organic law on observation and warning. Free of charge, without licence, registration or account. No external resource is loaded by this page. See also the <a href="../../index.html">Republic of Fluid</a> and the <a href="../../register/">Public Register</a>.</p>
+  </div>
+</footer>
+
+<script src="site.js"></script>
+</body>
+</html>

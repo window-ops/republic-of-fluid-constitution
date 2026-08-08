@@ -1,0 +1,92 @@
+/* Defender of Rights - own skin over the shared state frame.
+   Built for someone with a problem and little patience for institutions:
+   sans-serif throughout, large type, wide measure, the complaint route
+   placed before any explanation of the office. */
+
+:root {
+  --accent:      #9a3324;
+  --accent-deep: #6d2119;
+  --accent-soft: #f7e8e4;
+  --accent-ink:  #ffffff;
+
+  --org-measure: 40rem;
+
+  --warm:  #fdfaf8;
+  --edge:  #e4d5cf;
+}
+
+/* ---------- ground, masthead and navigation ---------- */
+
+body { background: #f0e9e6; line-height: 1.58; }
+.sheet { background: var(--warm); }
+
+.orghead { background: var(--warm); border-bottom: 1px solid var(--edge); }
+.orghead .wrap { padding-top: 1.5rem; padding-bottom: 1.35rem; }
+.orghead .kicker { color: var(--accent); }
+.orghead .orgname { font-size: 1.62rem; font-weight: 700; letter-spacing: -.025em; }
+
+/* Navigation as pills on warm ground. */
+.orgnav { background: var(--warm); border-bottom: 1px solid var(--edge); }
+.orgnav .wrap { gap: .35rem; padding-top: .55rem; padding-bottom: .55rem; }
+.orgnav a {
+  color: var(--accent-deep); border-bottom: 0; border-radius: 999px;
+  padding: .42rem .95rem; font-size: .86rem;
+}
+.orgnav a:hover { background: var(--accent-soft); color: var(--accent-deep); }
+.orgnav a[aria-current="page"] { background: var(--accent); color: #fff; font-weight: 600; }
+
+h2 { font-weight: 700; letter-spacing: -.02em; font-size: 1.34rem; }
+h3 { font-weight: 700; }
+
+.legal { background: var(--accent-soft); font-family: var(--f-sans); }
+
+/* ---------- ways to reach the office ---------- */
+.ways { display: grid; gap: .9rem; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); margin: 1.2rem 0; }
+.ways div { background: var(--f-paper); border: 1px solid var(--edge); border-left: 4px solid var(--accent); padding: .9rem 1rem; }
+.ways h3 { margin: 0 0 .3rem; font-size: .98rem; }
+.ways p { margin: 0; font-size: .9rem; color: var(--f-ink-soft); max-width: none; }
+
+/* ---------- routing helper ---------- */
+.router { border: 2px solid var(--accent); background: var(--f-paper); padding: 1.1rem 1.2rem; margin: 1.3rem 0; max-width: 44rem; }
+.router h3 { margin: 0 0 .7rem; }
+.router .out { margin-top: 1rem; padding: .9rem 1rem; background: var(--accent-soft); border-left: 4px solid var(--accent); font-size: .93rem; }
+.router .out strong { display: block; margin-bottom: .3rem; color: var(--accent-deep); }
+.router .out a { color: var(--accent-deep); }
+
+/* ---------- steps of the procedure ---------- */
+.steps { list-style: none; padding: 0; margin: 1.2rem 0; counter-reset: step; }
+.steps li {
+  counter-increment: step; position: relative; padding: 0 0 1.3rem 3.2rem;
+  border-left: 2px solid var(--edge); margin-left: 1.1rem; max-width: 40rem;
+}
+.steps li:last-child { border-left-color: transparent; padding-bottom: 0; }
+.steps li::before {
+  content: counter(step); position: absolute; left: -1.15rem; top: 0;
+  width: 2.2rem; height: 2.2rem; border-radius: 50%;
+  background: var(--accent); color: #fff; font-weight: 700; font-size: .95rem;
+  display: flex; align-items: center; justify-content: center;
+}
+.steps h3 { margin: .25rem 0 .3rem; font-size: 1.02rem; }
+.steps p { margin: 0; font-size: .93rem; color: var(--f-ink-soft); }
+.steps .clock { font-size: .78rem; text-transform: uppercase; letter-spacing: .08em; color: var(--accent); font-weight: 700; }
+
+/* ---------- register of automated systems ---------- */
+.systems { margin: 1.1rem 0; }
+.systems article {
+  border: 1px solid var(--edge); background: var(--f-paper);
+  padding: .95rem 1.1rem; margin-bottom: .7rem;
+}
+.systems h3 { margin: 0 0 .15rem; font-size: 1rem; }
+.systems .used { font-size: .8rem; color: var(--f-ink-soft); margin: 0 0 .6rem; }
+.systems dl { display: grid; grid-template-columns: 8.5rem 1fr; gap: .3rem .9rem; margin: 0; font-size: .88rem; }
+.systems dt { color: var(--accent-deep); font-weight: 700; }
+.systems dd { margin: 0; }
+.systems .stopped { border-left: 5px solid var(--f-warn); }
+.systems .stopped h3 { color: var(--f-warn); }
+
+/* ---------- narrow screens ---------- */
+
+@media (max-width: 40rem) {
+  .systems dl { grid-template-columns: 1fr; gap: .1rem; }
+  .systems dd { margin-bottom: .45rem; }
+}

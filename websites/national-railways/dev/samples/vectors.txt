@@ -1,0 +1,44 @@
+Dubrazec standard, revision 3 - test vectors
+Public domain under Article 10 of the Constitution of the Republic of Fluid.
+
+A build that reproduces all four sections is a build the conformance suite
+will run against. All values are hexadecimal, big endian, spaces for reading
+only.
+
+1. Key diversification
+   K = AES-128-CMAC(Kmaster, uuid || 01)
+
+   Kmaster   00112233 44556677 8899aabb ccddeeff
+   uuid      04 9c 2e 7b 41 80 00
+   input     049c2e7b 41800001
+   K         6d2c1f04 a9b83e57 c01d7742 8ef3b615
+
+2. Authentication, first pass
+   macC = AES-128-CMAC(K, rndR || rndC)[0..7]
+
+   rndR      1f3a55c8 90d4e277
+   rndC      b47e0195 6ca3f820
+   macC      2ea7c30f 91b56d48
+
+3. Authentication, second pass and session key
+   macR = AES-128-CMAC(K, rndC || rndR)[0..7]
+   SK   = AES-128-CMAC(K, rndR || rndC)
+
+   macR      c85b1e73 40af2d96
+   SK        2ea7c30f 91b56d48 7c1a0e35 bd420f97
+
+4. Record seal
+   seal = AES-128-CMAC(Knet, record[0..23] || uuid)[0..7]
+
+   Knet      a1b2c3d4 e5f60718 293a4b5c 6d7e8f90
+   record    0dcb41a0                      stamp   2026-08-02 08:22 local
+             00000000 004c494e            station  LIN-CTR
+             4c494e00 4c455200            section  Lindoma to Leriduson
+             02                            count    2
+             00                            kind     gate
+             0001                          operator northern-coast
+   seal      7b3e91c2 05fa864d
+
+5. Frame with the seal in place, as sent by APPEND_REC over the coil
+   07 01 0020 0dcb41a0 00000000 004c494e 4c494e00 4c455200 02 00 0001
+   7b3e91c2 05fa864d  crc16

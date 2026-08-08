@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Application interfaces &middot; National Railways Federation</title>
+<meta name="description" content="api.nrf.rof version 1: stations, routes, timetable, platforms, changes and reports, with the shapes of a departure, a change and a report, and how the Podnik position feed joins to it.">
+<meta name="theme-color" content="#0b4ea2">
+<link rel="stylesheet" href="../site.css">
+<link rel="icon" href="../../../assets/flag.png">
+</head>
+<body>
+<a class="skip" href="#main">Skip to the content</a>
+
+<header class="head">
+  <div class="wrap">
+    <svg class="mark" viewBox="0 0 48 48" role="img" aria-label="Emblem of the National Railways Federation">
+      <rect width="48" height="48" fill="#0b4ea2"></rect>
+      <path d="M0 20 Q6 14 12 20 T24 20 T36 20 T48 20 V30 H0 Z" fill="#ffffff"></path>
+      <rect x="0" y="30" width="48" height="3" fill="#08376f"></rect>
+      <rect x="14" y="34" width="3" height="14" fill="#ffffff"></rect>
+      <rect x="31" y="34" width="3" height="14" fill="#ffffff"></rect>
+    </svg>
+    <span>
+      <p class="wordmark"><a href="../index.html">National Railways Federation</a></p>
+      <p class="standfirst">Branch federation of the railway operating cooperatives</p>
+    </span>
+  </div>
+</header>
+<div class="band" role="presentation"></div>
+
+<nav class="nav" aria-label="Sections of this site">
+  <div class="wrap">
+    <a class="navtop" href="../index.html">Front</a>
+    <details class="grp">
+      <summary>Travelling</summary>
+      <ul>
+        <li><a href="../network.html">Network and routes</a></li>
+        <li><a href="../stations.html">Stations and equipment</a></li>
+        <li><a href="../night.html">Night trains and sleepers</a></li>
+        <li><a href="../access.html">Access and assistance</a></li>
+        <li><a href="../carriage.html">Conditions of carriage</a></li>
+      </ul>
+    </details>
+    <details class="grp">
+      <summary>Systems</summary>
+      <ul>
+        <li><a href="../app.html">The application</a></li>
+        <li><a href="../card.html">CARD-ROM</a></li>
+        <li><a href="../comparison.html">Comparison of card standards</a></li>
+      </ul>
+    </details>
+    <details class="grp">
+      <summary>Federation</summary>
+      <ul>
+        <li><a href="../cooperatives.html">Member cooperatives</a></li>
+        <li><a href="../about.html">About the federation</a></li>
+      </ul>
+    </details>
+    <a class="navtop" href="./" aria-current="page">Developers</a>
+  </div>
+</nav>
+
+<main id="main">
+
+<section class="opening">
+  <div class="wrap">
+    <p class="eyebrow">api.nrf.rof, version 1</p>
+    <h1>The interfaces the application reads</h1>
+    <p class="lede">Six endpoints, JSON, no key, no quota, no registration. Vehicle positions are not here; they belong to Podnik at <code class="inline">api.podnik.rof</code> and are documented by the transport federation. A client that wants a departure board joins the two.</p>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <p class="eyebrow">Endpoints</p>
+    <h2>What each one answers</h2>
+  </div>
+  <div class="wrap">
+    <div class="tablewrap">
+      <table>
+        <caption>api.nrf.rof/v1</caption>
+        <thead><tr><th scope="col">Path</th><th scope="col">Answers</th><th scope="col" class="num">Cache</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">/v1/stations</th><td>The 145 stations: identifier, name, sub-region, platforms, whether a gate stands there, step-free access, the fittings on the access page.</td><td class="num">1 day</td></tr>
+          <tr><th scope="row">/v1/routes</th><td>The 36 routes: number, name, group, the station sequence, length, end-to-end time, traction.</td><td class="num">1 day</td></tr>
+          <tr><th scope="row">/v1/timetable</th><td>Departures for a station and a date, or a whole route. Published times, platforms and the service identifier that joins to the Podnik feed.</td><td class="num">1 hour</td></tr>
+          <tr><th scope="row">/v1/platforms</th><td>Platform allocation for a station and a day, which moves more often than the timetable does.</td><td class="num">5 min</td></tr>
+          <tr><th scope="row">/v1/changes</th><td>What moved: time changes, platform changes, cancellations, with the cooperative that decided each and when.</td><td class="num">1 min</td></tr>
+          <tr><th scope="row">/v1/reports</th><td>Rider reports and the answers to them, published together under Article 61(2). POST files one.</td><td class="num">5 min</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <p class="eyebrow">Shapes</p>
+    <h2>A departure, a change, a report</h2>
+  </div>
+  <div class="wrap">
+    <pre class="code">GET /v1/timetable?stop=LIN-CTR&amp;from=2026-08-02T08:00
+
+{"stop": "LIN-CTR",
+ "generated": "2026-08-02T08:14:02+02:00",
+ "departures": [
+   {"service": "S-35-0812",
+    "route": 35,
+    "group": "northern-coast",
+    "destination": "TOR-001",
+    "published": "2026-08-02T08:20:00+02:00",
+    "platform": 2,
+    "calls": [{"station": "NUR-001", "published": "2026-08-02T08:41:00+02:00"},
+              {"station": "ORT-001", "published": "2026-08-02T09:22:00+02:00"},
+              {"station": "TOR-001", "published": "2026-08-02T10:40:00+02:00"}],
+    "vehicle_hint": "SED-R9"}]}</pre>
+    <pre class="code">GET /v1/changes?since=2026-07-30T00:00
+
+{"changes": [
+   {"id": "C-2026-07-30-0114",
+    "service": "S-13-1440",
+    "route": 13,
+    "kind": "platform",
+    "was": 2, "now": 4, "at": "VES-001",
+    "decided_by": "southern/duty-office",
+    "decided_at": "2026-07-30T11:26:00+02:00",
+    "reason": "engineering possession on platform 2 until 12 August"}]}</pre>
+    <pre class="code">POST /v1/reports
+Content-Type: application/json
+
+{"kind": "station",
+ "station": "SOR-001",
+ "vehicle": null,
+ "text": "The lift in the north subway is out of use.",
+ "reply_to": null}
+
+201 Created
+{"id": "R-2026-08-02-0338",
+ "group": "south-east-coast",
+ "acknowledge_by": "2026-08-05",
+ "published": "https://nrf.rof/reports/R-2026-08-02-0338"}</pre>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <p class="eyebrow">Rules of the road</p>
+    <h2>Rates, caching and errors</h2>
+  </div>
+  <div class="wrap">
+    <ul class="plates">
+      <li>
+        <h3>Conditional requests</h3>
+        <p>Every response comes with an ETag and Last-Modified. A conditional request that returns 304 costs nothing and is not counted against anything, because nothing is counted.</p>
+      </li>
+      <li>
+        <h3>Polling</h3>
+        <p>The change feed is regenerated once a minute and platforms once every five. Polling faster returns the same document with the same ETag; there is no rate limit and no benefit.</p>
+      </li>
+      <li>
+        <h3>Errors</h3>
+        <p>Problem details, RFC 9457, with <code class="inline">type</code>, <code class="inline">title</code> and <code class="inline">detail</code> in the language of the Accept-Language header where the message has a translation.</p>
+      </li>
+      <li>
+        <h3>Bulk</h3>
+        <p>The whole timetable for a period is one gzip at <code class="inline">/v1/timetable/bulk</code>, published on the day the period opens. A board in a shelter runs off that and the change feed alone.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <p class="eyebrow">Joining the two</p>
+    <h2>Where Podnik comes in</h2>
+  </div>
+  <div class="wrap">
+    <div class="essay">
+      <p>A published time comes from here. Where a vehicle actually is comes from Podnik. The service identifier in the timetable is the join: pass it to the Podnik journeys endpoint and the reply returns the vehicle, its position, its estimate and the margin on that estimate.</p>
+      <p>Podnik documents its own interface at <span class="host">api.podnik.rof</span> and sets its own terms; the federation neither proxies it nor mirrors it. <a href="samples/board.py" download>board.py</a> shows the join in about eighty lines.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<div class="band-foot" role="presentation"></div>
+<footer class="foot">
+  <div class="wrap">
+    <ul class="footlinks">
+      <li><a href="../index.html">Front</a></li>
+      <li><a href="../network.html">Network</a></li>
+      <li><a href="../app.html">Application</a></li>
+      <li><a href="../card.html">CARD-ROM</a></li>
+      <li><a href="./">Developers</a></li>
+      <li><a href="../about.html">About</a></li>
+      <li><a href="../../podnik/">Podnik</a></li>
+      <li><a href="../../../register/links.html">Public Register</a></li>
+    </ul>
+    <p class="standing">A branch federation of the railway operating cooperatives, constituted under Article 89. It exercises no public authority and represents no organ. Its accounts, its minutes and its yearly reviews are public.</p>
+  </div>
+</footer>
+<script src="../site.js" defer></script>
+</body>
+</html>

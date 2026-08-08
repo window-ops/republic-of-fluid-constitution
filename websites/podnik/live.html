@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Live positions &middot; Podnik</title>
+<meta name="description" content="The open position feed for every tram, bus, coach, train, metro car, ferry and pod in the Republic of Fluid, keyed to OpenStreetMap, with the endpoints, fields and the method for computing a waiting time.">
+<meta name="theme-color" content="#14181b">
+<link rel="stylesheet" href="site.css">
+<link rel="icon" href="../../assets/flag.png">
+</head>
+<body>
+<a class="skip" href="#main">Skip to the content</a>
+
+<header class="head">
+  <div class="wrap">
+    <svg class="mark" viewBox="0 0 46 46" role="img" aria-label="Emblem of Podnik">
+      <rect width="46" height="46" fill="#ffd100"></rect>
+      <path d="M8 36V16a5 5 0 0 1 5-5h20a5 5 0 0 1 5 5v20" fill="none" stroke="#14181b" stroke-width="4.4"></path>
+      <path d="M23 36V11" stroke="#14181b" stroke-width="4.4"></path>
+      <circle cx="14" cy="38" r="3.4" fill="#14181b"></circle>
+      <circle cx="32" cy="38" r="3.4" fill="#14181b"></circle>
+    </svg>
+    <span>
+      <p class="wordmark"><a href="index.html">Podnik</a></p>
+      <p class="standfirst">Federation of transport cooperatives of the Republic of Fluid</p>
+    </span>
+  </div>
+</header>
+
+<nav class="nav" aria-label="Sections of this site">
+  <div class="wrap">
+    <a href="index.html">Front</a>
+    <a href="catalogue.html">Catalogue</a>
+    <a href="live.html" aria-current="page">Live positions</a>
+    <a href="fleets.html">Fleet advice</a>
+    <a href="social.html">Social</a>
+    <a href="reserve.html">Reserve</a>
+    <a href="surplus.html">Surplus</a>
+    <a href="retired.html">Retired</a>
+    <a href="depots.html">Depots</a>
+    <a href="about.html">About</a>
+  </div>
+</nav>
+
+<main id="main">
+
+<section class="opening">
+  <div class="wrap">
+    <p class="eyebrow">Open data</p>
+    <h1>One feed, every vehicle</h1>
+    <p class="lede">Every vehicle in traffic reports its position, and the whole of it is published without an account, a key or a quota. Apps use it with OpenStreetMap to show where a tram is and how long a rider is going to stand at the stop.</p>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <p class="eyebrow">The interface</p>
+    <h2>Four endpoints</h2>
+    <p class="sub">The base is <code class="inline">https://api.podnik.rof</code>. Everything answers JSON over HTTPS and everything answers to GET.</p>
+  </div>
+  <div class="wrap">
+    <ul class="plates wide">
+      <li>
+        <span class="tag">GET /v1/positions</span>
+        <h3>Where everything is, now</h3>
+        <p>One record for every vehicle in traffic, 12,400 of them at the morning peak and around 900 at three in the morning. Refreshed every ten seconds, and every second for the Lindoma pods. The whole document is about 2.4 MB uncompressed and 260 kB over the wire.</p>
+        <p>Filter it down with <code class="inline">?mode=tram</code>, <code class="inline">?town=lindoma</code> or <code class="inline">?line=14</code>, in any combination.</p>
+      </li>
+      <li>
+        <span class="tag">GET /v1/lines</span>
+        <h3>What runs where</h3>
+        <p>Every line, its stops in order, the OpenStreetMap way and node identifiers it follows, the models normally allocated to it, and the timetable in force. Changes rarely. Cache this one.</p>
+      </li>
+      <li>
+        <span class="tag">GET /v1/journeys</span>
+        <h3>What is coming, and when</h3>
+        <p>For a stop or a line, the journeys due, each with a scheduled time, a predicted time and a margin of uncertainty in seconds. The prediction comes from the vehicle position, the running time observed on that section over the last twenty minutes, and the time spent waiting at the stops between here and there.</p>
+        <p><code class="inline">?stop=</code> takes either a Podnik stop identifier or an OpenStreetMap node.</p>
+      </li>
+      <li>
+        <span class="tag">GET /v1/vehicle/{id}</span>
+        <h3>One vehicle</h3>
+        <p>Position, line, journey, model code, depot of allocation, and for a pod the identifier of the controller supervising it. The model code links straight into the catalogue, so an app can show a rider which vehicle is arriving before it comes round the corner.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <p class="eyebrow">Shape of a record</p>
+    <h2>A position, in full</h2>
+    <p class="sub">One vehicle from the tram feed on line 14 at Lindoma, on a weekday morning.</p>
+  </div>
+  <div class="wrap">
+    <pre class="code"><b>GET</b> https://api.podnik.rof/v1/positions?line=14&amp;mode=tram
+
+{
+  "generated": "2026-07-31T08:14:20Z",
+  "next_in": 10,
+  "vehicles": [
+    {
+      "id": "LIN-T-04417",
+      "model": "FER T4",
+      "line": "14",
+      "journey": "14-0812-E",
+      "lat": 52.1174,
+      "lon": 9.4402,
+      "bearing": 214,
+      "speed_kmh": 21.4,
+      "occupancy": "some_seats",
+      "next_stop": {
+        "podnik": "LIN-0412",
+        "osm_node": 3184402117,
+        "eta": "2026-07-31T08:15:48Z",
+        "uncertainty_s": 20
+      },
+      "depot": "Lindoma North",
+      "accessible": true
+    }
+  ]
+}</pre>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <p class="eyebrow">Method</p>
+    <h2>Working out a waiting time</h2>
+  </div>
+  <div class="wrap">
+    <ol class="steps">
+      <li>
+        <h3>Ask the stop, not the vehicle</h3>
+        <p>Call <code class="inline">/v1/journeys?stop=LIN-0412</code>. The reply already accounts for vehicles that have not yet started their journey, which a position feed alone cannot tell you about.</p>
+      </li>
+      <li>
+        <h3>Take the difference, then widen it</h3>
+        <p>The waiting time is the predicted time minus the current time. Show the margin of uncertainty with it. A margin of 20 seconds at three stops out becomes 90 seconds at fifteen stops out.</p>
+      </li>
+      <li>
+        <h3>Refresh at the rate of the mode</h3>
+        <p>Ten seconds for everything except the pods, which move on a one-second feed. Polling faster returns the same document with the same <code class="inline">generated</code> stamp.</p>
+      </li>
+      <li>
+        <h3>Fall back to the timetable</h3>
+        <p>When <code class="inline">predicted</code> is absent the vehicle has not reported for more than two minutes, show the scheduled time and state that it is scheduled. The field <code class="inline">stale_s</code> tells you how long the silence has run.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <p class="eyebrow">The map underneath</p>
+    <h2>OpenStreetMap</h2>
+  </div>
+  <div class="wrap">
+    <div class="essay">
+      <p><strong>Podnik publishes identifiers, and OpenStreetMap helps place them.</strong> Every stop in the feed names the node it matches, and every line gives the ordered ways it runs over. Drawing a live map needs the two together: the feed for the moving points and the map for everything standing still.</p>
+      <p><strong>The tagging goes like this:</strong> stops are <code class="inline">public_transport=stop_position</code> with <code class="inline">network=Podnik</code> and the Podnik identifier in <code class="inline">ref:podnik</code>. Routes use <code class="inline">route=tram</code>, <code class="inline">route=bus</code>, <code class="inline">route=train</code>, <code class="inline">route=ferry</code> and, for the Lindoma lanes, <code class="inline">route=bus</code> with <code class="inline">podnik:pod=yes</code>. Corrections go to OpenStreetMap directly, and the federation surveys the whole network against it twice a year.</p>
+      <p><strong>The two are published under different terms.</strong> The Podnik feed is in the public domain, since it was made with public resources and patents are banned here. OpenStreetMap data comes under the Open Database Licence, and an application mixing them stays subject to that licence for the map part.</p>
+    </div>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <p class="eyebrow">Terms</p>
+    <h2>What the feed asks of you</h2>
+  </div>
+  <div class="wrap">
+    <ul class="plates">
+      <li>
+        <h3>No account, no key, no quota</h3>
+        <p>Nothing to register for and nothing to sign. The feed answers the same to a resident with a phone, a commune with a departure board and a company abroad.</p>
+      </li>
+      <li>
+        <h3>Mirrors at every regional exchange</h3>
+        <p>Twenty-two mirrors serve the same document. The nearest one answers on <code class="inline">api.podnik.rof</code>, and each is reachable directly as <code class="inline">api-01.podnik.rof</code> through <code class="inline">api-22.podnik.rof</code> if the nearest is down.</p>
+      </li>
+      <li>
+        <h3>Cache the slow things</h3>
+        <p>Lines and stops change a few times a year. Positions change every ten seconds. Fetching the first as often as the second wastes a great deal of somebody's electricity.</p>
+      </li>
+      <li>
+        <h3>Faults are published</h3>
+        <p>Feed interruptions go on the status page with the cause and the duration, alongside the figure for how much of the year it was running. That has been 99.94 per cent since 2021.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-cols">
+    <div>
+      <h2>The register</h2>
+      <ul>
+        <li><a href="catalogue.html">Vehicles in service</a></li>
+        <li><a href="retired.html">Retired models</a></li>
+        <li><a href="depots.html">Depots and maintenance</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Data and services</h2>
+      <ul>
+        <li><a href="live.html">Live position feed</a></li>
+        <li><a href="fleets.html">Fleet advice</a></li>
+        <li><a href="surplus.html">Surplus abroad</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Standing</h2>
+      <ul>
+        <li><a href="about.html">About the federation</a></li>
+        <li><a href="../../register/links.html">Public Register of the Republic</a></li>
+      </ul>
+      <p>Podnik holds a licence the Republic grants and is audited in its use of common resources. It exercises no public authority and represents no organ.</p>
+    </div>
+  </div>
+</footer>
+<script src="site.js" defer></script>
+</body>
+</html>

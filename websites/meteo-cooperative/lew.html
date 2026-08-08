@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>REP-LEW, the landslide system - Meteorological Cooperative</title>
+<meta name="description" content="The landslide probing and early warning system: the monitored slopes, the rainfall and saturation thresholds, seismic coupling, the performance record and the limits.">
+<link rel="stylesheet" href="site.css">
+<link rel="icon" href="../../assets/flag.png">
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <span class="marque"><svg viewBox="0 0 58 58" role="img" aria-label="Emblem of the Meteorological Cooperative">
+<circle cx="29" cy="31" r="20" fill="none" stroke="#9a6516" stroke-width="2.4"/>
+<circle cx="29" cy="31" r="12.5" fill="none" stroke="#9a6516" stroke-width="1.6"/>
+<circle cx="29" cy="31" r="5" fill="none" stroke="#9a6516" stroke-width="1.6"/>
+<path d="M29 31 L29 9" stroke="#5f3d0c" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M29 12 L38 15" stroke="#5f3d0c" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M29 18 L36 20.5" stroke="#5f3d0c" stroke-width="2.4" stroke-linecap="round"/>
+<circle cx="29" cy="31" r="2" fill="#5f3d0c"/>
+</svg></span>
+    <span class="idblock">
+      <p class="coopname"><a href="index.html">Meteorological Cooperative of the Republic</a></p>
+      <p class="basis">Weather, climate, seismicity, landslide and flood &middot; mandate held under the organic law on observation and warning</p>
+    </span>
+  </div>
+</header>
+
+<nav class="mainnav" aria-label="Sections of this site">
+  <div class="wrap">
+    <a class="navtop" href="index.html">Home</a>
+    <details class="grp">
+      <summary>Weather and climate</summary>
+      <ul>
+        <li><a href="climate.html">Climate of the Republic</a></li>
+        <li><a href="change.html">Observed change</a></li>
+        <li><a href="forecasting.html">How a forecast is made</a></li>
+        <li class="has"><details class="sub">
+          <summary><a href="emissions.html">Emissions position</a></summary>
+          <ul>
+            <li><a href="periphery.html">Harm to the periphery</a></li>
+          </ul>
+        </details></li>
+      </ul>
+    </details>
+    <details class="grp">
+      <summary>Warning systems</summary>
+      <ul>
+        <li><a href="rationale.html">Why these systems exist</a></li>
+        <li><a href="seismicity.html">Seismicity of the Republic</a></li>
+        <li class="has"><details class="sub">
+          <summary><a href="kjs.html">REP-KJS, earthquake</a></summary>
+          <ul>
+            <li><a href="scale.html">REP intensity scale</a></li>
+            <li><a href="kjs-method.html">Detection, latency and limits</a></li>
+          </ul>
+        </details></li>
+        <li><a href="lew.html">REP-LEW, landslide</a></li>
+        <li><a href="few.html">REP-FEW, flood</a></li>
+        <li><a href="devices.html">Certified devices and RQUAK</a></li>
+      </ul>
+    </details>
+    <a class="navtop" href="species.html">Species catalogue</a>
+    <a class="navtop" href="network.html">Observing network</a>
+    <details class="grp">
+      <summary>Developers</summary>
+      <ul>
+        <li><a href="dev/index.html">Specifications and source</a></li>
+        <li><a href="dev/wire-format.html">Warning wire format</a></li>
+        <li><a href="dev/vectors.html">Conformance test vectors</a></li>
+        <li><a href="dev/hardware.html">Sensor and station hardware</a></li>
+        <li><a href="dev/forking.html">Porting to another country</a></li>
+      </ul>
+    </details>
+    <a class="navtop" href="about.html">About the cooperative</a>
+  </div>
+</nav>
+
+<main id="main" class="sheet">
+<p class="crumb"><a href="index.html">Meteorological Cooperative</a> &rsaquo; Warning systems &rsaquo; REP-LEW</p>
+<h1 class="page-title">REP-LEW, the landslide system</h1>
+<p class="lede">REP-LEW watches the slopes of the Republic and warns where ground is likely to move. It works on two limbs: continuous instrumental probing of slopes already known to be unstable, and a rainfall and saturation threshold applied to every slope unit in the territory. It entered service in September 2024, the most recent of the three warning systems after REP-FEW was specified.</p>
+
+<div class="facts">
+  <div class="row"><span class="k">In service</span><span class="v">Since September 2024</span></div>
+  <div class="row"><span class="k">Two limbs</span><span class="v">Instrumental probing of 214 monitored slopes; threshold warning over 1,860 slope units</span></div>
+  <div class="row"><span class="k">Warning granularity</span><span class="v">Slope unit, ordinarily 2 to 40 km&sup2;</span></div>
+  <div class="row"><span class="k">Lead time</span><span class="v">6 to 72 hours for rainfall-driven movement; minutes to none for seismic and undercutting failures</span></div>
+  <div class="row"><span class="k">Events a year</span><span class="v">About 14 movements of recorded volume, of which 2 or 3 affect a road, a track or a building</span></div>
+  <div class="row"><span class="k">Largest event of record</span><span class="v">Vandorum, 11 March 1954, 1.4 million m&sup3;, four deaths</span></div>
+</div>
+
+<h2>Where the ground moves</h2>
+<div class="prose">
+<p>Landslide in the Republic is uncommon and mostly small. Three settings account for almost all of it.</p>
+<p>The western upland is the first. The Vandorum plateau bears thin acid soils over old rock, and roughly a fifth of the original forest stand was felled between 1929 and 1935 to pay for imports during the Depression. Slopes stripped in those years lost the root network holding the soil, and they have produced shallow translational slides in wet winters ever since. The replanting begun in 1983 runs on a hundred-year schedule, and the slide frequency on replanted ground has already fallen by about half.</p>
+<p>The Belvacius hills are the second. They are steep, thinly settled and exposed, and their failures take the form of rockfall and of debris flow in gullies. The hills also lie on the seismic margin, so shaking is a trigger there and nowhere else in the Republic.</p>
+<p>The third setting is engineered ground: road cuttings, rail embankments, quarry faces at Vandorum, and the coastal cliff at Cortius, where undercutting by the sea removes support at the toe. Peat slides on the Kelvaqui moor form a small fourth category and threaten no settlement.</p>
+</div>
+
+<h2>The probing limb</h2>
+<div class="prose">
+<p>Two hundred and fourteen slopes are instrumented, chosen for a recorded history of movement, for proximity to a settlement or a route, or for both. Each installation reports continuously into the same archive as the seismic and meteorological stations.</p>
+</div>
+
+<div class="tablewrap">
+<table class="data">
+<caption>Instrumentation on a monitored slope</caption>
+<thead>
+<tr><th>Instrument</th><th class="num">Reports</th><th>Measures</th><th>Value in a warning</th></tr>
+</thead>
+<tbody>
+<tr><td>Borehole inclinometer</td><td class="num">Hourly</td><td>Displacement with depth, locating the shear surface</td><td>Establishes whether a slope is creeping and at what depth</td></tr>
+<tr><td>Piezometer</td><td class="num">Every 15 min</td><td>Pore water pressure at two or three depths</td><td>The proximate cause of most failures; the strongest single predictor</td></tr>
+<tr><td>Wire extensometer</td><td class="num">Every 5 min</td><td>Opening of a tension crack at the crown</td><td>Acceleration ahead of failure, ordinarily over hours</td></tr>
+<tr><td>Tilt sensor</td><td class="num">Every 5 min</td><td>Rotation of a block or a retaining structure</td><td>Detects rotational movement early</td></tr>
+<tr><td>Soil moisture probe</td><td class="num">Every 15 min</td><td>Water content at 0.3, 0.6 and 1.2 m</td><td>Feeds the antecedent condition in the threshold</td></tr>
+<tr><td>Satellite interferometry</td><td class="num">Every 6 days</td><td>Millimetric surface displacement over the whole territory</td><td>Finds slopes creeping where nothing is installed</td></tr>
+</tbody>
+</table>
+</div>
+<p class="note">Interferometry is obtained through exchange with the regional centres. It reveals slow creep across the whole territory and detects nothing on the timescale of a failure.</p>
+
+<h2>The threshold limb</h2>
+<div class="prose">
+<p>The territory is divided into 1,860 slope units, each of uniform gradient, geology and land cover. For every unit the model holds a threshold made of two figures: how much rain falls over a short window, and how much has already fallen over the preceding weeks. The second figure describes how wet the ground was before the storm arrived. A slope fails when both are exceeded together, which is why the same hour of rain produces a slide in February and nothing in August.</p>
+<p>The short window is filled from the 1 km rainfall nowcast and the short-range forecast, so the threshold is tested against rain that has fallen and against rain expected within the next twelve hours. Antecedent wetness comes from the soil moisture probes and from the water balance model of the same catchment used by <a href="few.html">REP-FEW</a>.</p>
+</div>
+
+<div class="tablewrap">
+<table class="data">
+<caption>Warning steps and what each states</caption>
+<thead>
+<tr><th>Step</th><th class="num">Condition</th><th class="num">Ordinary lead time</th><th>Statement and action</th></tr>
+</thead>
+<tbody>
+<tr><td>Watch</td><td class="num">Threshold reached within 24 h on the forecast</td><td class="num">24 to 72 h</td><td>Published to the commune and to route operators; no public broadcast</td></tr>
+<tr><td>Warning</td><td class="num">Threshold exceeded, or monitored slope accelerating</td><td class="num">6 to 24 h</td><td>Broadcast to the affected slope units. Avoid the slope, the ground below it and the routes crossing it</td></tr>
+<tr><td>Imminent</td><td class="num">Extensometer acceleration above the failure curve</td><td class="num">10 min to 6 h</td><td>Broadcast with the action stated. Routes closed by the operator; dwellings below the slope evacuated by the commune</td></tr>
+<tr><td>Movement</td><td class="num">Failure detected or reported</td><td class="num">None</td><td>Broadcast stating extent, the route affected and the closure in force</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2>Seismic coupling</h2>
+<div class="prose">
+<p>Shaking at REP 7 and above ordinarily produces landslide on steep ground. REP-LEW receives the intensity field from <a href="kjs.html">REP-KJS</a> as it is computed, tests it against the slope units within the affected area, and issues a landslide warning for units where the combination of shaking and current saturation exceeds the seismic threshold.</p>
+<p>Lead time in that case is short or absent, since the shaking and the failure occur within the same minute. The value of the coupling lies in the hours afterwards, when slopes loosened by the shaking fail under ordinary rainfall. Every unit warned on a seismic trigger stays under a lowered rainfall threshold for fourteen days.</p>
+</div>
+
+<h2>Performance record</h2>
+<div class="tablewrap">
+<table class="data">
+<caption>REP-LEW performance, September 2024 to the present</caption>
+<thead>
+<tr><th>Measure</th><th class="num">Count</th><th>Note</th></tr>
+</thead>
+<tbody>
+<tr><td>Movements of recorded volume</td><td class="num">26</td><td>Over the period; 21 on unmonitored slopes</td></tr>
+<tr><td>Preceded by a warning</td><td class="num">17</td><td>Warning step or above, before movement</td></tr>
+<tr><td>Occurring with no warning</td><td class="num">9</td><td>Seven were shallow debris slides below the volume threshold of the model</td></tr>
+<tr><td>Warnings with no movement following</td><td class="num">63</td><td>The intended behaviour of a probabilistic threshold</td></tr>
+<tr><td>Imminent steps issued</td><td class="num">4</td><td>Three followed by failure; one slope stabilised without moving</td></tr>
+<tr><td>Roads closed on a warning</td><td class="num">38</td><td>Closure is decided by the route operator and not by the cooperative</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2>Limits</h2>
+<div class="box limit">
+<span class="lbl">What REP-LEW cannot do</span>
+<p>A threshold is a statement about probability. Sixty-three warnings over the period were followed by no movement, and that ratio is a design choice: a threshold tight enough to eliminate them would miss failures. The cooperative publishes both counts so the ratio is visible.</p>
+<p>Shallow debris slides of a few hundred cubic metres fall below the volume the model resolves. They are the commonest failure in the Republic and the one most likely to arrive without warning. A slide of that size still kills a person standing under it.</p>
+<p>The warning names a slope unit of 2 to 40 km&sup2; and never a point. Which slope within the unit will fail, and when within the stated window, are outside what the method can state.</p>
+<p>Undercutting failures at the Cortius cliff and failures triggered by construction work develop without a rainfall signature, so the threshold limb sees nothing. Only instrumentation detects them, and only where instrumentation is installed.</p>
+</div>
+
+<h2>See also</h2>
+<div class="prose">
+<ul>
+<li><a href="few.html">REP-FEW</a>, the flood system, which shares the catchment model</li>
+<li><a href="kjs.html">REP-KJS</a>, which supplies the intensity field on a seismic trigger</li>
+<li><a href="devices.html">Certified devices and RQUAK</a></li>
+<li><a href="network.html">Observing network</a>, including the monitored slopes</li>
+</ul>
+</div>
+
+</main>
+
+<footer class="coopfoot">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <h4>Weather and climate</h4>
+        <ul>
+          <li><a href="climate.html">Climate of the Republic</a></li>
+          <li><a href="change.html">Observed change</a></li>
+          <li><a href="forecasting.html">How a forecast is made</a></li>
+          <li><a href="emissions.html">Emissions position</a></li>
+          <li><a href="periphery.html">Harm to the periphery</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Warning systems</h4>
+        <ul>
+          <li><a href="rationale.html">Why these systems exist</a></li>
+          <li><a href="seismicity.html">Seismicity of the Republic</a></li>
+          <li><a href="kjs.html">REP-KJS, earthquake</a></li>
+          <li><a href="scale.html">REP intensity scale</a></li>
+          <li><a href="kjs-method.html">Detection, latency and limits</a></li>
+          <li><a href="lew.html">REP-LEW, landslide</a></li>
+          <li><a href="few.html">REP-FEW, flood</a></li>
+          <li><a href="devices.html">Certified devices and RQUAK</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Record and network</h4>
+        <ul>
+          <li><a href="species.html">Species catalogue</a></li>
+          <li><a href="network.html">Observing network</a></li>
+          <li><a href="about.html">About the cooperative</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Developers</h4>
+        <ul>
+          <li><a href="dev/index.html">Specifications and licence</a></li>
+          <li><a href="dev/wire-format.html">Warning wire format</a></li>
+          <li><a href="dev/vectors.html">Conformance test vectors</a></li>
+          <li><a href="dev/hardware.html">Sensor and station hardware</a></li>
+          <li><a href="dev/forking.html">Porting to another country</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="basis">Published by the Meteorological Cooperative of the Republic under the organic law on observation and warning. Free of charge, without licence, registration or account. No external resource is loaded by this page. See also the <a href="../../index.html">Republic of Fluid</a> and the <a href="../../register/">Public Register</a>.</p>
+  </div>
+</footer>
+
+<script src="site.js"></script>
+</body>
+</html>

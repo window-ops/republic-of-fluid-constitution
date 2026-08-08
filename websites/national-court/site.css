@@ -1,0 +1,60 @@
+/* National Court - own skin over the shared state frame.
+   Cassation reports: cream paper, bronze rules, citations in monospace,
+   the divergence table given the width of the page. */
+
+:root {
+  --accent:      #6d5535;
+  --accent-deep: #4a3821;
+  --accent-soft: #f0e9dc;
+  --accent-ink:  #ffffff;
+
+  --org-measure: 35rem;
+  --cream: #fcfaf5;
+  --rule2: #ddd2bd;
+}
+
+/* ---------- ground, masthead and navigation ---------- */
+
+body { background: #ece7dc; }
+.sheet { background: var(--cream); }
+
+.orghead { background: var(--cream); }
+.orghead .wrap { padding-top: 1.5rem; padding-bottom: 1.3rem; }
+.orghead .kicker { color: var(--accent); letter-spacing: .17em; }
+.orghead .orgname { font-size: 1.55rem; font-weight: 600; }
+
+.orgnav { background: var(--cream); border-bottom: 1px solid var(--rule2); }
+.orgnav a { color: var(--accent-deep); }
+.orgnav a:hover { background: var(--accent-soft); color: var(--accent-deep); }
+.orgnav a[aria-current="page"] { border-bottom-color: var(--accent); background: var(--accent-soft); }
+
+h2 { font-weight: 600; border-bottom: 3px double var(--rule2); padding-bottom: .3rem; }
+.legal { background: var(--accent-soft); border-left-color: var(--accent); }
+
+/* ---------- rulings on divergence, which bind every court ---------- */
+.rulings { margin: 1.2rem 0; }
+.rulings article { border: 1px solid var(--rule2); background: var(--f-paper); margin-bottom: .7rem; }
+.rulings .bar { background: var(--accent-soft); padding: .5rem .9rem; display: flex; flex-wrap: wrap; gap: .5rem 1rem; align-items: baseline; border-bottom: 1px solid var(--rule2); }
+.rulings .cite { font-family: var(--f-mono); font-size: .76rem; color: var(--accent-deep); text-transform: none; letter-spacing: 0; }
+.rulings .binds { font-family: var(--f-sans); font-size: .72rem; text-transform: uppercase; letter-spacing: .08em; color: var(--accent); margin-left: auto; }
+.rulings .in { padding: .8rem .9rem; }
+.rulings h3 { margin: 0 0 .35rem; font-size: 1rem; font-weight: 600; }
+.rulings p { margin: 0 0 .5rem; font-size: .92rem; }
+.rulings .split { display: grid; grid-template-columns: 1fr 1fr; gap: .8rem; margin: .7rem 0 0; }
+.rulings .split div { background: var(--accent-soft); padding: .55rem .7rem; font-size: .87rem; }
+.rulings .split h4 { margin: 0 0 .2rem; font-family: var(--f-sans); font-size: .72rem; text-transform: uppercase; letter-spacing: .07em; color: var(--accent-deep); }
+
+/* ---------- the three grounds of cassation ---------- */
+.grounds { display: grid; gap: .8rem; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); margin: 1.2rem 0; }
+.grounds div { border: 1px solid var(--rule2); border-top: 4px solid var(--accent); background: var(--f-paper); padding: .85rem 1rem; }
+.grounds h3 { margin: 0 0 .3rem; font-size: .97rem; }
+.grounds p { margin: 0; font-size: .89rem; color: var(--f-ink-soft); max-width: none; }
+
+table.reg thead th { border-bottom-color: var(--accent); }
+table.reg td.mono { font-family: var(--f-mono); font-size: .82rem; white-space: nowrap; }
+
+/* ---------- narrow screens ---------- */
+
+@media (max-width: 40rem) {
+  .rulings .split { grid-template-columns: 1fr; }
+}
