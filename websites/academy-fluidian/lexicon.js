@@ -4,6 +4,13 @@
 
 const LEX = [
 {
+"f": "abandona",
+"i": "/a.ban.ˈdo.na/",
+"p": "v",
+"e": "abandon",
+"n": ""
+},
+{
 "f": "abaxa",
 "i": "/a.ˈba.ʃa/",
 "p": "v",
@@ -18,6 +25,76 @@ const LEX = [
 "n": "demonym of Abhazia"
 },
 {
+"f": "abraza",
+"i": "/a.ˈbra.za/",
+"p": "v",
+"e": "embrace",
+"n": ""
+},
+{
+"f": "abrevia",
+"i": "/a.bre.ˈvi.a/",
+"p": "v",
+"e": "abbreviate",
+"n": ""
+},
+{
+"f": "abroga",
+"i": "/a.ˈbro.ga/",
+"p": "v",
+"e": "repeal",
+"n": "of a statute; revoca of an appointment"
+},
+{
+"f": "absconde",
+"i": "/abs.ˈkon.de/",
+"p": "v",
+"e": "hide",
+"n": "eastern seaboard; cela in print"
+},
+{
+"f": "absentia",
+"i": "/ab.sen.ˈti.a/",
+"p": "n",
+"e": "absence",
+"n": "recorded in the minutes"
+},
+{
+"f": "absolut",
+"i": "/ab.ˈso.lut/",
+"p": "adj",
+"e": "absolute",
+"n": ""
+},
+{
+"f": "absolutament",
+"i": "/ab.so.lu.ˈta.ment/",
+"p": "adv",
+"e": "absolutely",
+"n": ""
+},
+{
+"f": "abstene",
+"i": "/abs.ˈte.ne/",
+"p": "v",
+"e": "abstain",
+"n": ""
+},
+{
+"f": "abstract",
+"i": "/ˈabs.trakt/",
+"p": "adj",
+"e": "abstract",
+"n": ""
+},
+{
+"f": "abundantia",
+"i": "/a.bun.dan.ˈti.a/",
+"p": "n",
+"e": "abundance",
+"n": ""
+},
+{
 "f": "academia",
 "i": "/a.ka.de.ˈmi.a/",
 "p": "n",
@@ -25,10 +102,31 @@ const LEX = [
 "n": ""
 },
 {
+"f": "academic",
+"i": "/a.ka.ˈde.mik/",
+"p": "adj",
+"e": "academic",
+"n": "academia is the body"
+},
+{
 "f": "accepta",
 "i": "/ak.ˈt͡ʃep.ta/",
 "p": "v",
 "e": "accept",
+"n": ""
+},
+{
+"f": "accosta",
+"i": "/a.ˈkos.ta/",
+"p": "v",
+"e": "pull in, come alongside",
+"n": ""
+},
+{
+"f": "acelera",
+"i": "/a.t͡ʃe.ˈle.ra/",
+"p": "v",
+"e": "speed up, accelerate",
 "n": ""
 },
 {
@@ -39,10 +137,38 @@ const LEX = [
 "n": ""
 },
 {
+"f": "acompania",
+"i": "/a.kom.pa.ˈni.a/",
+"p": "v",
+"e": "accompany",
+"n": "acompania me te se peron, come with me to the platform"
+},
+{
+"f": "acordu",
+"i": "/a.ˈkor.du/",
+"p": "n",
+"e": "agreement",
+"n": ""
+},
+{
+"f": "acredita",
+"i": "/a.kre.ˈdi.ta/",
+"p": "v",
+"e": "accredit",
+"n": ""
+},
+{
 "f": "acru",
 "i": "/ˈa.kru/",
 "p": "adj",
 "e": "sour",
+"n": ""
+},
+{
+"f": "acta",
+"i": "/ˈak.ta/",
+"p": "n",
+"e": "minutes of a meeting",
 "n": ""
 },
 {
@@ -51,6 +177,34 @@ const LEX = [
 "p": "n",
 "e": "action",
 "n": ""
+},
+{
+"f": "actual",
+"i": "/ak.ˈtu.al/",
+"p": "adj",
+"e": "current",
+"n": ""
+},
+{
+"f": "actualite",
+"i": "/ak.tu.a.ˈli.te/",
+"p": "n",
+"e": "the present state of a thing",
+"n": "the present state of a thing"
+},
+{
+"f": "actualment",
+"i": "/ak.tu.ˈal.ment/",
+"p": "adv",
+"e": "at present",
+"n": "actualite is the noun"
+},
+{
+"f": "acusa",
+"i": "/a.ˈku.sa/",
+"p": "v",
+"e": "accuse",
+"n": "acusatur is the prosecutor"
 },
 {
 "f": "acusatur",
@@ -74,6 +228,20 @@ const LEX = [
 "n": ""
 },
 {
+"f": "adequat",
+"i": "/a.ˈde.kat/",
+"p": "adj",
+"e": "adequate",
+"n": ""
+},
+{
+"f": "adera",
+"i": "/a.ˈde.ra/",
+"p": "v",
+"e": "join, accede to",
+"n": "of a person to a body, and of the Republic to an instrument"
+},
+{
 "f": "adio",
 "i": "/a.ˈdi.o/",
 "p": "int",
@@ -92,6 +260,13 @@ const LEX = [
 "i": "/ad.mi.nis.tra.ˈti.un/",
 "p": "n",
 "e": "administration",
+"n": ""
+},
+{
+"f": "admira",
+"i": "/ad.ˈmi.ra/",
+"p": "v",
+"e": "admire",
 "n": ""
 },
 {
@@ -123,6 +298,13 @@ const LEX = [
 "n": ""
 },
 {
+"f": "adverbiu",
+"i": "/ad.ver.ˈbi.u/",
+"p": "n",
+"e": "adverb",
+"n": ""
+},
+{
 "f": "aer",
 "i": "/ˈa.er/",
 "p": "n",
@@ -137,11 +319,74 @@ const LEX = [
 "n": ""
 },
 {
+"f": "affectiun",
+"i": "/a.fek.ˈti.un/",
+"p": "n",
+"e": "affection",
+"n": ""
+},
+{
 "f": "afganistanian",
 "i": "/af.ga.nis.ta.ˈni.an/",
 "p": "adj",
 "e": "Afghan",
 "n": "demonym of Afganistan"
+},
+{
+"f": "afilia",
+"i": "/a.fi.ˈli.a/",
+"p": "v",
+"e": "affiliate",
+"n": ""
+},
+{
+"f": "afinque",
+"i": "/a.ˈfin.ke/",
+"p": "conj",
+"e": "so that",
+"n": ""
+},
+{
+"f": "afirma",
+"i": "/a.ˈfir.ma/",
+"p": "v",
+"e": "affirm, assert",
+"n": ""
+},
+{
+"f": "afito",
+"i": "/a.ˈfi.to/",
+"p": "n",
+"e": "rent",
+"n": "paid to the commune, never to a person"
+},
+{
+"f": "afluentia-electoral",
+"i": "/a.flu.en.ti.a.e.lek.ˈto.ral/",
+"p": "n",
+"e": "turnout",
+"n": ""
+},
+{
+"f": "agita",
+"i": "/a.ˈd͡ʒi.ta/",
+"p": "v",
+"e": "stir up, shake up",
+"n": ""
+},
+{
+"f": "agitat",
+"i": "/a.ˈd͡ʒi.tat/",
+"p": "adj",
+"e": "agitated",
+"n": "agita is the verb"
+},
+{
+"f": "agricol",
+"i": "/a.ˈgri.kol/",
+"p": "adj",
+"e": "agricultural",
+"n": "agricultura is the noun"
 },
 {
 "f": "agricultura",
@@ -156,6 +401,13 @@ const LEX = [
 "p": "int",
 "e": "hello, everyday",
 "n": "formal sali; ahoi in the north and on the water"
+},
+{
+"f": "ajusta",
+"i": "/a.ˈʒus.ta/",
+"p": "v",
+"e": "adjust, fit",
+"n": ""
 },
 {
 "f": "-ak",
@@ -186,6 +438,34 @@ const LEX = [
 "n": ""
 },
 {
+"f": "alcuni",
+"i": "/al.ˈku.ni/",
+"p": "pron",
+"e": "some, a few",
+"n": ""
+},
+{
+"f": "alegre",
+"i": "/a.ˈle.gre/",
+"p": "adj",
+"e": "cheerful",
+"n": ""
+},
+{
+"f": "aleja",
+"i": "/a.ˈle.ʒa/",
+"p": "v",
+"e": "move away, draw off",
+"n": ""
+},
+{
+"f": "alergia",
+"i": "/a.ler.ˈd͡ʒi.a/",
+"p": "n",
+"e": "allergy",
+"n": ""
+},
+{
 "f": "alerta",
 "i": "/a.ˈler.ta/",
 "p": "n",
@@ -198,6 +478,13 @@ const LEX = [
 "p": "n",
 "e": "alphabet",
 "n": ""
+},
+{
+"f": "alga",
+"i": "/ˈal.ga/",
+"p": "n",
+"e": "weed, algae",
+"n": "nule alga es prendet, no weed is taken"
 },
 {
 "f": "algerian",
@@ -214,10 +501,45 @@ const LEX = [
 "n": ""
 },
 {
+"f": "alinia",
+"i": "/a.li.ˈni.a/",
+"p": "v",
+"e": "align",
+"n": ""
+},
+{
+"f": "aliunde",
+"i": "/a.li.ˈun.de/",
+"p": "adv",
+"e": "from elsewhere",
+"n": ""
+},
+{
+"f": "alleviu",
+"i": "/a.le.ˈvi.u/",
+"p": "n",
+"e": "relief",
+"n": "felt when the tren finally moves"
+},
+{
 "f": "alliu",
 "i": "/a.ˈli.u/",
 "p": "n",
 "e": "garlic",
+"n": ""
+},
+{
+"f": "allude",
+"i": "/a.ˈlu.de/",
+"p": "v",
+"e": "allude, hint at",
+"n": ""
+},
+{
+"f": "almeno",
+"i": "/al.ˈme.no/",
+"p": "adv",
+"e": "at least",
 "n": ""
 },
 {
@@ -228,11 +550,46 @@ const LEX = [
 "n": ""
 },
 {
+"f": "aloja",
+"i": "/a.ˈlo.ʒa/",
+"p": "v",
+"e": "lodge, house",
+"n": ""
+},
+{
+"f": "alquando",
+"i": "/al.ˈkan.do/",
+"p": "adv",
+"e": "sometimes",
+"n": ""
+},
+{
+"f": "alquid",
+"i": "/ˈal.kid/",
+"p": "pron",
+"e": "something",
+"n": ""
+},
+{
 "f": "alt",
 "i": "/alt/",
 "p": "adj",
 "e": "high, tall",
 "n": ""
+},
+{
+"f": "altament",
+"i": "/al.ˈta.ment/",
+"p": "adv",
+"e": "highly",
+"n": ""
+},
+{
+"f": "alterna",
+"i": "/al.ˈter.na/",
+"p": "v",
+"e": "alternate, take in turn",
+"n": "of a rota; sorti is the draw by lot"
 },
 {
 "f": "alternat",
@@ -242,6 +599,20 @@ const LEX = [
 "n": ""
 },
 {
+"f": "altitude",
+"i": "/al.ti.ˈtu.de/",
+"p": "n",
+"e": "height",
+"n": ""
+},
+{
+"f": "altre",
+"i": "/ˈal.tre/",
+"p": "det",
+"e": "other",
+"n": "un se altre, one another"
+},
+{
 "f": "altru",
 "i": "/ˈal.tru/",
 "p": "adj",
@@ -249,10 +620,38 @@ const LEX = [
 "n": ""
 },
 {
+"f": "alubi",
+"i": "/a.ˈlu.bi/",
+"p": "adv",
+"e": "somewhere",
+"n": ""
+},
+{
+"f": "alza",
+"i": "/ˈal.za/",
+"p": "v",
+"e": "lift, raise",
+"n": "alza se man, put your hand up"
+},
+{
 "f": "ama",
 "i": "/ˈa.ma/",
 "p": "v",
 "e": "love",
+"n": ""
+},
+{
+"f": "amabile",
+"i": "/a.ma.ˈbi.le/",
+"p": "adj",
+"e": "kind",
+"n": ""
+},
+{
+"f": "amabilement",
+"i": "/a.ma.bi.ˈle.ment/",
+"p": "adv",
+"e": "kindly",
 "n": ""
 },
 {
@@ -270,10 +669,24 @@ const LEX = [
 "n": ""
 },
 {
+"f": "ambigu",
+"i": "/am.ˈbi.gu/",
+"p": "adj",
+"e": "ambiguous",
+"n": ""
+},
+{
 "f": "ambulantia",
 "i": "/am.bu.lan.ˈti.a/",
 "p": "n",
 "e": "ambulance",
+"n": ""
+},
+{
+"f": "amenda",
+"i": "/a.ˈmen.da/",
+"p": "v",
+"e": "amend",
 "n": ""
 },
 {
@@ -291,6 +704,48 @@ const LEX = [
 "n": ""
 },
 {
+"f": "amonte",
+"i": "/a.ˈmon.te/",
+"p": "adv",
+"e": "upstream",
+"n": ""
+},
+{
+"f": "amor",
+"i": "/ˈa.mor/",
+"p": "n",
+"e": "love",
+"n": "ama is the verb"
+},
+{
+"f": "amortisa",
+"i": "/a.mor.ˈti.sa/",
+"p": "v",
+"e": "amortise, write down",
+"n": ""
+},
+{
+"f": "analisa",
+"i": "/a.na.ˈli.sa/",
+"p": "v",
+"e": "analyse",
+"n": ""
+},
+{
+"f": "analisi",
+"i": "/a.na.ˈli.si/",
+"p": "n",
+"e": "analysis",
+"n": ""
+},
+{
+"f": "analogia",
+"i": "/a.na.lo.ˈd͡ʒi.a/",
+"p": "n",
+"e": "analogy",
+"n": ""
+},
+{
 "f": "ancian",
 "i": "/ˈan.t͡ʃan/",
 "p": "n",
@@ -305,6 +760,13 @@ const LEX = [
 "n": ""
 },
 {
+"f": "ancra",
+"i": "/ˈan.kra/",
+"p": "v",
+"e": "anchor, moor",
+"n": "ancora is the adverb and a different word"
+},
+{
 "f": "andoran",
 "i": "/an.ˈdo.ran/",
 "p": "adj",
@@ -316,6 +778,13 @@ const LEX = [
 "i": "/ˈa.nel/",
 "p": "n",
 "e": "ring",
+"n": ""
+},
+{
+"f": "angaja",
+"i": "/an.ˈga.ʒa/",
+"p": "v",
+"e": "take on, engage",
 "n": ""
 },
 {
@@ -347,10 +816,31 @@ const LEX = [
 "n": ""
 },
 {
+"f": "angustia",
+"i": "/an.gus.ˈti.a/",
+"p": "n",
+"e": "anguish",
+"n": ""
+},
+{
 "f": "animal",
 "i": "/a.ˈni.mal/",
 "p": "n",
 "e": "animal",
+"n": ""
+},
+{
+"f": "aniversariu",
+"i": "/a.ni.ver.sa.ˈri.u/",
+"p": "n",
+"e": "anniversary",
+"n": ""
+},
+{
+"f": "annota",
+"i": "/a.ˈno.ta/",
+"p": "v",
+"e": "annotate",
 "n": ""
 },
 {
@@ -361,10 +851,52 @@ const LEX = [
 "n": ""
 },
 {
+"f": "ansietate",
+"i": "/an.si.e.ˈta.te/",
+"p": "n",
+"e": "anxiety",
+"n": ""
+},
+{
+"f": "ansios",
+"i": "/an.ˈsi.os/",
+"p": "adj",
+"e": "anxious",
+"n": ""
+},
+{
 "f": "ante",
 "i": "/ˈan.te/",
 "p": "prep",
 "e": "before",
+"n": ""
+},
+{
+"f": "antea",
+"i": "/an.ˈte.a/",
+"p": "adv",
+"e": "beforehand",
+"n": ""
+},
+{
+"f": "antena",
+"i": "/an.ˈte.na/",
+"p": "n",
+"e": "antenna",
+"n": ""
+},
+{
+"f": "antheri",
+"i": "/ant.ˈhe.ri/",
+"p": "adv",
+"e": "the day before yesterday",
+"n": "heri is yesterday"
+},
+{
+"f": "anticipa",
+"i": "/an.ti.ˈt͡ʃi.pa/",
+"p": "v",
+"e": "anticipate",
 "n": ""
 },
 {
@@ -375,11 +907,39 @@ const LEX = [
 "n": "demonym of Antigua"
 },
 {
+"f": "antracit",
+"i": "/an.ˈtra.t͡ʃit/",
+"p": "n",
+"e": "coal",
+"n": "burnt nowhere in the Republic since the grid was rebuilt"
+},
+{
 "f": "anu",
 "i": "/ˈa.nu/",
 "p": "n",
 "e": "year",
 "n": ""
+},
+{
+"f": "anuntia",
+"i": "/a.nun.ˈti.a/",
+"p": "v",
+"e": "announce",
+"n": "se voce anuntia se statiun prexim, the voice announces the next stop"
+},
+{
+"f": "aparate-telefoni",
+"i": "/a.pa.ra.te.te.le.ˈfo.ni/",
+"p": "n",
+"e": "telephone handset",
+"n": ""
+},
+{
+"f": "apare",
+"i": "/a.ˈpa.re/",
+"p": "v",
+"e": "appear, come into view",
+"n": "se sol apare, the sun comes out"
 },
 {
 "f": "apartament",
@@ -396,6 +956,27 @@ const LEX = [
 "n": ""
 },
 {
+"f": "apela",
+"i": "/a.ˈpe.la/",
+"p": "v",
+"e": "appeal",
+"n": ""
+},
+{
+"f": "apellu",
+"i": "/a.ˈpe.lu/",
+"p": "n",
+"e": "appeal",
+"n": ""
+},
+{
+"f": "apenas",
+"i": "/a.ˈpe.nas/",
+"p": "adv",
+"e": "hardly",
+"n": "apenas un minut, hardly a minute"
+},
+{
 "f": "aperi",
 "i": "/a.ˈpe.ri/",
 "p": "v",
@@ -410,10 +991,45 @@ const LEX = [
 "n": ""
 },
 {
+"f": "apertament",
+"i": "/a.per.ˈta.ment/",
+"p": "adv",
+"e": "openly",
+"n": ""
+},
+{
+"f": "aplicatiun",
+"i": "/a.pli.ka.ˈti.un/",
+"p": "n",
+"e": "application",
+"n": ""
+},
+{
+"f": "apoia",
+"i": "/a.po.ˈi.a/",
+"p": "v",
+"e": "lean on, prop",
+"n": ""
+},
+{
 "f": "aporean",
 "i": "/a.po.ˈre.an/",
 "p": "adj",
 "e": "Aporean",
+"n": ""
+},
+{
+"f": "approba",
+"i": "/a.ˈpro.ba/",
+"p": "v",
+"e": "approve",
+"n": ""
+},
+{
+"f": "aprecia",
+"i": "/a.pre.ˈt͡ʃi.a/",
+"p": "v",
+"e": "assess, appreciate",
 "n": ""
 },
 {
@@ -424,10 +1040,52 @@ const LEX = [
 "n": ""
 },
 {
+"f": "aprendiciu",
+"i": "/a.pren.di.ˈt͡ʃi.u/",
+"p": "n",
+"e": "apprentice",
+"n": ""
+},
+{
 "f": "april",
 "i": "/ˈa.pril/",
 "p": "n",
 "e": "April",
+"n": ""
+},
+{
+"f": "aprofunda",
+"i": "/a.pro.ˈfun.da/",
+"p": "v",
+"e": "go into deeply",
+"n": ""
+},
+{
+"f": "apropia",
+"i": "/a.pro.ˈpi.a/",
+"p": "v",
+"e": "approach, come near",
+"n": ""
+},
+{
+"f": "aprovisiona",
+"i": "/a.pro.vi.si.ˈo.na/",
+"p": "v",
+"e": "supply",
+"n": ""
+},
+{
+"f": "apt",
+"i": "/apt/",
+"p": "adj",
+"e": "fit, apt",
+"n": ""
+},
+{
+"f": "apud",
+"i": "/ˈa.pud/",
+"p": "prep",
+"e": "at the premises of",
 "n": ""
 },
 {
@@ -445,10 +1103,66 @@ const LEX = [
 "n": ""
 },
 {
+"f": "aratru",
+"i": "/a.ˈra.tru/",
+"p": "n",
+"e": "plough",
+"n": ""
+},
+{
+"f": "arbitra",
+"i": "/ar.ˈbi.tra/",
+"p": "v",
+"e": "arbitrate",
+"n": ""
+},
+{
+"f": "arbitrari",
+"i": "/ar.bi.ˈtra.ri/",
+"p": "adj",
+"e": "arbitrary",
+"n": ""
+},
+{
 "f": "arbre",
 "i": "/ˈar.bre/",
 "p": "n",
 "e": "tree",
+"n": ""
+},
+{
+"f": "archiva",
+"i": "/ark.ˈhi.va/",
+"p": "v",
+"e": "archive",
+"n": ""
+},
+{
+"f": "arde",
+"i": "/ˈar.de/",
+"p": "v",
+"e": "burn",
+"n": "arde bin, it burns well"
+},
+{
+"f": "area",
+"i": "/a.ˈre.a/",
+"p": "n",
+"e": "area",
+"n": ""
+},
+{
+"f": "arenda",
+"i": "/a.ˈren.da/",
+"p": "v",
+"e": "lease",
+"n": ""
+},
+{
+"f": "argente",
+"i": "/ar.ˈd͡ʒen.te/",
+"p": "adj",
+"e": "silver",
 "n": ""
 },
 {
@@ -459,11 +1173,25 @@ const LEX = [
 "n": "demonym of Argentina"
 },
 {
+"f": "argila",
+"i": "/ar.ˈd͡ʒi.la/",
+"p": "n",
+"e": "clay",
+"n": ""
+},
+{
 "f": "argument",
 "i": "/ar.ˈgu.ment/",
 "p": "n",
 "e": "argument",
 "n": ""
+},
+{
+"f": "argumenta",
+"i": "/ar.gu.ˈmen.ta/",
+"p": "v",
+"e": "argue a case",
+"n": "argument is the noun"
 },
 {
 "f": "ariva",
@@ -508,6 +1236,34 @@ const LEX = [
 "n": ""
 },
 {
+"f": "articulatiun",
+"i": "/ar.ti.ku.la.ˈti.un/",
+"p": "n",
+"e": "joint of the body",
+"n": ""
+},
+{
+"f": "articulu",
+"i": "/ar.ti.ˈku.lu/",
+"p": "n",
+"e": "article",
+"n": "of a text"
+},
+{
+"f": "ascende",
+"i": "/as.ˈt͡ʃen.de/",
+"p": "v",
+"e": "climb, go up",
+"n": "ascende se scodi, go up the stairwell"
+},
+{
+"f": "ascendente",
+"i": "/as.t͡ʃen.ˈden.te/",
+"p": "n",
+"e": "ancestor",
+"n": ""
+},
+{
 "f": "ascensor",
 "i": "/as.ˈt͡ʃen.sor/",
 "p": "n",
@@ -515,10 +1271,52 @@ const LEX = [
 "n": "everyday vytah"
 },
 {
+"f": "asculta",
+"i": "/as.ˈkul.ta/",
+"p": "v",
+"e": "listen",
+"n": "audi is to hear without trying"
+},
+{
+"f": "asigna",
+"i": "/a.ˈsig.na/",
+"p": "v",
+"e": "assign",
+"n": ""
+},
+{
+"f": "asigura",
+"i": "/a.si.ˈgu.ra/",
+"p": "v",
+"e": "insure",
+"n": ""
+},
+{
+"f": "asista",
+"i": "/a.ˈsis.ta/",
+"p": "v",
+"e": "assist, attend to",
+"n": ""
+},
+{
+"f": "asper",
+"i": "/ˈas.per/",
+"p": "adj",
+"e": "rough",
+"n": ""
+},
+{
 "f": "assai",
 "i": "/ˈa.sai/",
 "p": "adv",
 "e": "quite, rather",
+"n": ""
+},
+{
+"f": "assembla",
+"i": "/a.ˈsem.bla/",
+"p": "v",
+"e": "assemble, put together",
 "n": ""
 },
 {
@@ -529,6 +1327,20 @@ const LEX = [
 "n": ""
 },
 {
+"f": "associa",
+"i": "/a.so.ˈt͡ʃi.a/",
+"p": "v",
+"e": "associate",
+"n": ""
+},
+{
+"f": "associatiun",
+"i": "/a.so.t͡ʃi.a.ˈti.un/",
+"p": "n",
+"e": "association",
+"n": ""
+},
+{
 "f": "atenda",
 "i": "/a.ˈten.da/",
 "p": "v",
@@ -536,10 +1348,52 @@ const LEX = [
 "n": ""
 },
 {
+"f": "atent",
+"i": "/ˈa.tent/",
+"p": "adj",
+"e": "attentive",
+"n": "atenta is the warning"
+},
+{
 "f": "atenta",
 "i": "/a.ˈten.ta/",
 "p": "int",
 "e": "attention",
+"n": ""
+},
+{
+"f": "atentiun",
+"i": "/a.ten.ˈti.un/",
+"p": "n",
+"e": "attention",
+"n": "atenta is the verb and the warning"
+},
+{
+"f": "aterra",
+"i": "/a.ˈte.ra/",
+"p": "v",
+"e": "land",
+"n": ""
+},
+{
+"f": "atribue",
+"i": "/a.tri.ˈbu.e/",
+"p": "v",
+"e": "allocate",
+"n": ""
+},
+{
+"f": "attesta",
+"i": "/a.ˈtes.ta/",
+"p": "v",
+"e": "attest",
+"n": ""
+},
+{
+"f": "audace",
+"i": "/a.u.ˈda.t͡ʃe/",
+"p": "adj",
+"e": "bold",
 "n": ""
 },
 {
@@ -555,6 +1409,13 @@ const LEX = [
 "p": "n",
 "e": "audit",
 "n": ""
+},
+{
+"f": "audita",
+"i": "/a.u.ˈdi.ta/",
+"p": "v",
+"e": "audit",
+"n": "audit is the noun"
 },
 {
 "f": "auditor",
@@ -578,6 +1439,27 @@ const LEX = [
 "n": "adjective aural"
 },
 {
+"f": "aurora",
+"i": "/a.u.ˈro.ra/",
+"p": "n",
+"e": "dawn",
+"n": ""
+},
+{
+"f": "ausa",
+"i": "/a.ˈu.sa/",
+"p": "v",
+"e": "dare",
+"n": "me no ausa, I would not dare"
+},
+{
+"f": "austeritate",
+"i": "/a.us.te.ri.ˈta.te/",
+"p": "n",
+"e": "austerity",
+"n": ""
+},
+{
 "f": "australian",
 "i": "/aus.tra.ˈli.an/",
 "p": "adj",
@@ -589,6 +1471,20 @@ const LEX = [
 "i": "/ˈau.to/",
 "p": "n",
 "e": "car",
+"n": ""
+},
+{
+"f": "automatisa",
+"i": "/a.u.to.ma.ˈti.sa/",
+"p": "v",
+"e": "automate",
+"n": ""
+},
+{
+"f": "autorisa",
+"i": "/a.u.to.ˈri.sa/",
+"p": "v",
+"e": "authorise",
 "n": ""
 },
 {
@@ -634,10 +1530,31 @@ const LEX = [
 "n": ""
 },
 {
+"f": "avalle",
+"i": "/a.ˈva.le/",
+"p": "adv",
+"e": "downstream",
+"n": "of the lagoon channels"
+},
+{
 "f": "avans",
 "i": "/ˈa.vans/",
 "p": "n",
 "e": "running ahead of time",
+"n": ""
+},
+{
+"f": "avansa",
+"i": "/a.ˈvan.sa/",
+"p": "v",
+"e": "advance, move up a grade",
+"n": "avanz is the adjective"
+},
+{
+"f": "avante",
+"i": "/a.ˈvan.te/",
+"p": "adv",
+"e": "forwards",
 "n": ""
 },
 {
@@ -653,6 +1570,13 @@ const LEX = [
 "p": "v",
 "e": "have, there is",
 "n": ""
+},
+{
+"f": "averte",
+"i": "/a.ˈver.te/",
+"p": "v",
+"e": "caution, warn off",
+"n": "avisa is to warn of a danger"
 },
 {
 "f": "avion",
@@ -725,6 +1649,27 @@ const LEX = [
 "n": "demonym of Bahrain"
 },
 {
+"f": "baia",
+"i": "/ba.ˈi.a/",
+"p": "n",
+"e": "bay",
+"n": ""
+},
+{
+"f": "balansa",
+"i": "/ba.ˈlan.sa/",
+"p": "v",
+"e": "sway, swing",
+"n": ""
+},
+{
+"f": "balbutia",
+"i": "/bal.bu.ˈti.a/",
+"p": "v",
+"e": "stammer",
+"n": ""
+},
+{
 "f": "balconu",
 "i": "/bal.ˈko.nu/",
 "p": "n",
@@ -739,6 +1684,13 @@ const LEX = [
 "n": ""
 },
 {
+"f": "banc-de-sable",
+"i": "/bank.de.ˈsa.ble/",
+"p": "n",
+"e": "sandbank",
+"n": ""
+},
+{
 "f": "banca",
 "i": "/ˈban.ka/",
 "p": "n",
@@ -746,10 +1698,31 @@ const LEX = [
 "n": "adjective bancar"
 },
 {
+"f": "banchina",
+"i": "/bank.ˈhi.na/",
+"p": "n",
+"e": "quay",
+"n": ""
+},
+{
 "f": "bancnota",
 "i": "/bank.ˈno.ta/",
 "p": "n",
 "e": "banknote",
+"n": ""
+},
+{
+"f": "banconu",
+"i": "/ban.ˈko.nu/",
+"p": "n",
+"e": "counter at an office",
+"n": ""
+},
+{
+"f": "banda",
+"i": "/ˈban.da/",
+"p": "n",
+"e": "frequency band",
 "n": ""
 },
 {
@@ -781,10 +1754,38 @@ const LEX = [
 "n": ""
 },
 {
+"f": "basia",
+"i": "/ba.ˈsi.a/",
+"p": "v",
+"e": "kiss",
+"n": ""
+},
+{
+"f": "bate",
+"i": "/ˈba.te/",
+"p": "v",
+"e": "strike, knock",
+"n": "atenta te no bate se capu, take care not to knock your head"
+},
+{
+"f": "bateria",
+"i": "/ba.te.ˈri.a/",
+"p": "n",
+"e": "battery",
+"n": ""
+},
+{
 "f": "bebe",
 "i": "/ˈbe.be/",
 "p": "n",
 "e": "baby",
+"n": ""
+},
+{
+"f": "beige",
+"i": "/be.ˈi.d͡ʒe/",
+"p": "adj",
+"e": "beige",
 "n": ""
 },
 {
@@ -823,11 +1824,25 @@ const LEX = [
 "n": ""
 },
 {
+"f": "beneficiu",
+"i": "/be.ne.fi.ˈt͡ʃi.u/",
+"p": "n",
+"e": "benefit",
+"n": ""
+},
+{
 "f": "beninian",
 "i": "/be.ni.ˈni.an/",
 "p": "adj",
 "e": "Beninese",
 "n": "demonym of Benin"
+},
+{
+"f": "benque",
+"i": "/ˈben.ke/",
+"p": "conj",
+"e": "although",
+"n": "benque se tren tarda, although the train is late"
 },
 {
 "f": "beve",
@@ -872,11 +1887,25 @@ const LEX = [
 "n": "everyday pivo"
 },
 {
+"f": "bis",
+"i": "/bis/",
+"p": "adv",
+"e": "twice",
+"n": ""
+},
+{
 "f": "bisauan",
 "i": "/bi.ˈsau.an/",
 "p": "adj",
 "e": "Bissau-Guinean",
 "n": "demonym of Guinea Bisau"
+},
+{
+"f": "biscotu",
+"i": "/bis.ˈko.tu/",
+"p": "n",
+"e": "biscuit",
+"n": ""
 },
 {
 "f": "bitum",
@@ -897,6 +1926,13 @@ const LEX = [
 "i": "/ˈbo.ka/",
 "p": "n",
 "e": "mouth",
+"n": ""
+},
+{
+"f": "boia",
+"i": "/bo.ˈi.a/",
+"p": "n",
+"e": "buoy",
 "n": ""
 },
 {
@@ -921,6 +1957,13 @@ const LEX = [
 "n": ""
 },
 {
+"f": "bordo",
+"i": "/ˈbor.do/",
+"p": "adj",
+"e": "maroon",
+"n": ""
+},
+{
 "f": "bosnan",
 "i": "/ˈbos.nan/",
 "p": "adj",
@@ -932,6 +1975,13 @@ const LEX = [
 "i": "/ˈbo.ta/",
 "p": "n",
 "e": "boot",
+"n": ""
+},
+{
+"f": "botilia",
+"i": "/bo.ti.ˈli.a/",
+"p": "n",
+"e": "bottle",
 "n": ""
 },
 {
@@ -984,11 +2034,32 @@ const LEX = [
 "n": ""
 },
 {
+"f": "brilla",
+"i": "/ˈbri.la/",
+"p": "v",
+"e": "shine, glint",
+"n": "of a sudden or reflected light"
+},
+{
+"f": "brillant",
+"i": "/ˈbri.lant/",
+"p": "adj",
+"e": "shiny",
+"n": "brilla is the verb"
+},
+{
 "f": "britan",
 "i": "/ˈbri.tan/",
 "p": "adj",
 "e": "British",
 "n": "demonym of Regnu Unit"
+},
+{
+"f": "brossa",
+"i": "/ˈbro.sa/",
+"p": "n",
+"e": "brush",
+"n": ""
 },
 {
 "f": "brun",
@@ -1005,6 +2076,13 @@ const LEX = [
 "n": "demonym of Brunei"
 },
 {
+"f": "budgetu",
+"i": "/bud.ˈd͡ʒe.tu/",
+"p": "n",
+"e": "budget",
+"n": ""
+},
+{
 "f": "bulgar",
 "i": "/ˈbul.gar/",
 "p": "adj",
@@ -1016,6 +2094,13 @@ const LEX = [
 "i": "/ˈbu.li/",
 "p": "v",
 "e": "boil",
+"n": ""
+},
+{
+"f": "bulon",
+"i": "/ˈbu.lon/",
+"p": "n",
+"e": "bolt",
 "n": ""
 },
 {
@@ -1054,11 +2139,25 @@ const LEX = [
 "n": "demonym of Burcina"
 },
 {
+"f": "burla",
+"i": "/ˈbur.la/",
+"p": "v",
+"e": "mock",
+"n": "affectionate as often as unkind"
+},
+{
 "f": "burundan",
 "i": "/bu.ˈrun.dan/",
 "p": "adj",
 "e": "Burundian",
 "n": "demonym of Burundi"
+},
+{
+"f": "busola",
+"i": "/bu.ˈso.la/",
+"p": "n",
+"e": "compass",
+"n": ""
 },
 {
 "f": "butanian",
@@ -1082,6 +2181,13 @@ const LEX = [
 "n": ""
 },
 {
+"f": "cabina-de-voto",
+"i": "/ka.bi.na.de.ˈvo.to/",
+"p": "n",
+"e": "polling booth",
+"n": ""
+},
+{
 "f": "cabli",
 "i": "/ˈka.bli/",
 "p": "n",
@@ -1094,6 +2200,13 @@ const LEX = [
 "p": "det",
 "e": "each, every",
 "n": ""
+},
+{
+"f": "cadaun",
+"i": "/ka.ˈda.un/",
+"p": "det",
+"e": "each",
+"n": "cada is the distributive"
 },
 {
 "f": "cade",
@@ -1124,6 +2237,20 @@ const LEX = [
 "n": ""
 },
 {
+"f": "calcane",
+"i": "/kal.ˈka.ne/",
+"p": "n",
+"e": "heel",
+"n": ""
+},
+{
+"f": "calcar",
+"i": "/ˈkal.kar/",
+"p": "n",
+"e": "limestone",
+"n": ""
+},
+{
 "f": "calcet",
 "i": "/ˈkal.t͡ʃet/",
 "p": "n",
@@ -1138,6 +2265,13 @@ const LEX = [
 "n": ""
 },
 {
+"f": "caldera",
+"i": "/kal.ˈde.ra/",
+"p": "n",
+"e": "boiler",
+"n": "teplo is the heating itself"
+},
+{
 "f": "calendar",
 "i": "/ka.ˈlen.dar/",
 "p": "n",
@@ -1145,10 +2279,31 @@ const LEX = [
 "n": ""
 },
 {
+"f": "calibra",
+"i": "/ka.ˈli.bra/",
+"p": "v",
+"e": "calibrate",
+"n": ""
+},
+{
 "f": "calid",
 "i": "/ˈka.lid/",
 "p": "adj",
 "e": "warm",
+"n": ""
+},
+{
+"f": "calificatiun",
+"i": "/ka.li.fi.ka.ˈti.un/",
+"p": "n",
+"e": "qualification",
+"n": ""
+},
+{
+"f": "calificativu",
+"i": "/ka.li.fi.ka.ˈti.vu/",
+"p": "n",
+"e": "grade, mark awarded",
 "n": ""
 },
 {
@@ -1173,6 +2328,34 @@ const LEX = [
 "n": "everyday teplo; calor in the energy accounts"
 },
 {
+"f": "calumnia",
+"i": "/ka.lum.ˈni.a/",
+"p": "v",
+"e": "slander",
+"n": ""
+},
+{
+"f": "camarada",
+"i": "/ka.ma.ˈra.da/",
+"p": "n",
+"e": "comrade",
+"n": "amic of friendship, camarada of common work"
+},
+{
+"f": "cambia",
+"i": "/kam.ˈbi.a/",
+"p": "v",
+"e": "exchange",
+"n": ""
+},
+{
+"f": "cambiu",
+"i": "/kam.ˈbi.u/",
+"p": "n",
+"e": "exchange",
+"n": ""
+},
+{
 "f": "cambodian",
 "i": "/kam.bo.ˈdi.an/",
 "p": "adj",
@@ -1184,6 +2367,20 @@ const LEX = [
 "i": "/ka.ˈme.ra/",
 "p": "n",
 "e": "room",
+"n": ""
+},
+{
+"f": "camera-de-dormi",
+"i": "/ka.me.ra.de.ˈdor.mi/",
+"p": "n",
+"e": "bedroom",
+"n": ""
+},
+{
+"f": "camera-foto",
+"i": "/ka.me.ra.ˈfo.to/",
+"p": "n",
+"e": "camera",
 "n": ""
 },
 {
@@ -1222,6 +2419,13 @@ const LEX = [
 "n": ""
 },
 {
+"f": "campana",
+"i": "/kam.ˈpa.na/",
+"p": "n",
+"e": "bell",
+"n": "rung at the commune"
+},
+{
 "f": "campania",
 "i": "/kam.pa.ˈni.a/",
 "p": "n",
@@ -1241,6 +2445,20 @@ const LEX = [
 "p": "adj",
 "e": "Canadian",
 "n": "demonym of Canada"
+},
+{
+"f": "canal",
+"i": "/ˈka.nal/",
+"p": "n",
+"e": "canal",
+"n": "of a cut waterway; via of a road"
+},
+{
+"f": "canela",
+"i": "/ka.ˈne.la/",
+"p": "n",
+"e": "cinnamon",
+"n": ""
 },
 {
 "f": "canta",
@@ -1278,6 +2496,20 @@ const LEX = [
 "n": ""
 },
 {
+"f": "capabile",
+"i": "/ka.pa.ˈbi.le/",
+"p": "adj",
+"e": "capable",
+"n": ""
+},
+{
+"f": "capacitate",
+"i": "/ka.pa.t͡ʃi.ˈta.te/",
+"p": "n",
+"e": "capacity",
+"n": "of a vessel and of a person alike"
+},
+{
 "f": "capel",
 "i": "/ˈka.pel/",
 "p": "n",
@@ -1306,11 +2538,32 @@ const LEX = [
 "n": "the linking de drops in this compound"
 },
 {
+"f": "capu",
+"i": "/ˈka.pu/",
+"p": "n",
+"e": "head",
+"n": "atenta te no bate se capu"
+},
+{
+"f": "capuce",
+"i": "/ka.ˈpu.t͡ʃe/",
+"p": "n",
+"e": "hood",
+"n": ""
+},
+{
 "f": "capverdian",
 "i": "/kap.ver.ˈdi.an/",
 "p": "adj",
 "e": "Cabo Verdean",
 "n": "demonym of Cap Verd"
+},
+{
+"f": "carbon",
+"i": "/ˈkar.bon/",
+"p": "n",
+"e": "carbon",
+"n": ""
 },
 {
 "f": "carga",
@@ -1320,11 +2573,25 @@ const LEX = [
 "n": ""
 },
 {
+"f": "cargu",
+"i": "/ˈkar.gu/",
+"p": "n",
+"e": "load, burden",
+"n": "carga is the verb"
+},
+{
 "f": "carne",
 "i": "/ˈkar.ne/",
 "p": "n",
 "e": "meat",
 "n": "adjective carnal"
+},
+{
+"f": "carpu",
+"i": "/ˈkar.pu/",
+"p": "n",
+"e": "wrist",
+"n": ""
 },
 {
 "f": "carta",
@@ -1334,10 +2601,31 @@ const LEX = [
 "n": ""
 },
 {
+"f": "cascada",
+"i": "/kas.ˈka.da/",
+"p": "n",
+"e": "waterfall",
+"n": ""
+},
+{
+"f": "casco",
+"i": "/ˈkas.ko/",
+"p": "n",
+"e": "helmet",
+"n": "required on every trembuja site"
+},
+{
 "f": "casu",
 "i": "/ˈka.su/",
 "p": "n",
 "e": "case, instance",
+"n": ""
+},
+{
+"f": "cataloga",
+"i": "/ka.ta.ˈlo.ga/",
+"p": "v",
+"e": "catalogue",
 "n": ""
 },
 {
@@ -1355,11 +2643,32 @@ const LEX = [
 "n": ""
 },
 {
+"f": "cav",
+"i": "/kav/",
+"p": "adj",
+"e": "hollow",
+"n": ""
+},
+{
+"f": "cava",
+"i": "/ˈka.va/",
+"p": "n",
+"e": "cellar",
+"n": ""
+},
+{
 "f": "caval",
 "i": "/ˈka.val/",
 "p": "n",
 "e": "horse",
 "n": "adjective cavalin"
+},
+{
+"f": "cavilia",
+"i": "/ka.vi.ˈli.a/",
+"p": "n",
+"e": "ankle",
+"n": ""
 },
 {
 "f": "caxu",
@@ -1397,11 +2706,32 @@ const LEX = [
 "n": "adjective celest"
 },
 {
+"f": "cela",
+"i": "/ˈt͡ʃe.la/",
+"p": "v",
+"e": "conceal",
+"n": ""
+},
+{
+"f": "cementa",
+"i": "/t͡ʃe.ˈmen.ta/",
+"p": "v",
+"e": "cement",
+"n": ""
+},
+{
 "f": "cena",
 "i": "/ˈt͡ʃe.na/",
 "p": "n",
 "e": "evening meal, formal",
 "n": "everyday vecere"
+},
+{
+"f": "censu",
+"i": "/ˈt͡ʃen.su/",
+"p": "n",
+"e": "census",
+"n": ""
 },
 {
 "f": "cent",
@@ -1474,6 +2804,27 @@ const LEX = [
 "n": ""
 },
 {
+"f": "certe",
+"i": "/ˈt͡ʃer.te/",
+"p": "det",
+"e": "certain, some",
+"n": ""
+},
+{
+"f": "certifica",
+"i": "/t͡ʃer.ti.ˈfi.ka/",
+"p": "v",
+"e": "certify",
+"n": ""
+},
+{
+"f": "certitudine",
+"i": "/t͡ʃer.ti.tu.ˈdi.ne/",
+"p": "n",
+"e": "certainty",
+"n": ""
+},
+{
 "f": "cesta",
 "i": "/ˈt͡ʃes.ta/",
 "p": "n",
@@ -1481,10 +2832,24 @@ const LEX = [
 "n": ""
 },
 {
+"f": "ceteri",
+"i": "/t͡ʃe.ˈte.ri/",
+"p": "pron",
+"e": "the rest, the others",
+"n": ""
+},
+{
 "f": "chine",
 "i": "/ˈki.ne/",
 "p": "adj",
 "e": "Chinese",
+"n": ""
+},
+{
+"f": "chirurgu",
+"i": "/khi.ˈrur.gu/",
+"p": "n",
+"e": "surgeon",
 "n": ""
 },
 {
@@ -1507,6 +2872,13 @@ const LEX = [
 "p": "adj",
 "e": "Chilean",
 "n": "demonym of Cile"
+},
+{
+"f": "cilia",
+"i": "/t͡ʃi.ˈli.a/",
+"p": "n",
+"e": "eyelash",
+"n": ""
 },
 {
 "f": "cinc",
@@ -1551,6 +2923,48 @@ const LEX = [
 "n": ""
 },
 {
+"f": "circuitu",
+"i": "/t͡ʃir.ku.ˈi.tu/",
+"p": "n",
+"e": "circuit",
+"n": ""
+},
+{
+"f": "circula",
+"i": "/t͡ʃir.ˈku.la/",
+"p": "v",
+"e": "run, operate as a service",
+"n": "se linia circula tot die, the line runs all day"
+},
+{
+"f": "circular",
+"i": "/t͡ʃir.ˈku.lar/",
+"p": "adj",
+"e": "circular",
+"n": ""
+},
+{
+"f": "circum",
+"i": "/ˈt͡ʃir.kum/",
+"p": "prep",
+"e": "around",
+"n": ""
+},
+{
+"f": "circumstantia",
+"i": "/t͡ʃir.kums.tan.ˈti.a/",
+"p": "n",
+"e": "circumstance",
+"n": ""
+},
+{
+"f": "cita",
+"i": "/ˈt͡ʃi.ta/",
+"p": "v",
+"e": "quote, cite",
+"n": ""
+},
+{
 "f": "citadin",
 "i": "/t͡ʃi.ˈta.din/",
 "p": "n",
@@ -1563,6 +2977,20 @@ const LEX = [
 "p": "n",
 "e": "city",
 "n": "Kremcite, the Kremlin city"
+},
+{
+"f": "civil",
+"i": "/ˈt͡ʃi.vil/",
+"p": "adj",
+"e": "civil",
+"n": ""
+},
+{
+"f": "clacson",
+"i": "/ˈklak.son/",
+"p": "n",
+"e": "horn of a vehicle",
+"n": "sona is the verb"
 },
 {
 "f": "clama",
@@ -1579,10 +3007,45 @@ const LEX = [
 "n": ""
 },
 {
+"f": "clarifica",
+"i": "/kla.ri.ˈfi.ka/",
+"p": "v",
+"e": "clarify",
+"n": "the commonest request put to the Academy"
+},
+{
+"f": "clarment",
+"i": "/ˈklar.ment/",
+"p": "adv",
+"e": "clearly",
+"n": "clar ends in r, so no linking vowel appears"
+},
+{
+"f": "clasificatiun",
+"i": "/kla.si.fi.ka.ˈti.un/",
+"p": "n",
+"e": "classification",
+"n": ""
+},
+{
 "f": "classe",
 "i": "/ˈkla.se/",
 "p": "n",
 "e": "class",
+"n": ""
+},
+{
+"f": "classifica",
+"i": "/kla.si.ˈfi.ka/",
+"p": "v",
+"e": "classify",
+"n": ""
+},
+{
+"f": "clausula",
+"i": "/kla.u.ˈsu.la/",
+"p": "n",
+"e": "clause",
 "n": ""
 },
 {
@@ -1593,10 +3056,24 @@ const LEX = [
 "n": ""
 },
 {
+"f": "clave-inglese",
+"i": "/kla.ve.in.ˈgle.se/",
+"p": "n",
+"e": "wrench",
+"n": ""
+},
+{
 "f": "clavier",
 "i": "/kla.ˈvi.er/",
 "p": "n",
 "e": "keyboard",
+"n": ""
+},
+{
+"f": "clerc",
+"i": "/klerk/",
+"p": "n",
+"e": "clerk",
 "n": ""
 },
 {
@@ -1614,11 +3091,25 @@ const LEX = [
 "n": ""
 },
 {
+"f": "clima",
+"i": "/ˈkli.ma/",
+"p": "n",
+"e": "climate",
+"n": "vreme is the weather of the day"
+},
+{
 "f": "clinica",
 "i": "/kli.ˈni.ka/",
 "p": "n",
 "e": "clinic",
 "n": ""
+},
+{
+"f": "cluda",
+"i": "/ˈklu.da/",
+"p": "v",
+"e": "close",
+"n": "se porte cluda, the doors are closing"
 },
 {
 "f": "clude",
@@ -1649,10 +3140,24 @@ const LEX = [
 "n": ""
 },
 {
+"f": "coherent",
+"i": "/ko.ˈhe.rent/",
+"p": "adj",
+"e": "coherent",
+"n": ""
+},
+{
 "f": "coincidentia",
 "i": "/koin.t͡ʃi.den.ˈti.a/",
 "p": "n",
 "e": "coincidence",
+"n": ""
+},
+{
+"f": "colabora",
+"i": "/ko.la.ˈbo.ra/",
+"p": "v",
+"e": "collaborate",
 "n": ""
 },
 {
@@ -1663,10 +3168,45 @@ const LEX = [
 "n": ""
 },
 {
+"f": "coler",
+"i": "/ˈko.ler/",
+"p": "n",
+"e": "collar",
+"n": ""
+},
+{
+"f": "coleta",
+"i": "/ko.ˈle.ta/",
+"p": "v",
+"e": "gather, collect",
+"n": ""
+},
+{
 "f": "colina",
 "i": "/ko.ˈli.na/",
 "p": "n",
 "e": "hill",
+"n": ""
+},
+{
+"f": "collectiv",
+"i": "/ko.ˈlek.tiv/",
+"p": "adj",
+"e": "collective",
+"n": ""
+},
+{
+"f": "collectivament",
+"i": "/ko.lek.ti.ˈva.ment/",
+"p": "adv",
+"e": "collectively",
+"n": ""
+},
+{
+"f": "collide",
+"i": "/ko.ˈli.de/",
+"p": "v",
+"e": "collide",
 "n": ""
 },
 {
@@ -1691,10 +3231,31 @@ const LEX = [
 "n": ""
 },
 {
+"f": "combustibile",
+"i": "/kom.bus.ti.ˈbi.le/",
+"p": "n",
+"e": "fuel",
+"n": ""
+},
+{
 "f": "comensa",
 "i": "/ko.ˈmen.sa/",
 "p": "v",
 "e": "begin",
+"n": ""
+},
+{
+"f": "comercia",
+"i": "/ko.mer.ˈt͡ʃi.a/",
+"p": "v",
+"e": "trade",
+"n": ""
+},
+{
+"f": "comercial",
+"i": "/ko.mer.ˈt͡ʃi.al/",
+"p": "adj",
+"e": "commercial",
 "n": ""
 },
 {
@@ -1703,6 +3264,20 @@ const LEX = [
 "p": "n",
 "e": "trade",
 "n": ""
+},
+{
+"f": "comisiun",
+"i": "/ko.mi.ˈsi.un/",
+"p": "n",
+"e": "commission",
+"n": "comisiun de enquesta, commission of inquiry"
+},
+{
+"f": "comminatiun",
+"i": "/ko.mi.na.ˈti.un/",
+"p": "n",
+"e": "threat",
+"n": "minacia is the verb"
 },
 {
 "f": "como",
@@ -1726,10 +3301,66 @@ const LEX = [
 "n": ""
 },
 {
+"f": "compassiun",
+"i": "/kom.pa.ˈsi.un/",
+"p": "n",
+"e": "compassion",
+"n": ""
+},
+{
+"f": "compensa",
+"i": "/kom.ˈpen.sa/",
+"p": "v",
+"e": "compensate",
+"n": ""
+},
+{
+"f": "competent",
+"i": "/kom.ˈpe.tent/",
+"p": "adj",
+"e": "competent",
+"n": "competentia is the noun"
+},
+{
+"f": "competentia",
+"i": "/kom.pe.ten.ˈti.a/",
+"p": "n",
+"e": "competence",
+"n": "of a body; the commune holds general competentia"
+},
+{
+"f": "compila",
+"i": "/kom.ˈpi.la/",
+"p": "v",
+"e": "compile",
+"n": ""
+},
+{
 "f": "complex",
 "i": "/ˈkom.pleʃ/",
 "p": "adj",
 "e": "complex",
+"n": ""
+},
+{
+"f": "complexament",
+"i": "/kom.ple.ˈʃa.ment/",
+"p": "adv",
+"e": "in a complex way",
+"n": ""
+},
+{
+"f": "complicatiun",
+"i": "/kom.pli.ka.ˈti.un/",
+"p": "n",
+"e": "complication",
+"n": ""
+},
+{
+"f": "compost",
+"i": "/ˈkom.post/",
+"p": "n",
+"e": "compost",
 "n": ""
 },
 {
@@ -1751,6 +3382,13 @@ const LEX = [
 "i": "/kom.pren.ˈsi.un/",
 "p": "n",
 "e": "comprehension",
+"n": ""
+},
+{
+"f": "computa",
+"i": "/kom.ˈpu.ta/",
+"p": "v",
+"e": "tally, count up",
 "n": ""
 },
 {
@@ -1782,10 +3420,31 @@ const LEX = [
 "n": ""
 },
 {
+"f": "comunica",
+"i": "/ko.mu.ˈni.ka/",
+"p": "v",
+"e": "communicate",
+"n": "comunica te se comune, report it to the commune"
+},
+{
+"f": "comunicatiun",
+"i": "/ko.mu.ni.ka.ˈti.un/",
+"p": "n",
+"e": "communication",
+"n": ""
+},
+{
 "f": "comunitate",
 "i": "/ko.mu.ni.ˈta.te/",
 "p": "n",
 "e": "community",
+"n": ""
+},
+{
+"f": "comuta",
+"i": "/ko.ˈmu.ta/",
+"p": "v",
+"e": "switch over, change points",
 "n": ""
 },
 {
@@ -1796,6 +3455,69 @@ const LEX = [
 "n": ""
 },
 {
+"f": "concentra",
+"i": "/kon.ˈt͡ʃen.tra/",
+"p": "v",
+"e": "concentrate",
+"n": ""
+},
+{
+"f": "concentrat",
+"i": "/kon.ˈt͡ʃen.trat/",
+"p": "adj",
+"e": "concentrated",
+"n": ""
+},
+{
+"f": "concepe",
+"i": "/kon.ˈt͡ʃe.pe/",
+"p": "v",
+"e": "conceive, form an idea",
+"n": ""
+},
+{
+"f": "conceptu",
+"i": "/kon.ˈt͡ʃep.tu/",
+"p": "n",
+"e": "concept",
+"n": ""
+},
+{
+"f": "concilia",
+"i": "/kon.t͡ʃi.ˈli.a/",
+"p": "v",
+"e": "reconcile",
+"n": ""
+},
+{
+"f": "conclude",
+"i": "/kon.ˈklu.de/",
+"p": "v",
+"e": "conclude",
+"n": ""
+},
+{
+"f": "conclusiun",
+"i": "/kon.klu.ˈsi.un/",
+"p": "n",
+"e": "conclusion",
+"n": ""
+},
+{
+"f": "concret",
+"i": "/ˈkon.kret/",
+"p": "adj",
+"e": "concrete",
+"n": ""
+},
+{
+"f": "concute",
+"i": "/kon.ˈku.te/",
+"p": "v",
+"e": "shake a thing",
+"n": ""
+},
+{
 "f": "conditiun",
 "i": "/kon.di.ˈti.un/",
 "p": "n",
@@ -1803,10 +3525,59 @@ const LEX = [
 "n": ""
 },
 {
+"f": "condolia",
+"i": "/kon.do.ˈli.a/",
+"p": "v",
+"e": "offer condolences",
+"n": ""
+},
+{
 "f": "conduce",
 "i": "/kon.ˈdu.t͡ʃe/",
 "p": "v",
 "e": "drive",
+"n": ""
+},
+{
+"f": "conexiun",
+"i": "/ko.ne.ˈʃi.un/",
+"p": "n",
+"e": "connection",
+"n": ""
+},
+{
+"f": "confesa",
+"i": "/kon.ˈfe.sa/",
+"p": "v",
+"e": "confess, admit",
+"n": ""
+},
+{
+"f": "confide",
+"i": "/kon.ˈfi.de/",
+"p": "v",
+"e": "trust",
+"n": ""
+},
+{
+"f": "confidente",
+"i": "/kon.fi.ˈden.te/",
+"p": "adj",
+"e": "confident",
+"n": ""
+},
+{
+"f": "confin",
+"i": "/ˈkon.fin/",
+"p": "n",
+"e": "border",
+"n": "frontiera is the political line"
+},
+{
+"f": "confirma",
+"i": "/kon.ˈfir.ma/",
+"p": "v",
+"e": "confirm",
 "n": ""
 },
 {
@@ -1822,6 +3593,34 @@ const LEX = [
 "p": "n",
 "e": "conflict of interest",
 "n": "a fixed compound; the linking de drops and both elements take their trimmed form"
+},
+{
+"f": "confunde",
+"i": "/kon.ˈfun.de/",
+"p": "v",
+"e": "confuse, mix up",
+"n": ""
+},
+{
+"f": "confus",
+"i": "/ˈkon.fus/",
+"p": "adj",
+"e": "confused",
+"n": "confusiun is the noun"
+},
+{
+"f": "confusiun",
+"i": "/kon.fu.ˈsi.un/",
+"p": "n",
+"e": "confusion",
+"n": ""
+},
+{
+"f": "congelator",
+"i": "/kon.d͡ʒe.ˈla.tor/",
+"p": "n",
+"e": "freezer",
+"n": ""
 },
 {
 "f": "congolan",
@@ -1845,6 +3644,41 @@ const LEX = [
 "n": ""
 },
 {
+"f": "conossente",
+"i": "/ko.no.ˈsen.te/",
+"p": "n",
+"e": "acquaintance",
+"n": "conosce is the verb"
+},
+{
+"f": "consciente",
+"i": "/kons.t͡ʃi.ˈen.te/",
+"p": "adj",
+"e": "aware",
+"n": ""
+},
+{
+"f": "consensu",
+"i": "/kon.ˈsen.su/",
+"p": "n",
+"e": "consensus",
+"n": ""
+},
+{
+"f": "consenti",
+"i": "/kon.ˈsen.ti/",
+"p": "v",
+"e": "consent, agree to",
+"n": ""
+},
+{
+"f": "consequentia",
+"i": "/kon.se.ken.ˈti.a/",
+"p": "n",
+"e": "consequence",
+"n": ""
+},
+{
 "f": "conserva",
 "i": "/kon.ˈser.va/",
 "p": "v",
@@ -1852,10 +3686,80 @@ const LEX = [
 "n": ""
 },
 {
+"f": "considera",
+"i": "/kon.si.ˈde.ra/",
+"p": "v",
+"e": "consider",
+"n": "considera se caxu, consider the case"
+},
+{
+"f": "consigna",
+"i": "/kon.ˈsig.na/",
+"p": "v",
+"e": "deliver",
+"n": "consigna te se porta, deliver to the door"
+},
+{
+"f": "consilia",
+"i": "/kon.si.ˈli.a/",
+"p": "v",
+"e": "advise",
+"n": ""
+},
+{
+"f": "consiliu",
+"i": "/kon.si.ˈli.u/",
+"p": "n",
+"e": "council",
+"n": ""
+},
+{
+"f": "consistentia",
+"i": "/kon.sis.ten.ˈti.a/",
+"p": "n",
+"e": "consistency",
+"n": ""
+},
+{
+"f": "consola",
+"i": "/kon.ˈso.la/",
+"p": "v",
+"e": "console",
+"n": ""
+},
+{
+"f": "consolatiun",
+"i": "/kon.so.la.ˈti.un/",
+"p": "n",
+"e": "comfort",
+"n": "consola is the verb"
+},
+{
 "f": "consonante",
 "i": "/kon.so.ˈnan.te/",
 "p": "n",
 "e": "consonant",
+"n": ""
+},
+{
+"f": "constata",
+"i": "/kons.ˈta.ta/",
+"p": "v",
+"e": "establish as a fact",
+"n": ""
+},
+{
+"f": "constientia",
+"i": "/kons.ti.en.ˈti.a/",
+"p": "n",
+"e": "awareness, conscience",
+"n": ""
+},
+{
+"f": "constitue",
+"i": "/kons.ti.ˈtu.e/",
+"p": "v",
+"e": "constitute",
 "n": ""
 },
 {
@@ -1866,6 +3770,13 @@ const LEX = [
 "n": ""
 },
 {
+"f": "constructiun",
+"i": "/kons.truk.ˈti.un/",
+"p": "n",
+"e": "construction",
+"n": "trembuja of works in progress"
+},
+{
 "f": "construe",
 "i": "/kons.ˈtru.e/",
 "p": "v",
@@ -1873,10 +3784,24 @@ const LEX = [
 "n": ""
 },
 {
+"f": "consulta",
+"i": "/kon.ˈsul.ta/",
+"p": "v",
+"e": "consult",
+"n": "consulta se comune, ask the commune"
+},
+{
 "f": "consultativ",
 "i": "/kon.sul.ˈta.tiv/",
 "p": "adj",
 "e": "advisory",
+"n": ""
+},
+{
+"f": "consuma",
+"i": "/kon.ˈsu.ma/",
+"p": "v",
+"e": "consume",
 "n": ""
 },
 {
@@ -1887,10 +3812,38 @@ const LEX = [
 "n": "conta se votos; conta un istoria"
 },
 {
+"f": "contabilisa",
+"i": "/kon.ta.bi.ˈli.sa/",
+"p": "v",
+"e": "book, enter in the accounts",
+"n": ""
+},
+{
 "f": "contact",
 "i": "/ˈkon.takt/",
 "p": "n",
 "e": "contact",
+"n": ""
+},
+{
+"f": "contator",
+"i": "/kon.ˈta.tor/",
+"p": "n",
+"e": "meter",
+"n": ""
+},
+{
+"f": "contempla",
+"i": "/kon.ˈtem.pla/",
+"p": "v",
+"e": "contemplate, look long at",
+"n": ""
+},
+{
+"f": "content",
+"i": "/ˈkon.tent/",
+"p": "adj",
+"e": "glad, satisfied",
 "n": ""
 },
 {
@@ -1901,11 +3854,32 @@ const LEX = [
 "n": ""
 },
 {
+"f": "contesta",
+"i": "/kon.ˈtes.ta/",
+"p": "v",
+"e": "challenge, contest",
+"n": "contesta se sorte, challenge the draw"
+},
+{
+"f": "contextu",
+"i": "/kon.ˈteʃ.tu/",
+"p": "n",
+"e": "context",
+"n": ""
+},
+{
 "f": "continua",
 "i": "/kon.ti.ˈnu.a/",
 "p": "v",
 "e": "continue",
 "n": ""
+},
+{
+"f": "continuitate",
+"i": "/kon.ti.nu.i.ˈta.te/",
+"p": "n",
+"e": "continuity",
+"n": "of a service kept running"
 },
 {
 "f": "contra",
@@ -1922,11 +3896,46 @@ const LEX = [
 "n": ""
 },
 {
+"f": "contracta",
+"i": "/kon.ˈtrak.ta/",
+"p": "v",
+"e": "contract",
+"n": ""
+},
+{
 "f": "contractor",
 "i": "/kon.ˈtrak.tor/",
 "p": "n",
 "e": "contractor",
 "n": ""
+},
+{
+"f": "contractu",
+"i": "/kon.ˈtrak.tu/",
+"p": "n",
+"e": "contract",
+"n": ""
+},
+{
+"f": "contrastu",
+"i": "/kon.ˈtras.tu/",
+"p": "n",
+"e": "contrast",
+"n": ""
+},
+{
+"f": "contribue",
+"i": "/kon.tri.ˈbu.e/",
+"p": "v",
+"e": "contribute",
+"n": ""
+},
+{
+"f": "controla",
+"i": "/kon.ˈtro.la/",
+"p": "v",
+"e": "check, inspect",
+"n": "controlor is the inspector"
 },
 {
 "f": "controlor",
@@ -1943,10 +3952,59 @@ const LEX = [
 "n": ""
 },
 {
+"f": "convena",
+"i": "/kon.ˈve.na/",
+"p": "v",
+"e": "agree, come to terms",
+"n": "of parties coming to terms"
+},
+{
+"f": "conventiun",
+"i": "/kon.ven.ˈti.un/",
+"p": "n",
+"e": "covenant, convention",
+"n": ""
+},
+{
+"f": "convoca",
+"i": "/kon.ˈvo.ka/",
+"p": "v",
+"e": "convene, call together",
+"n": "of an assembly; voca of a person"
+},
+{
+"f": "coopera",
+"i": "/ko.o.ˈpe.ra/",
+"p": "v",
+"e": "cooperate",
+"n": "cooperativa is the body"
+},
+{
+"f": "cooperatiun",
+"i": "/ko.o.pe.ra.ˈti.un/",
+"p": "n",
+"e": "cooperation",
+"n": ""
+},
+{
 "f": "cooperativa",
 "i": "/ko.o.pe.ra.ˈti.va/",
 "p": "n",
 "e": "cooperative",
+"n": ""
+},
+{
+"f": "coordina",
+"i": "/ko.or.ˈdi.na/",
+"p": "v",
+"e": "coordinate",
+"n": ""
+},
+{
+"f": "coordinatiun",
+"i": "/ko.or.di.na.ˈti.un/",
+"p": "n",
+"e": "coordination",
 "n": ""
 },
 {
@@ -1962,6 +4020,20 @@ const LEX = [
 "p": "n",
 "e": "heart",
 "n": "adjective cordak"
+},
+{
+"f": "coraje",
+"i": "/ko.ˈra.ʒe/",
+"p": "n",
+"e": "courage",
+"n": "brav is the adjective"
+},
+{
+"f": "corda",
+"i": "/ˈkor.da/",
+"p": "n",
+"e": "rope",
+"n": ""
 },
 {
 "f": "corean",
@@ -2013,6 +4085,13 @@ const LEX = [
 "n": ""
 },
 {
+"f": "correctament",
+"i": "/ko.rek.ˈta.ment/",
+"p": "adv",
+"e": "correctly",
+"n": ""
+},
+{
 "f": "correctiun",
 "i": "/ko.rek.ˈti.un/",
 "p": "n",
@@ -2024,6 +4103,20 @@ const LEX = [
 "i": "/ko.res.pon.den.ˈti.a/",
 "p": "n",
 "e": "correspondence",
+"n": ""
+},
+{
+"f": "corridor",
+"i": "/ko.ˈri.dor/",
+"p": "n",
+"e": "corridor",
+"n": "of a dwelling; scodi runs between them"
+},
+{
+"f": "corrode",
+"i": "/ko.ˈro.de/",
+"p": "v",
+"e": "corrode, eat away",
 "n": ""
 },
 {
@@ -2076,10 +4169,45 @@ const LEX = [
 "n": "demonym of Costa Rica"
 },
 {
+"f": "costella",
+"i": "/kos.ˈte.la/",
+"p": "n",
+"e": "rib",
+"n": "costa is the coast"
+},
+{
+"f": "cotisa",
+"i": "/ko.ˈti.sa/",
+"p": "v",
+"e": "pay a share",
+"n": ""
+},
+{
 "f": "coton",
 "i": "/ˈko.ton/",
 "p": "n",
 "e": "cotton",
+"n": ""
+},
+{
+"f": "coxa",
+"i": "/ˈko.ʃa/",
+"p": "n",
+"e": "hip",
+"n": ""
+},
+{
+"f": "cra",
+"i": "/kra/",
+"p": "n",
+"e": "Christmas",
+"n": "mercat de Cra, the Christmas market"
+},
+{
+"f": "crani",
+"i": "/ˈkra.ni/",
+"p": "n",
+"e": "skull",
 "n": ""
 },
 {
@@ -2090,10 +4218,45 @@ const LEX = [
 "n": ""
 },
 {
+"f": "credibilitate",
+"i": "/kre.di.bi.li.ˈta.te/",
+"p": "n",
+"e": "credibility",
+"n": ""
+},
+{
+"f": "creditu",
+"i": "/kre.ˈdi.tu/",
+"p": "n",
+"e": "credit",
+"n": ""
+},
+{
 "f": "creion",
 "i": "/ˈkrei.on/",
 "p": "n",
 "e": "pencil",
+"n": ""
+},
+{
+"f": "crem",
+"i": "/krem/",
+"p": "adj",
+"e": "cream",
+"n": ""
+},
+{
+"f": "crepa",
+"i": "/ˈkre.pa/",
+"p": "v",
+"e": "crack",
+"n": ""
+},
+{
+"f": "crepuscul",
+"i": "/kre.ˈpus.kul/",
+"p": "n",
+"e": "dusk",
 "n": ""
 },
 {
@@ -2104,6 +4267,27 @@ const LEX = [
 "n": ""
 },
 {
+"f": "critica",
+"i": "/kri.ˈti.ka/",
+"p": "v",
+"e": "criticise",
+"n": "carries no reproach on its own"
+},
+{
+"f": "crusta",
+"i": "/ˈkrus.ta/",
+"p": "n",
+"e": "crust",
+"n": ""
+},
+{
+"f": "cualcun",
+"i": "/ku.ˈal.kun/",
+"p": "det",
+"e": "whichever",
+"n": ""
+},
+{
 "f": "cuban",
 "i": "/ˈku.ban/",
 "p": "adj",
@@ -2111,10 +4295,59 @@ const LEX = [
 "n": "demonym of Cuba"
 },
 {
+"f": "cubitu",
+"i": "/ku.ˈbi.tu/",
+"p": "n",
+"e": "elbow",
+"n": ""
+},
+{
+"f": "cui",
+"i": "/ˈku.i/",
+"p": "pron",
+"e": "to whom",
+"n": ""
+},
+{
+"f": "cuie",
+"i": "/ku.ˈi.e/",
+"p": "pron",
+"e": "whose",
+"n": ""
+},
+{
 "f": "cuir",
 "i": "/ˈku.ir/",
 "p": "n",
 "e": "leather",
+"n": ""
+},
+{
+"f": "culpa",
+"i": "/ˈkul.pa/",
+"p": "n",
+"e": "fault, guilt",
+"n": ""
+},
+{
+"f": "culpabilitate",
+"i": "/kul.pa.bi.li.ˈta.te/",
+"p": "n",
+"e": "blame",
+"n": "culpa is the fault itself"
+},
+{
+"f": "cultura",
+"i": "/kul.ˈtu.ra/",
+"p": "n",
+"e": "crop",
+"n": ""
+},
+{
+"f": "cunea",
+"i": "/ku.ˈne.a/",
+"p": "v",
+"e": "nail",
 "n": ""
 },
 {
@@ -2132,10 +4365,24 @@ const LEX = [
 "n": ""
 },
 {
+"f": "curiositate",
+"i": "/ku.ri.o.si.ˈta.te/",
+"p": "n",
+"e": "curiosity",
+"n": ""
+},
+{
 "f": "curt",
 "i": "/kurt/",
 "p": "adj",
 "e": "short",
+"n": ""
+},
+{
+"f": "curtament",
+"i": "/kur.ˈta.ment/",
+"p": "adv",
+"e": "briefly",
 "n": ""
 },
 {
@@ -2146,11 +4393,46 @@ const LEX = [
 "n": "coarse; the polite reply is ia dan zasta"
 },
 {
+"f": "curv",
+"i": "/kurv/",
+"p": "adj",
+"e": "curved",
+"n": "of a track and of a road"
+},
+{
 "f": "cusin",
 "i": "/ˈku.sin/",
 "p": "n",
 "e": "cousin",
 "n": ""
+},
+{
+"f": "cusinete",
+"i": "/ku.si.ˈne.te/",
+"p": "n",
+"e": "bearing",
+"n": ""
+},
+{
+"f": "custa",
+"i": "/ˈkus.ta/",
+"p": "v",
+"e": "cost",
+"n": "quanto custa, what does it cost"
+},
+{
+"f": "custodi",
+"i": "/kus.ˈto.di/",
+"p": "v",
+"e": "look after, have charge of",
+"n": "cura is the care itself"
+},
+{
+"f": "custu",
+"i": "/ˈkus.tu/",
+"p": "n",
+"e": "cost",
+"n": "custa is the verb"
 },
 {
 "f": "cutzit",
@@ -2216,10 +4498,45 @@ const LEX = [
 "n": "the ordinary reply to gratias"
 },
 {
+"f": "debarcader",
+"i": "/de.bar.ˈka.der/",
+"p": "n",
+"e": "jetty",
+"n": ""
+},
+{
+"f": "debate",
+"i": "/de.ˈba.te/",
+"p": "v",
+"e": "debate",
+"n": ""
+},
+{
+"f": "deber",
+"i": "/ˈde.ber/",
+"p": "n",
+"e": "duty",
+"n": "jure is the right that answers it"
+},
+{
+"f": "debitu",
+"i": "/de.ˈbi.tu/",
+"p": "n",
+"e": "debt",
+"n": ""
+},
+{
 "f": "deca",
 "i": "/ˈde.ka/",
 "p": "n",
 "e": "blanket",
+"n": ""
+},
+{
+"f": "decada",
+"i": "/de.ˈka.da/",
+"p": "n",
+"e": "decade",
 "n": ""
 },
 {
@@ -2237,10 +4554,24 @@ const LEX = [
 "n": ""
 },
 {
+"f": "deceptiun",
+"i": "/de.t͡ʃep.ˈti.un/",
+"p": "n",
+"e": "disappointment",
+"n": ""
+},
+{
 "f": "decide",
 "i": "/de.ˈt͡ʃi.de/",
 "p": "v",
 "e": "decide",
+"n": ""
+},
+{
+"f": "decis",
+"i": "/ˈde.t͡ʃis/",
+"p": "adj",
+"e": "resolute",
 "n": ""
 },
 {
@@ -2251,10 +4582,59 @@ const LEX = [
 "n": ""
 },
 {
+"f": "declara",
+"i": "/de.ˈkla.ra/",
+"p": "v",
+"e": "declare, state on the record",
+"n": "declara supra se onor, declare on one's honour"
+},
+{
+"f": "decolla",
+"i": "/de.ˈko.la/",
+"p": "v",
+"e": "take off",
+"n": ""
+},
+{
 "f": "decret",
 "i": "/ˈde.kret/",
 "p": "n",
 "e": "decree",
+"n": ""
+},
+{
+"f": "decretu",
+"i": "/de.ˈkre.tu/",
+"p": "n",
+"e": "decree",
+"n": ""
+},
+{
+"f": "deduce",
+"i": "/de.ˈdu.t͡ʃe/",
+"p": "v",
+"e": "deduce",
+"n": ""
+},
+{
+"f": "defende",
+"i": "/de.ˈfen.de/",
+"p": "v",
+"e": "defend",
+"n": ""
+},
+{
+"f": "deficite",
+"i": "/de.fi.ˈt͡ʃi.te/",
+"p": "n",
+"e": "deficit",
+"n": ""
+},
+{
+"f": "deglute",
+"i": "/de.ˈglu.te/",
+"p": "v",
+"e": "swallow",
 "n": ""
 },
 {
@@ -2265,10 +4645,45 @@ const LEX = [
 "n": "formal gratias; dekui between people who know each other"
 },
 {
+"f": "delega",
+"i": "/de.ˈle.ga/",
+"p": "v",
+"e": "delegate",
+"n": ""
+},
+{
 "f": "delegat",
 "i": "/de.ˈle.gat/",
 "p": "n",
 "e": "delegate",
+"n": ""
+},
+{
+"f": "delegatiun",
+"i": "/de.le.ga.ˈti.un/",
+"p": "n",
+"e": "delegation",
+"n": ""
+},
+{
+"f": "delibera",
+"i": "/de.li.ˈbe.ra/",
+"p": "v",
+"e": "deliberate",
+"n": "in the assemblies and in the working groups"
+},
+{
+"f": "deliberatiun",
+"i": "/de.li.be.ra.ˈti.un/",
+"p": "n",
+"e": "deliberation",
+"n": ""
+},
+{
+"f": "delictu",
+"i": "/de.ˈlik.tu/",
+"p": "n",
+"e": "offence",
 "n": ""
 },
 {
@@ -2286,11 +4701,39 @@ const LEX = [
 "n": ""
 },
 {
+"f": "demissiona",
+"i": "/de.mi.si.ˈo.na/",
+"p": "v",
+"e": "resign",
+"n": ""
+},
+{
+"f": "demoli",
+"i": "/de.ˈmo.li/",
+"p": "v",
+"e": "demolish, pull down",
+"n": ""
+},
+{
+"f": "dens",
+"i": "/dens/",
+"p": "adj",
+"e": "dense",
+"n": "densitate is the noun"
+},
+{
 "f": "densificatiun",
 "i": "/den.si.fi.ka.ˈti.un/",
 "p": "n",
 "e": "densification",
 "n": "one word carrying several senses at once"
+},
+{
+"f": "densitate",
+"i": "/den.si.ˈta.te/",
+"p": "n",
+"e": "density",
+"n": "densificatiun is the property of the language"
 },
 {
 "f": "dent",
@@ -2321,10 +4764,24 @@ const LEX = [
 "n": ""
 },
 {
+"f": "dependentia",
+"i": "/de.pen.den.ˈti.a/",
+"p": "n",
+"e": "dependence",
+"n": ""
+},
+{
 "f": "depos",
 "i": "/ˈde.pos/",
 "p": "prep",
 "e": "since",
+"n": ""
+},
+{
+"f": "depositu",
+"i": "/de.po.ˈsi.tu/",
+"p": "n",
+"e": "deposit",
 "n": ""
 },
 {
@@ -2335,10 +4792,94 @@ const LEX = [
 "n": ""
 },
 {
+"f": "deprimit",
+"i": "/de.ˈpri.mit/",
+"p": "adj",
+"e": "low, depressed",
+"n": ""
+},
+{
+"f": "deraila",
+"i": "/de.ra.ˈi.la/",
+"p": "v",
+"e": "derail",
+"n": ""
+},
+{
+"f": "derapa",
+"i": "/de.ˈra.pa/",
+"p": "v",
+"e": "skid",
+"n": ""
+},
+{
+"f": "deriva",
+"i": "/de.ˈri.va/",
+"p": "n",
+"e": "drift",
+"n": "of a boat off the lagun"
+},
+{
 "f": "derivatiun",
 "i": "/de.ri.va.ˈti.un/",
 "p": "n",
 "e": "derivation",
+"n": ""
+},
+{
+"f": "deroga",
+"i": "/de.ˈro.ga/",
+"p": "v",
+"e": "derogate",
+"n": ""
+},
+{
+"f": "desagu",
+"i": "/de.ˈsa.gu/",
+"p": "n",
+"e": "drain",
+"n": ""
+},
+{
+"f": "desapproba",
+"i": "/de.sa.ˈpro.ba/",
+"p": "v",
+"e": "disapprove",
+"n": ""
+},
+{
+"f": "descarga",
+"i": "/des.ˈkar.ga/",
+"p": "v",
+"e": "unload",
+"n": "carga is to load"
+},
+{
+"f": "descende",
+"i": "/des.ˈt͡ʃen.de/",
+"p": "v",
+"e": "descend, go down",
+"n": ""
+},
+{
+"f": "descendente",
+"i": "/des.t͡ʃen.ˈden.te/",
+"p": "n",
+"e": "descendant",
+"n": ""
+},
+{
+"f": "desconfide",
+"i": "/des.kon.ˈfi.de/",
+"p": "v",
+"e": "mistrust",
+"n": ""
+},
+{
+"f": "descontent",
+"i": "/des.ˈkon.tent/",
+"p": "adj",
+"e": "dissatisfied",
 "n": ""
 },
 {
@@ -2356,10 +4897,80 @@ const LEX = [
 "n": ""
 },
 {
+"f": "descuraja",
+"i": "/des.ku.ˈra.ʒa/",
+"p": "v",
+"e": "discourage",
+"n": ""
+},
+{
+"f": "desembarca",
+"i": "/de.sem.ˈbar.ka/",
+"p": "v",
+"e": "alight, disembark",
+"n": ""
+},
+{
+"f": "desert",
+"i": "/ˈde.sert/",
+"p": "n",
+"e": "pudding, dessert",
+"n": ""
+},
+{
+"f": "desesperantia",
+"i": "/de.ses.pe.ran.ˈti.a/",
+"p": "n",
+"e": "despair",
+"n": ""
+},
+{
+"f": "designa",
+"i": "/de.ˈsig.na/",
+"p": "v",
+"e": "designate",
+"n": ""
+},
+{
+"f": "desira",
+"i": "/de.ˈsi.ra/",
+"p": "v",
+"e": "desire, want",
+"n": "vole of a decision, desira of a wish"
+},
+{
 "f": "desjunu",
 "i": "/des.ˈʒu.nu/",
 "p": "n",
 "e": "breakfast",
+"n": ""
+},
+{
+"f": "desliga",
+"i": "/de.ˈsli.ga/",
+"p": "v",
+"e": "untie, release",
+"n": ""
+},
+{
+"f": "desminti",
+"i": "/des.ˈmin.ti/",
+"p": "v",
+"e": "contradict, deny a report",
+"n": ""
+},
+{
+"f": "desmonta",
+"i": "/des.ˈmon.ta/",
+"p": "v",
+"e": "dismantle, strip down",
+"n": ""
+},
+{
+"f": "desperat",
+"i": "/des.ˈpe.rat/",
+"p": "adj",
+"e": "desperate",
 "n": ""
 },
 {
@@ -2370,11 +4981,46 @@ const LEX = [
 "n": ""
 },
 {
+"f": "despretia",
+"i": "/des.pre.ˈti.a/",
+"p": "v",
+"e": "despise",
+"n": ""
+},
+{
+"f": "desque",
+"i": "/ˈdes.ke/",
+"p": "conj",
+"e": "since, from the time that",
+"n": ""
+},
+{
+"f": "destin",
+"i": "/ˈdes.tin/",
+"p": "n",
+"e": "fate",
+"n": ""
+},
+{
+"f": "destitue",
+"i": "/des.ti.ˈtu.e/",
+"p": "v",
+"e": "remove from office",
+"n": ""
+},
+{
 "f": "destra",
 "i": "/ˈdes.tra/",
 "p": "n",
 "e": "right hand side",
 "n": "also the adjective and the adverb; the entitlement is dret"
+},
+{
+"f": "destructiun",
+"i": "/des.truk.ˈti.un/",
+"p": "n",
+"e": "destruction",
+"n": ""
 },
 {
 "f": "desturba",
@@ -2384,10 +5030,87 @@ const LEX = [
 "n": ""
 },
 {
+"f": "desvolve",
+"i": "/des.ˈvol.ve/",
+"p": "v",
+"e": "unwrap, unroll",
+"n": ""
+},
+{
+"f": "detecta",
+"i": "/de.ˈtek.ta/",
+"p": "v",
+"e": "detect",
+"n": ""
+},
+{
+"f": "detege",
+"i": "/de.ˈte.d͡ʒe/",
+"p": "v",
+"e": "discover, uncover",
+"n": ""
+},
+{
+"f": "determinat",
+"i": "/de.ter.ˈmi.nat/",
+"p": "adj",
+"e": "determined",
+"n": ""
+},
+{
+"f": "detona",
+"i": "/de.ˈto.na/",
+"p": "v",
+"e": "go off, detonate",
+"n": ""
+},
+{
+"f": "detra",
+"i": "/ˈde.tra/",
+"p": "prep",
+"e": "behind",
+"n": "abaxa detra se linia zolt"
+},
+{
 "f": "deve",
 "i": "/ˈde.ve/",
 "p": "v",
 "e": "must",
+"n": ""
+},
+{
+"f": "devia",
+"i": "/de.ˈvi.a/",
+"p": "v",
+"e": "turn off, divert",
+"n": ""
+},
+{
+"f": "diagnostic",
+"i": "/di.ag.ˈnos.tik/",
+"p": "n",
+"e": "diagnosis",
+"n": ""
+},
+{
+"f": "dialectu",
+"i": "/di.a.ˈlek.tu/",
+"p": "n",
+"e": "dialect",
+"n": "the twenty sub-regions differ audibly"
+},
+{
+"f": "dialoga",
+"i": "/di.a.ˈlo.ga/",
+"p": "v",
+"e": "talk with, hold a dialogue",
+"n": ""
+},
+{
+"f": "diametru",
+"i": "/di.a.ˈme.tru/",
+"p": "n",
+"e": "diameter",
 "n": ""
 },
 {
@@ -2412,6 +5135,20 @@ const LEX = [
 "n": ""
 },
 {
+"f": "die-laborabile",
+"i": "/di.e.la.bo.ra.ˈbi.le/",
+"p": "n",
+"e": "weekday",
+"n": ""
+},
+{
+"f": "dieta",
+"i": "/di.ˈe.ta/",
+"p": "n",
+"e": "diet",
+"n": ""
+},
+{
 "f": "different",
 "i": "/di.ˈfe.rent/",
 "p": "adj",
@@ -2433,10 +5170,80 @@ const LEX = [
 "n": ""
 },
 {
+"f": "dificilment",
+"i": "/di.fi.ˈt͡ʃil.ment/",
+"p": "adv",
+"e": "with difficulty",
+"n": ""
+},
+{
+"f": "dificultate",
+"i": "/di.fi.kul.ˈta.te/",
+"p": "n",
+"e": "difficulty",
+"n": ""
+},
+{
+"f": "difunde",
+"i": "/di.ˈfun.de/",
+"p": "v",
+"e": "circulate, broadcast",
+"n": ""
+},
+{
 "f": "diget",
 "i": "/ˈdi.d͡ʒet/",
 "p": "n",
 "e": "finger, toe",
+"n": ""
+},
+{
+"f": "digne",
+"i": "/ˈdig.ne/",
+"p": "adj",
+"e": "worthy",
+"n": ""
+},
+{
+"f": "dignitate",
+"i": "/dig.ni.ˈta.te/",
+"p": "n",
+"e": "dignity",
+"n": "of a person; onor of what is owed to one"
+},
+{
+"f": "diligentia",
+"i": "/di.li.d͡ʒen.ˈti.a/",
+"p": "n",
+"e": "diligence",
+"n": ""
+},
+{
+"f": "dioxi",
+"i": "/di.ˈo.ʃi/",
+"p": "n",
+"e": "dioxide",
+"n": "du dioxi carbon, two carbon dioxide"
+},
+{
+"f": "diploma",
+"i": "/di.ˈplo.ma/",
+"p": "n",
+"e": "diploma",
+"n": ""
+},
+{
+"f": "direct",
+"i": "/ˈdi.rekt/",
+"p": "adj",
+"e": "direct",
+"n": ""
+},
+{
+"f": "directament",
+"i": "/di.rek.ˈta.ment/",
+"p": "adv",
+"e": "directly",
 "n": ""
 },
 {
@@ -2454,6 +5261,48 @@ const LEX = [
 "n": "the Republic between 1948 and 1989"
 },
 {
+"f": "disciplina",
+"i": "/dis.t͡ʃi.ˈpli.na/",
+"p": "v",
+"e": "discipline",
+"n": ""
+},
+{
+"f": "discute",
+"i": "/dis.ˈku.te/",
+"p": "v",
+"e": "discuss",
+"n": ""
+},
+{
+"f": "disensu",
+"i": "/di.ˈsen.su/",
+"p": "n",
+"e": "dissent",
+"n": "printed by name in the decisions register"
+},
+{
+"f": "disolve",
+"i": "/di.ˈsol.ve/",
+"p": "v",
+"e": "dissolve a body",
+"n": ""
+},
+{
+"f": "dispare",
+"i": "/dis.ˈpa.re/",
+"p": "v",
+"e": "disappear",
+"n": ""
+},
+{
+"f": "dispersa",
+"i": "/dis.ˈper.sa/",
+"p": "v",
+"e": "scatter, spill",
+"n": ""
+},
+{
 "f": "disputa",
 "i": "/dis.ˈpu.ta/",
 "p": "n",
@@ -2461,10 +5310,45 @@ const LEX = [
 "n": "also the verb, to dispute"
 },
 {
+"f": "distantia",
+"i": "/dis.tan.ˈti.a/",
+"p": "n",
+"e": "distance",
+"n": "distantia entre statiunes, distance between stops"
+},
+{
 "f": "distinct",
 "i": "/ˈdis.tinkt/",
 "p": "adj",
 "e": "distinct",
+"n": ""
+},
+{
+"f": "distinctiun",
+"i": "/dis.tink.ˈti.un/",
+"p": "n",
+"e": "distinction",
+"n": ""
+},
+{
+"f": "distinge",
+"i": "/dis.ˈtin.d͡ʒe/",
+"p": "v",
+"e": "distinguish, tell apart",
+"n": ""
+},
+{
+"f": "distrae",
+"i": "/dis.ˈtra.e/",
+"p": "v",
+"e": "distract",
+"n": ""
+},
+{
+"f": "distribue",
+"i": "/dis.tri.ˈbu.e/",
+"p": "v",
+"e": "distribute",
 "n": ""
 },
 {
@@ -2482,10 +5366,45 @@ const LEX = [
 "n": ""
 },
 {
+"f": "diverse",
+"i": "/di.ˈver.se/",
+"p": "det",
+"e": "several, various",
+"n": ""
+},
+{
+"f": "diversitate",
+"i": "/di.ver.si.ˈta.te/",
+"p": "n",
+"e": "diversity",
+"n": ""
+},
+{
 "f": "divis",
 "i": "/ˈdi.vis/",
 "p": "adj",
 "e": "divided",
+"n": ""
+},
+{
+"f": "divisiun",
+"i": "/di.vi.ˈsi.un/",
+"p": "n",
+"e": "division",
+"n": ""
+},
+{
+"f": "divorcia",
+"i": "/di.vor.ˈt͡ʃi.a/",
+"p": "v",
+"e": "divorce",
+"n": ""
+},
+{
+"f": "documenta",
+"i": "/do.ku.ˈmen.ta/",
+"p": "v",
+"e": "document",
 "n": ""
 },
 {
@@ -2496,11 +5415,25 @@ const LEX = [
 "n": ""
 },
 {
+"f": "dogana",
+"i": "/do.ˈga.na/",
+"p": "n",
+"e": "customs",
+"n": "absent on the frontiers within the Bloc"
+},
+{
 "f": "dolor",
 "i": "/ˈdo.lor/",
 "p": "n",
 "e": "pain",
 "n": ""
+},
+{
+"f": "dolora",
+"i": "/do.ˈlo.ra/",
+"p": "v",
+"e": "ache, hurt",
+"n": "of a part of the body; dolor is the noun"
 },
 {
 "f": "dom",
@@ -2531,6 +5464,13 @@ const LEX = [
 "n": "demonym of Dominica"
 },
 {
+"f": "dorat",
+"i": "/ˈdo.rat/",
+"p": "adj",
+"e": "gilded, gold-coloured",
+"n": ""
+},
+{
 "f": "dormi",
 "i": "/ˈdor.mi/",
 "p": "v",
@@ -2542,6 +5482,41 @@ const LEX = [
 "i": "/ˈdor.su/",
 "p": "n",
 "e": "spine, back",
+"n": ""
+},
+{
+"f": "dosis",
+"i": "/ˈdo.sis/",
+"p": "n",
+"e": "dose",
+"n": ""
+},
+{
+"f": "dossier",
+"i": "/do.ˈsi.er/",
+"p": "n",
+"e": "folder of papers",
+"n": ""
+},
+{
+"f": "dota",
+"i": "/ˈdo.ta/",
+"p": "v",
+"e": "endow",
+"n": ""
+},
+{
+"f": "dozena",
+"i": "/do.ˈze.na/",
+"p": "n",
+"e": "dozen",
+"n": ""
+},
+{
+"f": "dragaje",
+"i": "/dra.ˈga.ʒe/",
+"p": "n",
+"e": "dredging",
 "n": ""
 },
 {
@@ -2566,6 +5541,13 @@ const LEX = [
 "n": ""
 },
 {
+"f": "dubiu",
+"i": "/du.ˈbi.u/",
+"p": "n",
+"e": "doubt",
+"n": "dubita is the verb"
+},
+{
 "f": "duce",
 "i": "/ˈdu.t͡ʃe/",
 "p": "v",
@@ -2585,6 +5567,13 @@ const LEX = [
 "p": "n",
 "e": "building",
 "n": ""
+},
+{
+"f": "dun",
+"i": "/dun/",
+"p": "n",
+"e": "dune",
+"n": "of the Ravelluri seaboard"
 },
 {
 "f": "dunque",
@@ -2615,10 +5604,24 @@ const LEX = [
 "n": ""
 },
 {
+"f": "durabilitate",
+"i": "/du.ra.bi.li.ˈta.te/",
+"p": "n",
+"e": "durability",
+"n": ""
+},
+{
 "f": "durante",
 "i": "/du.ˈran.te/",
 "p": "prep",
 "e": "during",
+"n": ""
+},
+{
+"f": "duratiun",
+"i": "/du.ra.ˈti.un/",
+"p": "n",
+"e": "duration",
 "n": ""
 },
 {
@@ -2650,6 +5653,13 @@ const LEX = [
 "n": ""
 },
 {
+"f": "economisa",
+"i": "/e.ko.no.ˈmi.sa/",
+"p": "v",
+"e": "save, husband",
+"n": ""
+},
+{
 "f": "ecran",
 "i": "/ˈe.kran/",
 "p": "n",
@@ -2664,11 +5674,46 @@ const LEX = [
 "n": "demonym of Ecuador"
 },
 {
+"f": "edita",
+"i": "/e.ˈdi.ta/",
+"p": "v",
+"e": "edit",
+"n": ""
+},
+{
+"f": "educa",
+"i": "/e.ˈdu.ka/",
+"p": "v",
+"e": "bring up, educate",
+"n": ""
+},
+{
+"f": "educatiun",
+"i": "/e.du.ka.ˈti.un/",
+"p": "n",
+"e": "education",
+"n": ""
+},
+{
 "f": "efect",
 "i": "/ˈe.fekt/",
 "p": "n",
 "e": "effect",
 "n": ""
+},
+{
+"f": "efectu",
+"i": "/e.ˈfek.tu/",
+"p": "n",
+"e": "effect",
+"n": ""
+},
+{
+"f": "eficacitate",
+"i": "/e.fi.ka.t͡ʃi.ˈta.te/",
+"p": "n",
+"e": "effectiveness",
+"n": "of a measure; utilitate of a thing"
 },
 {
 "f": "eftin",
@@ -2678,6 +5723,13 @@ const LEX = [
 "n": ""
 },
 {
+"f": "egalite",
+"i": "/e.ga.ˈli.te/",
+"p": "n",
+"e": "equality",
+"n": "egalite de tratamentu, equality of treatment"
+},
+{
 "f": "egiptian",
 "i": "/e.d͡ʒip.ˈti.an/",
 "p": "adj",
@@ -2685,11 +5737,25 @@ const LEX = [
 "n": "demonym of Egipt"
 },
 {
+"f": "egoiste",
+"i": "/e.go.ˈis.te/",
+"p": "adj",
+"e": "selfish",
+"n": ""
+},
+{
 "f": "el",
 "i": "/el/",
 "p": "pron",
 "e": "he, she, it",
 "n": "no gender is marked"
+},
+{
+"f": "electrolis",
+"i": "/e.lek.ˈtro.lis/",
+"p": "n",
+"e": "electrolysis",
+"n": "de se voda salat, from the salt water"
 },
 {
 "f": "elev",
@@ -2720,11 +5786,32 @@ const LEX = [
 "n": "demonym of Elvetia"
 },
 {
+"f": "embarca",
+"i": "/em.ˈbar.ka/",
+"p": "v",
+"e": "board",
+"n": "of a vessel; abaxa is used of a train"
+},
+{
+"f": "emergentia",
+"i": "/e.mer.d͡ʒen.ˈti.a/",
+"p": "n",
+"e": "emergency",
+"n": "urgentia of a case, emergentia of a situation"
+},
+{
 "f": "emiratan",
 "i": "/e.mi.ˈra.tan/",
 "p": "adj",
 "e": "Emirati",
 "n": "demonym of Emirat Arab"
+},
+{
+"f": "emotiun",
+"i": "/e.mo.ˈti.un/",
+"p": "n",
+"e": "emotion",
+"n": ""
 },
 {
 "f": "empleu",
@@ -2748,6 +5835,13 @@ const LEX = [
 "n": ""
 },
 {
+"f": "enorme",
+"i": "/e.ˈnor.me/",
+"p": "adj",
+"e": "huge",
+"n": ""
+},
+{
 "f": "enquesta",
 "i": "/en.ˈkes.ta/",
 "p": "n",
@@ -2755,10 +5849,24 @@ const LEX = [
 "n": ""
 },
 {
+"f": "enquesti",
+"i": "/en.ˈkes.ti/",
+"p": "v",
+"e": "survey, poll",
+"n": "enquesta is the survey itself"
+},
+{
 "f": "entra",
 "i": "/ˈen.tra/",
 "p": "v",
 "e": "enter",
+"n": ""
+},
+{
+"f": "entusiasmu",
+"i": "/en.tu.si.ˈas.mu/",
+"p": "n",
+"e": "enthusiasm",
 "n": ""
 },
 {
@@ -2776,6 +5884,13 @@ const LEX = [
 "n": ""
 },
 {
+"f": "equitate",
+"i": "/e.ki.ˈta.te/",
+"p": "n",
+"e": "fairness",
+"n": "of a share; egalitate of a rule"
+},
+{
 "f": "eritrean",
 "i": "/e.ri.ˈtre.an/",
 "p": "adj",
@@ -2790,6 +5905,13 @@ const LEX = [
 "n": ""
 },
 {
+"f": "erosiun",
+"i": "/e.ro.ˈsi.un/",
+"p": "n",
+"e": "erosion",
+"n": ""
+},
+{
 "f": "es",
 "i": "/es/",
 "p": "v",
@@ -2801,6 +5923,20 @@ const LEX = [
 "i": "/e.san.ˈti.on/",
 "p": "n",
 "e": "sample",
+"n": ""
+},
+{
+"f": "escala",
+"i": "/es.ˈka.la/",
+"p": "n",
+"e": "stopover",
+"n": ""
+},
+{
+"f": "escorta",
+"i": "/es.ˈkor.ta/",
+"p": "v",
+"e": "escort, accompany",
 "n": ""
 },
 {
@@ -2825,6 +5961,20 @@ const LEX = [
 "n": ""
 },
 {
+"f": "esti",
+"i": "/ˈes.ti/",
+"p": "pron",
+"e": "this one",
+"n": "esto is the determiner"
+},
+{
+"f": "estima",
+"i": "/es.ˈti.ma/",
+"p": "v",
+"e": "estimate",
+"n": "estimat is the adjective"
+},
+{
 "f": "estimat",
 "i": "/es.ˈti.mat/",
 "p": "adj",
@@ -2844,6 +5994,13 @@ const LEX = [
 "p": "adj",
 "e": "Estonian",
 "n": "demonym of Estonia"
+},
+{
+"f": "estuariu",
+"i": "/es.tu.a.ˈri.u/",
+"p": "n",
+"e": "estuary",
+"n": "where the lagun meets the mar"
 },
 {
 "f": "esvatinan",
@@ -2867,11 +6024,32 @@ const LEX = [
 "n": ""
 },
 {
+"f": "etanol",
+"i": "/e.ˈta.nol/",
+"p": "n",
+"e": "ethanol",
+"n": ""
+},
+{
+"f": "etapa",
+"i": "/e.ˈta.pa/",
+"p": "n",
+"e": "stage",
+"n": ""
+},
+{
 "f": "etate",
 "i": "/e.ˈta.te/",
 "p": "n",
 "e": "age",
 "n": ""
+},
+{
+"f": "eti",
+"i": "/ˈe.ti/",
+"p": "pron",
+"e": "that one",
+"n": "et is the determiner"
 },
 {
 "f": "etiopian",
@@ -2895,10 +6073,59 @@ const LEX = [
 "n": ""
 },
 {
+"f": "evalua",
+"i": "/e.va.ˈlu.a/",
+"p": "v",
+"e": "evaluate",
+"n": ""
+},
+{
+"f": "evapora",
+"i": "/e.va.ˈpo.ra/",
+"p": "v",
+"e": "evaporate",
+"n": ""
+},
+{
+"f": "evident",
+"i": "/e.ˈvi.dent/",
+"p": "adj",
+"e": "evident",
+"n": "evidentia is the noun"
+},
+{
+"f": "evidentament",
+"i": "/e.vi.den.ˈta.ment/",
+"p": "adv",
+"e": "evidently",
+"n": ""
+},
+{
 "f": "evidentia",
 "i": "/e.vi.den.ˈti.a/",
 "p": "n",
 "e": "evidence",
+"n": ""
+},
+{
+"f": "evita",
+"i": "/e.ˈvi.ta/",
+"p": "v",
+"e": "avoid",
+"n": "evita se linia zolt, keep off the yellow line"
+},
+{
+"f": "exact",
+"i": "/ˈe.ʃakt/",
+"p": "adj",
+"e": "exact",
+"n": ""
+},
+{
+"f": "exactament",
+"i": "/e.ʃak.ˈta.ment/",
+"p": "adv",
+"e": "exactly",
 "n": ""
 },
 {
@@ -2909,6 +6136,55 @@ const LEX = [
 "n": ""
 },
 {
+"f": "examina",
+"i": "/e.ʃa.ˈmi.na/",
+"p": "v",
+"e": "examine",
+"n": "examen is the examination"
+},
+{
+"f": "excedente",
+"i": "/eʃ.t͡ʃe.ˈden.te/",
+"p": "n",
+"e": "surplus",
+"n": ""
+},
+{
+"f": "excellent",
+"i": "/eʃ.ˈt͡ʃe.lent/",
+"p": "adj",
+"e": "excellent",
+"n": ""
+},
+{
+"f": "exceptiun",
+"i": "/eʃ.t͡ʃep.ˈti.un/",
+"p": "n",
+"e": "exception",
+"n": ""
+},
+{
+"f": "excepto",
+"i": "/eʃ.ˈt͡ʃep.to/",
+"p": "conj",
+"e": "except that",
+"n": ""
+},
+{
+"f": "exclama",
+"i": "/eʃ.ˈkla.ma/",
+"p": "v",
+"e": "exclaim",
+"n": ""
+},
+{
+"f": "exclude",
+"i": "/eʃ.ˈklu.de/",
+"p": "v",
+"e": "exclude",
+"n": ""
+},
+{
 "f": "executiv",
 "i": "/e.ʃe.ˈku.tiv/",
 "p": "adj",
@@ -2916,11 +6192,32 @@ const LEX = [
 "n": ""
 },
 {
+"f": "exemplifica",
+"i": "/e.ʃem.pli.ˈfi.ka/",
+"p": "v",
+"e": "give an example of",
+"n": "exemplu is the example"
+},
+{
 "f": "exemplu",
 "i": "/e.ˈʃem.plu/",
 "p": "n",
 "e": "example",
 "n": ""
+},
+{
+"f": "exercita",
+"i": "/e.ʃer.ˈt͡ʃi.ta/",
+"p": "v",
+"e": "exercise a function",
+"n": ""
+},
+{
+"f": "exercitiu",
+"i": "/e.ʃer.t͡ʃi.ˈti.u/",
+"p": "n",
+"e": "physical exercise",
+"n": "exercita is the verb"
 },
 {
 "f": "exi",
@@ -2937,6 +6234,27 @@ const LEX = [
 "n": ""
 },
 {
+"f": "existentia",
+"i": "/e.ʃis.ten.ˈti.a/",
+"p": "n",
+"e": "existence",
+"n": ""
+},
+{
+"f": "expedi",
+"i": "/eʃ.ˈpe.di/",
+"p": "v",
+"e": "dispatch",
+"n": ""
+},
+{
+"f": "experientia",
+"i": "/eʃ.pe.ri.en.ˈti.a/",
+"p": "n",
+"e": "experience",
+"n": "of a person; proba of a trial run"
+},
+{
 "f": "explica",
 "i": "/eʃ.ˈpli.ka/",
 "p": "v",
@@ -2944,10 +6262,45 @@ const LEX = [
 "n": ""
 },
 {
+"f": "explicatiun",
+"i": "/eʃ.pli.ka.ˈti.un/",
+"p": "n",
+"e": "explanation",
+"n": ""
+},
+{
+"f": "expone",
+"i": "/eʃ.ˈpo.ne/",
+"p": "v",
+"e": "set out, expound",
+"n": ""
+},
+{
+"f": "exporta",
+"i": "/eʃ.ˈpor.ta/",
+"p": "v",
+"e": "export",
+"n": ""
+},
+{
+"f": "expresiun",
+"i": "/eʃ.pre.ˈsi.un/",
+"p": "n",
+"e": "expression",
+"n": ""
+},
+{
 "f": "extern",
 "i": "/ˈeʃ.tern/",
 "p": "adj",
 "e": "external",
+"n": ""
+},
+{
+"f": "extra",
+"i": "/ˈeʃ.tra/",
+"p": "prep",
+"e": "outside",
 "n": ""
 },
 {
@@ -2979,6 +6332,20 @@ const LEX = [
 "n": ""
 },
 {
+"f": "facilitate",
+"i": "/fa.t͡ʃi.li.ˈta.te/",
+"p": "n",
+"e": "ease",
+"n": ""
+},
+{
+"f": "facilment",
+"i": "/fa.ˈt͡ʃil.ment/",
+"p": "adv",
+"e": "easily",
+"n": ""
+},
+{
 "f": "fact",
 "i": "/fakt/",
 "p": "n",
@@ -2993,10 +6360,45 @@ const LEX = [
 "n": ""
 },
 {
+"f": "facturisa",
+"i": "/fak.tu.ˈri.sa/",
+"p": "v",
+"e": "invoice, make out a bill",
+"n": "factura is the invoice"
+},
+{
+"f": "facultate",
+"i": "/fa.kul.ˈta.te/",
+"p": "n",
+"e": "faculty",
+"n": ""
+},
+{
+"f": "falcata",
+"i": "/fal.ˈka.ta/",
+"p": "n",
+"e": "stride",
+"n": ""
+},
+{
+"f": "falli",
+"i": "/ˈfa.li/",
+"p": "v",
+"e": "fail, go under",
+"n": ""
+},
+{
 "f": "fals",
 "i": "/fals/",
 "p": "adj",
 "e": "false",
+"n": ""
+},
+{
+"f": "falsment",
+"i": "/ˈfals.ment/",
+"p": "adv",
+"e": "falsely",
 "n": ""
 },
 {
@@ -3014,6 +6416,13 @@ const LEX = [
 "n": "adjective familiar"
 },
 {
+"f": "far",
+"i": "/far/",
+"p": "n",
+"e": "lighthouse",
+"n": ""
+},
+{
 "f": "farina",
 "i": "/fa.ˈri.na/",
 "p": "n",
@@ -3025,6 +6434,20 @@ const LEX = [
 "i": "/far.ˈma.t͡ʃa/",
 "p": "n",
 "e": "pharmacy",
+"n": ""
+},
+{
+"f": "farmacista",
+"i": "/far.ma.ˈt͡ʃis.ta/",
+"p": "n",
+"e": "pharmacist",
+"n": "farmacia is the shop"
+},
+{
+"f": "fase",
+"i": "/ˈfa.se/",
+"p": "n",
+"e": "phase",
 "n": ""
 },
 {
@@ -3070,11 +6493,32 @@ const LEX = [
 "n": ""
 },
 {
+"f": "federatiun",
+"i": "/fe.de.ra.ˈti.un/",
+"p": "n",
+"e": "federation",
+"n": ""
+},
+{
 "f": "felice",
 "i": "/fe.ˈli.t͡ʃe/",
 "p": "adj",
 "e": "happy",
 "n": ""
+},
+{
+"f": "felicita",
+"i": "/fe.li.ˈt͡ʃi.ta/",
+"p": "v",
+"e": "congratulate",
+"n": "felicitatiun is the noun"
+},
+{
+"f": "felicitate",
+"i": "/fe.li.t͡ʃi.ˈta.te/",
+"p": "n",
+"e": "happiness",
+"n": "felicita is to congratulate"
 },
 {
 "f": "femin",
@@ -3089,6 +6533,41 @@ const LEX = [
 "p": "n",
 "e": "window, formal",
 "n": "everyday okna; fenestra survives in building law"
+},
+{
+"f": "fere",
+"i": "/ˈfe.re/",
+"p": "v",
+"e": "carry, bear",
+"n": ""
+},
+{
+"f": "fermatura",
+"i": "/fer.ma.ˈtu.ra/",
+"p": "n",
+"e": "zip",
+"n": ""
+},
+{
+"f": "feta",
+"i": "/ˈfe.ta/",
+"p": "v",
+"e": "stink",
+"n": ""
+},
+{
+"f": "fiabilitate",
+"i": "/fi.a.bi.li.ˈta.te/",
+"p": "n",
+"e": "reliability",
+"n": "of stock and of a service"
+},
+{
+"f": "figatu",
+"i": "/fi.ˈga.tu/",
+"p": "n",
+"e": "liver",
+"n": ""
 },
 {
 "f": "fijian",
@@ -3140,10 +6619,24 @@ const LEX = [
 "n": ""
 },
 {
+"f": "filtra",
+"i": "/ˈfil.tra/",
+"p": "v",
+"e": "filter, strain",
+"n": ""
+},
+{
 "f": "fin",
 "i": "/fin/",
 "p": "n",
 "e": "end",
+"n": ""
+},
+{
+"f": "fin-de-septimana",
+"i": "/fin.de.sep.ti.ˈma.na/",
+"p": "n",
+"e": "weekend",
 "n": ""
 },
 {
@@ -3158,6 +6651,13 @@ const LEX = [
 "i": "/fi.ˈnal.ment/",
 "p": "adv",
 "e": "at last, finally",
+"n": ""
+},
+{
+"f": "finansa",
+"i": "/fi.ˈnan.sa/",
+"p": "v",
+"e": "finance",
 "n": ""
 },
 {
@@ -3182,10 +6682,24 @@ const LEX = [
 "n": "demonym of Finland"
 },
 {
+"f": "fiscalisa",
+"i": "/fis.ka.ˈli.sa/",
+"p": "v",
+"e": "oversee the accounts of",
+"n": ""
+},
+{
 "f": "fisica",
 "i": "/fi.ˈsi.ka/",
 "p": "n",
 "e": "physics",
+"n": ""
+},
+{
+"f": "fisura",
+"i": "/fi.ˈsu.ra/",
+"p": "v",
+"e": "crack open, fissure",
 "n": ""
 },
 {
@@ -3196,11 +6710,39 @@ const LEX = [
 "n": ""
 },
 {
+"f": "flexibile",
+"i": "/fle.ʃi.ˈbi.le/",
+"p": "adj",
+"e": "flexible",
+"n": ""
+},
+{
 "f": "flor",
 "i": "/flor/",
 "p": "n",
 "e": "flower",
 "n": "adjective floral"
+},
+{
+"f": "flori",
+"i": "/ˈflo.ri/",
+"p": "v",
+"e": "bloom, flower",
+"n": "flor is the flower"
+},
+{
+"f": "flotatiun",
+"i": "/flo.ta.ˈti.un/",
+"p": "n",
+"e": "floating",
+"n": ""
+},
+{
+"f": "flue",
+"i": "/ˈflu.e/",
+"p": "v",
+"e": "flow, run",
+"n": ""
 },
 {
 "f": "fluidian",
@@ -3217,6 +6759,13 @@ const LEX = [
 "n": "adjective focar"
 },
 {
+"f": "fode",
+"i": "/ˈfo.de/",
+"p": "v",
+"e": "dig",
+"n": "of ground; demoli of a structure"
+},
+{
 "f": "folia",
 "i": "/fo.ˈli.a/",
 "p": "n",
@@ -3224,10 +6773,52 @@ const LEX = [
 "n": ""
 },
 {
+"f": "fonda",
+"i": "/ˈfon.da/",
+"p": "v",
+"e": "found, establish",
+"n": "fondatiun is the noun"
+},
+{
+"f": "fonde",
+"i": "/ˈfon.de/",
+"p": "v",
+"e": "melt",
+"n": ""
+},
+{
+"f": "fondu",
+"i": "/ˈfon.du/",
+"p": "n",
+"e": "fund",
+"n": ""
+},
+{
+"f": "foras",
+"i": "/ˈfo.ras/",
+"p": "adv",
+"e": "outside",
+"n": ""
+},
+{
+"f": "forja",
+"i": "/ˈfor.ʒa/",
+"p": "v",
+"e": "forge",
+"n": ""
+},
+{
 "f": "forma",
 "i": "/ˈfor.ma/",
 "p": "n",
 "e": "form, shape",
+"n": ""
+},
+{
+"f": "formatiun",
+"i": "/for.ma.ˈti.un/",
+"p": "n",
+"e": "training",
 "n": ""
 },
 {
@@ -3259,6 +6850,20 @@ const LEX = [
 "n": ""
 },
 {
+"f": "fortament",
+"i": "/for.ˈta.ment/",
+"p": "adv",
+"e": "strongly",
+"n": ""
+},
+{
+"f": "fortuna",
+"i": "/for.ˈtu.na/",
+"p": "n",
+"e": "luck",
+"n": ""
+},
+{
 "f": "fosil",
 "i": "/ˈfo.sil/",
 "p": "adj",
@@ -3270,6 +6875,27 @@ const LEX = [
 "i": "/ˈfo.to/",
 "p": "n",
 "e": "photograph",
+"n": ""
+},
+{
+"f": "fractiun",
+"i": "/frak.ˈti.un/",
+"p": "n",
+"e": "fraction",
+"n": ""
+},
+{
+"f": "fractura",
+"i": "/frak.ˈtu.ra/",
+"p": "n",
+"e": "fracture",
+"n": "os is the bone"
+},
+{
+"f": "fragilitate",
+"i": "/fra.d͡ʒi.li.ˈta.te/",
+"p": "n",
+"e": "fragility",
 "n": ""
 },
 {
@@ -3294,6 +6920,13 @@ const LEX = [
 "n": "adjective fratern"
 },
 {
+"f": "frecventa",
+"i": "/frek.ˈven.ta/",
+"p": "v",
+"e": "attend regularly",
+"n": ""
+},
+{
 "f": "frena",
 "i": "/ˈfre.na/",
 "p": "v",
@@ -3301,10 +6934,38 @@ const LEX = [
 "n": ""
 },
 {
+"f": "frequent",
+"i": "/ˈfre.kent/",
+"p": "adj",
+"e": "frequent",
+"n": "frequentia is the noun"
+},
+{
+"f": "frequentament",
+"i": "/fre.ken.ˈta.ment/",
+"p": "adv",
+"e": "frequently",
+"n": ""
+},
+{
+"f": "frequentia",
+"i": "/fre.ken.ˈti.a/",
+"p": "n",
+"e": "frequency",
+"n": "of a service and of a sound"
+},
+{
 "f": "fresc",
 "i": "/fresk/",
 "p": "adj",
 "e": "fresh",
+"n": ""
+},
+{
+"f": "fricta",
+"i": "/ˈfrik.ta/",
+"p": "v",
+"e": "rub",
 "n": ""
 },
 {
@@ -3322,6 +6983,13 @@ const LEX = [
 "n": ""
 },
 {
+"f": "fronte",
+"i": "/ˈfron.te/",
+"p": "n",
+"e": "forehead",
+"n": "under se capu"
+},
+{
 "f": "frontiera",
 "i": "/fron.ti.ˈe.ra/",
 "p": "n",
@@ -3333,6 +7001,34 @@ const LEX = [
 "i": "/frukt/",
 "p": "n",
 "e": "fruit",
+"n": ""
+},
+{
+"f": "frustra",
+"i": "/ˈfrus.tra/",
+"p": "adv",
+"e": "in vain",
+"n": ""
+},
+{
+"f": "frustrat",
+"i": "/ˈfrus.trat/",
+"p": "adj",
+"e": "frustrated",
+"n": ""
+},
+{
+"f": "frustratiun",
+"i": "/frus.tra.ˈti.un/",
+"p": "n",
+"e": "frustration",
+"n": ""
+},
+{
+"f": "fuge",
+"i": "/ˈfu.d͡ʒe/",
+"p": "v",
+"e": "flee, run off",
 "n": ""
 },
 {
@@ -3371,10 +7067,31 @@ const LEX = [
 "n": ""
 },
 {
+"f": "furios",
+"i": "/fu.ˈri.os/",
+"p": "adj",
+"e": "furious",
+"n": "irat is the milder word"
+},
+{
 "f": "furnitor",
 "i": "/fur.ˈni.tor/",
 "p": "n",
 "e": "supplier",
+"n": ""
+},
+{
+"f": "fusibile",
+"i": "/fu.si.ˈbi.le/",
+"p": "n",
+"e": "fuse",
+"n": ""
+},
+{
+"f": "fusiona",
+"i": "/fu.si.ˈo.na/",
+"p": "v",
+"e": "merge",
 "n": ""
 },
 {
@@ -3399,11 +7116,11 @@ const LEX = [
 "n": "demonym of Gabon"
 },
 {
-"f": "galben",
-"i": "/ˈgal.ben/",
+"f": "galbe",
+"i": "/ˈgal.be/",
 "p": "adj",
 "e": "yellow",
-"n": ""
+"n": "zolt is the everyday form in the east and on the platforms"
 },
 {
 "f": "gallina",
@@ -3434,10 +7151,38 @@ const LEX = [
 "n": "demonym of Gana"
 },
 {
+"f": "garage",
+"i": "/ga.ˈra.d͡ʒe/",
+"p": "n",
+"e": "garage",
+"n": ""
+},
+{
+"f": "garanti",
+"i": "/ga.ˈran.ti/",
+"p": "v",
+"e": "guarantee",
+"n": "garanti se qualitate, guarantee the quality"
+},
+{
+"f": "gargata",
+"i": "/gar.ˈga.ta/",
+"p": "n",
+"e": "throat",
+"n": ""
+},
+{
 "f": "gat",
 "i": "/gat/",
 "p": "n",
 "e": "cat",
+"n": ""
+},
+{
+"f": "gaudiu",
+"i": "/ga.u.ˈdi.u/",
+"p": "n",
+"e": "joy",
 "n": ""
 },
 {
@@ -3455,10 +7200,59 @@ const LEX = [
 "n": ""
 },
 {
+"f": "geli",
+"i": "/ˈd͡ʒe.li/",
+"p": "v",
+"e": "freeze",
+"n": "gel is the cold"
+},
+{
+"f": "gemelle",
+"i": "/d͡ʒe.ˈme.le/",
+"p": "n",
+"e": "twin",
+"n": ""
+},
+{
+"f": "gena",
+"i": "/ˈd͡ʒe.na/",
+"p": "n",
+"e": "cheek",
+"n": ""
+},
+{
 "f": "general",
 "i": "/d͡ʒe.ˈne.ral/",
 "p": "adj",
 "e": "general",
+"n": ""
+},
+{
+"f": "generalisa",
+"i": "/d͡ʒe.ne.ra.ˈli.sa/",
+"p": "v",
+"e": "generalise",
+"n": ""
+},
+{
+"f": "generalment",
+"i": "/d͡ʒe.ne.ˈral.ment/",
+"p": "adv",
+"e": "generally",
+"n": ""
+},
+{
+"f": "generator",
+"i": "/d͡ʒe.ne.ˈra.tor/",
+"p": "n",
+"e": "generator",
+"n": ""
+},
+{
+"f": "generos",
+"i": "/d͡ʒe.ˈne.ros/",
+"p": "adj",
+"e": "generous",
 "n": ""
 },
 {
@@ -3490,6 +7284,20 @@ const LEX = [
 "n": ""
 },
 {
+"f": "germina",
+"i": "/d͡ʒer.ˈmi.na/",
+"p": "v",
+"e": "sprout",
+"n": ""
+},
+{
+"f": "gira",
+"i": "/ˈd͡ʒi.ra/",
+"p": "v",
+"e": "turn, rotate",
+"n": ""
+},
+{
 "f": "glacie",
 "i": "/ˈgla.t͡ʃe/",
 "p": "n",
@@ -3504,10 +7312,38 @@ const LEX = [
 "n": "also the verb, to gloss"
 },
 {
+"f": "glossariu",
+"i": "/glo.sa.ˈri.u/",
+"p": "n",
+"e": "glossary",
+"n": ""
+},
+{
+"f": "gola",
+"i": "/ˈgo.la/",
+"p": "n",
+"e": "gorge",
+"n": ""
+},
+{
+"f": "golfu",
+"i": "/ˈgol.fu/",
+"p": "n",
+"e": "gulf",
+"n": ""
+},
+{
 "f": "grad",
 "i": "/grad/",
 "p": "n",
 "e": "step, degree",
+"n": ""
+},
+{
+"f": "gradatim",
+"i": "/gra.ˈda.tim/",
+"p": "adv",
+"e": "little by little",
 "n": ""
 },
 {
@@ -3525,10 +7361,31 @@ const LEX = [
 "n": ""
 },
 {
+"f": "granariu",
+"i": "/gra.na.ˈri.u/",
+"p": "n",
+"e": "barn",
+"n": ""
+},
+{
 "f": "grande",
 "i": "/ˈgran.de/",
 "p": "adj",
 "e": "large",
+"n": ""
+},
+{
+"f": "granul",
+"i": "/ˈgra.nul/",
+"p": "n",
+"e": "grain of a surface",
+"n": ""
+},
+{
+"f": "grata",
+"i": "/ˈgra.ta/",
+"p": "v",
+"e": "scratch",
 "n": ""
 },
 {
@@ -3546,6 +7403,20 @@ const LEX = [
 "n": ""
 },
 {
+"f": "gratie",
+"i": "/gra.ˈti.e/",
+"p": "int",
+"e": "thank you",
+"n": "the older platform recording ends on it"
+},
+{
+"f": "gratis",
+"i": "/ˈgra.tis/",
+"p": "adv",
+"e": "free of charge",
+"n": "gratuit is the adjective"
+},
+{
 "f": "gratuit",
 "i": "/gra.ˈtu.it/",
 "p": "adj",
@@ -3553,11 +7424,39 @@ const LEX = [
 "n": ""
 },
 {
+"f": "gratuitament",
+"i": "/gra.tu.i.ˈta.ment/",
+"p": "adv",
+"e": "free of charge",
+"n": "gratis is the shorter everyday form"
+},
+{
 "f": "grav",
 "i": "/grav/",
 "p": "adj",
 "e": "grave, serious",
 "n": ""
+},
+{
+"f": "gravament",
+"i": "/gra.ˈva.ment/",
+"p": "adv",
+"e": "seriously",
+"n": ""
+},
+{
+"f": "gravidantia",
+"i": "/gra.vi.dan.ˈti.a/",
+"p": "n",
+"e": "pregnancy",
+"n": ""
+},
+{
+"f": "gravitate",
+"i": "/gra.vi.ˈta.te/",
+"p": "n",
+"e": "seriousness",
+"n": "of a matter; peso of a weight"
 },
 {
 "f": "grec",
@@ -3572,6 +7471,13 @@ const LEX = [
 "p": "adj",
 "e": "Grenadian",
 "n": "demonym of Grenada"
+},
+{
+"f": "greva",
+"i": "/ˈgre.va/",
+"p": "v",
+"e": "take strike action",
+"n": "greve is the strike itself"
 },
 {
 "f": "gripa",
@@ -3599,6 +7505,13 @@ const LEX = [
 "i": "/gro.ˈsi.er/",
 "p": "adj",
 "e": "coarse",
+"n": ""
+},
+{
+"f": "gruia",
+"i": "/gru.ˈi.a/",
+"p": "n",
+"e": "crane",
 "n": ""
 },
 {
@@ -3651,6 +7564,13 @@ const LEX = [
 "n": "demonym of Guinea Ecuatorial"
 },
 {
+"f": "guisatu",
+"i": "/gu.i.ˈsa.tu/",
+"p": "n",
+"e": "stew",
+"n": ""
+},
+{
 "f": "gust",
 "i": "/gust/",
 "p": "n",
@@ -3662,6 +7582,13 @@ const LEX = [
 "i": "/ˈgus.ta/",
 "p": "v",
 "e": "taste",
+"n": ""
+},
+{
+"f": "gutta",
+"i": "/ˈgu.ta/",
+"p": "v",
+"e": "drip",
 "n": ""
 },
 {
@@ -3693,10 +7620,31 @@ const LEX = [
 "n": "demonym of Haiti"
 },
 {
+"f": "halta",
+"i": "/ˈhal.ta/",
+"p": "v",
+"e": "halt, come to a stand",
+"n": ""
+},
+{
+"f": "hasard",
+"i": "/ˈha.sard/",
+"p": "n",
+"e": "chance",
+"n": "sorti is the draw by lot"
+},
+{
 "f": "herba",
 "i": "/ˈher.ba/",
 "p": "n",
 "e": "grass",
+"n": ""
+},
+{
+"f": "herbe",
+"i": "/ˈher.be/",
+"p": "n",
+"e": "culinary herb",
 "n": ""
 },
 {
@@ -3705,6 +7653,20 @@ const LEX = [
 "p": "adv",
 "e": "yesterday",
 "n": ""
+},
+{
+"f": "hesita",
+"i": "/he.ˈsi.ta/",
+"p": "v",
+"e": "hesitate",
+"n": ""
+},
+{
+"f": "hesitant",
+"i": "/he.ˈsi.tant/",
+"p": "adj",
+"e": "hesitant",
+"n": "hesita is the verb"
 },
 {
 "f": "hiza",
@@ -3728,6 +7690,13 @@ const LEX = [
 "n": ""
 },
 {
+"f": "homologa",
+"i": "/ho.mo.ˈlo.ga/",
+"p": "v",
+"e": "approve formally",
+"n": ""
+},
+{
 "f": "honduran",
 "i": "/hon.ˈdu.ran/",
 "p": "adj",
@@ -3747,6 +7716,20 @@ const LEX = [
 "p": "n",
 "e": "working hour",
 "n": "the linking de drops in this compound"
+},
+{
+"f": "horizontal",
+"i": "/ho.ri.ˈzon.tal/",
+"p": "adj",
+"e": "horizontal",
+"n": ""
+},
+{
+"f": "hospita",
+"i": "/hos.ˈpi.ta/",
+"p": "v",
+"e": "put up, host",
+"n": "of a household putting someone up"
 },
 {
 "f": "hospite",
@@ -3798,6 +7781,27 @@ const LEX = [
 "n": ""
 },
 {
+"f": "idem",
+"i": "/ˈi.dem/",
+"p": "pron",
+"e": "the same one",
+"n": ""
+},
+{
+"f": "identifica",
+"i": "/i.den.ti.ˈfi.ka/",
+"p": "v",
+"e": "identify",
+"n": ""
+},
+{
+"f": "identitate",
+"i": "/i.den.ti.ˈta.te/",
+"p": "n",
+"e": "identity",
+"n": "carta de identitate, identity card"
+},
+{
 "f": "idrogen",
 "i": "/i.ˈdro.d͡ʒen/",
 "p": "n",
@@ -3812,11 +7816,95 @@ const LEX = [
 "n": "demonym of Iemen"
 },
 {
+"f": "ignorantia",
+"i": "/ig.no.ran.ˈti.a/",
+"p": "n",
+"e": "ignorance",
+"n": ""
+},
+{
+"f": "imagina",
+"i": "/i.ma.ˈd͡ʒi.na/",
+"p": "v",
+"e": "imagine",
+"n": ""
+},
+{
+"f": "immediat",
+"i": "/i.me.ˈdi.at/",
+"p": "adj",
+"e": "immediate",
+"n": ""
+},
+{
+"f": "immediatament",
+"i": "/i.me.di.a.ˈta.ment/",
+"p": "adv",
+"e": "immediately",
+"n": "statim is the shorter form"
+},
+{
+"f": "immersiun",
+"i": "/i.mer.ˈsi.un/",
+"p": "n",
+"e": "sinking",
+"n": "cade is the general word"
+},
+{
+"f": "impatiente",
+"i": "/im.pa.ti.ˈen.te/",
+"p": "adj",
+"e": "impatient",
+"n": ""
+},
+{
+"f": "impatientia",
+"i": "/im.pa.ti.en.ˈti.a/",
+"p": "n",
+"e": "impatience",
+"n": ""
+},
+{
+"f": "implicatiun",
+"i": "/im.pli.ka.ˈti.un/",
+"p": "n",
+"e": "implication",
+"n": ""
+},
+{
+"f": "implora",
+"i": "/im.ˈplo.ra/",
+"p": "v",
+"e": "beg, plead",
+"n": ""
+},
+{
+"f": "importa",
+"i": "/im.ˈpor.ta/",
+"p": "v",
+"e": "import",
+"n": ""
+},
+{
 "f": "important",
 "i": "/im.ˈpor.tant/",
 "p": "adj",
 "e": "important",
 "n": ""
+},
+{
+"f": "impresiun",
+"i": "/im.pre.ˈsi.un/",
+"p": "n",
+"e": "impression",
+"n": ""
+},
+{
+"f": "imprimante",
+"i": "/im.pri.ˈman.te/",
+"p": "n",
+"e": "printer",
+"n": "imprime is the verb"
 },
 {
 "f": "imprime",
@@ -3840,10 +7928,59 @@ const LEX = [
 "n": ""
 },
 {
+"f": "incertitudine",
+"i": "/in.t͡ʃer.ti.tu.ˈdi.ne/",
+"p": "n",
+"e": "uncertainty",
+"n": ""
+},
+{
+"f": "inclina",
+"i": "/in.ˈkli.na/",
+"p": "v",
+"e": "tilt, lean",
+"n": ""
+},
+{
+"f": "inclus",
+"i": "/ˈin.klus/",
+"p": "conj",
+"e": "including",
+"n": ""
+},
+{
+"f": "incompetentia",
+"i": "/in.kom.pe.ten.ˈti.a/",
+"p": "n",
+"e": "incompetence",
+"n": ""
+},
+{
 "f": "incontra",
 "i": "/in.ˈkon.tra/",
 "p": "v",
 "e": "meet",
+"n": ""
+},
+{
+"f": "incuraja",
+"i": "/in.ku.ˈra.ʒa/",
+"p": "v",
+"e": "encourage",
+"n": ""
+},
+{
+"f": "indemnisa",
+"i": "/in.dem.ˈni.sa/",
+"p": "v",
+"e": "indemnify",
+"n": ""
+},
+{
+"f": "independentia",
+"i": "/in.de.pen.den.ˈti.a/",
+"p": "n",
+"e": "independence",
 "n": ""
 },
 {
@@ -3854,6 +7991,55 @@ const LEX = [
 "n": "demonym of India"
 },
 {
+"f": "indica",
+"i": "/in.ˈdi.ka/",
+"p": "v",
+"e": "point out, indicate",
+"n": "se signa indica se sortida, the sign points to the exit"
+},
+{
+"f": "indicatiun",
+"i": "/in.di.ka.ˈti.un/",
+"p": "n",
+"e": "indication",
+"n": ""
+},
+{
+"f": "indifferent",
+"i": "/in.di.ˈfe.rent/",
+"p": "adj",
+"e": "indifferent",
+"n": ""
+},
+{
+"f": "indirect",
+"i": "/in.ˈdi.rekt/",
+"p": "adj",
+"e": "indirect",
+"n": ""
+},
+{
+"f": "indirectament",
+"i": "/in.di.rek.ˈta.ment/",
+"p": "adv",
+"e": "indirectly",
+"n": ""
+},
+{
+"f": "individual",
+"i": "/in.di.vi.ˈdu.al/",
+"p": "adj",
+"e": "individual",
+"n": ""
+},
+{
+"f": "individualment",
+"i": "/in.di.vi.du.ˈal.ment/",
+"p": "adv",
+"e": "individually",
+"n": ""
+},
+{
 "f": "indonesian",
 "i": "/in.do.ne.ˈsi.an/",
 "p": "adj",
@@ -3861,10 +8047,24 @@ const LEX = [
 "n": "demonym of Indonesia"
 },
 {
+"f": "induce",
+"i": "/in.ˈdu.t͡ʃe/",
+"p": "v",
+"e": "infer",
+"n": ""
+},
+{
 "f": "industria",
 "i": "/in.dus.ˈtri.a/",
 "p": "n",
 "e": "industry",
+"n": ""
+},
+{
+"f": "industrial",
+"i": "/in.dus.ˈtri.al/",
+"p": "adj",
+"e": "industrial",
 "n": ""
 },
 {
@@ -3875,10 +8075,59 @@ const LEX = [
 "n": ""
 },
 {
+"f": "infectiun",
+"i": "/in.fek.ˈti.un/",
+"p": "n",
+"e": "infection",
+"n": ""
+},
+{
 "f": "infirmier",
 "i": "/in.fir.ˈmi.er/",
 "p": "n",
 "e": "nurse",
+"n": ""
+},
+{
+"f": "influentia",
+"i": "/in.flu.en.ˈti.a/",
+"p": "n",
+"e": "influence",
+"n": ""
+},
+{
+"f": "informatiun",
+"i": "/in.for.ma.ˈti.un/",
+"p": "n",
+"e": "information",
+"n": "se sistem public de informatiun, the public information system"
+},
+{
+"f": "infra",
+"i": "/ˈin.fra/",
+"p": "adv",
+"e": "below",
+"n": ""
+},
+{
+"f": "ingenua",
+"i": "/in.d͡ʒe.ˈnu.a/",
+"p": "v",
+"e": "kneel",
+"n": ""
+},
+{
+"f": "ingranaje",
+"i": "/in.gra.ˈna.ʒe/",
+"p": "n",
+"e": "gear",
+"n": ""
+},
+{
+"f": "ingrassu",
+"i": "/in.ˈgra.su/",
+"p": "n",
+"e": "fertiliser",
 "n": ""
 },
 {
@@ -3889,10 +8138,87 @@ const LEX = [
 "n": ""
 },
 {
+"f": "initial",
+"i": "/i.ni.ˈti.al/",
+"p": "adj",
+"e": "initial",
+"n": ""
+},
+{
+"f": "initialment",
+"i": "/i.ni.ti.ˈal.ment/",
+"p": "adv",
+"e": "initially",
+"n": ""
+},
+{
+"f": "injust",
+"i": "/ˈin.ʒust/",
+"p": "adj",
+"e": "unjust",
+"n": ""
+},
+{
+"f": "injustitia",
+"i": "/in.ʒus.ti.ˈti.a/",
+"p": "n",
+"e": "injustice",
+"n": ""
+},
+{
+"f": "inocentia",
+"i": "/i.no.t͡ʃen.ˈti.a/",
+"p": "n",
+"e": "innocence",
+"n": "presumed until the corte rules"
+},
+{
+"f": "inquiet",
+"i": "/in.ˈki.et/",
+"p": "adj",
+"e": "restless",
+"n": "quiet is the opposite"
+},
+{
+"f": "inquietudine",
+"i": "/in.ki.e.tu.ˈdi.ne/",
+"p": "n",
+"e": "worry",
+"n": "inquiet is the adjective"
+},
+{
+"f": "inscriva",
+"i": "/ins.ˈkri.va/",
+"p": "v",
+"e": "enrol, put on a roll",
+"n": "inscriva vos te se lista, put your name on the list"
+},
+{
 "f": "insect",
 "i": "/ˈin.sekt/",
 "p": "n",
 "e": "insect",
+"n": ""
+},
+{
+"f": "insiste",
+"i": "/in.ˈsis.te/",
+"p": "v",
+"e": "insist",
+"n": ""
+},
+{
+"f": "inspecta",
+"i": "/ins.ˈpek.ta/",
+"p": "v",
+"e": "inspect",
+"n": ""
+},
+{
+"f": "instructiun",
+"i": "/ins.truk.ˈti.un/",
+"p": "n",
+"e": "instruction",
 "n": ""
 },
 {
@@ -3924,11 +8250,53 @@ const LEX = [
 "n": ""
 },
 {
+"f": "insulta",
+"i": "/in.ˈsul.ta/",
+"p": "v",
+"e": "insult",
+"n": ""
+},
+{
 "f": "integr",
 "i": "/ˈin.tegr/",
 "p": "adj",
 "e": "whole, entire",
 "n": ""
+},
+{
+"f": "integra",
+"i": "/in.ˈte.gra/",
+"p": "v",
+"e": "integrate",
+"n": ""
+},
+{
+"f": "integratiun",
+"i": "/in.te.gra.ˈti.un/",
+"p": "n",
+"e": "integration",
+"n": ""
+},
+{
+"f": "integritate",
+"i": "/in.te.gri.ˈta.te/",
+"p": "n",
+"e": "integrity",
+"n": ""
+},
+{
+"f": "intende",
+"i": "/in.ˈten.de/",
+"p": "v",
+"e": "intend",
+"n": ""
+},
+{
+"f": "intens",
+"i": "/ˈin.tens/",
+"p": "adj",
+"e": "intense",
+"n": "intensitate is the noun"
 },
 {
 "f": "intensitate",
@@ -3938,11 +8306,46 @@ const LEX = [
 "n": ""
 },
 {
+"f": "intentiun",
+"i": "/in.ten.ˈti.un/",
+"p": "n",
+"e": "intention",
+"n": ""
+},
+{
 "f": "inter",
 "i": "/ˈin.ter/",
 "p": "prep",
 "e": "among, between",
 "n": ""
+},
+{
+"f": "interdice",
+"i": "/in.ter.ˈdi.t͡ʃe/",
+"p": "v",
+"e": "ban, forbid by order",
+"n": "prohibe is the general word"
+},
+{
+"f": "interes",
+"i": "/in.ˈte.res/",
+"p": "n",
+"e": "interest",
+"n": "of a subject and of a stake held"
+},
+{
+"f": "interferentia",
+"i": "/in.ter.fe.ren.ˈti.a/",
+"p": "n",
+"e": "interference",
+"n": ""
+},
+{
+"f": "interim",
+"i": "/in.ˈte.rim/",
+"p": "adv",
+"e": "meanwhile",
+"n": "interim, tena se linia, meanwhile, hold the line"
 },
 {
 "f": "intermediar",
@@ -3959,11 +8362,102 @@ const LEX = [
 "n": ""
 },
 {
+"f": "international",
+"i": "/in.ter.na.ti.ˈo.nal/",
+"p": "adj",
+"e": "international",
+"n": ""
+},
+{
+"f": "interpela",
+"i": "/in.ter.ˈpe.la/",
+"p": "v",
+"e": "put a question to a body",
+"n": ""
+},
+{
+"f": "interpreta",
+"i": "/in.ter.ˈpre.ta/",
+"p": "v",
+"e": "interpret, translate aloud",
+"n": "the Ossira service is the largest in the country"
+},
+{
+"f": "interpretatiun",
+"i": "/in.ter.pre.ta.ˈti.un/",
+"p": "n",
+"e": "interpretation",
+"n": "the Ossira service is the largest in the country"
+},
+{
+"f": "interroga",
+"i": "/in.te.ˈro.ga/",
+"p": "v",
+"e": "question, interrogate",
+"n": ""
+},
+{
 "f": "interruptor",
 "i": "/in.te.ˈrup.tor/",
 "p": "n",
 "e": "switch",
 "n": ""
+},
+{
+"f": "intervalu",
+"i": "/in.ter.ˈva.lu/",
+"p": "n",
+"e": "interval",
+"n": ""
+},
+{
+"f": "intima",
+"i": "/in.ˈti.ma/",
+"p": "v",
+"e": "serve notice on",
+"n": ""
+},
+{
+"f": "intimitate",
+"i": "/in.ti.mi.ˈta.te/",
+"p": "n",
+"e": "privacy",
+"n": "of a dwelling and of a letter"
+},
+{
+"f": "intitula",
+"i": "/in.ti.ˈtu.la/",
+"p": "v",
+"e": "head, give a title to",
+"n": ""
+},
+{
+"f": "intra",
+"i": "/ˈin.tra/",
+"p": "prep",
+"e": "within",
+"n": ""
+},
+{
+"f": "intrevidi",
+"i": "/in.tre.ˈvi.di/",
+"p": "v",
+"e": "glimpse",
+"n": ""
+},
+{
+"f": "intus",
+"i": "/ˈin.tus/",
+"p": "adv",
+"e": "inside",
+"n": ""
+},
+{
+"f": "inunda",
+"i": "/i.ˈnun.da/",
+"p": "v",
+"e": "flood",
+"n": "inundatiun is the noun"
 },
 {
 "f": "inundatiun",
@@ -3973,10 +8467,52 @@ const LEX = [
 "n": ""
 },
 {
+"f": "invalida",
+"i": "/in.va.ˈli.da/",
+"p": "v",
+"e": "invalidate",
+"n": ""
+},
+{
+"f": "inventiun",
+"i": "/in.ven.ˈti.un/",
+"p": "n",
+"e": "invention",
+"n": ""
+},
+{
 "f": "invern",
 "i": "/ˈin.vern/",
 "p": "n",
 "e": "winter",
+"n": ""
+},
+{
+"f": "invernaculu",
+"i": "/in.ver.na.ˈku.lu/",
+"p": "n",
+"e": "greenhouse",
+"n": ""
+},
+{
+"f": "investa",
+"i": "/in.ˈves.ta/",
+"p": "v",
+"e": "invest",
+"n": ""
+},
+{
+"f": "invidia",
+"i": "/in.vi.ˈdi.a/",
+"p": "v",
+"e": "envy",
+"n": ""
+},
+{
+"f": "invidios",
+"i": "/in.vi.ˈdi.os/",
+"p": "adj",
+"e": "envious",
 "n": ""
 },
 {
@@ -3999,6 +8535,13 @@ const LEX = [
 "p": "adj",
 "e": "Iosmenian",
 "n": ""
+},
+{
+"f": "ipse",
+"i": "/ˈip.se/",
+"p": "pron",
+"e": "himself, herself, itself",
+"n": "emphatic, never reflexive"
 },
 {
 "f": "ir",
@@ -4043,6 +8586,20 @@ const LEX = [
 "n": ""
 },
 {
+"f": "irrigatiun",
+"i": "/i.ri.ga.ˈti.un/",
+"p": "n",
+"e": "irrigation",
+"n": ""
+},
+{
+"f": "irritat",
+"i": "/i.ˈri.tat/",
+"p": "adj",
+"e": "irritated",
+"n": ""
+},
+{
 "f": "islande",
 "i": "/i.ˈslan.de/",
 "p": "adj",
@@ -4050,11 +8607,25 @@ const LEX = [
 "n": "demonym of Island"
 },
 {
+"f": "isola",
+"i": "/i.ˈso.la/",
+"p": "v",
+"e": "insulate",
+"n": "isolatiun is the noun"
+},
+{
 "f": "isolatiun",
 "i": "/i.so.la.ˈti.un/",
 "p": "n",
 "e": "insulation",
 "n": ""
+},
+{
+"f": "isolator",
+"i": "/i.so.ˈla.tor/",
+"p": "n",
+"e": "insulator",
+"n": "isola is the verb"
 },
 {
 "f": "israelian",
@@ -4083,6 +8654,13 @@ const LEX = [
 "p": "adj",
 "e": "Italian",
 "n": ""
+},
+{
+"f": "itere",
+"i": "/i.ˈte.re/",
+"p": "adv",
+"e": "again",
+"n": "re- prefixed to the verb does the same work"
 },
 {
 "f": "ivorian",
@@ -4197,10 +8775,24 @@ const LEX = [
 "n": ""
 },
 {
+"f": "judica",
+"i": "/ʒu.ˈdi.ka/",
+"p": "v",
+"e": "judge",
+"n": "of a court and of a person forming a view"
+},
+{
 "f": "judiciar",
 "i": "/ʒu.ˈdi.t͡ʃar/",
 "p": "adj",
 "e": "judicial",
+"n": ""
+},
+{
+"f": "judiciu",
+"i": "/ʒu.di.ˈt͡ʃi.u/",
+"p": "n",
+"e": "judgement",
 "n": ""
 },
 {
@@ -4232,6 +8824,20 @@ const LEX = [
 "n": ""
 },
 {
+"f": "jura",
+"i": "/ˈʒu.ra/",
+"p": "v",
+"e": "swear, take an oath",
+"n": "before a court and at the taking of an office"
+},
+{
+"f": "jure",
+"i": "/ˈʒu.re/",
+"p": "n",
+"e": "right, law",
+"n": "the Constitution uses it of a right held"
+},
+{
 "f": "juri",
 "i": "/ˈʒu.ri/",
 "p": "n",
@@ -4239,10 +8845,45 @@ const LEX = [
 "n": ""
 },
 {
+"f": "jurisdictiun",
+"i": "/ʒu.ris.dik.ˈti.un/",
+"p": "n",
+"e": "jurisdiction",
+"n": ""
+},
+{
 "f": "jurnal",
 "i": "/ˈʒur.nal/",
 "p": "n",
 "e": "newspaper",
+"n": ""
+},
+{
+"f": "just",
+"i": "/ʒust/",
+"p": "adj",
+"e": "just",
+"n": "of a share and of a ruling"
+},
+{
+"f": "justament",
+"i": "/ʒus.ˈta.ment/",
+"p": "adv",
+"e": "justly",
+"n": ""
+},
+{
+"f": "justificatiun",
+"i": "/ʒus.ti.fi.ka.ˈti.un/",
+"p": "n",
+"e": "justification",
+"n": ""
+},
+{
+"f": "justitia",
+"i": "/ʒus.ti.ˈti.a/",
+"p": "n",
+"e": "justice",
 "n": ""
 },
 {
@@ -4288,6 +8929,13 @@ const LEX = [
 "n": ""
 },
 {
+"f": "laboratoriu",
+"i": "/la.bo.ra.to.ˈri.u/",
+"p": "n",
+"e": "laboratory",
+"n": "proba is the trial run"
+},
+{
 "f": "lac",
 "i": "/lak/",
 "p": "n",
@@ -4300,6 +8948,13 @@ const LEX = [
 "p": "n",
 "e": "milk",
 "n": "adjective lactic"
+},
+{
+"f": "lagun",
+"i": "/ˈla.gun/",
+"p": "n",
+"e": "lagoon",
+"n": "the Ravelluri seaboard is built round one"
 },
 {
 "f": "laku noc",
@@ -4323,6 +8978,13 @@ const LEX = [
 "n": ""
 },
 {
+"f": "lanterna",
+"i": "/lan.ˈter.na/",
+"p": "n",
+"e": "torch",
+"n": ""
+},
+{
 "f": "laosian",
 "i": "/la.o.ˈsi.an/",
 "p": "adj",
@@ -4337,6 +8999,13 @@ const LEX = [
 "n": ""
 },
 {
+"f": "largament",
+"i": "/lar.ˈga.ment/",
+"p": "adv",
+"e": "widely",
+"n": ""
+},
+{
 "f": "lassa",
 "i": "/ˈla.sa/",
 "p": "v",
@@ -4344,10 +9013,24 @@ const LEX = [
 "n": ""
 },
 {
+"f": "latitude",
+"i": "/la.ti.ˈtu.de/",
+"p": "n",
+"e": "width",
+"n": ""
+},
+{
 "f": "lava",
 "i": "/ˈla.va/",
 "p": "v",
 "e": "wash",
+"n": ""
+},
+{
+"f": "lecca",
+"i": "/ˈle.ka/",
+"p": "v",
+"e": "lick",
 "n": ""
 },
 {
@@ -4379,6 +9062,13 @@ const LEX = [
 "n": ""
 },
 {
+"f": "legalite",
+"i": "/le.ga.ˈli.te/",
+"p": "n",
+"e": "legality",
+"n": "legalite de se acte, the lawfulness of the act"
+},
+{
 "f": "lege",
 "i": "/ˈle.d͡ʒe/",
 "p": "n",
@@ -4397,6 +9087,27 @@ const LEX = [
 "i": "/le.d͡ʒi.ˈsla.tiv/",
 "p": "adj",
 "e": "legislative",
+"n": ""
+},
+{
+"f": "legitime",
+"i": "/le.d͡ʒi.ˈti.me/",
+"p": "adj",
+"e": "legitimate",
+"n": ""
+},
+{
+"f": "legitimement",
+"i": "/le.d͡ʒi.ti.ˈme.ment/",
+"p": "adv",
+"e": "legitimately",
+"n": ""
+},
+{
+"f": "legitimitate",
+"i": "/le.d͡ʒi.ti.mi.ˈta.te/",
+"p": "n",
+"e": "legitimacy",
 "n": ""
 },
 {
@@ -4419,6 +9130,20 @@ const LEX = [
 "p": "adj",
 "e": "slow",
 "n": ""
+},
+{
+"f": "lentament",
+"i": "/len.ˈta.ment/",
+"p": "adv",
+"e": "slowly",
+"n": ""
+},
+{
+"f": "lenti",
+"i": "/ˈlen.ti/",
+"p": "v",
+"e": "slow down",
+"n": "from lent; of a service as readily as a vehicle"
 },
 {
 "f": "les",
@@ -4463,11 +9188,32 @@ const LEX = [
 "n": ""
 },
 {
+"f": "levatura",
+"i": "/le.va.ˈtu.ra/",
+"p": "n",
+"e": "yeast",
+"n": ""
+},
+{
 "f": "leve",
 "i": "/ˈle.ve/",
 "p": "adj",
 "e": "light in weight",
 "n": "facil is light in the sense of easy"
+},
+{
+"f": "levement",
+"i": "/le.ˈve.ment/",
+"p": "adv",
+"e": "lightly",
+"n": ""
+},
+{
+"f": "levier",
+"i": "/le.ˈvi.er/",
+"p": "n",
+"e": "lever",
+"n": ""
 },
 {
 "f": "lexic",
@@ -4498,6 +9244,13 @@ const LEX = [
 "n": "demonym of Liberia"
 },
 {
+"f": "libertate",
+"i": "/li.ber.ˈta.te/",
+"p": "n",
+"e": "freedom",
+"n": ""
+},
+{
 "f": "libian",
 "i": "/li.ˈbi.an/",
 "p": "adj",
@@ -4512,10 +9265,31 @@ const LEX = [
 "n": ""
 },
 {
+"f": "licentia",
+"i": "/li.t͡ʃen.ˈti.a/",
+"p": "v",
+"e": "license",
+"n": ""
+},
+{
 "f": "licentiat",
 "i": "/li.t͡ʃen.ˈti.at/",
 "p": "adj",
 "e": "licensed",
+"n": ""
+},
+{
+"f": "licit",
+"i": "/ˈli.t͡ʃit/",
+"p": "adj",
+"e": "lawful",
+"n": ""
+},
+{
+"f": "liga",
+"i": "/ˈli.ga/",
+"p": "v",
+"e": "tie, bind",
 "n": ""
 },
 {
@@ -4533,10 +9307,24 @@ const LEX = [
 "n": "demonym of Lihtenstain"
 },
 {
+"f": "lima",
+"i": "/ˈli.ma/",
+"p": "n",
+"e": "file for metal",
+"n": ""
+},
+{
 "f": "limit",
 "i": "/ˈli.mit/",
 "p": "n",
 "e": "ceiling, limit",
+"n": ""
+},
+{
+"f": "limite",
+"i": "/li.ˈmi.te/",
+"p": "n",
+"e": "limit",
 "n": ""
 },
 {
@@ -4551,6 +9339,13 @@ const LEX = [
 "i": "/ˈlim.pa/",
 "p": "v",
 "e": "clean",
+"n": ""
+},
+{
+"f": "limu",
+"i": "/ˈli.mu/",
+"p": "n",
+"e": "silt",
 "n": ""
 },
 {
@@ -4582,6 +9377,20 @@ const LEX = [
 "n": ""
 },
 {
+"f": "liquida",
+"i": "/li.ˈki.da/",
+"p": "v",
+"e": "wind up",
+"n": ""
+},
+{
+"f": "lisce",
+"i": "/ˈlis.t͡ʃe/",
+"p": "adj",
+"e": "smooth",
+"n": ""
+},
+{
 "f": "lista",
 "i": "/ˈlis.ta/",
 "p": "n",
@@ -4593,6 +9402,13 @@ const LEX = [
 "i": "/ˈli.ter/",
 "p": "n",
 "e": "letter",
+"n": ""
+},
+{
+"f": "litiga",
+"i": "/li.ˈti.ga/",
+"p": "v",
+"e": "litigate",
 "n": ""
 },
 {
@@ -4617,10 +9433,66 @@ const LEX = [
 "n": ""
 },
 {
+"f": "loca",
+"i": "/ˈlo.ka/",
+"p": "v",
+"e": "rent out",
+"n": ""
+},
+{
+"f": "local",
+"i": "/ˈlo.kal/",
+"p": "adj",
+"e": "local",
+"n": "localitate is the noun"
+},
+{
+"f": "localisa",
+"i": "/lo.ka.ˈli.sa/",
+"p": "v",
+"e": "locate",
+"n": ""
+},
+{
 "f": "localitate",
 "i": "/lo.ka.li.ˈta.te/",
 "p": "n",
 "e": "settlement",
+"n": ""
+},
+{
+"f": "localment",
+"i": "/lo.ˈkal.ment/",
+"p": "adv",
+"e": "locally",
+"n": ""
+},
+{
+"f": "locatariu",
+"i": "/lo.ka.ta.ˈri.u/",
+"p": "n",
+"e": "tenant",
+"n": ""
+},
+{
+"f": "locomotiva",
+"i": "/lo.ko.mo.ˈti.va/",
+"p": "n",
+"e": "locomotive",
+"n": ""
+},
+{
+"f": "logic",
+"i": "/ˈlo.d͡ʒik/",
+"p": "adj",
+"e": "logical",
+"n": ""
+},
+{
+"f": "logicament",
+"i": "/lo.d͡ʒi.ˈka.ment/",
+"p": "adv",
+"e": "logically",
 "n": ""
 },
 {
@@ -4631,10 +9503,31 @@ const LEX = [
 "n": ""
 },
 {
+"f": "longament",
+"i": "/lon.ˈga.ment/",
+"p": "adv",
+"e": "at length",
+"n": ""
+},
+{
 "f": "longe",
 "i": "/ˈlon.d͡ʒe/",
 "p": "adv",
 "e": "far, by far",
+"n": ""
+},
+{
+"f": "longitude",
+"i": "/lon.d͡ʒi.ˈtu.de/",
+"p": "n",
+"e": "length",
+"n": ""
+},
+{
+"f": "lubrica",
+"i": "/lu.ˈbri.ka/",
+"p": "v",
+"e": "slip, slide",
 "n": ""
 },
 {
@@ -4643,6 +9536,13 @@ const LEX = [
 "p": "n",
 "e": "light",
 "n": "adjective lucid"
+},
+{
+"f": "luci",
+"i": "/ˈlu.t͡ʃi/",
+"p": "v",
+"e": "shine steadily",
+"n": "of daylight and of a lamp left on"
 },
 {
 "f": "lucian",
@@ -4657,6 +9557,13 @@ const LEX = [
 "p": "adj",
 "e": "Luxembourgish",
 "n": "demonym of Lucsemburg"
+},
+{
+"f": "luctu",
+"i": "/ˈluk.tu/",
+"p": "n",
+"e": "grief",
+"n": ""
 },
 {
 "f": "luna",
@@ -4792,6 +9699,13 @@ const LEX = [
 "n": "demonym of Madagascar"
 },
 {
+"f": "malgrado",
+"i": "/mal.ˈgra.do/",
+"p": "conj",
+"e": "despite the fact that",
+"n": ""
+},
+{
 "f": "malte",
 "i": "/ˈmal.te/",
 "p": "adj",
@@ -4841,6 +9755,13 @@ const LEX = [
 "n": ""
 },
 {
+"f": "mandata",
+"i": "/man.ˈda.ta/",
+"p": "v",
+"e": "mandate",
+"n": ""
+},
+{
 "f": "mandatar",
 "i": "/man.ˈda.tar/",
 "p": "n",
@@ -4848,10 +9769,52 @@ const LEX = [
 "n": ""
 },
 {
+"f": "mandra",
+"i": "/ˈman.dra/",
+"p": "n",
+"e": "herd",
+"n": "turma of sheep, mandra of cattle"
+},
+{
+"f": "manevra",
+"i": "/ma.ˈne.vra/",
+"p": "v",
+"e": "shunt, manoeuvre",
+"n": "in the depots; manevra de nox, night shunting"
+},
+{
+"f": "manica",
+"i": "/ma.ˈni.ka/",
+"p": "n",
+"e": "sleeve",
+"n": ""
+},
+{
 "f": "manja",
 "i": "/ˈman.ʒa/",
 "p": "v",
 "e": "eat",
+"n": ""
+},
+{
+"f": "manometru",
+"i": "/ma.no.ˈme.tru/",
+"p": "n",
+"e": "gauge",
+"n": ""
+},
+{
+"f": "mansarda",
+"i": "/man.ˈsar.da/",
+"p": "n",
+"e": "attic",
+"n": ""
+},
+{
+"f": "manuale",
+"i": "/ma.nu.ˈa.le/",
+"p": "n",
+"e": "textbook",
 "n": ""
 },
 {
@@ -4883,6 +9846,13 @@ const LEX = [
 "n": ""
 },
 {
+"f": "marea",
+"i": "/ma.ˈre.a/",
+"p": "n",
+"e": "tide",
+"n": "the lagoon runs on it"
+},
+{
 "f": "margin",
 "i": "/mar.ˈd͡ʒin/",
 "p": "n",
@@ -4895,6 +9865,13 @@ const LEX = [
 "p": "n",
 "e": "husband",
 "n": ""
+},
+{
+"f": "marita",
+"i": "/ma.ˈri.ta/",
+"p": "v",
+"e": "marry",
+"n": "of either party; the older use marked only one"
 },
 {
 "f": "marocan",
@@ -4911,6 +9888,13 @@ const LEX = [
 "n": ""
 },
 {
+"f": "martella",
+"i": "/mar.ˈte.la/",
+"p": "v",
+"e": "hammer",
+"n": ""
+},
+{
 "f": "marxalan",
 "i": "/mar.ˈʃa.lan/",
 "p": "adj",
@@ -4923,6 +9907,20 @@ const LEX = [
 "p": "adv",
 "e": "more, most",
 "n": "mas comun, commonest"
+},
+{
+"f": "mastica",
+"i": "/mas.ˈti.ka/",
+"p": "v",
+"e": "chew",
+"n": ""
+},
+{
+"f": "materia",
+"i": "/ma.te.ˈri.a/",
+"p": "n",
+"e": "material, matter",
+"n": ""
 },
 {
 "f": "materiale",
@@ -4974,6 +9972,13 @@ const LEX = [
 "n": "demonym of Mauritiu"
 },
 {
+"f": "maxila",
+"i": "/ma.ˈʃi.la/",
+"p": "n",
+"e": "jaw",
+"n": ""
+},
+{
 "f": "me",
 "i": "/me/",
 "p": "pron",
@@ -4981,10 +9986,31 @@ const LEX = [
 "n": "subject and object alike: me no jizde, skuza me"
 },
 {
+"f": "mecanisa",
+"i": "/me.ka.ˈni.sa/",
+"p": "v",
+"e": "mechanise",
+"n": ""
+},
+{
+"f": "media",
+"i": "/me.ˈdi.a/",
+"p": "v",
+"e": "mediate",
+"n": ""
+},
+{
 "f": "medianox",
 "i": "/me.di.ˈa.noʃ/",
 "p": "n",
 "e": "midnight",
+"n": ""
+},
+{
+"f": "mediante",
+"i": "/me.di.ˈan.te/",
+"p": "prep",
+"e": "by means of",
 "n": ""
 },
 {
@@ -5016,10 +10042,24 @@ const LEX = [
 "n": ""
 },
 {
+"f": "medita",
+"i": "/me.ˈdi.ta/",
+"p": "v",
+"e": "reflect, think over",
+"n": ""
+},
+{
 "f": "mel",
 "i": "/mel/",
 "p": "n",
 "e": "honey",
+"n": ""
+},
+{
+"f": "melodia",
+"i": "/me.lo.ˈdi.a/",
+"p": "n",
+"e": "melody",
 "n": ""
 },
 {
@@ -5030,6 +10070,27 @@ const LEX = [
 "n": ""
 },
 {
+"f": "memora",
+"i": "/me.ˈmo.ra/",
+"p": "v",
+"e": "commit to memory",
+"n": ""
+},
+{
+"f": "memoria",
+"i": "/me.mo.ˈri.a/",
+"p": "n",
+"e": "memory",
+"n": ""
+},
+{
+"f": "mensual",
+"i": "/men.ˈsu.al/",
+"p": "adj",
+"e": "monthly",
+"n": "mes is the month"
+},
+{
 "f": "-ment",
 "i": "",
 "p": "suf",
@@ -5037,10 +10098,31 @@ const LEX = [
 "n": "finalment from final; pagament from paga"
 },
 {
+"f": "mente",
+"i": "/ˈmen.te/",
+"p": "n",
+"e": "mind",
+"n": ""
+},
+{
+"f": "mentiona",
+"i": "/men.ti.ˈo.na/",
+"p": "v",
+"e": "mention",
+"n": ""
+},
+{
 "f": "mentre",
 "i": "/ˈmen.tre/",
 "p": "conj",
 "e": "while",
+"n": ""
+},
+{
+"f": "mentu",
+"i": "/ˈmen.tu/",
+"p": "n",
+"e": "chin",
 "n": ""
 },
 {
@@ -5072,6 +10154,13 @@ const LEX = [
 "n": ""
 },
 {
+"f": "meritu",
+"i": "/me.ˈri.tu/",
+"p": "n",
+"e": "merit",
+"n": ""
+},
+{
 "f": "mes",
 "i": "/mes/",
 "p": "n",
@@ -5093,6 +10182,13 @@ const LEX = [
 "n": ""
 },
 {
+"f": "mescla",
+"i": "/ˈmes.kla/",
+"p": "v",
+"e": "mix, stir",
+"n": ""
+},
+{
 "f": "mesme",
 "i": "/ˈmes.me/",
 "p": "adj",
@@ -5100,11 +10196,53 @@ const LEX = [
 "n": ""
 },
 {
+"f": "mesmo",
+"i": "/ˈmes.mo/",
+"p": "adv",
+"e": "even",
+"n": ""
+},
+{
+"f": "messe",
+"i": "/ˈme.se/",
+"p": "n",
+"e": "harvest",
+"n": "of the grain basin at Quintorum"
+},
+{
 "f": "mesura",
 "i": "/me.ˈsu.ra/",
 "p": "n",
 "e": "size, measurement",
 "n": "also the verb, to measure"
+},
+{
+"f": "metodic",
+"i": "/me.ˈto.dik/",
+"p": "adj",
+"e": "methodical",
+"n": ""
+},
+{
+"f": "metodicament",
+"i": "/me.to.di.ˈka.ment/",
+"p": "adv",
+"e": "methodically",
+"n": ""
+},
+{
+"f": "metodu",
+"i": "/me.ˈto.du/",
+"p": "n",
+"e": "method",
+"n": ""
+},
+{
+"f": "metra",
+"i": "/ˈme.tra/",
+"p": "v",
+"e": "measure",
+"n": "metru is the unit"
 },
 {
 "f": "metro",
@@ -5170,6 +10308,20 @@ const LEX = [
 "n": ""
 },
 {
+"f": "minacia",
+"i": "/mi.na.ˈt͡ʃi.a/",
+"p": "v",
+"e": "threaten",
+"n": ""
+},
+{
+"f": "mineral",
+"i": "/mi.ˈne.ral/",
+"p": "n",
+"e": "mineral",
+"n": ""
+},
+{
 "f": "ministru",
 "i": "/mi.ˈnis.tru/",
 "p": "n",
@@ -5191,10 +10343,52 @@ const LEX = [
 "n": ""
 },
 {
+"f": "mira",
+"i": "/ˈmi.ra/",
+"p": "v",
+"e": "gaze at, wonder at",
+"n": ""
+},
+{
 "f": "mobil",
 "i": "/ˈmo.bil/",
 "p": "n",
 "e": "furniture",
+"n": ""
+},
+{
+"f": "mobilitate",
+"i": "/mo.bi.li.ˈta.te/",
+"p": "n",
+"e": "mobility",
+"n": "the sub-region runs local transport"
+},
+{
+"f": "mochila",
+"i": "/mok.ˈhi.la/",
+"p": "n",
+"e": "rucksack",
+"n": ""
+},
+{
+"f": "modem",
+"i": "/ˈmo.dem/",
+"p": "n",
+"e": "modem",
+"n": ""
+},
+{
+"f": "modern",
+"i": "/ˈmo.dern/",
+"p": "adj",
+"e": "modern",
+"n": ""
+},
+{
+"f": "modificatiun",
+"i": "/mo.di.fi.ka.ˈti.un/",
+"p": "n",
+"e": "modification",
 "n": ""
 },
 {
@@ -5210,6 +10404,20 @@ const LEX = [
 "p": "adj",
 "e": "Moldovan",
 "n": "demonym of Moldova"
+},
+{
+"f": "molin-de-vent",
+"i": "/mo.lin.ˈde.vent/",
+"p": "n",
+"e": "windmill",
+"n": ""
+},
+{
+"f": "mollia",
+"i": "/mo.ˈli.a/",
+"p": "v",
+"e": "soak, wet",
+"n": ""
 },
 {
 "f": "momentu",
@@ -5275,10 +10483,24 @@ const LEX = [
 "n": "demonym of Montenegru"
 },
 {
+"f": "moralite",
+"i": "/mo.ra.ˈli.te/",
+"p": "n",
+"e": "morality",
+"n": ""
+},
+{
 "f": "morcov",
 "i": "/ˈmor.kov/",
 "p": "n",
 "e": "carrot",
+"n": ""
+},
+{
+"f": "mordi",
+"i": "/ˈmor.di/",
+"p": "v",
+"e": "bite",
 "n": ""
 },
 {
@@ -5300,6 +10522,34 @@ const LEX = [
 "i": "/ˈmo.saik/",
 "p": "n",
 "e": "patchwork",
+"n": ""
+},
+{
+"f": "mostarda",
+"i": "/mos.ˈtar.da/",
+"p": "n",
+"e": "mustard",
+"n": ""
+},
+{
+"f": "motiona",
+"i": "/mo.ti.ˈo.na/",
+"p": "v",
+"e": "move a motion",
+"n": ""
+},
+{
+"f": "motivatiun",
+"i": "/mo.ti.va.ˈti.un/",
+"p": "n",
+"e": "motivation",
+"n": "motivu is the motive"
+},
+{
+"f": "motivu",
+"i": "/mo.ˈti.vu/",
+"p": "n",
+"e": "motive",
 "n": ""
 },
 {
@@ -5338,6 +10588,13 @@ const LEX = [
 "n": "demonym of Mozambic"
 },
 {
+"f": "multa",
+"i": "/ˈmul.ta/",
+"p": "n",
+"e": "fine",
+"n": ""
+},
+{
 "f": "multe",
 "i": "/ˈmul.te/",
 "p": "det",
@@ -5350,6 +10607,13 @@ const LEX = [
 "p": "n",
 "e": "crowd",
 "n": ""
+},
+{
+"f": "multo",
+"i": "/ˈmul.to/",
+"p": "adv",
+"e": "very",
+"n": "multe is the determiner"
 },
 {
 "f": "mund",
@@ -5366,6 +10630,13 @@ const LEX = [
 "n": ""
 },
 {
+"f": "murmura",
+"i": "/mur.ˈmu.ra/",
+"p": "v",
+"e": "mutter, murmur",
+"n": ""
+},
+{
 "f": "muro",
 "i": "/ˈmu.ro/",
 "p": "n",
@@ -5377,6 +10648,20 @@ const LEX = [
 "i": "/ˈmus.ka/",
 "p": "n",
 "e": "fly",
+"n": ""
+},
+{
+"f": "muscla",
+"i": "/ˈmus.kla/",
+"p": "n",
+"e": "mussel",
+"n": ""
+},
+{
+"f": "muscul",
+"i": "/ˈmus.kul/",
+"p": "n",
+"e": "muscle",
 "n": ""
 },
 {
@@ -5398,6 +10683,34 @@ const LEX = [
 "i": "/ˈmu.ta/",
 "p": "v",
 "e": "change, shift",
+"n": ""
+},
+{
+"f": "mutua",
+"i": "/mu.ˈtu.a/",
+"p": "v",
+"e": "borrow",
+"n": ""
+},
+{
+"f": "mutual",
+"i": "/mu.ˈtu.al/",
+"p": "adj",
+"e": "mutual",
+"n": ""
+},
+{
+"f": "mutualisa",
+"i": "/mu.tu.a.ˈli.sa/",
+"p": "v",
+"e": "pool, hold in common",
+"n": ""
+},
+{
+"f": "mutualment",
+"i": "/mu.tu.ˈal.ment/",
+"p": "adv",
+"e": "mutually",
 "n": ""
 },
 {
@@ -5429,10 +10742,31 @@ const LEX = [
 "n": ""
 },
 {
+"f": "nascentia",
+"i": "/nas.t͡ʃen.ˈti.a/",
+"p": "n",
+"e": "birth",
+"n": "nasce is the verb"
+},
+{
 "f": "nata",
 "i": "/ˈna.ta/",
 "p": "v",
 "e": "swim",
+"n": ""
+},
+{
+"f": "national",
+"i": "/na.ti.ˈo.nal/",
+"p": "adj",
+"e": "national",
+"n": "natiun is the noun"
+},
+{
+"f": "nationalment",
+"i": "/na.ti.o.ˈnal.ment/",
+"p": "adv",
+"e": "nationally",
 "n": ""
 },
 {
@@ -5464,6 +10798,13 @@ const LEX = [
 "n": ""
 },
 {
+"f": "navega",
+"i": "/na.ˈve.ga/",
+"p": "v",
+"e": "sail, navigate",
+"n": ""
+},
+{
 "f": "nebla",
 "i": "/ˈne.bla/",
 "p": "n",
@@ -5475,6 +10816,13 @@ const LEX = [
 "i": "/ne.ˈt͡ʃe.sar/",
 "p": "adj",
 "e": "necessary",
+"n": ""
+},
+{
+"f": "necesarment",
+"i": "/ne.t͡ʃe.ˈsar.ment/",
+"p": "adv",
+"e": "necessarily",
 "n": ""
 },
 {
@@ -5490,6 +10838,48 @@ const LEX = [
 "p": "n",
 "e": "need",
 "n": ""
+},
+{
+"f": "necun",
+"i": "/ˈne.kun/",
+"p": "det",
+"e": "neither",
+"n": ""
+},
+{
+"f": "nega",
+"i": "/ˈne.ga/",
+"p": "v",
+"e": "deny",
+"n": ""
+},
+{
+"f": "negliga",
+"i": "/ne.ˈgli.ga/",
+"p": "v",
+"e": "neglect",
+"n": ""
+},
+{
+"f": "negligentia",
+"i": "/ne.gli.d͡ʒen.ˈti.a/",
+"p": "n",
+"e": "negligence",
+"n": "a ground of liability before the corte"
+},
+{
+"f": "negocia",
+"i": "/ne.go.ˈt͡ʃi.a/",
+"p": "v",
+"e": "negotiate",
+"n": ""
+},
+{
+"f": "negociatiun",
+"i": "/ne.go.t͡ʃi.a.ˈti.un/",
+"p": "n",
+"e": "negotiation",
+"n": "the plan cycle is negotiated, never imposed"
 },
 {
 "f": "negru",
@@ -5520,6 +10910,27 @@ const LEX = [
 "n": ""
 },
 {
+"f": "nervos",
+"i": "/ˈner.vos/",
+"p": "adj",
+"e": "nervous",
+"n": ""
+},
+{
+"f": "nervu",
+"i": "/ˈner.vu/",
+"p": "n",
+"e": "nerve",
+"n": ""
+},
+{
+"f": "neutralite",
+"i": "/ne.u.tra.ˈli.te/",
+"p": "n",
+"e": "neutrality",
+"n": "an adjective in -al takes -ite, never -tate"
+},
+{
 "f": "neve",
 "i": "/ˈne.ve/",
 "p": "n",
@@ -5527,11 +10938,25 @@ const LEX = [
 "n": "adjective nevos"
 },
 {
+"f": "ni",
+"i": "/ni/",
+"p": "conj",
+"e": "nor",
+"n": ""
+},
+{
 "f": "nicaraguan",
 "i": "/ni.ka.ra.ˈgu.an/",
 "p": "adj",
 "e": "Nicaraguan",
 "n": "demonym of Nicaragua"
+},
+{
+"f": "nicta",
+"i": "/ˈnik.ta/",
+"p": "v",
+"e": "blink",
+"n": ""
 },
 {
 "f": "nigerian",
@@ -5555,10 +10980,24 @@ const LEX = [
 "n": ""
 },
 {
+"f": "nisi",
+"i": "/ˈni.si/",
+"p": "conj",
+"e": "unless",
+"n": "nisi se corte decide altru, unless the court rules otherwise"
+},
+{
 "f": "nivel",
 "i": "/ˈni.vel/",
 "p": "n",
 "e": "tier, level",
+"n": ""
+},
+{
+"f": "nivella",
+"i": "/ni.ˈve.la/",
+"p": "v",
+"e": "level",
 "n": ""
 },
 {
@@ -5576,6 +11015,13 @@ const LEX = [
 "n": ""
 },
 {
+"f": "noda",
+"i": "/ˈno.da/",
+"p": "v",
+"e": "knot",
+"n": ""
+},
+{
 "f": "nome",
 "i": "/ˈno.me/",
 "p": "n",
@@ -5590,10 +11036,24 @@ const LEX = [
 "n": ""
 },
 {
+"f": "nondum",
+"i": "/ˈnon.dum/",
+"p": "adv",
+"e": "not yet",
+"n": ""
+},
+{
 "f": "nord",
 "i": "/nord/",
 "p": "n",
 "e": "north",
+"n": ""
+},
+{
+"f": "norma",
+"i": "/ˈnor.ma/",
+"p": "n",
+"e": "norm, standard",
 "n": ""
 },
 {
@@ -5623,6 +11083,27 @@ const LEX = [
 "p": "v",
 "e": "note, record",
 "n": "also the noun, a note"
+},
+{
+"f": "notifica",
+"i": "/no.ti.ˈfi.ka/",
+"p": "v",
+"e": "notify",
+"n": "notifica te se persone, give the person notice"
+},
+{
+"f": "notificatiun",
+"i": "/no.ti.fi.ka.ˈti.un/",
+"p": "n",
+"e": "notification",
+"n": ""
+},
+{
+"f": "notiun",
+"i": "/no.ˈti.un/",
+"p": "n",
+"e": "notion",
+"n": ""
 },
 {
 "f": "novanta",
@@ -5681,6 +11162,13 @@ const LEX = [
 "n": ""
 },
 {
+"f": "nulcosa",
+"i": "/nul.ˈko.sa/",
+"p": "pron",
+"e": "nothing",
+"n": ""
+},
+{
 "f": "nule",
 "i": "/ˈnu.le/",
 "p": "det",
@@ -5688,9 +11176,30 @@ const LEX = [
 "n": ""
 },
 {
+"f": "nullubi",
+"i": "/nu.ˈlu.bi/",
+"p": "adv",
+"e": "nowhere",
+"n": ""
+},
+{
+"f": "nulu",
+"i": "/ˈnu.lu/",
+"p": "pron",
+"e": "no one",
+"n": "nule is the determiner"
+},
+{
 "f": "numer",
 "i": "/ˈnu.mer/",
 "p": "n",
+"e": "number",
+"n": ""
+},
+{
+"f": "numera",
+"i": "/nu.ˈme.ra/",
+"p": "v",
 "e": "number",
 "n": ""
 },
@@ -5723,10 +11232,38 @@ const LEX = [
 "n": "formal prandiu"
 },
 {
+"f": "objecta",
+"i": "/ob.ˈʒek.ta/",
+"p": "v",
+"e": "object",
+"n": ""
+},
+{
+"f": "objectivu",
+"i": "/ob.ʒek.ˈti.vu/",
+"p": "n",
+"e": "objective, aim",
+"n": ""
+},
+{
 "f": "oblida",
 "i": "/o.ˈbli.da/",
 "p": "v",
 "e": "forget",
+"n": ""
+},
+{
+"f": "oblidu",
+"i": "/o.ˈbli.du/",
+"p": "n",
+"e": "forgetting",
+"n": "oblida is the verb"
+},
+{
+"f": "obligatiun",
+"i": "/o.bli.ga.ˈti.un/",
+"p": "n",
+"e": "obligation",
 "n": ""
 },
 {
@@ -5737,10 +11274,38 @@ const LEX = [
 "n": ""
 },
 {
+"f": "obligatoriument",
+"i": "/o.bli.ga.to.ri.ˈu.ment/",
+"p": "adv",
+"e": "compulsorily",
+"n": ""
+},
+{
 "f": "obscur",
 "i": "/ˈobs.kur/",
 "p": "adj",
 "e": "dark, obscure",
+"n": ""
+},
+{
+"f": "observa",
+"i": "/ob.ˈser.va/",
+"p": "v",
+"e": "observe, watch",
+"n": "of a rule as readily as of a thing seen"
+},
+{
+"f": "obvi",
+"i": "/ˈob.vi/",
+"p": "adj",
+"e": "obvious",
+"n": ""
+},
+{
+"f": "obviment",
+"i": "/ob.ˈvi.ment/",
+"p": "adv",
+"e": "obviously",
 "n": ""
 },
 {
@@ -5786,6 +11351,13 @@ const LEX = [
 "n": ""
 },
 {
+"f": "ocupatiun",
+"i": "/o.ku.pa.ˈti.un/",
+"p": "n",
+"e": "occupation",
+"n": ""
+},
+{
 "f": "odia",
 "i": "/o.ˈdi.a/",
 "p": "v",
@@ -5793,11 +11365,39 @@ const LEX = [
 "n": ""
 },
 {
+"f": "odiu",
+"i": "/o.ˈdi.u/",
+"p": "n",
+"e": "hatred",
+"n": "odia is the verb"
+},
+{
+"f": "odora",
+"i": "/o.ˈdo.ra/",
+"p": "v",
+"e": "smell",
+"n": "odora bin, it smells good"
+},
+{
 "f": "ofende",
 "i": "/o.ˈfen.de/",
 "p": "v",
 "e": "offend",
 "n": ""
+},
+{
+"f": "oferta",
+"i": "/o.ˈfer.ta/",
+"p": "n",
+"e": "offer",
+"n": ""
+},
+{
+"f": "officina",
+"i": "/o.fi.ˈt͡ʃi.na/",
+"p": "n",
+"e": "workshop",
+"n": "praca is the work done in one"
 },
 {
 "f": "officiu",
@@ -5811,6 +11411,13 @@ const LEX = [
 "i": "/o.ˈfi.t͡ʃal/",
 "p": "adj",
 "e": "official",
+"n": ""
+},
+{
+"f": "oficialment",
+"i": "/o.fi.t͡ʃi.ˈal.ment/",
+"p": "adv",
+"e": "officially",
 "n": ""
 },
 {
@@ -5835,10 +11442,24 @@ const LEX = [
 "n": "demonym of Neerland"
 },
 {
+"f": "olim",
+"i": "/ˈo.lim/",
+"p": "adv",
+"e": "formerly",
+"n": ""
+},
+{
 "f": "oliu",
 "i": "/o.ˈli.u/",
 "p": "n",
 "e": "oil",
+"n": ""
+},
+{
+"f": "olivastre",
+"i": "/o.li.ˈvas.tre/",
+"p": "adj",
+"e": "olive",
 "n": ""
 },
 {
@@ -5870,6 +11491,20 @@ const LEX = [
 "n": ""
 },
 {
+"f": "onora",
+"i": "/o.ˈno.ra/",
+"p": "v",
+"e": "honour",
+"n": ""
+},
+{
+"f": "opac",
+"i": "/ˈo.pak/",
+"p": "adj",
+"e": "opaque",
+"n": ""
+},
+{
 "f": "operatiun",
 "i": "/o.pe.ra.ˈti.un/",
 "p": "n",
@@ -5884,6 +11519,20 @@ const LEX = [
 "n": ""
 },
 {
+"f": "opta",
+"i": "/ˈop.ta/",
+"p": "v",
+"e": "opt, choose between",
+"n": ""
+},
+{
+"f": "ordinantia",
+"i": "/or.di.nan.ˈti.a/",
+"p": "n",
+"e": "ordinance",
+"n": ""
+},
+{
 "f": "ordine",
 "i": "/or.ˈdi.ne/",
 "p": "n",
@@ -5891,10 +11540,45 @@ const LEX = [
 "n": ""
 },
 {
+"f": "ordine-de-die",
+"i": "/or.di.ne.de.ˈdi.e/",
+"p": "n",
+"e": "agenda",
+"n": ""
+},
+{
+"f": "orfano",
+"i": "/or.ˈfa.no/",
+"p": "n",
+"e": "orphan",
+"n": ""
+},
+{
 "f": "organisa",
 "i": "/or.ga.ˈni.sa/",
 "p": "v",
 "e": "organise",
+"n": ""
+},
+{
+"f": "organisatiun",
+"i": "/or.ga.ni.sa.ˈti.un/",
+"p": "n",
+"e": "organisation",
+"n": ""
+},
+{
+"f": "orgulio",
+"i": "/or.gu.ˈli.o/",
+"p": "n",
+"e": "pride",
+"n": ""
+},
+{
+"f": "orgulios",
+"i": "/or.gu.ˈli.os/",
+"p": "adj",
+"e": "proud",
 "n": ""
 },
 {
@@ -5912,6 +11596,13 @@ const LEX = [
 "n": ""
 },
 {
+"f": "oscita",
+"i": "/os.ˈt͡ʃi.ta/",
+"p": "v",
+"e": "yawn",
+"n": ""
+},
+{
 "f": "osetian",
 "i": "/o.se.ˈti.an/",
 "p": "adj",
@@ -5924,6 +11615,13 @@ const LEX = [
 "p": "n",
 "e": "hospital",
 "n": ""
+},
+{
+"f": "ostrea",
+"i": "/os.ˈtre.a/",
+"p": "n",
+"e": "oyster",
+"n": "of the Ravelluri beds"
 },
 {
 "f": "ostrian",
@@ -5989,6 +11687,27 @@ const LEX = [
 "n": "demonym of Palestina"
 },
 {
+"f": "palide",
+"i": "/pa.ˈli.de/",
+"p": "adj",
+"e": "pale",
+"n": ""
+},
+{
+"f": "palma",
+"i": "/ˈpal.ma/",
+"p": "n",
+"e": "palm of the hand",
+"n": ""
+},
+{
+"f": "palpa",
+"i": "/ˈpal.pa/",
+"p": "v",
+"e": "feel with the hand",
+"n": ""
+},
+{
 "f": "palton",
 "i": "/ˈpal.ton/",
 "p": "n",
@@ -6010,6 +11729,13 @@ const LEX = [
 "n": "demonym of Panama"
 },
 {
+"f": "panel-solar",
+"i": "/pa.nel.ˈso.lar/",
+"p": "n",
+"e": "solar panel",
+"n": ""
+},
+{
 "f": "panelcu",
 "i": "/pa.ˈnel.ku/",
 "p": "n",
@@ -6021,6 +11747,13 @@ const LEX = [
 "i": "/pan.ˈta.lon/",
 "p": "n",
 "e": "trousers",
+"n": ""
+},
+{
+"f": "pantano",
+"i": "/pan.ˈta.no/",
+"p": "n",
+"e": "marsh",
 "n": ""
 },
 {
@@ -6115,6 +11848,27 @@ const LEX = [
 "n": ""
 },
 {
+"f": "partial",
+"i": "/par.ˈti.al/",
+"p": "adj",
+"e": "partial",
+"n": ""
+},
+{
+"f": "partialment",
+"i": "/par.ti.ˈal.ment/",
+"p": "adv",
+"e": "partially",
+"n": ""
+},
+{
+"f": "participatiun",
+"i": "/par.ti.t͡ʃi.pa.ˈti.un/",
+"p": "n",
+"e": "participation",
+"n": ""
+},
+{
 "f": "participe",
 "i": "/par.ti.ˈt͡ʃi.pe/",
 "p": "n",
@@ -6143,6 +11897,20 @@ const LEX = [
 "n": ""
 },
 {
+"f": "passa",
+"i": "/ˈpa.sa/",
+"p": "v",
+"e": "pass, go by",
+"n": "se tren passa sin sta, the train goes through without stopping"
+},
+{
+"f": "passaporte",
+"i": "/pa.sa.ˈpor.te/",
+"p": "n",
+"e": "passport",
+"n": ""
+},
+{
 "f": "passat",
 "i": "/ˈpa.sat/",
 "p": "n",
@@ -6150,10 +11918,31 @@ const LEX = [
 "n": ""
 },
 {
+"f": "passu",
+"i": "/ˈpa.su/",
+"p": "n",
+"e": "pace",
+"n": ""
+},
+{
 "f": "pasta",
 "i": "/ˈpas.ta/",
 "p": "n",
 "e": "pasta, dough",
+"n": ""
+},
+{
+"f": "pastilia",
+"i": "/pas.ti.ˈli.a/",
+"p": "n",
+"e": "tablet",
+"n": "pilula is the smaller round form"
+},
+{
+"f": "pastura",
+"i": "/pas.ˈtu.ra/",
+"p": "n",
+"e": "pasture",
 "n": ""
 },
 {
@@ -6171,11 +11960,39 @@ const LEX = [
 "n": ""
 },
 {
+"f": "patiente",
+"i": "/pa.ti.ˈen.te/",
+"p": "adj",
+"e": "patient",
+"n": "patientia is the noun"
+},
+{
+"f": "patientement",
+"i": "/pa.ti.en.ˈte.ment/",
+"p": "adv",
+"e": "patiently",
+"n": ""
+},
+{
+"f": "patientia",
+"i": "/pa.ti.en.ˈti.a/",
+"p": "n",
+"e": "patience",
+"n": ""
+},
+{
 "f": "patre",
 "i": "/ˈpa.tre/",
 "p": "n",
 "e": "father",
 "n": "adjective patern; everyday tata"
+},
+{
+"f": "patron",
+"i": "/ˈpa.tron/",
+"p": "n",
+"e": "employer",
+"n": ""
 },
 {
 "f": "paupre",
@@ -6185,10 +12002,31 @@ const LEX = [
 "n": ""
 },
 {
+"f": "pausa",
+"i": "/pa.ˈu.sa/",
+"p": "n",
+"e": "pause, wait",
+"n": "sin pausa, without a wait"
+},
+{
+"f": "pava",
+"i": "/ˈpa.va/",
+"p": "v",
+"e": "pave",
+"n": ""
+},
+{
 "f": "pect",
 "i": "/pekt/",
 "p": "n",
 "e": "chest",
+"n": ""
+},
+{
+"f": "pectine",
+"i": "/pek.ˈti.ne/",
+"p": "n",
+"e": "comb",
 "n": ""
 },
 {
@@ -6203,6 +12041,20 @@ const LEX = [
 "i": "/ˈpe.le/",
 "p": "n",
 "e": "skin",
+"n": ""
+},
+{
+"f": "pena",
+"i": "/ˈpe.na/",
+"p": "n",
+"e": "penalty",
+"n": ""
+},
+{
+"f": "pendente",
+"i": "/pen.ˈden.te/",
+"p": "prep",
+"e": "pending",
 "n": ""
 },
 {
@@ -6234,6 +12086,27 @@ const LEX = [
 "n": ""
 },
 {
+"f": "pensiona",
+"i": "/pen.si.ˈo.na/",
+"p": "v",
+"e": "retire on a pension",
+"n": ""
+},
+{
+"f": "pensiun",
+"i": "/pen.ˈsi.un/",
+"p": "n",
+"e": "pension",
+"n": "pensiona is the verb"
+},
+{
+"f": "pensu",
+"i": "/ˈpen.su/",
+"p": "n",
+"e": "thought",
+"n": "pensa is the verb"
+},
+{
 "f": "per",
 "i": "/per/",
 "p": "prep",
@@ -6255,6 +12128,20 @@ const LEX = [
 "n": ""
 },
 {
+"f": "percentagiu",
+"i": "/per.t͡ʃen.ta.ˈd͡ʒi.u/",
+"p": "n",
+"e": "percentage",
+"n": ""
+},
+{
+"f": "percipe",
+"i": "/per.ˈt͡ʃi.pe/",
+"p": "v",
+"e": "perceive",
+"n": ""
+},
+{
 "f": "perde",
 "i": "/ˈper.de/",
 "p": "v",
@@ -6262,10 +12149,52 @@ const LEX = [
 "n": ""
 },
 {
+"f": "perfora",
+"i": "/per.ˈfo.ra/",
+"p": "v",
+"e": "drill, bore",
+"n": ""
+},
+{
 "f": "periculos",
 "i": "/pe.ri.ˈku.los/",
 "p": "adj",
 "e": "dangerous",
+"n": ""
+},
+{
+"f": "periodu",
+"i": "/pe.ri.ˈo.du/",
+"p": "n",
+"e": "period",
+"n": ""
+},
+{
+"f": "permanent",
+"i": "/per.ˈma.nent/",
+"p": "adj",
+"e": "permanent",
+"n": ""
+},
+{
+"f": "permanentament",
+"i": "/per.ma.nen.ˈta.ment/",
+"p": "adv",
+"e": "permanently",
+"n": ""
+},
+{
+"f": "permis",
+"i": "/ˈper.mis/",
+"p": "n",
+"e": "permit",
+"n": ""
+},
+{
+"f": "permisiun",
+"i": "/per.mi.ˈsi.un/",
+"p": "n",
+"e": "permission",
 "n": ""
 },
 {
@@ -6283,10 +12212,45 @@ const LEX = [
 "n": ""
 },
 {
+"f": "peron",
+"i": "/ˈpe.ron/",
+"p": "n",
+"e": "platform",
+"n": "peron un, platform one"
+},
+{
 "f": "perque",
 "i": "/ˈper.ke/",
 "p": "conj",
 "e": "because, why",
+"n": ""
+},
+{
+"f": "persequi",
+"i": "/per.ˈse.ki/",
+"p": "v",
+"e": "chase, pursue",
+"n": ""
+},
+{
+"f": "persiana",
+"i": "/per.si.ˈa.na/",
+"p": "n",
+"e": "shutter",
+"n": ""
+},
+{
+"f": "persiste",
+"i": "/per.ˈsis.te/",
+"p": "v",
+"e": "persist",
+"n": ""
+},
+{
+"f": "persistentia",
+"i": "/per.sis.ten.ˈti.a/",
+"p": "n",
+"e": "persistence",
 "n": ""
 },
 {
@@ -6346,6 +12310,20 @@ const LEX = [
 "n": ""
 },
 {
+"f": "petia",
+"i": "/pe.ˈti.a/",
+"p": "n",
+"e": "piece",
+"n": ""
+},
+{
+"f": "petitiun",
+"i": "/pe.ti.ˈti.un/",
+"p": "n",
+"e": "petition",
+"n": "any person may put one, in any language"
+},
+{
 "f": "petra",
 "i": "/ˈpe.tra/",
 "p": "n",
@@ -6360,10 +12338,52 @@ const LEX = [
 "n": ""
 },
 {
+"f": "picheta",
+"i": "/pik.ˈhe.ta/",
+"p": "v",
+"e": "picket",
+"n": ""
+},
+{
+"f": "pietate",
+"i": "/pi.e.ˈta.te/",
+"p": "n",
+"e": "pity",
+"n": ""
+},
+{
+"f": "pila",
+"i": "/ˈpi.la/",
+"p": "v",
+"e": "stack, pile",
+"n": ""
+},
+{
+"f": "pilota",
+"i": "/pi.ˈlo.ta/",
+"p": "v",
+"e": "steer, drive a vessel",
+"n": ""
+},
+{
 "f": "pilula",
 "i": "/pi.ˈlu.la/",
 "p": "n",
 "e": "pill",
+"n": ""
+},
+{
+"f": "pinsa",
+"i": "/ˈpin.sa/",
+"p": "v",
+"e": "pinch",
+"n": ""
+},
+{
+"f": "pinta",
+"i": "/ˈpin.ta/",
+"p": "v",
+"e": "paint",
 "n": ""
 },
 {
@@ -6430,6 +12450,20 @@ const LEX = [
 "n": ""
 },
 {
+"f": "plane",
+"i": "/ˈpla.ne/",
+"p": "adj",
+"e": "flat",
+"n": "plan is the plan"
+},
+{
+"f": "planifica",
+"i": "/pla.ni.ˈfi.ka/",
+"p": "v",
+"e": "plan",
+"n": "planificatiun is the noun"
+},
+{
 "f": "planificat",
 "i": "/pla.ni.ˈfi.kat/",
 "p": "adj",
@@ -6465,6 +12499,20 @@ const LEX = [
 "n": ""
 },
 {
+"f": "plena",
+"i": "/ˈple.na/",
+"p": "v",
+"e": "fill",
+"n": "from plen"
+},
+{
+"f": "plicu",
+"i": "/ˈpli.ku/",
+"p": "n",
+"e": "envelope",
+"n": ""
+},
+{
 "f": "plora",
 "i": "/ˈplo.ra/",
 "p": "v",
@@ -6476,6 +12524,20 @@ const LEX = [
 "i": "/ˈplu.ral/",
 "p": "n",
 "e": "plural",
+"n": ""
+},
+{
+"f": "pluralite",
+"i": "/plu.ra.ˈli.te/",
+"p": "n",
+"e": "plurality",
+"n": ""
+},
+{
+"f": "plures",
+"i": "/ˈplu.res/",
+"p": "pron",
+"e": "several",
 "n": ""
 },
 {
@@ -6528,10 +12590,24 @@ const LEX = [
 "n": ""
 },
 {
+"f": "police",
+"i": "/po.ˈli.t͡ʃe/",
+"p": "n",
+"e": "thumb",
+"n": ""
+},
+{
 "f": "policia",
 "i": "/po.ˈli.t͡ʃa/",
 "p": "n",
 "e": "police",
+"n": ""
+},
+{
+"f": "polisce",
+"i": "/po.ˈlis.t͡ʃe/",
+"p": "v",
+"e": "polish",
 "n": ""
 },
 {
@@ -6549,11 +12625,25 @@ const LEX = [
 "n": ""
 },
 {
+"f": "pomar",
+"i": "/ˈpo.mar/",
+"p": "n",
+"e": "orchard",
+"n": ""
+},
+{
 "f": "pomoc",
 "i": "/ˈpo.mok/",
 "p": "n",
 "e": "help, everyday",
 "n": "formal auxil; pomoc is what a person shouts"
+},
+{
+"f": "pompa",
+"i": "/ˈpom.pa/",
+"p": "n",
+"e": "pump",
+"n": "the lagun works run on them"
 },
 {
 "f": "pompiere",
@@ -6567,6 +12657,20 @@ const LEX = [
 "i": "/ˈpo.ne/",
 "p": "v",
 "e": "put",
+"n": ""
+},
+{
+"f": "pontile",
+"i": "/pon.ˈti.le/",
+"p": "n",
+"e": "pier",
+"n": ""
+},
+{
+"f": "popular",
+"i": "/po.ˈpu.lar/",
+"p": "adj",
+"e": "popular",
 "n": ""
 },
 {
@@ -6584,6 +12688,13 @@ const LEX = [
 "n": "the animal and the meat alike"
 },
 {
+"f": "poros",
+"i": "/ˈpo.ros/",
+"p": "adj",
+"e": "porous",
+"n": ""
+},
+{
 "f": "port",
 "i": "/port/",
 "p": "n",
@@ -6595,6 +12706,13 @@ const LEX = [
 "i": "/ˈpor.ta/",
 "p": "n",
 "e": "door",
+"n": ""
+},
+{
+"f": "portiun",
+"i": "/por.ˈti.un/",
+"p": "n",
+"e": "portion",
 "n": ""
 },
 {
@@ -6626,6 +12744,13 @@ const LEX = [
 "n": "demonym of Portugal"
 },
 {
+"f": "posdeman",
+"i": "/pos.ˈde.man/",
+"p": "adv",
+"e": "the day after tomorrow",
+"n": "deman is tomorrow"
+},
+{
 "f": "positiun",
 "i": "/po.si.ˈti.un/",
 "p": "n",
@@ -6638,6 +12763,13 @@ const LEX = [
 "p": "adj",
 "e": "possible",
 "n": "the negative is nopossibile"
+},
+{
+"f": "possibilement",
+"i": "/po.si.bi.ˈle.ment/",
+"p": "adv",
+"e": "possibly",
+"n": "possibilitate is the noun"
 },
 {
 "f": "possibilitate",
@@ -6661,6 +12793,13 @@ const LEX = [
 "n": ""
 },
 {
+"f": "postea",
+"i": "/pos.ˈte.a/",
+"p": "adv",
+"e": "afterwards",
+"n": ""
+},
+{
 "f": "postel",
 "i": "/ˈpos.tel/",
 "p": "n",
@@ -6668,11 +12807,25 @@ const LEX = [
 "n": "formal lecte"
 },
 {
+"f": "postque",
+"i": "/ˈpost.ke/",
+"p": "conj",
+"e": "after, once",
+"n": ""
+},
+{
 "f": "pote",
 "i": "/ˈpo.te/",
 "p": "v",
 "e": "can, may",
 "n": ""
+},
+{
+"f": "potentia",
+"i": "/po.ten.ˈti.a/",
+"p": "n",
+"e": "power",
+"n": "of a body and of a machine"
 },
 {
 "f": "poter",
@@ -6689,11 +12842,53 @@ const LEX = [
 "n": "also the everyday noun for work"
 },
 {
+"f": "practica",
+"i": "/prak.ˈti.ka/",
+"p": "v",
+"e": "practise a trade",
+"n": "of a trade; praca of work in general"
+},
+{
 "f": "prandiu",
 "i": "/pran.ˈdi.u/",
 "p": "n",
 "e": "midday meal, formal",
 "n": "everyday obed"
+},
+{
+"f": "praxi",
+"i": "/ˈpra.ʃi/",
+"p": "n",
+"e": "practice",
+"n": "practica is the verb"
+},
+{
+"f": "precedent",
+"i": "/pre.ˈt͡ʃe.dent/",
+"p": "adj",
+"e": "preceding",
+"n": ""
+},
+{
+"f": "precis",
+"i": "/ˈpre.t͡ʃis/",
+"p": "adj",
+"e": "precise",
+"n": "precisa is the verb"
+},
+{
+"f": "precisa",
+"i": "/pre.ˈt͡ʃi.sa/",
+"p": "v",
+"e": "state precisely",
+"n": "precisa se hora, give the exact time"
+},
+{
+"f": "precisment",
+"i": "/pre.ˈt͡ʃis.ment/",
+"p": "adv",
+"e": "precisely",
+"n": ""
 },
 {
 "f": "prefere",
@@ -6703,10 +12898,24 @@ const LEX = [
 "n": ""
 },
 {
+"f": "preferentia",
+"i": "/pre.fe.ren.ˈti.a/",
+"p": "n",
+"e": "preference",
+"n": ""
+},
+{
 "f": "prefix",
 "i": "/ˈpre.fiʃ/",
 "p": "n",
 "e": "prefix",
+"n": ""
+},
+{
+"f": "prelectiun",
+"i": "/pre.lek.ˈti.un/",
+"p": "n",
+"e": "lecture",
 "n": ""
 },
 {
@@ -6721,6 +12930,13 @@ const LEX = [
 "i": "/pre.ˈno.me/",
 "p": "n",
 "e": "given name",
+"n": ""
+},
+{
+"f": "preocupatiun",
+"i": "/pre.o.ku.pa.ˈti.un/",
+"p": "n",
+"e": "concern, preoccupation",
 "n": ""
 },
 {
@@ -6745,6 +12961,13 @@ const LEX = [
 "n": ""
 },
 {
+"f": "present",
+"i": "/ˈpre.sent/",
+"p": "adj",
+"e": "present",
+"n": ""
+},
+{
 "f": "presenta",
 "i": "/pre.ˈsen.ta/",
 "p": "v",
@@ -6759,11 +12982,39 @@ const LEX = [
 "n": "also the adjective, present"
 },
 {
+"f": "presentia",
+"i": "/pre.sen.ˈti.a/",
+"p": "n",
+"e": "presence",
+"n": ""
+},
+{
+"f": "presida",
+"i": "/pre.ˈsi.da/",
+"p": "v",
+"e": "preside",
+"n": ""
+},
+{
+"f": "presiun",
+"i": "/pre.ˈsi.un/",
+"p": "n",
+"e": "pressure",
+"n": "read on a manometru"
+},
+{
 "f": "prest",
 "i": "/prest/",
 "p": "adj",
 "e": "ready",
 "n": ""
+},
+{
+"f": "presta",
+"i": "/ˈpres.ta/",
+"p": "v",
+"e": "lend",
+"n": "presta is to lend, mutua to borrow"
 },
 {
 "f": "presto",
@@ -6780,6 +13031,20 @@ const LEX = [
 "n": "prestu lassat integr, a loan left whole"
 },
 {
+"f": "presuma",
+"i": "/pre.ˈsu.ma/",
+"p": "v",
+"e": "presume",
+"n": ""
+},
+{
+"f": "pretia",
+"i": "/pre.ˈti.a/",
+"p": "v",
+"e": "price, put a price on",
+"n": ""
+},
+{
 "f": "pretiu",
 "i": "/pre.ˈti.u/",
 "p": "n",
@@ -6787,11 +13052,32 @@ const LEX = [
 "n": ""
 },
 {
+"f": "previde",
+"i": "/pre.ˈvi.de/",
+"p": "v",
+"e": "foresee",
+"n": ""
+},
+{
+"f": "previsiun",
+"i": "/pre.vi.ˈsi.un/",
+"p": "n",
+"e": "forecast",
+"n": "the meteo cooperative issues them"
+},
+{
 "f": "prexa",
 "i": "/ˈpre.ʃa/",
 "p": "adj",
 "e": "next in a sequence",
 "n": "prexa statiun, the next stop"
+},
+{
+"f": "prexim",
+"i": "/ˈpre.ʃim/",
+"p": "adj",
+"e": "next",
+"n": "statiun prexim, the next stop"
 },
 {
 "f": "prim",
@@ -6808,6 +13094,13 @@ const LEX = [
 "n": ""
 },
 {
+"f": "primo",
+"i": "/ˈpri.mo/",
+"p": "adv",
+"e": "firstly",
+"n": "primo, secundo, ultimo in a list"
+},
+{
 "f": "principal",
 "i": "/prin.ˈt͡ʃi.pal/",
 "p": "adj",
@@ -6815,10 +13108,73 @@ const LEX = [
 "n": ""
 },
 {
+"f": "principalment",
+"i": "/prin.t͡ʃi.ˈpal.ment/",
+"p": "adv",
+"e": "principally",
+"n": ""
+},
+{
+"f": "principiu",
+"i": "/prin.t͡ʃi.ˈpi.u/",
+"p": "n",
+"e": "principle",
+"n": ""
+},
+{
+"f": "prioritate",
+"i": "/pri.o.ri.ˈta.te/",
+"p": "n",
+"e": "priority",
+"n": "prioritate te se abaxa, priority to those getting down"
+},
+{
+"f": "prisa",
+"i": "/ˈpri.sa/",
+"p": "n",
+"e": "socket",
+"n": ""
+},
+{
+"f": "privat",
+"i": "/ˈpri.vat/",
+"p": "adj",
+"e": "private",
+"n": ""
+},
+{
+"f": "privatament",
+"i": "/pri.va.ˈta.ment/",
+"p": "adv",
+"e": "privately",
+"n": ""
+},
+{
 "f": "proba",
 "i": "/ˈpro.ba/",
 "p": "v",
 "e": "test, try out",
+"n": ""
+},
+{
+"f": "probabile",
+"i": "/pro.ba.ˈbi.le/",
+"p": "adj",
+"e": "probable",
+"n": ""
+},
+{
+"f": "probabilement",
+"i": "/pro.ba.bi.ˈle.ment/",
+"p": "adv",
+"e": "probably",
+"n": ""
+},
+{
+"f": "probatiun",
+"i": "/pro.ba.ˈti.un/",
+"p": "n",
+"e": "proof, the proving of a thing",
 "n": ""
 },
 {
@@ -6836,6 +13192,27 @@ const LEX = [
 "n": ""
 },
 {
+"f": "procedura",
+"i": "/pro.t͡ʃe.ˈdu.ra/",
+"p": "n",
+"e": "procedure",
+"n": ""
+},
+{
+"f": "proclama",
+"i": "/pro.ˈkla.ma/",
+"p": "v",
+"e": "proclaim a result",
+"n": "the result is proclaimed at the commune"
+},
+{
+"f": "procul",
+"i": "/ˈpro.kul/",
+"p": "prep",
+"e": "far from",
+"n": ""
+},
+{
 "f": "produce",
 "i": "/pro.ˈdu.t͡ʃe/",
 "p": "v",
@@ -6850,10 +13227,31 @@ const LEX = [
 "n": ""
 },
 {
+"f": "productiun",
+"i": "/pro.duk.ˈti.un/",
+"p": "n",
+"e": "production",
+"n": ""
+},
+{
 "f": "productiv",
 "i": "/pro.ˈduk.tiv/",
 "p": "adj",
 "e": "productive, of a suffix still in use",
+"n": ""
+},
+{
+"f": "productivitate",
+"i": "/pro.duk.ti.vi.ˈta.te/",
+"p": "n",
+"e": "productivity",
+"n": ""
+},
+{
+"f": "profesa",
+"i": "/pro.ˈfe.sa/",
+"p": "v",
+"e": "practise professionally",
 "n": ""
 },
 {
@@ -6871,6 +13269,13 @@ const LEX = [
 "n": ""
 },
 {
+"f": "profundament",
+"i": "/pro.fun.ˈda.ment/",
+"p": "adv",
+"e": "deeply",
+"n": ""
+},
+{
 "f": "profundu",
 "i": "/pro.ˈfun.du/",
 "p": "n",
@@ -6885,6 +13290,13 @@ const LEX = [
 "n": ""
 },
 {
+"f": "programisa",
+"i": "/pro.gra.ˈmi.sa/",
+"p": "v",
+"e": "schedule, put on the timetable",
+"n": "programa is the programme"
+},
+{
 "f": "prohibe",
 "i": "/pro.ˈhi.be/",
 "p": "v",
@@ -6892,10 +13304,31 @@ const LEX = [
 "n": ""
 },
 {
+"f": "projectu",
+"i": "/pro.ˈʒek.tu/",
+"p": "n",
+"e": "project",
+"n": ""
+},
+{
 "f": "promete",
 "i": "/pro.ˈme.te/",
 "p": "v",
 "e": "promise",
+"n": ""
+},
+{
+"f": "promova",
+"i": "/pro.ˈmo.va/",
+"p": "v",
+"e": "promote",
+"n": ""
+},
+{
+"f": "promulga",
+"i": "/pro.ˈmul.ga/",
+"p": "v",
+"e": "promulgate",
 "n": ""
 },
 {
@@ -6913,10 +13346,31 @@ const LEX = [
 "n": ""
 },
 {
+"f": "pronuncia",
+"i": "/pro.nun.ˈt͡ʃi.a/",
+"p": "v",
+"e": "pronounce, deliver a ruling",
+"n": "of a court; prononciatiun is the noun"
+},
+{
+"f": "prope",
+"i": "/ˈpro.pe/",
+"p": "prep",
+"e": "near",
+"n": "prope se statiun, near the stop"
+},
+{
 "f": "propone",
 "i": "/pro.ˈpo.ne/",
 "p": "v",
 "e": "propose",
+"n": ""
+},
+{
+"f": "proportiun",
+"i": "/pro.por.ˈti.un/",
+"p": "n",
+"e": "proportion",
 "n": ""
 },
 {
@@ -6934,10 +13388,24 @@ const LEX = [
 "n": ""
 },
 {
+"f": "proprietariu",
+"i": "/pro.pri.e.ta.ˈri.u/",
+"p": "n",
+"e": "owner",
+"n": "no dwelling is held for gain"
+},
+{
 "f": "prosop",
 "i": "/ˈpro.sop/",
 "p": "n",
 "e": "towel",
+"n": ""
+},
+{
+"f": "prosperitate",
+"i": "/pros.pe.ri.ˈta.te/",
+"p": "n",
+"e": "prosperity",
 "n": ""
 },
 {
@@ -6955,6 +13423,27 @@ const LEX = [
 "n": ""
 },
 {
+"f": "protesta",
+"i": "/pro.ˈtes.ta/",
+"p": "v",
+"e": "protest",
+"n": ""
+},
+{
+"f": "protocola",
+"i": "/pro.to.ˈko.la/",
+"p": "v",
+"e": "minute, record formally",
+"n": ""
+},
+{
+"f": "protocolu",
+"i": "/pro.to.ˈko.lu/",
+"p": "n",
+"e": "formal record of proceedings",
+"n": ""
+},
+{
 "f": "prototip",
 "i": "/pro.ˈto.tip/",
 "p": "n",
@@ -6969,10 +13458,52 @@ const LEX = [
 "n": ""
 },
 {
+"f": "provisiun",
+"i": "/pro.vi.ˈsi.un/",
+"p": "n",
+"e": "provision",
+"n": "of a text and of a store laid in"
+},
+{
+"f": "provoca",
+"i": "/pro.ˈvo.ka/",
+"p": "v",
+"e": "provoke",
+"n": ""
+},
+{
 "f": "proxim",
 "i": "/ˈpro.ʃim/",
 "p": "adj",
 "e": "next, nearby",
+"n": ""
+},
+{
+"f": "proximitate",
+"i": "/pro.ʃi.mi.ˈta.te/",
+"p": "n",
+"e": "nearness",
+"n": "prexim is the adjective on the eastern seaboard"
+},
+{
+"f": "prudente",
+"i": "/pru.ˈden.te/",
+"p": "adj",
+"e": "prudent",
+"n": ""
+},
+{
+"f": "prudentement",
+"i": "/pru.den.ˈte.ment/",
+"p": "adv",
+"e": "prudently",
+"n": ""
+},
+{
+"f": "prudentia",
+"i": "/pru.den.ˈti.a/",
+"p": "n",
+"e": "prudence",
 "n": ""
 },
 {
@@ -6997,6 +13528,20 @@ const LEX = [
 "n": ""
 },
 {
+"f": "publicament",
+"i": "/pu.bli.ˈka.ment/",
+"p": "adv",
+"e": "publicly",
+"n": "of a sitting held in the open"
+},
+{
+"f": "publicatiun",
+"i": "/pu.bli.ka.ˈti.un/",
+"p": "n",
+"e": "publication",
+"n": ""
+},
+{
 "f": "puella",
 "i": "/pu.ˈe.la/",
 "p": "n",
@@ -7011,10 +13556,24 @@ const LEX = [
 "n": ""
 },
 {
+"f": "pullover",
+"i": "/pu.ˈlo.ver/",
+"p": "n",
+"e": "jumper",
+"n": ""
+},
+{
 "f": "pulmon",
 "i": "/ˈpul.mon/",
 "p": "n",
 "e": "lung",
+"n": ""
+},
+{
+"f": "pulsu",
+"i": "/ˈpul.su/",
+"p": "n",
+"e": "pulse",
 "n": ""
 },
 {
@@ -7025,11 +13584,39 @@ const LEX = [
 "n": ""
 },
 {
+"f": "pupitre",
+"i": "/pu.ˈpi.tre/",
+"p": "n",
+"e": "desk",
+"n": ""
+},
+{
+"f": "purpure",
+"i": "/pur.ˈpu.re/",
+"p": "adj",
+"e": "purple",
+"n": ""
+},
+{
+"f": "pusa",
+"i": "/ˈpu.sa/",
+"p": "v",
+"e": "push",
+"n": "no pusa vos un se altre"
+},
+{
 "f": "pussa",
 "i": "/ˈpu.sa/",
 "p": "v",
 "e": "push",
 "n": ""
+},
+{
+"f": "putri",
+"i": "/ˈpu.tri/",
+"p": "v",
+"e": "rot",
+"n": "putrid is the adjective"
 },
 {
 "f": "putrid",
@@ -7039,10 +13626,24 @@ const LEX = [
 "n": ""
 },
 {
+"f": "quadrat",
+"i": "/ˈka.drat/",
+"p": "adj",
+"e": "square",
+"n": ""
+},
+{
 "f": "quale",
 "i": "/ˈka.le/",
 "p": "det",
 "e": "which, what sort of",
+"n": ""
+},
+{
+"f": "qualifica",
+"i": "/ka.li.ˈfi.ka/",
+"p": "v",
+"e": "qualify",
 "n": ""
 },
 {
@@ -7064,6 +13665,13 @@ const LEX = [
 "i": "/ˈkan.te/",
 "p": "det",
 "e": "how many, how much",
+"n": ""
+},
+{
+"f": "quanto",
+"i": "/ˈkan.to/",
+"p": "adv",
+"e": "how much",
 "n": ""
 },
 {
@@ -7172,10 +13780,59 @@ const LEX = [
 "n": "demonym of Quiribati"
 },
 {
+"f": "quisque",
+"i": "/ˈkis.ke/",
+"p": "pron",
+"e": "each one",
+"n": ""
+},
+{
+"f": "quo",
+"i": "/ko/",
+"p": "adv",
+"e": "whither, to where",
+"n": ""
+},
+{
 "f": "quorum",
 "i": "/ˈko.rum/",
 "p": "n",
 "e": "quorum",
+"n": ""
+},
+{
+"f": "quota",
+"i": "/ˈko.ta/",
+"p": "n",
+"e": "quota",
+"n": ""
+},
+{
+"f": "quotidian",
+"i": "/ko.ti.ˈdi.an/",
+"p": "adj",
+"e": "daily",
+"n": "die is the day"
+},
+{
+"f": "quotidianment",
+"i": "/ko.ti.di.ˈan.ment/",
+"p": "adv",
+"e": "daily",
+"n": ""
+},
+{
+"f": "rada",
+"i": "/ˈra.da/",
+"p": "n",
+"e": "anchorage",
+"n": ""
+},
+{
+"f": "radia",
+"i": "/ra.ˈdi.a/",
+"p": "v",
+"e": "strike off a register",
 "n": ""
 },
 {
@@ -7193,6 +13850,13 @@ const LEX = [
 "n": ""
 },
 {
+"f": "radiu",
+"i": "/ra.ˈdi.u/",
+"p": "n",
+"e": "radius",
+"n": ""
+},
+{
 "f": "rafred",
 "i": "/ˈra.fred/",
 "p": "n",
@@ -7205,6 +13869,13 @@ const LEX = [
 "p": "n",
 "e": "shelf",
 "n": ""
+},
+{
+"f": "ramu",
+"i": "/ˈra.mu/",
+"p": "n",
+"e": "frame",
+"n": "se ramu de porta, the door frame"
 },
 {
 "f": "rand",
@@ -7221,11 +13892,32 @@ const LEX = [
 "n": ""
 },
 {
+"f": "rapidament",
+"i": "/ra.pi.ˈda.ment/",
+"p": "adv",
+"e": "quickly",
+"n": "the suffix takes a linking a after any consonant but l, n, r or s"
+},
+{
+"f": "rapiditate",
+"i": "/ra.pi.di.ˈta.te/",
+"p": "n",
+"e": "speed",
+"n": ""
+},
+{
 "f": "raport",
 "i": "/ˈra.port/",
 "p": "n",
 "e": "report",
 "n": ""
+},
+{
+"f": "rar",
+"i": "/rar/",
+"p": "adj",
+"e": "rare",
+"n": "raro is the adverb"
 },
 {
 "f": "raro",
@@ -7235,10 +13927,101 @@ const LEX = [
 "n": ""
 },
 {
+"f": "rasa",
+"i": "/ˈra.sa/",
+"p": "v",
+"e": "plane, level off",
+"n": ""
+},
+{
+"f": "ratifica",
+"i": "/ra.ti.ˈfi.ka/",
+"p": "v",
+"e": "ratify",
+"n": ""
+},
+{
+"f": "ratificatiun",
+"i": "/ra.ti.fi.ka.ˈti.un/",
+"p": "n",
+"e": "ratification",
+"n": ""
+},
+{
+"f": "rationa",
+"i": "/ra.ti.ˈo.na/",
+"p": "v",
+"e": "reason",
+"n": ""
+},
+{
+"f": "rational",
+"i": "/ra.ti.ˈo.nal/",
+"p": "adj",
+"e": "rational",
+"n": ""
+},
+{
+"f": "rationalisa",
+"i": "/ra.ti.o.na.ˈli.sa/",
+"p": "v",
+"e": "rationalise",
+"n": ""
+},
+{
+"f": "rationalment",
+"i": "/ra.ti.o.ˈnal.ment/",
+"p": "adv",
+"e": "rationally",
+"n": ""
+},
+{
+"f": "ratiun",
+"i": "/ra.ˈti.un/",
+"p": "n",
+"e": "reason, ground",
+"n": "causa of what brings a thing about"
+},
+{
 "f": "re-",
 "i": "",
 "p": "pref",
 "e": "again",
+"n": ""
+},
+{
+"f": "reactiun",
+"i": "/re.ak.ˈti.un/",
+"p": "n",
+"e": "chemical reaction",
+"n": ""
+},
+{
+"f": "realite",
+"i": "/re.a.ˈli.te/",
+"p": "n",
+"e": "reality",
+"n": ""
+},
+{
+"f": "recent",
+"i": "/ˈre.t͡ʃent/",
+"p": "adj",
+"e": "recent",
+"n": ""
+},
+{
+"f": "recentament",
+"i": "/re.t͡ʃen.ˈta.ment/",
+"p": "adv",
+"e": "recently",
+"n": ""
+},
+{
+"f": "receptor",
+"i": "/re.ˈt͡ʃep.tor/",
+"p": "n",
+"e": "receiver",
 "n": ""
 },
 {
@@ -7249,10 +14032,45 @@ const LEX = [
 "n": ""
 },
 {
+"f": "recif",
+"i": "/ˈre.t͡ʃif/",
+"p": "n",
+"e": "reef",
+"n": ""
+},
+{
+"f": "reciproc",
+"i": "/re.ˈt͡ʃi.prok/",
+"p": "adj",
+"e": "reciprocal",
+"n": ""
+},
+{
+"f": "reciprocament",
+"i": "/re.t͡ʃi.pro.ˈka.ment/",
+"p": "adv",
+"e": "reciprocally",
+"n": ""
+},
+{
 "f": "recive",
 "i": "/re.ˈt͡ʃi.ve/",
 "p": "v",
 "e": "receive",
+"n": ""
+},
+{
+"f": "reclama",
+"i": "/re.ˈkla.ma/",
+"p": "v",
+"e": "claim, complain formally",
+"n": "of a formal complaint; clama of a shout"
+},
+{
+"f": "reclina",
+"i": "/re.ˈkli.na/",
+"p": "v",
+"e": "lean back",
 "n": ""
 },
 {
@@ -7291,6 +14109,20 @@ const LEX = [
 "n": ""
 },
 {
+"f": "recruta",
+"i": "/re.ˈkru.ta/",
+"p": "v",
+"e": "recruit",
+"n": ""
+},
+{
+"f": "rect",
+"i": "/rekt/",
+"p": "adj",
+"e": "straight",
+"n": "recte is the adverb"
+},
+{
 "f": "recte",
 "i": "/ˈrek.te/",
 "p": "adv",
@@ -7298,10 +14130,38 @@ const LEX = [
 "n": ""
 },
 {
+"f": "recuperatiun",
+"i": "/re.ku.pe.ra.ˈti.un/",
+"p": "n",
+"e": "recovery",
+"n": ""
+},
+{
+"f": "recursu",
+"i": "/re.ˈkur.su/",
+"p": "n",
+"e": "recourse",
+"n": ""
+},
+{
+"f": "redacta",
+"i": "/re.ˈdak.ta/",
+"p": "v",
+"e": "draft, write up",
+"n": "of a text put into form; scriva of the act"
+},
+{
 "f": "reductiun",
 "i": "/re.duk.ˈti.un/",
 "p": "n",
 "e": "discount",
+"n": ""
+},
+{
+"f": "reelige",
+"i": "/re.e.ˈli.d͡ʒe/",
+"p": "v",
+"e": "re-elect",
 "n": ""
 },
 {
@@ -7312,11 +14172,53 @@ const LEX = [
 "n": ""
 },
 {
+"f": "referentia",
+"i": "/re.fe.ren.ˈti.a/",
+"p": "n",
+"e": "reference",
+"n": ""
+},
+{
 "f": "refugiu",
 "i": "/re.ˈfu.d͡ʒu/",
 "p": "n",
 "e": "shelter",
 "n": ""
+},
+{
+"f": "refusa",
+"i": "/re.ˈfu.sa/",
+"p": "v",
+"e": "refuse",
+"n": "refusa se transbord, refuse the transfer"
+},
+{
+"f": "regarda",
+"i": "/re.ˈgar.da/",
+"p": "v",
+"e": "look at",
+"n": "vidi is to see, regarda is to look"
+},
+{
+"f": "regional",
+"i": "/re.d͡ʒi.ˈo.nal/",
+"p": "adj",
+"e": "regional",
+"n": ""
+},
+{
+"f": "regionalment",
+"i": "/re.d͡ʒi.o.ˈnal.ment/",
+"p": "adv",
+"e": "regionally",
+"n": ""
+},
+{
+"f": "registra",
+"i": "/re.ˈd͡ʒis.tra/",
+"p": "v",
+"e": "enter in a register",
+"n": "registru is the register"
 },
 {
 "f": "registru",
@@ -7326,11 +14228,32 @@ const LEX = [
 "n": ""
 },
 {
+"f": "registru-contabil",
+"i": "/re.d͡ʒis.tru.kon.ˈta.bil/",
+"p": "n",
+"e": "ledger",
+"n": ""
+},
+{
 "f": "regiun",
 "i": "/ˈre.d͡ʒun/",
 "p": "n",
 "e": "region",
 "n": ""
+},
+{
+"f": "regla",
+"i": "/ˈre.gla/",
+"p": "v",
+"e": "set, regulate",
+"n": "of an instrument; regula is the rule"
+},
+{
+"f": "regretu",
+"i": "/re.ˈgre.tu/",
+"p": "n",
+"e": "regret",
+"n": "of a thing done; luctu of a person lost"
 },
 {
 "f": "regula",
@@ -7347,6 +14270,97 @@ const LEX = [
 "n": ""
 },
 {
+"f": "regulamentu",
+"i": "/re.gu.la.ˈmen.tu/",
+"p": "n",
+"e": "regulation",
+"n": "regula is the rule itself"
+},
+{
+"f": "reintegra",
+"i": "/re.in.ˈte.gra/",
+"p": "v",
+"e": "reinstate",
+"n": ""
+},
+{
+"f": "relata",
+"i": "/re.ˈla.ta/",
+"p": "v",
+"e": "report",
+"n": ""
+},
+{
+"f": "relatiun",
+"i": "/re.la.ˈti.un/",
+"p": "n",
+"e": "relation",
+"n": ""
+},
+{
+"f": "relativ",
+"i": "/re.ˈla.tiv/",
+"p": "adj",
+"e": "relative",
+"n": ""
+},
+{
+"f": "relativament",
+"i": "/re.la.ti.ˈva.ment/",
+"p": "adv",
+"e": "relatively",
+"n": ""
+},
+{
+"f": "remar",
+"i": "/ˈre.mar/",
+"p": "v",
+"e": "row",
+"n": ""
+},
+{
+"f": "remarca",
+"i": "/re.ˈmar.ka/",
+"p": "v",
+"e": "notice",
+"n": ""
+},
+{
+"f": "rembursa",
+"i": "/rem.ˈbur.sa/",
+"p": "v",
+"e": "reimburse",
+"n": ""
+},
+{
+"f": "rememora",
+"i": "/re.me.ˈmo.ra/",
+"p": "v",
+"e": "call to mind",
+"n": ""
+},
+{
+"f": "remolca",
+"i": "/re.ˈmol.ka/",
+"p": "v",
+"e": "tow",
+"n": ""
+},
+{
+"f": "remuneratiun",
+"i": "/re.mu.ne.ra.ˈti.un/",
+"p": "n",
+"e": "remuneration",
+"n": ""
+},
+{
+"f": "ren",
+"i": "/ren/",
+"p": "n",
+"e": "kidney",
+"n": ""
+},
+{
 "f": "renova",
 "i": "/re.ˈno.va/",
 "p": "v",
@@ -7354,10 +14368,38 @@ const LEX = [
 "n": ""
 },
 {
+"f": "renuncia",
+"i": "/re.nun.ˈt͡ʃi.a/",
+"p": "v",
+"e": "give up, renounce",
+"n": ""
+},
+{
 "f": "repara",
 "i": "/re.ˈpa.ra/",
 "p": "v",
 "e": "repair",
+"n": ""
+},
+{
+"f": "reparti",
+"i": "/re.ˈpar.ti/",
+"p": "v",
+"e": "distribute, share out",
+"n": ""
+},
+{
+"f": "repete",
+"i": "/re.ˈpe.te/",
+"p": "v",
+"e": "repeat",
+"n": "repete, per favor, say that again please"
+},
+{
+"f": "repetitiun",
+"i": "/re.pe.ti.ˈti.un/",
+"p": "n",
+"e": "repetition",
 "n": ""
 },
 {
@@ -7382,10 +14424,31 @@ const LEX = [
 "n": ""
 },
 {
+"f": "repta",
+"i": "/ˈrep.ta/",
+"p": "v",
+"e": "crawl",
+"n": ""
+},
+{
 "f": "republica",
 "i": "/re.pu.ˈbli.ka/",
 "p": "n",
 "e": "republic",
+"n": ""
+},
+{
+"f": "requesta",
+"i": "/re.ˈkes.ta/",
+"p": "n",
+"e": "demand, request",
+"n": ""
+},
+{
+"f": "rescinde",
+"i": "/res.ˈt͡ʃin.de/",
+"p": "v",
+"e": "rescind",
 "n": ""
 },
 {
@@ -7403,11 +14466,46 @@ const LEX = [
 "n": ""
 },
 {
+"f": "resistentia",
+"i": "/re.sis.ten.ˈti.a/",
+"p": "n",
+"e": "resistance",
+"n": "of a material and of a people"
+},
+{
+"f": "resolve",
+"i": "/re.ˈsol.ve/",
+"p": "v",
+"e": "resolve, make up one's mind",
+"n": "solve is to settle a matter"
+},
+{
+"f": "resona",
+"i": "/re.ˈso.na/",
+"p": "v",
+"e": "echo, resound",
+"n": ""
+},
+{
+"f": "respecta",
+"i": "/res.ˈpek.ta/",
+"p": "v",
+"e": "respect",
+"n": ""
+},
+{
 "f": "respira",
 "i": "/res.ˈpi.ra/",
 "p": "v",
 "e": "breathe",
 "n": ""
+},
+{
+"f": "respiratiun",
+"i": "/res.pi.ra.ˈti.un/",
+"p": "n",
+"e": "breathing",
+"n": "respira is the verb"
 },
 {
 "f": "responde",
@@ -7459,6 +14557,13 @@ const LEX = [
 "n": ""
 },
 {
+"f": "resuma",
+"i": "/re.ˈsu.ma/",
+"p": "v",
+"e": "sum up",
+"n": ""
+},
+{
 "f": "resursa",
 "i": "/re.ˈsur.sa/",
 "p": "n",
@@ -7480,11 +14585,46 @@ const LEX = [
 "n": ""
 },
 {
+"f": "rete-de-pesce",
+"i": "/re.te.de.ˈpes.t͡ʃe/",
+"p": "n",
+"e": "fishing net",
+"n": ""
+},
+{
+"f": "rete-electric",
+"i": "/re.te.e.ˈlek.trik/",
+"p": "n",
+"e": "electricity grid",
+"n": "rete is the network in general"
+},
+{
 "f": "retira",
 "i": "/re.ˈti.ra/",
 "p": "v",
 "e": "withdraw",
 "n": ""
+},
+{
+"f": "retorca",
+"i": "/re.ˈtor.ka/",
+"p": "v",
+"e": "retort, answer back",
+"n": ""
+},
+{
+"f": "retro",
+"i": "/ˈre.tro/",
+"p": "adv",
+"e": "backwards",
+"n": ""
+},
+{
+"f": "retrocede",
+"i": "/re.tro.ˈt͡ʃe.de/",
+"p": "v",
+"e": "reverse, back up",
+"n": "of a vehicle; used in the depots"
 },
 {
 "f": "returna",
@@ -7499,6 +14639,41 @@ const LEX = [
 "p": "n",
 "e": "meeting",
 "n": ""
+},
+{
+"f": "revela",
+"i": "/re.ˈve.la/",
+"p": "v",
+"e": "reveal",
+"n": ""
+},
+{
+"f": "revide",
+"i": "/re.ˈvi.de/",
+"p": "v",
+"e": "review, look over again",
+"n": ""
+},
+{
+"f": "revisa",
+"i": "/re.ˈvi.sa/",
+"p": "v",
+"e": "revise",
+"n": ""
+},
+{
+"f": "revisiun",
+"i": "/re.vi.ˈsi.un/",
+"p": "n",
+"e": "revision",
+"n": ""
+},
+{
+"f": "revoca",
+"i": "/re.ˈvo.ka/",
+"p": "v",
+"e": "recall, revoke",
+"n": "revocatiun is the noun"
 },
 {
 "f": "revocatiun",
@@ -7522,6 +14697,27 @@ const LEX = [
 "n": ""
 },
 {
+"f": "rigid",
+"i": "/ˈri.d͡ʒid/",
+"p": "adj",
+"e": "rigid",
+"n": ""
+},
+{
+"f": "risca",
+"i": "/ˈris.ka/",
+"p": "v",
+"e": "risk",
+"n": ""
+},
+{
+"f": "ritmu",
+"i": "/ˈrit.mu/",
+"p": "n",
+"e": "rhythm",
+"n": "of speech and of a machine"
+},
+{
 "f": "riu",
 "i": "/ˈri.u/",
 "p": "n",
@@ -7543,6 +14739,48 @@ const LEX = [
 "n": ""
 },
 {
+"f": "robiga",
+"i": "/ro.ˈbi.ga/",
+"p": "v",
+"e": "rust",
+"n": ""
+},
+{
+"f": "robinete",
+"i": "/ro.bi.ˈne.te/",
+"p": "n",
+"e": "tap",
+"n": ""
+},
+{
+"f": "roga",
+"i": "/ˈro.ga/",
+"p": "v",
+"e": "ask for, request",
+"n": "milder than peti and commoner in speech"
+},
+{
+"f": "rola",
+"i": "/ˈro.la/",
+"p": "v",
+"e": "roll",
+"n": ""
+},
+{
+"f": "rolu",
+"i": "/ˈro.lu/",
+"p": "n",
+"e": "role",
+"n": ""
+},
+{
+"f": "rondela",
+"i": "/ron.ˈde.la/",
+"p": "n",
+"e": "washer",
+"n": ""
+},
+{
 "f": "rosa",
 "i": "/ˈro.sa/",
 "p": "adj",
@@ -7555,6 +14793,27 @@ const LEX = [
 "p": "n",
 "e": "roll, list of names",
 "n": ""
+},
+{
+"f": "rotationa",
+"i": "/ro.ta.ti.ˈo.na/",
+"p": "v",
+"e": "rotate a duty",
+"n": ""
+},
+{
+"f": "rotatiun",
+"i": "/ro.ta.ˈti.un/",
+"p": "n",
+"e": "spin, rotation",
+"n": "rota is the wheel"
+},
+{
+"f": "rotund",
+"i": "/ˈro.tund/",
+"p": "adj",
+"e": "round",
+"n": "quadrat is the square"
 },
 {
 "f": "rox",
@@ -7578,10 +14837,24 @@ const LEX = [
 "n": ""
 },
 {
+"f": "rumor",
+"i": "/ˈru.mor/",
+"p": "n",
+"e": "noise",
+"n": ""
+},
+{
 "f": "rumpe",
 "i": "/ˈrum.pe/",
 "p": "v",
 "e": "break",
+"n": ""
+},
+{
+"f": "rural",
+"i": "/ˈru.ral/",
+"p": "adj",
+"e": "rural",
 "n": ""
 },
 {
@@ -7634,6 +14907,13 @@ const LEX = [
 "n": ""
 },
 {
+"f": "salariatu",
+"i": "/sa.la.ri.ˈa.tu/",
+"p": "n",
+"e": "employee",
+"n": ""
+},
+{
 "f": "salariu",
 "i": "/sa.la.ˈri.u/",
 "p": "n",
@@ -7655,6 +14935,13 @@ const LEX = [
 "n": ""
 },
 {
+"f": "salinitate",
+"i": "/sa.li.ni.ˈta.te/",
+"p": "n",
+"e": "salinity",
+"n": ""
+},
+{
 "f": "salomonan",
 "i": "/sa.lo.ˈmo.nan/",
 "p": "adj",
@@ -7662,11 +14949,32 @@ const LEX = [
 "n": "demonym of Insulas Salomon"
 },
 {
+"f": "salsa",
+"i": "/ˈsal.sa/",
+"p": "n",
+"e": "sauce",
+"n": ""
+},
+{
 "f": "salta",
 "i": "/ˈsal.ta/",
 "p": "v",
 "e": "jump",
 "n": ""
+},
+{
+"f": "saltu",
+"i": "/ˈsal.tu/",
+"p": "n",
+"e": "leap",
+"n": "salta is the verb"
+},
+{
+"f": "saluta",
+"i": "/sa.ˈlu.ta/",
+"p": "v",
+"e": "greet",
+"n": "sali is the greeting itself"
 },
 {
 "f": "salva",
@@ -7718,11 +15026,32 @@ const LEX = [
 "n": "demonym of San Cris"
 },
 {
+"f": "sanctiona",
+"i": "/sank.ti.ˈo.na/",
+"p": "v",
+"e": "sanction, penalise",
+"n": ""
+},
+{
+"f": "sandale",
+"i": "/san.ˈda.le/",
+"p": "n",
+"e": "sandal",
+"n": ""
+},
+{
 "f": "sang",
 "i": "/sang/",
 "p": "n",
 "e": "blood",
 "n": ""
+},
+{
+"f": "sanguina",
+"i": "/san.gu.ˈi.na/",
+"p": "v",
+"e": "bleed",
+"n": "me ave sang is the everyday form"
 },
 {
 "f": "sanitate",
@@ -7753,11 +15082,32 @@ const LEX = [
 "n": ""
 },
 {
+"f": "sapientia",
+"i": "/sa.pi.en.ˈti.a/",
+"p": "n",
+"e": "knowledge, wisdom",
+"n": "sapi is the verb"
+},
+{
 "f": "sapon",
 "i": "/ˈsa.pon/",
 "p": "n",
 "e": "soap",
 "n": ""
+},
+{
+"f": "sapora",
+"i": "/sa.ˈpo.ra/",
+"p": "v",
+"e": "taste of",
+"n": ""
+},
+{
+"f": "saramura",
+"i": "/sa.ra.ˈmu.ra/",
+"p": "n",
+"e": "brine",
+"n": "the electrolis runs on it"
 },
 {
 "f": "sarko",
@@ -7774,11 +15124,25 @@ const LEX = [
 "n": ""
 },
 {
+"f": "satisfactiun",
+"i": "/sa.tis.fak.ˈti.un/",
+"p": "n",
+"e": "satisfaction",
+"n": ""
+},
+{
 "f": "saudit",
 "i": "/ˈsau.dit/",
 "p": "adj",
 "e": "Saudi",
 "n": "demonym of Arabia Saudit"
+},
+{
+"f": "scadentia",
+"i": "/ska.den.ˈti.a/",
+"p": "n",
+"e": "deadline, expiry",
+"n": "scadentia de se termine, the falling due of the term"
 },
 {
 "f": "scala",
@@ -7788,10 +15152,52 @@ const LEX = [
 "n": ""
 },
 {
+"f": "scalinata",
+"i": "/ska.li.ˈna.ta/",
+"p": "n",
+"e": "stairs inside a dwelling",
+"n": "scodi is the shared stairwell"
+},
+{
+"f": "scalpru",
+"i": "/ˈskal.pru/",
+"p": "n",
+"e": "chisel",
+"n": ""
+},
+{
+"f": "scara",
+"i": "/ˈska.ra/",
+"p": "n",
+"e": "ladder",
+"n": "scala is the scale"
+},
+{
 "f": "scarpa",
 "i": "/ˈskar.pa/",
 "p": "n",
 "e": "shoe",
+"n": ""
+},
+{
+"f": "schela",
+"i": "/ˈskhe.la/",
+"p": "n",
+"e": "scaffold",
+"n": ""
+},
+{
+"f": "scientific",
+"i": "/st͡ʃi.en.ˈti.fik/",
+"p": "adj",
+"e": "scientific",
+"n": ""
+},
+{
+"f": "scinde",
+"i": "/ˈst͡ʃin.de/",
+"p": "v",
+"e": "split off",
 "n": ""
 },
 {
@@ -7830,6 +15236,27 @@ const LEX = [
 "n": ""
 },
 {
+"f": "scruta",
+"i": "/ˈskru.ta/",
+"p": "v",
+"e": "scan, search with the eyes",
+"n": ""
+},
+{
+"f": "scrutina",
+"i": "/skru.ˈti.na/",
+"p": "v",
+"e": "scrutinise a count",
+"n": ""
+},
+{
+"f": "scrutiniu",
+"i": "/skru.ti.ˈni.u/",
+"p": "n",
+"e": "ballot",
+"n": ""
+},
+{
 "f": "scump",
 "i": "/skump/",
 "p": "adj",
@@ -7851,6 +15278,27 @@ const LEX = [
 "n": ""
 },
 {
+"f": "secca",
+"i": "/ˈse.ka/",
+"p": "v",
+"e": "dry, dry out",
+"n": ""
+},
+{
+"f": "secret",
+"i": "/ˈse.kret/",
+"p": "adj",
+"e": "secret",
+"n": ""
+},
+{
+"f": "secretament",
+"i": "/se.kre.ˈta.ment/",
+"p": "adv",
+"e": "secretly",
+"n": ""
+},
+{
 "f": "secul",
 "i": "/ˈse.kul/",
 "p": "n",
@@ -7863,6 +15311,20 @@ const LEX = [
 "p": "n",
 "e": "second",
 "n": ""
+},
+{
+"f": "secundo",
+"i": "/se.ˈkun.do/",
+"p": "adv",
+"e": "secondly",
+"n": ""
+},
+{
+"f": "secundu",
+"i": "/se.ˈkun.du/",
+"p": "prep",
+"e": "according to",
+"n": "secundu se regulamentu, according to the regulation"
 },
 {
 "f": "secur",
@@ -7900,6 +15362,20 @@ const LEX = [
 "n": ""
 },
 {
+"f": "sedile",
+"i": "/se.ˈdi.le/",
+"p": "n",
+"e": "seat",
+"n": ""
+},
+{
+"f": "sedimentu",
+"i": "/se.di.ˈmen.tu/",
+"p": "n",
+"e": "sediment",
+"n": ""
+},
+{
 "f": "seism",
 "i": "/seism/",
 "p": "n",
@@ -7911,6 +15387,20 @@ const LEX = [
 "i": "/se.ˈma.for/",
 "p": "n",
 "e": "traffic light",
+"n": ""
+},
+{
+"f": "semel",
+"i": "/ˈse.mel/",
+"p": "adv",
+"e": "once",
+"n": "semel, bis, ter in the timetables"
+},
+{
+"f": "seminariu",
+"i": "/se.mi.na.ˈri.u/",
+"p": "n",
+"e": "seminar",
 "n": ""
 },
 {
@@ -7942,6 +15432,20 @@ const LEX = [
 "n": ""
 },
 {
+"f": "sensu",
+"i": "/ˈsen.su/",
+"p": "n",
+"e": "sense, direction",
+"n": ""
+},
+{
+"f": "sententia",
+"i": "/sen.ten.ˈti.a/",
+"p": "n",
+"e": "ruling, sentence",
+"n": ""
+},
+{
 "f": "senti",
 "i": "/ˈsen.ti/",
 "p": "v",
@@ -7953,6 +15457,20 @@ const LEX = [
 "i": "/sen.ˈti.ment/",
 "p": "n",
 "e": "feeling",
+"n": ""
+},
+{
+"f": "sentimentu",
+"i": "/sen.ti.ˈmen.tu/",
+"p": "n",
+"e": "feeling",
+"n": ""
+},
+{
+"f": "separa",
+"i": "/se.ˈpa.ra/",
+"p": "v",
+"e": "separate",
 "n": ""
 },
 {
@@ -7998,6 +15516,20 @@ const LEX = [
 "n": ""
 },
 {
+"f": "seria",
+"i": "/se.ˈri.a/",
+"p": "n",
+"e": "series",
+"n": ""
+},
+{
+"f": "serra",
+"i": "/ˈse.ra/",
+"p": "v",
+"e": "saw",
+"n": "the saw and the act of sawing alike"
+},
+{
 "f": "serratura",
 "i": "/se.ra.ˈtu.ra/",
 "p": "n",
@@ -8033,6 +15565,13 @@ const LEX = [
 "n": ""
 },
 {
+"f": "sese",
+"i": "/ˈse.se/",
+"p": "pron",
+"e": "oneself",
+"n": ""
+},
+{
 "f": "sesun",
 "i": "/ˈse.sun/",
 "p": "n",
@@ -8054,6 +15593,20 @@ const LEX = [
 "n": ""
 },
 {
+"f": "sever",
+"i": "/ˈse.ver/",
+"p": "adj",
+"e": "severe",
+"n": ""
+},
+{
+"f": "severment",
+"i": "/se.ˈver.ment/",
+"p": "adv",
+"e": "severely",
+"n": ""
+},
+{
 "f": "sexelan",
 "i": "/se.ˈʃe.lan/",
 "p": "adj",
@@ -8068,6 +15621,13 @@ const LEX = [
 "n": ""
 },
 {
+"f": "sia",
+"i": "/ˈsi.a/",
+"p": "conj",
+"e": "either, or",
+"n": ""
+},
+{
 "f": "sieraleonan",
 "i": "/si.e.ra.le.ˈo.nan/",
 "p": "adj",
@@ -8075,10 +15635,24 @@ const LEX = [
 "n": "demonym of Siera Leon"
 },
 {
+"f": "sigla",
+"i": "/ˈsi.gla/",
+"p": "v",
+"e": "seal, close with a seal",
+"n": ""
+},
+{
 "f": "signa",
 "i": "/ˈsig.na/",
 "p": "v",
 "e": "sign",
+"n": ""
+},
+{
+"f": "signala",
+"i": "/sig.ˈna.la/",
+"p": "v",
+"e": "signal",
 "n": ""
 },
 {
@@ -8096,6 +15670,13 @@ const LEX = [
 "n": ""
 },
 {
+"f": "significatu",
+"i": "/sig.ni.fi.ˈka.tu/",
+"p": "n",
+"e": "meaning",
+"n": "significa is the verb"
+},
+{
 "f": "silaba",
 "i": "/si.ˈla.ba/",
 "p": "n",
@@ -8103,10 +15684,24 @@ const LEX = [
 "n": ""
 },
 {
+"f": "silentiu",
+"i": "/si.len.ˈti.u/",
+"p": "n",
+"e": "silence",
+"n": "tace is the verb"
+},
+{
 "f": "silies",
 "i": "/si.ˈli.es/",
 "p": "n",
 "e": "housing estate, block",
+"n": ""
+},
+{
+"f": "silo",
+"i": "/ˈsi.lo/",
+"p": "n",
+"e": "silo",
 "n": ""
 },
 {
@@ -8124,6 +15719,13 @@ const LEX = [
 "n": ""
 },
 {
+"f": "simpatia",
+"i": "/sim.pa.ˈti.a/",
+"p": "n",
+"e": "sympathy",
+"n": ""
+},
+{
 "f": "simple",
 "i": "/ˈsim.ple/",
 "p": "adj",
@@ -8131,10 +15733,45 @@ const LEX = [
 "n": ""
 },
 {
+"f": "simplement",
+"i": "/sim.ˈple.ment/",
+"p": "adv",
+"e": "simply",
+"n": "a vowel-final adjective adds the suffix whole"
+},
+{
+"f": "simplifica",
+"i": "/sim.pli.ˈfi.ka/",
+"p": "v",
+"e": "simplify",
+"n": ""
+},
+{
+"f": "simul",
+"i": "/ˈsi.mul/",
+"p": "adv",
+"e": "at the same time",
+"n": "junto of company, simul of time"
+},
+{
 "f": "sin",
 "i": "/sin/",
 "p": "prep",
 "e": "without",
+"n": ""
+},
+{
+"f": "sinceritate",
+"i": "/sin.t͡ʃe.ri.ˈta.te/",
+"p": "n",
+"e": "sincerity",
+"n": ""
+},
+{
+"f": "sindica",
+"i": "/sin.ˈdi.ka/",
+"p": "v",
+"e": "organise in a union",
 "n": ""
 },
 {
@@ -8159,6 +15796,41 @@ const LEX = [
 "n": "also the adjective and the adverb"
 },
 {
+"f": "sinon",
+"i": "/ˈsi.non/",
+"p": "conj",
+"e": "otherwise, if not",
+"n": ""
+},
+{
+"f": "sintesi",
+"i": "/sin.ˈte.si/",
+"p": "n",
+"e": "synthesis",
+"n": ""
+},
+{
+"f": "sintetic",
+"i": "/sin.ˈte.tik/",
+"p": "adj",
+"e": "synthetic",
+"n": "se prim pivo sintetic, the first synthetic beer"
+},
+{
+"f": "sintetisa",
+"i": "/sin.te.ˈti.sa/",
+"p": "v",
+"e": "synthesise",
+"n": ""
+},
+{
+"f": "sirena",
+"i": "/si.ˈre.na/",
+"p": "n",
+"e": "siren",
+"n": "the warning system uses it"
+},
+{
 "f": "sirian",
 "i": "/si.ˈri.an/",
 "p": "adj",
@@ -8171,6 +15843,34 @@ const LEX = [
 "p": "n",
 "e": "system",
 "n": ""
+},
+{
+"f": "sistematic",
+"i": "/sis.te.ˈma.tik/",
+"p": "adj",
+"e": "systematic",
+"n": ""
+},
+{
+"f": "sistematicament",
+"i": "/sis.te.ma.ti.ˈka.ment/",
+"p": "adv",
+"e": "systematically",
+"n": ""
+},
+{
+"f": "situatiun",
+"i": "/si.tu.a.ˈti.un/",
+"p": "n",
+"e": "situation",
+"n": ""
+},
+{
+"f": "sive",
+"i": "/ˈsi.ve/",
+"p": "conj",
+"e": "whether",
+"n": "sive si sive no, whether yes or no"
 },
 {
 "f": "skuza",
@@ -8229,10 +15929,45 @@ const LEX = [
 "n": "adjective solar; also the adjective sol, alone"
 },
 {
+"f": "solda",
+"i": "/ˈsol.da/",
+"p": "v",
+"e": "weld",
+"n": ""
+},
+{
 "f": "solid",
 "i": "/ˈso.lid/",
 "p": "adj",
 "e": "solid",
+"n": ""
+},
+{
+"f": "solidarisa",
+"i": "/so.li.da.ˈri.sa/",
+"p": "v",
+"e": "act in solidarity with",
+"n": "of communes and of cooperatives"
+},
+{
+"f": "solidaritate",
+"i": "/so.li.da.ri.ˈta.te/",
+"p": "n",
+"e": "solidarity",
+"n": "Article 303 provides for the transfers"
+},
+{
+"f": "solitari",
+"i": "/so.li.ˈta.ri/",
+"p": "adj",
+"e": "lonely, solitary",
+"n": ""
+},
+{
+"f": "solitude",
+"i": "/so.li.ˈtu.de/",
+"p": "n",
+"e": "loneliness",
 "n": ""
 },
 {
@@ -8241,6 +15976,13 @@ const LEX = [
 "p": "adv",
 "e": "only",
 "n": ""
+},
+{
+"f": "solu",
+"i": "/ˈso.lu/",
+"p": "adv",
+"e": "alone",
+"n": "solmente is the adverb of restriction"
 },
 {
 "f": "solutiun",
@@ -8306,6 +16048,13 @@ const LEX = [
 "n": ""
 },
 {
+"f": "sorta",
+"i": "/ˈsor.ta/",
+"p": "v",
+"e": "sort",
+"n": "of post and of parts; sorti is to draw by lot"
+},
+{
 "f": "sorti",
 "i": "/ˈsor.ti/",
 "p": "v",
@@ -8334,6 +16083,13 @@ const LEX = [
 "n": ""
 },
 {
+"f": "soveranitate",
+"i": "/so.ve.ra.ni.ˈta.te/",
+"p": "n",
+"e": "sovereignty",
+"n": ""
+},
+{
 "f": "spalla",
 "i": "/ˈspa.la/",
 "p": "n",
@@ -8348,10 +16104,66 @@ const LEX = [
 "n": ""
 },
 {
+"f": "specialisa",
+"i": "/spe.t͡ʃi.a.ˈli.sa/",
+"p": "v",
+"e": "specialise",
+"n": ""
+},
+{
+"f": "specialment",
+"i": "/spe.t͡ʃi.ˈal.ment/",
+"p": "adv",
+"e": "specially",
+"n": ""
+},
+{
 "f": "spera",
 "i": "/ˈspe.ra/",
 "p": "v",
 "e": "hope",
+"n": ""
+},
+{
+"f": "sperantia",
+"i": "/spe.ran.ˈti.a/",
+"p": "n",
+"e": "hope",
+"n": "spera is the verb"
+},
+{
+"f": "spessura",
+"i": "/spe.ˈsu.ra/",
+"p": "n",
+"e": "thickness",
+"n": ""
+},
+{
+"f": "spetia",
+"i": "/spe.ˈti.a/",
+"p": "n",
+"e": "spice",
+"n": "the southern crossroads brought most of them"
+},
+{
+"f": "spia",
+"i": "/ˈspi.a/",
+"p": "v",
+"e": "watch covertly",
+"n": ""
+},
+{
+"f": "spira",
+"i": "/ˈspi.ra/",
+"p": "v",
+"e": "screw in",
+"n": ""
+},
+{
+"f": "sponte",
+"i": "/ˈspon.te/",
+"p": "adv",
+"e": "of one's own accord",
 "n": ""
 },
 {
@@ -8369,6 +16181,13 @@ const LEX = [
 "n": ""
 },
 {
+"f": "spue",
+"i": "/ˈspu.e/",
+"p": "v",
+"e": "spit",
+"n": ""
+},
+{
 "f": "srilancan",
 "i": "/sri.ˈlan.kan/",
 "p": "adj",
@@ -8383,11 +16202,46 @@ const LEX = [
 "n": ""
 },
 {
+"f": "stabilitate",
+"i": "/sta.bi.li.ˈta.te/",
+"p": "n",
+"e": "stability",
+"n": ""
+},
+{
+"f": "stall",
+"i": "/stal/",
+"p": "n",
+"e": "market stall",
+"n": "the mercat de Cra fills the piatza"
+},
+{
+"f": "stalp",
+"i": "/stalp/",
+"p": "n",
+"e": "pole, mast",
+"n": "plural stalpi"
+},
+{
 "f": "stat",
 "i": "/stat/",
 "p": "n",
 "e": "state",
 "n": ""
+},
+{
+"f": "statim",
+"i": "/ˈsta.tim/",
+"p": "adv",
+"e": "at once",
+"n": "on the platforms, in place of immediatament"
+},
+{
+"f": "stationa",
+"i": "/sta.ti.ˈo.na/",
+"p": "v",
+"e": "stand, be stabled",
+"n": "of stock held at a depot"
 },
 {
 "f": "statiun",
@@ -8404,6 +16258,13 @@ const LEX = [
 "n": "demonym of Stat Unit"
 },
 {
+"f": "statutu",
+"i": "/sta.ˈtu.tu/",
+"p": "n",
+"e": "statute",
+"n": ""
+},
+{
 "f": "stela",
 "i": "/ˈste.la/",
 "p": "n",
@@ -8411,11 +16272,46 @@ const LEX = [
 "n": "adjective stelar"
 },
 {
+"f": "sternuta",
+"i": "/ster.ˈnu.ta/",
+"p": "v",
+"e": "sneeze",
+"n": ""
+},
+{
+"f": "stinge",
+"i": "/ˈstin.d͡ʒe/",
+"p": "v",
+"e": "put out, extinguish",
+"n": "stinge se foc, put the fire out"
+},
+{
+"f": "stipula",
+"i": "/sti.ˈpu.la/",
+"p": "v",
+"e": "stipulate",
+"n": ""
+},
+{
+"f": "stiva",
+"i": "/ˈsti.va/",
+"p": "v",
+"e": "stow",
+"n": ""
+},
+{
 "f": "stoc",
 "i": "/stok/",
 "p": "n",
 "e": "stock",
 "n": ""
+},
+{
+"f": "stoca",
+"i": "/ˈsto.ka/",
+"p": "v",
+"e": "stock, hold in store",
+"n": "stoc is the stock"
 },
 {
 "f": "stol",
@@ -8436,6 +16332,13 @@ const LEX = [
 "i": "/ˈstre.ʃa/",
 "p": "n",
 "e": "roof, eave",
+"n": ""
+},
+{
+"f": "stringe",
+"i": "/ˈstrin.d͡ʒe/",
+"p": "v",
+"e": "squeeze, tighten",
 "n": ""
 },
 {
@@ -8460,10 +16363,38 @@ const LEX = [
 "n": ""
 },
 {
+"f": "studia",
+"i": "/stu.ˈdi.a/",
+"p": "v",
+"e": "study",
+"n": "of a subject; aprende of a skill"
+},
+{
+"f": "subito",
+"i": "/su.ˈbi.to/",
+"p": "adv",
+"e": "suddenly",
+"n": "of a stop and of a change of weather"
+},
+{
+"f": "subprodutu",
+"i": "/sub.pro.ˈdu.tu/",
+"p": "n",
+"e": "byproduct",
+"n": "what the lagun cooperative works from"
+},
+{
 "f": "subregiun",
 "i": "/su.ˈbre.d͡ʒun/",
 "p": "n",
 "e": "sub-region",
+"n": ""
+},
+{
+"f": "subscriva",
+"i": "/subs.ˈkri.va/",
+"p": "v",
+"e": "subscribe, sign underneath",
 "n": ""
 },
 {
@@ -8474,6 +16405,13 @@ const LEX = [
 "n": ""
 },
 {
+"f": "substitue",
+"i": "/subs.ti.ˈtu.e/",
+"p": "v",
+"e": "stand in for",
+"n": ""
+},
+{
 "f": "subtil",
 "i": "/ˈsub.til/",
 "p": "adj",
@@ -8481,10 +16419,24 @@ const LEX = [
 "n": ""
 },
 {
+"f": "subventiona",
+"i": "/sub.ven.ti.ˈo.na/",
+"p": "v",
+"e": "subsidise",
+"n": ""
+},
+{
 "f": "suc",
 "i": "/suk/",
 "p": "n",
 "e": "juice",
+"n": ""
+},
+{
+"f": "successiun",
+"i": "/su.t͡ʃe.ˈsi.un/",
+"p": "n",
+"e": "succession",
 "n": ""
 },
 {
@@ -8516,10 +16468,24 @@ const LEX = [
 "n": "demonym of Sudan"
 },
 {
+"f": "sudora",
+"i": "/su.ˈdo.ra/",
+"p": "v",
+"e": "sweat",
+"n": ""
+},
+{
 "f": "sue",
 "i": "/ˈsu.e/",
 "p": "det",
 "e": "his, her, its, their",
+"n": ""
+},
+{
+"f": "suffla",
+"i": "/ˈsu.fla/",
+"p": "v",
+"e": "blow",
 "n": ""
 },
 {
@@ -8537,10 +16503,59 @@ const LEX = [
 "n": ""
 },
 {
+"f": "suge",
+"i": "/ˈsu.d͡ʒe/",
+"p": "v",
+"e": "suck",
+"n": ""
+},
+{
+"f": "suggere",
+"i": "/su.ˈd͡ʒe.re/",
+"p": "v",
+"e": "suggest",
+"n": ""
+},
+{
+"f": "sulcu",
+"i": "/ˈsul.ku/",
+"p": "n",
+"e": "furrow",
+"n": ""
+},
+{
+"f": "summa",
+"i": "/ˈsu.ma/",
+"p": "n",
+"e": "sum",
+"n": ""
+},
+{
 "f": "supa",
 "i": "/ˈsu.pa/",
 "p": "n",
 "e": "soup",
+"n": ""
+},
+{
+"f": "supervisore",
+"i": "/su.per.vi.ˈso.re/",
+"p": "n",
+"e": "supervisor",
+"n": "supravigila is the verb"
+},
+{
+"f": "suporta",
+"i": "/su.ˈpor.ta/",
+"p": "v",
+"e": "put up with, bear",
+"n": ""
+},
+{
+"f": "suppone",
+"i": "/su.ˈpo.ne/",
+"p": "v",
+"e": "suppose",
 "n": ""
 },
 {
@@ -8551,6 +16566,41 @@ const LEX = [
 "n": ""
 },
 {
+"f": "supracil",
+"i": "/su.ˈpra.t͡ʃil/",
+"p": "n",
+"e": "eyebrow",
+"n": ""
+},
+{
+"f": "supraveglianza",
+"i": "/su.pra.ve.gli.ˈan.za/",
+"p": "n",
+"e": "oversight",
+"n": ""
+},
+{
+"f": "supravigila",
+"i": "/su.pra.vi.ˈd͡ʒi.la/",
+"p": "v",
+"e": "oversee, supervise",
+"n": ""
+},
+{
+"f": "surge",
+"i": "/ˈsur.d͡ʒe/",
+"p": "v",
+"e": "get up, rise from bed",
+"n": "of rising from bed; leva of lifting a thing"
+},
+{
+"f": "surhora",
+"i": "/sur.ˈho.ra/",
+"p": "n",
+"e": "overtime",
+"n": "hora is the hour"
+},
+{
 "f": "surinamian",
 "i": "/su.ri.na.ˈmi.an/",
 "p": "adj",
@@ -8558,11 +16608,60 @@ const LEX = [
 "n": "demonym of Surinam"
 },
 {
+"f": "surpres",
+"i": "/ˈsur.pres/",
+"p": "adj",
+"e": "surprised",
+"n": ""
+},
+{
+"f": "surprisa",
+"i": "/sur.ˈpri.sa/",
+"p": "n",
+"e": "surprise",
+"n": ""
+},
+{
 "f": "surride",
 "i": "/su.ˈri.de/",
 "p": "v",
 "e": "smile",
 "n": ""
+},
+{
+"f": "suspecta",
+"i": "/sus.ˈpek.ta/",
+"p": "v",
+"e": "suspect",
+"n": ""
+},
+{
+"f": "suspende",
+"i": "/sus.ˈpen.de/",
+"p": "v",
+"e": "hang, suspend",
+"n": ""
+},
+{
+"f": "suspira",
+"i": "/sus.ˈpi.ra/",
+"p": "v",
+"e": "sigh",
+"n": ""
+},
+{
+"f": "sustene",
+"i": "/sus.ˈte.ne/",
+"p": "v",
+"e": "support, hold up",
+"n": "of a structure; tena of a person"
+},
+{
+"f": "susura",
+"i": "/su.ˈsu.ra/",
+"p": "v",
+"e": "whisper",
+"n": "Ravelluri and the lagoon communes"
 },
 {
 "f": "suz",
@@ -8593,11 +16692,25 @@ const LEX = [
 "n": "everyday hospoda"
 },
 {
+"f": "tablou-electric",
+"i": "/ta.blo.u.e.ˈlek.trik/",
+"p": "n",
+"e": "switchboard",
+"n": ""
+},
+{
 "f": "tabula",
 "i": "/ta.ˈbu.la/",
 "p": "n",
 "e": "table of figures, chart",
 "n": ""
+},
+{
+"f": "tace",
+"i": "/ˈta.t͡ʃe/",
+"p": "v",
+"e": "fall silent, hold one's tongue",
+"n": "tace, se tren veni, quiet, the train is coming"
 },
 {
 "f": "taia",
@@ -8628,6 +16741,20 @@ const LEX = [
 "n": "demonym of Tajiquistan"
 },
 {
+"f": "tale",
+"i": "/ˈta.le/",
+"p": "det",
+"e": "such",
+"n": ""
+},
+{
+"f": "talia",
+"i": "/ta.ˈli.a/",
+"p": "n",
+"e": "waist",
+"n": ""
+},
+{
 "f": "tanto",
 "i": "/ˈtan.to/",
 "p": "adv",
@@ -8642,6 +16769,20 @@ const LEX = [
 "n": "demonym of Tanzania"
 },
 {
+"f": "tapa",
+"i": "/ˈta.pa/",
+"p": "v",
+"e": "plug, seal off",
+"n": ""
+},
+{
+"f": "tapete",
+"i": "/ta.ˈpe.te/",
+"p": "n",
+"e": "rug",
+"n": ""
+},
+{
 "f": "tarde",
 "i": "/ˈtar.de/",
 "p": "n",
@@ -8649,10 +16790,24 @@ const LEX = [
 "n": ""
 },
 {
+"f": "tarifa",
+"i": "/ta.ˈri.fa/",
+"p": "n",
+"e": "fare",
+"n": "paga is the act of paying"
+},
+{
 "f": "tarz",
 "i": "/tarz/",
 "p": "adj",
 "e": "late",
+"n": ""
+},
+{
+"f": "tasca",
+"i": "/ˈtas.ka/",
+"p": "n",
+"e": "task",
 "n": ""
 },
 {
@@ -8663,11 +16818,25 @@ const LEX = [
 "n": ""
 },
 {
+"f": "tasta",
+"i": "/ˈtas.ta/",
+"p": "v",
+"e": "feel out, touch to test",
+"n": ""
+},
+{
 "f": "tata",
 "i": "/ˈta.ta/",
 "p": "n",
 "e": "father, everyday",
 "n": ""
+},
+{
+"f": "taxa",
+"i": "/ˈta.ʃa/",
+"p": "v",
+"e": "levy, charge",
+"n": "of a levy; paga of the payment"
 },
 {
 "f": "taxi",
@@ -8691,10 +16860,31 @@ const LEX = [
 "n": "adjective teatral"
 },
 {
+"f": "technic",
+"i": "/ˈtekh.nik/",
+"p": "adj",
+"e": "technical",
+"n": ""
+},
+{
 "f": "tectu",
 "i": "/ˈtek.tu/",
 "p": "n",
 "e": "canopy, roof plate",
+"n": ""
+},
+{
+"f": "tediat",
+"i": "/te.ˈdi.at/",
+"p": "adj",
+"e": "bored",
+"n": ""
+},
+{
+"f": "tedio",
+"i": "/te.ˈdi.o/",
+"p": "n",
+"e": "boredom",
 "n": ""
 },
 {
@@ -8719,6 +16909,20 @@ const LEX = [
 "n": ""
 },
 {
+"f": "temeros",
+"i": "/te.ˈme.ros/",
+"p": "adj",
+"e": "fearful",
+"n": "time is the verb"
+},
+{
+"f": "temor",
+"i": "/ˈte.mor/",
+"p": "n",
+"e": "fear",
+"n": "time is the verb, temeros the adjective"
+},
+{
 "f": "temp",
 "i": "/temp/",
 "p": "n",
@@ -8740,6 +16944,27 @@ const LEX = [
 "n": ""
 },
 {
+"f": "temporari",
+"i": "/tem.po.ˈra.ri/",
+"p": "adj",
+"e": "temporary",
+"n": ""
+},
+{
+"f": "temporariment",
+"i": "/tem.po.ra.ˈri.ment/",
+"p": "adv",
+"e": "temporarily",
+"n": ""
+},
+{
+"f": "temprano",
+"i": "/tem.ˈpra.no/",
+"p": "adv",
+"e": "early",
+"n": "avanz is the adjective"
+},
+{
 "f": "tena",
 "i": "/ˈte.na/",
 "p": "v",
@@ -8747,10 +16972,66 @@ const LEX = [
 "n": ""
 },
 {
+"f": "tenalia",
+"i": "/te.na.ˈli.a/",
+"p": "n",
+"e": "pliers",
+"n": ""
+},
+{
+"f": "tende",
+"i": "/ˈten.de/",
+"p": "v",
+"e": "stretch out, hold out",
+"n": ""
+},
+{
+"f": "tendentia",
+"i": "/ten.den.ˈti.a/",
+"p": "n",
+"e": "tendency",
+"n": ""
+},
+{
+"f": "tensiun",
+"i": "/ten.ˈsi.un/",
+"p": "n",
+"e": "tension",
+"n": "of a wire and of a situation"
+},
+{
 "f": "tenta",
 "i": "/ˈten.ta/",
 "p": "v",
 "e": "try",
+"n": ""
+},
+{
+"f": "tenue",
+"i": "/te.ˈnu.e/",
+"p": "adj",
+"e": "thin",
+"n": ""
+},
+{
+"f": "teoria",
+"i": "/te.o.ˈri.a/",
+"p": "n",
+"e": "theory",
+"n": ""
+},
+{
+"f": "teoric",
+"i": "/te.ˈo.rik/",
+"p": "adj",
+"e": "theoretical",
+"n": "teoria is the noun"
+},
+{
+"f": "teoricament",
+"i": "/te.o.ri.ˈka.ment/",
+"p": "adv",
+"e": "in theory",
 "n": ""
 },
 {
@@ -8761,10 +17042,31 @@ const LEX = [
 "n": ""
 },
 {
+"f": "ter",
+"i": "/ter/",
+"p": "adv",
+"e": "three times",
+"n": ""
+},
+{
+"f": "terge",
+"i": "/ˈter.d͡ʒe/",
+"p": "v",
+"e": "wipe",
+"n": "of a surface; lava of a garment"
+},
+{
 "f": "termine",
 "i": "/ter.ˈmi.ne/",
 "p": "n",
 "e": "term",
+"n": ""
+},
+{
+"f": "termocentral",
+"i": "/ter.mo.ˈt͡ʃen.tral/",
+"p": "n",
+"e": "power station",
 "n": ""
 },
 {
@@ -8775,10 +17077,31 @@ const LEX = [
 "n": "adjective terren"
 },
 {
+"f": "terrassa",
+"i": "/te.ˈra.sa/",
+"p": "n",
+"e": "terrace",
+"n": ""
+},
+{
 "f": "tertie",
 "i": "/ter.ˈti.e/",
 "p": "n",
 "e": "third, a fraction",
+"n": ""
+},
+{
+"f": "testimonia",
+"i": "/tes.ti.mo.ˈni.a/",
+"p": "v",
+"e": "testify, give evidence",
+"n": ""
+},
+{
+"f": "testimoniu",
+"i": "/tes.ti.mo.ˈni.u/",
+"p": "n",
+"e": "evidence, testimony",
 "n": ""
 },
 {
@@ -8789,10 +17112,24 @@ const LEX = [
 "n": ""
 },
 {
+"f": "textura",
+"i": "/teʃ.ˈtu.ra/",
+"p": "n",
+"e": "texture",
+"n": "of a surface felt rather than seen"
+},
+{
 "f": "tia",
 "i": "/ˈti.a/",
 "p": "n",
 "e": "aunt",
+"n": ""
+},
+{
+"f": "timbru",
+"i": "/ˈtim.bru/",
+"p": "n",
+"e": "postage stamp",
 "n": ""
 },
 {
@@ -8803,11 +17140,32 @@ const LEX = [
 "n": ""
 },
 {
+"f": "timid",
+"i": "/ˈti.mid/",
+"p": "adj",
+"e": "timid",
+"n": ""
+},
+{
 "f": "timoran",
 "i": "/ti.ˈmo.ran/",
 "p": "adj",
 "e": "Timorese",
 "n": "demonym of Timor Est"
+},
+{
+"f": "tinta",
+"i": "/ˈtin.ta/",
+"p": "n",
+"e": "tint",
+"n": ""
+},
+{
+"f": "tira",
+"i": "/ˈti.ra/",
+"p": "v",
+"e": "pull, draw",
+"n": ""
 },
 {
 "f": "titul",
@@ -8852,6 +17210,13 @@ const LEX = [
 "n": "demonym of Togo"
 },
 {
+"f": "tolera",
+"i": "/to.ˈle.ra/",
+"p": "v",
+"e": "tolerate",
+"n": ""
+},
+{
 "f": "tomat",
 "i": "/ˈto.mat/",
 "p": "n",
@@ -8887,6 +17252,20 @@ const LEX = [
 "n": ""
 },
 {
+"f": "torta",
+"i": "/ˈtor.ta/",
+"p": "n",
+"e": "cake",
+"n": ""
+},
+{
+"f": "tosto",
+"i": "/ˈtos.to/",
+"p": "adv",
+"e": "soon",
+"n": "presto is at once"
+},
+{
 "f": "tot",
 "i": "/tot/",
 "p": "det",
@@ -8898,6 +17277,48 @@ const LEX = [
 "i": "/ˈto.tal/",
 "p": "adj",
 "e": "total",
+"n": ""
+},
+{
+"f": "totalite",
+"i": "/to.ta.ˈli.te/",
+"p": "n",
+"e": "the whole of a thing",
+"n": ""
+},
+{
+"f": "totalment",
+"i": "/to.ˈtal.ment/",
+"p": "adv",
+"e": "totally",
+"n": "totalite is the noun"
+},
+{
+"f": "totevia",
+"i": "/to.te.ˈvi.a/",
+"p": "conj",
+"e": "however, nevertheless",
+"n": ""
+},
+{
+"f": "toti",
+"i": "/ˈto.ti/",
+"p": "pron",
+"e": "everyone",
+"n": ""
+},
+{
+"f": "tracta",
+"i": "/ˈtrak.ta/",
+"p": "v",
+"e": "haul, work a train",
+"n": ""
+},
+{
+"f": "tractatu",
+"i": "/trak.ˈta.tu/",
+"p": "n",
+"e": "treaty",
 "n": ""
 },
 {
@@ -8922,10 +17343,24 @@ const LEX = [
 "n": ""
 },
 {
+"f": "tram",
+"i": "/tram/",
+"p": "n",
+"e": "tram",
+"n": "transbord te tram nove"
+},
+{
 "f": "tramvay",
 "i": "/ˈtram.vai/",
 "p": "n",
 "e": "tram",
+"n": ""
+},
+{
+"f": "trans",
+"i": "/trans/",
+"p": "prep",
+"e": "across",
 "n": ""
 },
 {
@@ -8934,6 +17369,55 @@ const LEX = [
 "p": "n",
 "e": "transfer, change",
 "n": ""
+},
+{
+"f": "transborda",
+"i": "/trans.ˈbor.da/",
+"p": "v",
+"e": "transfer between services",
+"n": "transbord is the noun"
+},
+{
+"f": "transcriva",
+"i": "/trans.ˈkri.va/",
+"p": "v",
+"e": "transcribe",
+"n": ""
+},
+{
+"f": "transfera",
+"i": "/trans.ˈfe.ra/",
+"p": "v",
+"e": "transfer",
+"n": ""
+},
+{
+"f": "transformator",
+"i": "/trans.for.ˈma.tor/",
+"p": "n",
+"e": "transformer",
+"n": ""
+},
+{
+"f": "transita",
+"i": "/tran.ˈsi.ta/",
+"p": "v",
+"e": "pass through, transit",
+"n": "transita sin statiun, pass through without stopping"
+},
+{
+"f": "transmitor",
+"i": "/trans.ˈmi.tor/",
+"p": "n",
+"e": "transmitter",
+"n": ""
+},
+{
+"f": "transparent",
+"i": "/trans.ˈpa.rent/",
+"p": "adj",
+"e": "transparent",
+"n": "transparentia is the noun"
 },
 {
 "f": "transparentia",
@@ -8950,11 +17434,39 @@ const LEX = [
 "n": ""
 },
 {
+"f": "tratamentu",
+"i": "/tra.ta.ˈmen.tu/",
+"p": "n",
+"e": "treatment",
+"n": ""
+},
+{
+"f": "traul",
+"i": "/ˈtra.ul/",
+"p": "n",
+"e": "trawl",
+"n": ""
+},
+{
 "f": "traversa",
 "i": "/tra.ˈver.sa/",
 "p": "v",
 "e": "cross",
 "n": ""
+},
+{
+"f": "traxa",
+"i": "/ˈtra.ʃa/",
+"p": "v",
+"e": "drag, haul",
+"n": ""
+},
+{
+"f": "trema",
+"i": "/ˈtre.ma/",
+"p": "v",
+"e": "tremble, shake",
+"n": "of a person or a structure; tremor is the noun"
 },
 {
 "f": "trembuja",
@@ -8999,6 +17511,13 @@ const LEX = [
 "n": ""
 },
 {
+"f": "tribunal",
+"i": "/tri.ˈbu.nal/",
+"p": "n",
+"e": "tribunal",
+"n": "corte is the ordinary court"
+},
+{
 "f": "trinidadan",
 "i": "/tri.ni.ˈda.dan/",
 "p": "adj",
@@ -9020,6 +17539,27 @@ const LEX = [
 "n": ""
 },
 {
+"f": "tristia",
+"i": "/tris.ˈti.a/",
+"p": "n",
+"e": "sadness",
+"n": "trist is the adjective"
+},
+{
+"f": "troca",
+"i": "/ˈtro.ka/",
+"p": "v",
+"e": "barter",
+"n": ""
+},
+{
+"f": "tropo",
+"i": "/ˈtro.po/",
+"p": "adv",
+"e": "too, too much",
+"n": "tropo tarde, too late"
+},
+{
 "f": "trova",
 "i": "/ˈtro.va/",
 "p": "v",
@@ -9034,10 +17574,38 @@ const LEX = [
 "n": ""
 },
 {
+"f": "tubu",
+"i": "/ˈtu.bu/",
+"p": "n",
+"e": "pipe",
+"n": ""
+},
+{
+"f": "tuca",
+"i": "/ˈtu.ka/",
+"p": "v",
+"e": "touch",
+"n": "no tuca se cabli supra se stalpi"
+},
+{
+"f": "tumba",
+"i": "/ˈtum.ba/",
+"p": "v",
+"e": "topple, fall over",
+"n": ""
+},
+{
 "f": "tunc",
 "i": "/tunk/",
 "p": "adv",
 "e": "then, at that time",
+"n": ""
+},
+{
+"f": "tunel",
+"i": "/ˈtu.nel/",
+"p": "n",
+"e": "tunnel",
 "n": ""
 },
 {
@@ -9048,10 +17616,24 @@ const LEX = [
 "n": "demonym of Tunisia"
 },
 {
+"f": "turbina",
+"i": "/tur.ˈbi.na/",
+"p": "n",
+"e": "turbine",
+"n": ""
+},
+{
 "f": "turc",
 "i": "/turk/",
 "p": "adj",
 "e": "Turkish",
+"n": ""
+},
+{
+"f": "turchese",
+"i": "/turk.ˈhe.se/",
+"p": "adj",
+"e": "turquoise",
 "n": ""
 },
 {
@@ -9060,6 +17642,20 @@ const LEX = [
 "p": "adj",
 "e": "Turkmen",
 "n": "demonym of Turcmenistan"
+},
+{
+"f": "turma",
+"i": "/ˈtur.ma/",
+"p": "n",
+"e": "flock",
+"n": ""
+},
+{
+"f": "turnu",
+"i": "/ˈtur.nu/",
+"p": "n",
+"e": "shift",
+"n": "turnu de nox, the night shift"
 },
 {
 "f": "tuse",
@@ -9076,6 +17672,13 @@ const LEX = [
 "n": ""
 },
 {
+"f": "tutor-legal",
+"i": "/tu.tor.ˈle.gal/",
+"p": "n",
+"e": "legal guardian",
+"n": ""
+},
+{
 "f": "tuvalan",
 "i": "/tu.ˈva.lan/",
 "p": "adj",
@@ -9088,6 +17691,13 @@ const LEX = [
 "p": "adv",
 "e": "where",
 "n": "ubi es se statiun"
+},
+{
+"f": "ubique",
+"i": "/u.ˈbi.ke/",
+"p": "adv",
+"e": "everywhere",
+"n": "ubi is where"
 },
 {
 "f": "ucrainan",
@@ -9111,6 +17721,27 @@ const LEX = [
 "n": ""
 },
 {
+"f": "ultimo",
+"i": "/ul.ˈti.mo/",
+"p": "adv",
+"e": "lastly",
+"n": "ultim is the adjective"
+},
+{
+"f": "ultra",
+"i": "/ˈul.tra/",
+"p": "prep",
+"e": "beyond",
+"n": ""
+},
+{
+"f": "umbra",
+"i": "/ˈum.bra/",
+"p": "v",
+"e": "shade, cast shade",
+"n": ""
+},
+{
 "f": "umbrela",
 "i": "/um.ˈbre.la/",
 "p": "n",
@@ -9125,10 +17756,38 @@ const LEX = [
 "n": ""
 },
 {
+"f": "umiditate",
+"i": "/u.mi.di.ˈta.te/",
+"p": "n",
+"e": "humidity",
+"n": ""
+},
+{
+"f": "umor",
+"i": "/ˈu.mor/",
+"p": "n",
+"e": "mood",
+"n": ""
+},
+{
 "f": "un",
 "i": "/un/",
 "p": "art",
 "e": "a, one",
+"n": ""
+},
+{
+"f": "uncta",
+"i": "/ˈunk.ta/",
+"p": "v",
+"e": "grease, oil",
+"n": ""
+},
+{
+"f": "unde",
+"i": "/ˈun.de/",
+"p": "adv",
+"e": "whence, from where",
 "n": ""
 },
 {
@@ -9144,6 +17803,41 @@ const LEX = [
 "p": "adj",
 "e": "single, sole",
 "n": ""
+},
+{
+"f": "unitate",
+"i": "/u.ni.ˈta.te/",
+"p": "n",
+"e": "unity, a unit",
+"n": "of measurement and of a body held together"
+},
+{
+"f": "universal",
+"i": "/u.ni.ˈver.sal/",
+"p": "adj",
+"e": "universal",
+"n": ""
+},
+{
+"f": "universalment",
+"i": "/u.ni.ver.ˈsal.ment/",
+"p": "adv",
+"e": "universally",
+"n": ""
+},
+{
+"f": "universitate",
+"i": "/u.ni.ver.si.ˈta.te/",
+"p": "n",
+"e": "university",
+"n": "the region runs them"
+},
+{
+"f": "urban",
+"i": "/ˈur.ban/",
+"p": "adj",
+"e": "urban",
+"n": "of a commune with a town at its centre"
 },
 {
 "f": "urgentia",
@@ -9202,6 +17896,13 @@ const LEX = [
 "n": ""
 },
 {
+"f": "utilitate",
+"i": "/u.ti.li.ˈta.te/",
+"p": "n",
+"e": "usefulness",
+"n": ""
+},
+{
 "f": "uva",
 "i": "/ˈu.va/",
 "p": "n",
@@ -9230,10 +17931,59 @@ const LEX = [
 "n": ""
 },
 {
+"f": "vacantia",
+"i": "/va.kan.ˈti.a/",
+"p": "n",
+"e": "holiday",
+"n": "of leave taken; congedu of leave granted"
+},
+{
+"f": "vaccin",
+"i": "/ˈva.t͡ʃin/",
+"p": "n",
+"e": "vaccine",
+"n": ""
+},
+{
 "f": "vacu",
 "i": "/ˈva.ku/",
 "p": "adj",
 "e": "empty",
+"n": ""
+},
+{
+"f": "vacua",
+"i": "/va.ˈku.a/",
+"p": "v",
+"e": "empty",
+"n": "from vacu"
+},
+{
+"f": "vad",
+"i": "/vad/",
+"p": "n",
+"e": "ford",
+"n": ""
+},
+{
+"f": "vagon",
+"i": "/ˈva.gon/",
+"p": "n",
+"e": "carriage",
+"n": "vuz is the tram car"
+},
+{
+"f": "vague",
+"i": "/va.ˈgu.e/",
+"p": "adj",
+"e": "vague",
+"n": ""
+},
+{
+"f": "vaguement",
+"i": "/va.gu.ˈe.ment/",
+"p": "adv",
+"e": "vaguely",
 "n": ""
 },
 {
@@ -9258,10 +18008,31 @@ const LEX = [
 "n": ""
 },
 {
+"f": "valle",
+"i": "/ˈva.le/",
+"p": "n",
+"e": "valley",
+"n": ""
+},
+{
 "f": "valor",
 "i": "/ˈva.lor/",
 "p": "n",
 "e": "value",
+"n": ""
+},
+{
+"f": "valora",
+"i": "/va.ˈlo.ra/",
+"p": "v",
+"e": "be worth",
+"n": "valor is the value"
+},
+{
+"f": "valvula",
+"i": "/val.ˈvu.la/",
+"p": "n",
+"e": "valve",
 "n": ""
 },
 {
@@ -9270,6 +18041,20 @@ const LEX = [
 "p": "adj",
 "e": "Ni-Vanuatu",
 "n": "demonym of Vanuatu"
+},
+{
+"f": "vapor",
+"i": "/ˈva.por/",
+"p": "n",
+"e": "steam",
+"n": ""
+},
+{
+"f": "vast",
+"i": "/vast/",
+"p": "adj",
+"e": "vast",
+"n": ""
 },
 {
 "f": "vaticanian",
@@ -9286,11 +18071,25 @@ const LEX = [
 "n": "formal cena"
 },
 {
+"f": "veglia",
+"i": "/ve.ˈgli.a/",
+"p": "v",
+"e": "sit up with, watch over",
+"n": "at a sickbed and at a wake alike"
+},
+{
 "f": "vehicul",
 "i": "/ve.ˈhi.kul/",
 "p": "n",
 "e": "vehicle, formal",
 "n": ""
+},
+{
+"f": "vellus",
+"i": "/ˈve.lus/",
+"p": "n",
+"e": "fleece",
+"n": "lana is the wool once shorn"
 },
 {
 "f": "vende",
@@ -9356,6 +18155,34 @@ const LEX = [
 "n": ""
 },
 {
+"f": "vergonia",
+"i": "/ver.go.ˈni.a/",
+"p": "n",
+"e": "shame",
+"n": ""
+},
+{
+"f": "vergonios",
+"i": "/ver.go.ˈni.os/",
+"p": "adj",
+"e": "ashamed",
+"n": ""
+},
+{
+"f": "verifica",
+"i": "/ve.ri.ˈfi.ka/",
+"p": "v",
+"e": "verify",
+"n": ""
+},
+{
+"f": "verificatiun",
+"i": "/ve.ri.fi.ka.ˈti.un/",
+"p": "n",
+"e": "verification",
+"n": ""
+},
+{
 "f": "veritate",
 "i": "/ve.ri.ˈta.te/",
 "p": "n",
@@ -9363,10 +18190,45 @@ const LEX = [
 "n": ""
 },
 {
+"f": "vernisa",
+"i": "/ver.ˈni.sa/",
+"p": "v",
+"e": "varnish",
+"n": ""
+},
+{
+"f": "versa",
+"i": "/ˈver.sa/",
+"p": "v",
+"e": "pour",
+"n": ""
+},
+{
+"f": "versu",
+"i": "/ˈver.su/",
+"p": "prep",
+"e": "towards",
+"n": "versu se peron, towards the platform"
+},
+{
+"f": "vertical",
+"i": "/ver.ˈti.kal/",
+"p": "adj",
+"e": "vertical",
+"n": ""
+},
+{
 "f": "vesti",
 "i": "/ˈves.ti/",
 "p": "v",
 "e": "dress, wear",
+"n": ""
+},
+{
+"f": "vestibul",
+"i": "/ves.ˈti.bul/",
+"p": "n",
+"e": "entrance hall",
 "n": ""
 },
 {
@@ -9412,6 +18274,13 @@ const LEX = [
 "n": ""
 },
 {
+"f": "vibra",
+"i": "/ˈvi.bra/",
+"p": "v",
+"e": "vibrate",
+"n": ""
+},
+{
 "f": "vice",
 "i": "/ˈvi.t͡ʃe/",
 "p": "n",
@@ -9430,6 +18299,13 @@ const LEX = [
 "i": "/ˈvi.di/",
 "p": "v",
 "e": "see",
+"n": ""
+},
+{
+"f": "vidue",
+"i": "/vi.ˈdu.e/",
+"p": "n",
+"e": "widow or widower",
 "n": ""
 },
 {
@@ -9461,6 +18337,13 @@ const LEX = [
 "n": ""
 },
 {
+"f": "vinagre",
+"i": "/vi.ˈna.gre/",
+"p": "n",
+"e": "vinegar",
+"n": ""
+},
+{
 "f": "vincentan",
 "i": "/vin.ˈt͡ʃen.tan/",
 "p": "adj",
@@ -9468,10 +18351,24 @@ const LEX = [
 "n": "demonym of San Vincent"
 },
 {
+"f": "vinia",
+"i": "/vi.ˈni.a/",
+"p": "n",
+"e": "vineyard",
+"n": ""
+},
+{
 "f": "vinte",
 "i": "/ˈvin.te/",
 "p": "num",
 "e": "twenty",
+"n": ""
+},
+{
+"f": "visa",
+"i": "/ˈvi.sa/",
+"p": "n",
+"e": "visa",
 "n": ""
 },
 {
@@ -9487,6 +18384,13 @@ const LEX = [
 "p": "n",
 "e": "life",
 "n": "adjective vital"
+},
+{
+"f": "vite",
+"i": "/ˈvi.te/",
+"p": "n",
+"e": "screw",
+"n": "spira is the act of screwing in"
 },
 {
 "f": "vitru",
@@ -9531,6 +18435,13 @@ const LEX = [
 "n": ""
 },
 {
+"f": "vocifera",
+"i": "/vo.t͡ʃi.ˈfe.ra/",
+"p": "v",
+"e": "shout, call out loudly",
+"n": "Ravelluri and the eastern seaboard; clama elsewhere"
+},
+{
 "f": "voda",
 "i": "/ˈvo.da/",
 "p": "n",
@@ -9538,10 +18449,45 @@ const LEX = [
 "n": ""
 },
 {
+"f": "vola",
+"i": "/ˈvo.la/",
+"p": "v",
+"e": "fly",
+"n": "of aircraft and of birds alike"
+},
+{
 "f": "vole",
 "i": "/ˈvo.le/",
 "p": "v",
 "e": "want",
+"n": ""
+},
+{
+"f": "voltaje",
+"i": "/vol.ˈta.ʒe/",
+"p": "n",
+"e": "voltage",
+"n": "read at the tablou-electric"
+},
+{
+"f": "volume",
+"i": "/vo.ˈlu.me/",
+"p": "n",
+"e": "volume",
+"n": "of a solid; cantitate of an amount"
+},
+{
+"f": "volve",
+"i": "/ˈvol.ve/",
+"p": "v",
+"e": "wrap, roll up",
+"n": ""
+},
+{
+"f": "vomi",
+"i": "/ˈvo.mi/",
+"p": "v",
+"e": "vomit",
 "n": ""
 },
 {
@@ -9678,11 +18624,25 @@ const LEX = [
 "n": ""
 },
 {
+"f": "zida",
+"i": "/ˈzi.da/",
+"p": "v",
+"e": "wall up, build in brick",
+"n": ""
+},
+{
 "f": "zimbabvan",
 "i": "/zim.ˈbab.van/",
 "p": "adj",
 "e": "Zimbabwean",
 "n": "demonym of Zimbabve"
+},
+{
+"f": "zolt",
+"i": "/zolt/",
+"p": "adj",
+"e": "yellow",
+"n": "tena se linia zolt, keep behind the yellow line"
 },
 {
 "f": "zucre",
