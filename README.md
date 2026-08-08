@@ -15,7 +15,7 @@ This file documents what the repository contains. The changelog and the longer m
 | Text in force | 340 articles, 13 titles, preamble, transitional provisions to Article 340 |
 | Adopted | Referendum of 7 June 2026, 64.1 per cent of votes cast |
 | Commenced | 7 July 2026 |
-| Pages | 226 HTML files, of which 14 are the preserved archive |
+| Pages | Lots of HTML files, of which 14 are the preserved archive |
 | Machine-readable sources | `constitution.md`, `constitution.json`, `summary.md`, `history.md`, `regions.json`, `xref.json` |
 | Territory of record | 2 regions, 20 sub-regions, 22 named towns |
 | Area and population | 230,000 km², 18,402,000 residents |
