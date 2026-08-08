@@ -143,117 +143,117 @@ The Convention adopted the draft on 12 April 2026 by 148 votes to 52. A referend
 
 ### The Kingdom
 
-**1760s** — The Kingdom of Fluid is established on the peninsula. The economy is agrarian, with small ironworks in the western uplands. Remoteness and a poor road network keep the merchant class thin, which will matter a great deal later.
+**1760s** - The Kingdom of Fluid is established on the peninsula. The economy is agrarian, with small ironworks in the western uplands. Remoteness and a poor road network keep the merchant class thin, which will matter a great deal later.
 
-**1788** — News of events in France reaches Lindoma by ship. A reading circle of teachers, clerks and shipwrights begins meeting in the port. The Crown tolerates it for eleven years, then bans it.
+**1788** - News of events in France reaches Lindoma by ship. A reading circle of teachers, clerks and shipwrights begins meeting in the port. The Crown tolerates it for eleven years, then bans it.
 
-**1848** — The March Rising. Peasants from Durorilaqui and shipyard workers from Lindoma take the capital for nineteen days. The Crown retakes it with mercenaries hired from Bor Brashavenko. Two hundred and six people are executed, and the memory of the foreign troops fixes a suspicion of the southern border that outlives the monarchy.
+**1848** - The March Rising. Peasants from Durorilaqui and shipyard workers from Lindoma take the capital for nineteen days. The Crown retakes it with mercenaries hired from Bor Brashavenko. Two hundred and six people are executed, and the memory of the foreign troops fixes a suspicion of the southern border that outlives the monarchy.
 
-**1860s–70s** — Thin coal at Vandorum and Kelvaqui and the first mechanised looms in Tessilius pull people into the towns. The seams are shallow and poor and are worked out faster than anyone expects, which is one reason the Republic will later go looking underground for something else. A working class forms faster than a bourgeoisie does. Nobody with money is strong enough to buy the state, and nobody without it is willing to keep serving one.
+**1860s–70s** - Thin coal at Vandorum and Kelvaqui and the first mechanised looms in Tessilius pull people into the towns. The seams are shallow and poor and are worked out faster than anyone expects, which is one reason the Republic will later go looking underground for something else. A working class forms faster than a bourgeoisie does. Nobody with money is strong enough to buy the state, and nobody without it is willing to keep serving one.
 
-**1881–89** — Four parties form: the Agrarians in the arable west, the Unionists in the ports, the Scientific Party among teachers and engineers, and the Youth Party in the schools. They quarrel constantly and agree on one thing, which is that the monarchy has to go.
+**1881–89** - Four parties form: the Agrarians in the arable west, the Unionists in the ports, the Scientific Party among teachers and engineers, and the Youth Party in the schools. They quarrel constantly and agree on one thing, which is that the monarchy has to go.
 
 ### The First Constitution
 
-**1890** — The four parties call a general strike in March. The ports stop, then the railways, then the mines. In November the garrison at Lindoma refuses an order to fire. On 15 December the King signs an abdication and the First National Council adopts the first Constitution of the Republic: eleven articles, mostly about who decides what.
+**1890** - The four parties call a general strike in March. The ports stop, then the railways, then the mines. In November the garrison at Lindoma refuses an order to fire. On 15 December the King signs an abdication and the First National Council adopts the first Constitution of the Republic: eleven articles, mostly about who decides what.
 
-**1891–94** — The Hungry Springs. Land is taken from the great estates and handed to village committees faster than anyone can teach them to run it, and two harvests fail. Roughly nine thousand people die. The Council slows the transfers, sends agronomists instead of commissioners, and afterwards writes into practice a rule it never wrote into law: consult the people who do the work before you reorganise it.
+**1891–94** - The Hungry Springs. Land is taken from the great estates and handed to village committees faster than anyone can teach them to run it, and two harvests fail. Roughly nine thousand people die. The Council slows the transfers, sends agronomists instead of commissioners, and afterwards writes into practice a rule it never wrote into law: consult the people who do the work before you reorganise it.
 
-**1895** — A parliamentary system is established. The four parties govern in coalition, and will do so, in changing combinations, for fifty-five years.
+**1895** - A parliamentary system is established. The four parties govern in coalition, and will do so, in changing combinations, for fifty-five years.
 
-**1900s** — Schools, clinics and the first rail link between Lindoma and Lutoliluri. Literacy passes ninety per cent in 1912.
+**1900s** - Schools, clinics and the first rail link between Lindoma and Lutoliluri. Literacy passes ninety per cent in 1912.
 
-**1914–18** — Fluid does not enter the war, and does not escape it. A blockade closes the northern sea lanes for twenty-six months. Bread, coal and medicine are rationed by the commune councils, which is the Republic's first serious experience of allocating scarcity, and the first time queues are treated as a policy failure rather than an inconvenience.
+**1914–18** - Fluid does not enter the war, and does not escape it. A blockade closes the northern sea lanes for twenty-six months. Bread, coal and medicine are rationed by the commune councils, which is the Republic's first serious experience of allocating scarcity, and the first time queues are treated as a policy failure rather than an inconvenience.
 
-**1920s** — The Unionists and the Scientific Party merge into the Humanist Socialist Party. The Agrarians and the Youth Party become the Democratic Socialists. Environment and Justice splits from the Agrarians over the clearance of the western uplands.
+**1920s** - The Unionists and the Scientific Party merge into the Humanist Socialist Party. The Agrarians and the Youth Party become the Democratic Socialists. Environment and Justice splits from the Agrarians over the clearance of the western uplands.
 
-**1929–35** — The Depression reaches Fluid through collapsed export orders. The Council answers with public works rather than austerity, and pays for the imports by felling the Vandorum forests for timber. Employment holds. Roughly a fifth of the old-growth stand is gone by 1935, and the erosion that follows is still being repaired.
+**1929–35** - The Depression reaches Fluid through collapsed export orders. The Council answers with public works rather than austerity, and pays for the imports by felling the Vandorum forests for timber. Employment holds. Roughly a fifth of the old-growth stand is gone by 1935, and the erosion that follows is still being repaired.
 
-**1939–45** — The kingdom of Bor Brashavenko aligns with the Axis and closes the land border, which has never reopened. A second blockade, harsher than the first. Rationing runs for six years. Nineteen thousand refugees arrive by sea from the eastern coast, and the decision to admit all of them is taken by the Council in a single sitting, over the objection of its own security committee.
+**1939–45** - The kingdom of Bor Brashavenko aligns with the Axis and closes the land border, which has never reopened. A second blockade, harsher than the first. Rationing runs for six years. Nineteen thousand refugees arrive by sea from the eastern coast, and the decision to admit all of them is taken by the Council in a single sitting, over the objection of its own security committee.
 
-**1947** — The National Traditionalists form, arguing for restoration. They never win more than four per cent, and are never banned.
+**1947** - The National Traditionalists form, arguing for restoration. They never win more than four per cent, and are never banned.
 
 ### The Directorate
 
-**1949–53** — Western governments impose an embargo. Iosmein declines to enforce it and Reformed Luces Aporia quietly breaks it. Fluid keeps its machine tools, and learns that its neighbours matter more than its principles are comfortable with. It has no oil, almost no coal worth the digging, and no friendly supplier of either, which makes fuel the central problem of the next decade.
+**1949–53** - Western governments impose an embargo. Iosmein declines to enforce it and Reformed Luces Aporia quietly breaks it. Fluid keeps its machine tools, and learns that its neighbours matter more than its principles are comfortable with. It has no oil, almost no coal worth the digging, and no friendly supplier of either, which makes fuel the central problem of the next decade.
 
-**1956** — Prospecting for anything that might replace the imported coal and oil finds uranium in the western uplands above Ferrista, and again under the Kelvaqui moor. The deposits are shallow, extensive and of unusually good grade, and the monazite sands at Ravelluri yield thorium and rare earths besides. It is the only mineral wealth the Republic has ever had in quantity.
+**1956** - Prospecting for anything that might replace the imported coal and oil finds uranium in the western uplands above Ferrista, and again under the Kelvaqui moor. The deposits are shallow, extensive and of unusually good grade, and the monazite sands at Ravelluri yield thorium and rare earths besides. It is the only mineral wealth the Republic has ever had in quantity.
 
-**1958** — The research reactor at Ferrista goes critical. The Directorate treats the programme as survival rather than as policy, and publishes nothing about it for sixteen years.
+**1958** - The research reactor at Ferrista goes critical. The Directorate treats the programme as survival rather than as policy, and publishes nothing about it for sixteen years.
 
-**1964** — The first power station enters service on the eastern seaboard above Cortius. By 1970 fission carries more than half the electricity of the Republic, which is what allows a state with no oil and no usable coal to refuse the terms of an embargo rather than negotiate them.
+**1964** - The first power station enters service on the eastern seaboard above Cortius. By 1970 fission carries more than half the electricity of the Republic, which is what allows a state with no oil and no usable coal to refuse the terms of an embargo rather than negotiate them.
 
-**1954** — The Central Planning Directorate is created to manage the embargo economy. It is meant to be temporary.
+**1954** - The Central Planning Directorate is created to manage the embargo economy. It is meant to be temporary.
 
-**1955–70** — The Directorate years. Planning is professionalised, then closed. Targets are set in tonnage in Lindoma and sent down. Workplace assemblies keep meeting and stop deciding. Output rises and quality falls: goods are built heavy because heavy hits the target, repair shops close because repair produces no tonnage, and the Marnaqui river is dead below the chemical works by 1966. The Directorate publishes nothing, on the grounds that the embargo makes publication dangerous.
+**1955–70** - The Directorate years. Planning is professionalised, then closed. Targets are set in tonnage in Lindoma and sent down. Workplace assemblies keep meeting and stop deciding. Output rises and quality falls: goods are built heavy because heavy hits the target, repair shops close because repair produces no tonnage, and the Marnaqui river is dead below the chemical works by 1966. The Directorate publishes nothing, on the grounds that the embargo makes publication dangerous.
 
-**1968** — The Cortius Report, an internal audit of the Directorate, is suppressed. A copy is printed anyway by the print workers who set it.
+**1968** - The Cortius Report, an internal audit of the Directorate, is suppressed. A copy is printed anyway by the print workers who set it.
 
-**1971** — The dockers at Lutoliluri strike over a target they say cannot be met safely. Three are killed when a crane is worked past its limit. Within eleven days the shipyards at Lindoma are out, then Durorilaqui, then everything.
+**1971** - The dockers at Lutoliluri strike over a target they say cannot be met safely. Three are killed when a crane is worked past its limit. Within eleven days the shipyards at Lindoma are out, then Durorilaqui, then everything.
 
-**1971–73** — The Strike Wave. Two years of it, on and off. The demands are consistent and procedural: publish the plan, let the assemblies decide, count the hours honestly, cut the week. Nobody demands markets and nobody demands a strongman.
+**1971–73** - The Strike Wave. Two years of it, on and off. The demands are consistent and procedural: publish the plan, let the assemblies decide, count the hours honestly, cut the week. Nobody demands markets and nobody demands a strongman.
 
-**1972** — Reactor workers at Ferrista join the strike wave, and the demand they add is publication: the safety records of the plants had never been shown to the people who worked inside them. Article 35(1) now requires the condition of every installation to be measured continuously and published.
+**1972** - Reactor workers at Ferrista join the strike wave, and the demand they add is publication: the safety records of the plants had never been shown to the people who worked inside them. Article 35(1) now requires the condition of every installation to be measured continuously and published.
 
-**1974–76** — The Assembly Reform. The Directorate is dissolved. Planning is rebuilt as rounds of negotiation between workplace, communal and regional councils, with everything published. The week is cut to thirty-two hours. This reform, not the 1890 revolution, is where most of Title IV of the present Constitution actually comes from.
+**1974–76** - The Assembly Reform. The Directorate is dissolved. Planning is rebuilt as rounds of negotiation between workplace, communal and regional councils, with everything published. The week is cut to thirty-two hours. This reform, not the 1890 revolution, is where most of Title IV of the present Constitution actually comes from.
 
 ### Opening
 
-**1978** — Environment and Justice enters government for the first time. The first ecological accounts are published, in tonnes and hectares, for eleven industries.
+**1978** - Environment and Justice enters government for the first time. The first ecological accounts are published, in tonnes and hectares, for eleven industries.
 
-**1983** — The Vandorum replanting begins, on a hundred-year schedule. It is not finished.
+**1983** - The Vandorum replanting begins, on a hundred-year schedule. It is not finished.
 
-**1985** — The Republic begins exporting uranium concentrate, and later fuel assemblies and specialised components. Article 270(2) prohibits any nuclear weapon absolutely and always has; every export licence since the first has carried a safeguards condition and a prohibition on transfer to a weapons programme.
+**1985** - The Republic begins exporting uranium concentrate, and later fuel assemblies and specialised components. Article 270(2) prohibits any nuclear weapon absolutely and always has; every export licence since the first has carried a safeguards condition and a prohibition on transfer to a weapons programme.
 
-**1989** — The Corvaluri crossing opens to Iosmein after ninety-nine years shut.
+**1989** - The Corvaluri crossing opens to Iosmein after ninety-nine years shut.
 
-**1994** — The Democratic Socialist Bloc is founded at Lindoma by Fluid, Iosmein and Reformed Luces Aporia, three states that had spent forty years being told to choose a side.
+**1994** - The Democratic Socialist Bloc is founded at Lindoma by Fluid, Iosmein and Reformed Luces Aporia, three states that had spent forty years being told to choose a side.
 
-**1998** — The hills above Corcina are found to hold the best wind resource in the country and the renewable programme begins in earnest. Fission is reclassified, first by policy and in 2026 by Article 32(6), as a transitional source rather than a permanent one.
+**1998** - The hills above Corcina are found to hold the best wind resource in the country and the renewable programme begins in earnest. Fission is reclassified, first by policy and in 2026 by Article 32(6), as a transitional source rather than a permanent one.
 
-**2001** — The Republic adopts free and open software across public administration, initially to escape a licensing dispute with a foreign supplier, and later on principle.
+**2001** - The Republic adopts free and open software across public administration, initially to escape a licensing dispute with a foreign supplier, and later on principle.
 
-**2003** — The first foreign economic entities are licensed to operate inside the Republic, handling the shipping, certification, insurance and brokerage of the export trade, which the Republic's own institutions are not equipped to conduct in foreign jurisdictions. The licences are revocable, limited in time, and conditioned on the transfer of technique to the knowledge commons. Article 21 now states those conditions on the face of the Constitution.
+**2003** - The first foreign economic entities are licensed to operate inside the Republic, handling the shipping, certification, insurance and brokerage of the export trade, which the Republic's own institutions are not equipped to conduct in foreign jurisdictions. The licences are revocable, limited in time, and conditioned on the transfer of technique to the knowledge commons. Article 21 now states those conditions on the face of the Constitution.
 
-**2008–12** — The financial crisis passes through Fluid mostly as collapsed orders from abroad. The Republic sends materials and medical staff to two Bloc members and receives nothing back, which nobody expects.
+**2008–12** - The financial crisis passes through Fluid mostly as collapsed orders from abroad. The Republic sends materials and medical staff to two Bloc members and receives nothing back, which nobody expects.
 
-**2013–19** — The climate arrives on schedule. Coastal retreat at Ravelluri, three failed harvests in Quintorum, and the Sornorum floods of 2017, which displace four thousand people from a floodplain the spatial plans had never stopped anyone building on.
+**2013–19** - The climate arrives on schedule. Coastal retreat at Ravelluri, three failed harvests in Quintorum, and the Sornorum floods of 2017, which displace four thousand people from a floodplain the spatial plans had never stopped anyone building on.
 
 ### The Deadlock
 
-**2019** — The governing coalition breaks over the pace of the ecological transition. The Humanist Socialists want the fossil phase-out slowed to protect the Vandorum and Kelvaqui workforces; the Democratic Socialists and Environment and Justice want it accelerated. Neither side can assemble a majority.
+**2019** - The governing coalition breaks over the pace of the ecological transition. The Humanist Socialists want the fossil phase-out slowed to protect the Vandorum and Kelvaqui workforces; the Democratic Socialists and Environment and Justice want it accelerated. Neither side can assemble a majority.
 
-**2019–23** — Four years of paralysis. The 1890 text had no rule for dissolving the Council, no rule for what happens when no government can be formed, and no court with power to say so. The Council sits, cannot act, and cannot be sent home. The Presidium governs by emergency decree for forty-seven months, on an emergency power that was written for floods.
+**2019–23** - Four years of paralysis. The 1890 text had no rule for dissolving the Council, no rule for what happens when no government can be formed, and no court with power to say so. The Council sits, cannot act, and cannot be sent home. The Presidium governs by emergency decree for forty-seven months, on an emergency power that was written for floods.
 
-**2022** — The Presidium's third emergency renewal is challenged and the Supreme Court finds that it has no jurisdiction to hear the case. The judgment runs to one page.
+**2022** - The Presidium's third emergency renewal is challenged and the Supreme Court finds that it has no jurisdiction to hear the case. The judgment runs to one page.
 
-**2023** — The Lindoma Assembly, a body of nine hundred residents drawn by lot and convened by the communal councils without any legal authority to do so, sits for five weeks and demands a new constitution. A referendum in October authorises drafting, with 71 per cent in favour.
+**2023** - The Lindoma Assembly, a body of nine hundred residents drawn by lot and convened by the communal councils without any legal authority to do so, sits for five weeks and demands a new constitution. A referendum in October authorises drafting, with 71 per cent in favour.
 
 ### The Second Constitution
 
-**2024** — The second Constitution is adopted on 1 March, drafted in eight months by a committee of the Council itself. It is generous and short: a rights catalogue, cooperative ownership of the means of production, the abolition of currency, and two safeguards written in the fear that the deadlock had been engineered from outside. It has seven articles and no executive branch.
+**2024** - The second Constitution is adopted on 1 March, drafted in eight months by a committee of the Council itself. It is generous and short: a rights catalogue, cooperative ownership of the means of production, the abolition of currency, and two safeguards written in the fear that the deadlock had been engineered from outside. It has seven articles and no executive branch.
 
 ### The Long Winter
 
-**Sep 2024** — The first failure. The Electoral Commission classifies two parties under Article 2 and the State of Democratic Safeguard is declared, suspending ordinary legislation. One of the two is the National Traditionalists, at four per cent. The other is a housing campaign formed that spring and polling at nineteen. Two hundred thousand people are on the streets of Lindoma within a fortnight, most of whom despise both parties. The Safeguard is lifted in November and the power is never used again.
+**Sep 2024** - The first failure. The Electoral Commission classifies two parties under Article 2 and the State of Democratic Safeguard is declared, suspending ordinary legislation. One of the two is the National Traditionalists, at four per cent. The other is a housing campaign formed that spring and polling at nineteen. Two hundred thousand people are on the streets of Lindoma within a fortnight, most of whom despise both parties. The Safeguard is lifted in November and the power is never used again.
 
-**2024–25** — The second failure. Currency is abolished in Article 3 and no procedure replaces it. Through the winter, insulation, timber, antibiotics and spectacle lenses run short in particular places, and there is no lawful way to rank claims, ration, or queue. Allocation happens anyway, informally, through acquaintance and position. The barter that the text prohibits becomes the way things are obtained.
+**2024–25** - The second failure. Currency is abolished in Article 3 and no procedure replaces it. Through the winter, insulation, timber, antibiotics and spectacle lenses run short in particular places, and there is no lawful way to rank claims, ration, or queue. Allocation happens anyway, informally, through acquaintance and position. The barter that the text prohibits becomes the way things are obtained.
 
-**10 Jun 2025** — The third failure. Turnout at the ordinary election is 57.3 per cent, below the sixty per cent that Article 2 makes a condition of validity. The election is void. The text says nothing whatever about what happens next.
+**10 Jun 2025** - The third failure. Turnout at the ordinary election is 57.3 per cent, below the sixty per cent that Article 2 makes a condition of validity. The election is void. The text says nothing whatever about what happens next.
 
-**Jun–Sep 2025** — The Vacancy. For fourteen weeks the Republic has no parliament and no lawful means of getting one. Water, power, food, clinics and schools keep running, administered by communal councils and branch federations acting on their own authority. This is remembered, and it is the reason general competence now sits with the commune under Article 167.
+**Jun–Sep 2025** - The Vacancy. For fourteen weeks the Republic has no parliament and no lawful means of getting one. Water, power, food, clinics and schools keep running, administered by communal councils and branch federations acting on their own authority. This is remembered, and it is the reason general competence now sits with the commune under Article 167.
 
 ### The Third Constitution
 
-**Sep 2025** — A referendum convenes a Constitutional Convention: 200 members, elected in the twenty sub-regions by open list, sitting in public, answerable to bodies drawn by lot.
+**Sep 2025** - A referendum convenes a Constitutional Convention: 200 members, elected in the twenty sub-regions by open list, sitting in public, answerable to bodies drawn by lot.
 
-**Nov 2025 – Feb 2026** — Drafting. Deliberative bodies drawn by lot examine each title and publish their objections. Reasoning systems built to the Convention's own specification and held in common are used to check cross-references, model resource consequences, and find the contradictions a human reader misses at this length. Every choice they informed was made and recorded by a person, which Article 339 now states on the face of the text.
+**Nov 2025 – Feb 2026** - Drafting. Deliberative bodies drawn by lot examine each title and publish their objections. Reasoning systems built to the Convention's own specification and held in common are used to check cross-references, model resource consequences, and find the contradictions a human reader misses at this length. Every choice they informed was made and recorded by a person, which Article 339 now states on the face of the text.
 
-**12 Apr 2026** — The Convention adopts the draft by 148 votes to 52.
+**12 Apr 2026** - The Convention adopts the draft by 148 votes to 52.
 
-**7 Jun 2026** — Referendum. Approved by 64.1 per cent of votes cast. No turnout condition applies, and none ever will again.
+**7 Jun 2026** - Referendum. Approved by 64.1 per cent of votes cast. No turnout condition applies, and none ever will again.
 
-**7 Jul 2026** — Commencement. The constitutions of 2024 and 1890 are repealed and preserved. The Judicial Council is to be drawn within a hundred and twenty days, the first Assembly of two hundred elected within a year, and the first ecological budgets published within two.
+**7 Jul 2026** - Commencement. The constitutions of 2024 and 1890 are repealed and preserved. The Judicial Council is to be drawn within a hundred and twenty days, the first Assembly of two hundred elected within a year, and the first ecological budgets published within two.
 
 ## Assessment
 
