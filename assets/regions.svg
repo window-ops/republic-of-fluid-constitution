@@ -71,8 +71,8 @@
 <text class="tl sm" x="356.8" y="399.5" text-anchor="start">Vestrano</text>
 <circle class="town" cx="412.5" cy="450.0" r="4.2"/>
 <text class="tl" x="419.0" y="453.2" text-anchor="start">Sornorum</text>
-<circle class="town" cx="517.5" cy="474.5" r="4.2"/>
-<text class="tl" x="524.0" y="477.7" text-anchor="start">Lutoliluri</text>
+<circle class="town" cx="510.5" cy="467.5" r="4.2"/>
+<text class="tl" x="517.4" y="470.7" text-anchor="start">Lutoliluri</text>
 <circle class="town" cx="294.4" cy="460.1" r="2.8"/>
 <text class="tl sm" x="300.9" y="463.3" text-anchor="start">Dromera</text>
 </g>
