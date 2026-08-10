@@ -9,7 +9,6 @@
   <link rel="icon" href="../../assets/flag.png">
 </head>
 <body>
-
   <header class="masthead">
     <div class="wrap">
       <span class="marque"><svg viewBox="0 0 58 58" role="img" aria-label="Emblem of the Meteorological Cooperative">
@@ -27,7 +26,6 @@
       </span>
     </div>
   </header>
-
   <nav class="mainnav" aria-label="Sections of this site">
     <div class="wrap">
       <a class="navtop" href="index.html">Home</a>
@@ -81,12 +79,10 @@
       <a class="navtop" href="about.html">About the cooperative</a>
     </div>
   </nav>
-
   <main id="main" class="sheet">
     <p class="crumb"><a href="index.html">Meteorological Cooperative</a> &rsaquo; Observing network</p>
     <h1 class="page-title">The observing network</h1>
     <p class="lede">Every figure the cooperative publishes originates at a station. The network has 2,410 reporting instruments across twelve classes, from the surface synoptic stations that have reported since 1901 to the slope extensometers installed for REP-LEW in 2024. The principal stations are listed below with what each measures and how often it reports.</p>
-
     <div class="facts">
       <div class="row"><span class="k">Reporting instruments</span><span class="v">2,410 across twelve classes</span></div>
       <div class="row"><span class="k">Longest continuous record</span><span class="v">Lindoma surface station, since 1901</span></div>
@@ -95,7 +91,6 @@
       <div class="row"><span class="k">Archive</span><span class="v">Every observation retained, including those rejected by quality control</span></div>
       <div class="row"><span class="k">Access</span><span class="v">Free of charge, without registration; the same feed the cooperative uses internally</span></div>
     </div>
-
     <h2>Classes of station</h2>
     <div class="tablewrap">
       <table class="data">
@@ -184,12 +179,10 @@
         </tbody>
       </table>
     </div>
-
     <h2>Principal stations</h2>
     <div class="prose">
       <p>The table lists the stations of record. Smaller automatic instruments, of which there are some two thousand, appear in the published dataset with the same fields.</p>
     </div>
-
     <div class="filters">
       <div class="field">
         <label for="q">Search</label>
@@ -221,7 +214,6 @@
       <button type="button" id="reset">Reset</button>
     </div>
     <p class="count" id="count" aria-live="polite">38 stations</p>
-
     <div class="tablewrap">
       <table class="data" id="stations">
         <caption>Principal stations of the network</caption>
@@ -544,7 +536,6 @@
       </table>
     </div>
     <p id="empty" hidden class="note">No station matches those filters.</p>
-
     <h2>Gaps in coverage</h2>
     <div class="box limit">
       <span class="lbl">Where coverage is thin</span>
@@ -553,13 +544,11 @@
       <p>Seismic station spacing is 12 km on the Belvacius margin and 60 km in the western sub-regions. Detection of a western event is therefore slower, which matters little, since the western sub-regions produce almost no seismicity.</p>
       <p>Two upper-air stations were closed in the 1990s, at Maravel and Cortius, and the record from both ends at that point. Proposals to reopen the Cortius station appear in each of the last three plan rounds.</p>
     </div>
-
     <h2>The archive</h2>
     <div class="prose">
       <p>Every observation is retained, including observations rejected by quality control, since a rejection is itself a datum about the station. Metadata for every station records each move, screen change and instrument change, so a user may reconstruct the correction applied to any series and work from the raw values where the correction is disputed.</p>
       <p>The whole archive is published without charge and without registration. It is the same feed the cooperative uses internally, in the same format, with no reduced public version.</p>
     </div>
-
     <h2>See also</h2>
     <div class="prose">
       <ul>
@@ -569,7 +558,6 @@
         <li><a href="../../map/geography.html">Geography of the Republic</a> in the Public Register</li>
       </ul>
     </div>
-
     <script>
       document.addEventListener('DOMContentLoaded', function() {
         var table = document.getElementById('stations');
@@ -587,11 +575,8 @@
         window.Meteo.resetOn(document.getElementById('reset'), controls, apply);
         window.Meteo.sortable(table);
       });
-
     </script>
-
   </main>
-
   <footer class="coopfoot">
     <div class="wrap">
       <div class="cols">
@@ -640,7 +625,6 @@
       <p class="basis">Published by the Meteorological Cooperative of the Republic under the organic law on observation and warning. Free of charge, without licence, registration or account. No external resource is loaded by this page. See also the <a href="../../index.html">Republic of Fluid</a> and the <a href="../../register/">Public Register</a>.</p>
     </div>
   </footer>
-
   <script src="site.js"></script>
 </body>
 </html>

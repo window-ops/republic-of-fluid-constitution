@@ -33,7 +33,6 @@
     <p class="eyebrow">Lexicon</p>
     <h1>Dictionary</h1>
     <p class="lede">The published lexicon. Search by Fluidian headword or by English sense. Pronunciation is given on every entry and follows the reading set out in the <a href="rules.html">rules</a>.</p>
-
     <div class="tool">
       <div class="row">
         <div><label for="q">Search</label><input type="search" id="q" placeholder="statiun, or station, or shortage" autocomplete="off"></div>
@@ -57,18 +56,14 @@
       <p class="count" id="count"></p>
     </div>
     <div id="entries"></div>
-
     <h2>How the lexicon is kept</h2>
     <p>An entry is added when the academy has found the word in use in two sub-regions, or in one sub-region and in print. A sense is added to an existing entry on the same footing. Nothing is removed for being coarse; a word is removed only when the survey can no longer find anybody who uses it, and the removals are listed in the <a href="decisions.html">decisions</a>.</p>
     <p>The file is published in the open and may be taken and used by anybody, for any purpose, with no condition attached: <a href="lexicon.js">lexicon.js</a>. The academy asks only that a copy which has been altered says so.</p>
-
     <script>
       document.addEventListener("DOMContentLoaded", function() {
         buildDictionary("entries", "count", "q", "pos");
       });
-
     </script>
-
   </main>
   <footer class="foot">
     <div class="wrap">

@@ -33,7 +33,6 @@
     <p class="eyebrow">Tool</p>
     <h1>Gloss tool</h1>
     <p class="lede">This puts one word under another. It keeps the word order of what you typed, it knows the set phrases in the phrasebook, and it marks in red anything outside the lexicon. It is not a translator.</p>
-
     <form class="tool" id="tform">
       <div class="row">
         <div><label for="dir">Direction</label><select id="dir">
@@ -42,11 +41,9 @@
           </select></div>
       </div>
       <label for="tin" style="margin-block-start:0.3rem">Text</label>
-      <textarea id="tin" placeholder="se tren no fa statiun te Prevessa">se tren no fa statiun te Prevessa</textarea>
-      <p><button type="submit">Gloss it</button></p>
+      <textarea id="tin" placeholder="se tren no fa statiun te Prevessa">se tren no fa statiun te Prevessa</textarea>      <p><button type="submit">Gloss it</button></p>
       <div class="out" id="tout"></div>
     </form>
-
     <h2>What it cannot do</h2>
     <ul>
       <li>It does not conjugate. Fluidian has one verb form, so nothing is lost going out; going in, an English tense is thrown away and you must add <em>es</em> or <em>va</em> yourself.</li>
@@ -55,14 +52,11 @@
       <li>It does not know a word outside the lexicon.</li>
     </ul>
     <div class="note">For anything that matters, the phrasebook is the safer instrument, and for anything that matters legally there is an interpreter, free of charge, under <a href="../../constitution/title-1.html#a16">Article 16</a>(1).</div>
-
     <script>
       document.addEventListener("DOMContentLoaded", function() {
         buildTranslator("tform", "tin", "tout", "dir");
       });
-
     </script>
-
   </main>
   <footer class="foot">
     <div class="wrap">
