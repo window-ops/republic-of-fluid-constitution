@@ -1,157 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Calling and numbering &middot; Telephony</title>
-<meta name="description" content="How calling works in the Republic of Fluid: the nine-digit numbering plan, the short codes, why most calls are carried peer to peer over WebRTC, the surviving mechanical exchanges and where voicemail lives.">
-<meta name="theme-color" content="#23201a">
-<link rel="stylesheet" href="site.css">
-<link rel="icon" href="../../assets/flag.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calling and numbering &middot; Telephony</title>
+  <meta name="description" content="How calling works in the Republic of Fluid: the nine-digit numbering plan, the short codes, why most calls are carried peer to peer over WebRTC, the surviving mechanical exchanges and where voicemail lives.">
+  <meta name="theme-color" content="#23201a">
+  <link rel="stylesheet" href="site.css">
+  <link rel="icon" href="../../assets/flag.png">
 </head>
 <body>
-<a class="skip" href="#main">Skip to the content</a>
+  <a class="skip" href="#main">Skip to the content</a>
 
-<header class="cover">
-  <div class="wrap">
-    <p class="title"><a href="index.html">Telephony</a></p>
-    <p class="imprint">Lines, exchanges and services of the <b>Republic of Fluid</b></p>
-  </div>
-</header>
-
-<nav class="thumbs" aria-label="Sections of this directory">
-  <div class="wrap">
-    <a href="index.html">Front</a>
-    <a href="connect.html">Get a line</a>
-    <a href="dialup.html">Dial-up</a>
-    <a href="mobile.html">Mobile</a>
-    <a href="voice.html" aria-current="page">Calling</a>
-    <a href="chat.html">Chat</a>
-    <a href="meet.html">Meet</a>
-    <a href="hardware.html">Hardware</a>
-    <a href="privacy.html">Privacy</a>
-    <a href="about.html">About</a>
-  </div>
-</nav>
-
-<main id="main">
-<div class="wrap">
-
-<section class="opening">
-  <h1>Calling</h1>
-  <p class="lede">Nothing is metered, so nothing is counted. Most calls are carried directly between the two people making them, which helps keeps the main lines clear and leaves the exchange with nothing to overhear.</p>
-</section>
-
-<section class="sheet">
-  <p class="runhead">The basis<span class="span">No billing system exists</span></p>
-  <h2>Free at the point of use</h2>
-<div class="prose">
-  <p><b>Calls are not metered, timed or counted.</b> There is no billing system, which is worth saying plainly because it explains most of the rest of this site: a network that never had to answer the question "who called whom, and for how long" was never built to be able to.</p>
-  <p>Every number in the plan below is reachable from a handset with no SIM in the case of the short codes, and from any SIP client that can reach <code class="inline">sip.telephony.rof</code>.</p>
-</div>
-</section>
-
-<section class="sheet">
-  <p class="runhead">Short codes<span class="span">112 to 121</span></p>
-  <h2>Three digits, free everywhere</h2>
-  <p class="standfirst">These work from every line, from a call box, and in the case of 112 and 108 from a handset with no SIM.</p>
-<ul class="listing">
-  <li class="entry"><span class="what">Emergency</span><span class="lead" aria-hidden="true"></span><span class="host">112</span><span class="also">Fire, ambulance, communal police, sea and mountain rescue</span></li>
-  <li class="entry"><span class="what">Operator</span><span class="lead" aria-hidden="true"></span><span class="host">100</span><span class="also">Telephony support, at any hour</span></li>
-  <li class="entry"><span class="what">Line faults</span><span class="lead" aria-hidden="true"></span><span class="host">101</span><span class="also">Dead line, noisy line, exchange down</span></li>
-  <li class="entry"><span class="what">Directory</span><span class="lead" aria-hidden="true"></span><span class="host">105</span><span class="also">Look up a number, or ask for a page to be read to you</span></li>
-  <li class="entry"><span class="what">Text and speech relay</span><span class="lead" aria-hidden="true"></span><span class="host">108</span><span class="also">Between text and speech, in both directions, on every service</span></li>
-  <li class="entry"><span class="what">Commune switchboard</span><span class="lead" aria-hidden="true"></span><span class="host">110</span><span class="also">Your own commune office, wherever you are calling from</span></li>
-  <li class="entry"><span class="what">Missing person</span><span class="lead" aria-hidden="true"></span><span class="host">116</span><span class="also">Held jointly with the communal police</span></li>
-  <li class="entry"><span class="what">Medical advice</span><span class="lead" aria-hidden="true"></span><span class="host">118</span><span class="also">A clinician, at any hour</span></li>
-  <li class="entry"><span class="what">Line test</span><span class="lead" aria-hidden="true"></span><span class="host">119</span><span class="also">Echo test and loop measurement, useful before you report a fault</span></li>
-  <li class="entry"><span class="what">Speaking clock</span><span class="lead" aria-hidden="true"></span><span class="host">120</span><span class="also">Fed from the same clocks as ntp.telephony.rof</span></li>
-  <li class="entry"><span class="what">Your voicemail</span><span class="lead" aria-hidden="true"></span><span class="host">121</span><span class="also">If you have chosen to keep any; see below</span></li>
-</ul>
-</section>
-
-<section class="sheet">
-  <p class="runhead">How a call is carried<span class="span">94 per cent go direct</span></p>
-  <h2>Peer to peer, for traffic reasons</h2>
-<div class="stock stock-blue prose">
-  <h3>Most calls never touch a server</h3>
-  <p>When two people call each other, the exchange does the signalling and then gets out of the way. The two ends negotiate over WebRTC and carry the audio directly between themselves. The exchange knows the call was set up; it never carries a single packet of what was said.</p>
-  <p><b>The reason is traffic before it is anything else.</b> A relayed call crosses the network twice and lands on lines that are thin in the countryside and cross a single gateway at the border. Routing calls directly halves that load, and on a bonded voiceband line it is the difference between a call working and not working.</p>
-  <p><b>turn.telephony.rof</b> relays only when the two ends genuinely cannot reach each other, which happens on about 6 per cent of calls.</p>
-</div>
-</section>
-
-<section class="sheet">
-  <p class="runhead">Numbering<span class="span">Seventy-four exchanges</span></p>
-  <h2>Reading a number</h2>
-<div class="tbl-scroll">
-  <table class="tbl">
-    <caption>The national numbering plan</caption>
-    <thead><tr><th>Range</th><th>Kind of line</th><th>Example</th><th>Digits</th></tr></thead>
-    <tbody>
-          <tr><td>1xx</td><td>Short codes, free from everywhere</td><td class="code">112</td><td class="num">3</td></tr>
-          <tr><td>2</td><td>Fixed line, copper or fibre</td><td class="code">2 18 044 125</td><td class="num">9</td></tr>
-          <tr><td>3</td><td>ISDN, one number for each channel</td><td class="code">3 04 811 260</td><td class="num">9</td></tr>
-          <tr><td>5</td><td>SIP endpoint with no wire of its own</td><td class="code">5 66 003 918</td><td class="num">9</td></tr>
-          <tr><td>6</td><td>Mobile</td><td class="code">6 21 447 052</td><td class="num">9</td></tr>
-          <tr><td>8</td><td>Conference room</td><td class="code">8 00 214 776</td><td class="num">9</td></tr>
-          <tr><td>9</td><td>Cooperatives, communes and public bodies</td><td class="code">9 12 000 340</td><td class="num">9</td></tr>
-    </tbody>
-  </table>
-</div>
-<p class="tbl-note">Digits two and three are the exchange. Seventy-four exchanges are in service. Ranges 4 and 7 are unassigned, and there are no premium numbers because there is nothing to charge for.</p>
-</section>
-
-<section class="sheet">
-  <p class="runhead">Older and stranger<span class="span">Nine mechanical exchanges</span></p>
-<div class="cols">
-  <div class="prose">
-    <h3>The old exchanges</h3>
-    <p>Nine mechanical exchanges are still in service, all of them in sub-regions that voted to keep them. They route about 8,000 lines between them and they interwork with everything else through a gateway at Sederna.</p>
-    <p>A resident on one of these will notice that dialling is slower and that the ring cadence is wrong. Nothing else differs, and the short codes work.</p>
-  </div>
-  <div class="prose">
-    <h3>Voicemail, if you want it</h3>
-    <p>There is no central mailbox and no message store on the network. If you want messages taken, your own equipment takes them: the TS-24 router contains an answering function, and any SIP client can do the same.</p>
-    <p><b>121</b> reaches whatever you are running, on your own line, in your own house. If you run nothing, an unanswered call is simply unanswered.</p>
-  </div>
-</div>
-</section>
-
-</div>
-</main>
-
-<footer class="colophon">
-  <div class="wrap cols cols-3">
-    <div>
-      <h2>Lines</h2>
-      <ul>
-        <li><a href="connect.html">Get a line</a></li>
-        <li><a href="dialup.html">Dial-up and the voiceband</a></li>
-        <li><a href="mobile.html">Mobile, LTE and 5G</a></li>
-      </ul>
+  <header class="cover">
+    <div class="wrap">
+      <p class="title"><a href="index.html">Telephony</a></p>
+      <p class="imprint">Lines, exchanges and services of the <b>Republic of Fluid</b></p>
     </div>
-    <div>
-      <h2>Services</h2>
-      <ul>
-        <li><a href="voice.html">Calling and numbering</a></li>
-        <li><a href="chat.html">IRC and Matrix</a></li>
-        <li><a href="meet.html">Conferencing</a></li>
-      </ul>
+  </header>
+
+  <nav class="thumbs" aria-label="Sections of this directory">
+    <div class="wrap">
+      <a href="index.html">Front</a>
+      <a href="connect.html">Get a line</a>
+      <a href="dialup.html">Dial-up</a>
+      <a href="mobile.html">Mobile</a>
+      <a href="voice.html" aria-current="page">Calling</a>
+      <a href="chat.html">Chat</a>
+      <a href="meet.html">Meet</a>
+      <a href="hardware.html">Hardware</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="about.html">About</a>
     </div>
-    <div>
-      <h2>The federation</h2>
-      <ul>
-        <li><a href="hardware.html">Published specifications</a></li>
-        <li><a href="privacy.html">What is never kept</a></li>
-        <li><a href="about.html">About Telephony</a></li>
-        <li><a href="../../register/links.html">Public Register of the Republic</a></li>
-      </ul>
+  </nav>
+
+  <main id="main">
+    <div class="wrap">
+
+      <section class="opening">
+        <h1>Calling</h1>
+        <p class="lede">Nothing is metered, so nothing is counted. Most calls are carried directly between the two people making them, which helps keeps the main lines clear and leaves the exchange with nothing to overhear.</p>
+      </section>
+
+      <section class="sheet">
+        <p class="runhead">The basis<span class="span">No billing system exists</span></p>
+        <h2>Free at the point of use</h2>
+        <div class="prose">
+          <p><b>Calls are not metered, timed or counted.</b> There is no billing system, which is worth saying plainly because it explains most of the rest of this site: a network that never had to answer the question "who called whom, and for how long" was never built to be able to.</p>
+          <p>Every number in the plan below is reachable from a handset with no SIM in the case of the short codes, and from any SIP client that can reach <code class="inline">sip.telephony.rof</code>.</p>
+        </div>
+      </section>
+
+      <section class="sheet">
+        <p class="runhead">Short codes<span class="span">112 to 121</span></p>
+        <h2>Three digits, free everywhere</h2>
+        <p class="standfirst">These work from every line, from a call box, and in the case of 112 and 108 from a handset with no SIM.</p>
+        <ul class="listing">
+          <li class="entry"><span class="what">Emergency</span><span class="lead" aria-hidden="true"></span><span class="host">112</span><span class="also">Fire, ambulance, communal police, sea and mountain rescue</span></li>
+          <li class="entry"><span class="what">Operator</span><span class="lead" aria-hidden="true"></span><span class="host">100</span><span class="also">Telephony support, at any hour</span></li>
+          <li class="entry"><span class="what">Line faults</span><span class="lead" aria-hidden="true"></span><span class="host">101</span><span class="also">Dead line, noisy line, exchange down</span></li>
+          <li class="entry"><span class="what">Directory</span><span class="lead" aria-hidden="true"></span><span class="host">105</span><span class="also">Look up a number, or ask for a page to be read to you</span></li>
+          <li class="entry"><span class="what">Text and speech relay</span><span class="lead" aria-hidden="true"></span><span class="host">108</span><span class="also">Between text and speech, in both directions, on every service</span></li>
+          <li class="entry"><span class="what">Commune switchboard</span><span class="lead" aria-hidden="true"></span><span class="host">110</span><span class="also">Your own commune office, wherever you are calling from</span></li>
+          <li class="entry"><span class="what">Missing person</span><span class="lead" aria-hidden="true"></span><span class="host">116</span><span class="also">Held jointly with the communal police</span></li>
+          <li class="entry"><span class="what">Medical advice</span><span class="lead" aria-hidden="true"></span><span class="host">118</span><span class="also">A clinician, at any hour</span></li>
+          <li class="entry"><span class="what">Line test</span><span class="lead" aria-hidden="true"></span><span class="host">119</span><span class="also">Echo test and loop measurement, useful before you report a fault</span></li>
+          <li class="entry"><span class="what">Speaking clock</span><span class="lead" aria-hidden="true"></span><span class="host">120</span><span class="also">Fed from the same clocks as ntp.telephony.rof</span></li>
+          <li class="entry"><span class="what">Your voicemail</span><span class="lead" aria-hidden="true"></span><span class="host">121</span><span class="also">If you have chosen to keep any; see below</span></li>
+        </ul>
+      </section>
+
+      <section class="sheet">
+        <p class="runhead">How a call is carried<span class="span">94 per cent go direct</span></p>
+        <h2>Peer to peer, for traffic reasons</h2>
+        <div class="stock stock-blue prose">
+          <h3>Most calls never touch a server</h3>
+          <p>When two people call each other, the exchange does the signalling and then gets out of the way. The two ends negotiate over WebRTC and carry the audio directly between themselves. The exchange knows the call was set up; it never carries a single packet of what was said.</p>
+          <p><b>The reason is traffic before it is anything else.</b> A relayed call crosses the network twice and lands on lines that are thin in the countryside and cross a single gateway at the border. Routing calls directly halves that load, and on a bonded voiceband line it is the difference between a call working and not working.</p>
+          <p><b>turn.telephony.rof</b> relays only when the two ends genuinely cannot reach each other, which happens on about 6 per cent of calls.</p>
+        </div>
+      </section>
+
+      <section class="sheet">
+        <p class="runhead">Numbering<span class="span">Seventy-four exchanges</span></p>
+        <h2>Reading a number</h2>
+        <div class="tbl-scroll">
+          <table class="tbl">
+            <caption>The national numbering plan</caption>
+            <thead>
+              <tr>
+                <th>Range</th>
+                <th>Kind of line</th>
+                <th>Example</th>
+                <th>Digits</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1xx</td>
+                <td>Short codes, free from everywhere</td>
+                <td class="code">112</td>
+                <td class="num">3</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Fixed line, copper or fibre</td>
+                <td class="code">2 18 044 125</td>
+                <td class="num">9</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>ISDN, one number for each channel</td>
+                <td class="code">3 04 811 260</td>
+                <td class="num">9</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>SIP endpoint with no wire of its own</td>
+                <td class="code">5 66 003 918</td>
+                <td class="num">9</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>Mobile</td>
+                <td class="code">6 21 447 052</td>
+                <td class="num">9</td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td>Conference room</td>
+                <td class="code">8 00 214 776</td>
+                <td class="num">9</td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td>Cooperatives, communes and public bodies</td>
+                <td class="code">9 12 000 340</td>
+                <td class="num">9</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="tbl-note">Digits two and three are the exchange. Seventy-four exchanges are in service. Ranges 4 and 7 are unassigned, and there are no premium numbers because there is nothing to charge for.</p>
+      </section>
+
+      <section class="sheet">
+        <p class="runhead">Older and stranger<span class="span">Nine mechanical exchanges</span></p>
+        <div class="cols">
+          <div class="prose">
+            <h3>The old exchanges</h3>
+            <p>Nine mechanical exchanges are still in service, all of them in sub-regions that voted to keep them. They route about 8,000 lines between them and they interwork with everything else through a gateway at Sederna.</p>
+            <p>A resident on one of these will notice that dialling is slower and that the ring cadence is wrong. Nothing else differs, and the short codes work.</p>
+          </div>
+          <div class="prose">
+            <h3>Voicemail, if you want it</h3>
+            <p>There is no central mailbox and no message store on the network. If you want messages taken, your own equipment takes them: the TS-24 router contains an answering function, and any SIP client can do the same.</p>
+            <p><b>121</b> reaches whatever you are running, on your own line, in your own house. If you run nothing, an unanswered call is simply unanswered.</p>
+          </div>
+        </div>
+      </section>
+
     </div>
-  </div>
-  <div class="wrap">
-    <p>Telephony holds a licence the Republic grants and is audited in its use of common resources. It exercises no public authority and represents no organ.</p>
-  </div>
-</footer>
+  </main>
+
+  <footer class="colophon">
+    <div class="wrap cols cols-3">
+      <div>
+        <h2>Lines</h2>
+        <ul>
+          <li><a href="connect.html">Get a line</a></li>
+          <li><a href="dialup.html">Dial-up and the voiceband</a></li>
+          <li><a href="mobile.html">Mobile, LTE and 5G</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Services</h2>
+        <ul>
+          <li><a href="voice.html">Calling and numbering</a></li>
+          <li><a href="chat.html">IRC and Matrix</a></li>
+          <li><a href="meet.html">Conferencing</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>The federation</h2>
+        <ul>
+          <li><a href="hardware.html">Published specifications</a></li>
+          <li><a href="privacy.html">What is never kept</a></li>
+          <li><a href="about.html">About Telephony</a></li>
+          <li><a href="../../register/links.html">Public Register of the Republic</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="wrap">
+      <p>Telephony holds a licence the Republic grants and is audited in its use of common resources. It exercises no public authority and represents no organ.</p>
+    </div>
+  </footer>
 </body>
 </html>

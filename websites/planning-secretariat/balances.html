@@ -1,124 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Balances &middot; Planning Secretariat</title>
-<meta name="description" content="The technical body serving every level of the planning procedure. It collects the statements, computes the balances, prepares the variants and publishes the deficits and surpluses.">
-<link rel="stylesheet" href="../shared/frame.css">
-<link rel="stylesheet" href="site.css">
-<link rel="icon" href="../../assets/flag.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Balances &middot; Planning Secretariat</title>
+  <meta name="description" content="The technical body serving every level of the planning procedure. It collects the statements, computes the balances, prepares the variants and publishes the deficits and surpluses.">
+  <link rel="stylesheet" href="../shared/frame.css">
+  <link rel="stylesheet" href="site.css">
+  <link rel="icon" href="../../assets/flag.png">
 </head>
 <body class="org-planning-secretariat">
-<a class="skip" href="#main">Skip to the content</a>
+  <a class="skip" href="#main">Skip to the content</a>
 
-<div class="statebar">
-  <div class="wrap">
-    <a class="rep" href="../../index.html">Republic of Fluid</a>
-    <span class="sep">|</span>
-    <a href="../../constitution/">Constitution</a>
-    <a href="../../register/">Public Register</a>
-    <span class="grow"></span>
-    <a href="../../register/links.html">All Portals</a>
-  </div>
-</div>
-
-<header class="orghead">
-  <div class="wrap">
-    <span class="marque"><svg viewBox="0 0 56 56" role="img" aria-label="Emblem of the Planning Secretariat">
-<rect x="8" y="8" width="40" height="40" fill="none" stroke="#7a5a2f" stroke-width="2.8"/>
-<path d="M8 21 h40 M8 34 h40 M21 8 v40 M34 8 v40" stroke="#7a5a2f" stroke-width="1.6"/>
-<path d="M12 30 L18 24 L24 27 L30 17 L36 21 L44 13" fill="none" stroke="#7a5a2f" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
-</svg></span>
-    <span class="idblock">
-      <p class="kicker">Technical body of the planning procedure</p>
-      <p class="orgname"><a href="index.html">Planning Secretariat</a></p>
-      <p class="basis">Established under Article 96(4) of the Constitution &middot; holds no power of decision</p>
-    </span>
-  </div>
-</header>
-
-<nav class="orgnav" aria-label="Sections of this site"><div class="wrap"><a href="index.html">Home</a><a href="balances.html">Balances</a><a href="variants.html">Variants</a><a href="cycle.html">The cycle</a><a href="methods.html">Methods and code</a><a href="statements.html">Statements received</a><a href="limits.html">No power of decision</a></div></nav>
-
-<main id="main" class="sheet">
-
-<h1 class="page-title">Balances</h1>
-<p class="lede">Need against offer, in physical units, for every line of the round now open.</p>
-
-<div class="controls" id="bal-controls">
-  <div class="field"><label for="bq">Search</label><input id="bq" type="search" data-filter="search" placeholder="Line or unit"></div>
-  <div class="field"><label for="bsec">Sector</label><select id="bsec" data-filter="sector">
-    <option value="">All sectors</option><option value="food">Food and water</option>
-    <option value="housing">Housing</option><option value="energy">Energy</option>
-    <option value="materials">Materials</option><option value="transport">Transport</option>
-    <option value="care">Care</option></select></div>
-  <div class="field"><label for="bst">Position</label><select id="bst" data-filter="state">
-    <option value="">Any position</option><option value="deficit">Deficit</option>
-    <option value="surplus">Surplus</option><option value="level">Level</option></select></div>
-  <div><button class="ghost act" id="bal-reset" type="button">Reset</button></div>
-</div>
-<div class="balances" id="bal-list">
-  <div class="hd"><span>Line</span><span>Need</span><span>Offer</span><span>Position</span></div>
-  <div class="rw" data-sector="food" data-state="deficit" data-search="Grain Mt"><span>Grain</span><span>4.82</span><span>4.71</span><span class="def">-0.11 Mt</span></div>
-  <div class="rw" data-sector="housing" data-state="surplus" data-search="Dwellings, new and renovated k units"><span>Dwellings, new and renovated</span><span>61.0</span><span>68.4</span><span class="sur">+7.4 k units</span></div>
-  <div class="rw" data-sector="energy" data-state="level" data-search="Electricity TWh"><span>Electricity</span><span>214.0</span><span>214.0</span><span class="">0.0 TWh</span></div>
-  <div class="rw" data-sector="materials" data-state="deficit" data-search="Structural steel kt"><span>Structural steel</span><span>1840</span><span>1712</span><span class="def">-128 kt</span></div>
-  <div class="rw" data-sector="transport" data-state="surplus" data-search="Rail vehicle overhauls units"><span>Rail vehicle overhauls</span><span>412</span><span>468</span><span class="sur">+56 units</span></div>
-  <div class="rw" data-sector="care" data-state="deficit" data-search="Care hours, residential M h"><span>Care hours, residential</span><span>96.2</span><span>88.4</span><span class="def">-7.8 M h</span></div>
-  <div class="rw" data-sector="materials" data-state="surplus" data-search="Timber, construction grade km3"><span>Timber, construction grade</span><span>2.14</span><span>2.31</span><span class="sur">+0.17 km3</span></div>
-  <div class="rw" data-sector="food" data-state="deficit" data-search="Water, agricultural abstraction Gl"><span>Water, agricultural abstraction</span><span>1420</span><span>1310</span><span class="def">-110 Gl</span></div>
-</div>
-<p class="count" id="bal-count"></p>
-<p class="empty" id="bal-empty" hidden>No line matches those conditions.</p>
-
-<h2>Where the figures come from</h2>
-<div class="scroller">
-<table class="reg">
-  <thead><tr><th>Column</th><th>Source</th><th>Basis</th></tr></thead>
-  <tbody>
-    <tr><td>Need</td><td>Declarations of need lodged by residents, aggregated and anonymised at source</td><td><a href="../../constitution/title-3.html#a63">Article 63</a>, <a href="../../constitution/title-4.html#a97">Article 97</a>(1)(a)</td></tr>
-    <tr><td>Need</td><td>Statements of the workplace, user and neighbourhood assemblies</td><td><a href="../../constitution/title-4.html#a92">Article 92</a>, <a href="../../constitution/title-4.html#a93">Article 93</a></td></tr>
-    <tr><td>Offer</td><td>Entries of enterprises, cooperatives and public establishments</td><td><a href="../../constitution/title-4.html#a97">Article 97</a>(1)(a)</td></tr>
-    <tr><td>Constraint</td><td>Ecological budgets apportioned among regions and branches</td><td><a href="../../constitution/title-2.html#a26">Article 26</a>(3)</td></tr>
-    <tr><td>Constraint</td><td>Labour offered through the choices of workers</td><td><a href="../../constitution/title-4.html#a115">Article 115</a></td></tr>
-  </tbody>
-</table>
-</div>
-
-<h2>What a deficit means</h2>
-<div class="prose">
-<p>A deficit records that the aggregate of what has been asked for exceeds the aggregate of what has been entered. It is a statement about this round and no decision follows from it automatically. <a href="../../constitution/title-4.html#a97">Article 97</a>(1)(c) refers the line to a round of negotiation, in which each level reconciles the offers and needs before it and refers upward only what it has failed to reconcile.</p>
-<p><a href="../../constitution/title-4.html#a91">Article 91</a> fixes the order in which needs are met where a deficit persists, and the essential provision continues on the quantities of the preceding period whatever delay the procedure meets.</p>
-</div>
-
-<h2>Anonymisation</h2>
-<div class="prose">
-<p>Declarations of need are aggregated and anonymised at the point of collection, and this Secretariat holds no declaration attributable to a person. The entry for this system on <a href="../defender-of-rights/data.html">the register of automated systems</a> states the inputs, the logic and the officer accountable for each aggregate published.</p>
-</div>
-
-</main>
-
-<footer class="orgfoot">
-  <div class="wrap">
-    <div>
-      <h2>Planning Secretariat</h2>
-      <p><a href="balances.html">Published balances</a></p><p><a href="variants.html">Variants prepared</a></p><p><a href="methods.html">Methods and code</a></p>
-    </div>
-    
-    <div>
-      <h2>Other organs</h2>
-      <p><a href="../planning-congress/">National Planning Congress</a></p><p><a href="../ecological-budget-authority/">Ecological Budget Authority</a></p><p><a href="../assembly/">Assembly of the Republic</a></p><p><a href="../audit-office/">Audit Office</a></p>
-    </div>
-    <div>
-      <h2>Publication</h2>
-      <p class="fine">Published under Articles 14(2), 242 and 314.</p>
-      <p class="fine">Free of charge, without licence, registration or account.</p>
-      <p class="fine">No external resource is loaded by this page.</p>
+  <div class="statebar">
+    <div class="wrap">
+      <a class="rep" href="../../index.html">Republic of Fluid</a>
+      <span class="sep">|</span>
+      <a href="../../constitution/">Constitution</a>
+      <a href="../../register/">Public Register</a>
+      <span class="grow"></span>
+      <a href="../../register/links.html">All Portals</a>
     </div>
   </div>
-</footer>
 
-<script src="../shared/frame.js" defer></script>
-<script src="site.js" defer></script>
+  <header class="orghead">
+    <div class="wrap">
+      <span class="marque"><svg viewBox="0 0 56 56" role="img" aria-label="Emblem of the Planning Secretariat">
+          <rect x="8" y="8" width="40" height="40" fill="none" stroke="#7a5a2f" stroke-width="2.8" />
+          <path d="M8 21 h40 M8 34 h40 M21 8 v40 M34 8 v40" stroke="#7a5a2f" stroke-width="1.6" />
+          <path d="M12 30 L18 24 L24 27 L30 17 L36 21 L44 13" fill="none" stroke="#7a5a2f" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" />
+        </svg></span>
+      <span class="idblock">
+        <p class="kicker">Technical body of the planning procedure</p>
+        <p class="orgname"><a href="index.html">Planning Secretariat</a></p>
+        <p class="basis">Established under Article 96(4) of the Constitution &middot; holds no power of decision</p>
+      </span>
+    </div>
+  </header>
+
+  <nav class="orgnav" aria-label="Sections of this site">
+    <div class="wrap"><a href="index.html">Home</a><a href="balances.html">Balances</a><a href="variants.html">Variants</a><a href="cycle.html">The cycle</a><a href="methods.html">Methods and code</a><a href="statements.html">Statements received</a><a href="limits.html">No power of decision</a></div>
+  </nav>
+
+  <main id="main" class="sheet">
+
+    <h1 class="page-title">Balances</h1>
+    <p class="lede">Need against offer, in physical units, for every line of the round now open.</p>
+
+    <div class="controls" id="bal-controls">
+      <div class="field"><label for="bq">Search</label><input id="bq" type="search" data-filter="search" placeholder="Line or unit"></div>
+      <div class="field"><label for="bsec">Sector</label><select id="bsec" data-filter="sector">
+          <option value="">All sectors</option>
+          <option value="food">Food and water</option>
+          <option value="housing">Housing</option>
+          <option value="energy">Energy</option>
+          <option value="materials">Materials</option>
+          <option value="transport">Transport</option>
+          <option value="care">Care</option>
+        </select></div>
+      <div class="field"><label for="bst">Position</label><select id="bst" data-filter="state">
+          <option value="">Any position</option>
+          <option value="deficit">Deficit</option>
+          <option value="surplus">Surplus</option>
+          <option value="level">Level</option>
+        </select></div>
+      <div><button class="ghost act" id="bal-reset" type="button">Reset</button></div>
+    </div>
+    <div class="balances" id="bal-list">
+      <div class="hd"><span>Line</span><span>Need</span><span>Offer</span><span>Position</span></div>
+      <div class="rw" data-sector="food" data-state="deficit" data-search="Grain Mt"><span>Grain</span><span>4.82</span><span>4.71</span><span class="def">-0.11 Mt</span></div>
+      <div class="rw" data-sector="housing" data-state="surplus" data-search="Dwellings, new and renovated k units"><span>Dwellings, new and renovated</span><span>61.0</span><span>68.4</span><span class="sur">+7.4 k units</span></div>
+      <div class="rw" data-sector="energy" data-state="level" data-search="Electricity TWh"><span>Electricity</span><span>214.0</span><span>214.0</span><span class="">0.0 TWh</span></div>
+      <div class="rw" data-sector="materials" data-state="deficit" data-search="Structural steel kt"><span>Structural steel</span><span>1840</span><span>1712</span><span class="def">-128 kt</span></div>
+      <div class="rw" data-sector="transport" data-state="surplus" data-search="Rail vehicle overhauls units"><span>Rail vehicle overhauls</span><span>412</span><span>468</span><span class="sur">+56 units</span></div>
+      <div class="rw" data-sector="care" data-state="deficit" data-search="Care hours, residential M h"><span>Care hours, residential</span><span>96.2</span><span>88.4</span><span class="def">-7.8 M h</span></div>
+      <div class="rw" data-sector="materials" data-state="surplus" data-search="Timber, construction grade km3"><span>Timber, construction grade</span><span>2.14</span><span>2.31</span><span class="sur">+0.17 km3</span></div>
+      <div class="rw" data-sector="food" data-state="deficit" data-search="Water, agricultural abstraction Gl"><span>Water, agricultural abstraction</span><span>1420</span><span>1310</span><span class="def">-110 Gl</span></div>
+    </div>
+    <p class="count" id="bal-count"></p>
+    <p class="empty" id="bal-empty" hidden>No line matches those conditions.</p>
+
+    <h2>Where the figures come from</h2>
+    <div class="scroller">
+      <table class="reg">
+        <thead>
+          <tr>
+            <th>Column</th>
+            <th>Source</th>
+            <th>Basis</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Need</td>
+            <td>Declarations of need lodged by residents, aggregated and anonymised at source</td>
+            <td><a href="../../constitution/title-3.html#a63">Article 63</a>, <a href="../../constitution/title-4.html#a97">Article 97</a>(1)(a)</td>
+          </tr>
+          <tr>
+            <td>Need</td>
+            <td>Statements of the workplace, user and neighbourhood assemblies</td>
+            <td><a href="../../constitution/title-4.html#a92">Article 92</a>, <a href="../../constitution/title-4.html#a93">Article 93</a></td>
+          </tr>
+          <tr>
+            <td>Offer</td>
+            <td>Entries of enterprises, cooperatives and public establishments</td>
+            <td><a href="../../constitution/title-4.html#a97">Article 97</a>(1)(a)</td>
+          </tr>
+          <tr>
+            <td>Constraint</td>
+            <td>Ecological budgets apportioned among regions and branches</td>
+            <td><a href="../../constitution/title-2.html#a26">Article 26</a>(3)</td>
+          </tr>
+          <tr>
+            <td>Constraint</td>
+            <td>Labour offered through the choices of workers</td>
+            <td><a href="../../constitution/title-4.html#a115">Article 115</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>What a deficit means</h2>
+    <div class="prose">
+      <p>A deficit records that the aggregate of what has been asked for exceeds the aggregate of what has been entered. It is a statement about this round and no decision follows from it automatically. <a href="../../constitution/title-4.html#a97">Article 97</a>(1)(c) refers the line to a round of negotiation, in which each level reconciles the offers and needs before it and refers upward only what it has failed to reconcile.</p>
+      <p><a href="../../constitution/title-4.html#a91">Article 91</a> fixes the order in which needs are met where a deficit persists, and the essential provision continues on the quantities of the preceding period whatever delay the procedure meets.</p>
+    </div>
+
+    <h2>Anonymisation</h2>
+    <div class="prose">
+      <p>Declarations of need are aggregated and anonymised at the point of collection, and this Secretariat holds no declaration attributable to a person. The entry for this system on <a href="../defender-of-rights/data.html">the register of automated systems</a> states the inputs, the logic and the officer accountable for each aggregate published.</p>
+    </div>
+
+  </main>
+
+  <footer class="orgfoot">
+    <div class="wrap">
+      <div>
+        <h2>Planning Secretariat</h2>
+        <p><a href="balances.html">Published balances</a></p>
+        <p><a href="variants.html">Variants prepared</a></p>
+        <p><a href="methods.html">Methods and code</a></p>
+      </div>
+
+      <div>
+        <h2>Other organs</h2>
+        <p><a href="../planning-congress/">National Planning Congress</a></p>
+        <p><a href="../ecological-budget-authority/">Ecological Budget Authority</a></p>
+        <p><a href="../assembly/">Assembly of the Republic</a></p>
+        <p><a href="../audit-office/">Audit Office</a></p>
+      </div>
+      <div>
+        <h2>Publication</h2>
+        <p class="fine">Published under Articles 14(2), 242 and 314.</p>
+        <p class="fine">Free of charge, without licence, registration or account.</p>
+        <p class="fine">No external resource is loaded by this page.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../shared/frame.js" defer></script>
+  <script src="site.js" defer></script>
 </body>
 </html>

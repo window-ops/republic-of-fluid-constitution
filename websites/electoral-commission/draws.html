@@ -1,125 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Draws by lot &middot; Electoral Commission</title>
-<meta name="description" content="The office that conducts the elections, referendums, recalls and draws by lot of the Republic, and publishes the record of every operation.">
-<link rel="stylesheet" href="../shared/frame.css">
-<link rel="stylesheet" href="site.css">
-<link rel="icon" href="../../assets/flag.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Draws by lot &middot; Electoral Commission</title>
+  <meta name="description" content="The office that conducts the elections, referendums, recalls and draws by lot of the Republic, and publishes the record of every operation.">
+  <link rel="stylesheet" href="../shared/frame.css">
+  <link rel="stylesheet" href="site.css">
+  <link rel="icon" href="../../assets/flag.png">
 </head>
 <body class="org-electoral-commission">
-<a class="skip" href="#main">Skip to the content</a>
+  <a class="skip" href="#main">Skip to the content</a>
 
-<div class="statebar">
-  <div class="wrap">
-    <a class="rep" href="../../index.html">Republic of Fluid</a>
-    <span class="sep">|</span>
-    <a href="../../constitution/">Constitution</a>
-    <a href="../../register/">Public Register</a>
-    <span class="grow"></span>
-    <a href="../../register/links.html">All Portals</a>
-  </div>
-</div>
-
-<header class="orghead">
-  <div class="wrap">
-    <span class="marque"><svg viewBox="0 0 56 56" role="img" aria-label="Emblem of the Electoral Commission">
-<rect x="6" y="24" width="44" height="26" fill="none" stroke="#2b3f6b" stroke-width="2.6"/>
-<path d="M6 24 L28 12 L50 24" fill="none" stroke="#2b3f6b" stroke-width="2.6" stroke-linejoin="round"/>
-<rect x="20" y="20" width="16" height="9" fill="#ffffff" stroke="#2b3f6b" stroke-width="2"/>
-<path d="M23 24.5 L25.4 27 L33 20.5" fill="none" stroke="#1a6f37" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M14 34h12M14 39h20M14 44h8" stroke="#b9c4dc" stroke-width="2.2" stroke-linecap="round"/>
-</svg></span>
-    <span class="idblock">
-      <p class="kicker">Oversight office of the Republic</p>
-      <p class="orgname"><a href="index.html">Electoral Commission</a></p>
-      <p class="basis">Established under Article 244 of the Constitution &middot; conducts the elections, the referendums and the draws by lot</p>
-    </span>
-  </div>
-</header>
-
-<nav class="orgnav" aria-label="Sections of this site"><div class="wrap"><a href="index.html">Home</a><a href="calendar.html">Ballots</a><a href="lists.html">Lists and candidacies</a><a href="draws.html">Draws by lot</a><a href="boundaries.html">Boundaries</a><a href="electronic.html">Electronic voting</a><a href="disputes.html">Disputes</a></div></nav>
-
-<main id="main" class="sheet">
-
-<h1 class="page-title">Draws by lot</h1>
-<p class="lede">The Republic fills many of its offices by chance out of a public pool. Every draw happens in a room anyone may enter, by a method anyone may check.</p>
-
-<div class="legal">
-  <p><a href="../../constitution/title-9.html#a244">Article 244</a>(3) charges this office with the draws required by <a href="../../constitution/title-5.html#a142">Article 142</a>, <a href="../../constitution/title-8.html#a210">Article 210</a>, <a href="../../constitution/title-8.html#a217">Article 217</a>, <a href="../../constitution/title-8.html#a227">Article 227</a> and <a href="../../constitution/title-9.html#a235">Article 235</a>, except where the Constitution assigns a draw elsewhere.</p>
-  <p><a href="../../constitution/title-9.html#a235">Article 235</a>(1): the method and the code of the drawing procedure are published under <a href="../../constitution/title-4.html#a109">Article 109</a>(5). <a href="../../constitution/title-9.html#a235">Article 235</a>(3): each vacancy is drawn separately, and the result is published upon the draw together with the composition of the pool it came from.</p>
-</div>
-
-<h2>Register of draws</h2>
-<div class="controls" id="draw-controls">
-  <div class="field"><label for="dq">Search</label><input id="dq" type="search" data-filter="search" placeholder="Body, article, date"></div>
-  <div class="field"><label for="dk">Kind of body</label><select id="dk" data-filter="kind">
-    <option value="">All bodies</option><option value="court">Courts and lay judges</option>
-    <option value="council">Judicial Council</option><option value="office">Oversight offices</option>
-    <option value="assembly">Deliberative bodies</option><option value="boundary">Boundary Division</option></select></div>
-  <div><button class="ghost act" id="draw-reset" type="button">Reset</button></div>
-</div>
-<div class="scroller">
-<table class="reg" id="draw-table">
-  <caption>Draws conducted and scheduled. Pool size is the number of persons eligible on the day of the draw.</caption>
-  <thead><tr><th data-sort="text">Date</th><th data-sort="text">Body</th><th data-sort="text">Basis</th><th data-sort="number">Pool</th><th>Stage</th></tr></thead>
-  <tbody id="draw-rows">
-    <tr data-kind="council" data-search="2 Nov 2026 Judicial Council Article 210"><td>2 Nov 2026</td><td>Judicial Council</td><td>Article 210</td><td>1,412</td><td><span class="tag closed">Scheduled</span></td></tr>
-    <tr data-kind="court" data-search="19 Oct 2026 Constitutional Court, first cohort Article 217"><td>19 Oct 2026</td><td>Constitutional Court, first cohort</td><td>Article 217</td><td>864</td><td><span class="tag closed">Scheduled</span></td></tr>
-    <tr data-kind="office" data-search="28 Sep 2026 College of the Audit Office Article 235"><td>28 Sep 2026</td><td>College of the Audit Office</td><td>Article 235</td><td>1,106</td><td><span class="tag closed">Scheduled</span></td></tr>
-    <tr data-kind="office" data-search="14 Sep 2026 College of the Electoral Commission Article 235"><td>14 Sep 2026</td><td>College of the Electoral Commission</td><td>Article 235</td><td>1,338</td><td><span class="tag closed">Scheduled</span></td></tr>
-    <tr data-kind="court" data-search="31 Aug 2026 Lay judges, Lindoma circuit Article 227"><td>31 Aug 2026</td><td>Lay judges, Lindoma circuit</td><td>Article 227</td><td>18,904</td><td><span class="tag closed">Scheduled</span></td></tr>
-    <tr data-kind="assembly" data-search="27 Jul 2026 Deliberative body on the transport plan Article 142"><td>27 Jul 2026</td><td>Deliberative body on the transport plan</td><td>Article 142</td><td>2,240</td><td><span class="tag open">Conducted</span></td></tr>
-    <tr data-kind="boundary" data-search="13 Jul 2026 Boundary Division, first apportionment Article 247"><td>13 Jul 2026</td><td>Boundary Division, first apportionment</td><td>Article 247</td><td>742</td><td><span class="tag open">Conducted</span></td></tr>
-  </tbody>
-</table>
-</div>
-<p class="count" id="draw-count"></p>
-<p class="empty" id="draw-empty" hidden>No draw matches those conditions.</p>
-
-<h2>How a draw is conducted</h2>
-<div class="prose">
-<p>The pool is fixed and published seven days beforehand, and it may not change after that. On the day, the register is read into the room, the seed is generated from physical dice thrown by members of the public present, and the published program consumes the seed and names the person drawn. The program, its source, its build procedure and its configuration are public, and the dice throws are recorded on video published with the result.</p>
-<p>Anyone may take the published seed, run the published program on their own machine, and obtain the same name. Several associations do this at every draw and publish independently. <a href="../../constitution/title-8.html#a215">Article 215</a>(4) makes an annual verification that the draws were conducted as published, which is a check on this office by another body.</p>
-</div>
-
-<h2>Who may not be drawn</h2>
-<div class="prose">
-<p>The Constitution disqualifies from every pool, during office and for four years afterwards: members of the Assembly, members of executive committees, delegates to planning bodies, officers of a party, officers of a federation, members of the Ecological Budget Authority, members of the Judicial Council, and holders of a management organ of an enterprise.</p>
-<p>A person serves in one oversight office only, once, for seven years, never renewed. Nobody accumulates the offices of this Title over a career.</p>
-</div>
-
-<h2>Entering a pool</h2>
-<div class="prose">
-<p>Entry is open to every resident satisfying the published conditions, verified on those conditions alone. A refusal goes to the Constitutional Court. A pool holding fewer than thirty persons is reopened, and organic law provides for recruitment by public call.</p>
-<p>Each register is public and states, for every person entered, the qualification, the experience and the declarations of <a href="../../constitution/title-9.html#a238">Article 238</a>(4). The public register lives at the office that keeps the pool, and this office publishes a copy on the day of each draw.</p>
-</div>
-
-</main>
-
-<footer class="orgfoot">
-  <div class="wrap">
-    <div>
-      <h2>Electoral Commission</h2>
-      <p><a href="calendar.html">Ballots and results</a></p><p><a href="draws.html">Register of draws</a></p><p><a href="disputes.html">Bring a dispute</a></p>
-    </div>
-    
-    <div>
-      <h2>Other organs</h2>
-      <p><a href="../audit-office/">Audit Office</a></p><p><a href="../defender-of-rights/">Defender of Rights</a></p><p><a href="../future-generations/">Commissioner for Future Generations</a></p><p><a href="../democratic-integrity/">Office of Democratic Integrity</a></p>
-    </div>
-    <div>
-      <h2>Publication</h2>
-      <p class="fine">Published under Articles 14(2), 242 and 314.</p>
-      <p class="fine">Free of charge, without licence, registration or account.</p>
-      <p class="fine">No external resource is loaded by this page.</p>
+  <div class="statebar">
+    <div class="wrap">
+      <a class="rep" href="../../index.html">Republic of Fluid</a>
+      <span class="sep">|</span>
+      <a href="../../constitution/">Constitution</a>
+      <a href="../../register/">Public Register</a>
+      <span class="grow"></span>
+      <a href="../../register/links.html">All Portals</a>
     </div>
   </div>
-</footer>
 
-<script src="../shared/frame.js" defer></script>
-<script src="site.js" defer></script>
+  <header class="orghead">
+    <div class="wrap">
+      <span class="marque"><svg viewBox="0 0 56 56" role="img" aria-label="Emblem of the Electoral Commission">
+          <rect x="6" y="24" width="44" height="26" fill="none" stroke="#2b3f6b" stroke-width="2.6" />
+          <path d="M6 24 L28 12 L50 24" fill="none" stroke="#2b3f6b" stroke-width="2.6" stroke-linejoin="round" />
+          <rect x="20" y="20" width="16" height="9" fill="#ffffff" stroke="#2b3f6b" stroke-width="2" />
+          <path d="M23 24.5 L25.4 27 L33 20.5" fill="none" stroke="#1a6f37" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M14 34h12M14 39h20M14 44h8" stroke="#b9c4dc" stroke-width="2.2" stroke-linecap="round" />
+        </svg></span>
+      <span class="idblock">
+        <p class="kicker">Oversight office of the Republic</p>
+        <p class="orgname"><a href="index.html">Electoral Commission</a></p>
+        <p class="basis">Established under Article 244 of the Constitution &middot; conducts the elections, the referendums and the draws by lot</p>
+      </span>
+    </div>
+  </header>
+
+  <nav class="orgnav" aria-label="Sections of this site">
+    <div class="wrap"><a href="index.html">Home</a><a href="calendar.html">Ballots</a><a href="lists.html">Lists and candidacies</a><a href="draws.html">Draws by lot</a><a href="boundaries.html">Boundaries</a><a href="electronic.html">Electronic voting</a><a href="disputes.html">Disputes</a></div>
+  </nav>
+
+  <main id="main" class="sheet">
+
+    <h1 class="page-title">Draws by lot</h1>
+    <p class="lede">The Republic fills many of its offices by chance out of a public pool. Every draw happens in a room anyone may enter, by a method anyone may check.</p>
+
+    <div class="legal">
+      <p><a href="../../constitution/title-9.html#a244">Article 244</a>(3) charges this office with the draws required by <a href="../../constitution/title-5.html#a142">Article 142</a>, <a href="../../constitution/title-8.html#a210">Article 210</a>, <a href="../../constitution/title-8.html#a217">Article 217</a>, <a href="../../constitution/title-8.html#a227">Article 227</a> and <a href="../../constitution/title-9.html#a235">Article 235</a>, except where the Constitution assigns a draw elsewhere.</p>
+      <p><a href="../../constitution/title-9.html#a235">Article 235</a>(1): the method and the code of the drawing procedure are published under <a href="../../constitution/title-4.html#a109">Article 109</a>(5). <a href="../../constitution/title-9.html#a235">Article 235</a>(3): each vacancy is drawn separately, and the result is published upon the draw together with the composition of the pool it came from.</p>
+    </div>
+
+    <h2>Register of draws</h2>
+    <div class="controls" id="draw-controls">
+      <div class="field"><label for="dq">Search</label><input id="dq" type="search" data-filter="search" placeholder="Body, article, date"></div>
+      <div class="field"><label for="dk">Kind of body</label><select id="dk" data-filter="kind">
+          <option value="">All bodies</option>
+          <option value="court">Courts and lay judges</option>
+          <option value="council">Judicial Council</option>
+          <option value="office">Oversight offices</option>
+          <option value="assembly">Deliberative bodies</option>
+          <option value="boundary">Boundary Division</option>
+        </select></div>
+      <div><button class="ghost act" id="draw-reset" type="button">Reset</button></div>
+    </div>
+    <div class="scroller">
+      <table class="reg" id="draw-table">
+        <caption>Draws conducted and scheduled. Pool size is the number of persons eligible on the day of the draw.</caption>
+        <thead>
+          <tr>
+            <th data-sort="text">Date</th>
+            <th data-sort="text">Body</th>
+            <th data-sort="text">Basis</th>
+            <th data-sort="number">Pool</th>
+            <th>Stage</th>
+          </tr>
+        </thead>
+        <tbody id="draw-rows">
+          <tr data-kind="council" data-search="2 Nov 2026 Judicial Council Article 210">
+            <td>2 Nov 2026</td>
+            <td>Judicial Council</td>
+            <td>Article 210</td>
+            <td>1,412</td>
+            <td><span class="tag closed">Scheduled</span></td>
+          </tr>
+          <tr data-kind="court" data-search="19 Oct 2026 Constitutional Court, first cohort Article 217">
+            <td>19 Oct 2026</td>
+            <td>Constitutional Court, first cohort</td>
+            <td>Article 217</td>
+            <td>864</td>
+            <td><span class="tag closed">Scheduled</span></td>
+          </tr>
+          <tr data-kind="office" data-search="28 Sep 2026 College of the Audit Office Article 235">
+            <td>28 Sep 2026</td>
+            <td>College of the Audit Office</td>
+            <td>Article 235</td>
+            <td>1,106</td>
+            <td><span class="tag closed">Scheduled</span></td>
+          </tr>
+          <tr data-kind="office" data-search="14 Sep 2026 College of the Electoral Commission Article 235">
+            <td>14 Sep 2026</td>
+            <td>College of the Electoral Commission</td>
+            <td>Article 235</td>
+            <td>1,338</td>
+            <td><span class="tag closed">Scheduled</span></td>
+          </tr>
+          <tr data-kind="court" data-search="31 Aug 2026 Lay judges, Lindoma circuit Article 227">
+            <td>31 Aug 2026</td>
+            <td>Lay judges, Lindoma circuit</td>
+            <td>Article 227</td>
+            <td>18,904</td>
+            <td><span class="tag closed">Scheduled</span></td>
+          </tr>
+          <tr data-kind="assembly" data-search="27 Jul 2026 Deliberative body on the transport plan Article 142">
+            <td>27 Jul 2026</td>
+            <td>Deliberative body on the transport plan</td>
+            <td>Article 142</td>
+            <td>2,240</td>
+            <td><span class="tag open">Conducted</span></td>
+          </tr>
+          <tr data-kind="boundary" data-search="13 Jul 2026 Boundary Division, first apportionment Article 247">
+            <td>13 Jul 2026</td>
+            <td>Boundary Division, first apportionment</td>
+            <td>Article 247</td>
+            <td>742</td>
+            <td><span class="tag open">Conducted</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="count" id="draw-count"></p>
+    <p class="empty" id="draw-empty" hidden>No draw matches those conditions.</p>
+
+    <h2>How a draw is conducted</h2>
+    <div class="prose">
+      <p>The pool is fixed and published seven days beforehand, and it may not change after that. On the day, the register is read into the room, the seed is generated from physical dice thrown by members of the public present, and the published program consumes the seed and names the person drawn. The program, its source, its build procedure and its configuration are public, and the dice throws are recorded on video published with the result.</p>
+      <p>Anyone may take the published seed, run the published program on their own machine, and obtain the same name. Several associations do this at every draw and publish independently. <a href="../../constitution/title-8.html#a215">Article 215</a>(4) makes an annual verification that the draws were conducted as published, which is a check on this office by another body.</p>
+    </div>
+
+    <h2>Who may not be drawn</h2>
+    <div class="prose">
+      <p>The Constitution disqualifies from every pool, during office and for four years afterwards: members of the Assembly, members of executive committees, delegates to planning bodies, officers of a party, officers of a federation, members of the Ecological Budget Authority, members of the Judicial Council, and holders of a management organ of an enterprise.</p>
+      <p>A person serves in one oversight office only, once, for seven years, never renewed. Nobody accumulates the offices of this Title over a career.</p>
+    </div>
+
+    <h2>Entering a pool</h2>
+    <div class="prose">
+      <p>Entry is open to every resident satisfying the published conditions, verified on those conditions alone. A refusal goes to the Constitutional Court. A pool holding fewer than thirty persons is reopened, and organic law provides for recruitment by public call.</p>
+      <p>Each register is public and states, for every person entered, the qualification, the experience and the declarations of <a href="../../constitution/title-9.html#a238">Article 238</a>(4). The public register lives at the office that keeps the pool, and this office publishes a copy on the day of each draw.</p>
+    </div>
+
+  </main>
+
+  <footer class="orgfoot">
+    <div class="wrap">
+      <div>
+        <h2>Electoral Commission</h2>
+        <p><a href="calendar.html">Ballots and results</a></p>
+        <p><a href="draws.html">Register of draws</a></p>
+        <p><a href="disputes.html">Bring a dispute</a></p>
+      </div>
+
+      <div>
+        <h2>Other organs</h2>
+        <p><a href="../audit-office/">Audit Office</a></p>
+        <p><a href="../defender-of-rights/">Defender of Rights</a></p>
+        <p><a href="../future-generations/">Commissioner for Future Generations</a></p>
+        <p><a href="../democratic-integrity/">Office of Democratic Integrity</a></p>
+      </div>
+      <div>
+        <h2>Publication</h2>
+        <p class="fine">Published under Articles 14(2), 242 and 314.</p>
+        <p class="fine">Free of charge, without licence, registration or account.</p>
+        <p class="fine">No external resource is loaded by this page.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../shared/frame.js" defer></script>
+  <script src="site.js" defer></script>
 </body>
 </html>

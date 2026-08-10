@@ -1,261 +1,394 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Certified devices and RQUAK - Meteorological Cooperative</title>
-<meta name="description" content="Voluntary certification of devices for REP-KJS, REP-LEW and REP-FEW, the conformance requirements, the register of certified classes, the RQUAK client and its builds, and the delivery paths.">
-<link rel="stylesheet" href="site.css">
-<link rel="icon" href="../../assets/flag.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Certified devices and RQUAK - Meteorological Cooperative</title>
+  <meta name="description" content="Voluntary certification of devices for REP-KJS, REP-LEW and REP-FEW, the conformance requirements, the register of certified classes, the RQUAK client and its builds, and the delivery paths.">
+  <link rel="stylesheet" href="site.css">
+  <link rel="icon" href="../../assets/flag.png">
 </head>
 <body>
 
-<header class="masthead">
-  <div class="wrap">
-    <span class="marque"><svg viewBox="0 0 58 58" role="img" aria-label="Emblem of the Meteorological Cooperative">
-<circle cx="29" cy="31" r="20" fill="none" stroke="#9a6516" stroke-width="2.4"/>
-<circle cx="29" cy="31" r="12.5" fill="none" stroke="#9a6516" stroke-width="1.6"/>
-<circle cx="29" cy="31" r="5" fill="none" stroke="#9a6516" stroke-width="1.6"/>
-<path d="M29 31 L29 9" stroke="#5f3d0c" stroke-width="2.4" stroke-linecap="round"/>
-<path d="M29 12 L38 15" stroke="#5f3d0c" stroke-width="2.4" stroke-linecap="round"/>
-<path d="M29 18 L36 20.5" stroke="#5f3d0c" stroke-width="2.4" stroke-linecap="round"/>
-<circle cx="29" cy="31" r="2" fill="#5f3d0c"/>
-</svg></span>
-    <span class="idblock">
-      <p class="coopname"><a href="index.html">Meteorological Cooperative of the Republic</a></p>
-      <p class="basis">Weather, climate, seismicity, landslide and flood &middot; mandate held under the organic law on observation and warning</p>
-    </span>
-  </div>
-</header>
+  <header class="masthead">
+    <div class="wrap">
+      <span class="marque"><svg viewBox="0 0 58 58" role="img" aria-label="Emblem of the Meteorological Cooperative">
+          <circle cx="29" cy="31" r="20" fill="none" stroke="#9a6516" stroke-width="2.4" />
+          <circle cx="29" cy="31" r="12.5" fill="none" stroke="#9a6516" stroke-width="1.6" />
+          <circle cx="29" cy="31" r="5" fill="none" stroke="#9a6516" stroke-width="1.6" />
+          <path d="M29 31 L29 9" stroke="#5f3d0c" stroke-width="2.4" stroke-linecap="round" />
+          <path d="M29 12 L38 15" stroke="#5f3d0c" stroke-width="2.4" stroke-linecap="round" />
+          <path d="M29 18 L36 20.5" stroke="#5f3d0c" stroke-width="2.4" stroke-linecap="round" />
+          <circle cx="29" cy="31" r="2" fill="#5f3d0c" />
+        </svg></span>
+      <span class="idblock">
+        <p class="coopname"><a href="index.html">Meteorological Cooperative of the Republic</a></p>
+        <p class="basis">Weather, climate, seismicity, landslide and flood &middot; mandate held under the organic law on observation and warning</p>
+      </span>
+    </div>
+  </header>
 
-<nav class="mainnav" aria-label="Sections of this site">
-  <div class="wrap">
-    <a class="navtop" href="index.html">Home</a>
-    <details class="grp">
-      <summary>Weather and climate</summary>
-      <ul>
-        <li><a href="climate.html">Climate of the Republic</a></li>
-        <li><a href="change.html">Observed change</a></li>
-        <li><a href="forecasting.html">How a forecast is made</a></li>
-        <li class="has"><details class="sub">
-          <summary><a href="emissions.html">Emissions position</a></summary>
-          <ul>
-            <li><a href="periphery.html">Harm to the periphery</a></li>
-          </ul>
-        </details></li>
-      </ul>
-    </details>
-    <details class="grp">
-      <summary>Warning systems</summary>
-      <ul>
-        <li><a href="rationale.html">Why these systems exist</a></li>
-        <li><a href="seismicity.html">Seismicity of the Republic</a></li>
-        <li class="has"><details class="sub">
-          <summary><a href="kjs.html">REP-KJS, earthquake</a></summary>
-          <ul>
-            <li><a href="scale.html">REP intensity scale</a></li>
-            <li><a href="kjs-method.html">Detection, latency and limits</a></li>
-          </ul>
-        </details></li>
-        <li><a href="lew.html">REP-LEW, landslide</a></li>
-        <li><a href="few.html">REP-FEW, flood</a></li>
-        <li><a href="devices.html">Certified devices and RQUAK</a></li>
-      </ul>
-    </details>
-    <a class="navtop" href="species.html">Species catalogue</a>
-    <a class="navtop" href="network.html">Observing network</a>
-    <details class="grp">
-      <summary>Developers</summary>
-      <ul>
-        <li><a href="dev/index.html">Specifications and source</a></li>
-        <li><a href="dev/wire-format.html">Warning wire format</a></li>
-        <li><a href="dev/vectors.html">Conformance test vectors</a></li>
-        <li><a href="dev/hardware.html">Sensor and station hardware</a></li>
-        <li><a href="dev/forking.html">Porting to another country</a></li>
-      </ul>
-    </details>
-    <a class="navtop" href="about.html">About the cooperative</a>
-  </div>
-</nav>
-
-<main id="main" class="sheet">
-<p class="crumb"><a href="index.html">Meteorological Cooperative</a> &rsaquo; Warning systems &rsaquo; Certified devices and RQUAK</p>
-<h1 class="page-title">Certified devices and RQUAK</h1>
-<p class="lede">A warning reaches a person through a device that knows how to receive it. The cooperative certifies devices that meet the conformance requirements and publishes a mark for them. Certification is voluntary, and no rule obliges any device distributed in the Republic to have it. For equipment with no native support, the cooperative publishes RQUAK, a client for every platform, compiled primarily for Linux.</p>
-
-<div class="facts">
-  <div class="row"><span class="k">Certification</span><span class="v">Voluntary. A device may be distributed, used and connected in the Republic without it</span></div>
-  <div class="row"><span class="k">Scope of a certificate</span><span class="v">All three systems together. No device is certified for one alone</span></div>
-  <div class="row"><span class="k">Mark</span><span class="v">The three-band mark with the certificate number beneath it</span></div>
-  <div class="row"><span class="k">Term</span><span class="v">Five years, renewable on retest against the format in force</span></div>
-  <div class="row"><span class="k">Charge</span><span class="v">None. Testing is done by the cooperative within its own allocation</span></div>
-  <div class="row"><span class="k">Client for uncertified equipment</span><span class="v">RQUAK, published for every platform the cooperative can build for</span></div>
-</div>
-
-<h2>What certification requires</h2>
-<div class="prose">
-<p>A device holding the mark satisfies every requirement below. The full text of each is in the conformance specification, and the vectors that test them are published.</p>
-</div>
-
-<div class="tablewrap">
-<table class="data">
-<caption>Conformance requirements</caption>
-<thead>
-<tr><th>Requirement</th><th class="num">Limit</th><th>Reason</th></tr>
-</thead>
-<tbody>
-<tr><td>Presentation latency</td><td class="num">Within 400 ms of receipt</td><td>Every 400 ms is 1.4 km of S wave travel</td></tr>
-<tr><td>Audible at a fixed level</td><td class="num">Overrides mute and volume settings</td><td>A muted device warns nobody</td></tr>
-<tr><td>Wakes a sleeping device</td><td class="num">From any low-power state within 400 ms</td><td>Most events occur when most people are asleep</td></tr>
-<tr><td>States every field received</td><td class="num">All fields of the segment</td><td>The public learns the meaning of a warning from the broadcast itself</td></tr>
-<tr><td>Handles cancellation</td><td class="num">Within 400 ms of receipt</td><td>A false alert left standing damages the credibility of the whole system</td></tr>
-<tr><td>Works with no account</td><td class="num">No registration, login or subscription</td><td>Article 14 (2); a warning is a public act</td></tr>
-<tr><td>Retains the last state offline</td><td class="num">Displays the age of the information</td><td>A device out of contact should say so</td></tr>
-<tr><td>Answers the monthly test</td><td class="num">First Wednesday, 11:00</td><td>An untested receiver is an unknown receiver</td></tr>
-<tr><td>Reports no personal data</td><td class="num">Receive-only by default</td><td>Article 14; the cooperative learns nothing about who received a warning</td></tr>
-</tbody>
-</table>
-</div>
-
-<h2>Classes of certified equipment</h2>
-<div class="tablewrap">
-<table class="data">
-<caption>Register of certified classes</caption>
-<thead>
-<tr><th>Class</th><th class="num">Models certified</th><th>Behaviour on a warning</th></tr>
-</thead>
-<tbody>
-<tr><td>Telephones and handsets</td><td class="num">31</td><td>Tone, spoken message, full text; screen wakes at fixed brightness</td></tr>
-<tr><td>Televisions and decoders</td><td class="num">18</td><td>Message overlays whatever is showing; sound switches to the broadcast</td></tr>
-<tr><td>Radio receivers</td><td class="num">12</td><td>Switches to the warning channel and returns afterwards</td></tr>
-<tr><td>Computer operating systems</td><td class="num">7</td><td>System-level notice above every window; four are free software</td></tr>
-<tr><td>Household alarm panels</td><td class="num">9</td><td>Tone and spoken message; may open a door lock at the Imminent step</td></tr>
-<tr><td>Lift controllers</td><td class="num">6</td><td>Stops at the nearest landing and opens the doors</td></tr>
-<tr><td>Rail and depot equipment</td><td class="num">11</td><td>Applies service braking, holds trains at platforms, closes level crossings</td></tr>
-<tr><td>Industrial controllers</td><td class="num">14</td><td>Brings a process to its declared safe state</td></tr>
-<tr><td>Public address installations</td><td class="num">8</td><td>Sounds the broadcast in the space it serves</td></tr>
-<tr><td>Peripherals and modules</td><td class="num">22</td><td>Receiver boards, serial and GPIO output for equipment built locally</td></tr>
-</tbody>
-</table>
-</div>
-<p class="note">Certification records the model and the firmware version together. A firmware change affecting the warning path voids the certificate until retest.</p>
-
-<h2>What certification is not</h2>
-<div class="box">
-<span class="lbl">A voluntary scheme</span>
-<p>No rule requires certification. Telephones, computers, televisions and peripherals lacking the mark are distributed and used freely in the Republic, and a large share of the equipment in service has no native support of any kind.</p>
-<p>The mark states that a device was tested and passed. It states nothing about the quality of the device in any other respect, and the cooperative recommends no model over another.</p>
-<p>Anyone may test a device against the published vectors and reach their own conclusion. The vectors, the reference implementation and the test procedure are public, and the cooperative holds no monopoly on the assessment.</p>
-</div>
-
-<h2>RQUAK</h2>
-<div class="prose">
-<p>RQUAK is the client the cooperative publishes for equipment with no native support. It receives all three systems, presents the message in Fluidian or English, sounds the tones, and satisfies the same conformance requirements as a certified device where the host platform permits it.</p>
-<p>It is written in C with no dependency beyond the standard library and the platform sound interface. The daemon occupies about 340 kB in memory and works on hardware some decades old. That was a stated design requirement, since a household with an old machine is a household that would otherwise receive nothing.</p>
-</div>
-
-<div class="tablewrap">
-<table class="data">
-<caption>RQUAK builds published</caption>
-<thead>
-<tr><th>Platform</th><th class="num">Form</th><th class="num">Conformance</th><th>Note</th></tr>
-</thead>
-<tbody>
-<tr><td>Linux</td><td class="num">Daemon, GTK front end, terminal client</td><td class="num">Full</td><td>The primary target; packaged for the distributions in use in the Republic</td></tr>
-<tr><td>BSD family</td><td class="num">Daemon, terminal client</td><td class="num">Full</td><td>Built and tested on each release</td></tr>
-<tr><td>Windows</td><td class="num">Service and tray client</td><td class="num">Full</td><td>Wake from sleep depends on the power configuration of the host</td></tr>
-<tr><td>macOS</td><td class="num">Background agent</td><td class="num">Partial</td><td>The platform limits overriding the mute setting</td></tr>
-<tr><td>Android</td><td class="num">Application</td><td class="num">Partial</td><td>Background scheduling may delay presentation beyond 400 ms</td></tr>
-<tr><td>iOS</td><td class="num">Application</td><td class="num">Partial</td><td>Presentation while the device is locked is restricted by the platform</td></tr>
-<tr><td>Embedded, bare metal</td><td class="num">Library and reference firmware</td><td class="num">Full</td><td>For microcontrollers; the basis of most certified peripherals</td></tr>
-<tr><td>Text terminal</td><td class="num">Client over a serial line</td><td class="num">Full</td><td>Used on older equipment and in depots</td></tr>
-</tbody>
-</table>
-</div>
-<p class="note">Partial conformance means the platform prevents a requirement from being met. The specific requirement is named in the release notes for that build.</p>
-
-<h2>Delivery paths</h2>
-<div class="prose">
-<p>A warning travels by every path at once, and a device uses whichever reaches it first. Duplicate arrivals are discarded on the message identifier.</p>
-<ul>
-<li><b>Data network:</b> The published feed over the network of the <a href="../telephony/">telephony federation</a>, which is the fastest path for most devices.</li>
-<li><b>Broadcast radio:</b> A low-bit-rate channel alongside the ordinary programme, which reaches receivers with no network connection.</li>
-<li><b>Television:</b> Inserted into the broadcast stream and rendered by the decoder.</li>
-<li><b>Cell broadcast:</b> To handsets in the coverage area, including handsets with no subscription.</li>
-<li><b>Wired installations:</b> Public address, rail signalling and industrial controllers over their own circuits.</li>
-</ul>
-</div>
-
-<h2>Limits</h2>
-<div class="box limit">
-<span class="lbl">What may prevent a warning arriving</span>
-<p>A device out of coverage receives nothing. Mobile coverage in the upper Vandorum valleys and in parts of Halvorum is incomplete, and broadcast radio is the only path that reaches some of those places.</p>
-<p>A device that is switched off receives nothing. A device asleep receives the warning where its platform allows a wake, and the builds marked partial above may present the message late.</p>
-<p>Within the blind zone described under <a href="kjs-method.html">detection and limits</a>, no delivery path is fast enough, since the shaking arrives before the message does.</p>
-<p>The cooperative publishes the conformance vectors so any person may establish what their own equipment does. Testing a device against them takes a few minutes and is the only reliable way to know.</p>
-</div>
-
-<h2>See also</h2>
-<div class="prose">
-<ul>
-<li><a href="dev/wire-format.html">Warning wire format</a>, the message as it travels</li>
-<li><a href="dev/vectors.html">Conformance test vectors</a>, and the test procedure</li>
-<li><a href="dev/hardware.html">Sensor and station hardware</a>, including the receiver boards</li>
-<li><a href="rationale.html">Why these systems exist</a></li>
-</ul>
-</div>
-
-</main>
-
-<footer class="coopfoot">
-  <div class="wrap">
-    <div class="cols">
-      <div>
-        <h4>Weather and climate</h4>
+  <nav class="mainnav" aria-label="Sections of this site">
+    <div class="wrap">
+      <a class="navtop" href="index.html">Home</a>
+      <details class="grp">
+        <summary>Weather and climate</summary>
         <ul>
           <li><a href="climate.html">Climate of the Republic</a></li>
           <li><a href="change.html">Observed change</a></li>
           <li><a href="forecasting.html">How a forecast is made</a></li>
-          <li><a href="emissions.html">Emissions position</a></li>
-          <li><a href="periphery.html">Harm to the periphery</a></li>
+          <li class="has">
+            <details class="sub">
+              <summary><a href="emissions.html">Emissions position</a></summary>
+              <ul>
+                <li><a href="periphery.html">Harm to the periphery</a></li>
+              </ul>
+            </details>
+          </li>
         </ul>
-      </div>
-      <div>
-        <h4>Warning systems</h4>
+      </details>
+      <details class="grp">
+        <summary>Warning systems</summary>
         <ul>
           <li><a href="rationale.html">Why these systems exist</a></li>
           <li><a href="seismicity.html">Seismicity of the Republic</a></li>
-          <li><a href="kjs.html">REP-KJS, earthquake</a></li>
-          <li><a href="scale.html">REP intensity scale</a></li>
-          <li><a href="kjs-method.html">Detection, latency and limits</a></li>
+          <li class="has">
+            <details class="sub">
+              <summary><a href="kjs.html">REP-KJS, earthquake</a></summary>
+              <ul>
+                <li><a href="scale.html">REP intensity scale</a></li>
+                <li><a href="kjs-method.html">Detection, latency and limits</a></li>
+              </ul>
+            </details>
+          </li>
           <li><a href="lew.html">REP-LEW, landslide</a></li>
           <li><a href="few.html">REP-FEW, flood</a></li>
           <li><a href="devices.html">Certified devices and RQUAK</a></li>
         </ul>
-      </div>
-      <div>
-        <h4>Record and network</h4>
+      </details>
+      <a class="navtop" href="species.html">Species catalogue</a>
+      <a class="navtop" href="network.html">Observing network</a>
+      <details class="grp">
+        <summary>Developers</summary>
         <ul>
-          <li><a href="species.html">Species catalogue</a></li>
-          <li><a href="network.html">Observing network</a></li>
-          <li><a href="about.html">About the cooperative</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Developers</h4>
-        <ul>
-          <li><a href="dev/index.html">Specifications and licence</a></li>
+          <li><a href="dev/index.html">Specifications and source</a></li>
           <li><a href="dev/wire-format.html">Warning wire format</a></li>
           <li><a href="dev/vectors.html">Conformance test vectors</a></li>
           <li><a href="dev/hardware.html">Sensor and station hardware</a></li>
           <li><a href="dev/forking.html">Porting to another country</a></li>
         </ul>
-      </div>
+      </details>
+      <a class="navtop" href="about.html">About the cooperative</a>
     </div>
-    <p class="basis">Published by the Meteorological Cooperative of the Republic under the organic law on observation and warning. Free of charge, without licence, registration or account. No external resource is loaded by this page. See also the <a href="../../index.html">Republic of Fluid</a> and the <a href="../../register/">Public Register</a>.</p>
-  </div>
-</footer>
+  </nav>
 
-<script src="site.js"></script>
+  <main id="main" class="sheet">
+    <p class="crumb"><a href="index.html">Meteorological Cooperative</a> &rsaquo; Warning systems &rsaquo; Certified devices and RQUAK</p>
+    <h1 class="page-title">Certified devices and RQUAK</h1>
+    <p class="lede">A warning reaches a person through a device that knows how to receive it. The cooperative certifies devices that meet the conformance requirements and publishes a mark for them. Certification is voluntary, and no rule obliges any device distributed in the Republic to have it. For equipment with no native support, the cooperative publishes RQUAK, a client for every platform, compiled primarily for Linux.</p>
+
+    <div class="facts">
+      <div class="row"><span class="k">Certification</span><span class="v">Voluntary. A device may be distributed, used and connected in the Republic without it</span></div>
+      <div class="row"><span class="k">Scope of a certificate</span><span class="v">All three systems together. No device is certified for one alone</span></div>
+      <div class="row"><span class="k">Mark</span><span class="v">The three-band mark with the certificate number beneath it</span></div>
+      <div class="row"><span class="k">Term</span><span class="v">Five years, renewable on retest against the format in force</span></div>
+      <div class="row"><span class="k">Charge</span><span class="v">None. Testing is done by the cooperative within its own allocation</span></div>
+      <div class="row"><span class="k">Client for uncertified equipment</span><span class="v">RQUAK, published for every platform the cooperative can build for</span></div>
+    </div>
+
+    <h2>What certification requires</h2>
+    <div class="prose">
+      <p>A device holding the mark satisfies every requirement below. The full text of each is in the conformance specification, and the vectors that test them are published.</p>
+    </div>
+
+    <div class="tablewrap">
+      <table class="data">
+        <caption>Conformance requirements</caption>
+        <thead>
+          <tr>
+            <th>Requirement</th>
+            <th class="num">Limit</th>
+            <th>Reason</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Presentation latency</td>
+            <td class="num">Within 400 ms of receipt</td>
+            <td>Every 400 ms is 1.4 km of S wave travel</td>
+          </tr>
+          <tr>
+            <td>Audible at a fixed level</td>
+            <td class="num">Overrides mute and volume settings</td>
+            <td>A muted device warns nobody</td>
+          </tr>
+          <tr>
+            <td>Wakes a sleeping device</td>
+            <td class="num">From any low-power state within 400 ms</td>
+            <td>Most events occur when most people are asleep</td>
+          </tr>
+          <tr>
+            <td>States every field received</td>
+            <td class="num">All fields of the segment</td>
+            <td>The public learns the meaning of a warning from the broadcast itself</td>
+          </tr>
+          <tr>
+            <td>Handles cancellation</td>
+            <td class="num">Within 400 ms of receipt</td>
+            <td>A false alert left standing damages the credibility of the whole system</td>
+          </tr>
+          <tr>
+            <td>Works with no account</td>
+            <td class="num">No registration, login or subscription</td>
+            <td>Article 14 (2); a warning is a public act</td>
+          </tr>
+          <tr>
+            <td>Retains the last state offline</td>
+            <td class="num">Displays the age of the information</td>
+            <td>A device out of contact should say so</td>
+          </tr>
+          <tr>
+            <td>Answers the monthly test</td>
+            <td class="num">First Wednesday, 11:00</td>
+            <td>An untested receiver is an unknown receiver</td>
+          </tr>
+          <tr>
+            <td>Reports no personal data</td>
+            <td class="num">Receive-only by default</td>
+            <td>Article 14; the cooperative learns nothing about who received a warning</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>Classes of certified equipment</h2>
+    <div class="tablewrap">
+      <table class="data">
+        <caption>Register of certified classes</caption>
+        <thead>
+          <tr>
+            <th>Class</th>
+            <th class="num">Models certified</th>
+            <th>Behaviour on a warning</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Telephones and handsets</td>
+            <td class="num">31</td>
+            <td>Tone, spoken message, full text; screen wakes at fixed brightness</td>
+          </tr>
+          <tr>
+            <td>Televisions and decoders</td>
+            <td class="num">18</td>
+            <td>Message overlays whatever is showing; sound switches to the broadcast</td>
+          </tr>
+          <tr>
+            <td>Radio receivers</td>
+            <td class="num">12</td>
+            <td>Switches to the warning channel and returns afterwards</td>
+          </tr>
+          <tr>
+            <td>Computer operating systems</td>
+            <td class="num">7</td>
+            <td>System-level notice above every window; four are free software</td>
+          </tr>
+          <tr>
+            <td>Household alarm panels</td>
+            <td class="num">9</td>
+            <td>Tone and spoken message; may open a door lock at the Imminent step</td>
+          </tr>
+          <tr>
+            <td>Lift controllers</td>
+            <td class="num">6</td>
+            <td>Stops at the nearest landing and opens the doors</td>
+          </tr>
+          <tr>
+            <td>Rail and depot equipment</td>
+            <td class="num">11</td>
+            <td>Applies service braking, holds trains at platforms, closes level crossings</td>
+          </tr>
+          <tr>
+            <td>Industrial controllers</td>
+            <td class="num">14</td>
+            <td>Brings a process to its declared safe state</td>
+          </tr>
+          <tr>
+            <td>Public address installations</td>
+            <td class="num">8</td>
+            <td>Sounds the broadcast in the space it serves</td>
+          </tr>
+          <tr>
+            <td>Peripherals and modules</td>
+            <td class="num">22</td>
+            <td>Receiver boards, serial and GPIO output for equipment built locally</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note">Certification records the model and the firmware version together. A firmware change affecting the warning path voids the certificate until retest.</p>
+
+    <h2>What certification is not</h2>
+    <div class="box">
+      <span class="lbl">A voluntary scheme</span>
+      <p>No rule requires certification. Telephones, computers, televisions and peripherals lacking the mark are distributed and used freely in the Republic, and a large share of the equipment in service has no native support of any kind.</p>
+      <p>The mark states that a device was tested and passed. It states nothing about the quality of the device in any other respect, and the cooperative recommends no model over another.</p>
+      <p>Anyone may test a device against the published vectors and reach their own conclusion. The vectors, the reference implementation and the test procedure are public, and the cooperative holds no monopoly on the assessment.</p>
+    </div>
+
+    <h2>RQUAK</h2>
+    <div class="prose">
+      <p>RQUAK is the client the cooperative publishes for equipment with no native support. It receives all three systems, presents the message in Fluidian or English, sounds the tones, and satisfies the same conformance requirements as a certified device where the host platform permits it.</p>
+      <p>It is written in C with no dependency beyond the standard library and the platform sound interface. The daemon occupies about 340 kB in memory and works on hardware some decades old. That was a stated design requirement, since a household with an old machine is a household that would otherwise receive nothing.</p>
+    </div>
+
+    <div class="tablewrap">
+      <table class="data">
+        <caption>RQUAK builds published</caption>
+        <thead>
+          <tr>
+            <th>Platform</th>
+            <th class="num">Form</th>
+            <th class="num">Conformance</th>
+            <th>Note</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Linux</td>
+            <td class="num">Daemon, GTK front end, terminal client</td>
+            <td class="num">Full</td>
+            <td>The primary target; packaged for the distributions in use in the Republic</td>
+          </tr>
+          <tr>
+            <td>BSD family</td>
+            <td class="num">Daemon, terminal client</td>
+            <td class="num">Full</td>
+            <td>Built and tested on each release</td>
+          </tr>
+          <tr>
+            <td>Windows</td>
+            <td class="num">Service and tray client</td>
+            <td class="num">Full</td>
+            <td>Wake from sleep depends on the power configuration of the host</td>
+          </tr>
+          <tr>
+            <td>macOS</td>
+            <td class="num">Background agent</td>
+            <td class="num">Partial</td>
+            <td>The platform limits overriding the mute setting</td>
+          </tr>
+          <tr>
+            <td>Android</td>
+            <td class="num">Application</td>
+            <td class="num">Partial</td>
+            <td>Background scheduling may delay presentation beyond 400 ms</td>
+          </tr>
+          <tr>
+            <td>iOS</td>
+            <td class="num">Application</td>
+            <td class="num">Partial</td>
+            <td>Presentation while the device is locked is restricted by the platform</td>
+          </tr>
+          <tr>
+            <td>Embedded, bare metal</td>
+            <td class="num">Library and reference firmware</td>
+            <td class="num">Full</td>
+            <td>For microcontrollers; the basis of most certified peripherals</td>
+          </tr>
+          <tr>
+            <td>Text terminal</td>
+            <td class="num">Client over a serial line</td>
+            <td class="num">Full</td>
+            <td>Used on older equipment and in depots</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note">Partial conformance means the platform prevents a requirement from being met. The specific requirement is named in the release notes for that build.</p>
+
+    <h2>Delivery paths</h2>
+    <div class="prose">
+      <p>A warning travels by every path at once, and a device uses whichever reaches it first. Duplicate arrivals are discarded on the message identifier.</p>
+      <ul>
+        <li><b>Data network:</b> The published feed over the network of the <a href="../telephony/">telephony federation</a>, which is the fastest path for most devices.</li>
+        <li><b>Broadcast radio:</b> A low-bit-rate channel alongside the ordinary programme, which reaches receivers with no network connection.</li>
+        <li><b>Television:</b> Inserted into the broadcast stream and rendered by the decoder.</li>
+        <li><b>Cell broadcast:</b> To handsets in the coverage area, including handsets with no subscription.</li>
+        <li><b>Wired installations:</b> Public address, rail signalling and industrial controllers over their own circuits.</li>
+      </ul>
+    </div>
+
+    <h2>Limits</h2>
+    <div class="box limit">
+      <span class="lbl">What may prevent a warning arriving</span>
+      <p>A device out of coverage receives nothing. Mobile coverage in the upper Vandorum valleys and in parts of Halvorum is incomplete, and broadcast radio is the only path that reaches some of those places.</p>
+      <p>A device that is switched off receives nothing. A device asleep receives the warning where its platform allows a wake, and the builds marked partial above may present the message late.</p>
+      <p>Within the blind zone described under <a href="kjs-method.html">detection and limits</a>, no delivery path is fast enough, since the shaking arrives before the message does.</p>
+      <p>The cooperative publishes the conformance vectors so any person may establish what their own equipment does. Testing a device against them takes a few minutes and is the only reliable way to know.</p>
+    </div>
+
+    <h2>See also</h2>
+    <div class="prose">
+      <ul>
+        <li><a href="dev/wire-format.html">Warning wire format</a>, the message as it travels</li>
+        <li><a href="dev/vectors.html">Conformance test vectors</a>, and the test procedure</li>
+        <li><a href="dev/hardware.html">Sensor and station hardware</a>, including the receiver boards</li>
+        <li><a href="rationale.html">Why these systems exist</a></li>
+      </ul>
+    </div>
+
+  </main>
+
+  <footer class="coopfoot">
+    <div class="wrap">
+      <div class="cols">
+        <div>
+          <h4>Weather and climate</h4>
+          <ul>
+            <li><a href="climate.html">Climate of the Republic</a></li>
+            <li><a href="change.html">Observed change</a></li>
+            <li><a href="forecasting.html">How a forecast is made</a></li>
+            <li><a href="emissions.html">Emissions position</a></li>
+            <li><a href="periphery.html">Harm to the periphery</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Warning systems</h4>
+          <ul>
+            <li><a href="rationale.html">Why these systems exist</a></li>
+            <li><a href="seismicity.html">Seismicity of the Republic</a></li>
+            <li><a href="kjs.html">REP-KJS, earthquake</a></li>
+            <li><a href="scale.html">REP intensity scale</a></li>
+            <li><a href="kjs-method.html">Detection, latency and limits</a></li>
+            <li><a href="lew.html">REP-LEW, landslide</a></li>
+            <li><a href="few.html">REP-FEW, flood</a></li>
+            <li><a href="devices.html">Certified devices and RQUAK</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Record and network</h4>
+          <ul>
+            <li><a href="species.html">Species catalogue</a></li>
+            <li><a href="network.html">Observing network</a></li>
+            <li><a href="about.html">About the cooperative</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Developers</h4>
+          <ul>
+            <li><a href="dev/index.html">Specifications and licence</a></li>
+            <li><a href="dev/wire-format.html">Warning wire format</a></li>
+            <li><a href="dev/vectors.html">Conformance test vectors</a></li>
+            <li><a href="dev/hardware.html">Sensor and station hardware</a></li>
+            <li><a href="dev/forking.html">Porting to another country</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="basis">Published by the Meteorological Cooperative of the Republic under the organic law on observation and warning. Free of charge, without licence, registration or account. No external resource is loaded by this page. See also the <a href="../../index.html">Republic of Fluid</a> and the <a href="../../register/">Public Register</a>.</p>
+    </div>
+  </footer>
+
+  <script src="site.js"></script>
 </body>
 </html>

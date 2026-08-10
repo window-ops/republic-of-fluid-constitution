@@ -1,122 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Electronic voting &middot; Electoral Commission</title>
-<meta name="description" content="The office that conducts the elections, referendums, recalls and draws by lot of the Republic, and publishes the record of every operation.">
-<link rel="stylesheet" href="../shared/frame.css">
-<link rel="stylesheet" href="site.css">
-<link rel="icon" href="../../assets/flag.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Electronic voting &middot; Electoral Commission</title>
+  <meta name="description" content="The office that conducts the elections, referendums, recalls and draws by lot of the Republic, and publishes the record of every operation.">
+  <link rel="stylesheet" href="../shared/frame.css">
+  <link rel="stylesheet" href="site.css">
+  <link rel="icon" href="../../assets/flag.png">
 </head>
 <body class="org-electoral-commission">
-<a class="skip" href="#main">Skip to the content</a>
+  <a class="skip" href="#main">Skip to the content</a>
 
-<div class="statebar">
-  <div class="wrap">
-    <a class="rep" href="../../index.html">Republic of Fluid</a>
-    <span class="sep">|</span>
-    <a href="../../constitution/">Constitution</a>
-    <a href="../../register/">Public Register</a>
-    <span class="grow"></span>
-    <a href="../../register/links.html">All Portals</a>
-  </div>
-</div>
-
-<header class="orghead">
-  <div class="wrap">
-    <span class="marque"><svg viewBox="0 0 56 56" role="img" aria-label="Emblem of the Electoral Commission">
-<rect x="6" y="24" width="44" height="26" fill="none" stroke="#2b3f6b" stroke-width="2.6"/>
-<path d="M6 24 L28 12 L50 24" fill="none" stroke="#2b3f6b" stroke-width="2.6" stroke-linejoin="round"/>
-<rect x="20" y="20" width="16" height="9" fill="#ffffff" stroke="#2b3f6b" stroke-width="2"/>
-<path d="M23 24.5 L25.4 27 L33 20.5" fill="none" stroke="#1a6f37" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M14 34h12M14 39h20M14 44h8" stroke="#b9c4dc" stroke-width="2.2" stroke-linecap="round"/>
-</svg></span>
-    <span class="idblock">
-      <p class="kicker">Oversight office of the Republic</p>
-      <p class="orgname"><a href="index.html">Electoral Commission</a></p>
-      <p class="basis">Established under Article 244 of the Constitution &middot; conducts the elections, the referendums and the draws by lot</p>
-    </span>
-  </div>
-</header>
-
-<nav class="orgnav" aria-label="Sections of this site"><div class="wrap"><a href="index.html">Home</a><a href="calendar.html">Ballots</a><a href="lists.html">Lists and candidacies</a><a href="draws.html">Draws by lot</a><a href="boundaries.html">Boundaries</a><a href="electronic.html">Electronic voting</a><a href="disputes.html">Disputes</a></div></nav>
-
-<main id="main" class="sheet">
-
-<h1 class="page-title">Electronic voting</h1>
-<p class="lede">National ballots run on paper and always will. Communal, sub-regional, regional and participatory procedures may run on software the Republic wrote, publishes and invites the public to attack.</p>
-
-<div class="legal">
-  <p><a href="../../constitution/title-9.html#a245">Article 245</a>(2): a vote in a national election, referendum or recall may in no case be cast, recorded, stored or counted by electronic means.</p>
-  <p><a href="../../constitution/title-9.html#a245">Article 245</a>(9): paper voting stays available in every procedure. No resident is ever required to hold a device, to install an application, or to vote by electronic means, and the availability of electronic voting reduces the number, the distribution and the accessibility of polling stations in no way.</p>
-</div>
-
-<h2>The eight conditions on electronic voting</h2>
-<p>Electronic voting is lawful only where all of the following hold at once:</p>
-<ol class="conds">
-  <li>The application, the systems that receive and count the votes, and every component of either are free and open software belonging to the knowledge commons under <a href="../../constitution/title-1.html#a10">Article 10</a>, with source, build procedure, specification and operating configuration public.</li>
-  <li>The build is reproducible, and the checksum of the official binary is published in advance.</li>
-  <li>Any person may obtain, examine, build, test and attack the software, and publish criticism of it, without authorisation and without liability.</li>
-  <li>The ballot is secret, and the system discloses to no person how any resident voted.</li>
-  <li>The resident may verify that their vote was recorded and counted as cast, without disclosing its content and without acquiring any means of proving it to another.</li>
-  <li>Results are published by district in open form, and the computation is reproducible by any person.</li>
-  <li>An audit by the data division of the Defender of Rights and by an independent body precedes each use and is published with its findings.</li>
-  <li>Only the official binary takes part. A binary whose checksum departs from the published one is refused, however faithfully it was built.</li>
-</ol>
-
-<h2>Check a binary</h2>
-<p>The Commission refuses any binary whose checksum departs from the published checksum. The published value for the current release is:</p>
-<p class="checksum" id="sum-published">4f1c9a7d2e6b8305c4aa19fe7730d2b18c56e0a94d3f27bb610c8ee5a2947d3f</p>
-<div class="controls">
-  <div class="field"><label for="sum-input">Checksum reported by your device</label><input id="sum-input" type="text" placeholder="sha256:..." autocomplete="off" spellcheck="false"></div>
-  <div><button class="act" id="sum-check" type="button">Compare</button></div>
-</div>
-<p class="verdict" id="sum-verdict" role="status">Enter the checksum reported by your device.</p>
-<p class="cite">This comparison runs in your browser and reports nothing to this office.</p>
-
-<h2>Where the application comes from</h2>
-<div class="prose">
-<p>The Republic distributes the application from its own source, free of charge, installable without an account and without connection to any other service. The Republic pays no proprietary distribution platform, contracts with none, accepts the conditions of none, and requires no resident to hold an account with one.</p>
-<p>The application is coupled to the commune of residence, and the application takes part in no national procedure. Cooperatives producing devices offer preinstallation at the choice of the person ordering under <a href="../../constitution/title-4.html#a108">Article 108</a>(7). A device made outside the Republic gets the application from the same source, and <a href="../../constitution/title-4.html#a109">Article 109</a>(7) secures the installation.</p>
-</div>
-
-<h2>When doubt arises</h2>
-<div class="legal">
-  <p><a href="../../constitution/title-9.html#a245">Article 245</a>(10): where the integrity of an electronic procedure is in doubt, the Commission annuls it and conducts the procedure on paper. The doubt need not be resolved before the annulment.</p>
-</div>
-<div class="prose">
-<p>The annulment precedes the investigation. One communal initiative was annulled on this ground in May 2026, after a clock discrepancy in two receiving systems, and was conducted again on paper eleven days later.</p>
-</div>
-
-<h2>Extending electronic means</h2>
-<div class="prose">
-<p>Organic law may extend electronic means to further participatory procedures upon the same eight conditions, and in no case to a national election, referendum or recall. The distinction is fixed by the Constitution and lies outside the competence of this office.</p>
-</div>
-
-</main>
-
-<footer class="orgfoot">
-  <div class="wrap">
-    <div>
-      <h2>Electoral Commission</h2>
-      <p><a href="calendar.html">Ballots and results</a></p><p><a href="draws.html">Register of draws</a></p><p><a href="disputes.html">Bring a dispute</a></p>
-    </div>
-    
-    <div>
-      <h2>Other organs</h2>
-      <p><a href="../audit-office/">Audit Office</a></p><p><a href="../defender-of-rights/">Defender of Rights</a></p><p><a href="../future-generations/">Commissioner for Future Generations</a></p><p><a href="../democratic-integrity/">Office of Democratic Integrity</a></p>
-    </div>
-    <div>
-      <h2>Publication</h2>
-      <p class="fine">Published under Articles 14(2), 242 and 314.</p>
-      <p class="fine">Free of charge, without licence, registration or account.</p>
-      <p class="fine">No external resource is loaded by this page.</p>
+  <div class="statebar">
+    <div class="wrap">
+      <a class="rep" href="../../index.html">Republic of Fluid</a>
+      <span class="sep">|</span>
+      <a href="../../constitution/">Constitution</a>
+      <a href="../../register/">Public Register</a>
+      <span class="grow"></span>
+      <a href="../../register/links.html">All Portals</a>
     </div>
   </div>
-</footer>
 
-<script src="../shared/frame.js" defer></script>
-<script src="site.js" defer></script>
+  <header class="orghead">
+    <div class="wrap">
+      <span class="marque"><svg viewBox="0 0 56 56" role="img" aria-label="Emblem of the Electoral Commission">
+          <rect x="6" y="24" width="44" height="26" fill="none" stroke="#2b3f6b" stroke-width="2.6" />
+          <path d="M6 24 L28 12 L50 24" fill="none" stroke="#2b3f6b" stroke-width="2.6" stroke-linejoin="round" />
+          <rect x="20" y="20" width="16" height="9" fill="#ffffff" stroke="#2b3f6b" stroke-width="2" />
+          <path d="M23 24.5 L25.4 27 L33 20.5" fill="none" stroke="#1a6f37" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M14 34h12M14 39h20M14 44h8" stroke="#b9c4dc" stroke-width="2.2" stroke-linecap="round" />
+        </svg></span>
+      <span class="idblock">
+        <p class="kicker">Oversight office of the Republic</p>
+        <p class="orgname"><a href="index.html">Electoral Commission</a></p>
+        <p class="basis">Established under Article 244 of the Constitution &middot; conducts the elections, the referendums and the draws by lot</p>
+      </span>
+    </div>
+  </header>
+
+  <nav class="orgnav" aria-label="Sections of this site">
+    <div class="wrap"><a href="index.html">Home</a><a href="calendar.html">Ballots</a><a href="lists.html">Lists and candidacies</a><a href="draws.html">Draws by lot</a><a href="boundaries.html">Boundaries</a><a href="electronic.html">Electronic voting</a><a href="disputes.html">Disputes</a></div>
+  </nav>
+
+  <main id="main" class="sheet">
+
+    <h1 class="page-title">Electronic voting</h1>
+    <p class="lede">National ballots run on paper and always will. Communal, sub-regional, regional and participatory procedures may run on software the Republic wrote, publishes and invites the public to attack.</p>
+
+    <div class="legal">
+      <p><a href="../../constitution/title-9.html#a245">Article 245</a>(2): a vote in a national election, referendum or recall may in no case be cast, recorded, stored or counted by electronic means.</p>
+      <p><a href="../../constitution/title-9.html#a245">Article 245</a>(9): paper voting stays available in every procedure. No resident is ever required to hold a device, to install an application, or to vote by electronic means, and the availability of electronic voting reduces the number, the distribution and the accessibility of polling stations in no way.</p>
+    </div>
+
+    <h2>The eight conditions on electronic voting</h2>
+    <p>Electronic voting is lawful only where all of the following hold at once:</p>
+    <ol class="conds">
+      <li>The application, the systems that receive and count the votes, and every component of either are free and open software belonging to the knowledge commons under <a href="../../constitution/title-1.html#a10">Article 10</a>, with source, build procedure, specification and operating configuration public.</li>
+      <li>The build is reproducible, and the checksum of the official binary is published in advance.</li>
+      <li>Any person may obtain, examine, build, test and attack the software, and publish criticism of it, without authorisation and without liability.</li>
+      <li>The ballot is secret, and the system discloses to no person how any resident voted.</li>
+      <li>The resident may verify that their vote was recorded and counted as cast, without disclosing its content and without acquiring any means of proving it to another.</li>
+      <li>Results are published by district in open form, and the computation is reproducible by any person.</li>
+      <li>An audit by the data division of the Defender of Rights and by an independent body precedes each use and is published with its findings.</li>
+      <li>Only the official binary takes part. A binary whose checksum departs from the published one is refused, however faithfully it was built.</li>
+    </ol>
+
+    <h2>Check a binary</h2>
+    <p>The Commission refuses any binary whose checksum departs from the published checksum. The published value for the current release is:</p>
+    <p class="checksum" id="sum-published">4f1c9a7d2e6b8305c4aa19fe7730d2b18c56e0a94d3f27bb610c8ee5a2947d3f</p>
+    <div class="controls">
+      <div class="field"><label for="sum-input">Checksum reported by your device</label><input id="sum-input" type="text" placeholder="sha256:..." autocomplete="off" spellcheck="false"></div>
+      <div><button class="act" id="sum-check" type="button">Compare</button></div>
+    </div>
+    <p class="verdict" id="sum-verdict" role="status">Enter the checksum reported by your device.</p>
+    <p class="cite">This comparison runs in your browser and reports nothing to this office.</p>
+
+    <h2>Where the application comes from</h2>
+    <div class="prose">
+      <p>The Republic distributes the application from its own source, free of charge, installable without an account and without connection to any other service. The Republic pays no proprietary distribution platform, contracts with none, accepts the conditions of none, and requires no resident to hold an account with one.</p>
+      <p>The application is coupled to the commune of residence, and the application takes part in no national procedure. Cooperatives producing devices offer preinstallation at the choice of the person ordering under <a href="../../constitution/title-4.html#a108">Article 108</a>(7). A device made outside the Republic gets the application from the same source, and <a href="../../constitution/title-4.html#a109">Article 109</a>(7) secures the installation.</p>
+    </div>
+
+    <h2>When doubt arises</h2>
+    <div class="legal">
+      <p><a href="../../constitution/title-9.html#a245">Article 245</a>(10): where the integrity of an electronic procedure is in doubt, the Commission annuls it and conducts the procedure on paper. The doubt need not be resolved before the annulment.</p>
+    </div>
+    <div class="prose">
+      <p>The annulment precedes the investigation. One communal initiative was annulled on this ground in May 2026, after a clock discrepancy in two receiving systems, and was conducted again on paper eleven days later.</p>
+    </div>
+
+    <h2>Extending electronic means</h2>
+    <div class="prose">
+      <p>Organic law may extend electronic means to further participatory procedures upon the same eight conditions, and in no case to a national election, referendum or recall. The distinction is fixed by the Constitution and lies outside the competence of this office.</p>
+    </div>
+
+  </main>
+
+  <footer class="orgfoot">
+    <div class="wrap">
+      <div>
+        <h2>Electoral Commission</h2>
+        <p><a href="calendar.html">Ballots and results</a></p>
+        <p><a href="draws.html">Register of draws</a></p>
+        <p><a href="disputes.html">Bring a dispute</a></p>
+      </div>
+
+      <div>
+        <h2>Other organs</h2>
+        <p><a href="../audit-office/">Audit Office</a></p>
+        <p><a href="../defender-of-rights/">Defender of Rights</a></p>
+        <p><a href="../future-generations/">Commissioner for Future Generations</a></p>
+        <p><a href="../democratic-integrity/">Office of Democratic Integrity</a></p>
+      </div>
+      <div>
+        <h2>Publication</h2>
+        <p class="fine">Published under Articles 14(2), 242 and 314.</p>
+        <p class="fine">Free of charge, without licence, registration or account.</p>
+        <p class="fine">No external resource is loaded by this page.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../shared/frame.js" defer></script>
+  <script src="site.js" defer></script>
 </body>
 </html>

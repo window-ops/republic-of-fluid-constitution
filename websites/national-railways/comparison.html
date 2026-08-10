@@ -1,186 +1,332 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Comparison of card standards &middot; National Railways Federation</title>
-<meta name="description" content="CARD-ROM measured against MIFARE Classic, DESFire EV3, FeliCa and Calypso: bit rate, transaction time, memory, keys, record integrity, and the standing of each specification.">
-<meta name="theme-color" content="#0b4ea2">
-<link rel="stylesheet" href="site.css">
-<link rel="icon" href="../../assets/flag.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Comparison of card standards &middot; National Railways Federation</title>
+  <meta name="description" content="CARD-ROM measured against MIFARE Classic, DESFire EV3, FeliCa and Calypso: bit rate, transaction time, memory, keys, record integrity, and the standing of each specification.">
+  <meta name="theme-color" content="#0b4ea2">
+  <link rel="stylesheet" href="site.css">
+  <link rel="icon" href="../../assets/flag.png">
 </head>
 <body>
-<a class="skip" href="#main">Skip to the content</a>
+  <a class="skip" href="#main">Skip to the content</a>
 
-<header class="head">
-  <div class="wrap">
-    <svg class="mark" viewBox="0 0 48 48" role="img" aria-label="Emblem of the National Railways Federation">
-      <rect width="48" height="48" fill="#0b4ea2"></rect>
-      <path d="M0 20 Q6 14 12 20 T24 20 T36 20 T48 20 V30 H0 Z" fill="#ffffff"></path>
-      <rect x="0" y="30" width="48" height="3" fill="#08376f"></rect>
-      <rect x="14" y="34" width="3" height="14" fill="#ffffff"></rect>
-      <rect x="31" y="34" width="3" height="14" fill="#ffffff"></rect>
-    </svg>
-    <span>
-      <p class="wordmark"><a href="index.html">National Railways Federation</a></p>
-      <p class="standfirst">Branch federation of the railway operating cooperatives</p>
-    </span>
-  </div>
-</header>
-<div class="band" role="presentation"></div>
+  <header class="head">
+    <div class="wrap">
+      <svg class="mark" viewBox="0 0 48 48" role="img" aria-label="Emblem of the National Railways Federation">
+        <rect width="48" height="48" fill="#0b4ea2"></rect>
+        <path d="M0 20 Q6 14 12 20 T24 20 T36 20 T48 20 V30 H0 Z" fill="#ffffff"></path>
+        <rect x="0" y="30" width="48" height="3" fill="#08376f"></rect>
+        <rect x="14" y="34" width="3" height="14" fill="#ffffff"></rect>
+        <rect x="31" y="34" width="3" height="14" fill="#ffffff"></rect>
+      </svg>
+      <span>
+        <p class="wordmark"><a href="index.html">National Railways Federation</a></p>
+        <p class="standfirst">Branch federation of the railway operating cooperatives</p>
+      </span>
+    </div>
+  </header>
+  <div class="band" role="presentation"></div>
 
-<nav class="nav" aria-label="Sections of this site">
-  <div class="wrap">
-    <a class="navtop" href="index.html">Front</a>
-    <details class="grp">
-      <summary>Travelling</summary>
-      <ul>
-        <li><a href="network.html">Network and routes</a></li>
-        <li><a href="stations.html">Stations and equipment</a></li>
-        <li><a href="night.html">Night trains and sleepers</a></li>
-        <li><a href="access.html">Access and assistance</a></li>
-        <li><a href="carriage.html">Conditions of carriage</a></li>
-      </ul>
-    </details>
-    <details class="grp">
-      <summary class="on">Systems</summary>
-      <ul>
-        <li><a href="app.html">The application</a></li>
+  <nav class="nav" aria-label="Sections of this site">
+    <div class="wrap">
+      <a class="navtop" href="index.html">Front</a>
+      <details class="grp">
+        <summary>Travelling</summary>
+        <ul>
+          <li><a href="network.html">Network and routes</a></li>
+          <li><a href="stations.html">Stations and equipment</a></li>
+          <li><a href="night.html">Night trains and sleepers</a></li>
+          <li><a href="access.html">Access and assistance</a></li>
+          <li><a href="carriage.html">Conditions of carriage</a></li>
+        </ul>
+      </details>
+      <details class="grp">
+        <summary class="on">Systems</summary>
+        <ul>
+          <li><a href="app.html">The application</a></li>
+          <li><a href="card.html">CARD-ROM</a></li>
+          <li><a href="comparison.html" aria-current="page">Comparison of card standards</a></li>
+        </ul>
+      </details>
+      <details class="grp">
+        <summary>Federation</summary>
+        <ul>
+          <li><a href="cooperatives.html">Member cooperatives</a></li>
+          <li><a href="about.html">About the federation</a></li>
+        </ul>
+      </details>
+      <a class="navtop" href="dev/">Developers</a>
+    </div>
+  </nav>
+
+  <main id="main">
+
+    <section class="opening">
+      <div class="wrap">
+        <p class="eyebrow">CARD-ROM against four other standards</p>
+        <h1>Where CARD-ROM sits</h1>
+        <p class="lede">MIFARE Classic, DESFire EV3, FeliCa and Calypso are the cards the gates of the Bloc meet most often in a traveller's wallet. The figures below are the published ones for each standard, and the CARD-ROM column is measured on a revision 3 card at a Fluid intercity gate. A card of any of these standards is refused at the gate, and the panel says which one it is and where it is accepted.</p>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="wrap">
+        <p class="eyebrow">Side by side</p>
+        <h2>The figures</h2>
+      </div>
+      <div class="wrap">
+        <div class="tablewrap">
+          <table>
+            <caption>Physical layer and speed</caption>
+            <thead>
+              <tr>
+                <th scope="col">&nbsp;</th>
+                <th scope="col">CARD-ROM</th>
+                <th scope="col">MIFARE Classic</th>
+                <th scope="col">DESFire EV3</th>
+                <th scope="col">FeliCa</th>
+                <th scope="col">Calypso</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Carrier</th>
+                <td>13.56 MHz</td>
+                <td>13.56 MHz</td>
+                <td>13.56 MHz</td>
+                <td>13.56 MHz</td>
+                <td>13.56 MHz</td>
+              </tr>
+              <tr>
+                <th scope="row">Frame layer</th>
+                <td>ISO 14443-2 and -3 Type A, Dubrazec frames above</td>
+                <td>ISO 14443 Type A, proprietary above</td>
+                <td>ISO 14443-4 Type A</td>
+                <td>JIS X 6319-4</td>
+                <td>ISO 14443-4 Type B or Type A</td>
+              </tr>
+              <tr>
+                <th scope="row">Bit rate</th>
+                <td>212 kbit/s</td>
+                <td>106 kbit/s</td>
+                <td>848 kbit/s</td>
+                <td>424 kbit/s</td>
+                <td>424 kbit/s</td>
+              </tr>
+              <tr>
+                <th scope="row">Typical transaction</th>
+                <td>148 ms</td>
+                <td>180 ms</td>
+                <td>130 ms</td>
+                <td>100 ms</td>
+                <td>150 ms</td>
+              </tr>
+              <tr>
+                <th scope="row">Contact interface</th>
+                <td>6 pads, used by machines</td>
+                <td>none</td>
+                <td>none</td>
+                <td>none</td>
+                <td>on some cards</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="tablewrap">
+          <table>
+            <caption>Memory and what it stores</caption>
+            <thead>
+              <tr>
+                <th scope="col">&nbsp;</th>
+                <th scope="col">CARD-ROM</th>
+                <th scope="col">MIFARE Classic</th>
+                <th scope="col">DESFire EV3</th>
+                <th scope="col">FeliCa</th>
+                <th scope="col">Calypso</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">User memory</th>
+                <td>2 MB and 8 KB</td>
+                <td>1 or 4 KB</td>
+                <td>2, 4 or 8 KB</td>
+                <td>4 to 36 KB</td>
+                <td>2 to 32 KB</td>
+              </tr>
+              <tr>
+                <th scope="row">Structure</th>
+                <td>Record ring, options, and an area the holder writes</td>
+                <td>Sectors and blocks</td>
+                <td>Applications and files</td>
+                <td>Blocks and services</td>
+                <td>Files under a directory</td>
+              </tr>
+              <tr>
+                <th scope="row">Record history on card</th>
+                <td>90 days, about 60,000 records</td>
+                <td>last few transactions</td>
+                <td>up to the file size</td>
+                <td>20 to 100 entries</td>
+                <td>3 to 10 entries</td>
+              </tr>
+              <tr>
+                <th scope="row">Value on card</th>
+                <td>none, module compiled out</td>
+                <td>value blocks</td>
+                <td>value files</td>
+                <td>purse, and retail payment</td>
+                <td>contract and counter files</td>
+              </tr>
+              <tr>
+                <th scope="row">Holder's own data</th>
+                <td>7.6 KB, plain, readable by any terminal</td>
+                <td>none defined</td>
+                <td>at the issuer's choice</td>
+                <td>at the issuer's choice</td>
+                <td>none defined</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="tablewrap">
+          <table>
+            <caption>Keys, integrity and standing</caption>
+            <thead>
+              <tr>
+                <th scope="col">&nbsp;</th>
+                <th scope="col">CARD-ROM</th>
+                <th scope="col">MIFARE Classic</th>
+                <th scope="col">DESFire EV3</th>
+                <th scope="col">FeliCa</th>
+                <th scope="col">Calypso</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Authentication</th>
+                <td>AES-128, diversified per card</td>
+                <td>Crypto-1, 48-bit</td>
+                <td>AES-128 or 3DES</td>
+                <td>3DES or AES-128</td>
+                <td>3DES or AES-128</td>
+              </tr>
+              <tr>
+                <th scope="row">Known breaks</th>
+                <td>none published</td>
+                <td>Crypto-1 broken in 2008; cards cloneable with a laptop</td>
+                <td>none published</td>
+                <td>none published</td>
+                <td>none published on current cards</td>
+              </tr>
+              <tr>
+                <th scope="row">Card authenticity</th>
+                <td>Ed25519 signature over the identity block, checkable without any key</td>
+                <td>UID only</td>
+                <td>originality signature</td>
+                <td>issuer certificate</td>
+                <td>issuer certificate</td>
+              </tr>
+              <tr>
+                <th scope="row">Record integrity</th>
+                <td>CMAC on every record, under the key of the network that wrote it</td>
+                <td>none</td>
+                <td>at the issuer's choice</td>
+                <td>at the issuer's choice</td>
+                <td>signed contracts</td>
+              </tr>
+              <tr>
+                <th scope="row">Specification</th>
+                <td>open, published in full with test vectors</td>
+                <td>partly published, silicon proprietary</td>
+                <td>published to licensees</td>
+                <td>published to licensees</td>
+                <td>open, association members</td>
+              </tr>
+              <tr>
+                <th scope="row">Licence to build</th>
+                <td>none, and no patent is held</td>
+                <td>silicon from one vendor</td>
+                <td>silicon from one vendor</td>
+                <td>royalty and certification</td>
+                <td>association membership</td>
+              </tr>
+              <tr>
+                <th scope="row">Cost to the holder</th>
+                <td>none, issued and replaced free</td>
+                <td>set by the operator</td>
+                <td>set by the operator</td>
+                <td>deposit and top-up</td>
+                <td>set by the operator</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="wrap">
+        <p class="eyebrow">Reading the tables</p>
+        <h2>Four things the figures do not say</h2>
+      </div>
+      <div class="wrap">
+        <ul class="plates two">
+          <li>
+            <h3>Speed is not a constraint here</h3>
+            <p>DESFire and FeliCa are quicker on the air in systems with closed gates. A Fluid gate is semi-open, so the digital ticket is accounted for while a person walks through it, and 148 ms against 100 ms changes nothing a traveller can feel.</p>
+          </li>
+          <li>
+            <h3>The purse is what the others are for</h3>
+            <p>Most of these standards were built to hold value and to take it away at a gate. CARD-ROM has that module but it is not compiled in Fluid. The comparison of purse features is therefore irrelevant here.</p>
+          </li>
+          <li>
+            <h3>Openness has a price in silicon</h3>
+            <p>A CARD-ROM chip is made by three factories in the Bloc to a published mask. The volumes are small, so the unit cost stands above a MIFARE Classic and near a DESFire. The card is free to the holder either way.</p>
+          </li>
+          <li>
+            <h3>MIFARE Classic is the one to avoid</h3>
+            <p>Crypto-1 has been broken since 2008 and cloning takes a laptop. It is listed here because it is still in wallets across the region, including the STB cards that reach the Lindoma gates most often.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="wrap">
+        <p class="eyebrow">At the gate</p>
+        <h2>What happens when a card that is not a CARD-ROM is presented</h2>
+      </div>
+      <div class="wrap">
+        <div class="essay">
+          <p><strong>The gate reads it and refuses passage.</strong> A Suica, a Card Activ, an Oyster or a Navigo is intact and readable, and holds no Bloc record and no Bloc identifier. The panel names the card, its issuer and its product, states where it is accepted, and states why passage is refused here.</p>
+          <p><strong>No balance is touched.</strong> The gate reads the standard and the identifier, and stops. It takes nothing, writes nothing, and keeps nothing about the card presented.</p>
+          <p><strong>The panel answers in the language of the card.</strong> A FeliCa card issued in Japan brings a panel in Japanese. A MIFARE card from Bucharest brings one in Romanian. The gate supports twelve languages and falls back to Fluidian and English if the language of the card is not supported.</p>
+          <p><strong>Then it says what is needed.</strong> A Universal Bloc Transport Card, or a Universal Ticket, which is the paper form of the same record and covers one journey, are the only compatible devices that can be issued at the counter behind the gate or at every machine on the concourse.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div class="band-foot" role="presentation"></div>
+  <footer class="foot">
+    <div class="wrap">
+      <ul class="footlinks">
+        <li><a href="index.html">Front</a></li>
+        <li><a href="network.html">Network</a></li>
+        <li><a href="app.html">Application</a></li>
         <li><a href="card.html">CARD-ROM</a></li>
-        <li><a href="comparison.html" aria-current="page">Comparison of card standards</a></li>
+        <li><a href="dev/">Developers</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="../podnik/">Podnik</a></li>
+        <li><a href="../../register/links.html">Public Register</a></li>
       </ul>
-    </details>
-    <details class="grp">
-      <summary>Federation</summary>
-      <ul>
-        <li><a href="cooperatives.html">Member cooperatives</a></li>
-        <li><a href="about.html">About the federation</a></li>
-      </ul>
-    </details>
-    <a class="navtop" href="dev/">Developers</a>
-  </div>
-</nav>
-
-<main id="main">
-
-<section class="opening">
-  <div class="wrap">
-    <p class="eyebrow">CARD-ROM against four other standards</p>
-    <h1>Where CARD-ROM sits</h1>
-    <p class="lede">MIFARE Classic, DESFire EV3, FeliCa and Calypso are the cards the gates of the Bloc meet most often in a traveller's wallet. The figures below are the published ones for each standard, and the CARD-ROM column is measured on a revision 3 card at a Fluid intercity gate. A card of any of these standards is refused at the gate, and the panel says which one it is and where it is accepted.</p>
-  </div>
-</section>
-
-<section class="block">
-  <div class="wrap">
-    <p class="eyebrow">Side by side</p>
-    <h2>The figures</h2>
-  </div>
-  <div class="wrap">
-    <div class="tablewrap">
-      <table>
-        <caption>Physical layer and speed</caption>
-        <thead><tr><th scope="col">&nbsp;</th><th scope="col">CARD-ROM</th><th scope="col">MIFARE Classic</th><th scope="col">DESFire EV3</th><th scope="col">FeliCa</th><th scope="col">Calypso</th></tr></thead>
-        <tbody>
-          <tr><th scope="row">Carrier</th><td>13.56 MHz</td><td>13.56 MHz</td><td>13.56 MHz</td><td>13.56 MHz</td><td>13.56 MHz</td></tr>
-          <tr><th scope="row">Frame layer</th><td>ISO 14443-2 and -3 Type A, Dubrazec frames above</td><td>ISO 14443 Type A, proprietary above</td><td>ISO 14443-4 Type A</td><td>JIS X 6319-4</td><td>ISO 14443-4 Type B or Type A</td></tr>
-          <tr><th scope="row">Bit rate</th><td>212 kbit/s</td><td>106 kbit/s</td><td>848 kbit/s</td><td>424 kbit/s</td><td>424 kbit/s</td></tr>
-          <tr><th scope="row">Typical transaction</th><td>148 ms</td><td>180 ms</td><td>130 ms</td><td>100 ms</td><td>150 ms</td></tr>
-          <tr><th scope="row">Contact interface</th><td>6 pads, used by machines</td><td>none</td><td>none</td><td>none</td><td>on some cards</td></tr>
-        </tbody>
-      </table>
+      <p class="standing">A branch federation of the railway operating cooperatives, constituted under Article 89. It exercises no public authority and represents no organ. Its accounts, its minutes and its yearly reviews are public.</p>
     </div>
-    <div class="tablewrap">
-      <table>
-        <caption>Memory and what it stores</caption>
-        <thead><tr><th scope="col">&nbsp;</th><th scope="col">CARD-ROM</th><th scope="col">MIFARE Classic</th><th scope="col">DESFire EV3</th><th scope="col">FeliCa</th><th scope="col">Calypso</th></tr></thead>
-        <tbody>
-          <tr><th scope="row">User memory</th><td>2 MB and 8 KB</td><td>1 or 4 KB</td><td>2, 4 or 8 KB</td><td>4 to 36 KB</td><td>2 to 32 KB</td></tr>
-          <tr><th scope="row">Structure</th><td>Record ring, options, and an area the holder writes</td><td>Sectors and blocks</td><td>Applications and files</td><td>Blocks and services</td><td>Files under a directory</td></tr>
-          <tr><th scope="row">Record history on card</th><td>90 days, about 60,000 records</td><td>last few transactions</td><td>up to the file size</td><td>20 to 100 entries</td><td>3 to 10 entries</td></tr>
-          <tr><th scope="row">Value on card</th><td>none, module compiled out</td><td>value blocks</td><td>value files</td><td>purse, and retail payment</td><td>contract and counter files</td></tr>
-          <tr><th scope="row">Holder's own data</th><td>7.6 KB, plain, readable by any terminal</td><td>none defined</td><td>at the issuer's choice</td><td>at the issuer's choice</td><td>none defined</td></tr>
-        </tbody>
-      </table>
-    </div>
-    <div class="tablewrap">
-      <table>
-        <caption>Keys, integrity and standing</caption>
-        <thead><tr><th scope="col">&nbsp;</th><th scope="col">CARD-ROM</th><th scope="col">MIFARE Classic</th><th scope="col">DESFire EV3</th><th scope="col">FeliCa</th><th scope="col">Calypso</th></tr></thead>
-        <tbody>
-          <tr><th scope="row">Authentication</th><td>AES-128, diversified per card</td><td>Crypto-1, 48-bit</td><td>AES-128 or 3DES</td><td>3DES or AES-128</td><td>3DES or AES-128</td></tr>
-          <tr><th scope="row">Known breaks</th><td>none published</td><td>Crypto-1 broken in 2008; cards cloneable with a laptop</td><td>none published</td><td>none published</td><td>none published on current cards</td></tr>
-          <tr><th scope="row">Card authenticity</th><td>Ed25519 signature over the identity block, checkable without any key</td><td>UID only</td><td>originality signature</td><td>issuer certificate</td><td>issuer certificate</td></tr>
-          <tr><th scope="row">Record integrity</th><td>CMAC on every record, under the key of the network that wrote it</td><td>none</td><td>at the issuer's choice</td><td>at the issuer's choice</td><td>signed contracts</td></tr>
-          <tr><th scope="row">Specification</th><td>open, published in full with test vectors</td><td>partly published, silicon proprietary</td><td>published to licensees</td><td>published to licensees</td><td>open, association members</td></tr>
-          <tr><th scope="row">Licence to build</th><td>none, and no patent is held</td><td>silicon from one vendor</td><td>silicon from one vendor</td><td>royalty and certification</td><td>association membership</td></tr>
-          <tr><th scope="row">Cost to the holder</th><td>none, issued and replaced free</td><td>set by the operator</td><td>set by the operator</td><td>deposit and top-up</td><td>set by the operator</td></tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-</section>
-
-<section class="block">
-  <div class="wrap">
-    <p class="eyebrow">Reading the tables</p>
-    <h2>Four things the figures do not say</h2>
-  </div>
-  <div class="wrap">
-    <ul class="plates two">
-      <li>
-        <h3>Speed is not a constraint here</h3>
-        <p>DESFire and FeliCa are quicker on the air in systems with closed gates. A Fluid gate is semi-open, so the digital ticket is accounted for while a person walks through it, and 148 ms against 100 ms changes nothing a traveller can feel.</p>
-      </li>
-      <li>
-        <h3>The purse is what the others are for</h3>
-        <p>Most of these standards were built to hold value and to take it away at a gate. CARD-ROM has that module but it is not compiled in Fluid. The comparison of purse features is therefore irrelevant here.</p>
-      </li>
-      <li>
-        <h3>Openness has a price in silicon</h3>
-        <p>A CARD-ROM chip is made by three factories in the Bloc to a published mask. The volumes are small, so the unit cost stands above a MIFARE Classic and near a DESFire. The card is free to the holder either way.</p>
-      </li>
-      <li>
-        <h3>MIFARE Classic is the one to avoid</h3>
-        <p>Crypto-1 has been broken since 2008 and cloning takes a laptop. It is listed here because it is still in wallets across the region, including the STB cards that reach the Lindoma gates most often.</p>
-      </li>
-    </ul>
-  </div>
-</section>
-
-<section class="block">
-  <div class="wrap">
-    <p class="eyebrow">At the gate</p>
-    <h2>What happens when a card that is not a CARD-ROM is presented</h2>
-  </div>
-  <div class="wrap">
-    <div class="essay">
-      <p><strong>The gate reads it and refuses passage.</strong> A Suica, a Card Activ, an Oyster or a Navigo is intact and readable, and holds no Bloc record and no Bloc identifier. The panel names the card, its issuer and its product, states where it is accepted, and states why passage is refused here.</p>
-      <p><strong>No balance is touched.</strong> The gate reads the standard and the identifier, and stops. It takes nothing, writes nothing, and keeps nothing about the card presented.</p>
-      <p><strong>The panel answers in the language of the card.</strong> A FeliCa card issued in Japan brings a panel in Japanese. A MIFARE card from Bucharest brings one in Romanian. The gate supports twelve languages and falls back to Fluidian and English if the language of the card is not supported.</p>
-      <p><strong>Then it says what is needed.</strong> A Universal Bloc Transport Card, or a Universal Ticket, which is the paper form of the same record and covers one journey, are the only compatible devices that can be issued at the counter behind the gate or at every machine on the concourse.</p>
-    </div>
-  </div>
-</section>
-
-</main>
-
-<div class="band-foot" role="presentation"></div>
-<footer class="foot">
-  <div class="wrap">
-    <ul class="footlinks">
-      <li><a href="index.html">Front</a></li>
-      <li><a href="network.html">Network</a></li>
-      <li><a href="app.html">Application</a></li>
-      <li><a href="card.html">CARD-ROM</a></li>
-      <li><a href="dev/">Developers</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="../podnik/">Podnik</a></li>
-      <li><a href="../../register/links.html">Public Register</a></li>
-    </ul>
-    <p class="standing">A branch federation of the railway operating cooperatives, constituted under Article 89. It exercises no public authority and represents no organ. Its accounts, its minutes and its yearly reviews are public.</p>
-  </div>
-</footer>
-<script src="site.js" defer></script>
+  </footer>
+  <script src="site.js" defer></script>
 </body>
 </html>

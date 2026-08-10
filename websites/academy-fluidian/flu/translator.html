@@ -1,62 +1,87 @@
 <!DOCTYPE html>
 <html lang="art-x-fluidian">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Traductor &middot; Academia de Lingua Fluidian</title>
-<meta name="description" content="Un glosa parola per parola inter se fluidian e se anglez, con se frases fixat.">
-<meta name="theme-color" content="#2b2620">
-<link rel="stylesheet" href="../site.css">
-<link rel="icon" href="../../../assets/flag.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Traductor &middot; Academia de Lingua Fluidian</title>
+  <meta name="description" content="Un glosa parola per parola inter se fluidian e se anglez, con se frases fixat.">
+  <meta name="theme-color" content="#2b2620">
+  <link rel="stylesheet" href="../site.css">
+  <link rel="icon" href="../../../assets/flag.png">
 </head>
 <body>
-<a class="skip" href="#main">Vai te se contenut</a>
-<header class="head"><div class="wrap"><svg class="mark" viewBox="0 0 46 46" role="img" aria-label="Emblem of the Academy"><rect width="46" height="46" fill="#f2ece0"></rect><rect x="6" y="9" width="34" height="6" fill="#2b2620"></rect><rect x="6" y="21" width="22" height="3" fill="#2b2620"></rect><rect x="6" y="28" width="28" height="3" fill="#2b2620"></rect><path d="M30 34 L40 20" stroke="#a4232a" stroke-width="3.4" fill="none"></path></svg><span class="titles">
-<p class="wordmark"><a href="index.html">Academia de Lingua Fluidian</a></p>
-<p class="standfirst">Academia de se lingua fluidian &middot; un cooperativa de sue usatores</p>
-</span><div class="langswitch"><a href="../translator.html">EN</a><span aria-current="true">FLU</span></div></div></header>
-<nav class="nav" aria-label="Sections of this site"><div class="wrap"><a href="index.html">Prim page</a><a href="language.html">Se lingua</a><a href="rules.html">Regulas</a><a href="irregulars.html">Registres</a><a href="phrasebook.html">Frases</a><a href="dictionary.html">Dictionar</a><a href="translator.html" aria-current="page">Traductor</a><a href="names.html">Nomes</a><a href="decisions.html">Decisiunes</a><a href="academy.html">Se academia</a></div></nav>
-<main id="main" class="wrap">
-<p class="crumbs"><a href="index.html">Academia</a> &rsaquo; Traductor</p>
-<p class="eyebrow">Instrument</p>
-<h1>Traductor de glosa</h1>
-<p class="lede">Et instrument pone un parola suz un altru. El tena se ordine de parola de que vos scriva, el sabe se frases fixat de se page de frases, e el marca en rubru cada parola de extra se lexic. El no es un traductor.</p>
+  <a class="skip" href="#main">Vai te se contenut</a>
+  <header class="head">
+    <div class="wrap"><svg class="mark" viewBox="0 0 46 46" role="img" aria-label="Emblem of the Academy">
+        <rect width="46" height="46" fill="#f2ece0"></rect>
+        <rect x="6" y="9" width="34" height="6" fill="#2b2620"></rect>
+        <rect x="6" y="21" width="22" height="3" fill="#2b2620"></rect>
+        <rect x="6" y="28" width="28" height="3" fill="#2b2620"></rect>
+        <path d="M30 34 L40 20" stroke="#a4232a" stroke-width="3.4" fill="none"></path>
+      </svg><span class="titles">
+        <p class="wordmark"><a href="index.html">Academia de Lingua Fluidian</a></p>
+        <p class="standfirst">Academia de se lingua fluidian &middot; un cooperativa de sue usatores</p>
+      </span>
+      <div class="langswitch"><a href="../translator.html">EN</a><span aria-current="true">FLU</span></div>
+    </div>
+  </header>
+  <nav class="nav" aria-label="Sections of this site">
+    <div class="wrap"><a href="index.html">Prim page</a><a href="language.html">Se lingua</a><a href="rules.html">Regulas</a><a href="irregulars.html">Registres</a><a href="phrasebook.html">Frases</a><a href="dictionary.html">Dictionar</a><a href="translator.html" aria-current="page">Traductor</a><a href="names.html">Nomes</a><a href="decisions.html">Decisiunes</a><a href="academy.html">Se academia</a></div>
+  </nav>
+  <main id="main" class="wrap">
+    <p class="crumbs"><a href="index.html">Academia</a> &rsaquo; Traductor</p>
+    <p class="eyebrow">Instrument</p>
+    <h1>Traductor de glosa</h1>
+    <p class="lede">Et instrument pone un parola suz un altru. El tena se ordine de parola de que vos scriva, el sabe se frases fixat de se page de frases, e el marca en rubru cada parola de extra se lexic. El no es un traductor.</p>
 
-<form class="tool" id="tform">
-<div class="row">
-<div><label for="dir">Directiun</label><select id="dir">
-<option value="f2e">Fluidian te anglez</option>
-<option value="e2f">Anglez te fluidian</option>
-</select></div>
-</div>
-<label for="tin" style="margin-block-start:0.3rem">Text</label>
-<textarea id="tin" placeholder="se tren no fa statiun te Prevessa">se tren no fa statiun te Prevessa</textarea>
-<p><button type="submit">Fa se glosa</button></p>
-<div class="out" id="tout"></div>
-</form>
+    <form class="tool" id="tform">
+      <div class="row">
+        <div><label for="dir">Directiun</label><select id="dir">
+            <option value="f2e">Fluidian te anglez</option>
+            <option value="e2f">Anglez te fluidian</option>
+          </select></div>
+      </div>
+      <label for="tin" style="margin-block-start:0.3rem">Text</label>
+      <textarea id="tin" placeholder="se tren no fa statiun te Prevessa">se tren no fa statiun te Prevessa</textarea>
+      <p><button type="submit">Fa se glosa</button></p>
+      <div class="out" id="tout"></div>
+    </form>
 
-<h2>Que el no pote fa</h2>
-<ul>
-<li>El no conjuga. Se fluidian ave un forma de verbu, per esto nule cosa es perdit quando vos vai de aqui; quando vos veni de anglez, se temp es lassat e vos deve adde <em>es</em> o <em>va</em> vos mesme.</li>
-<li>El no muta se ordine. Un adjectiv scrit ante sue substantiv en anglez va sta ante sue substantiv en fluidian, e esto es mau.</li>
-<li>El no elige inter sensos. Quando un parola porta multe, se prim es dat e se altru sta supra se <a href="dictionary.html">entrada</a>.</li>
-<li>El no sabe un parola de extra se lexic.</li>
-</ul>
-<div class="note">Per cada cosa que conta, se page de frases es se instrument plus sigur, e per cada cosa que conta en lege es un traductor human, gratuit, suz <a href="../../../constitution/title-1.html#a16">Articul 16</a>(1).</div>
+    <h2>Que el no pote fa</h2>
+    <ul>
+      <li>El no conjuga. Se fluidian ave un forma de verbu, per esto nule cosa es perdit quando vos vai de aqui; quando vos veni de anglez, se temp es lassat e vos deve adde <em>es</em> o <em>va</em> vos mesme.</li>
+      <li>El no muta se ordine. Un adjectiv scrit ante sue substantiv en anglez va sta ante sue substantiv en fluidian, e esto es mau.</li>
+      <li>El no elige inter sensos. Quando un parola porta multe, se prim es dat e se altru sta supra se <a href="dictionary.html">entrada</a>.</li>
+      <li>El no sabe un parola de extra se lexic.</li>
+    </ul>
+    <div class="note">Per cada cosa que conta, se page de frases es se instrument plus sigur, e per cada cosa que conta en lege es un traductor human, gratuit, suz <a href="../../../constitution/title-1.html#a16">Articul 16</a>(1).</div>
 
-<script>document.addEventListener("DOMContentLoaded", function(){ buildTranslator("tform","tin","tout","dir"); });</script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        buildTranslator("tform", "tin", "tout", "dir");
+      });
 
-</main>
-<footer class="foot"><div class="wrap"><div class="cols">
-<div><p class="h">Se academia</p>
-<p>Academia de Lingua Fluidian, constituta en 1946 te Sederna. Un cooperativa suz Titul III, licentiat per se Congre de Planificatiun, con nule functiun public e con nule regula obligatoriu.</p></div>
-<div><p class="h">Statut</p>
-<p>Se Republica ave nule lingua oficial. <a href="../../../constitution/title-1.html#a16">Articul 16</a>(1) dan te cada persone se dret de parla con se autoritate en un lingua que el comprende. Nule cosa supra et loc es lege.</p>
-<p>Publicat en apert. Nule resursa extern es cargat.</p>
-<p class="h">Registres</p>
-<p><a href="irregulars.html">Formas irregular e alternat</a> &middot; <a href="quirks.html">Quirks</a> &middot; <a href="decisions.html">Decisiunes</a></p></div>
-</div></div></footer>
-<script src="../lexicon.js"></script>
-<script src="../site.js"></script>
+    </script>
+
+  </main>
+  <footer class="foot">
+    <div class="wrap">
+      <div class="cols">
+        <div>
+          <p class="h">Se academia</p>
+          <p>Academia de Lingua Fluidian, constituta en 1946 te Sederna. Un cooperativa suz Titul III, licentiat per se Congre de Planificatiun, con nule functiun public e con nule regula obligatoriu.</p>
+        </div>
+        <div>
+          <p class="h">Statut</p>
+          <p>Se Republica ave nule lingua oficial. <a href="../../../constitution/title-1.html#a16">Articul 16</a>(1) dan te cada persone se dret de parla con se autoritate en un lingua que el comprende. Nule cosa supra et loc es lege.</p>
+          <p>Publicat en apert. Nule resursa extern es cargat.</p>
+          <p class="h">Registres</p>
+          <p><a href="irregulars.html">Formas irregular e alternat</a> &middot; <a href="quirks.html">Quirks</a> &middot; <a href="decisions.html">Decisiunes</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="../lexicon.js"></script>
+  <script src="../site.js"></script>
 </body>
 </html>

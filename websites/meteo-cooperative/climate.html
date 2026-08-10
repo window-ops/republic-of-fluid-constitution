@@ -1,246 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Climate of the Republic - Meteorological Cooperative</title>
-<meta name="description" content="The temperate transitional climate of the Republic of Fluid: the four local climates, the rainfall gradient, wind, sea and lagoon temperatures, and the normals of 1991 to 2020.">
-<link rel="stylesheet" href="site.css">
-<link rel="icon" href="../../assets/flag.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Climate of the Republic - Meteorological Cooperative</title>
+  <meta name="description" content="The temperate transitional climate of the Republic of Fluid: the four local climates, the rainfall gradient, wind, sea and lagoon temperatures, and the normals of 1991 to 2020.">
+  <link rel="stylesheet" href="site.css">
+  <link rel="icon" href="../../assets/flag.png">
 </head>
 <body>
 
-<header class="masthead">
-  <div class="wrap">
-    <span class="marque"><svg viewBox="0 0 58 58" role="img" aria-label="Emblem of the Meteorological Cooperative">
-<circle cx="29" cy="31" r="20" fill="none" stroke="#9a6516" stroke-width="2.4"/>
-<circle cx="29" cy="31" r="12.5" fill="none" stroke="#9a6516" stroke-width="1.6"/>
-<circle cx="29" cy="31" r="5" fill="none" stroke="#9a6516" stroke-width="1.6"/>
-<path d="M29 31 L29 9" stroke="#5f3d0c" stroke-width="2.4" stroke-linecap="round"/>
-<path d="M29 12 L38 15" stroke="#5f3d0c" stroke-width="2.4" stroke-linecap="round"/>
-<path d="M29 18 L36 20.5" stroke="#5f3d0c" stroke-width="2.4" stroke-linecap="round"/>
-<circle cx="29" cy="31" r="2" fill="#5f3d0c"/>
-</svg></span>
-    <span class="idblock">
-      <p class="coopname"><a href="index.html">Meteorological Cooperative of the Republic</a></p>
-      <p class="basis">Weather, climate, seismicity, landslide and flood &middot; mandate held under the organic law on observation and warning</p>
-    </span>
-  </div>
-</header>
+  <header class="masthead">
+    <div class="wrap">
+      <span class="marque"><svg viewBox="0 0 58 58" role="img" aria-label="Emblem of the Meteorological Cooperative">
+          <circle cx="29" cy="31" r="20" fill="none" stroke="#9a6516" stroke-width="2.4" />
+          <circle cx="29" cy="31" r="12.5" fill="none" stroke="#9a6516" stroke-width="1.6" />
+          <circle cx="29" cy="31" r="5" fill="none" stroke="#9a6516" stroke-width="1.6" />
+          <path d="M29 31 L29 9" stroke="#5f3d0c" stroke-width="2.4" stroke-linecap="round" />
+          <path d="M29 12 L38 15" stroke="#5f3d0c" stroke-width="2.4" stroke-linecap="round" />
+          <path d="M29 18 L36 20.5" stroke="#5f3d0c" stroke-width="2.4" stroke-linecap="round" />
+          <circle cx="29" cy="31" r="2" fill="#5f3d0c" />
+        </svg></span>
+      <span class="idblock">
+        <p class="coopname"><a href="index.html">Meteorological Cooperative of the Republic</a></p>
+        <p class="basis">Weather, climate, seismicity, landslide and flood &middot; mandate held under the organic law on observation and warning</p>
+      </span>
+    </div>
+  </header>
 
-<nav class="mainnav" aria-label="Sections of this site">
-  <div class="wrap">
-    <a class="navtop" href="index.html">Home</a>
-    <details class="grp">
-      <summary>Weather and climate</summary>
-      <ul>
-        <li><a href="climate.html">Climate of the Republic</a></li>
-        <li><a href="change.html">Observed change</a></li>
-        <li><a href="forecasting.html">How a forecast is made</a></li>
-        <li class="has"><details class="sub">
-          <summary><a href="emissions.html">Emissions position</a></summary>
-          <ul>
-            <li><a href="periphery.html">Harm to the periphery</a></li>
-          </ul>
-        </details></li>
-      </ul>
-    </details>
-    <details class="grp">
-      <summary>Warning systems</summary>
-      <ul>
-        <li><a href="rationale.html">Why these systems exist</a></li>
-        <li><a href="seismicity.html">Seismicity of the Republic</a></li>
-        <li class="has"><details class="sub">
-          <summary><a href="kjs.html">REP-KJS, earthquake</a></summary>
-          <ul>
-            <li><a href="scale.html">REP intensity scale</a></li>
-            <li><a href="kjs-method.html">Detection, latency and limits</a></li>
-          </ul>
-        </details></li>
-        <li><a href="lew.html">REP-LEW, landslide</a></li>
-        <li><a href="few.html">REP-FEW, flood</a></li>
-        <li><a href="devices.html">Certified devices and RQUAK</a></li>
-      </ul>
-    </details>
-    <a class="navtop" href="species.html">Species catalogue</a>
-    <a class="navtop" href="network.html">Observing network</a>
-    <details class="grp">
-      <summary>Developers</summary>
-      <ul>
-        <li><a href="dev/index.html">Specifications and source</a></li>
-        <li><a href="dev/wire-format.html">Warning wire format</a></li>
-        <li><a href="dev/vectors.html">Conformance test vectors</a></li>
-        <li><a href="dev/hardware.html">Sensor and station hardware</a></li>
-        <li><a href="dev/forking.html">Porting to another country</a></li>
-      </ul>
-    </details>
-    <a class="navtop" href="about.html">About the cooperative</a>
-  </div>
-</nav>
-
-<main id="main" class="sheet">
-<p class="crumb"><a href="index.html">Meteorological Cooperative</a> &rsaquo; Weather and climate &rsaquo; Climate of the Republic</p>
-<h1 class="page-title">Climate of the Republic</h1>
-<p class="lede">The Republic occupies a peninsula at the northern edge of Asia Minor, with sea on three sides and land frontiers only in the south. It lies in the temperate transition zone, between the maritime climates of the north-west and the drier continental interiors to the east. The weather is changeable and extremes are few.</p>
-
-<div class="facts">
-  <div class="row"><span class="k">Zone</span><span class="v">Temperate transitional</span></div>
-  <div class="row"><span class="k">Normals period</span><span class="v">1991 to 2020, revised each decade</span></div>
-  <div class="row"><span class="k">Annual rainfall</span><span class="v">From above 1,200 mm on the Kelvaqui moor to below 500 mm in the Quintorum basin</span></div>
-  <div class="row"><span class="k">Dry season</span><span class="v">None anywhere except the eastern interior</span></div>
-  <div class="row"><span class="k">Snow</span><span class="v">Lying six to ten weeks on the Vandorum high ground, occasional and brief elsewhere</span></div>
-  <div class="row"><span class="k">Highest ground</span><span class="v">Vandorum upland, western region</span></div>
-  <div class="row"><span class="k">Strongest winds</span><span class="v">Belvacius hills, south-eastern region</span></div>
-</div>
-
-<h2>Position and the controls on the climate</h2>
-<div class="prose">
-<p>Three controls govern the pattern. The first is the sea, which surrounds the peninsula on three sides and holds the annual temperature range of the coasts to about fourteen degrees. The second is the westerly flow, which delivers the greater part of the year's rainfall and weakens with distance from the north-western shore. The third is relief: the Vandorum upland in the west and the Belvacius hills in the south-east lift the air that crosses them and shelter the ground behind.</p>
-<p>The peninsula lies between two air masses. Maritime air from the north-west arrives cool and moist through most of the year. Continental air from the east arrives dry, hot in summer and cold in winter, and reaches the western plain only when the westerly flow slackens. The frequency with which the boundary between them passes over the territory accounts for the changeability of the weather and for the absence of long settled spells.</p>
-</div>
-
-<h2>The four local climates</h2>
-<div class="prose">
-<p>Four local climates are conventionally distinguished, and the division is the one taught in schools. It describes the observed record and has no administrative effect.</p>
-</div>
-
-<div class="tablewrap">
-<table class="data">
-<caption>Local climates, normals of 1991 to 2020</caption>
-<thead>
-<tr>
-<th>Local climate</th>
-<th>Sub-regions</th>
-<th class="num">January mean</th>
-<th class="num">July mean</th>
-<th class="num">Annual rainfall</th>
-<th>Character</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Maritime coast</td>
-<td>Lindoma, Merrisoma, Kelvaqui, Leriduson</td>
-<td class="num">4.2 &deg;C</td>
-<td class="num">19.6 &deg;C</td>
-<td class="num">780 to 1,050 mm</td>
-<td>Mild, wet, windy, small annual range, frequent low cloud</td>
-</tr>
-<tr>
-<td>Western upland</td>
-<td>Vandorum, Corvaluri, upper Tessilius</td>
-<td class="num">0.8 &deg;C</td>
-<td class="num">16.4 &deg;C</td>
-<td class="num">1,050 to 1,240 mm</td>
-<td>Cool and wet, snow lying six to ten weeks, cloud on the tops</td>
-</tr>
-<tr>
-<td>Continental interior and east</td>
-<td>Anselaqui, Thurioma, Quintorum, Marnaqui, Ravelluri, Cortius, Belvacius, Esteveduson, Sornorum, Halvorum, Durorilaqui</td>
-<td class="num">-1.4 &deg;C</td>
-<td class="num">23.8 &deg;C</td>
-<td class="num">480 to 690 mm</td>
-<td>Warm summers, cold winters, summer rainfall maximum, thunderstorms</td>
-</tr>
-<tr>
-<td>Sheltered south-west</td>
-<td>Ombraqui, western Aspreduson</td>
-<td class="num">6.1 &deg;C</td>
-<td class="num">22.9 &deg;C</td>
-<td class="num">640 to 810 mm</td>
-<td>Warmest and sunniest, long growing season, orchard and vine</td>
-</tr>
-</tbody>
-</table>
-</div>
-<p class="note">Figures are areal means over the sub-regions named and conceal local variation, which on the western upland exceeds five degrees between valley floor and summit. The eastern seaboard at Ravelluri and Cortius is two to three degrees warmer in the winter than the group mean, the sea moderating a district that is otherwise continental in its rainfall regime.</p>
-
-<h2>The rainfall gradient</h2>
-<div class="prose">
-<p>Rainfall falls steadily with distance from the north-western coast. The Kelvaqui moor receives above 1,200 mm a year and bears blanket peat in consequence. The Quintorum basin, about 180 km to the south-east and in the lee of the interior divide at Ilvara, receives below 500 mm, and its soils are fertile and drought-prone together. Between these two the gradient is close to linear, at roughly 3.9 mm for each kilometre travelled inland.</p>
-<p>The seasonal distribution turns over along the same line. On the maritime coasts the wettest months are November to January and the driest are June and July. In the interior and the east the maximum falls in June and July, delivered by convective storms in a small number of heavy days, and the winter is the drier half of the year. The east therefore receives less rain in fewer events, which is the combination that governs both its irrigation regime and its flood behaviour.</p>
-</div>
-
-<h2>Wind</h2>
-<div class="prose">
-<p>Prevailing winds are westerly and south-westerly through most of the year. Mean speed at 10 m exceeds 6.5 m/s on the exposed north-western coast and falls below 3.2 m/s in the sheltered south-west. The Belvacius hills hold the strongest resource in the Republic, with a mean above 8 m/s at 100 m on the ridge lines, and the wind installations above Corcina have been developed there since 1998.</p>
-<p>Gales of force 8 and above are recorded on the north-western coast on about eighteen days a year and inland on fewer than three. The strongest gust in the instrumental record was 47 m/s at the Maravel headland in February 1962. Storm surge on the north-western bay is the principal wind-driven hazard, and the tide gauges at Merrisoma and Lindoma feed the surge model described under <a href="few.html">REP-FEW</a>.</p>
-</div>
-
-<h2>The sea, the lagoon and the marsh</h2>
-<div class="prose">
-<p>Sea surface temperature ranges from about 8 &deg;C in February to about 21 &deg;C in August on the northern coast, and runs one to two degrees warmer on the eastern seaboard. The Ravelluri lagoon, brackish and shallow behind its dune barrier, warms and cools far faster than the open sea and reaches above 26 &deg;C in a settled August. That behaviour governs the ecology of the lagoon and is monitored continuously by the coastal station at Marendo, whose series supports the assessment of <a href="species.html"><i>Ravellura marendensis</i></a>.</p>
-<p>The Merrisoma salt marsh behind the north-western bay is the largest intertidal system in the Republic and the principal wintering ground for migratory birds on this coast. Air frost is rare over the marsh and the frost-free season there is the longest recorded on any western station.</p>
-</div>
-
-<h2>What the normals do and do not tell</h2>
-<div class="box">
-<span class="lbl">Reading the normals</span>
-<p>A normal is a thirty-year mean and describes the period from which it was calculated. The 1991 to 2020 normals are already warmer than the 1961 to 1990 set they replaced, by about 0.9 degrees in the annual mean, so a season described as average against the current normals would have been described as warm against the earlier ones.</p>
-<p>Normals also conceal the distribution behind them. Two sub-regions with the same July mean can differ by six degrees in the temperature exceeded on one day in twenty, and the Quintorum basin differs from the maritime coast in exactly that way.</p>
-</div>
-
-<h2>See also</h2>
-<div class="prose">
-<ul>
-<li><a href="change.html">Observed change</a>, the trends measured since 1960 and their administrative consequences</li>
-<li><a href="forecasting.html">How a forecast is made</a>, the model chain and the published verification scores</li>
-<li><a href="network.html">Observing network</a>, the stations from which these series are drawn</li>
-<li><a href="../../map/geography.html">Geography of the Republic</a> in the Public Register</li>
-</ul>
-</div>
-
-</main>
-
-<footer class="coopfoot">
-  <div class="wrap">
-    <div class="cols">
-      <div>
-        <h4>Weather and climate</h4>
+  <nav class="mainnav" aria-label="Sections of this site">
+    <div class="wrap">
+      <a class="navtop" href="index.html">Home</a>
+      <details class="grp">
+        <summary>Weather and climate</summary>
         <ul>
           <li><a href="climate.html">Climate of the Republic</a></li>
           <li><a href="change.html">Observed change</a></li>
           <li><a href="forecasting.html">How a forecast is made</a></li>
-          <li><a href="emissions.html">Emissions position</a></li>
-          <li><a href="periphery.html">Harm to the periphery</a></li>
+          <li class="has">
+            <details class="sub">
+              <summary><a href="emissions.html">Emissions position</a></summary>
+              <ul>
+                <li><a href="periphery.html">Harm to the periphery</a></li>
+              </ul>
+            </details>
+          </li>
         </ul>
-      </div>
-      <div>
-        <h4>Warning systems</h4>
+      </details>
+      <details class="grp">
+        <summary>Warning systems</summary>
         <ul>
           <li><a href="rationale.html">Why these systems exist</a></li>
           <li><a href="seismicity.html">Seismicity of the Republic</a></li>
-          <li><a href="kjs.html">REP-KJS, earthquake</a></li>
-          <li><a href="scale.html">REP intensity scale</a></li>
-          <li><a href="kjs-method.html">Detection, latency and limits</a></li>
+          <li class="has">
+            <details class="sub">
+              <summary><a href="kjs.html">REP-KJS, earthquake</a></summary>
+              <ul>
+                <li><a href="scale.html">REP intensity scale</a></li>
+                <li><a href="kjs-method.html">Detection, latency and limits</a></li>
+              </ul>
+            </details>
+          </li>
           <li><a href="lew.html">REP-LEW, landslide</a></li>
           <li><a href="few.html">REP-FEW, flood</a></li>
           <li><a href="devices.html">Certified devices and RQUAK</a></li>
         </ul>
-      </div>
-      <div>
-        <h4>Record and network</h4>
+      </details>
+      <a class="navtop" href="species.html">Species catalogue</a>
+      <a class="navtop" href="network.html">Observing network</a>
+      <details class="grp">
+        <summary>Developers</summary>
         <ul>
-          <li><a href="species.html">Species catalogue</a></li>
-          <li><a href="network.html">Observing network</a></li>
-          <li><a href="about.html">About the cooperative</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Developers</h4>
-        <ul>
-          <li><a href="dev/index.html">Specifications and licence</a></li>
+          <li><a href="dev/index.html">Specifications and source</a></li>
           <li><a href="dev/wire-format.html">Warning wire format</a></li>
           <li><a href="dev/vectors.html">Conformance test vectors</a></li>
           <li><a href="dev/hardware.html">Sensor and station hardware</a></li>
           <li><a href="dev/forking.html">Porting to another country</a></li>
         </ul>
-      </div>
+      </details>
+      <a class="navtop" href="about.html">About the cooperative</a>
     </div>
-    <p class="basis">Published by the Meteorological Cooperative of the Republic under the organic law on observation and warning. Free of charge, without licence, registration or account. No external resource is loaded by this page. See also the <a href="../../index.html">Republic of Fluid</a> and the <a href="../../register/">Public Register</a>.</p>
-  </div>
-</footer>
+  </nav>
 
-<script src="site.js"></script>
+  <main id="main" class="sheet">
+    <p class="crumb"><a href="index.html">Meteorological Cooperative</a> &rsaquo; Weather and climate &rsaquo; Climate of the Republic</p>
+    <h1 class="page-title">Climate of the Republic</h1>
+    <p class="lede">The Republic occupies a peninsula at the northern edge of Asia Minor, with sea on three sides and land frontiers only in the south. It lies in the temperate transition zone, between the maritime climates of the north-west and the drier continental interiors to the east. The weather is changeable and extremes are few.</p>
+
+    <div class="facts">
+      <div class="row"><span class="k">Zone</span><span class="v">Temperate transitional</span></div>
+      <div class="row"><span class="k">Normals period</span><span class="v">1991 to 2020, revised each decade</span></div>
+      <div class="row"><span class="k">Annual rainfall</span><span class="v">From above 1,200 mm on the Kelvaqui moor to below 500 mm in the Quintorum basin</span></div>
+      <div class="row"><span class="k">Dry season</span><span class="v">None anywhere except the eastern interior</span></div>
+      <div class="row"><span class="k">Snow</span><span class="v">Lying six to ten weeks on the Vandorum high ground, occasional and brief elsewhere</span></div>
+      <div class="row"><span class="k">Highest ground</span><span class="v">Vandorum upland, western region</span></div>
+      <div class="row"><span class="k">Strongest winds</span><span class="v">Belvacius hills, south-eastern region</span></div>
+    </div>
+
+    <h2>Position and the controls on the climate</h2>
+    <div class="prose">
+      <p>Three controls govern the pattern. The first is the sea, which surrounds the peninsula on three sides and holds the annual temperature range of the coasts to about fourteen degrees. The second is the westerly flow, which delivers the greater part of the year's rainfall and weakens with distance from the north-western shore. The third is relief: the Vandorum upland in the west and the Belvacius hills in the south-east lift the air that crosses them and shelter the ground behind.</p>
+      <p>The peninsula lies between two air masses. Maritime air from the north-west arrives cool and moist through most of the year. Continental air from the east arrives dry, hot in summer and cold in winter, and reaches the western plain only when the westerly flow slackens. The frequency with which the boundary between them passes over the territory accounts for the changeability of the weather and for the absence of long settled spells.</p>
+    </div>
+
+    <h2>The four local climates</h2>
+    <div class="prose">
+      <p>Four local climates are conventionally distinguished, and the division is the one taught in schools. It describes the observed record and has no administrative effect.</p>
+    </div>
+
+    <div class="tablewrap">
+      <table class="data">
+        <caption>Local climates, normals of 1991 to 2020</caption>
+        <thead>
+          <tr>
+            <th>Local climate</th>
+            <th>Sub-regions</th>
+            <th class="num">January mean</th>
+            <th class="num">July mean</th>
+            <th class="num">Annual rainfall</th>
+            <th>Character</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Maritime coast</td>
+            <td>Lindoma, Merrisoma, Kelvaqui, Leriduson</td>
+            <td class="num">4.2 &deg;C</td>
+            <td class="num">19.6 &deg;C</td>
+            <td class="num">780 to 1,050 mm</td>
+            <td>Mild, wet, windy, small annual range, frequent low cloud</td>
+          </tr>
+          <tr>
+            <td>Western upland</td>
+            <td>Vandorum, Corvaluri, upper Tessilius</td>
+            <td class="num">0.8 &deg;C</td>
+            <td class="num">16.4 &deg;C</td>
+            <td class="num">1,050 to 1,240 mm</td>
+            <td>Cool and wet, snow lying six to ten weeks, cloud on the tops</td>
+          </tr>
+          <tr>
+            <td>Continental interior and east</td>
+            <td>Anselaqui, Thurioma, Quintorum, Marnaqui, Ravelluri, Cortius, Belvacius, Esteveduson, Sornorum, Halvorum, Durorilaqui</td>
+            <td class="num">-1.4 &deg;C</td>
+            <td class="num">23.8 &deg;C</td>
+            <td class="num">480 to 690 mm</td>
+            <td>Warm summers, cold winters, summer rainfall maximum, thunderstorms</td>
+          </tr>
+          <tr>
+            <td>Sheltered south-west</td>
+            <td>Ombraqui, western Aspreduson</td>
+            <td class="num">6.1 &deg;C</td>
+            <td class="num">22.9 &deg;C</td>
+            <td class="num">640 to 810 mm</td>
+            <td>Warmest and sunniest, long growing season, orchard and vine</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note">Figures are areal means over the sub-regions named and conceal local variation, which on the western upland exceeds five degrees between valley floor and summit. The eastern seaboard at Ravelluri and Cortius is two to three degrees warmer in the winter than the group mean, the sea moderating a district that is otherwise continental in its rainfall regime.</p>
+
+    <h2>The rainfall gradient</h2>
+    <div class="prose">
+      <p>Rainfall falls steadily with distance from the north-western coast. The Kelvaqui moor receives above 1,200 mm a year and bears blanket peat in consequence. The Quintorum basin, about 180 km to the south-east and in the lee of the interior divide at Ilvara, receives below 500 mm, and its soils are fertile and drought-prone together. Between these two the gradient is close to linear, at roughly 3.9 mm for each kilometre travelled inland.</p>
+      <p>The seasonal distribution turns over along the same line. On the maritime coasts the wettest months are November to January and the driest are June and July. In the interior and the east the maximum falls in June and July, delivered by convective storms in a small number of heavy days, and the winter is the drier half of the year. The east therefore receives less rain in fewer events, which is the combination that governs both its irrigation regime and its flood behaviour.</p>
+    </div>
+
+    <h2>Wind</h2>
+    <div class="prose">
+      <p>Prevailing winds are westerly and south-westerly through most of the year. Mean speed at 10 m exceeds 6.5 m/s on the exposed north-western coast and falls below 3.2 m/s in the sheltered south-west. The Belvacius hills hold the strongest resource in the Republic, with a mean above 8 m/s at 100 m on the ridge lines, and the wind installations above Corcina have been developed there since 1998.</p>
+      <p>Gales of force 8 and above are recorded on the north-western coast on about eighteen days a year and inland on fewer than three. The strongest gust in the instrumental record was 47 m/s at the Maravel headland in February 1962. Storm surge on the north-western bay is the principal wind-driven hazard, and the tide gauges at Merrisoma and Lindoma feed the surge model described under <a href="few.html">REP-FEW</a>.</p>
+    </div>
+
+    <h2>The sea, the lagoon and the marsh</h2>
+    <div class="prose">
+      <p>Sea surface temperature ranges from about 8 &deg;C in February to about 21 &deg;C in August on the northern coast, and runs one to two degrees warmer on the eastern seaboard. The Ravelluri lagoon, brackish and shallow behind its dune barrier, warms and cools far faster than the open sea and reaches above 26 &deg;C in a settled August. That behaviour governs the ecology of the lagoon and is monitored continuously by the coastal station at Marendo, whose series supports the assessment of <a href="species.html"><i>Ravellura marendensis</i></a>.</p>
+      <p>The Merrisoma salt marsh behind the north-western bay is the largest intertidal system in the Republic and the principal wintering ground for migratory birds on this coast. Air frost is rare over the marsh and the frost-free season there is the longest recorded on any western station.</p>
+    </div>
+
+    <h2>What the normals do and do not tell</h2>
+    <div class="box">
+      <span class="lbl">Reading the normals</span>
+      <p>A normal is a thirty-year mean and describes the period from which it was calculated. The 1991 to 2020 normals are already warmer than the 1961 to 1990 set they replaced, by about 0.9 degrees in the annual mean, so a season described as average against the current normals would have been described as warm against the earlier ones.</p>
+      <p>Normals also conceal the distribution behind them. Two sub-regions with the same July mean can differ by six degrees in the temperature exceeded on one day in twenty, and the Quintorum basin differs from the maritime coast in exactly that way.</p>
+    </div>
+
+    <h2>See also</h2>
+    <div class="prose">
+      <ul>
+        <li><a href="change.html">Observed change</a>, the trends measured since 1960 and their administrative consequences</li>
+        <li><a href="forecasting.html">How a forecast is made</a>, the model chain and the published verification scores</li>
+        <li><a href="network.html">Observing network</a>, the stations from which these series are drawn</li>
+        <li><a href="../../map/geography.html">Geography of the Republic</a> in the Public Register</li>
+      </ul>
+    </div>
+
+  </main>
+
+  <footer class="coopfoot">
+    <div class="wrap">
+      <div class="cols">
+        <div>
+          <h4>Weather and climate</h4>
+          <ul>
+            <li><a href="climate.html">Climate of the Republic</a></li>
+            <li><a href="change.html">Observed change</a></li>
+            <li><a href="forecasting.html">How a forecast is made</a></li>
+            <li><a href="emissions.html">Emissions position</a></li>
+            <li><a href="periphery.html">Harm to the periphery</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Warning systems</h4>
+          <ul>
+            <li><a href="rationale.html">Why these systems exist</a></li>
+            <li><a href="seismicity.html">Seismicity of the Republic</a></li>
+            <li><a href="kjs.html">REP-KJS, earthquake</a></li>
+            <li><a href="scale.html">REP intensity scale</a></li>
+            <li><a href="kjs-method.html">Detection, latency and limits</a></li>
+            <li><a href="lew.html">REP-LEW, landslide</a></li>
+            <li><a href="few.html">REP-FEW, flood</a></li>
+            <li><a href="devices.html">Certified devices and RQUAK</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Record and network</h4>
+          <ul>
+            <li><a href="species.html">Species catalogue</a></li>
+            <li><a href="network.html">Observing network</a></li>
+            <li><a href="about.html">About the cooperative</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Developers</h4>
+          <ul>
+            <li><a href="dev/index.html">Specifications and licence</a></li>
+            <li><a href="dev/wire-format.html">Warning wire format</a></li>
+            <li><a href="dev/vectors.html">Conformance test vectors</a></li>
+            <li><a href="dev/hardware.html">Sensor and station hardware</a></li>
+            <li><a href="dev/forking.html">Porting to another country</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="basis">Published by the Meteorological Cooperative of the Republic under the organic law on observation and warning. Free of charge, without licence, registration or account. No external resource is loaded by this page. See also the <a href="../../index.html">Republic of Fluid</a> and the <a href="../../register/">Public Register</a>.</p>
+    </div>
+  </footer>
+
+  <script src="site.js"></script>
 </body>
 </html>

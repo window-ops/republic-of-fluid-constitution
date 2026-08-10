@@ -1,159 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Variants &middot; Planning Secretariat</title>
-<meta name="description" content="The technical body serving every level of the planning procedure. It collects the statements, computes the balances, prepares the variants and publishes the deficits and surpluses.">
-<link rel="stylesheet" href="../shared/frame.css">
-<link rel="stylesheet" href="site.css">
-<link rel="icon" href="../../assets/flag.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Variants &middot; Planning Secretariat</title>
+  <meta name="description" content="The technical body serving every level of the planning procedure. It collects the statements, computes the balances, prepares the variants and publishes the deficits and surpluses.">
+  <link rel="stylesheet" href="../shared/frame.css">
+  <link rel="stylesheet" href="site.css">
+  <link rel="icon" href="../../assets/flag.png">
 </head>
 <body class="org-planning-secretariat">
-<a class="skip" href="#main">Skip to the content</a>
+  <a class="skip" href="#main">Skip to the content</a>
 
-<div class="statebar">
-  <div class="wrap">
-    <a class="rep" href="../../index.html">Republic of Fluid</a>
-    <span class="sep">|</span>
-    <a href="../../constitution/">Constitution</a>
-    <a href="../../register/">Public Register</a>
-    <span class="grow"></span>
-    <a href="../../register/links.html">All Portals</a>
-  </div>
-</div>
-
-<header class="orghead">
-  <div class="wrap">
-    <span class="marque"><svg viewBox="0 0 56 56" role="img" aria-label="Emblem of the Planning Secretariat">
-<rect x="8" y="8" width="40" height="40" fill="none" stroke="#7a5a2f" stroke-width="2.8"/>
-<path d="M8 21 h40 M8 34 h40 M21 8 v40 M34 8 v40" stroke="#7a5a2f" stroke-width="1.6"/>
-<path d="M12 30 L18 24 L24 27 L30 17 L36 21 L44 13" fill="none" stroke="#7a5a2f" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
-</svg></span>
-    <span class="idblock">
-      <p class="kicker">Technical body of the planning procedure</p>
-      <p class="orgname"><a href="index.html">Planning Secretariat</a></p>
-      <p class="basis">Established under Article 96(4) of the Constitution &middot; holds no power of decision</p>
-    </span>
-  </div>
-</header>
-
-<nav class="orgnav" aria-label="Sections of this site"><div class="wrap"><a href="index.html">Home</a><a href="balances.html">Balances</a><a href="variants.html">Variants</a><a href="cycle.html">The cycle</a><a href="methods.html">Methods and code</a><a href="statements.html">Statements received</a><a href="limits.html">No power of decision</a></div></nav>
-
-<main id="main" class="sheet">
-
-<h1 class="page-title">Variants</h1>
-<p class="lede">Each variant closes a deficit and states what closing it costs elsewhere. This Secretariat prepares them and chooses among them in no case.</p>
-
-<div class="legal">
-  <p><a href="../../constitution/title-4.html#a90">Article 90</a>(4): the variants and the assumptions on which each rests are published.</p>
-  <p><a href="../../constitution/title-4.html#a98">Article 98</a>(3): where the Congress fails to reconcile, it decides by vote of its delegates, publishes the dissenting positions, and states the reasons for the choice made among the variants.</p>
-</div>
-
-<div class="controls" id="var-controls">
-  <div class="field"><label for="vq">Search</label><input id="vq" type="search" data-filter="search" placeholder="Variant or effect"></div>
-  <div class="field"><label for="vk">Closes the deficit through</label><select id="vk" data-filter="kind">
-    <option value="">Any means</option><option value="labour">Hours and labour</option>
-    <option value="transport">Deferred maintenance</option><option value="materials">Reduced programme</option>
-    <option value="trade">Import</option></select></div>
-  <div><button class="ghost act" id="var-reset" type="button">Reset</button></div>
-</div>
-<div class="variants" id="var-list">
-  <article data-kind="labour" data-search="Variant A: shorten hours Meets the care deficit by reducing the general ceiling on hours and moving the released labour into residential care. Article 116 governs the rotation of arduous tasks.">
-    <h3>Variant A: shorten hours</h3>
-    <dl>
-      <dt>Care hours met</dt>
-      <dd>100%</dd>
-      <dt>General weekly hours</dt>
-      <dd>-1.5 h</dd>
-      <dt>Materials</dt>
-      <dd>unchanged</dd>
-    </dl>
-    <p class="tail">Meets the care deficit by reducing the general ceiling on hours and moving the released labour into residential care. Article 116 governs the rotation of arduous tasks.</p>
-  </article>
-  <article data-kind="transport" data-search="Variant B: defer overhauls Meets the care deficit from the labour released by deferring rail overhauls. The Commissioner for Future Generations has published an observation on deferred maintenance.">
-    <h3>Variant B: defer overhauls</h3>
-    <dl>
-      <dt>Care hours met</dt>
-      <dd>100%</dd>
-      <dt>Rail availability</dt>
-      <dd>-4%</dd>
-      <dt>Materials</dt>
-      <dd>-2.1%</dd>
-    </dl>
-    <p class="tail">Meets the care deficit from the labour released by deferring rail overhauls. The Commissioner for Future Generations has published an observation on deferred maintenance.</p>
-  </article>
-  <article data-kind="materials" data-search="Variant C: reduce steel programme Closes the steel deficit by reducing the construction programme. The reduction falls on dwellings, which the order of priority ranks above most other uses.">
-    <h3>Variant C: reduce steel programme</h3>
-    <dl>
-      <dt>Steel deficit closed</dt>
-      <dd>yes</dd>
-      <dt>Dwellings</dt>
-      <dd>-3.4 k</dd>
-      <dt>Emissions</dt>
-      <dd>-1.2%</dd>
-    </dl>
-    <p class="tail">Closes the steel deficit by reducing the construction programme. The reduction falls on dwellings, which the order of priority ranks above most other uses.</p>
-  </article>
-  <article data-kind="trade" data-search="Variant D: import against the budget Closes the steel deficit by import. Materials and energy embodied in imports count against the same budget, so the headroom falls by the same quantity.">
-    <h3>Variant D: import against the budget</h3>
-    <dl>
-      <dt>Steel deficit closed</dt>
-      <dd>yes</dd>
-      <dt>Emissions</dt>
-      <dd>+0.9%</dd>
-      <dt>Budget headroom</dt>
-      <dd>-0.9%</dd>
-    </dl>
-    <p class="tail">Closes the steel deficit by import. Materials and energy embodied in imports count against the same budget, so the headroom falls by the same quantity.</p>
-  </article>
-</div>
-<p class="count" id="var-count"></p>
-<p class="empty" id="var-empty" hidden>No variant matches those conditions.</p>
-
-<h2>Assumptions published with each</h2>
-<div class="prose">
-<p>Every variant above is published with the assumptions it rests upon: the rate at which released labour transfers between sectors, the availability consequences of a deferred overhaul, and the emissions factor applied to imported steel. An assumption is a figure this Secretariat has chosen, so each is stated separately from the computation and may be contested on its own.</p>
-<p>Objections to an assumption are answered in writing before a round concludes, as <a href="../../constitution/title-4.html#a97">Article 97</a>(2) requires.</p>
-</div>
-
-<h2>Variants withdrawn</h2>
-<div class="scroller">
-<table class="reg">
-  <caption>Variants prepared and afterwards withdrawn in this cycle.</caption>
-  <thead><tr><th>Variant</th><th>Reason for withdrawal</th></tr></thead>
-  <tbody>
-    <tr><td>Meeting the care deficit by extending shift lengths in residential care</td><td>Withdrawn. Arduous tasks carry a duty of rotation and of reduced exposure, and the variant increased both.</td></tr>
-    <tr><td>Meeting the steel deficit by drawing on the reserve</td><td>Withdrawn. The reserve is fixed by the Congress and this Secretariat prepares no variant that presupposes a decision reserved to another body.</td></tr>
-    <tr><td>Closing the water deficit by raising the abstraction ceiling</td><td>Withdrawn. The ceiling belongs to the Ecological Budget Authority and Article 26(2) voids a plan exceeding it.</td></tr>
-  </tbody>
-</table>
-</div>
-<p class="cite">A withdrawn variant remains published with the reason, so that the record shows what was considered and why it was set aside.</p>
-
-</main>
-
-<footer class="orgfoot">
-  <div class="wrap">
-    <div>
-      <h2>Planning Secretariat</h2>
-      <p><a href="balances.html">Published balances</a></p><p><a href="variants.html">Variants prepared</a></p><p><a href="methods.html">Methods and code</a></p>
-    </div>
-    
-    <div>
-      <h2>Other organs</h2>
-      <p><a href="../planning-congress/">National Planning Congress</a></p><p><a href="../ecological-budget-authority/">Ecological Budget Authority</a></p><p><a href="../assembly/">Assembly of the Republic</a></p><p><a href="../audit-office/">Audit Office</a></p>
-    </div>
-    <div>
-      <h2>Publication</h2>
-      <p class="fine">Published under Articles 14(2), 242 and 314.</p>
-      <p class="fine">Free of charge, without licence, registration or account.</p>
-      <p class="fine">No external resource is loaded by this page.</p>
+  <div class="statebar">
+    <div class="wrap">
+      <a class="rep" href="../../index.html">Republic of Fluid</a>
+      <span class="sep">|</span>
+      <a href="../../constitution/">Constitution</a>
+      <a href="../../register/">Public Register</a>
+      <span class="grow"></span>
+      <a href="../../register/links.html">All Portals</a>
     </div>
   </div>
-</footer>
 
-<script src="../shared/frame.js" defer></script>
-<script src="site.js" defer></script>
+  <header class="orghead">
+    <div class="wrap">
+      <span class="marque"><svg viewBox="0 0 56 56" role="img" aria-label="Emblem of the Planning Secretariat">
+          <rect x="8" y="8" width="40" height="40" fill="none" stroke="#7a5a2f" stroke-width="2.8" />
+          <path d="M8 21 h40 M8 34 h40 M21 8 v40 M34 8 v40" stroke="#7a5a2f" stroke-width="1.6" />
+          <path d="M12 30 L18 24 L24 27 L30 17 L36 21 L44 13" fill="none" stroke="#7a5a2f" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" />
+        </svg></span>
+      <span class="idblock">
+        <p class="kicker">Technical body of the planning procedure</p>
+        <p class="orgname"><a href="index.html">Planning Secretariat</a></p>
+        <p class="basis">Established under Article 96(4) of the Constitution &middot; holds no power of decision</p>
+      </span>
+    </div>
+  </header>
+
+  <nav class="orgnav" aria-label="Sections of this site">
+    <div class="wrap"><a href="index.html">Home</a><a href="balances.html">Balances</a><a href="variants.html">Variants</a><a href="cycle.html">The cycle</a><a href="methods.html">Methods and code</a><a href="statements.html">Statements received</a><a href="limits.html">No power of decision</a></div>
+  </nav>
+
+  <main id="main" class="sheet">
+
+    <h1 class="page-title">Variants</h1>
+    <p class="lede">Each variant closes a deficit and states what closing it costs elsewhere. This Secretariat prepares them and chooses among them in no case.</p>
+
+    <div class="legal">
+      <p><a href="../../constitution/title-4.html#a90">Article 90</a>(4): the variants and the assumptions on which each rests are published.</p>
+      <p><a href="../../constitution/title-4.html#a98">Article 98</a>(3): where the Congress fails to reconcile, it decides by vote of its delegates, publishes the dissenting positions, and states the reasons for the choice made among the variants.</p>
+    </div>
+
+    <div class="controls" id="var-controls">
+      <div class="field"><label for="vq">Search</label><input id="vq" type="search" data-filter="search" placeholder="Variant or effect"></div>
+      <div class="field"><label for="vk">Closes the deficit through</label><select id="vk" data-filter="kind">
+          <option value="">Any means</option>
+          <option value="labour">Hours and labour</option>
+          <option value="transport">Deferred maintenance</option>
+          <option value="materials">Reduced programme</option>
+          <option value="trade">Import</option>
+        </select></div>
+      <div><button class="ghost act" id="var-reset" type="button">Reset</button></div>
+    </div>
+    <div class="variants" id="var-list">
+      <article data-kind="labour" data-search="Variant A: shorten hours Meets the care deficit by reducing the general ceiling on hours and moving the released labour into residential care. Article 116 governs the rotation of arduous tasks.">
+        <h3>Variant A: shorten hours</h3>
+        <dl>
+          <dt>Care hours met</dt>
+          <dd>100%</dd>
+          <dt>General weekly hours</dt>
+          <dd>-1.5 h</dd>
+          <dt>Materials</dt>
+          <dd>unchanged</dd>
+        </dl>
+        <p class="tail">Meets the care deficit by reducing the general ceiling on hours and moving the released labour into residential care. Article 116 governs the rotation of arduous tasks.</p>
+      </article>
+      <article data-kind="transport" data-search="Variant B: defer overhauls Meets the care deficit from the labour released by deferring rail overhauls. The Commissioner for Future Generations has published an observation on deferred maintenance.">
+        <h3>Variant B: defer overhauls</h3>
+        <dl>
+          <dt>Care hours met</dt>
+          <dd>100%</dd>
+          <dt>Rail availability</dt>
+          <dd>-4%</dd>
+          <dt>Materials</dt>
+          <dd>-2.1%</dd>
+        </dl>
+        <p class="tail">Meets the care deficit from the labour released by deferring rail overhauls. The Commissioner for Future Generations has published an observation on deferred maintenance.</p>
+      </article>
+      <article data-kind="materials" data-search="Variant C: reduce steel programme Closes the steel deficit by reducing the construction programme. The reduction falls on dwellings, which the order of priority ranks above most other uses.">
+        <h3>Variant C: reduce steel programme</h3>
+        <dl>
+          <dt>Steel deficit closed</dt>
+          <dd>yes</dd>
+          <dt>Dwellings</dt>
+          <dd>-3.4 k</dd>
+          <dt>Emissions</dt>
+          <dd>-1.2%</dd>
+        </dl>
+        <p class="tail">Closes the steel deficit by reducing the construction programme. The reduction falls on dwellings, which the order of priority ranks above most other uses.</p>
+      </article>
+      <article data-kind="trade" data-search="Variant D: import against the budget Closes the steel deficit by import. Materials and energy embodied in imports count against the same budget, so the headroom falls by the same quantity.">
+        <h3>Variant D: import against the budget</h3>
+        <dl>
+          <dt>Steel deficit closed</dt>
+          <dd>yes</dd>
+          <dt>Emissions</dt>
+          <dd>+0.9%</dd>
+          <dt>Budget headroom</dt>
+          <dd>-0.9%</dd>
+        </dl>
+        <p class="tail">Closes the steel deficit by import. Materials and energy embodied in imports count against the same budget, so the headroom falls by the same quantity.</p>
+      </article>
+    </div>
+    <p class="count" id="var-count"></p>
+    <p class="empty" id="var-empty" hidden>No variant matches those conditions.</p>
+
+    <h2>Assumptions published with each</h2>
+    <div class="prose">
+      <p>Every variant above is published with the assumptions it rests upon: the rate at which released labour transfers between sectors, the availability consequences of a deferred overhaul, and the emissions factor applied to imported steel. An assumption is a figure this Secretariat has chosen, so each is stated separately from the computation and may be contested on its own.</p>
+      <p>Objections to an assumption are answered in writing before a round concludes, as <a href="../../constitution/title-4.html#a97">Article 97</a>(2) requires.</p>
+    </div>
+
+    <h2>Variants withdrawn</h2>
+    <div class="scroller">
+      <table class="reg">
+        <caption>Variants prepared and afterwards withdrawn in this cycle.</caption>
+        <thead>
+          <tr>
+            <th>Variant</th>
+            <th>Reason for withdrawal</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Meeting the care deficit by extending shift lengths in residential care</td>
+            <td>Withdrawn. Arduous tasks carry a duty of rotation and of reduced exposure, and the variant increased both.</td>
+          </tr>
+          <tr>
+            <td>Meeting the steel deficit by drawing on the reserve</td>
+            <td>Withdrawn. The reserve is fixed by the Congress and this Secretariat prepares no variant that presupposes a decision reserved to another body.</td>
+          </tr>
+          <tr>
+            <td>Closing the water deficit by raising the abstraction ceiling</td>
+            <td>Withdrawn. The ceiling belongs to the Ecological Budget Authority and Article 26(2) voids a plan exceeding it.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="cite">A withdrawn variant remains published with the reason, so that the record shows what was considered and why it was set aside.</p>
+
+  </main>
+
+  <footer class="orgfoot">
+    <div class="wrap">
+      <div>
+        <h2>Planning Secretariat</h2>
+        <p><a href="balances.html">Published balances</a></p>
+        <p><a href="variants.html">Variants prepared</a></p>
+        <p><a href="methods.html">Methods and code</a></p>
+      </div>
+
+      <div>
+        <h2>Other organs</h2>
+        <p><a href="../planning-congress/">National Planning Congress</a></p>
+        <p><a href="../ecological-budget-authority/">Ecological Budget Authority</a></p>
+        <p><a href="../assembly/">Assembly of the Republic</a></p>
+        <p><a href="../audit-office/">Audit Office</a></p>
+      </div>
+      <div>
+        <h2>Publication</h2>
+        <p class="fine">Published under Articles 14(2), 242 and 314.</p>
+        <p class="fine">Free of charge, without licence, registration or account.</p>
+        <p class="fine">No external resource is loaded by this page.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../shared/frame.js" defer></script>
+  <script src="site.js" defer></script>
 </body>
 </html>

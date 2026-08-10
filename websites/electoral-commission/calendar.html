@@ -1,170 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Ballots &middot; Electoral Commission</title>
-<meta name="description" content="The office that conducts the elections, referendums, recalls and draws by lot of the Republic, and publishes the record of every operation.">
-<link rel="stylesheet" href="../shared/frame.css">
-<link rel="stylesheet" href="site.css">
-<link rel="icon" href="../../assets/flag.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ballots &middot; Electoral Commission</title>
+  <meta name="description" content="The office that conducts the elections, referendums, recalls and draws by lot of the Republic, and publishes the record of every operation.">
+  <link rel="stylesheet" href="../shared/frame.css">
+  <link rel="stylesheet" href="site.css">
+  <link rel="icon" href="../../assets/flag.png">
 </head>
 <body class="org-electoral-commission">
-<a class="skip" href="#main">Skip to the content</a>
+  <a class="skip" href="#main">Skip to the content</a>
 
-<div class="statebar">
-  <div class="wrap">
-    <a class="rep" href="../../index.html">Republic of Fluid</a>
-    <span class="sep">|</span>
-    <a href="../../constitution/">Constitution</a>
-    <a href="../../register/">Public Register</a>
-    <span class="grow"></span>
-    <a href="../../register/links.html">All Portals</a>
-  </div>
-</div>
-
-<header class="orghead">
-  <div class="wrap">
-    <span class="marque"><svg viewBox="0 0 56 56" role="img" aria-label="Emblem of the Electoral Commission">
-<rect x="6" y="24" width="44" height="26" fill="none" stroke="#2b3f6b" stroke-width="2.6"/>
-<path d="M6 24 L28 12 L50 24" fill="none" stroke="#2b3f6b" stroke-width="2.6" stroke-linejoin="round"/>
-<rect x="20" y="20" width="16" height="9" fill="#ffffff" stroke="#2b3f6b" stroke-width="2"/>
-<path d="M23 24.5 L25.4 27 L33 20.5" fill="none" stroke="#1a6f37" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M14 34h12M14 39h20M14 44h8" stroke="#b9c4dc" stroke-width="2.2" stroke-linecap="round"/>
-</svg></span>
-    <span class="idblock">
-      <p class="kicker">Oversight office of the Republic</p>
-      <p class="orgname"><a href="index.html">Electoral Commission</a></p>
-      <p class="basis">Established under Article 244 of the Constitution &middot; conducts the elections, the referendums and the draws by lot</p>
-    </span>
-  </div>
-</header>
-
-<nav class="orgnav" aria-label="Sections of this site"><div class="wrap"><a href="index.html">Home</a><a href="calendar.html">Ballots</a><a href="lists.html">Lists and candidacies</a><a href="draws.html">Draws by lot</a><a href="boundaries.html">Boundaries</a><a href="electronic.html">Electronic voting</a><a href="disputes.html">Disputes</a></div></nav>
-
-<main id="main" class="sheet">
-
-<h1 class="page-title">Ballots and results</h1>
-<p class="lede">Every ballot the Commission has conducted or has given notice of, with the record of each operation.</p>
-
-<div class="controls" id="ballot-controls">
-  <div class="field"><label for="bq">Search</label><input id="bq" type="search" data-filter="search" placeholder="Sub-region, subject, year"></div>
-  <div class="field"><label for="bl">Level</label><select id="bl" data-filter="level">
-    <option value="">All levels</option><option value="republic">Republic</option>
-    <option value="region">Region</option><option value="subregion">Sub-region</option>
-    <option value="commune">Commune</option></select></div>
-  <div class="field"><label for="bs">Stage</label><select id="bs" data-filter="status">
-    <option value="">All stages</option><option value="notice">Notice published</option>
-    <option value="final">Proclaimed</option></select></div>
-  <div><button class="ghost act" id="ballot-reset" type="button">Reset</button></div>
-</div>
-<div class="scroller">
-<table class="reg" id="ballot-table">
-  <caption>Register of ballots. Columns may be sorted.</caption>
-  <thead><tr><th data-sort="text">Date</th><th data-sort="text">Ballot</th><th data-sort="text">Level</th><th>Stage</th></tr></thead>
-  <tbody id="ballot-rows">
-    <tr data-level="republic" data-status="notice" data-search="4 July 2027 Assembly of the Republic Election of 200 members in 20 sub-regional districts">
-      <td>4 July 2027</td>
-      <td>Assembly of the Republic<p class="cite" style="text-transform:none;letter-spacing:0">Election of 200 members in 20 sub-regional districts</p>
-      </td>
-      <td>Republic</td>
-      <td><span class="tag closed">Notice published</span></td>
-    </tr>
-    <tr data-level="commune" data-status="notice" data-search="15 November 2026 Communal councils, all communes Ordinary renewal, paper and electronic">
-      <td>15 November 2026</td>
-      <td>Communal councils, all communes<p class="cite" style="text-transform:none;letter-spacing:0">Ordinary renewal, paper and electronic</p>
-      </td>
-      <td>Commune</td>
-      <td><span class="tag closed">Notice published</span></td>
-    </tr>
-    <tr data-level="republic" data-status="final" data-search="7 June 2026 Constitutional referendum Approved with 64.1 per cent of votes cast">
-      <td>7 June 2026</td>
-      <td>Constitutional referendum<p class="cite" style="text-transform:none;letter-spacing:0">Approved with 64.1 per cent of votes cast</p>
-      </td>
-      <td>Republic</td>
-      <td><span class="tag open">Proclaimed</span></td>
-    </tr>
-    <tr data-level="subregion" data-status="final" data-search="22 March 2026 Sub-regional council, Cortius By-election following a recall under Article 173">
-      <td>22 March 2026</td>
-      <td>Sub-regional council, Cortius<p class="cite" style="text-transform:none;letter-spacing:0">By-election following a recall under Article 173</p>
-      </td>
-      <td>Subregion</td>
-      <td><span class="tag open">Proclaimed</span></td>
-    </tr>
-    <tr data-level="republic" data-status="final" data-search="21 September 2025 Convention and interim Council Turnout 68.4 per cent, turnout condition disapplied">
-      <td>21 September 2025</td>
-      <td>Convention and interim Council<p class="cite" style="text-transform:none;letter-spacing:0">Turnout 68.4 per cent, turnout condition disapplied</p>
-      </td>
-      <td>Republic</td>
-      <td><span class="tag open">Proclaimed</span></td>
-    </tr>
-    <tr data-level="commune" data-status="final" data-search="18 May 2025 Communal initiative, Ferrista Rejection of a quarry extension, 71.2 per cent against">
-      <td>18 May 2025</td>
-      <td>Communal initiative, Ferrista<p class="cite" style="text-transform:none;letter-spacing:0">Rejection of a quarry extension, 71.2 per cent against</p>
-      </td>
-      <td>Commune</td>
-      <td><span class="tag open">Proclaimed</span></td>
-    </tr>
-    <tr data-level="region" data-status="final" data-search="6 October 2024 Regional council, Eastern Region Ordinary renewal under the repealed text">
-      <td>6 October 2024</td>
-      <td>Regional council, Eastern Region<p class="cite" style="text-transform:none;letter-spacing:0">Ordinary renewal under the repealed text</p>
-      </td>
-      <td>Region</td>
-      <td><span class="tag open">Proclaimed</span></td>
-    </tr>
-  </tbody>
-</table>
-</div>
-<p class="count" id="ballot-count"></p>
-<p class="empty" id="ballot-empty" hidden>No ballot matches those conditions.</p>
-
-<h2>How a national ballot is conducted</h2>
-<div class="legal">
-  <p><a href="../../constitution/title-9.html#a245">Article 245</a>(1): elections to the Assembly, referendums of the Republic and recalls under <a href="../../constitution/title-5.html#a128">Article 128</a> are conducted by paper ballot, counted by hand, in public, in the place where the votes were cast. The count of each polling station is published before the ballots leave it.</p>
-  <p><a href="../../constitution/title-9.html#a245">Article 245</a>(2): a vote in such a procedure may in no case be cast, recorded, stored or counted by electronic means. Machines may add up station results already published on paper, and the addition stays reproducible by hand.</p>
-</div>
-
-<h2>What each station publishes</h2>
-<div class="prose">
-<p>A station posts its count on the door of the room, in figures written by the hand of the presiding clerk, signed by the clerk and by any observer who wishes to sign. The same sheet is photographed and published here within the hour. The papers themselves stay in the room until the posted sheet has been read aloud.</p>
-<p>Publication is required of the list, the station results, the aggregation and the computation to be published in open form, and the computation of <a href="../../constitution/title-5.html#a120">Article 120</a>(2) to be reproducible by any person.</p>
-</div>
-
-<h2>Result of the referendum of 7 June 2026</h2>
-<div class="scroller">
-<table class="reg">
-  <caption>Constitution of the Republic of Fluid, approval of the draft adopted by the Convention on 12 April 2026.</caption>
-  <thead><tr><th>Question</th><th>For</th><th>Against</th><th>Stations</th></tr></thead>
-  <tbody>
-    <tr><td>Approval of the draft Constitution</td><td>64.1%</td><td>35.9%</td><td>11,486</td></tr>
-  </tbody>
-</table>
-</div>
-<p class="cite">No turnout condition applied. Two stations recounted on the application of observers, with no change to the result. Proclaimed 10 June 2026.</p>
-
-</main>
-
-<footer class="orgfoot">
-  <div class="wrap">
-    <div>
-      <h2>Electoral Commission</h2>
-      <p><a href="calendar.html">Ballots and results</a></p><p><a href="draws.html">Register of draws</a></p><p><a href="disputes.html">Bring a dispute</a></p>
-    </div>
-    
-    <div>
-      <h2>Other organs</h2>
-      <p><a href="../audit-office/">Audit Office</a></p><p><a href="../defender-of-rights/">Defender of Rights</a></p><p><a href="../future-generations/">Commissioner for Future Generations</a></p><p><a href="../democratic-integrity/">Office of Democratic Integrity</a></p>
-    </div>
-    <div>
-      <h2>Publication</h2>
-      <p class="fine">Published under Articles 14(2), 242 and 314.</p>
-      <p class="fine">Free of charge, without licence, registration or account.</p>
-      <p class="fine">No external resource is loaded by this page.</p>
+  <div class="statebar">
+    <div class="wrap">
+      <a class="rep" href="../../index.html">Republic of Fluid</a>
+      <span class="sep">|</span>
+      <a href="../../constitution/">Constitution</a>
+      <a href="../../register/">Public Register</a>
+      <span class="grow"></span>
+      <a href="../../register/links.html">All Portals</a>
     </div>
   </div>
-</footer>
 
-<script src="../shared/frame.js" defer></script>
-<script src="site.js" defer></script>
+  <header class="orghead">
+    <div class="wrap">
+      <span class="marque"><svg viewBox="0 0 56 56" role="img" aria-label="Emblem of the Electoral Commission">
+          <rect x="6" y="24" width="44" height="26" fill="none" stroke="#2b3f6b" stroke-width="2.6" />
+          <path d="M6 24 L28 12 L50 24" fill="none" stroke="#2b3f6b" stroke-width="2.6" stroke-linejoin="round" />
+          <rect x="20" y="20" width="16" height="9" fill="#ffffff" stroke="#2b3f6b" stroke-width="2" />
+          <path d="M23 24.5 L25.4 27 L33 20.5" fill="none" stroke="#1a6f37" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M14 34h12M14 39h20M14 44h8" stroke="#b9c4dc" stroke-width="2.2" stroke-linecap="round" />
+        </svg></span>
+      <span class="idblock">
+        <p class="kicker">Oversight office of the Republic</p>
+        <p class="orgname"><a href="index.html">Electoral Commission</a></p>
+        <p class="basis">Established under Article 244 of the Constitution &middot; conducts the elections, the referendums and the draws by lot</p>
+      </span>
+    </div>
+  </header>
+
+  <nav class="orgnav" aria-label="Sections of this site">
+    <div class="wrap"><a href="index.html">Home</a><a href="calendar.html">Ballots</a><a href="lists.html">Lists and candidacies</a><a href="draws.html">Draws by lot</a><a href="boundaries.html">Boundaries</a><a href="electronic.html">Electronic voting</a><a href="disputes.html">Disputes</a></div>
+  </nav>
+
+  <main id="main" class="sheet">
+
+    <h1 class="page-title">Ballots and results</h1>
+    <p class="lede">Every ballot the Commission has conducted or has given notice of, with the record of each operation.</p>
+
+    <div class="controls" id="ballot-controls">
+      <div class="field"><label for="bq">Search</label><input id="bq" type="search" data-filter="search" placeholder="Sub-region, subject, year"></div>
+      <div class="field"><label for="bl">Level</label><select id="bl" data-filter="level">
+          <option value="">All levels</option>
+          <option value="republic">Republic</option>
+          <option value="region">Region</option>
+          <option value="subregion">Sub-region</option>
+          <option value="commune">Commune</option>
+        </select></div>
+      <div class="field"><label for="bs">Stage</label><select id="bs" data-filter="status">
+          <option value="">All stages</option>
+          <option value="notice">Notice published</option>
+          <option value="final">Proclaimed</option>
+        </select></div>
+      <div><button class="ghost act" id="ballot-reset" type="button">Reset</button></div>
+    </div>
+    <div class="scroller">
+      <table class="reg" id="ballot-table">
+        <caption>Register of ballots. Columns may be sorted.</caption>
+        <thead>
+          <tr>
+            <th data-sort="text">Date</th>
+            <th data-sort="text">Ballot</th>
+            <th data-sort="text">Level</th>
+            <th>Stage</th>
+          </tr>
+        </thead>
+        <tbody id="ballot-rows">
+          <tr data-level="republic" data-status="notice" data-search="4 July 2027 Assembly of the Republic Election of 200 members in 20 sub-regional districts">
+            <td>4 July 2027</td>
+            <td>Assembly of the Republic<p class="cite" style="text-transform:none;letter-spacing:0">Election of 200 members in 20 sub-regional districts</p>
+            </td>
+            <td>Republic</td>
+            <td><span class="tag closed">Notice published</span></td>
+          </tr>
+          <tr data-level="commune" data-status="notice" data-search="15 November 2026 Communal councils, all communes Ordinary renewal, paper and electronic">
+            <td>15 November 2026</td>
+            <td>Communal councils, all communes<p class="cite" style="text-transform:none;letter-spacing:0">Ordinary renewal, paper and electronic</p>
+            </td>
+            <td>Commune</td>
+            <td><span class="tag closed">Notice published</span></td>
+          </tr>
+          <tr data-level="republic" data-status="final" data-search="7 June 2026 Constitutional referendum Approved with 64.1 per cent of votes cast">
+            <td>7 June 2026</td>
+            <td>Constitutional referendum<p class="cite" style="text-transform:none;letter-spacing:0">Approved with 64.1 per cent of votes cast</p>
+            </td>
+            <td>Republic</td>
+            <td><span class="tag open">Proclaimed</span></td>
+          </tr>
+          <tr data-level="subregion" data-status="final" data-search="22 March 2026 Sub-regional council, Cortius By-election following a recall under Article 173">
+            <td>22 March 2026</td>
+            <td>Sub-regional council, Cortius<p class="cite" style="text-transform:none;letter-spacing:0">By-election following a recall under Article 173</p>
+            </td>
+            <td>Subregion</td>
+            <td><span class="tag open">Proclaimed</span></td>
+          </tr>
+          <tr data-level="republic" data-status="final" data-search="21 September 2025 Convention and interim Council Turnout 68.4 per cent, turnout condition disapplied">
+            <td>21 September 2025</td>
+            <td>Convention and interim Council<p class="cite" style="text-transform:none;letter-spacing:0">Turnout 68.4 per cent, turnout condition disapplied</p>
+            </td>
+            <td>Republic</td>
+            <td><span class="tag open">Proclaimed</span></td>
+          </tr>
+          <tr data-level="commune" data-status="final" data-search="18 May 2025 Communal initiative, Ferrista Rejection of a quarry extension, 71.2 per cent against">
+            <td>18 May 2025</td>
+            <td>Communal initiative, Ferrista<p class="cite" style="text-transform:none;letter-spacing:0">Rejection of a quarry extension, 71.2 per cent against</p>
+            </td>
+            <td>Commune</td>
+            <td><span class="tag open">Proclaimed</span></td>
+          </tr>
+          <tr data-level="region" data-status="final" data-search="6 October 2024 Regional council, Eastern Region Ordinary renewal under the repealed text">
+            <td>6 October 2024</td>
+            <td>Regional council, Eastern Region<p class="cite" style="text-transform:none;letter-spacing:0">Ordinary renewal under the repealed text</p>
+            </td>
+            <td>Region</td>
+            <td><span class="tag open">Proclaimed</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="count" id="ballot-count"></p>
+    <p class="empty" id="ballot-empty" hidden>No ballot matches those conditions.</p>
+
+    <h2>How a national ballot is conducted</h2>
+    <div class="legal">
+      <p><a href="../../constitution/title-9.html#a245">Article 245</a>(1): elections to the Assembly, referendums of the Republic and recalls under <a href="../../constitution/title-5.html#a128">Article 128</a> are conducted by paper ballot, counted by hand, in public, in the place where the votes were cast. The count of each polling station is published before the ballots leave it.</p>
+      <p><a href="../../constitution/title-9.html#a245">Article 245</a>(2): a vote in such a procedure may in no case be cast, recorded, stored or counted by electronic means. Machines may add up station results already published on paper, and the addition stays reproducible by hand.</p>
+    </div>
+
+    <h2>What each station publishes</h2>
+    <div class="prose">
+      <p>A station posts its count on the door of the room, in figures written by the hand of the presiding clerk, signed by the clerk and by any observer who wishes to sign. The same sheet is photographed and published here within the hour. The papers themselves stay in the room until the posted sheet has been read aloud.</p>
+      <p>Publication is required of the list, the station results, the aggregation and the computation to be published in open form, and the computation of <a href="../../constitution/title-5.html#a120">Article 120</a>(2) to be reproducible by any person.</p>
+    </div>
+
+    <h2>Result of the referendum of 7 June 2026</h2>
+    <div class="scroller">
+      <table class="reg">
+        <caption>Constitution of the Republic of Fluid, approval of the draft adopted by the Convention on 12 April 2026.</caption>
+        <thead>
+          <tr>
+            <th>Question</th>
+            <th>For</th>
+            <th>Against</th>
+            <th>Stations</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Approval of the draft Constitution</td>
+            <td>64.1%</td>
+            <td>35.9%</td>
+            <td>11,486</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="cite">No turnout condition applied. Two stations recounted on the application of observers, with no change to the result. Proclaimed 10 June 2026.</p>
+
+  </main>
+
+  <footer class="orgfoot">
+    <div class="wrap">
+      <div>
+        <h2>Electoral Commission</h2>
+        <p><a href="calendar.html">Ballots and results</a></p>
+        <p><a href="draws.html">Register of draws</a></p>
+        <p><a href="disputes.html">Bring a dispute</a></p>
+      </div>
+
+      <div>
+        <h2>Other organs</h2>
+        <p><a href="../audit-office/">Audit Office</a></p>
+        <p><a href="../defender-of-rights/">Defender of Rights</a></p>
+        <p><a href="../future-generations/">Commissioner for Future Generations</a></p>
+        <p><a href="../democratic-integrity/">Office of Democratic Integrity</a></p>
+      </div>
+      <div>
+        <h2>Publication</h2>
+        <p class="fine">Published under Articles 14(2), 242 and 314.</p>
+        <p class="fine">Free of charge, without licence, registration or account.</p>
+        <p class="fine">No external resource is loaded by this page.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../shared/frame.js" defer></script>
+  <script src="site.js" defer></script>
 </body>
 </html>

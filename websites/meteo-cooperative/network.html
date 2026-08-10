@@ -1,308 +1,646 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>The observing network - Meteorological Cooperative</title>
-<meta name="description" content="The stations of the Republic of Fluid: surface, upper air, radar, seismic, river, tide, soil moisture, slope and flux instruments, with the gaps in coverage stated.">
-<link rel="stylesheet" href="site.css">
-<link rel="icon" href="../../assets/flag.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The observing network - Meteorological Cooperative</title>
+  <meta name="description" content="The stations of the Republic of Fluid: surface, upper air, radar, seismic, river, tide, soil moisture, slope and flux instruments, with the gaps in coverage stated.">
+  <link rel="stylesheet" href="site.css">
+  <link rel="icon" href="../../assets/flag.png">
 </head>
 <body>
 
-<header class="masthead">
-  <div class="wrap">
-    <span class="marque"><svg viewBox="0 0 58 58" role="img" aria-label="Emblem of the Meteorological Cooperative">
-<circle cx="29" cy="31" r="20" fill="none" stroke="#9a6516" stroke-width="2.4"/>
-<circle cx="29" cy="31" r="12.5" fill="none" stroke="#9a6516" stroke-width="1.6"/>
-<circle cx="29" cy="31" r="5" fill="none" stroke="#9a6516" stroke-width="1.6"/>
-<path d="M29 31 L29 9" stroke="#5f3d0c" stroke-width="2.4" stroke-linecap="round"/>
-<path d="M29 12 L38 15" stroke="#5f3d0c" stroke-width="2.4" stroke-linecap="round"/>
-<path d="M29 18 L36 20.5" stroke="#5f3d0c" stroke-width="2.4" stroke-linecap="round"/>
-<circle cx="29" cy="31" r="2" fill="#5f3d0c"/>
-</svg></span>
-    <span class="idblock">
-      <p class="coopname"><a href="index.html">Meteorological Cooperative of the Republic</a></p>
-      <p class="basis">Weather, climate, seismicity, landslide and flood &middot; mandate held under the organic law on observation and warning</p>
-    </span>
-  </div>
-</header>
+  <header class="masthead">
+    <div class="wrap">
+      <span class="marque"><svg viewBox="0 0 58 58" role="img" aria-label="Emblem of the Meteorological Cooperative">
+          <circle cx="29" cy="31" r="20" fill="none" stroke="#9a6516" stroke-width="2.4" />
+          <circle cx="29" cy="31" r="12.5" fill="none" stroke="#9a6516" stroke-width="1.6" />
+          <circle cx="29" cy="31" r="5" fill="none" stroke="#9a6516" stroke-width="1.6" />
+          <path d="M29 31 L29 9" stroke="#5f3d0c" stroke-width="2.4" stroke-linecap="round" />
+          <path d="M29 12 L38 15" stroke="#5f3d0c" stroke-width="2.4" stroke-linecap="round" />
+          <path d="M29 18 L36 20.5" stroke="#5f3d0c" stroke-width="2.4" stroke-linecap="round" />
+          <circle cx="29" cy="31" r="2" fill="#5f3d0c" />
+        </svg></span>
+      <span class="idblock">
+        <p class="coopname"><a href="index.html">Meteorological Cooperative of the Republic</a></p>
+        <p class="basis">Weather, climate, seismicity, landslide and flood &middot; mandate held under the organic law on observation and warning</p>
+      </span>
+    </div>
+  </header>
 
-<nav class="mainnav" aria-label="Sections of this site">
-  <div class="wrap">
-    <a class="navtop" href="index.html">Home</a>
-    <details class="grp">
-      <summary>Weather and climate</summary>
-      <ul>
-        <li><a href="climate.html">Climate of the Republic</a></li>
-        <li><a href="change.html">Observed change</a></li>
-        <li><a href="forecasting.html">How a forecast is made</a></li>
-        <li class="has"><details class="sub">
-          <summary><a href="emissions.html">Emissions position</a></summary>
-          <ul>
-            <li><a href="periphery.html">Harm to the periphery</a></li>
-          </ul>
-        </details></li>
-      </ul>
-    </details>
-    <details class="grp">
-      <summary>Warning systems</summary>
-      <ul>
-        <li><a href="rationale.html">Why these systems exist</a></li>
-        <li><a href="seismicity.html">Seismicity of the Republic</a></li>
-        <li class="has"><details class="sub">
-          <summary><a href="kjs.html">REP-KJS, earthquake</a></summary>
-          <ul>
-            <li><a href="scale.html">REP intensity scale</a></li>
-            <li><a href="kjs-method.html">Detection, latency and limits</a></li>
-          </ul>
-        </details></li>
-        <li><a href="lew.html">REP-LEW, landslide</a></li>
-        <li><a href="few.html">REP-FEW, flood</a></li>
-        <li><a href="devices.html">Certified devices and RQUAK</a></li>
-      </ul>
-    </details>
-    <a class="navtop" href="species.html">Species catalogue</a>
-    <a class="navtop" href="network.html">Observing network</a>
-    <details class="grp">
-      <summary>Developers</summary>
-      <ul>
-        <li><a href="dev/index.html">Specifications and source</a></li>
-        <li><a href="dev/wire-format.html">Warning wire format</a></li>
-        <li><a href="dev/vectors.html">Conformance test vectors</a></li>
-        <li><a href="dev/hardware.html">Sensor and station hardware</a></li>
-        <li><a href="dev/forking.html">Porting to another country</a></li>
-      </ul>
-    </details>
-    <a class="navtop" href="about.html">About the cooperative</a>
-  </div>
-</nav>
-
-<main id="main" class="sheet">
-<p class="crumb"><a href="index.html">Meteorological Cooperative</a> &rsaquo; Observing network</p>
-<h1 class="page-title">The observing network</h1>
-<p class="lede">Every figure the cooperative publishes originates at a station. The network has 2,410 reporting instruments across twelve classes, from the surface synoptic stations that have reported since 1901 to the slope extensometers installed for REP-LEW in 2024. The principal stations are listed below with what each measures and how often it reports.</p>
-
-<div class="facts">
-  <div class="row"><span class="k">Reporting instruments</span><span class="v">2,410 across twelve classes</span></div>
-  <div class="row"><span class="k">Longest continuous record</span><span class="v">Lindoma surface station, since 1901</span></div>
-  <div class="row"><span class="k">Seismic stations</span><span class="v">86 broadband, 210 strong motion, densest on the Belvacius margin</span></div>
-  <div class="row"><span class="k">Radar</span><span class="v">Four sites; coverage gaps stated below</span></div>
-  <div class="row"><span class="k">Archive</span><span class="v">Every observation retained, including those rejected by quality control</span></div>
-  <div class="row"><span class="k">Access</span><span class="v">Free of charge, without registration; the same feed the cooperative uses internally</span></div>
-</div>
-
-<h2>Classes of station</h2>
-<div class="tablewrap">
-<table class="data">
-<caption>The network by class</caption>
-<thead>
-<tr><th>Class</th><th class="num">Count</th><th class="num">Reports</th><th>Feeds</th></tr>
-</thead>
-<tbody>
-<tr><td>Surface synoptic</td><td class="num">148</td><td class="num">Every 10 min</td><td>Forecast, climate record, verification</td></tr>
-<tr><td>Automatic rainfall</td><td class="num">1,347</td><td class="num">Every 10 min</td><td>REP-FEW, REP-LEW, climate record</td></tr>
-<tr><td>Upper air</td><td class="num">3</td><td class="num">Twice daily</td><td>Assimilation</td></tr>
-<tr><td>Weather radar</td><td class="num">4</td><td class="num">Every 5 min</td><td>Nowcast, REP-FEW flash limb</td></tr>
-<tr><td>Broadband seismic</td><td class="num">86</td><td class="num">Continuous</td><td>REP-KJS, the catalogue</td></tr>
-<tr><td>Strong motion</td><td class="num">210</td><td class="num">Continuous</td><td>REP-KJS intensity, hazard maps</td></tr>
-<tr><td>River stage</td><td class="num">312</td><td class="num">Every 15 min</td><td>REP-FEW riverine limb</td></tr>
-<tr><td>Tide gauge</td><td class="num">9</td><td class="num">Every minute</td><td>REP-FEW surge limb, sea level record</td></tr>
-<tr><td>Soil moisture</td><td class="num">41</td><td class="num">Every 15 min</td><td>REP-LEW, REP-FEW, drought assessment</td></tr>
-<tr><td>Slope monitoring</td><td class="num">214</td><td class="num">5 min to hourly</td><td>REP-LEW probing limb</td></tr>
-<tr><td>Flux and concentration</td><td class="num">10</td><td class="num">Continuous</td><td>Emissions inventory, sink measurement</td></tr>
-<tr><td>Coastal monitoring</td><td class="num">26</td><td class="num">Daily</td><td>Water quality, salinity, sediment, sea level record</td></tr>
-</tbody>
-</table>
-</div>
-
-<h2>Principal stations</h2>
-<div class="prose">
-<p>The table lists the stations of record. Smaller automatic instruments, of which there are some two thousand, appear in the published dataset with the same fields.</p>
-</div>
-
-<div class="filters">
-  <div class="field">
-    <label for="q">Search</label>
-    <input type="search" id="q" data-filter="search" placeholder="Station, sub-region or measure">
-  </div>
-  <div class="field">
-    <label for="cls">Class</label>
-    <select id="cls" data-filter="class">
-      <option value="">All classes</option>
-      <option value="surface">Surface synoptic</option>
-      <option value="upper">Upper air</option>
-      <option value="radar">Weather radar</option>
-      <option value="seismic">Seismic</option>
-      <option value="river">River stage</option>
-      <option value="tide">Tide gauge</option>
-      <option value="slope">Slope monitoring</option>
-      <option value="flux">Flux and concentration</option>
-      <option value="coastal">Coastal monitoring</option>
-    </select>
-  </div>
-  <div class="field">
-    <label for="reg">Region</label>
-    <select id="reg" data-filter="region">
-      <option value="">Both regions</option>
-      <option value="west">Western</option>
-      <option value="east">Eastern</option>
-    </select>
-  </div>
-  <button type="button" id="reset">Reset</button>
-</div>
-<p class="count" id="count" aria-live="polite">38 stations</p>
-
-<div class="tablewrap">
-<table class="data" id="stations">
-<caption>Principal stations of the network</caption>
-<thead>
-<tr>
-<th data-sort="text">Station</th>
-<th data-sort="text">Sub-region</th>
-<th data-sort="text">Class</th>
-<th>Measures</th>
-<th data-sort="text">Reports</th>
-<th data-sort="number">Since</th>
-</tr>
-</thead>
-<tbody>
-<tr data-class="surface" data-region="west" data-search="lindoma surface synoptic capital port"><td>Lindoma</td><td>Lindoma</td><td>Surface synoptic</td><td>Pressure, temperature, humidity, wind, rainfall, sunshine, visibility</td><td class="num">10 min</td><td class="num">1901</td></tr>
-<tr data-class="upper" data-region="west" data-search="lindoma upper air radiosonde"><td>Lindoma upper air</td><td>Lindoma</td><td>Upper air</td><td>Radiosonde profile to 25 km</td><td class="num">Twice daily</td><td class="num">1948</td></tr>
-<tr data-class="radar" data-region="west" data-search="sederna radar western"><td>Sederna radar</td><td>Lindoma</td><td>Weather radar</td><td>Reflectivity and doppler wind, 240 km range</td><td class="num">5 min</td><td class="num">1994</td></tr>
-<tr data-class="tide" data-region="west" data-search="lindoma tide gauge sea level harbour"><td>Lindoma harbour</td><td>Lindoma</td><td>Tide gauge</td><td>Sea level, surge residual</td><td class="num">1 min</td><td class="num">1912</td></tr>
-<tr data-class="surface" data-region="west" data-search="torvena kelvaqui moor peat rainfall"><td>Torvena</td><td>Kelvaqui</td><td>Surface synoptic</td><td>Full synoptic suite; the wettest station of record</td><td class="num">10 min</td><td class="num">1923</td></tr>
-<tr data-class="flux" data-region="west" data-search="kelvaqui moor peat flux tower carbon"><td>Kelvaqui moor</td><td>Kelvaqui</td><td>Flux tower</td><td>Carbon dioxide and methane exchange over blanket peat</td><td class="num">Continuous</td><td class="num">2003</td></tr>
-<tr data-class="tide" data-region="west" data-search="merrisoma tide gauge bay marsh surge"><td>Merrisoma bay</td><td>Merrisoma</td><td>Tide gauge</td><td>Sea level; the most surge-exposed gauge in the Republic</td><td class="num">1 min</td><td class="num">1931</td></tr>
-<tr data-class="surface" data-region="west" data-search="maravel headland wind gust coastal"><td>Maravel headland</td><td>Merrisoma</td><td>Surface synoptic</td><td>Full suite; holds the gust record of 47 m/s from 1962</td><td class="num">10 min</td><td class="num">1919</td></tr>
-<tr data-class="coastal" data-region="west" data-search="merrisoma marsh monitoring intertidal birds"><td>Merrisoma marsh</td><td>Merrisoma</td><td>Coastal monitoring</td><td>Water quality, salinity, sediment, wintering bird counts</td><td class="num">Daily</td><td class="num">1977</td></tr>
-<tr data-class="surface" data-region="west" data-search="calmena tessilius river valley terrace"><td>Calmena</td><td>Tessilius</td><td>Surface synoptic</td><td>Full suite</td><td class="num">10 min</td><td class="num">1928</td></tr>
-<tr data-class="river" data-region="west" data-search="calmena river stage tessilius gauge"><td>Calmena weir</td><td>Tessilius</td><td>River stage</td><td>Stage and discharge</td><td class="num">15 min</td><td class="num">1954</td></tr>
-<tr data-class="surface" data-region="west" data-search="ferrista vandorum upland snow forest"><td>Ferrista</td><td>Vandorum</td><td>Surface synoptic</td><td>Full suite, snow depth, soil temperature</td><td class="num">10 min</td><td class="num">1908</td></tr>
-<tr data-class="upper" data-region="west" data-search="ferrista upper air radiosonde upland"><td>Ferrista upper air</td><td>Vandorum</td><td>Upper air</td><td>Radiosonde profile to 25 km</td><td class="num">Twice daily</td><td class="num">1961</td></tr>
-<tr data-class="slope" data-region="west" data-search="vandorum slope inclinometer landslide felling"><td>Vandorum east face</td><td>Vandorum</td><td>Slope monitoring</td><td>Inclinometer, piezometer, extensometer; the 1954 slide scar</td><td class="num">5 min</td><td class="num">2024</td></tr>
-<tr data-class="seismic" data-region="west" data-search="ferrista seismic broadband induced mining"><td>Ferrista mine</td><td>Vandorum</td><td>Broadband seismic</td><td>Three-component velocity; identifies induced events at the workings</td><td class="num">Continuous</td><td class="num">1971</td></tr>
-<tr data-class="surface" data-region="west" data-search="ossira corvaluri border iosmein"><td>Ossira</td><td>Corvaluri</td><td>Surface synoptic</td><td>Full suite</td><td class="num">10 min</td><td class="num">1936</td></tr>
-<tr data-class="surface" data-region="west" data-search="durorilaqui arable plain soil loam"><td>Durorilaqui</td><td>Durorilaqui</td><td>Surface synoptic</td><td>Full suite, soil moisture at four depths, evapotranspiration</td><td class="num">10 min</td><td class="num">1905</td></tr>
-<tr data-class="flux" data-region="west" data-search="durorilaqui flux tower arable agriculture"><td>Durorilaqui plain</td><td>Durorilaqui</td><td>Flux tower</td><td>Carbon and nitrous oxide exchange over arable ground</td><td class="num">Continuous</td><td class="num">2008</td></tr>
-<tr data-class="surface" data-region="west" data-search="venasca ombraqui orchard vine warmest sunniest"><td>Venasca</td><td>Ombraqui</td><td>Surface synoptic</td><td>Full suite; the warmest and sunniest station of record</td><td class="num">10 min</td><td class="num">1911</td></tr>
-<tr data-class="surface" data-region="west" data-search="sarnova aspreduson southern border closed frontier"><td>Sarnova</td><td>Aspreduson</td><td>Surface synoptic</td><td>Full suite</td><td class="num">10 min</td><td class="num">1940</td></tr>
-<tr data-class="surface" data-region="east" data-search="leriduson north eastern coast harbour"><td>Leriduson</td><td>Leriduson</td><td>Surface synoptic</td><td>Full suite</td><td class="num">10 min</td><td class="num">1907</td></tr>
-<tr data-class="radar" data-region="east" data-search="leriduson radar north east"><td>Leriduson radar</td><td>Leriduson</td><td>Weather radar</td><td>Reflectivity and doppler wind, 240 km range</td><td class="num">5 min</td><td class="num">1998</td></tr>
-<tr data-class="surface" data-region="east" data-search="prevessa anselaqui mixed farming"><td>Prevessa</td><td>Anselaqui</td><td>Surface synoptic</td><td>Full suite</td><td class="num">10 min</td><td class="num">1933</td></tr>
-<tr data-class="river" data-region="east" data-search="ilvara divide reservoir thurioma watershed"><td>Ilvara reservoirs</td><td>Thurioma</td><td>River stage</td><td>Stage, discharge and reservoir level on both sides of the divide</td><td class="num">15 min</td><td class="num">1962</td></tr>
-<tr data-class="seismic" data-region="east" data-search="ilvara seismic reservoir induced"><td>Ilvara</td><td>Thurioma</td><td>Broadband seismic</td><td>Three-component velocity; monitors reservoir-induced events</td><td class="num">Continuous</td><td class="num">1978</td></tr>
-<tr data-class="surface" data-region="east" data-search="solvena quintorum basin drought grain driest"><td>Solvena</td><td>Quintorum</td><td>Surface synoptic</td><td>Full suite, soil moisture, evapotranspiration; the driest station of record</td><td class="num">10 min</td><td class="num">1904</td></tr>
-<tr data-class="upper" data-region="east" data-search="solvena upper air radiosonde interior"><td>Solvena upper air</td><td>Quintorum</td><td>Upper air</td><td>Radiosonde profile to 25 km</td><td class="num">Twice daily</td><td class="num">1955</td></tr>
-<tr data-class="coastal" data-region="east" data-search="marendo lagoon ravelluri coastal monitoring seagrass"><td>Marendo coastal</td><td>Ravelluri</td><td>Coastal monitoring</td><td>Lagoon temperature, salinity, oxygen, seagrass and weed survey, dune crest</td><td class="num">Continuous</td><td class="num">1969</td></tr>
-<tr data-class="tide" data-region="east" data-search="marendo tide gauge sea level retreat"><td>Marendo</td><td>Ravelluri</td><td>Tide gauge</td><td>Sea level; 3.9 mm a year over the last three decades</td><td class="num">1 min</td><td class="num">1948</td></tr>
-<tr data-class="river" data-region="east" data-search="tavrino marnaqui river chemical works monitoring"><td>Tavrino reach</td><td>Marnaqui</td><td>River stage</td><td>Stage, discharge and continuous water quality below the chemical works</td><td class="num">15 min</td><td class="num">1966</td></tr>
-<tr data-class="surface" data-region="east" data-search="cortius eastern seaboard cliff harbour"><td>Cortius</td><td>Cortius</td><td>Surface synoptic</td><td>Full suite</td><td class="num">10 min</td><td class="num">1902</td></tr>
-<tr data-class="radar" data-region="east" data-search="cortius radar eastern seaboard"><td>Cortius radar</td><td>Cortius</td><td>Weather radar</td><td>Reflectivity and doppler wind, 240 km range</td><td class="num">5 min</td><td class="num">1991</td></tr>
-<tr data-class="slope" data-region="east" data-search="cortius cliff undercutting coastal slope"><td>Cortius cliff</td><td>Cortius</td><td>Slope monitoring</td><td>Extensometer and tilt on the undercut cliff above the harbour</td><td class="num">5 min</td><td class="num">2024</td></tr>
-<tr data-class="seismic" data-region="east" data-search="corcina belvacius seismic margin strong motion"><td>Corcina</td><td>Belvacius</td><td>Broadband seismic</td><td>Three-component velocity and strong motion; the reference station of the margin</td><td class="num">Continuous</td><td class="num">1962</td></tr>
-<tr data-class="surface" data-region="east" data-search="belvacius ridge wind resource corcina"><td>Belvacius ridge</td><td>Belvacius</td><td>Surface synoptic</td><td>Full suite, wind at 10 m and 100 m</td><td class="num">10 min</td><td class="num">1996</td></tr>
-<tr data-class="radar" data-region="east" data-search="sornorum radar southern crossroads flood"><td>Sornorum radar</td><td>Sornorum</td><td>Weather radar</td><td>Reflectivity and doppler wind, 240 km range; installed after the 2017 floods</td><td class="num">5 min</td><td class="num">2019</td></tr>
-<tr data-class="river" data-region="east" data-search="sornorum river stage flood 2017 urban drainage"><td>Sornorum town</td><td>Sornorum</td><td>River stage</td><td>Stage on three watercourses and surcharge in the urban drainage</td><td class="num">15 min</td><td class="num">2019</td></tr>
-<tr data-class="tide" data-region="east" data-search="lutoliluri tide gauge southern port"><td>Lutoliluri</td><td>Sornorum</td><td>Tide gauge</td><td>Sea level, surge residual</td><td class="num">1 min</td><td class="num">1938</td></tr>
-</tbody>
-</table>
-</div>
-<p id="empty" hidden class="note">No station matches those filters.</p>
-
-<h2>Gaps in coverage</h2>
-<div class="box limit">
-<span class="lbl">Where coverage is thin</span>
-<p>Four radar sites leave three areas with coarse rainfall detail: the interior of Halvorum, western Aspreduson, and the upper Vandorum valleys. Flash flood warning in those places depends on rain gauges reporting rain that has already fallen, which shortens the notice available.</p>
-<p>Roughly 3,400 km of watercourse is ungauged, mostly small upland streams. Stage there is inferred from the catchment model with no observation to correct it.</p>
-<p>Seismic station spacing is 12 km on the Belvacius margin and 60 km in the western sub-regions. Detection of a western event is therefore slower, which matters little, since the western sub-regions produce almost no seismicity.</p>
-<p>Two upper-air stations were closed in the 1990s, at Maravel and Cortius, and the record from both ends at that point. Proposals to reopen the Cortius station appear in each of the last three plan rounds.</p>
-</div>
-
-<h2>The archive</h2>
-<div class="prose">
-<p>Every observation is retained, including observations rejected by quality control, since a rejection is itself a datum about the station. Metadata for every station records each move, screen change and instrument change, so a user may reconstruct the correction applied to any series and work from the raw values where the correction is disputed.</p>
-<p>The whole archive is published without charge and without registration. It is the same feed the cooperative uses internally, in the same format, with no reduced public version.</p>
-</div>
-
-<h2>See also</h2>
-<div class="prose">
-<ul>
-<li><a href="forecasting.html">How a forecast is made</a>, which uses these observations</li>
-<li><a href="kjs-method.html">Detection, latency and limits</a>, on station spacing and detection time</li>
-<li><a href="dev/hardware.html">Sensor and station hardware</a>, the plans for building a station</li>
-<li><a href="../../map/geography.html">Geography of the Republic</a> in the Public Register</li>
-</ul>
-</div>
-
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-  var table = document.getElementById('stations');
-  if (!table) { return; }
-  var controls = document.querySelectorAll('.filters [data-filter]');
-  var apply = window.Meteo.filter({
-    items: table.tBodies[0].rows,
-    controls: controls,
-    count: document.getElementById('count'),
-    empty: document.getElementById('empty'),
-    noun: 'stations'
-  });
-  window.Meteo.resetOn(document.getElementById('reset'), controls, apply);
-  window.Meteo.sortable(table);
-});
-</script>
-
-</main>
-
-<footer class="coopfoot">
-  <div class="wrap">
-    <div class="cols">
-      <div>
-        <h4>Weather and climate</h4>
+  <nav class="mainnav" aria-label="Sections of this site">
+    <div class="wrap">
+      <a class="navtop" href="index.html">Home</a>
+      <details class="grp">
+        <summary>Weather and climate</summary>
         <ul>
           <li><a href="climate.html">Climate of the Republic</a></li>
           <li><a href="change.html">Observed change</a></li>
           <li><a href="forecasting.html">How a forecast is made</a></li>
-          <li><a href="emissions.html">Emissions position</a></li>
-          <li><a href="periphery.html">Harm to the periphery</a></li>
+          <li class="has">
+            <details class="sub">
+              <summary><a href="emissions.html">Emissions position</a></summary>
+              <ul>
+                <li><a href="periphery.html">Harm to the periphery</a></li>
+              </ul>
+            </details>
+          </li>
         </ul>
-      </div>
-      <div>
-        <h4>Warning systems</h4>
+      </details>
+      <details class="grp">
+        <summary>Warning systems</summary>
         <ul>
           <li><a href="rationale.html">Why these systems exist</a></li>
           <li><a href="seismicity.html">Seismicity of the Republic</a></li>
-          <li><a href="kjs.html">REP-KJS, earthquake</a></li>
-          <li><a href="scale.html">REP intensity scale</a></li>
-          <li><a href="kjs-method.html">Detection, latency and limits</a></li>
+          <li class="has">
+            <details class="sub">
+              <summary><a href="kjs.html">REP-KJS, earthquake</a></summary>
+              <ul>
+                <li><a href="scale.html">REP intensity scale</a></li>
+                <li><a href="kjs-method.html">Detection, latency and limits</a></li>
+              </ul>
+            </details>
+          </li>
           <li><a href="lew.html">REP-LEW, landslide</a></li>
           <li><a href="few.html">REP-FEW, flood</a></li>
           <li><a href="devices.html">Certified devices and RQUAK</a></li>
         </ul>
-      </div>
-      <div>
-        <h4>Record and network</h4>
+      </details>
+      <a class="navtop" href="species.html">Species catalogue</a>
+      <a class="navtop" href="network.html">Observing network</a>
+      <details class="grp">
+        <summary>Developers</summary>
         <ul>
-          <li><a href="species.html">Species catalogue</a></li>
-          <li><a href="network.html">Observing network</a></li>
-          <li><a href="about.html">About the cooperative</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Developers</h4>
-        <ul>
-          <li><a href="dev/index.html">Specifications and licence</a></li>
+          <li><a href="dev/index.html">Specifications and source</a></li>
           <li><a href="dev/wire-format.html">Warning wire format</a></li>
           <li><a href="dev/vectors.html">Conformance test vectors</a></li>
           <li><a href="dev/hardware.html">Sensor and station hardware</a></li>
           <li><a href="dev/forking.html">Porting to another country</a></li>
         </ul>
-      </div>
+      </details>
+      <a class="navtop" href="about.html">About the cooperative</a>
     </div>
-    <p class="basis">Published by the Meteorological Cooperative of the Republic under the organic law on observation and warning. Free of charge, without licence, registration or account. No external resource is loaded by this page. See also the <a href="../../index.html">Republic of Fluid</a> and the <a href="../../register/">Public Register</a>.</p>
-  </div>
-</footer>
+  </nav>
 
-<script src="site.js"></script>
+  <main id="main" class="sheet">
+    <p class="crumb"><a href="index.html">Meteorological Cooperative</a> &rsaquo; Observing network</p>
+    <h1 class="page-title">The observing network</h1>
+    <p class="lede">Every figure the cooperative publishes originates at a station. The network has 2,410 reporting instruments across twelve classes, from the surface synoptic stations that have reported since 1901 to the slope extensometers installed for REP-LEW in 2024. The principal stations are listed below with what each measures and how often it reports.</p>
+
+    <div class="facts">
+      <div class="row"><span class="k">Reporting instruments</span><span class="v">2,410 across twelve classes</span></div>
+      <div class="row"><span class="k">Longest continuous record</span><span class="v">Lindoma surface station, since 1901</span></div>
+      <div class="row"><span class="k">Seismic stations</span><span class="v">86 broadband, 210 strong motion, densest on the Belvacius margin</span></div>
+      <div class="row"><span class="k">Radar</span><span class="v">Four sites; coverage gaps stated below</span></div>
+      <div class="row"><span class="k">Archive</span><span class="v">Every observation retained, including those rejected by quality control</span></div>
+      <div class="row"><span class="k">Access</span><span class="v">Free of charge, without registration; the same feed the cooperative uses internally</span></div>
+    </div>
+
+    <h2>Classes of station</h2>
+    <div class="tablewrap">
+      <table class="data">
+        <caption>The network by class</caption>
+        <thead>
+          <tr>
+            <th>Class</th>
+            <th class="num">Count</th>
+            <th class="num">Reports</th>
+            <th>Feeds</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Surface synoptic</td>
+            <td class="num">148</td>
+            <td class="num">Every 10 min</td>
+            <td>Forecast, climate record, verification</td>
+          </tr>
+          <tr>
+            <td>Automatic rainfall</td>
+            <td class="num">1,347</td>
+            <td class="num">Every 10 min</td>
+            <td>REP-FEW, REP-LEW, climate record</td>
+          </tr>
+          <tr>
+            <td>Upper air</td>
+            <td class="num">3</td>
+            <td class="num">Twice daily</td>
+            <td>Assimilation</td>
+          </tr>
+          <tr>
+            <td>Weather radar</td>
+            <td class="num">4</td>
+            <td class="num">Every 5 min</td>
+            <td>Nowcast, REP-FEW flash limb</td>
+          </tr>
+          <tr>
+            <td>Broadband seismic</td>
+            <td class="num">86</td>
+            <td class="num">Continuous</td>
+            <td>REP-KJS, the catalogue</td>
+          </tr>
+          <tr>
+            <td>Strong motion</td>
+            <td class="num">210</td>
+            <td class="num">Continuous</td>
+            <td>REP-KJS intensity, hazard maps</td>
+          </tr>
+          <tr>
+            <td>River stage</td>
+            <td class="num">312</td>
+            <td class="num">Every 15 min</td>
+            <td>REP-FEW riverine limb</td>
+          </tr>
+          <tr>
+            <td>Tide gauge</td>
+            <td class="num">9</td>
+            <td class="num">Every minute</td>
+            <td>REP-FEW surge limb, sea level record</td>
+          </tr>
+          <tr>
+            <td>Soil moisture</td>
+            <td class="num">41</td>
+            <td class="num">Every 15 min</td>
+            <td>REP-LEW, REP-FEW, drought assessment</td>
+          </tr>
+          <tr>
+            <td>Slope monitoring</td>
+            <td class="num">214</td>
+            <td class="num">5 min to hourly</td>
+            <td>REP-LEW probing limb</td>
+          </tr>
+          <tr>
+            <td>Flux and concentration</td>
+            <td class="num">10</td>
+            <td class="num">Continuous</td>
+            <td>Emissions inventory, sink measurement</td>
+          </tr>
+          <tr>
+            <td>Coastal monitoring</td>
+            <td class="num">26</td>
+            <td class="num">Daily</td>
+            <td>Water quality, salinity, sediment, sea level record</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>Principal stations</h2>
+    <div class="prose">
+      <p>The table lists the stations of record. Smaller automatic instruments, of which there are some two thousand, appear in the published dataset with the same fields.</p>
+    </div>
+
+    <div class="filters">
+      <div class="field">
+        <label for="q">Search</label>
+        <input type="search" id="q" data-filter="search" placeholder="Station, sub-region or measure">
+      </div>
+      <div class="field">
+        <label for="cls">Class</label>
+        <select id="cls" data-filter="class">
+          <option value="">All classes</option>
+          <option value="surface">Surface synoptic</option>
+          <option value="upper">Upper air</option>
+          <option value="radar">Weather radar</option>
+          <option value="seismic">Seismic</option>
+          <option value="river">River stage</option>
+          <option value="tide">Tide gauge</option>
+          <option value="slope">Slope monitoring</option>
+          <option value="flux">Flux and concentration</option>
+          <option value="coastal">Coastal monitoring</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="reg">Region</label>
+        <select id="reg" data-filter="region">
+          <option value="">Both regions</option>
+          <option value="west">Western</option>
+          <option value="east">Eastern</option>
+        </select>
+      </div>
+      <button type="button" id="reset">Reset</button>
+    </div>
+    <p class="count" id="count" aria-live="polite">38 stations</p>
+
+    <div class="tablewrap">
+      <table class="data" id="stations">
+        <caption>Principal stations of the network</caption>
+        <thead>
+          <tr>
+            <th data-sort="text">Station</th>
+            <th data-sort="text">Sub-region</th>
+            <th data-sort="text">Class</th>
+            <th>Measures</th>
+            <th data-sort="text">Reports</th>
+            <th data-sort="number">Since</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr data-class="surface" data-region="west" data-search="lindoma surface synoptic capital port">
+            <td>Lindoma</td>
+            <td>Lindoma</td>
+            <td>Surface synoptic</td>
+            <td>Pressure, temperature, humidity, wind, rainfall, sunshine, visibility</td>
+            <td class="num">10 min</td>
+            <td class="num">1901</td>
+          </tr>
+          <tr data-class="upper" data-region="west" data-search="lindoma upper air radiosonde">
+            <td>Lindoma upper air</td>
+            <td>Lindoma</td>
+            <td>Upper air</td>
+            <td>Radiosonde profile to 25 km</td>
+            <td class="num">Twice daily</td>
+            <td class="num">1948</td>
+          </tr>
+          <tr data-class="radar" data-region="west" data-search="sederna radar western">
+            <td>Sederna radar</td>
+            <td>Lindoma</td>
+            <td>Weather radar</td>
+            <td>Reflectivity and doppler wind, 240 km range</td>
+            <td class="num">5 min</td>
+            <td class="num">1994</td>
+          </tr>
+          <tr data-class="tide" data-region="west" data-search="lindoma tide gauge sea level harbour">
+            <td>Lindoma harbour</td>
+            <td>Lindoma</td>
+            <td>Tide gauge</td>
+            <td>Sea level, surge residual</td>
+            <td class="num">1 min</td>
+            <td class="num">1912</td>
+          </tr>
+          <tr data-class="surface" data-region="west" data-search="torvena kelvaqui moor peat rainfall">
+            <td>Torvena</td>
+            <td>Kelvaqui</td>
+            <td>Surface synoptic</td>
+            <td>Full synoptic suite; the wettest station of record</td>
+            <td class="num">10 min</td>
+            <td class="num">1923</td>
+          </tr>
+          <tr data-class="flux" data-region="west" data-search="kelvaqui moor peat flux tower carbon">
+            <td>Kelvaqui moor</td>
+            <td>Kelvaqui</td>
+            <td>Flux tower</td>
+            <td>Carbon dioxide and methane exchange over blanket peat</td>
+            <td class="num">Continuous</td>
+            <td class="num">2003</td>
+          </tr>
+          <tr data-class="tide" data-region="west" data-search="merrisoma tide gauge bay marsh surge">
+            <td>Merrisoma bay</td>
+            <td>Merrisoma</td>
+            <td>Tide gauge</td>
+            <td>Sea level; the most surge-exposed gauge in the Republic</td>
+            <td class="num">1 min</td>
+            <td class="num">1931</td>
+          </tr>
+          <tr data-class="surface" data-region="west" data-search="maravel headland wind gust coastal">
+            <td>Maravel headland</td>
+            <td>Merrisoma</td>
+            <td>Surface synoptic</td>
+            <td>Full suite; holds the gust record of 47 m/s from 1962</td>
+            <td class="num">10 min</td>
+            <td class="num">1919</td>
+          </tr>
+          <tr data-class="coastal" data-region="west" data-search="merrisoma marsh monitoring intertidal birds">
+            <td>Merrisoma marsh</td>
+            <td>Merrisoma</td>
+            <td>Coastal monitoring</td>
+            <td>Water quality, salinity, sediment, wintering bird counts</td>
+            <td class="num">Daily</td>
+            <td class="num">1977</td>
+          </tr>
+          <tr data-class="surface" data-region="west" data-search="calmena tessilius river valley terrace">
+            <td>Calmena</td>
+            <td>Tessilius</td>
+            <td>Surface synoptic</td>
+            <td>Full suite</td>
+            <td class="num">10 min</td>
+            <td class="num">1928</td>
+          </tr>
+          <tr data-class="river" data-region="west" data-search="calmena river stage tessilius gauge">
+            <td>Calmena weir</td>
+            <td>Tessilius</td>
+            <td>River stage</td>
+            <td>Stage and discharge</td>
+            <td class="num">15 min</td>
+            <td class="num">1954</td>
+          </tr>
+          <tr data-class="surface" data-region="west" data-search="ferrista vandorum upland snow forest">
+            <td>Ferrista</td>
+            <td>Vandorum</td>
+            <td>Surface synoptic</td>
+            <td>Full suite, snow depth, soil temperature</td>
+            <td class="num">10 min</td>
+            <td class="num">1908</td>
+          </tr>
+          <tr data-class="upper" data-region="west" data-search="ferrista upper air radiosonde upland">
+            <td>Ferrista upper air</td>
+            <td>Vandorum</td>
+            <td>Upper air</td>
+            <td>Radiosonde profile to 25 km</td>
+            <td class="num">Twice daily</td>
+            <td class="num">1961</td>
+          </tr>
+          <tr data-class="slope" data-region="west" data-search="vandorum slope inclinometer landslide felling">
+            <td>Vandorum east face</td>
+            <td>Vandorum</td>
+            <td>Slope monitoring</td>
+            <td>Inclinometer, piezometer, extensometer; the 1954 slide scar</td>
+            <td class="num">5 min</td>
+            <td class="num">2024</td>
+          </tr>
+          <tr data-class="seismic" data-region="west" data-search="ferrista seismic broadband induced mining">
+            <td>Ferrista mine</td>
+            <td>Vandorum</td>
+            <td>Broadband seismic</td>
+            <td>Three-component velocity; identifies induced events at the workings</td>
+            <td class="num">Continuous</td>
+            <td class="num">1971</td>
+          </tr>
+          <tr data-class="surface" data-region="west" data-search="ossira corvaluri border iosmein">
+            <td>Ossira</td>
+            <td>Corvaluri</td>
+            <td>Surface synoptic</td>
+            <td>Full suite</td>
+            <td class="num">10 min</td>
+            <td class="num">1936</td>
+          </tr>
+          <tr data-class="surface" data-region="west" data-search="durorilaqui arable plain soil loam">
+            <td>Durorilaqui</td>
+            <td>Durorilaqui</td>
+            <td>Surface synoptic</td>
+            <td>Full suite, soil moisture at four depths, evapotranspiration</td>
+            <td class="num">10 min</td>
+            <td class="num">1905</td>
+          </tr>
+          <tr data-class="flux" data-region="west" data-search="durorilaqui flux tower arable agriculture">
+            <td>Durorilaqui plain</td>
+            <td>Durorilaqui</td>
+            <td>Flux tower</td>
+            <td>Carbon and nitrous oxide exchange over arable ground</td>
+            <td class="num">Continuous</td>
+            <td class="num">2008</td>
+          </tr>
+          <tr data-class="surface" data-region="west" data-search="venasca ombraqui orchard vine warmest sunniest">
+            <td>Venasca</td>
+            <td>Ombraqui</td>
+            <td>Surface synoptic</td>
+            <td>Full suite; the warmest and sunniest station of record</td>
+            <td class="num">10 min</td>
+            <td class="num">1911</td>
+          </tr>
+          <tr data-class="surface" data-region="west" data-search="sarnova aspreduson southern border closed frontier">
+            <td>Sarnova</td>
+            <td>Aspreduson</td>
+            <td>Surface synoptic</td>
+            <td>Full suite</td>
+            <td class="num">10 min</td>
+            <td class="num">1940</td>
+          </tr>
+          <tr data-class="surface" data-region="east" data-search="leriduson north eastern coast harbour">
+            <td>Leriduson</td>
+            <td>Leriduson</td>
+            <td>Surface synoptic</td>
+            <td>Full suite</td>
+            <td class="num">10 min</td>
+            <td class="num">1907</td>
+          </tr>
+          <tr data-class="radar" data-region="east" data-search="leriduson radar north east">
+            <td>Leriduson radar</td>
+            <td>Leriduson</td>
+            <td>Weather radar</td>
+            <td>Reflectivity and doppler wind, 240 km range</td>
+            <td class="num">5 min</td>
+            <td class="num">1998</td>
+          </tr>
+          <tr data-class="surface" data-region="east" data-search="prevessa anselaqui mixed farming">
+            <td>Prevessa</td>
+            <td>Anselaqui</td>
+            <td>Surface synoptic</td>
+            <td>Full suite</td>
+            <td class="num">10 min</td>
+            <td class="num">1933</td>
+          </tr>
+          <tr data-class="river" data-region="east" data-search="ilvara divide reservoir thurioma watershed">
+            <td>Ilvara reservoirs</td>
+            <td>Thurioma</td>
+            <td>River stage</td>
+            <td>Stage, discharge and reservoir level on both sides of the divide</td>
+            <td class="num">15 min</td>
+            <td class="num">1962</td>
+          </tr>
+          <tr data-class="seismic" data-region="east" data-search="ilvara seismic reservoir induced">
+            <td>Ilvara</td>
+            <td>Thurioma</td>
+            <td>Broadband seismic</td>
+            <td>Three-component velocity; monitors reservoir-induced events</td>
+            <td class="num">Continuous</td>
+            <td class="num">1978</td>
+          </tr>
+          <tr data-class="surface" data-region="east" data-search="solvena quintorum basin drought grain driest">
+            <td>Solvena</td>
+            <td>Quintorum</td>
+            <td>Surface synoptic</td>
+            <td>Full suite, soil moisture, evapotranspiration; the driest station of record</td>
+            <td class="num">10 min</td>
+            <td class="num">1904</td>
+          </tr>
+          <tr data-class="upper" data-region="east" data-search="solvena upper air radiosonde interior">
+            <td>Solvena upper air</td>
+            <td>Quintorum</td>
+            <td>Upper air</td>
+            <td>Radiosonde profile to 25 km</td>
+            <td class="num">Twice daily</td>
+            <td class="num">1955</td>
+          </tr>
+          <tr data-class="coastal" data-region="east" data-search="marendo lagoon ravelluri coastal monitoring seagrass">
+            <td>Marendo coastal</td>
+            <td>Ravelluri</td>
+            <td>Coastal monitoring</td>
+            <td>Lagoon temperature, salinity, oxygen, seagrass and weed survey, dune crest</td>
+            <td class="num">Continuous</td>
+            <td class="num">1969</td>
+          </tr>
+          <tr data-class="tide" data-region="east" data-search="marendo tide gauge sea level retreat">
+            <td>Marendo</td>
+            <td>Ravelluri</td>
+            <td>Tide gauge</td>
+            <td>Sea level; 3.9 mm a year over the last three decades</td>
+            <td class="num">1 min</td>
+            <td class="num">1948</td>
+          </tr>
+          <tr data-class="river" data-region="east" data-search="tavrino marnaqui river chemical works monitoring">
+            <td>Tavrino reach</td>
+            <td>Marnaqui</td>
+            <td>River stage</td>
+            <td>Stage, discharge and continuous water quality below the chemical works</td>
+            <td class="num">15 min</td>
+            <td class="num">1966</td>
+          </tr>
+          <tr data-class="surface" data-region="east" data-search="cortius eastern seaboard cliff harbour">
+            <td>Cortius</td>
+            <td>Cortius</td>
+            <td>Surface synoptic</td>
+            <td>Full suite</td>
+            <td class="num">10 min</td>
+            <td class="num">1902</td>
+          </tr>
+          <tr data-class="radar" data-region="east" data-search="cortius radar eastern seaboard">
+            <td>Cortius radar</td>
+            <td>Cortius</td>
+            <td>Weather radar</td>
+            <td>Reflectivity and doppler wind, 240 km range</td>
+            <td class="num">5 min</td>
+            <td class="num">1991</td>
+          </tr>
+          <tr data-class="slope" data-region="east" data-search="cortius cliff undercutting coastal slope">
+            <td>Cortius cliff</td>
+            <td>Cortius</td>
+            <td>Slope monitoring</td>
+            <td>Extensometer and tilt on the undercut cliff above the harbour</td>
+            <td class="num">5 min</td>
+            <td class="num">2024</td>
+          </tr>
+          <tr data-class="seismic" data-region="east" data-search="corcina belvacius seismic margin strong motion">
+            <td>Corcina</td>
+            <td>Belvacius</td>
+            <td>Broadband seismic</td>
+            <td>Three-component velocity and strong motion; the reference station of the margin</td>
+            <td class="num">Continuous</td>
+            <td class="num">1962</td>
+          </tr>
+          <tr data-class="surface" data-region="east" data-search="belvacius ridge wind resource corcina">
+            <td>Belvacius ridge</td>
+            <td>Belvacius</td>
+            <td>Surface synoptic</td>
+            <td>Full suite, wind at 10 m and 100 m</td>
+            <td class="num">10 min</td>
+            <td class="num">1996</td>
+          </tr>
+          <tr data-class="radar" data-region="east" data-search="sornorum radar southern crossroads flood">
+            <td>Sornorum radar</td>
+            <td>Sornorum</td>
+            <td>Weather radar</td>
+            <td>Reflectivity and doppler wind, 240 km range; installed after the 2017 floods</td>
+            <td class="num">5 min</td>
+            <td class="num">2019</td>
+          </tr>
+          <tr data-class="river" data-region="east" data-search="sornorum river stage flood 2017 urban drainage">
+            <td>Sornorum town</td>
+            <td>Sornorum</td>
+            <td>River stage</td>
+            <td>Stage on three watercourses and surcharge in the urban drainage</td>
+            <td class="num">15 min</td>
+            <td class="num">2019</td>
+          </tr>
+          <tr data-class="tide" data-region="east" data-search="lutoliluri tide gauge southern port">
+            <td>Lutoliluri</td>
+            <td>Sornorum</td>
+            <td>Tide gauge</td>
+            <td>Sea level, surge residual</td>
+            <td class="num">1 min</td>
+            <td class="num">1938</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p id="empty" hidden class="note">No station matches those filters.</p>
+
+    <h2>Gaps in coverage</h2>
+    <div class="box limit">
+      <span class="lbl">Where coverage is thin</span>
+      <p>Four radar sites leave three areas with coarse rainfall detail: the interior of Halvorum, western Aspreduson, and the upper Vandorum valleys. Flash flood warning in those places depends on rain gauges reporting rain that has already fallen, which shortens the notice available.</p>
+      <p>Roughly 3,400 km of watercourse is ungauged, mostly small upland streams. Stage there is inferred from the catchment model with no observation to correct it.</p>
+      <p>Seismic station spacing is 12 km on the Belvacius margin and 60 km in the western sub-regions. Detection of a western event is therefore slower, which matters little, since the western sub-regions produce almost no seismicity.</p>
+      <p>Two upper-air stations were closed in the 1990s, at Maravel and Cortius, and the record from both ends at that point. Proposals to reopen the Cortius station appear in each of the last three plan rounds.</p>
+    </div>
+
+    <h2>The archive</h2>
+    <div class="prose">
+      <p>Every observation is retained, including observations rejected by quality control, since a rejection is itself a datum about the station. Metadata for every station records each move, screen change and instrument change, so a user may reconstruct the correction applied to any series and work from the raw values where the correction is disputed.</p>
+      <p>The whole archive is published without charge and without registration. It is the same feed the cooperative uses internally, in the same format, with no reduced public version.</p>
+    </div>
+
+    <h2>See also</h2>
+    <div class="prose">
+      <ul>
+        <li><a href="forecasting.html">How a forecast is made</a>, which uses these observations</li>
+        <li><a href="kjs-method.html">Detection, latency and limits</a>, on station spacing and detection time</li>
+        <li><a href="dev/hardware.html">Sensor and station hardware</a>, the plans for building a station</li>
+        <li><a href="../../map/geography.html">Geography of the Republic</a> in the Public Register</li>
+      </ul>
+    </div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var table = document.getElementById('stations');
+        if (!table) {
+          return;
+        }
+        var controls = document.querySelectorAll('.filters [data-filter]');
+        var apply = window.Meteo.filter({
+          items: table.tBodies[0].rows,
+          controls: controls,
+          count: document.getElementById('count'),
+          empty: document.getElementById('empty'),
+          noun: 'stations'
+        });
+        window.Meteo.resetOn(document.getElementById('reset'), controls, apply);
+        window.Meteo.sortable(table);
+      });
+
+    </script>
+
+  </main>
+
+  <footer class="coopfoot">
+    <div class="wrap">
+      <div class="cols">
+        <div>
+          <h4>Weather and climate</h4>
+          <ul>
+            <li><a href="climate.html">Climate of the Republic</a></li>
+            <li><a href="change.html">Observed change</a></li>
+            <li><a href="forecasting.html">How a forecast is made</a></li>
+            <li><a href="emissions.html">Emissions position</a></li>
+            <li><a href="periphery.html">Harm to the periphery</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Warning systems</h4>
+          <ul>
+            <li><a href="rationale.html">Why these systems exist</a></li>
+            <li><a href="seismicity.html">Seismicity of the Republic</a></li>
+            <li><a href="kjs.html">REP-KJS, earthquake</a></li>
+            <li><a href="scale.html">REP intensity scale</a></li>
+            <li><a href="kjs-method.html">Detection, latency and limits</a></li>
+            <li><a href="lew.html">REP-LEW, landslide</a></li>
+            <li><a href="few.html">REP-FEW, flood</a></li>
+            <li><a href="devices.html">Certified devices and RQUAK</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Record and network</h4>
+          <ul>
+            <li><a href="species.html">Species catalogue</a></li>
+            <li><a href="network.html">Observing network</a></li>
+            <li><a href="about.html">About the cooperative</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Developers</h4>
+          <ul>
+            <li><a href="dev/index.html">Specifications and licence</a></li>
+            <li><a href="dev/wire-format.html">Warning wire format</a></li>
+            <li><a href="dev/vectors.html">Conformance test vectors</a></li>
+            <li><a href="dev/hardware.html">Sensor and station hardware</a></li>
+            <li><a href="dev/forking.html">Porting to another country</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="basis">Published by the Meteorological Cooperative of the Republic under the organic law on observation and warning. Free of charge, without licence, registration or account. No external resource is loaded by this page. See also the <a href="../../index.html">Republic of Fluid</a> and the <a href="../../register/">Public Register</a>.</p>
+    </div>
+  </footer>
+
+  <script src="site.js"></script>
 </body>
 </html>

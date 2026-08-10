@@ -1,62 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Gloss tool &middot; Academia de Lingua Fluidian</title>
-<meta name="description" content="A word by word gloss between Fluidian and English, with the set phrases of the phrasebook.">
-<meta name="theme-color" content="#2b2620">
-<link rel="stylesheet" href="site.css">
-<link rel="icon" href="../../assets/flag.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gloss tool &middot; Academia de Lingua Fluidian</title>
+  <meta name="description" content="A word by word gloss between Fluidian and English, with the set phrases of the phrasebook.">
+  <meta name="theme-color" content="#2b2620">
+  <link rel="stylesheet" href="site.css">
+  <link rel="icon" href="../../assets/flag.png">
 </head>
 <body>
-<a class="skip" href="#main">Skip to the content</a>
-<header class="head"><div class="wrap"><svg class="mark" viewBox="0 0 46 46" role="img" aria-label="Emblem of the Academy"><rect width="46" height="46" fill="#f2ece0"></rect><rect x="6" y="9" width="34" height="6" fill="#2b2620"></rect><rect x="6" y="21" width="22" height="3" fill="#2b2620"></rect><rect x="6" y="28" width="28" height="3" fill="#2b2620"></rect><path d="M30 34 L40 20" stroke="#a4232a" stroke-width="3.4" fill="none"></path></svg><span class="titles">
-<p class="wordmark"><a href="index.html">Academia de Lingua Fluidian</a></p>
-<p class="standfirst">Academy of the Fluidian language &middot; a cooperative of its users</p>
-</span><div class="langswitch"><span aria-current="true">EN</span><a href="flu/translator.html" lang="art-x-fluidian">FLU</a></div></div></header>
-<nav class="nav" aria-label="Sections of this site"><div class="wrap"><a href="index.html">Front</a><a href="language.html">The language</a><a href="rules.html">Rules</a><a href="irregulars.html">Registers</a><a href="phrasebook.html">Phrasebook</a><a href="dictionary.html">Dictionary</a><a href="translator.html" aria-current="page">Gloss tool</a><a href="names.html">Names</a><a href="decisions.html">Decisions</a><a href="academy.html">The academy</a></div></nav>
-<main id="main" class="wrap">
-<p class="crumbs"><a href="index.html">Academia</a> &rsaquo; Gloss tool</p>
-<p class="eyebrow">Tool</p>
-<h1>Gloss tool</h1>
-<p class="lede">This puts one word under another. It keeps the word order of what you typed, it knows the set phrases in the phrasebook, and it marks in red anything outside the lexicon. It is not a translator.</p>
+  <a class="skip" href="#main">Skip to the content</a>
+  <header class="head">
+    <div class="wrap"><svg class="mark" viewBox="0 0 46 46" role="img" aria-label="Emblem of the Academy">
+        <rect width="46" height="46" fill="#f2ece0"></rect>
+        <rect x="6" y="9" width="34" height="6" fill="#2b2620"></rect>
+        <rect x="6" y="21" width="22" height="3" fill="#2b2620"></rect>
+        <rect x="6" y="28" width="28" height="3" fill="#2b2620"></rect>
+        <path d="M30 34 L40 20" stroke="#a4232a" stroke-width="3.4" fill="none"></path>
+      </svg><span class="titles">
+        <p class="wordmark"><a href="index.html">Academia de Lingua Fluidian</a></p>
+        <p class="standfirst">Academy of the Fluidian language &middot; a cooperative of its users</p>
+      </span>
+      <div class="langswitch"><span aria-current="true">EN</span><a href="flu/translator.html" lang="art-x-fluidian">FLU</a></div>
+    </div>
+  </header>
+  <nav class="nav" aria-label="Sections of this site">
+    <div class="wrap"><a href="index.html">Front</a><a href="language.html">The language</a><a href="rules.html">Rules</a><a href="irregulars.html">Registers</a><a href="phrasebook.html">Phrasebook</a><a href="dictionary.html">Dictionary</a><a href="translator.html" aria-current="page">Gloss tool</a><a href="names.html">Names</a><a href="decisions.html">Decisions</a><a href="academy.html">The academy</a></div>
+  </nav>
+  <main id="main" class="wrap">
+    <p class="crumbs"><a href="index.html">Academia</a> &rsaquo; Gloss tool</p>
+    <p class="eyebrow">Tool</p>
+    <h1>Gloss tool</h1>
+    <p class="lede">This puts one word under another. It keeps the word order of what you typed, it knows the set phrases in the phrasebook, and it marks in red anything outside the lexicon. It is not a translator.</p>
 
-<form class="tool" id="tform">
-<div class="row">
-<div><label for="dir">Direction</label><select id="dir">
-<option value="f2e">Fluidian to English</option>
-<option value="e2f">English to Fluidian</option>
-</select></div>
-</div>
-<label for="tin" style="margin-block-start:0.3rem">Text</label>
-<textarea id="tin" placeholder="se tren no fa statiun te Prevessa">se tren no fa statiun te Prevessa</textarea>
-<p><button type="submit">Gloss it</button></p>
-<div class="out" id="tout"></div>
-</form>
+    <form class="tool" id="tform">
+      <div class="row">
+        <div><label for="dir">Direction</label><select id="dir">
+            <option value="f2e">Fluidian to English</option>
+            <option value="e2f">English to Fluidian</option>
+          </select></div>
+      </div>
+      <label for="tin" style="margin-block-start:0.3rem">Text</label>
+      <textarea id="tin" placeholder="se tren no fa statiun te Prevessa">se tren no fa statiun te Prevessa</textarea>
+      <p><button type="submit">Gloss it</button></p>
+      <div class="out" id="tout"></div>
+    </form>
 
-<h2>What it cannot do</h2>
-<ul>
-<li>It does not conjugate. Fluidian has one verb form, so nothing is lost going out; going in, an English tense is thrown away and you must add <em>es</em> or <em>va</em> yourself.</li>
-<li>It does not reorder. An adjective typed before its noun in English will come out before its noun in Fluidian, which is wrong.</li>
-<li>It does not choose between senses. Where a word has several, the first is given and the rest are on the <a href="dictionary.html">entry</a>.</li>
-<li>It does not know a word outside the lexicon.</li>
-</ul>
-<div class="note">For anything that matters, the phrasebook is the safer instrument, and for anything that matters legally there is an interpreter, free of charge, under <a href="../../constitution/title-1.html#a16">Article 16</a>(1).</div>
+    <h2>What it cannot do</h2>
+    <ul>
+      <li>It does not conjugate. Fluidian has one verb form, so nothing is lost going out; going in, an English tense is thrown away and you must add <em>es</em> or <em>va</em> yourself.</li>
+      <li>It does not reorder. An adjective typed before its noun in English will come out before its noun in Fluidian, which is wrong.</li>
+      <li>It does not choose between senses. Where a word has several, the first is given and the rest are on the <a href="dictionary.html">entry</a>.</li>
+      <li>It does not know a word outside the lexicon.</li>
+    </ul>
+    <div class="note">For anything that matters, the phrasebook is the safer instrument, and for anything that matters legally there is an interpreter, free of charge, under <a href="../../constitution/title-1.html#a16">Article 16</a>(1).</div>
 
-<script>document.addEventListener("DOMContentLoaded", function(){ buildTranslator("tform","tin","tout","dir"); });</script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        buildTranslator("tform", "tin", "tout", "dir");
+      });
 
-</main>
-<footer class="foot"><div class="wrap"><div class="cols">
-<div><p class="h">The academy</p>
-<p>Academia de Lingua Fluidian, constituted 1946 at Sederna. A cooperative under Title III, licensed by the Congress of Planning, holding no public function and issuing no binding rule.</p></div>
-<div><p class="h">Standing</p>
-<p>The Republic has no official language. <a href="../../constitution/title-1.html#a16">Article 16</a>(1) gives every person the right to address public authority in a language they understand. Nothing on this site is law.</p>
-<p>Published in the open. No external resource is loaded.</p>
-<p class="h">Registers</p>
-<p><a href="irregulars.html">Irregular and alternate forms</a> &middot; <a href="quirks.html">Quirks</a> &middot; <a href="decisions.html">Decisions</a></p></div>
-</div></div></footer>
-<script src="lexicon.js"></script>
-<script src="site.js"></script>
+    </script>
+
+  </main>
+  <footer class="foot">
+    <div class="wrap">
+      <div class="cols">
+        <div>
+          <p class="h">The academy</p>
+          <p>Academia de Lingua Fluidian, constituted 1946 at Sederna. A cooperative under Title III, licensed by the Congress of Planning, holding no public function and issuing no binding rule.</p>
+        </div>
+        <div>
+          <p class="h">Standing</p>
+          <p>The Republic has no official language. <a href="../../constitution/title-1.html#a16">Article 16</a>(1) gives every person the right to address public authority in a language they understand. Nothing on this site is law.</p>
+          <p>Published in the open. No external resource is loaded.</p>
+          <p class="h">Registers</p>
+          <p><a href="irregulars.html">Irregular and alternate forms</a> &middot; <a href="quirks.html">Quirks</a> &middot; <a href="decisions.html">Decisions</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="lexicon.js"></script>
+  <script src="site.js"></script>
 </body>
 </html>

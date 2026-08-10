@@ -1,254 +1,381 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Detection, latency and limits - Meteorological Cooperative</title>
-<meta name="description" content="The physical basis of an earthquake warning, the time budget from origin to broadcast, warning time by place, the blind zone, and the published performance record.">
-<link rel="stylesheet" href="site.css">
-<link rel="icon" href="../../assets/flag.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Detection, latency and limits - Meteorological Cooperative</title>
+  <meta name="description" content="The physical basis of an earthquake warning, the time budget from origin to broadcast, warning time by place, the blind zone, and the published performance record.">
+  <link rel="stylesheet" href="site.css">
+  <link rel="icon" href="../../assets/flag.png">
 </head>
 <body>
 
-<header class="masthead">
-  <div class="wrap">
-    <span class="marque"><svg viewBox="0 0 58 58" role="img" aria-label="Emblem of the Meteorological Cooperative">
-<circle cx="29" cy="31" r="20" fill="none" stroke="#9a6516" stroke-width="2.4"/>
-<circle cx="29" cy="31" r="12.5" fill="none" stroke="#9a6516" stroke-width="1.6"/>
-<circle cx="29" cy="31" r="5" fill="none" stroke="#9a6516" stroke-width="1.6"/>
-<path d="M29 31 L29 9" stroke="#5f3d0c" stroke-width="2.4" stroke-linecap="round"/>
-<path d="M29 12 L38 15" stroke="#5f3d0c" stroke-width="2.4" stroke-linecap="round"/>
-<path d="M29 18 L36 20.5" stroke="#5f3d0c" stroke-width="2.4" stroke-linecap="round"/>
-<circle cx="29" cy="31" r="2" fill="#5f3d0c"/>
-</svg></span>
-    <span class="idblock">
-      <p class="coopname"><a href="index.html">Meteorological Cooperative of the Republic</a></p>
-      <p class="basis">Weather, climate, seismicity, landslide and flood &middot; mandate held under the organic law on observation and warning</p>
-    </span>
-  </div>
-</header>
+  <header class="masthead">
+    <div class="wrap">
+      <span class="marque"><svg viewBox="0 0 58 58" role="img" aria-label="Emblem of the Meteorological Cooperative">
+          <circle cx="29" cy="31" r="20" fill="none" stroke="#9a6516" stroke-width="2.4" />
+          <circle cx="29" cy="31" r="12.5" fill="none" stroke="#9a6516" stroke-width="1.6" />
+          <circle cx="29" cy="31" r="5" fill="none" stroke="#9a6516" stroke-width="1.6" />
+          <path d="M29 31 L29 9" stroke="#5f3d0c" stroke-width="2.4" stroke-linecap="round" />
+          <path d="M29 12 L38 15" stroke="#5f3d0c" stroke-width="2.4" stroke-linecap="round" />
+          <path d="M29 18 L36 20.5" stroke="#5f3d0c" stroke-width="2.4" stroke-linecap="round" />
+          <circle cx="29" cy="31" r="2" fill="#5f3d0c" />
+        </svg></span>
+      <span class="idblock">
+        <p class="coopname"><a href="index.html">Meteorological Cooperative of the Republic</a></p>
+        <p class="basis">Weather, climate, seismicity, landslide and flood &middot; mandate held under the organic law on observation and warning</p>
+      </span>
+    </div>
+  </header>
 
-<nav class="mainnav" aria-label="Sections of this site">
-  <div class="wrap">
-    <a class="navtop" href="index.html">Home</a>
-    <details class="grp">
-      <summary>Weather and climate</summary>
-      <ul>
-        <li><a href="climate.html">Climate of the Republic</a></li>
-        <li><a href="change.html">Observed change</a></li>
-        <li><a href="forecasting.html">How a forecast is made</a></li>
-        <li class="has"><details class="sub">
-          <summary><a href="emissions.html">Emissions position</a></summary>
-          <ul>
-            <li><a href="periphery.html">Harm to the periphery</a></li>
-          </ul>
-        </details></li>
-      </ul>
-    </details>
-    <details class="grp">
-      <summary>Warning systems</summary>
-      <ul>
-        <li><a href="rationale.html">Why these systems exist</a></li>
-        <li><a href="seismicity.html">Seismicity of the Republic</a></li>
-        <li class="has"><details class="sub">
-          <summary><a href="kjs.html">REP-KJS, earthquake</a></summary>
-          <ul>
-            <li><a href="scale.html">REP intensity scale</a></li>
-            <li><a href="kjs-method.html">Detection, latency and limits</a></li>
-          </ul>
-        </details></li>
-        <li><a href="lew.html">REP-LEW, landslide</a></li>
-        <li><a href="few.html">REP-FEW, flood</a></li>
-        <li><a href="devices.html">Certified devices and RQUAK</a></li>
-      </ul>
-    </details>
-    <a class="navtop" href="species.html">Species catalogue</a>
-    <a class="navtop" href="network.html">Observing network</a>
-    <details class="grp">
-      <summary>Developers</summary>
-      <ul>
-        <li><a href="dev/index.html">Specifications and source</a></li>
-        <li><a href="dev/wire-format.html">Warning wire format</a></li>
-        <li><a href="dev/vectors.html">Conformance test vectors</a></li>
-        <li><a href="dev/hardware.html">Sensor and station hardware</a></li>
-        <li><a href="dev/forking.html">Porting to another country</a></li>
-      </ul>
-    </details>
-    <a class="navtop" href="about.html">About the cooperative</a>
-  </div>
-</nav>
-
-<main id="main" class="sheet">
-<p class="crumb"><a href="index.html">Meteorological Cooperative</a> &rsaquo; Warning systems &rsaquo; <a href="kjs.html">REP-KJS</a> &rsaquo; Detection, latency and limits</p>
-<h1 class="page-title">Detection, latency and limits</h1>
-<p class="lede">REP-KJS works because the first seismic wave to arrive at a station is faster and weaker than the wave that does the damage. Everything the system achieves follows from that difference, and so does everything it fails to achieve. This page sets out the method, the time budget, the blind zone and the performance record, including every occasion on which the system was wrong.</p>
-
-<h2>The physical basis</h2>
-<div class="prose">
-<p>An earthquake radiates two body waves. The P wave travels at about 6 km/s in the crust of the peninsula and displaces the ground along its direction of travel, which makes it weak. The S wave travels at about 3.5 km/s and displaces the ground across its direction of travel, which makes it strong and destructive. Surface waves follow more slowly and prolong the shaking.</p>
-<p>A station near the origin therefore records the P wave several seconds before the S wave reaches it, and many seconds before the S wave reaches a settlement further away. The first few seconds of the P record contain enough information to estimate magnitude and depth. Sending that estimate onward at the speed of a network beats the S wave to every place beyond a certain distance.</p>
-</div>
-
-<h2>The method in sequence</h2>
-<div class="tablewrap">
-<table class="data">
-<caption>From origin to broadcast, ordinary times</caption>
-<thead>
-<tr><th>Stage</th><th class="num">Elapsed</th><th>What occurs</th></tr>
-</thead>
-<tbody>
-<tr><td>Origin</td><td class="num">0.0 s</td><td>Rupture begins at depth</td></tr>
-<tr><td>First detection</td><td class="num">1.4 to 3.6 s</td><td>P wave reaches the nearest station; the trigger fires when the amplitude over the last fraction of a second rises sharply above the background level of the preceding minute</td></tr>
-<tr><td>Confirmation</td><td class="num">2.2 to 5.0 s</td><td>A second and third station trigger; the location is fixed by arrival times, which suppresses false triggers from a single station</td></tr>
-<tr><td>First estimate</td><td class="num">3.0 to 6.5 s</td><td>Magnitude estimated from the frequency and size of the first 3 s of the P record; depth from the order in which stations were reached</td></tr>
-<tr><td>Intensity field</td><td class="num">3.4 to 7.0 s</td><td>Expected intensity computed for every point through the ground-motion model and the soil amplification map</td></tr>
-<tr><td>Broadcast</td><td class="num">4 to 9 s</td><td>Segment 1 leaves the issuing node on every channel at once</td></tr>
-<tr><td>Arrival at a device</td><td class="num">+0.2 to 1.8 s</td><td>Network and device latency; a television decoder is the slowest ordinary receiver</td></tr>
-<tr><td>Revision</td><td class="num">12 s onward</td><td>Estimates refined as more stations report; segments 2 and 3 follow</td></tr>
-</tbody>
-</table>
-</div>
-
-<h2>The warning time actually available</h2>
-<div class="prose">
-<p>Warning time at a place equals the S wave travel time to that place minus the time consumed by detection and delivery. Since almost every event originates beneath the Belvacius hills in the south-east, the warning time in the Republic is close to a function of distance from that margin. The peninsula measures about 830 km corner to corner, so the range is wide: Cortius receives seventeen seconds and Lindoma, at the far north-western end, receives above two minutes.</p>
-</div>
-
-<div class="tablewrap">
-<table class="data">
-<caption>Warning time before onset, event on the Belvacius margin at 20 km depth</caption>
-<thead>
-<tr><th>Place</th><th class="num">Distance from epicentre</th><th class="num">S wave arrives</th><th class="num">Warning time</th></tr>
-</thead>
-<tbody>
-<tr><td>Corcina</td><td class="num">14 km</td><td class="num">7 s</td><td class="num">None; inside the blind zone</td></tr>
-<tr><td>Cortius</td><td class="num">89 km</td><td class="num">26 s</td><td class="num">17 s</td></tr>
-<tr><td>Marendo</td><td class="num">111 km</td><td class="num">32 s</td><td class="num">23 s</td></tr>
-<tr><td>Lutoliluri</td><td class="num">156 km</td><td class="num">45 s</td><td class="num">36 s</td></tr>
-<tr><td>Solvena</td><td class="num">190 km</td><td class="num">55 s</td><td class="num">46 s</td></tr>
-<tr><td>Prevessa</td><td class="num">210 km</td><td class="num">60 s</td><td class="num">51 s</td></tr>
-<tr><td>Sornorum</td><td class="num">238 km</td><td class="num">68 s</td><td class="num">59 s</td></tr>
-<tr><td>Leriduson</td><td class="num">300 km</td><td class="num">86 s</td><td class="num">77 s</td></tr>
-<tr><td>Dromera</td><td class="num">358 km</td><td class="num">103 s</td><td class="num">94 s</td></tr>
-<tr><td>Lindoma</td><td class="num">478 km</td><td class="num">137 s</td><td class="num">128 s</td></tr>
-</tbody>
-</table>
-</div>
-
-<h2>The blind zone</h2>
-<div class="box limit">
-<span class="lbl">The places that receive nothing in time</span>
-<p>Within roughly 30 km of the epicentre the S wave arrives before the broadcast does. The warning reaches those devices during the shaking or after it. This is a property of the physics and no fault of the equipment: no arrangement of stations, no faster network and no better algorithm removes it.</p>
-<p>The blind zone falls on the Belvacius sub-region and the settlements around Corcina, which is exactly the ground where the intensity is highest. Marendo, on the lagoon 111 km away, is the nearest settlement of any size outside it and receives about twenty seconds. The places most exposed to a Republic earthquake are the places a warning serves least well. Construction standards, fixed under Article 178 (1)(b), remain the only protection there.</p>
-<p>Denser instrumentation shrinks the zone by a few kilometres and never abolishes it. The cooperative therefore publishes the size of the zone plainly, since a coverage claim the physics contradicts would mislead the people living inside it.</p>
-</div>
-
-<h2>Estimating from little information</h2>
-<div class="prose">
-<p>The first estimate uses about three seconds of the P record from three or four stations. That is a small sample of an event that may rupture for twenty seconds, and the consequences are systematic.</p>
-<p>Magnitude is underestimated for large events. A rupture still propagating has not yet revealed its full extent, so the initial figure of a magnitude 7 event may read as 6.2 and rise as the record accumulates. The effect is negligible below magnitude 5.5 and grows above it. Every large event therefore produces a rising sequence of revisions, and the broadcast states the figure as an estimate at every stage.</p>
-<p>Depth is the least stable of the three parameters early on. A shallow event mistaken for a deep one is under-warned, since depth attenuates the shaking, and this is the error most likely to place an intensity estimate one step below the observed value.</p>
-<p>Two nearly simultaneous events are the classic failure of systems of this kind. Arrivals from two ruptures combine into one apparent event of larger magnitude at an intermediate location. REP-KJS applies a cluster test that separates events more than 40 km apart, and separation fails when the two lie closer.</p>
-</div>
-
-<h2>Performance record</h2>
-<div class="prose">
-<p>Every event since March 2021 for which a warning was issued or should have been issued appears in the register below. The cooperative publishes the failures on the same footing as the successes, since a system whose error rate is unknown cannot be relied upon.</p>
-</div>
-
-<div class="tablewrap">
-<table class="data">
-<caption>REP-KJS performance, March 2021 to the present</caption>
-<thead>
-<tr><th>Measure</th><th class="num">Count</th><th>Note</th></tr>
-</thead>
-<tbody>
-<tr><td>Events warned, REP 3 or above</td><td class="num">41</td><td>All reached the whole territory</td></tr>
-<tr><td>Warnings correct within one step</td><td class="num">37</td><td>Estimated intensity within one step of that observed</td></tr>
-<tr><td>Intensity overstated by two steps or more</td><td class="num">2</td><td>June 2022 and November 2024, both from depth mis-estimated as shallow</td></tr>
-<tr><td>Intensity understated by two steps or more</td><td class="num">2</td><td>March 2023, soft ground at Ravelluri amplified beyond the model; April 2025, similar</td></tr>
-<tr><td>Events missed entirely</td><td class="num">1</td><td>September 2021, REP 3 at Prevessa; two stations offline for maintenance in the same window</td></tr>
-<tr><td>False alerts issued</td><td class="num">3</td><td>Two from quarry blasting near Ferrista, one from a station fault at Ilvara; each cancelled within 30 s</td></tr>
-<tr><td>Median first-alert time</td><td class="num">6.1 s</td><td>From origin time to departure of segment 1</td></tr>
-</tbody>
-</table>
-</div>
-
-<h2>Cancellation</h2>
-<div class="prose">
-<p>A warning found to be spurious is cancelled on the same channels within thirty seconds, in the same fixed wording, and the cancellation states the reason. Quarry blasting at Ferrista produced two of the three false alerts, and the blasting schedule is now filed with the cooperative in advance and applied as a suppression window at the two nearest stations.</p>
-<p>A cancellation is itself an event in the register. The cooperative publishes the count of false alerts because a system that cancels nothing is a system whose threshold is set too high.</p>
-</div>
-
-<h2>What the system does not attempt</h2>
-<div class="box limit">
-<span class="lbl">Outside the method</span>
-<p>REP-KJS makes no prediction. It detects an earthquake that has already begun. No component of it forecasts an event before rupture, and no such method exists anywhere.</p>
-<p>Aftershocks receive the same treatment as any other event: they are detected when they occur and warned on the same threshold. The system offers no statement about when an aftershock will follow.</p>
-<p>The intensity estimate is for ground at the location. Motion inside a tall building differs from motion at its foundation, sometimes by several steps on an upper floor, and the estimate accounts for neither the building nor the floor.</p>
-</div>
-
-<h2>See also</h2>
-<div class="prose">
-<ul>
-<li><a href="kjs.html">REP-KJS</a>, what a broadcast contains</li>
-<li><a href="scale.html">REP intensity scale</a>, including how the instrumental value is computed</li>
-<li><a href="network.html">Observing network</a>, station spacing and the effect on detection time</li>
-<li><a href="dev/vectors.html">Conformance test vectors</a>, including the four misestimated events</li>
-</ul>
-</div>
-
-</main>
-
-<footer class="coopfoot">
-  <div class="wrap">
-    <div class="cols">
-      <div>
-        <h4>Weather and climate</h4>
+  <nav class="mainnav" aria-label="Sections of this site">
+    <div class="wrap">
+      <a class="navtop" href="index.html">Home</a>
+      <details class="grp">
+        <summary>Weather and climate</summary>
         <ul>
           <li><a href="climate.html">Climate of the Republic</a></li>
           <li><a href="change.html">Observed change</a></li>
           <li><a href="forecasting.html">How a forecast is made</a></li>
-          <li><a href="emissions.html">Emissions position</a></li>
-          <li><a href="periphery.html">Harm to the periphery</a></li>
+          <li class="has">
+            <details class="sub">
+              <summary><a href="emissions.html">Emissions position</a></summary>
+              <ul>
+                <li><a href="periphery.html">Harm to the periphery</a></li>
+              </ul>
+            </details>
+          </li>
         </ul>
-      </div>
-      <div>
-        <h4>Warning systems</h4>
+      </details>
+      <details class="grp">
+        <summary>Warning systems</summary>
         <ul>
           <li><a href="rationale.html">Why these systems exist</a></li>
           <li><a href="seismicity.html">Seismicity of the Republic</a></li>
-          <li><a href="kjs.html">REP-KJS, earthquake</a></li>
-          <li><a href="scale.html">REP intensity scale</a></li>
-          <li><a href="kjs-method.html">Detection, latency and limits</a></li>
+          <li class="has">
+            <details class="sub">
+              <summary><a href="kjs.html">REP-KJS, earthquake</a></summary>
+              <ul>
+                <li><a href="scale.html">REP intensity scale</a></li>
+                <li><a href="kjs-method.html">Detection, latency and limits</a></li>
+              </ul>
+            </details>
+          </li>
           <li><a href="lew.html">REP-LEW, landslide</a></li>
           <li><a href="few.html">REP-FEW, flood</a></li>
           <li><a href="devices.html">Certified devices and RQUAK</a></li>
         </ul>
-      </div>
-      <div>
-        <h4>Record and network</h4>
+      </details>
+      <a class="navtop" href="species.html">Species catalogue</a>
+      <a class="navtop" href="network.html">Observing network</a>
+      <details class="grp">
+        <summary>Developers</summary>
         <ul>
-          <li><a href="species.html">Species catalogue</a></li>
-          <li><a href="network.html">Observing network</a></li>
-          <li><a href="about.html">About the cooperative</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Developers</h4>
-        <ul>
-          <li><a href="dev/index.html">Specifications and licence</a></li>
+          <li><a href="dev/index.html">Specifications and source</a></li>
           <li><a href="dev/wire-format.html">Warning wire format</a></li>
           <li><a href="dev/vectors.html">Conformance test vectors</a></li>
           <li><a href="dev/hardware.html">Sensor and station hardware</a></li>
           <li><a href="dev/forking.html">Porting to another country</a></li>
         </ul>
-      </div>
+      </details>
+      <a class="navtop" href="about.html">About the cooperative</a>
     </div>
-    <p class="basis">Published by the Meteorological Cooperative of the Republic under the organic law on observation and warning. Free of charge, without licence, registration or account. No external resource is loaded by this page. See also the <a href="../../index.html">Republic of Fluid</a> and the <a href="../../register/">Public Register</a>.</p>
-  </div>
-</footer>
+  </nav>
 
-<script src="site.js"></script>
+  <main id="main" class="sheet">
+    <p class="crumb"><a href="index.html">Meteorological Cooperative</a> &rsaquo; Warning systems &rsaquo; <a href="kjs.html">REP-KJS</a> &rsaquo; Detection, latency and limits</p>
+    <h1 class="page-title">Detection, latency and limits</h1>
+    <p class="lede">REP-KJS works because the first seismic wave to arrive at a station is faster and weaker than the wave that does the damage. Everything the system achieves follows from that difference, and so does everything it fails to achieve. This page sets out the method, the time budget, the blind zone and the performance record, including every occasion on which the system was wrong.</p>
+
+    <h2>The physical basis</h2>
+    <div class="prose">
+      <p>An earthquake radiates two body waves. The P wave travels at about 6 km/s in the crust of the peninsula and displaces the ground along its direction of travel, which makes it weak. The S wave travels at about 3.5 km/s and displaces the ground across its direction of travel, which makes it strong and destructive. Surface waves follow more slowly and prolong the shaking.</p>
+      <p>A station near the origin therefore records the P wave several seconds before the S wave reaches it, and many seconds before the S wave reaches a settlement further away. The first few seconds of the P record contain enough information to estimate magnitude and depth. Sending that estimate onward at the speed of a network beats the S wave to every place beyond a certain distance.</p>
+    </div>
+
+    <h2>The method in sequence</h2>
+    <div class="tablewrap">
+      <table class="data">
+        <caption>From origin to broadcast, ordinary times</caption>
+        <thead>
+          <tr>
+            <th>Stage</th>
+            <th class="num">Elapsed</th>
+            <th>What occurs</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Origin</td>
+            <td class="num">0.0 s</td>
+            <td>Rupture begins at depth</td>
+          </tr>
+          <tr>
+            <td>First detection</td>
+            <td class="num">1.4 to 3.6 s</td>
+            <td>P wave reaches the nearest station; the trigger fires when the amplitude over the last fraction of a second rises sharply above the background level of the preceding minute</td>
+          </tr>
+          <tr>
+            <td>Confirmation</td>
+            <td class="num">2.2 to 5.0 s</td>
+            <td>A second and third station trigger; the location is fixed by arrival times, which suppresses false triggers from a single station</td>
+          </tr>
+          <tr>
+            <td>First estimate</td>
+            <td class="num">3.0 to 6.5 s</td>
+            <td>Magnitude estimated from the frequency and size of the first 3 s of the P record; depth from the order in which stations were reached</td>
+          </tr>
+          <tr>
+            <td>Intensity field</td>
+            <td class="num">3.4 to 7.0 s</td>
+            <td>Expected intensity computed for every point through the ground-motion model and the soil amplification map</td>
+          </tr>
+          <tr>
+            <td>Broadcast</td>
+            <td class="num">4 to 9 s</td>
+            <td>Segment 1 leaves the issuing node on every channel at once</td>
+          </tr>
+          <tr>
+            <td>Arrival at a device</td>
+            <td class="num">+0.2 to 1.8 s</td>
+            <td>Network and device latency; a television decoder is the slowest ordinary receiver</td>
+          </tr>
+          <tr>
+            <td>Revision</td>
+            <td class="num">12 s onward</td>
+            <td>Estimates refined as more stations report; segments 2 and 3 follow</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>The warning time actually available</h2>
+    <div class="prose">
+      <p>Warning time at a place equals the S wave travel time to that place minus the time consumed by detection and delivery. Since almost every event originates beneath the Belvacius hills in the south-east, the warning time in the Republic is close to a function of distance from that margin. The peninsula measures about 830 km corner to corner, so the range is wide: Cortius receives seventeen seconds and Lindoma, at the far north-western end, receives above two minutes.</p>
+    </div>
+
+    <div class="tablewrap">
+      <table class="data">
+        <caption>Warning time before onset, event on the Belvacius margin at 20 km depth</caption>
+        <thead>
+          <tr>
+            <th>Place</th>
+            <th class="num">Distance from epicentre</th>
+            <th class="num">S wave arrives</th>
+            <th class="num">Warning time</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Corcina</td>
+            <td class="num">14 km</td>
+            <td class="num">7 s</td>
+            <td class="num">None; inside the blind zone</td>
+          </tr>
+          <tr>
+            <td>Cortius</td>
+            <td class="num">89 km</td>
+            <td class="num">26 s</td>
+            <td class="num">17 s</td>
+          </tr>
+          <tr>
+            <td>Marendo</td>
+            <td class="num">111 km</td>
+            <td class="num">32 s</td>
+            <td class="num">23 s</td>
+          </tr>
+          <tr>
+            <td>Lutoliluri</td>
+            <td class="num">156 km</td>
+            <td class="num">45 s</td>
+            <td class="num">36 s</td>
+          </tr>
+          <tr>
+            <td>Solvena</td>
+            <td class="num">190 km</td>
+            <td class="num">55 s</td>
+            <td class="num">46 s</td>
+          </tr>
+          <tr>
+            <td>Prevessa</td>
+            <td class="num">210 km</td>
+            <td class="num">60 s</td>
+            <td class="num">51 s</td>
+          </tr>
+          <tr>
+            <td>Sornorum</td>
+            <td class="num">238 km</td>
+            <td class="num">68 s</td>
+            <td class="num">59 s</td>
+          </tr>
+          <tr>
+            <td>Leriduson</td>
+            <td class="num">300 km</td>
+            <td class="num">86 s</td>
+            <td class="num">77 s</td>
+          </tr>
+          <tr>
+            <td>Dromera</td>
+            <td class="num">358 km</td>
+            <td class="num">103 s</td>
+            <td class="num">94 s</td>
+          </tr>
+          <tr>
+            <td>Lindoma</td>
+            <td class="num">478 km</td>
+            <td class="num">137 s</td>
+            <td class="num">128 s</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>The blind zone</h2>
+    <div class="box limit">
+      <span class="lbl">The places that receive nothing in time</span>
+      <p>Within roughly 30 km of the epicentre the S wave arrives before the broadcast does. The warning reaches those devices during the shaking or after it. This is a property of the physics and no fault of the equipment: no arrangement of stations, no faster network and no better algorithm removes it.</p>
+      <p>The blind zone falls on the Belvacius sub-region and the settlements around Corcina, which is exactly the ground where the intensity is highest. Marendo, on the lagoon 111 km away, is the nearest settlement of any size outside it and receives about twenty seconds. The places most exposed to a Republic earthquake are the places a warning serves least well. Construction standards, fixed under Article 178 (1)(b), remain the only protection there.</p>
+      <p>Denser instrumentation shrinks the zone by a few kilometres and never abolishes it. The cooperative therefore publishes the size of the zone plainly, since a coverage claim the physics contradicts would mislead the people living inside it.</p>
+    </div>
+
+    <h2>Estimating from little information</h2>
+    <div class="prose">
+      <p>The first estimate uses about three seconds of the P record from three or four stations. That is a small sample of an event that may rupture for twenty seconds, and the consequences are systematic.</p>
+      <p>Magnitude is underestimated for large events. A rupture still propagating has not yet revealed its full extent, so the initial figure of a magnitude 7 event may read as 6.2 and rise as the record accumulates. The effect is negligible below magnitude 5.5 and grows above it. Every large event therefore produces a rising sequence of revisions, and the broadcast states the figure as an estimate at every stage.</p>
+      <p>Depth is the least stable of the three parameters early on. A shallow event mistaken for a deep one is under-warned, since depth attenuates the shaking, and this is the error most likely to place an intensity estimate one step below the observed value.</p>
+      <p>Two nearly simultaneous events are the classic failure of systems of this kind. Arrivals from two ruptures combine into one apparent event of larger magnitude at an intermediate location. REP-KJS applies a cluster test that separates events more than 40 km apart, and separation fails when the two lie closer.</p>
+    </div>
+
+    <h2>Performance record</h2>
+    <div class="prose">
+      <p>Every event since March 2021 for which a warning was issued or should have been issued appears in the register below. The cooperative publishes the failures on the same footing as the successes, since a system whose error rate is unknown cannot be relied upon.</p>
+    </div>
+
+    <div class="tablewrap">
+      <table class="data">
+        <caption>REP-KJS performance, March 2021 to the present</caption>
+        <thead>
+          <tr>
+            <th>Measure</th>
+            <th class="num">Count</th>
+            <th>Note</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Events warned, REP 3 or above</td>
+            <td class="num">41</td>
+            <td>All reached the whole territory</td>
+          </tr>
+          <tr>
+            <td>Warnings correct within one step</td>
+            <td class="num">37</td>
+            <td>Estimated intensity within one step of that observed</td>
+          </tr>
+          <tr>
+            <td>Intensity overstated by two steps or more</td>
+            <td class="num">2</td>
+            <td>June 2022 and November 2024, both from depth mis-estimated as shallow</td>
+          </tr>
+          <tr>
+            <td>Intensity understated by two steps or more</td>
+            <td class="num">2</td>
+            <td>March 2023, soft ground at Ravelluri amplified beyond the model; April 2025, similar</td>
+          </tr>
+          <tr>
+            <td>Events missed entirely</td>
+            <td class="num">1</td>
+            <td>September 2021, REP 3 at Prevessa; two stations offline for maintenance in the same window</td>
+          </tr>
+          <tr>
+            <td>False alerts issued</td>
+            <td class="num">3</td>
+            <td>Two from quarry blasting near Ferrista, one from a station fault at Ilvara; each cancelled within 30 s</td>
+          </tr>
+          <tr>
+            <td>Median first-alert time</td>
+            <td class="num">6.1 s</td>
+            <td>From origin time to departure of segment 1</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>Cancellation</h2>
+    <div class="prose">
+      <p>A warning found to be spurious is cancelled on the same channels within thirty seconds, in the same fixed wording, and the cancellation states the reason. Quarry blasting at Ferrista produced two of the three false alerts, and the blasting schedule is now filed with the cooperative in advance and applied as a suppression window at the two nearest stations.</p>
+      <p>A cancellation is itself an event in the register. The cooperative publishes the count of false alerts because a system that cancels nothing is a system whose threshold is set too high.</p>
+    </div>
+
+    <h2>What the system does not attempt</h2>
+    <div class="box limit">
+      <span class="lbl">Outside the method</span>
+      <p>REP-KJS makes no prediction. It detects an earthquake that has already begun. No component of it forecasts an event before rupture, and no such method exists anywhere.</p>
+      <p>Aftershocks receive the same treatment as any other event: they are detected when they occur and warned on the same threshold. The system offers no statement about when an aftershock will follow.</p>
+      <p>The intensity estimate is for ground at the location. Motion inside a tall building differs from motion at its foundation, sometimes by several steps on an upper floor, and the estimate accounts for neither the building nor the floor.</p>
+    </div>
+
+    <h2>See also</h2>
+    <div class="prose">
+      <ul>
+        <li><a href="kjs.html">REP-KJS</a>, what a broadcast contains</li>
+        <li><a href="scale.html">REP intensity scale</a>, including how the instrumental value is computed</li>
+        <li><a href="network.html">Observing network</a>, station spacing and the effect on detection time</li>
+        <li><a href="dev/vectors.html">Conformance test vectors</a>, including the four misestimated events</li>
+      </ul>
+    </div>
+
+  </main>
+
+  <footer class="coopfoot">
+    <div class="wrap">
+      <div class="cols">
+        <div>
+          <h4>Weather and climate</h4>
+          <ul>
+            <li><a href="climate.html">Climate of the Republic</a></li>
+            <li><a href="change.html">Observed change</a></li>
+            <li><a href="forecasting.html">How a forecast is made</a></li>
+            <li><a href="emissions.html">Emissions position</a></li>
+            <li><a href="periphery.html">Harm to the periphery</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Warning systems</h4>
+          <ul>
+            <li><a href="rationale.html">Why these systems exist</a></li>
+            <li><a href="seismicity.html">Seismicity of the Republic</a></li>
+            <li><a href="kjs.html">REP-KJS, earthquake</a></li>
+            <li><a href="scale.html">REP intensity scale</a></li>
+            <li><a href="kjs-method.html">Detection, latency and limits</a></li>
+            <li><a href="lew.html">REP-LEW, landslide</a></li>
+            <li><a href="few.html">REP-FEW, flood</a></li>
+            <li><a href="devices.html">Certified devices and RQUAK</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Record and network</h4>
+          <ul>
+            <li><a href="species.html">Species catalogue</a></li>
+            <li><a href="network.html">Observing network</a></li>
+            <li><a href="about.html">About the cooperative</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Developers</h4>
+          <ul>
+            <li><a href="dev/index.html">Specifications and licence</a></li>
+            <li><a href="dev/wire-format.html">Warning wire format</a></li>
+            <li><a href="dev/vectors.html">Conformance test vectors</a></li>
+            <li><a href="dev/hardware.html">Sensor and station hardware</a></li>
+            <li><a href="dev/forking.html">Porting to another country</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="basis">Published by the Meteorological Cooperative of the Republic under the organic law on observation and warning. Free of charge, without licence, registration or account. No external resource is loaded by this page. See also the <a href="../../index.html">Republic of Fluid</a> and the <a href="../../register/">Public Register</a>.</p>
+    </div>
+  </footer>
+
+  <script src="site.js"></script>
 </body>
 </html>

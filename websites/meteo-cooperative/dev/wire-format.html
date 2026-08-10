@@ -1,105 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Warning wire format - Meteorological Cooperative</title>
-<meta name="description" content="The binary message format shared by REP-KJS, REP-LEW and REP-FEW: framing, common header, hazard blocks, area records, decoder rules, signing and versioning.">
-<link rel="stylesheet" href="../site.css">
-<link rel="icon" href="../../../assets/flag.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Warning wire format - Meteorological Cooperative</title>
+  <meta name="description" content="The binary message format shared by REP-KJS, REP-LEW and REP-FEW: framing, common header, hazard blocks, area records, decoder rules, signing and versioning.">
+  <link rel="stylesheet" href="../site.css">
+  <link rel="icon" href="../../../assets/flag.png">
 </head>
 <body>
 
-<header class="masthead">
-  <div class="wrap">
-    <span class="marque"><svg viewBox="0 0 58 58" role="img" aria-label="Emblem of the Meteorological Cooperative">
-<circle cx="29" cy="31" r="20" fill="none" stroke="#9a6516" stroke-width="2.4"/>
-<circle cx="29" cy="31" r="12.5" fill="none" stroke="#9a6516" stroke-width="1.6"/>
-<circle cx="29" cy="31" r="5" fill="none" stroke="#9a6516" stroke-width="1.6"/>
-<path d="M29 31 L29 9" stroke="#5f3d0c" stroke-width="2.4" stroke-linecap="round"/>
-<path d="M29 12 L38 15" stroke="#5f3d0c" stroke-width="2.4" stroke-linecap="round"/>
-<path d="M29 18 L36 20.5" stroke="#5f3d0c" stroke-width="2.4" stroke-linecap="round"/>
-<circle cx="29" cy="31" r="2" fill="#5f3d0c"/>
-</svg></span>
-    <span class="idblock">
-      <p class="coopname"><a href="../index.html">Meteorological Cooperative of the Republic</a></p>
-      <p class="basis">Weather, climate, seismicity, landslide and flood &middot; mandate held under the organic law on observation and warning</p>
-    </span>
-  </div>
-</header>
+  <header class="masthead">
+    <div class="wrap">
+      <span class="marque"><svg viewBox="0 0 58 58" role="img" aria-label="Emblem of the Meteorological Cooperative">
+          <circle cx="29" cy="31" r="20" fill="none" stroke="#9a6516" stroke-width="2.4" />
+          <circle cx="29" cy="31" r="12.5" fill="none" stroke="#9a6516" stroke-width="1.6" />
+          <circle cx="29" cy="31" r="5" fill="none" stroke="#9a6516" stroke-width="1.6" />
+          <path d="M29 31 L29 9" stroke="#5f3d0c" stroke-width="2.4" stroke-linecap="round" />
+          <path d="M29 12 L38 15" stroke="#5f3d0c" stroke-width="2.4" stroke-linecap="round" />
+          <path d="M29 18 L36 20.5" stroke="#5f3d0c" stroke-width="2.4" stroke-linecap="round" />
+          <circle cx="29" cy="31" r="2" fill="#5f3d0c" />
+        </svg></span>
+      <span class="idblock">
+        <p class="coopname"><a href="../index.html">Meteorological Cooperative of the Republic</a></p>
+        <p class="basis">Weather, climate, seismicity, landslide and flood &middot; mandate held under the organic law on observation and warning</p>
+      </span>
+    </div>
+  </header>
 
-<nav class="mainnav" aria-label="Sections of this site">
-  <div class="wrap">
-    <a class="navtop" href="../index.html">Home</a>
-    <details class="grp">
-      <summary>Weather and climate</summary>
-      <ul>
-        <li><a href="../climate.html">Climate of the Republic</a></li>
-        <li><a href="../change.html">Observed change</a></li>
-        <li><a href="../forecasting.html">How a forecast is made</a></li>
-        <li class="has"><details class="sub">
-          <summary><a href="../emissions.html">Emissions position</a></summary>
-          <ul>
-            <li><a href="../periphery.html">Harm to the periphery</a></li>
-          </ul>
-        </details></li>
-      </ul>
-    </details>
-    <details class="grp">
-      <summary>Warning systems</summary>
-      <ul>
-        <li><a href="../rationale.html">Why these systems exist</a></li>
-        <li><a href="../seismicity.html">Seismicity of the Republic</a></li>
-        <li class="has"><details class="sub">
-          <summary><a href="../kjs.html">REP-KJS, earthquake</a></summary>
-          <ul>
-            <li><a href="../scale.html">REP intensity scale</a></li>
-            <li><a href="../kjs-method.html">Detection, latency and limits</a></li>
-          </ul>
-        </details></li>
-        <li><a href="../lew.html">REP-LEW, landslide</a></li>
-        <li><a href="../few.html">REP-FEW, flood</a></li>
-        <li><a href="../devices.html">Certified devices and RQUAK</a></li>
-      </ul>
-    </details>
-    <a class="navtop" href="../species.html">Species catalogue</a>
-    <a class="navtop" href="../network.html">Observing network</a>
-    <details class="grp">
-      <summary>Developers</summary>
-      <ul>
-        <li><a href="../dev/index.html">Specifications and source</a></li>
-        <li><a href="../dev/wire-format.html">Warning wire format</a></li>
-        <li><a href="../dev/vectors.html">Conformance test vectors</a></li>
-        <li><a href="../dev/hardware.html">Sensor and station hardware</a></li>
-        <li><a href="../dev/forking.html">Porting to another country</a></li>
-      </ul>
-    </details>
-    <a class="navtop" href="../about.html">About the cooperative</a>
-  </div>
-</nav>
+  <nav class="mainnav" aria-label="Sections of this site">
+    <div class="wrap">
+      <a class="navtop" href="../index.html">Home</a>
+      <details class="grp">
+        <summary>Weather and climate</summary>
+        <ul>
+          <li><a href="../climate.html">Climate of the Republic</a></li>
+          <li><a href="../change.html">Observed change</a></li>
+          <li><a href="../forecasting.html">How a forecast is made</a></li>
+          <li class="has">
+            <details class="sub">
+              <summary><a href="../emissions.html">Emissions position</a></summary>
+              <ul>
+                <li><a href="../periphery.html">Harm to the periphery</a></li>
+              </ul>
+            </details>
+          </li>
+        </ul>
+      </details>
+      <details class="grp">
+        <summary>Warning systems</summary>
+        <ul>
+          <li><a href="../rationale.html">Why these systems exist</a></li>
+          <li><a href="../seismicity.html">Seismicity of the Republic</a></li>
+          <li class="has">
+            <details class="sub">
+              <summary><a href="../kjs.html">REP-KJS, earthquake</a></summary>
+              <ul>
+                <li><a href="../scale.html">REP intensity scale</a></li>
+                <li><a href="../kjs-method.html">Detection, latency and limits</a></li>
+              </ul>
+            </details>
+          </li>
+          <li><a href="../lew.html">REP-LEW, landslide</a></li>
+          <li><a href="../few.html">REP-FEW, flood</a></li>
+          <li><a href="../devices.html">Certified devices and RQUAK</a></li>
+        </ul>
+      </details>
+      <a class="navtop" href="../species.html">Species catalogue</a>
+      <a class="navtop" href="../network.html">Observing network</a>
+      <details class="grp">
+        <summary>Developers</summary>
+        <ul>
+          <li><a href="../dev/index.html">Specifications and source</a></li>
+          <li><a href="../dev/wire-format.html">Warning wire format</a></li>
+          <li><a href="../dev/vectors.html">Conformance test vectors</a></li>
+          <li><a href="../dev/hardware.html">Sensor and station hardware</a></li>
+          <li><a href="../dev/forking.html">Porting to another country</a></li>
+        </ul>
+      </details>
+      <a class="navtop" href="../about.html">About the cooperative</a>
+    </div>
+  </nav>
 
-<main id="main" class="sheet">
-<p class="crumb"><a href="../index.html">Meteorological Cooperative</a> &rsaquo; <a href="index.html">Developers</a> &rsaquo; Warning wire format</p>
-<h1 class="page-title">Warning wire format</h1>
-<p class="lede">All three warning systems send the same kind of message. This page specifies it: the framing, the header shared by every message, the body that differs by hazard, the signature, and the rules a decoder follows. The reference encoder and decoder are at <span class="host">src.meteo.rof/rep-wire</span>, and conformance is judged against them.</p>
+  <main id="main" class="sheet">
+    <p class="crumb"><a href="../index.html">Meteorological Cooperative</a> &rsaquo; <a href="index.html">Developers</a> &rsaquo; Warning wire format</p>
+    <h1 class="page-title">Warning wire format</h1>
+    <p class="lede">All three warning systems send the same kind of message. This page specifies it: the framing, the header shared by every message, the body that differs by hazard, the signature, and the rules a decoder follows. The reference encoder and decoder are at <span class="host">src.meteo.rof/rep-wire</span>, and conformance is judged against them.</p>
 
-<div class="facts">
-  <div class="row"><span class="k">Current version</span><span class="v">3, broadcast alongside version 2</span></div>
-  <div class="row"><span class="k">Encoding</span><span class="v">Fixed-width binary, big-endian, no compression</span></div>
-  <div class="row"><span class="k">Typical size</span><span class="v">184 bytes for a first alert; 1,120 bytes with the full sub-region table</span></div>
-  <div class="row"><span class="k">Framing</span><span class="v">Length-prefixed, with a 32-bit checksum over the whole frame</span></div>
-  <div class="row"><span class="k">Authentication</span><span class="v">Ed25519 signature over the frame; public keys published and rotated yearly</span></div>
-  <div class="row"><span class="k">Repetition</span><span class="v">Every segment is sent three times at 200 ms spacing on every path</span></div>
-</div>
+    <div class="facts">
+      <div class="row"><span class="k">Current version</span><span class="v">3, broadcast alongside version 2</span></div>
+      <div class="row"><span class="k">Encoding</span><span class="v">Fixed-width binary, big-endian, no compression</span></div>
+      <div class="row"><span class="k">Typical size</span><span class="v">184 bytes for a first alert; 1,120 bytes with the full sub-region table</span></div>
+      <div class="row"><span class="k">Framing</span><span class="v">Length-prefixed, with a 32-bit checksum over the whole frame</span></div>
+      <div class="row"><span class="k">Authentication</span><span class="v">Ed25519 signature over the frame; public keys published and rotated yearly</span></div>
+      <div class="row"><span class="k">Repetition</span><span class="v">Every segment is sent three times at 200 ms spacing on every path</span></div>
+    </div>
 
-<h2>Why the format is what it is</h2>
-<div class="prose">
-<p>Three constraints shaped it. The message must fit inside a single cell broadcast page, which fixes the ceiling at 1,395 bytes. It must decode on a microcontroller with a few kilobytes of memory, which rules out any format requiring a parser. And it must be readable by a decoder written years earlier, which requires strict versioning.</p>
-<p>Fixed-width binary satisfies all three. A field sits at a known offset, its width is known, and a decoder reads it with an offset and a length. No text parsing occurs anywhere in the warning path.</p>
-</div>
+    <h2>Why the format is what it is</h2>
+    <div class="prose">
+      <p>Three constraints shaped it. The message must fit inside a single cell broadcast page, which fixes the ceiling at 1,395 bytes. It must decode on a microcontroller with a few kilobytes of memory, which rules out any format requiring a parser. And it must be readable by a decoder written years earlier, which requires strict versioning.</p>
+      <p>Fixed-width binary satisfies all three. A field sits at a known offset, its width is known, and a decoder reads it with an offset and a length. No text parsing occurs anywhere in the warning path.</p>
+    </div>
 
-<h2>Frame</h2>
-<pre><code>offset  width  field
+    <h2>Frame</h2>
+    <pre><code>offset  width  field
    0      2    magic, 0x52 0x50            "RP"
    2      1    version                     currently 3
    3      1    hazard                      1 KJS, 2 LEW, 3 FEW
@@ -112,191 +116,356 @@
 16+n     64    signature                   Ed25519 over bytes 0 to 15+n
 80+n      4    checksum                    CRC-32 over bytes 0 to 79+n</code></pre>
 
-<div class="prose">
-<p>A decoder that fails the checksum discards the frame in silence. A decoder that fails the signature discards the frame and records the failure, since a valid frame with a bad signature indicates an attempt to inject a warning.</p>
-</div>
+    <div class="prose">
+      <p>A decoder that fails the checksum discards the frame in silence. A decoder that fails the signature discards the frame and records the failure, since a valid frame with a bad signature indicates an attempt to inject a warning.</p>
+    </div>
 
-<h2>Common header</h2>
-<div class="tablewrap">
-<table class="data">
-<caption>Fields present in the body of every hazard</caption>
-<thead>
-<tr><th>Field</th><th class="num">Width</th><th class="num">Units</th><th>Meaning</th></tr>
-</thead>
-<tbody>
-<tr><td>origin_time</td><td class="num">8</td><td class="num">ms since epoch</td><td>Time the event began, or the time the threshold was crossed</td></tr>
-<tr><td>issue_time</td><td class="num">8</td><td class="num">ms since epoch</td><td>Time this segment left the issuing node</td></tr>
-<tr><td>expiry</td><td class="num">4</td><td class="num">s from issue</td><td>After this the message is stale and a device says so</td></tr>
-<tr><td>latitude</td><td class="num">4</td><td class="num">1e-7 degree</td><td>Epicentre, slope unit centroid or reach midpoint</td></tr>
-<tr><td>longitude</td><td class="num">4</td><td class="num">1e-7 degree</td><td>As above</td></tr>
-<tr><td>certainty</td><td class="num">1</td><td class="num">0 to 100</td><td>Confidence in the estimate at the moment of issue</td></tr>
-<tr><td>severity</td><td class="num">1</td><td class="num">1 to 4</td><td>Watch, warning, severe or imminent, movement or onset</td></tr>
-<tr><td>area_count</td><td class="num">1</td><td class="num">count</td><td>Number of area records following the hazard block</td></tr>
-</tbody>
-</table>
-</div>
+    <h2>Common header</h2>
+    <div class="tablewrap">
+      <table class="data">
+        <caption>Fields present in the body of every hazard</caption>
+        <thead>
+          <tr>
+            <th>Field</th>
+            <th class="num">Width</th>
+            <th class="num">Units</th>
+            <th>Meaning</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>origin_time</td>
+            <td class="num">8</td>
+            <td class="num">ms since epoch</td>
+            <td>Time the event began, or the time the threshold was crossed</td>
+          </tr>
+          <tr>
+            <td>issue_time</td>
+            <td class="num">8</td>
+            <td class="num">ms since epoch</td>
+            <td>Time this segment left the issuing node</td>
+          </tr>
+          <tr>
+            <td>expiry</td>
+            <td class="num">4</td>
+            <td class="num">s from issue</td>
+            <td>After this the message is stale and a device says so</td>
+          </tr>
+          <tr>
+            <td>latitude</td>
+            <td class="num">4</td>
+            <td class="num">1e-7 degree</td>
+            <td>Epicentre, slope unit centroid or reach midpoint</td>
+          </tr>
+          <tr>
+            <td>longitude</td>
+            <td class="num">4</td>
+            <td class="num">1e-7 degree</td>
+            <td>As above</td>
+          </tr>
+          <tr>
+            <td>certainty</td>
+            <td class="num">1</td>
+            <td class="num">0 to 100</td>
+            <td>Confidence in the estimate at the moment of issue</td>
+          </tr>
+          <tr>
+            <td>severity</td>
+            <td class="num">1</td>
+            <td class="num">1 to 4</td>
+            <td>Watch, warning, severe or imminent, movement or onset</td>
+          </tr>
+          <tr>
+            <td>area_count</td>
+            <td class="num">1</td>
+            <td class="num">count</td>
+            <td>Number of area records following the hazard block</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 
-<h2>Hazard block, earthquake</h2>
-<div class="tablewrap">
-<table class="data">
-<caption>REP-KJS body, following the common header</caption>
-<thead>
-<tr><th>Field</th><th class="num">Width</th><th class="num">Units</th><th>Meaning</th></tr>
-</thead>
-<tbody>
-<tr><td>depth</td><td class="num">2</td><td class="num">100 m</td><td>Focal depth</td></tr>
-<tr><td>magnitude</td><td class="num">2</td><td class="num">0.01</td><td>Moment magnitude estimate</td></tr>
-<tr><td>rep_here</td><td class="num">2</td><td class="num">0.01 step</td><td>Continuous intensity for the receiving location, before flooring</td></tr>
-<tr><td>rep_max</td><td class="num">1</td><td class="num">step</td><td>Highest whole step estimated anywhere</td></tr>
-<tr><td>onset</td><td class="num">2</td><td class="num">100 ms</td><td>Seconds until S wave arrival at the receiving location</td></tr>
-<tr><td>coastal</td><td class="num">1</td><td class="num">enum</td><td>0 none, 1 assessing, 2 advisory, 3 warning</td></tr>
-<tr><td>station_count</td><td class="num">1</td><td class="num">count</td><td>Stations contributing to this estimate</td></tr>
-</tbody>
-</table>
-</div>
+    <h2>Hazard block, earthquake</h2>
+    <div class="tablewrap">
+      <table class="data">
+        <caption>REP-KJS body, following the common header</caption>
+        <thead>
+          <tr>
+            <th>Field</th>
+            <th class="num">Width</th>
+            <th class="num">Units</th>
+            <th>Meaning</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>depth</td>
+            <td class="num">2</td>
+            <td class="num">100 m</td>
+            <td>Focal depth</td>
+          </tr>
+          <tr>
+            <td>magnitude</td>
+            <td class="num">2</td>
+            <td class="num">0.01</td>
+            <td>Moment magnitude estimate</td>
+          </tr>
+          <tr>
+            <td>rep_here</td>
+            <td class="num">2</td>
+            <td class="num">0.01 step</td>
+            <td>Continuous intensity for the receiving location, before flooring</td>
+          </tr>
+          <tr>
+            <td>rep_max</td>
+            <td class="num">1</td>
+            <td class="num">step</td>
+            <td>Highest whole step estimated anywhere</td>
+          </tr>
+          <tr>
+            <td>onset</td>
+            <td class="num">2</td>
+            <td class="num">100 ms</td>
+            <td>Seconds until S wave arrival at the receiving location</td>
+          </tr>
+          <tr>
+            <td>coastal</td>
+            <td class="num">1</td>
+            <td class="num">enum</td>
+            <td>0 none, 1 assessing, 2 advisory, 3 warning</td>
+          </tr>
+          <tr>
+            <td>station_count</td>
+            <td class="num">1</td>
+            <td class="num">count</td>
+            <td>Stations contributing to this estimate</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 
-<div class="prose">
-<p>A device computes its own step by flooring <code>rep_here</code>. The continuous value travels so that a device near a boundary can present the step and a client with a display can show the value it came from. Rounding is done once, at the device, from the continuous number.</p>
-<p>The <code>onset</code> field is the single most time-critical value in the format, and a device presents it as a count of seconds falling in real time. Where <code>onset</code> is zero or negative, the shaking has already reached the device, and the presentation states this.</p>
-</div>
+    <div class="prose">
+      <p>A device computes its own step by flooring <code>rep_here</code>. The continuous value travels so that a device near a boundary can present the step and a client with a display can show the value it came from. Rounding is done once, at the device, from the continuous number.</p>
+      <p>The <code>onset</code> field is the single most time-critical value in the format, and a device presents it as a count of seconds falling in real time. Where <code>onset</code> is zero or negative, the shaking has already reached the device, and the presentation states this.</p>
+    </div>
 
-<h2>Hazard block, landslide and flood</h2>
-<div class="tablewrap">
-<table class="data">
-<caption>REP-LEW and REP-FEW bodies</caption>
-<thead>
-<tr><th>Field</th><th class="num">Width</th><th>Present in</th><th>Meaning</th></tr>
-</thead>
-<tbody>
-<tr><td>window_start</td><td class="num">4</td><td>Both</td><td>Seconds from issue to the start of the period the warning covers</td></tr>
-<tr><td>window_end</td><td class="num">4</td><td>Both</td><td>Seconds from issue to the end of that period</td></tr>
-<tr><td>probability</td><td class="num">1</td><td>Both</td><td>Chance of the event occurring inside the window, 0 to 100</td></tr>
-<tr><td>trigger</td><td class="num">1</td><td>Both</td><td>Rainfall, saturation, instrument acceleration, seismic, surge, snowmelt</td></tr>
-<tr><td>slope_state</td><td class="num">1</td><td>LEW</td><td>Creeping, accelerating, moved; from the probing limb</td></tr>
-<tr><td>volume_class</td><td class="num">1</td><td>LEW</td><td>Expected order of magnitude of the moving mass</td></tr>
-<tr><td>flood_kind</td><td class="num">1</td><td>FEW</td><td>Flash, riverine, surge, overtopping</td></tr>
-<tr><td>level_now</td><td class="num">2</td><td>FEW</td><td>Current stage or water level, in centimetres above the reference</td></tr>
-<tr><td>level_expected</td><td class="num">2</td><td>FEW</td><td>Expected peak, same reference</td></tr>
-</tbody>
-</table>
-</div>
+    <h2>Hazard block, landslide and flood</h2>
+    <div class="tablewrap">
+      <table class="data">
+        <caption>REP-LEW and REP-FEW bodies</caption>
+        <thead>
+          <tr>
+            <th>Field</th>
+            <th class="num">Width</th>
+            <th>Present in</th>
+            <th>Meaning</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>window_start</td>
+            <td class="num">4</td>
+            <td>Both</td>
+            <td>Seconds from issue to the start of the period the warning covers</td>
+          </tr>
+          <tr>
+            <td>window_end</td>
+            <td class="num">4</td>
+            <td>Both</td>
+            <td>Seconds from issue to the end of that period</td>
+          </tr>
+          <tr>
+            <td>probability</td>
+            <td class="num">1</td>
+            <td>Both</td>
+            <td>Chance of the event occurring inside the window, 0 to 100</td>
+          </tr>
+          <tr>
+            <td>trigger</td>
+            <td class="num">1</td>
+            <td>Both</td>
+            <td>Rainfall, saturation, instrument acceleration, seismic, surge, snowmelt</td>
+          </tr>
+          <tr>
+            <td>slope_state</td>
+            <td class="num">1</td>
+            <td>LEW</td>
+            <td>Creeping, accelerating, moved; from the probing limb</td>
+          </tr>
+          <tr>
+            <td>volume_class</td>
+            <td class="num">1</td>
+            <td>LEW</td>
+            <td>Expected order of magnitude of the moving mass</td>
+          </tr>
+          <tr>
+            <td>flood_kind</td>
+            <td class="num">1</td>
+            <td>FEW</td>
+            <td>Flash, riverine, surge, overtopping</td>
+          </tr>
+          <tr>
+            <td>level_now</td>
+            <td class="num">2</td>
+            <td>FEW</td>
+            <td>Current stage or water level, in centimetres above the reference</td>
+          </tr>
+          <tr>
+            <td>level_expected</td>
+            <td class="num">2</td>
+            <td>FEW</td>
+            <td>Expected peak, same reference</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 
-<div class="prose">
-<p>The window and probability fields exist because a landslide or flood warning states a period and a chance, quantities the earthquake block has no need of. Fitting them into a shared structure took three revisions of the format, and it is the reason a device certified for one hazard handles all three.</p>
-</div>
+    <div class="prose">
+      <p>The window and probability fields exist because a landslide or flood warning states a period and a chance, quantities the earthquake block has no need of. Fitting them into a shared structure took three revisions of the format, and it is the reason a device certified for one hazard handles all three.</p>
+    </div>
 
-<h2>Area records</h2>
-<div class="prose">
-<p>The body ends with <code>area_count</code> records of four bytes each. Each names an area and states the value estimated there.</p>
-</div>
+    <h2>Area records</h2>
+    <div class="prose">
+      <p>The body ends with <code>area_count</code> records of four bytes each. Each names an area and states the value estimated there.</p>
+    </div>
 
-<pre><code>offset  width  field
+    <pre><code>offset  width  field
    0      2    area code       sub-region, slope unit, reach or coastal cell
    2      1    value           REP step, or severity for LEW and FEW
    3      1    flags           bit 0 foreign territory, bit 1 highest value
                                in this message, bit 2 estimate superseded
                                by observation</code></pre>
 
-<div class="prose">
-<p>Segment 1 sends the receiving area alone. Segment 3 sends every area in descending order of value, which produces the national reading heard in a broadcast. Area codes for the Republic are in <code>rep-wire</code>; a fork replaces that table and nothing else.</p>
-<p>The foreign territory flag marks areas outside the Republic. It is set on the Aporean areas of any event on the eastern segment of the margin, and a device presents those areas after the domestic ones and states that they lie beyond the frontier.</p>
-</div>
-
-<h2>Rules a decoder follows</h2>
-<div class="tablewrap">
-<table class="data">
-<caption>Required decoder behaviour</caption>
-<thead>
-<tr><th>Situation</th><th>Required behaviour</th></tr>
-</thead>
-<tbody>
-<tr><td>Unknown version, higher than the decoder knows</td><td>Decode the header and every field the decoder knows; ignore the remainder</td></tr>
-<tr><td>Unknown version, lower</td><td>Decode by the older specification; every published version stays valid</td></tr>
-<tr><td>Duplicate message identifier</td><td>Discard silently; every segment arrives three times on several paths</td></tr>
-<tr><td>Segment arriving out of order</td><td>Present the highest segment number received; discard the older</td></tr>
-<tr><td>Revision flag set</td><td>Replace the presented values; state that the figures were revised</td></tr>
-<tr><td>Cancellation flag set</td><td>Withdraw the presentation within 400 ms and state the reason field</td></tr>
-<tr><td>Test flag set</td><td>Present as a test, distinguishable by sound and by wording from a real warning</td></tr>
-<tr><td>Expiry passed</td><td>State the age of the information; never present a stale message as current</td></tr>
-<tr><td>Signature invalid</td><td>Discard and record; present nothing</td></tr>
-</tbody>
-</table>
-</div>
-
-<h2>Signing and keys</h2>
-<div class="prose">
-<p>Every frame is signed with Ed25519 by the issuing node. Public keys are published in the register and on this site, rotate each year, and overlap for ninety days at the rotation. A device holds the current key and the previous one.</p>
-<p>Signing prevents a false warning being injected into a delivery path. It offers no protection against a warning being blocked, and no cryptography can offer that: a device out of contact receives nothing, which is why five delivery paths run in parallel.</p>
-</div>
-
-<h2>Version 2 and version 3</h2>
-<div class="box">
-<span class="lbl">What changed and what did not</span>
-<p>Version 3 added the <code>certainty</code> field, the foreign territory flag, and the <code>level_now</code> and <code>level_expected</code> fields for flood. Every version 2 field kept its offset, its width and its meaning.</p>
-<p>A version 2 decoder reads a version 3 message correctly, ignoring the three additions. Both versions are broadcast in parallel and will remain so until at least 2029, which is five years from the introduction of version 3.</p>
-</div>
-
-<h2>See also</h2>
-<div class="prose">
-<ul>
-<li><a href="vectors.html">Conformance test vectors</a>, which exercise every rule above</li>
-<li><a href="../devices.html">Certified devices and RQUAK</a>, and the conformance requirements</li>
-<li><a href="../scale.html">REP intensity scale</a>, on the continuous value and the step</li>
-<li><a href="forking.html">Porting to another country</a></li>
-</ul>
-</div>
-
-</main>
-
-<footer class="coopfoot">
-  <div class="wrap">
-    <div class="cols">
-      <div>
-        <h4>Weather and climate</h4>
-        <ul>
-          <li><a href="../climate.html">Climate of the Republic</a></li>
-          <li><a href="../change.html">Observed change</a></li>
-          <li><a href="../forecasting.html">How a forecast is made</a></li>
-          <li><a href="../emissions.html">Emissions position</a></li>
-          <li><a href="../periphery.html">Harm to the periphery</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Warning systems</h4>
-        <ul>
-          <li><a href="../rationale.html">Why these systems exist</a></li>
-          <li><a href="../seismicity.html">Seismicity of the Republic</a></li>
-          <li><a href="../kjs.html">REP-KJS, earthquake</a></li>
-          <li><a href="../scale.html">REP intensity scale</a></li>
-          <li><a href="../kjs-method.html">Detection, latency and limits</a></li>
-          <li><a href="../lew.html">REP-LEW, landslide</a></li>
-          <li><a href="../few.html">REP-FEW, flood</a></li>
-          <li><a href="../devices.html">Certified devices and RQUAK</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Record and network</h4>
-        <ul>
-          <li><a href="../species.html">Species catalogue</a></li>
-          <li><a href="../network.html">Observing network</a></li>
-          <li><a href="../about.html">About the cooperative</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Developers</h4>
-        <ul>
-          <li><a href="../dev/index.html">Specifications and licence</a></li>
-          <li><a href="../dev/wire-format.html">Warning wire format</a></li>
-          <li><a href="../dev/vectors.html">Conformance test vectors</a></li>
-          <li><a href="../dev/hardware.html">Sensor and station hardware</a></li>
-          <li><a href="../dev/forking.html">Porting to another country</a></li>
-        </ul>
-      </div>
+    <div class="prose">
+      <p>Segment 1 sends the receiving area alone. Segment 3 sends every area in descending order of value, which produces the national reading heard in a broadcast. Area codes for the Republic are in <code>rep-wire</code>; a fork replaces that table and nothing else.</p>
+      <p>The foreign territory flag marks areas outside the Republic. It is set on the Aporean areas of any event on the eastern segment of the margin, and a device presents those areas after the domestic ones and states that they lie beyond the frontier.</p>
     </div>
-    <p class="basis">Published by the Meteorological Cooperative of the Republic under the organic law on observation and warning. Free of charge, without licence, registration or account. No external resource is loaded by this page. See also the <a href="../../../index.html">Republic of Fluid</a> and the <a href="../../../register/">Public Register</a>.</p>
-  </div>
-</footer>
 
-<script src="../site.js"></script>
+    <h2>Rules a decoder follows</h2>
+    <div class="tablewrap">
+      <table class="data">
+        <caption>Required decoder behaviour</caption>
+        <thead>
+          <tr>
+            <th>Situation</th>
+            <th>Required behaviour</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Unknown version, higher than the decoder knows</td>
+            <td>Decode the header and every field the decoder knows; ignore the remainder</td>
+          </tr>
+          <tr>
+            <td>Unknown version, lower</td>
+            <td>Decode by the older specification; every published version stays valid</td>
+          </tr>
+          <tr>
+            <td>Duplicate message identifier</td>
+            <td>Discard silently; every segment arrives three times on several paths</td>
+          </tr>
+          <tr>
+            <td>Segment arriving out of order</td>
+            <td>Present the highest segment number received; discard the older</td>
+          </tr>
+          <tr>
+            <td>Revision flag set</td>
+            <td>Replace the presented values; state that the figures were revised</td>
+          </tr>
+          <tr>
+            <td>Cancellation flag set</td>
+            <td>Withdraw the presentation within 400 ms and state the reason field</td>
+          </tr>
+          <tr>
+            <td>Test flag set</td>
+            <td>Present as a test, distinguishable by sound and by wording from a real warning</td>
+          </tr>
+          <tr>
+            <td>Expiry passed</td>
+            <td>State the age of the information; never present a stale message as current</td>
+          </tr>
+          <tr>
+            <td>Signature invalid</td>
+            <td>Discard and record; present nothing</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>Signing and keys</h2>
+    <div class="prose">
+      <p>Every frame is signed with Ed25519 by the issuing node. Public keys are published in the register and on this site, rotate each year, and overlap for ninety days at the rotation. A device holds the current key and the previous one.</p>
+      <p>Signing prevents a false warning being injected into a delivery path. It offers no protection against a warning being blocked, and no cryptography can offer that: a device out of contact receives nothing, which is why five delivery paths run in parallel.</p>
+    </div>
+
+    <h2>Version 2 and version 3</h2>
+    <div class="box">
+      <span class="lbl">What changed and what did not</span>
+      <p>Version 3 added the <code>certainty</code> field, the foreign territory flag, and the <code>level_now</code> and <code>level_expected</code> fields for flood. Every version 2 field kept its offset, its width and its meaning.</p>
+      <p>A version 2 decoder reads a version 3 message correctly, ignoring the three additions. Both versions are broadcast in parallel and will remain so until at least 2029, which is five years from the introduction of version 3.</p>
+    </div>
+
+    <h2>See also</h2>
+    <div class="prose">
+      <ul>
+        <li><a href="vectors.html">Conformance test vectors</a>, which exercise every rule above</li>
+        <li><a href="../devices.html">Certified devices and RQUAK</a>, and the conformance requirements</li>
+        <li><a href="../scale.html">REP intensity scale</a>, on the continuous value and the step</li>
+        <li><a href="forking.html">Porting to another country</a></li>
+      </ul>
+    </div>
+
+  </main>
+
+  <footer class="coopfoot">
+    <div class="wrap">
+      <div class="cols">
+        <div>
+          <h4>Weather and climate</h4>
+          <ul>
+            <li><a href="../climate.html">Climate of the Republic</a></li>
+            <li><a href="../change.html">Observed change</a></li>
+            <li><a href="../forecasting.html">How a forecast is made</a></li>
+            <li><a href="../emissions.html">Emissions position</a></li>
+            <li><a href="../periphery.html">Harm to the periphery</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Warning systems</h4>
+          <ul>
+            <li><a href="../rationale.html">Why these systems exist</a></li>
+            <li><a href="../seismicity.html">Seismicity of the Republic</a></li>
+            <li><a href="../kjs.html">REP-KJS, earthquake</a></li>
+            <li><a href="../scale.html">REP intensity scale</a></li>
+            <li><a href="../kjs-method.html">Detection, latency and limits</a></li>
+            <li><a href="../lew.html">REP-LEW, landslide</a></li>
+            <li><a href="../few.html">REP-FEW, flood</a></li>
+            <li><a href="../devices.html">Certified devices and RQUAK</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Record and network</h4>
+          <ul>
+            <li><a href="../species.html">Species catalogue</a></li>
+            <li><a href="../network.html">Observing network</a></li>
+            <li><a href="../about.html">About the cooperative</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Developers</h4>
+          <ul>
+            <li><a href="../dev/index.html">Specifications and licence</a></li>
+            <li><a href="../dev/wire-format.html">Warning wire format</a></li>
+            <li><a href="../dev/vectors.html">Conformance test vectors</a></li>
+            <li><a href="../dev/hardware.html">Sensor and station hardware</a></li>
+            <li><a href="../dev/forking.html">Porting to another country</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="basis">Published by the Meteorological Cooperative of the Republic under the organic law on observation and warning. Free of charge, without licence, registration or account. No external resource is loaded by this page. See also the <a href="../../../index.html">Republic of Fluid</a> and the <a href="../../../register/">Public Register</a>.</p>
+    </div>
+  </footer>
+
+  <script src="../site.js"></script>
 </body>
 </html>

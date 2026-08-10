@@ -1,233 +1,299 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Telephony &middot; Lines, exchanges and services of the Republic of Fluid</title>
-<meta name="description" content="The telephone and network federation of the Republic of Fluid. Emergency numbers, the addresses of every service, how to get a line, and the specifications anyone may build a modem from.">
-<meta name="theme-color" content="#23201a">
-<link rel="stylesheet" href="site.css">
-<link rel="icon" href="../../assets/flag.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Telephony &middot; Lines, exchanges and services of the Republic of Fluid</title>
+  <meta name="description" content="The telephone and network federation of the Republic of Fluid. Emergency numbers, the addresses of every service, how to get a line, and the specifications anyone may build a modem from.">
+  <meta name="theme-color" content="#23201a">
+  <link rel="stylesheet" href="site.css">
+  <link rel="icon" href="../../assets/flag.png">
 </head>
 <body>
-<a class="skip" href="#main">Skip to the content</a>
+  <a class="skip" href="#main">Skip to the content</a>
 
-<header class="cover">
-  <div class="wrap">
-    <h1 class="title"><a href="index.html">Telephony</a></h1>
-    <p class="imprint">Lines, exchanges and services of the <b>Republic of Fluid</b></p>
-  </div>
-</header>
-
-<nav class="thumbs" aria-label="Sections of this directory">
-  <div class="wrap">
-    <a href="index.html" aria-current="page">Front</a>
-    <a href="connect.html">Get a line</a>
-    <a href="dialup.html">Dial-up</a>
-    <a href="mobile.html">Mobile</a>
-    <a href="voice.html">Calling</a>
-    <a href="chat.html">Chat</a>
-    <a href="meet.html">Meet</a>
-    <a href="hardware.html">Hardware</a>
-    <a href="privacy.html">Privacy</a>
-    <a href="about.html">About</a>
-  </div>
-</nav>
-
-<main id="main">
-
-<div class="wrap">
-
-  <section class="urgent" aria-labelledby="urgent-h">
-    <h2 id="urgent-h">If you need help now</h2>
-    <ul class="listing">
-      <li class="entry">
-        <span class="what">Emergency</span>
-        <span class="lead" aria-hidden="true"></span>
-        <span class="num">112</span>
-        <span class="also">Fire, ambulance, communal police, sea rescue and mountain rescue. One number, answered in the sub-region you are calling from.</span>
-      </li>
-      <li class="entry">
-        <span class="what">Operator</span>
-        <span class="lead" aria-hidden="true"></span>
-        <span class="num">100</span>
-        <span class="also">A person, at any hour. They will connect you, look a number up, or read a page of this directory aloud.</span>
-      </li>
-      <li class="entry">
-        <span class="what">Line faults</span>
-        <span class="lead" aria-hidden="true"></span>
-        <span class="num">101</span>
-        <span class="also">A dead line, a noisy line, an exchange that has dropped. Report it from any other line, including a neighbour's.</span>
-      </li>
-      <li class="entry">
-        <span class="what">Text and speech relay</span>
-        <span class="lead" aria-hidden="true"></span>
-        <span class="num">108</span>
-        <span class="also">A relay assistant between text and speech, in both directions, on every service in this directory.</span>
-      </li>
-    </ul>
-    <p class="foot-note">These four answer from every handset in the Republic. They answer from a phone with no SIM in it, from a line whose service has been stopped, and from a call box with no account attached to it at all.</p>
-  </section>
-
-  <section class="sheet">
-    <p class="runhead">What you already have <span class="span">Provision</span></p>
-    <div class="prose">
-      <p>Every resident is furnished with a computer, a telephone and a connection between them and everyone else. None of it is billed, metered or capped. There is no contract to sign, no plan to choose and no upgrade to be offered.</p>
-      <p>You hold one identity, and it works on every service listed below. You may hold as many further identities as you want under names of your own choosing, and you never have to say why. Telephony keeps no link between them.</p>
+  <header class="cover">
+    <div class="wrap">
+      <h1 class="title"><a href="index.html">Telephony</a></h1>
+      <p class="imprint">Lines, exchanges and services of the <b>Republic of Fluid</b></p>
     </div>
-  </section>
+  </header>
 
-  <section class="sheet">
-    <p class="runhead">The blue pages <span class="span">Chat &middot; IRC to NTP</span></p>
-    <h2>Where the services answer</h2>
-    <p class="standfirst">Every service is reachable at its protocol name. The client alias beside it points at the same machines, and either address works.</p>
-    <div class="stock stock-blue">
-      <ul class="listing">
-        <li class="entry">
-          <span class="what">IRC</span>
-          <span class="lead" aria-hidden="true"></span>
-          <span class="host">irc.telephony.rof</span>
-          <span class="also">Alias <code>polari.telephony.rof</code> &middot; 6697 over TLS &middot; SASL &middot; no registration needed to read</span>
-        </li>
-        <li class="entry">
-          <span class="what">Matrix</span>
-          <span class="lead" aria-hidden="true"></span>
-          <span class="host">matrix.telephony.rof</span>
-          <span class="also">Alias <code>element.telephony.rof</code> &middot; server name <code>telephony.rof</code> &middot; federated with the Bloc homeservers</span>
-        </li>
-        <li class="entry">
-          <span class="what">SIP</span>
-          <span class="lead" aria-hidden="true"></span>
-          <span class="host">sip.telephony.rof</span>
-          <span class="also">Alias <code>linphone.telephony.rof</code> &middot; 5061 over TLS &middot; supports every number in the plan below</span>
-        </li>
-        <li class="entry">
-          <span class="what">STUN and TURN</span>
-          <span class="lead" aria-hidden="true"></span>
-          <span class="host">turn.telephony.rof</span>
-          <span class="also">3478 UDP &middot; 5349 over TLS &middot; open to any application, with no key and no account</span>
-        </li>
-        <li class="entry">
-          <span class="what">Conferencing</span>
-          <span class="lead" aria-hidden="true"></span>
-          <span class="host">meet.telephony.rof</span>
-          <span class="also">Alias <code>jitsi.telephony.rof</code> &middot; joins from a browser, a handset or a telephone number</span>
-        </li>
-        <li class="entry">
-          <span class="what">Nextcloud Talk</span>
-          <span class="lead" aria-hidden="true"></span>
-          <span class="host">talk.telephony.rof</span>
-          <span class="also">Alias <code>nextcloud.telephony.rof</code> &middot; for communes and cooperatives keeping their own files beside the call</span>
-        </li>
-        <li class="entry">
-          <span class="what">Name service</span>
-          <span class="lead" aria-hidden="true"></span>
-          <span class="host">dns.telephony.rof</span>
-          <span class="also">Resolvers at <code>10.0.0.53</code> and <code>10.0.1.53</code> &middot; nothing is filtered and nothing is answered falsely</span>
-        </li>
-        <li class="entry">
-          <span class="what">Time</span>
-          <span class="lead" aria-hidden="true"></span>
-          <span class="host">ntp.telephony.rof</span>
-          <span class="also">Four strata-1 clocks, at Lindoma, Sederna, Leriduson and the gateway at Corvaluri</span>
-        </li>
-      </ul>
+  <nav class="thumbs" aria-label="Sections of this directory">
+    <div class="wrap">
+      <a href="index.html" aria-current="page">Front</a>
+      <a href="connect.html">Get a line</a>
+      <a href="dialup.html">Dial-up</a>
+      <a href="mobile.html">Mobile</a>
+      <a href="voice.html">Calling</a>
+      <a href="chat.html">Chat</a>
+      <a href="meet.html">Meet</a>
+      <a href="hardware.html">Hardware</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="about.html">About</a>
     </div>
-  </section>
+  </nav>
 
-  <section class="sheet">
-    <p class="runhead">How the country connects <span class="span">7.2 million households</span></p>
-    <h2>Five ways in</h2>
-    <div class="tbl-scroll">
-      <table class="tbl">
-        <caption>Households by the line they use, end of 2025</caption>
-        <thead><tr><th>Line</th><th>Households</th><th>Share</th><th>Typical speed</th></tr></thead>
-        <tbody>
-          <tr><td>Fibre to the building</td><td class="num">2,952,000</td><td class="num">41 %</td><td class="num">1 Gbit/s</td></tr>
-          <tr><td>DSL over the communal copper</td><td class="num">1,944,000</td><td class="num">27 %</td><td class="num">35 to 90 Mbit/s</td></tr>
-          <tr><td>Dial-up over the voiceband</td><td class="num">1,368,000</td><td class="num">19 %</td><td class="num">64 to 288 kbit/s</td></tr>
-          <tr><td>Fixed wireless on LTE</td><td class="num">504,000</td><td class="num">7 %</td><td class="num">20 to 60 Mbit/s</td></tr>
-          <tr><td>ISDN</td><td class="num">432,000</td><td class="num">6 %</td><td class="num">128 to 384 kbit/s</td></tr>
-        </tbody>
-      </table>
+  <main id="main">
+
+    <div class="wrap">
+
+      <section class="urgent" aria-labelledby="urgent-h">
+        <h2 id="urgent-h">If you need help now</h2>
+        <ul class="listing">
+          <li class="entry">
+            <span class="what">Emergency</span>
+            <span class="lead" aria-hidden="true"></span>
+            <span class="num">112</span>
+            <span class="also">Fire, ambulance, communal police, sea rescue and mountain rescue. One number, answered in the sub-region you are calling from.</span>
+          </li>
+          <li class="entry">
+            <span class="what">Operator</span>
+            <span class="lead" aria-hidden="true"></span>
+            <span class="num">100</span>
+            <span class="also">A person, at any hour. They will connect you, look a number up, or read a page of this directory aloud.</span>
+          </li>
+          <li class="entry">
+            <span class="what">Line faults</span>
+            <span class="lead" aria-hidden="true"></span>
+            <span class="num">101</span>
+            <span class="also">A dead line, a noisy line, an exchange that has dropped. Report it from any other line, including a neighbour's.</span>
+          </li>
+          <li class="entry">
+            <span class="what">Text and speech relay</span>
+            <span class="lead" aria-hidden="true"></span>
+            <span class="num">108</span>
+            <span class="also">A relay assistant between text and speech, in both directions, on every service in this directory.</span>
+          </li>
+        </ul>
+        <p class="foot-note">These four answer from every handset in the Republic. They answer from a phone with no SIM in it, from a line whose service has been stopped, and from a call box with no account attached to it at all.</p>
+      </section>
+
+      <section class="sheet">
+        <p class="runhead">What you already have <span class="span">Provision</span></p>
+        <div class="prose">
+          <p>Every resident is furnished with a computer, a telephone and a connection between them and everyone else. None of it is billed, metered or capped. There is no contract to sign, no plan to choose and no upgrade to be offered.</p>
+          <p>You hold one identity, and it works on every service listed below. You may hold as many further identities as you want under names of your own choosing, and you never have to say why. Telephony keeps no link between them.</p>
+        </div>
+      </section>
+
+      <section class="sheet">
+        <p class="runhead">The blue pages <span class="span">Chat &middot; IRC to NTP</span></p>
+        <h2>Where the services answer</h2>
+        <p class="standfirst">Every service is reachable at its protocol name. The client alias beside it points at the same machines, and either address works.</p>
+        <div class="stock stock-blue">
+          <ul class="listing">
+            <li class="entry">
+              <span class="what">IRC</span>
+              <span class="lead" aria-hidden="true"></span>
+              <span class="host">irc.telephony.rof</span>
+              <span class="also">Alias <code>polari.telephony.rof</code> &middot; 6697 over TLS &middot; SASL &middot; no registration needed to read</span>
+            </li>
+            <li class="entry">
+              <span class="what">Matrix</span>
+              <span class="lead" aria-hidden="true"></span>
+              <span class="host">matrix.telephony.rof</span>
+              <span class="also">Alias <code>element.telephony.rof</code> &middot; server name <code>telephony.rof</code> &middot; federated with the Bloc homeservers</span>
+            </li>
+            <li class="entry">
+              <span class="what">SIP</span>
+              <span class="lead" aria-hidden="true"></span>
+              <span class="host">sip.telephony.rof</span>
+              <span class="also">Alias <code>linphone.telephony.rof</code> &middot; 5061 over TLS &middot; supports every number in the plan below</span>
+            </li>
+            <li class="entry">
+              <span class="what">STUN and TURN</span>
+              <span class="lead" aria-hidden="true"></span>
+              <span class="host">turn.telephony.rof</span>
+              <span class="also">3478 UDP &middot; 5349 over TLS &middot; open to any application, with no key and no account</span>
+            </li>
+            <li class="entry">
+              <span class="what">Conferencing</span>
+              <span class="lead" aria-hidden="true"></span>
+              <span class="host">meet.telephony.rof</span>
+              <span class="also">Alias <code>jitsi.telephony.rof</code> &middot; joins from a browser, a handset or a telephone number</span>
+            </li>
+            <li class="entry">
+              <span class="what">Nextcloud Talk</span>
+              <span class="lead" aria-hidden="true"></span>
+              <span class="host">talk.telephony.rof</span>
+              <span class="also">Alias <code>nextcloud.telephony.rof</code> &middot; for communes and cooperatives keeping their own files beside the call</span>
+            </li>
+            <li class="entry">
+              <span class="what">Name service</span>
+              <span class="lead" aria-hidden="true"></span>
+              <span class="host">dns.telephony.rof</span>
+              <span class="also">Resolvers at <code>10.0.0.53</code> and <code>10.0.1.53</code> &middot; nothing is filtered and nothing is answered falsely</span>
+            </li>
+            <li class="entry">
+              <span class="what">Time</span>
+              <span class="lead" aria-hidden="true"></span>
+              <span class="host">ntp.telephony.rof</span>
+              <span class="also">Four strata-1 clocks, at Lindoma, Sederna, Leriduson and the gateway at Corvaluri</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="sheet">
+        <p class="runhead">How the country connects <span class="span">7.2 million households</span></p>
+        <h2>Five ways in</h2>
+        <div class="tbl-scroll">
+          <table class="tbl">
+            <caption>Households by the line they use, end of 2025</caption>
+            <thead>
+              <tr>
+                <th>Line</th>
+                <th>Households</th>
+                <th>Share</th>
+                <th>Typical speed</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Fibre to the building</td>
+                <td class="num">2,952,000</td>
+                <td class="num">41 %</td>
+                <td class="num">1 Gbit/s</td>
+              </tr>
+              <tr>
+                <td>DSL over the communal copper</td>
+                <td class="num">1,944,000</td>
+                <td class="num">27 %</td>
+                <td class="num">35 to 90 Mbit/s</td>
+              </tr>
+              <tr>
+                <td>Dial-up over the voiceband</td>
+                <td class="num">1,368,000</td>
+                <td class="num">19 %</td>
+                <td class="num">64 to 288 kbit/s</td>
+              </tr>
+              <tr>
+                <td>Fixed wireless on LTE</td>
+                <td class="num">504,000</td>
+                <td class="num">7 %</td>
+                <td class="num">20 to 60 Mbit/s</td>
+              </tr>
+              <tr>
+                <td>ISDN</td>
+                <td class="num">432,000</td>
+                <td class="num">6 %</td>
+                <td class="num">128 to 384 kbit/s</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p><a href="connect.html">How to get a line</a> &middot; <a href="dialup.html">The voiceband network</a></p>
+      </section>
+
+      <section class="sheet">
+        <p class="runhead">The number plan <span class="span">First digit tells you the line</span></p>
+        <h2>Reading a number</h2>
+        <p class="standfirst">National numbers are nine digits. The first says what kind of line answers, the next two say which exchange holds it, and the last six are the subscriber.</p>
+        <div class="tbl-scroll">
+          <table class="tbl">
+            <thead>
+              <tr>
+                <th>First digit</th>
+                <th>Kind of line</th>
+                <th>Written</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="code">1</td>
+                <td>Short codes, three digits, free from everywhere</td>
+                <td class="code">112</td>
+              </tr>
+              <tr>
+                <td class="code">2</td>
+                <td>Fixed line, copper or fibre</td>
+                <td class="code">2 18 044 125</td>
+              </tr>
+              <tr>
+                <td class="code">3</td>
+                <td>ISDN, one number for each channel</td>
+                <td class="code">3 04 811 260</td>
+              </tr>
+              <tr>
+                <td class="code">5</td>
+                <td>SIP endpoint, no wire of its own</td>
+                <td class="code">5 66 003 918</td>
+              </tr>
+              <tr>
+                <td class="code">6</td>
+                <td>Mobile</td>
+                <td class="code">6 21 447 052</td>
+              </tr>
+              <tr>
+                <td class="code">8</td>
+                <td>Conference room, dialled to join a meeting</td>
+                <td class="code">8 00 214 776</td>
+              </tr>
+              <tr>
+                <td class="code">9</td>
+                <td>Cooperatives, communes and public bodies</td>
+                <td class="code">9 12 000 340</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="tbl-note">Digits 4 and 7 are unassigned and held in reserve. There are no premium ranges, because there is nothing to charge for.</p>
+        <p><a href="voice.html">Calling, numbering and the old exchanges</a></p>
+      </section>
+
+      <section class="sheet">
+        <p class="runhead">Standing <span class="span">The wire belongs to the commune</span></p>
+        <div class="cols">
+          <div class="prose">
+            <h3>A federation, over communal plant</h3>
+            <p>Telephony is a federation of the twenty sub-regional line cooperatives and the service cooperatives that run the machines. It holds a licence the Republic grants and it is audited in its use of common resources.</p>
+            <p>The copper, the fibre, the ducts and the poles are communal property. Each commune holds the plant inside its boundary and votes on what is done to it. The federation operates over that plant on terms the communes set, and it cannot dig, cut or reroute anything without them.</p>
+          </div>
+          <div class="prose">
+            <h3>Everything here is published</h3>
+            <p>Patents are prohibited, so every specification the federation writes is free to read, copy and build from. The modem in a village kitchen and the exchange it dials into were both built from drawings on this site.</p>
+            <p>The core network runs on software anyone can examine. Where a component would have to be trusted without being read, the federation does without the component.</p>
+            <p><a href="hardware.html">The published specifications</a> &middot; <a href="about.html">Standing and governance</a></p>
+          </div>
+        </div>
+      </section>
+
     </div>
-    <p><a href="connect.html">How to get a line</a> &middot; <a href="dialup.html">The voiceband network</a></p>
-  </section>
 
-  <section class="sheet">
-    <p class="runhead">The number plan <span class="span">First digit tells you the line</span></p>
-    <h2>Reading a number</h2>
-    <p class="standfirst">National numbers are nine digits. The first says what kind of line answers, the next two say which exchange holds it, and the last six are the subscriber.</p>
-    <div class="tbl-scroll">
-      <table class="tbl">
-        <thead><tr><th>First digit</th><th>Kind of line</th><th>Written</th></tr></thead>
-        <tbody>
-          <tr><td class="code">1</td><td>Short codes, three digits, free from everywhere</td><td class="code">112</td></tr>
-          <tr><td class="code">2</td><td>Fixed line, copper or fibre</td><td class="code">2 18 044 125</td></tr>
-          <tr><td class="code">3</td><td>ISDN, one number for each channel</td><td class="code">3 04 811 260</td></tr>
-          <tr><td class="code">5</td><td>SIP endpoint, no wire of its own</td><td class="code">5 66 003 918</td></tr>
-          <tr><td class="code">6</td><td>Mobile</td><td class="code">6 21 447 052</td></tr>
-          <tr><td class="code">8</td><td>Conference room, dialled to join a meeting</td><td class="code">8 00 214 776</td></tr>
-          <tr><td class="code">9</td><td>Cooperatives, communes and public bodies</td><td class="code">9 12 000 340</td></tr>
-        </tbody>
-      </table>
-    </div>
-    <p class="tbl-note">Digits 4 and 7 are unassigned and held in reserve. There are no premium ranges, because there is nothing to charge for.</p>
-    <p><a href="voice.html">Calling, numbering and the old exchanges</a></p>
-  </section>
+  </main>
 
-  <section class="sheet">
-    <p class="runhead">Standing <span class="span">The wire belongs to the commune</span></p>
-    <div class="cols">
-      <div class="prose">
-        <h3>A federation, over communal plant</h3>
-        <p>Telephony is a federation of the twenty sub-regional line cooperatives and the service cooperatives that run the machines. It holds a licence the Republic grants and it is audited in its use of common resources.</p>
-        <p>The copper, the fibre, the ducts and the poles are communal property. Each commune holds the plant inside its boundary and votes on what is done to it. The federation operates over that plant on terms the communes set, and it cannot dig, cut or reroute anything without them.</p>
+  <footer class="colophon">
+    <div class="wrap cols cols-3">
+      <div>
+        <h2>Lines</h2>
+        <ul>
+          <li><a href="connect.html">Get a line</a></li>
+          <li><a href="dialup.html">Dial-up and the voiceband</a></li>
+          <li><a href="mobile.html">Mobile, LTE and 5G</a></li>
+        </ul>
       </div>
-      <div class="prose">
-        <h3>Everything here is published</h3>
-        <p>Patents are prohibited, so every specification the federation writes is free to read, copy and build from. The modem in a village kitchen and the exchange it dials into were both built from drawings on this site.</p>
-        <p>The core network runs on software anyone can examine. Where a component would have to be trusted without being read, the federation does without the component.</p>
-        <p><a href="hardware.html">The published specifications</a> &middot; <a href="about.html">Standing and governance</a></p>
+      <div>
+        <h2>Services</h2>
+        <ul>
+          <li><a href="voice.html">Calling and numbering</a></li>
+          <li><a href="chat.html">IRC and Matrix</a></li>
+          <li><a href="meet.html">Conferencing</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>The federation</h2>
+        <ul>
+          <li><a href="hardware.html">Published specifications</a></li>
+          <li><a href="privacy.html">What is never kept</a></li>
+          <li><a href="about.html">About Telephony</a></li>
+          <li><a href="../../register/links.html">Public Register of the Republic</a></li>
+        </ul>
       </div>
     </div>
-  </section>
-
-</div>
-
-</main>
-
-<footer class="colophon">
-  <div class="wrap cols cols-3">
-    <div>
-      <h2>Lines</h2>
-      <ul>
-        <li><a href="connect.html">Get a line</a></li>
-        <li><a href="dialup.html">Dial-up and the voiceband</a></li>
-        <li><a href="mobile.html">Mobile, LTE and 5G</a></li>
-      </ul>
+    <div class="wrap">
+      <p>Telephony holds a licence the Republic grants and is audited in its use of common resources. It exercises no public authority and represents no organ.</p>
     </div>
-    <div>
-      <h2>Services</h2>
-      <ul>
-        <li><a href="voice.html">Calling and numbering</a></li>
-        <li><a href="chat.html">IRC and Matrix</a></li>
-        <li><a href="meet.html">Conferencing</a></li>
-      </ul>
-    </div>
-    <div>
-      <h2>The federation</h2>
-      <ul>
-        <li><a href="hardware.html">Published specifications</a></li>
-        <li><a href="privacy.html">What is never kept</a></li>
-        <li><a href="about.html">About Telephony</a></li>
-        <li><a href="../../register/links.html">Public Register of the Republic</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="wrap">
-    <p>Telephony holds a licence the Republic grants and is audited in its use of common resources. It exercises no public authority and represents no organ.</p>
-  </div>
-</footer>
+  </footer>
 </body>
 </html>

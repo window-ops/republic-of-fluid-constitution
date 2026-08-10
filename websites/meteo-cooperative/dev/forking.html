@@ -1,284 +1,384 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Porting to another country - Meteorological Cooperative</title>
-<meta name="description" content="What transfers unchanged, what requires local calibration, the six steps, the known forks and the limits of a port.">
-<link rel="stylesheet" href="../site.css">
-<link rel="icon" href="../../../assets/flag.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Porting to another country - Meteorological Cooperative</title>
+  <meta name="description" content="What transfers unchanged, what requires local calibration, the six steps, the known forks and the limits of a port.">
+  <link rel="stylesheet" href="../site.css">
+  <link rel="icon" href="../../../assets/flag.png">
 </head>
 <body>
 
-<header class="masthead">
-  <div class="wrap">
-    <span class="marque"><svg viewBox="0 0 58 58" role="img" aria-label="Emblem of the Meteorological Cooperative">
-<circle cx="29" cy="31" r="20" fill="none" stroke="#9a6516" stroke-width="2.4"/>
-<circle cx="29" cy="31" r="12.5" fill="none" stroke="#9a6516" stroke-width="1.6"/>
-<circle cx="29" cy="31" r="5" fill="none" stroke="#9a6516" stroke-width="1.6"/>
-<path d="M29 31 L29 9" stroke="#5f3d0c" stroke-width="2.4" stroke-linecap="round"/>
-<path d="M29 12 L38 15" stroke="#5f3d0c" stroke-width="2.4" stroke-linecap="round"/>
-<path d="M29 18 L36 20.5" stroke="#5f3d0c" stroke-width="2.4" stroke-linecap="round"/>
-<circle cx="29" cy="31" r="2" fill="#5f3d0c"/>
-</svg></span>
-    <span class="idblock">
-      <p class="coopname"><a href="../index.html">Meteorological Cooperative of the Republic</a></p>
-      <p class="basis">Weather, climate, seismicity, landslide and flood &middot; mandate held under the organic law on observation and warning</p>
-    </span>
-  </div>
-</header>
+  <header class="masthead">
+    <div class="wrap">
+      <span class="marque"><svg viewBox="0 0 58 58" role="img" aria-label="Emblem of the Meteorological Cooperative">
+          <circle cx="29" cy="31" r="20" fill="none" stroke="#9a6516" stroke-width="2.4" />
+          <circle cx="29" cy="31" r="12.5" fill="none" stroke="#9a6516" stroke-width="1.6" />
+          <circle cx="29" cy="31" r="5" fill="none" stroke="#9a6516" stroke-width="1.6" />
+          <path d="M29 31 L29 9" stroke="#5f3d0c" stroke-width="2.4" stroke-linecap="round" />
+          <path d="M29 12 L38 15" stroke="#5f3d0c" stroke-width="2.4" stroke-linecap="round" />
+          <path d="M29 18 L36 20.5" stroke="#5f3d0c" stroke-width="2.4" stroke-linecap="round" />
+          <circle cx="29" cy="31" r="2" fill="#5f3d0c" />
+        </svg></span>
+      <span class="idblock">
+        <p class="coopname"><a href="../index.html">Meteorological Cooperative of the Republic</a></p>
+        <p class="basis">Weather, climate, seismicity, landslide and flood &middot; mandate held under the organic law on observation and warning</p>
+      </span>
+    </div>
+  </header>
 
-<nav class="mainnav" aria-label="Sections of this site">
-  <div class="wrap">
-    <a class="navtop" href="../index.html">Home</a>
-    <details class="grp">
-      <summary>Weather and climate</summary>
-      <ul>
-        <li><a href="../climate.html">Climate of the Republic</a></li>
-        <li><a href="../change.html">Observed change</a></li>
-        <li><a href="../forecasting.html">How a forecast is made</a></li>
-        <li class="has"><details class="sub">
-          <summary><a href="../emissions.html">Emissions position</a></summary>
-          <ul>
-            <li><a href="../periphery.html">Harm to the periphery</a></li>
-          </ul>
-        </details></li>
-      </ul>
-    </details>
-    <details class="grp">
-      <summary>Warning systems</summary>
-      <ul>
-        <li><a href="../rationale.html">Why these systems exist</a></li>
-        <li><a href="../seismicity.html">Seismicity of the Republic</a></li>
-        <li class="has"><details class="sub">
-          <summary><a href="../kjs.html">REP-KJS, earthquake</a></summary>
-          <ul>
-            <li><a href="../scale.html">REP intensity scale</a></li>
-            <li><a href="../kjs-method.html">Detection, latency and limits</a></li>
-          </ul>
-        </details></li>
-        <li><a href="../lew.html">REP-LEW, landslide</a></li>
-        <li><a href="../few.html">REP-FEW, flood</a></li>
-        <li><a href="../devices.html">Certified devices and RQUAK</a></li>
-      </ul>
-    </details>
-    <a class="navtop" href="../species.html">Species catalogue</a>
-    <a class="navtop" href="../network.html">Observing network</a>
-    <details class="grp">
-      <summary>Developers</summary>
-      <ul>
-        <li><a href="../dev/index.html">Specifications and source</a></li>
-        <li><a href="../dev/wire-format.html">Warning wire format</a></li>
-        <li><a href="../dev/vectors.html">Conformance test vectors</a></li>
-        <li><a href="../dev/hardware.html">Sensor and station hardware</a></li>
-        <li><a href="../dev/forking.html">Porting to another country</a></li>
-      </ul>
-    </details>
-    <a class="navtop" href="../about.html">About the cooperative</a>
-  </div>
-</nav>
-
-<main id="main" class="sheet">
-<p class="crumb"><a href="../index.html">Meteorological Cooperative</a> &rsaquo; <a href="index.html">Developers</a> &rsaquo; Porting to another country</p>
-<h1 class="page-title">Porting to another country</h1>
-<p class="lede">Any country may take these systems and operate them. This page states what transfers unchanged, what requires work in the receiving country, and how long each part occupied the cooperative. The software transfers in weeks. The local calibration occupies years, and it is where every fork has spent its effort.</p>
-
-<ul class="figures">
-  <li><b>0</b> licences to sign</li>
-  <li><b>0</b> notifications required</li>
-  <li><b>3</b> known forks</li>
-  <li><b>4</b> years for the catchment model</li>
-</ul>
-
-<div class="facts">
-  <div class="row"><span class="k">Conditions</span><span class="v">None. No attribution requirement, no licence to sign, no notification</span></div>
-  <div class="row"><span class="k">Transfers unchanged</span><span class="v">Wire format, decoders, client, station designs, issuing node, message ordering</span></div>
-  <div class="row"><span class="k">Requires local work</span><span class="v">Station siting, ground-motion model, soil map, slope units, catchment model, thresholds, wording</span></div>
-  <div class="row"><span class="k">Realistic timescale</span><span class="v">Earthquake, one to two years; flood, four to seven; landslide, three to five</span></div>
-  <div class="row"><span class="k">Known forks</span><span class="v">Three, listed below</span></div>
-  <div class="row"><span class="k">Support offered</span><span class="v">Answers to questions, calibration data, and review of a threshold set, at no charge</span></div>
-</div>
-
-<h2>What transfers unchanged</h2>
-<div class="prose">
-<p>The software makes no major assumption about the Republic beyond a table of area codes. Replace that table and the whole warning path runs over any territory.</p>
-</div>
-
-<div class="tablewrap">
-<table class="data">
-<caption>Components requiring no adaptation</caption>
-<thead>
-<tr><th>Component</th><th>What it does</th><th>Slight adaptation needed</th></tr>
-</thead>
-<tbody>
-<tr><td>Wire format and codec</td><td>Encodes and decodes every warning message</td><td>Area code table</td></tr>
-<tr><td>Issuing node</td><td>Accepts estimates, forms segments, signs and broadcasts</td><td>Signing keys and delivery paths</td></tr>
-<tr><td>RQUAK client</td><td>Receives and presents on every platform</td><td>Translation of the fixed wording</td></tr>
-<tr><td>Detection and trigger</td><td>Fires on P wave arrival at a station</td><td>None; the threshold is set from local noise</td></tr>
-<tr><td>Station designs</td><td>Sensors, boards, firmware, enclosures</td><td>Part substitution where local supply differs</td></tr>
-<tr><td>Conformance harness</td><td>Tests an implementation and a device</td><td>None; the vectors run anywhere</td></tr>
-<tr><td>Segment structure</td><td>The order in which facts appear in a broadcast</td><td>None; the ordering principle holds generally</td></tr>
-</tbody>
-</table>
-</div>
-
-<h2>What requires local work</h2>
-<div class="tablewrap">
-<table class="data">
-<caption>The parts that must be built in the receiving country</caption>
-<thead>
-<tr><th>Item</th><th>Why it cannot transfer</th><th class="num">Estimated time</th></tr>
-</thead>
-<tbody>
-<tr><td>Station siting and spacing</td><td>Detection time follows from where the earthquakes are and where the people are</td><td class="num">14 months</td></tr>
-<tr><td>Ground-motion model</td><td>How shaking attenuates depends on the crust it travels through</td><td class="num">9 months</td></tr>
-<tr><td>Soil amplification map</td><td>Soft ground amplifies motion; the map is a survey, not a calculation</td><td class="num">2 years, still being revised</td></tr>
-<tr><td>Intensity scale correspondence</td><td>Macroseismic degrees are assessed against local building stock</td><td class="num">6 months</td></tr>
-<tr><td>Slope units</td><td>Every unit is a judgement about gradient, geology and land cover</td><td class="num">18 months</td></tr>
-<tr><td>Landslide thresholds</td><td>A threshold is fitted to a local record of failures</td><td class="num">2 years</td></tr>
-<tr><td>Catchment model</td><td>Rainfall-runoff behaviour is a property of the ground it falls on</td><td class="num">4 years</td></tr>
-<tr><td>Gauging</td><td>A model needs reaches with a measured stage-discharge relation</td><td class="num">3 years, in parallel</td></tr>
-<tr><td>Surge model</td><td>Depends on the shelf, the coastline and the tide</td><td class="num">15 months</td></tr>
-<tr><td>Fixed wording</td><td>Must be tested on the population that will hear it</td><td class="num">7 months per language</td></tr>
-</tbody>
-</table>
-</div>
-
-<h2>The order to do it in</h2>
-<div class="prose">
-<p>The cooperative built REP-KJS first. The earthquake system delivers value earliest, needs the fewest local measurements, and produces the delivery paths, the certification scheme and the public familiarity the other two depend on. A country starting with flood warning would spend four years before anybody received a message.</p>
-<p>Tests should begin immediately regardless of the order chosen, since a catchment model needs years of record before it can be calibrated, and that record accumulates only in real time.</p>
-</div>
-
-<div class="box">
-<span class="lbl">A working shortcut</span>
-<p>The soil amplification map is the largest single obstacle and the one most easily reduced. Any country holding a geological survey at 1:50,000 already possesses most of the input. Two of the three known forks began with a map derived from the geological survey alone, refined it against observed intensities afterwards, and reached a usable system some eighteen months earlier than the Republic did.</p>
-</div>
-
-<h2>Six steps</h2>
-<ol class="steps">
-<li>
-<h3>Take the trees</h3>
-<p>Clone <span class="host">src.meteo.rof/rep-wire</span>, <span class="host">src.meteo.rof/rep-kjs</span>, <span class="host">src.meteo.rof/rquak</span> and <span class="host">src.meteo.rof/rep-vectors</span>.</p>
-</li>
-<li>
-<h3>Replace the area table</h3>
-<p>The area codes of the Republic sit in <span class="host">rep-wire/areas.tsv</span>. Substitute your own administrative units. This is the only change the warning path needs before it will run over your territory.</p>
-</li>
-<li>
-<h3>Mint a signing key</h3>
-<p>Use Ed25519. Publish the public half where any device in your territory can fetch it, and set a rotation of a year with a ninety-day overlap. Devices hold the current key and the previous one.</p>
-</li>
-<li>
-<h3>Begin testing on the first day</h3>
-<p>A catchment model calibrates against years of record, and that record accumulates only in real time. Install river gauges and soil moisture probes before you write a line of flood code. The cooperative began testing in 2018 and issued its first flood warning in 2025.</p>
-</li>
-<li>
-<h3>Build the local layers</h3>
-<p>Station siting, the ground-motion model, the soil amplification map, the slope units and the thresholds. Derive the first soil map from your geological survey and refine it against observed intensities afterwards. This is the part that takes years.</p>
-</li>
-<li>
-<h3>Run the vectors, then test the wording</h3>
-<p>Run <span class="host">src.meteo.rof/rep-vectors</span> against your build; the encoding and presentation families are territory-independent and must pass unchanged. Then test your translated wording on the population that will hear it, before any of it is broadcast.</p>
-</li>
-</ol>
-
-<h2>Known forks</h2>
-<div class="tablewrap">
-<table class="data">
-<caption>Implementations reported to the cooperative</caption>
-<thead>
-<tr><th>Operator</th><th class="num">Since</th><th>Systems</th><th>Note</th></tr>
-</thead>
-<tbody>
-<tr><td>Reformed Luces Aporia</td><td class="num">2023</td><td>Earthquake</td><td>Shares the boundary and exchanges station data both ways; the two networks locate the same events</td></tr>
-<tr><td>Iosmein hydrological service</td><td class="num">2025</td><td>Flood</td><td>Riverine limb only; the surge model has no application inland</td></tr>
-<tr><td>Sluland coastal authority</td><td class="num">2026</td><td>Flood, surge limb</td><td>Uses the surge and overtopping code with its own shelf model</td></tr>
-</tbody>
-</table>
-</div>
-<p class="note">Notice of a fork is requested and never required. Two further implementations are known to the cooperative through fault reports and appear here without further detail, since neither operator has asked to be listed.</p>
-
-<h2>What the cooperative offers a fork</h2>
-<div class="prose">
-<p>Questions receive answers. Calibration data, the correspondence work between REP and the macroseismic scales, and the failure record of every threshold set are supplied on request. A fork may send a threshold set for review, and the cooperative will state where it appears too tight or too loose against the Republic's own experience.</p>
-<p>The cooperative operates nothing outside its territory, guarantees nothing about a fork, and reviews no operational decision. A country operating a warning system answers for it to its own population.</p>
-</div>
-
-<h2>Faults found in a fork</h2>
-<div class="prose">
-<p>Corrections have come back three times since 2022, twice concerning the message decoder and once concerning a rounding error in the intensity computation near a step boundary. Each was applied here and republished, and one of the three is still open as <code>W-042</code>. Send faults through the public information system, or to <span class="host">faults@meteo.rof</span>.</p>
-</div>
-
-<h2>Limits of a port</h2>
-<div class="box limit">
-<span class="lbl">What a fork will find</span>
-<p>The blind zone travels with the method. A country whose earthquakes occur beneath its cities gains far less from an earthquake warning system than one whose earthquakes occur at a distance from them, and no amount of engineering changes that.</p>
-<p>Thresholds cannot be borrowed. A rainfall threshold fitted to the Republic applied to different soils will produce warnings on days nothing happens and silence on days something does. Fitting requires a local record of failures, which takes years to accumulate.</p>
-<p>Fixed wording must be tested on the population that will hear it. Translating the Fluidian or English text and broadcasting it untested is the failure mode the cooperative would most expect to see in a hurried port.</p>
-</div>
-
-<h2>See also</h2>
-<div class="prose">
-<ul>
-<li><a href="index.html">Specifications and source</a>, and the licence</li>
-<li><a href="hardware.html">Sensor and station hardware</a></li>
-<li><a href="wire-format.html">Warning wire format</a></li>
-<li><a href="../rationale.html">Why these systems exist</a></li>
-</ul>
-</div>
-
-</main>
-
-<footer class="coopfoot">
-  <div class="wrap">
-    <div class="cols">
-      <div>
-        <h4>Weather and climate</h4>
+  <nav class="mainnav" aria-label="Sections of this site">
+    <div class="wrap">
+      <a class="navtop" href="../index.html">Home</a>
+      <details class="grp">
+        <summary>Weather and climate</summary>
         <ul>
           <li><a href="../climate.html">Climate of the Republic</a></li>
           <li><a href="../change.html">Observed change</a></li>
           <li><a href="../forecasting.html">How a forecast is made</a></li>
-          <li><a href="../emissions.html">Emissions position</a></li>
-          <li><a href="../periphery.html">Harm to the periphery</a></li>
+          <li class="has">
+            <details class="sub">
+              <summary><a href="../emissions.html">Emissions position</a></summary>
+              <ul>
+                <li><a href="../periphery.html">Harm to the periphery</a></li>
+              </ul>
+            </details>
+          </li>
         </ul>
-      </div>
-      <div>
-        <h4>Warning systems</h4>
+      </details>
+      <details class="grp">
+        <summary>Warning systems</summary>
         <ul>
           <li><a href="../rationale.html">Why these systems exist</a></li>
           <li><a href="../seismicity.html">Seismicity of the Republic</a></li>
-          <li><a href="../kjs.html">REP-KJS, earthquake</a></li>
-          <li><a href="../scale.html">REP intensity scale</a></li>
-          <li><a href="../kjs-method.html">Detection, latency and limits</a></li>
+          <li class="has">
+            <details class="sub">
+              <summary><a href="../kjs.html">REP-KJS, earthquake</a></summary>
+              <ul>
+                <li><a href="../scale.html">REP intensity scale</a></li>
+                <li><a href="../kjs-method.html">Detection, latency and limits</a></li>
+              </ul>
+            </details>
+          </li>
           <li><a href="../lew.html">REP-LEW, landslide</a></li>
           <li><a href="../few.html">REP-FEW, flood</a></li>
           <li><a href="../devices.html">Certified devices and RQUAK</a></li>
         </ul>
-      </div>
-      <div>
-        <h4>Record and network</h4>
+      </details>
+      <a class="navtop" href="../species.html">Species catalogue</a>
+      <a class="navtop" href="../network.html">Observing network</a>
+      <details class="grp">
+        <summary>Developers</summary>
         <ul>
-          <li><a href="../species.html">Species catalogue</a></li>
-          <li><a href="../network.html">Observing network</a></li>
-          <li><a href="../about.html">About the cooperative</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Developers</h4>
-        <ul>
-          <li><a href="../dev/index.html">Specifications and licence</a></li>
+          <li><a href="../dev/index.html">Specifications and source</a></li>
           <li><a href="../dev/wire-format.html">Warning wire format</a></li>
           <li><a href="../dev/vectors.html">Conformance test vectors</a></li>
           <li><a href="../dev/hardware.html">Sensor and station hardware</a></li>
           <li><a href="../dev/forking.html">Porting to another country</a></li>
         </ul>
-      </div>
+      </details>
+      <a class="navtop" href="../about.html">About the cooperative</a>
     </div>
-    <p class="basis">Published by the Meteorological Cooperative of the Republic under the organic law on observation and warning. Free of charge, without licence, registration or account. No external resource is loaded by this page. See also the <a href="../../../index.html">Republic of Fluid</a> and the <a href="../../../register/">Public Register</a>.</p>
-  </div>
-</footer>
+  </nav>
 
-<script src="../site.js"></script>
+  <main id="main" class="sheet">
+    <p class="crumb"><a href="../index.html">Meteorological Cooperative</a> &rsaquo; <a href="index.html">Developers</a> &rsaquo; Porting to another country</p>
+    <h1 class="page-title">Porting to another country</h1>
+    <p class="lede">Any country may take these systems and operate them. This page states what transfers unchanged, what requires work in the receiving country, and how long each part occupied the cooperative. The software transfers in weeks. The local calibration occupies years, and it is where every fork has spent its effort.</p>
+
+    <ul class="figures">
+      <li><b>0</b> licences to sign</li>
+      <li><b>0</b> notifications required</li>
+      <li><b>3</b> known forks</li>
+      <li><b>4</b> years for the catchment model</li>
+    </ul>
+
+    <div class="facts">
+      <div class="row"><span class="k">Conditions</span><span class="v">None. No attribution requirement, no licence to sign, no notification</span></div>
+      <div class="row"><span class="k">Transfers unchanged</span><span class="v">Wire format, decoders, client, station designs, issuing node, message ordering</span></div>
+      <div class="row"><span class="k">Requires local work</span><span class="v">Station siting, ground-motion model, soil map, slope units, catchment model, thresholds, wording</span></div>
+      <div class="row"><span class="k">Realistic timescale</span><span class="v">Earthquake, one to two years; flood, four to seven; landslide, three to five</span></div>
+      <div class="row"><span class="k">Known forks</span><span class="v">Three, listed below</span></div>
+      <div class="row"><span class="k">Support offered</span><span class="v">Answers to questions, calibration data, and review of a threshold set, at no charge</span></div>
+    </div>
+
+    <h2>What transfers unchanged</h2>
+    <div class="prose">
+      <p>The software makes no major assumption about the Republic beyond a table of area codes. Replace that table and the whole warning path runs over any territory.</p>
+    </div>
+
+    <div class="tablewrap">
+      <table class="data">
+        <caption>Components requiring no adaptation</caption>
+        <thead>
+          <tr>
+            <th>Component</th>
+            <th>What it does</th>
+            <th>Slight adaptation needed</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Wire format and codec</td>
+            <td>Encodes and decodes every warning message</td>
+            <td>Area code table</td>
+          </tr>
+          <tr>
+            <td>Issuing node</td>
+            <td>Accepts estimates, forms segments, signs and broadcasts</td>
+            <td>Signing keys and delivery paths</td>
+          </tr>
+          <tr>
+            <td>RQUAK client</td>
+            <td>Receives and presents on every platform</td>
+            <td>Translation of the fixed wording</td>
+          </tr>
+          <tr>
+            <td>Detection and trigger</td>
+            <td>Fires on P wave arrival at a station</td>
+            <td>None; the threshold is set from local noise</td>
+          </tr>
+          <tr>
+            <td>Station designs</td>
+            <td>Sensors, boards, firmware, enclosures</td>
+            <td>Part substitution where local supply differs</td>
+          </tr>
+          <tr>
+            <td>Conformance harness</td>
+            <td>Tests an implementation and a device</td>
+            <td>None; the vectors run anywhere</td>
+          </tr>
+          <tr>
+            <td>Segment structure</td>
+            <td>The order in which facts appear in a broadcast</td>
+            <td>None; the ordering principle holds generally</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>What requires local work</h2>
+    <div class="tablewrap">
+      <table class="data">
+        <caption>The parts that must be built in the receiving country</caption>
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Why it cannot transfer</th>
+            <th class="num">Estimated time</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Station siting and spacing</td>
+            <td>Detection time follows from where the earthquakes are and where the people are</td>
+            <td class="num">14 months</td>
+          </tr>
+          <tr>
+            <td>Ground-motion model</td>
+            <td>How shaking attenuates depends on the crust it travels through</td>
+            <td class="num">9 months</td>
+          </tr>
+          <tr>
+            <td>Soil amplification map</td>
+            <td>Soft ground amplifies motion; the map is a survey, not a calculation</td>
+            <td class="num">2 years, still being revised</td>
+          </tr>
+          <tr>
+            <td>Intensity scale correspondence</td>
+            <td>Macroseismic degrees are assessed against local building stock</td>
+            <td class="num">6 months</td>
+          </tr>
+          <tr>
+            <td>Slope units</td>
+            <td>Every unit is a judgement about gradient, geology and land cover</td>
+            <td class="num">18 months</td>
+          </tr>
+          <tr>
+            <td>Landslide thresholds</td>
+            <td>A threshold is fitted to a local record of failures</td>
+            <td class="num">2 years</td>
+          </tr>
+          <tr>
+            <td>Catchment model</td>
+            <td>Rainfall-runoff behaviour is a property of the ground it falls on</td>
+            <td class="num">4 years</td>
+          </tr>
+          <tr>
+            <td>Gauging</td>
+            <td>A model needs reaches with a measured stage-discharge relation</td>
+            <td class="num">3 years, in parallel</td>
+          </tr>
+          <tr>
+            <td>Surge model</td>
+            <td>Depends on the shelf, the coastline and the tide</td>
+            <td class="num">15 months</td>
+          </tr>
+          <tr>
+            <td>Fixed wording</td>
+            <td>Must be tested on the population that will hear it</td>
+            <td class="num">7 months per language</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>The order to do it in</h2>
+    <div class="prose">
+      <p>The cooperative built REP-KJS first. The earthquake system delivers value earliest, needs the fewest local measurements, and produces the delivery paths, the certification scheme and the public familiarity the other two depend on. A country starting with flood warning would spend four years before anybody received a message.</p>
+      <p>Tests should begin immediately regardless of the order chosen, since a catchment model needs years of record before it can be calibrated, and that record accumulates only in real time.</p>
+    </div>
+
+    <div class="box">
+      <span class="lbl">A working shortcut</span>
+      <p>The soil amplification map is the largest single obstacle and the one most easily reduced. Any country holding a geological survey at 1:50,000 already possesses most of the input. Two of the three known forks began with a map derived from the geological survey alone, refined it against observed intensities afterwards, and reached a usable system some eighteen months earlier than the Republic did.</p>
+    </div>
+
+    <h2>Six steps</h2>
+    <ol class="steps">
+      <li>
+        <h3>Take the trees</h3>
+        <p>Clone <span class="host">src.meteo.rof/rep-wire</span>, <span class="host">src.meteo.rof/rep-kjs</span>, <span class="host">src.meteo.rof/rquak</span> and <span class="host">src.meteo.rof/rep-vectors</span>.</p>
+      </li>
+      <li>
+        <h3>Replace the area table</h3>
+        <p>The area codes of the Republic sit in <span class="host">rep-wire/areas.tsv</span>. Substitute your own administrative units. This is the only change the warning path needs before it will run over your territory.</p>
+      </li>
+      <li>
+        <h3>Mint a signing key</h3>
+        <p>Use Ed25519. Publish the public half where any device in your territory can fetch it, and set a rotation of a year with a ninety-day overlap. Devices hold the current key and the previous one.</p>
+      </li>
+      <li>
+        <h3>Begin testing on the first day</h3>
+        <p>A catchment model calibrates against years of record, and that record accumulates only in real time. Install river gauges and soil moisture probes before you write a line of flood code. The cooperative began testing in 2018 and issued its first flood warning in 2025.</p>
+      </li>
+      <li>
+        <h3>Build the local layers</h3>
+        <p>Station siting, the ground-motion model, the soil amplification map, the slope units and the thresholds. Derive the first soil map from your geological survey and refine it against observed intensities afterwards. This is the part that takes years.</p>
+      </li>
+      <li>
+        <h3>Run the vectors, then test the wording</h3>
+        <p>Run <span class="host">src.meteo.rof/rep-vectors</span> against your build; the encoding and presentation families are territory-independent and must pass unchanged. Then test your translated wording on the population that will hear it, before any of it is broadcast.</p>
+      </li>
+    </ol>
+
+    <h2>Known forks</h2>
+    <div class="tablewrap">
+      <table class="data">
+        <caption>Implementations reported to the cooperative</caption>
+        <thead>
+          <tr>
+            <th>Operator</th>
+            <th class="num">Since</th>
+            <th>Systems</th>
+            <th>Note</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Reformed Luces Aporia</td>
+            <td class="num">2023</td>
+            <td>Earthquake</td>
+            <td>Shares the boundary and exchanges station data both ways; the two networks locate the same events</td>
+          </tr>
+          <tr>
+            <td>Iosmein hydrological service</td>
+            <td class="num">2025</td>
+            <td>Flood</td>
+            <td>Riverine limb only; the surge model has no application inland</td>
+          </tr>
+          <tr>
+            <td>Sluland coastal authority</td>
+            <td class="num">2026</td>
+            <td>Flood, surge limb</td>
+            <td>Uses the surge and overtopping code with its own shelf model</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note">Notice of a fork is requested and never required. Two further implementations are known to the cooperative through fault reports and appear here without further detail, since neither operator has asked to be listed.</p>
+
+    <h2>What the cooperative offers a fork</h2>
+    <div class="prose">
+      <p>Questions receive answers. Calibration data, the correspondence work between REP and the macroseismic scales, and the failure record of every threshold set are supplied on request. A fork may send a threshold set for review, and the cooperative will state where it appears too tight or too loose against the Republic's own experience.</p>
+      <p>The cooperative operates nothing outside its territory, guarantees nothing about a fork, and reviews no operational decision. A country operating a warning system answers for it to its own population.</p>
+    </div>
+
+    <h2>Faults found in a fork</h2>
+    <div class="prose">
+      <p>Corrections have come back three times since 2022, twice concerning the message decoder and once concerning a rounding error in the intensity computation near a step boundary. Each was applied here and republished, and one of the three is still open as <code>W-042</code>. Send faults through the public information system, or to <span class="host">faults@meteo.rof</span>.</p>
+    </div>
+
+    <h2>Limits of a port</h2>
+    <div class="box limit">
+      <span class="lbl">What a fork will find</span>
+      <p>The blind zone travels with the method. A country whose earthquakes occur beneath its cities gains far less from an earthquake warning system than one whose earthquakes occur at a distance from them, and no amount of engineering changes that.</p>
+      <p>Thresholds cannot be borrowed. A rainfall threshold fitted to the Republic applied to different soils will produce warnings on days nothing happens and silence on days something does. Fitting requires a local record of failures, which takes years to accumulate.</p>
+      <p>Fixed wording must be tested on the population that will hear it. Translating the Fluidian or English text and broadcasting it untested is the failure mode the cooperative would most expect to see in a hurried port.</p>
+    </div>
+
+    <h2>See also</h2>
+    <div class="prose">
+      <ul>
+        <li><a href="index.html">Specifications and source</a>, and the licence</li>
+        <li><a href="hardware.html">Sensor and station hardware</a></li>
+        <li><a href="wire-format.html">Warning wire format</a></li>
+        <li><a href="../rationale.html">Why these systems exist</a></li>
+      </ul>
+    </div>
+
+  </main>
+
+  <footer class="coopfoot">
+    <div class="wrap">
+      <div class="cols">
+        <div>
+          <h4>Weather and climate</h4>
+          <ul>
+            <li><a href="../climate.html">Climate of the Republic</a></li>
+            <li><a href="../change.html">Observed change</a></li>
+            <li><a href="../forecasting.html">How a forecast is made</a></li>
+            <li><a href="../emissions.html">Emissions position</a></li>
+            <li><a href="../periphery.html">Harm to the periphery</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Warning systems</h4>
+          <ul>
+            <li><a href="../rationale.html">Why these systems exist</a></li>
+            <li><a href="../seismicity.html">Seismicity of the Republic</a></li>
+            <li><a href="../kjs.html">REP-KJS, earthquake</a></li>
+            <li><a href="../scale.html">REP intensity scale</a></li>
+            <li><a href="../kjs-method.html">Detection, latency and limits</a></li>
+            <li><a href="../lew.html">REP-LEW, landslide</a></li>
+            <li><a href="../few.html">REP-FEW, flood</a></li>
+            <li><a href="../devices.html">Certified devices and RQUAK</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Record and network</h4>
+          <ul>
+            <li><a href="../species.html">Species catalogue</a></li>
+            <li><a href="../network.html">Observing network</a></li>
+            <li><a href="../about.html">About the cooperative</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Developers</h4>
+          <ul>
+            <li><a href="../dev/index.html">Specifications and licence</a></li>
+            <li><a href="../dev/wire-format.html">Warning wire format</a></li>
+            <li><a href="../dev/vectors.html">Conformance test vectors</a></li>
+            <li><a href="../dev/hardware.html">Sensor and station hardware</a></li>
+            <li><a href="../dev/forking.html">Porting to another country</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="basis">Published by the Meteorological Cooperative of the Republic under the organic law on observation and warning. Free of charge, without licence, registration or account. No external resource is loaded by this page. See also the <a href="../../../index.html">Republic of Fluid</a> and the <a href="../../../register/">Public Register</a>.</p>
+    </div>
+  </footer>
+
+  <script src="../site.js"></script>
 </body>
 </html>

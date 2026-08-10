@@ -1,264 +1,692 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Network &middot; National Railways Federation</title>
-<meta name="description" content="The thirty-eight routes of the Republic of Fluid, the 145 stations, journey times from Lindoma Central, and the constraints that set the timetable.">
-<meta name="theme-color" content="#0b4ea2">
-<link rel="stylesheet" href="site.css">
-<link rel="icon" href="../../assets/flag.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Network &middot; National Railways Federation</title>
+  <meta name="description" content="The thirty-eight routes of the Republic of Fluid, the 145 stations, journey times from Lindoma Central, and the constraints that set the timetable.">
+  <meta name="theme-color" content="#0b4ea2">
+  <link rel="stylesheet" href="site.css">
+  <link rel="icon" href="../../assets/flag.png">
 </head>
 <body>
-<a class="skip" href="#main">Skip to the content</a>
+  <a class="skip" href="#main">Skip to the content</a>
 
-<header class="head">
-  <div class="wrap">
-    <svg class="mark" viewBox="0 0 48 48" role="img" aria-label="Emblem of the National Railways Federation">
-      <rect width="48" height="48" fill="#0b4ea2"></rect>
-      <path d="M0 20 Q6 14 12 20 T24 20 T36 20 T48 20 V30 H0 Z" fill="#ffffff"></path>
-      <rect x="0" y="30" width="48" height="3" fill="#08376f"></rect>
-      <rect x="14" y="34" width="3" height="14" fill="#ffffff"></rect>
-      <rect x="31" y="34" width="3" height="14" fill="#ffffff"></rect>
-    </svg>
-    <span>
-      <p class="wordmark"><a href="index.html">National Railways Federation</a></p>
-      <p class="standfirst">Branch federation of the railway operating cooperatives</p>
-    </span>
-  </div>
-</header>
-<div class="band" role="presentation"></div>
-
-<nav class="nav" aria-label="Sections of this site">
-  <div class="wrap">
-    <a class="navtop" href="index.html">Front</a>
-    <details class="grp">
-      <summary class="on">Travelling</summary>
-      <ul>
-        <li><a href="network.html" aria-current="page">Network and routes</a></li>
-        <li><a href="stations.html">Stations and equipment</a></li>
-        <li><a href="night.html">Night trains and sleepers</a></li>
-        <li><a href="access.html">Access and assistance</a></li>
-        <li><a href="carriage.html">Conditions of carriage</a></li>
-      </ul>
-    </details>
-    <details class="grp">
-      <summary>Systems</summary>
-      <ul>
-        <li><a href="app.html">The application</a></li>
-        <li><a href="card.html">CARD-ROM</a></li>
-        <li><a href="comparison.html">Comparison of card standards</a></li>
-      </ul>
-    </details>
-    <details class="grp">
-      <summary>Federation</summary>
-      <ul>
-        <li><a href="cooperatives.html">Member cooperatives</a></li>
-        <li><a href="about.html">About the federation</a></li>
-      </ul>
-    </details>
-    <a class="navtop" href="dev/">Developers</a>
-  </div>
-</nav>
-
-<main id="main">
-
-<section class="opening">
-  <div class="wrap">
-    <p class="eyebrow">Thirty-eight routes, twenty sub-regions</p>
-    <h1>The network</h1>
-    <p class="lede">Passenger trains run over 5,482 km. The federation holds 6,210 km in all, and the rest is freight-only or lies inside the yards. The gauge is 1,435 mm everywhere, fixed by the Czechoslovak stock bought in the trade years. The wire is at 25 kV, 50 Hz over 5,425 km. The 785 km without wire are operated by R8 units on their battery reserve.</p>
-    <ul class="figures">
-      <li><b>38</b> routes</li>
-      <li><b>145</b> stations</li>
-      <li><b>5,482</b> passenger route km</li>
-      <li><b>1,435 mm</b> gauge</li>
-      <li><b>25 kV</b> 50 Hz overhead</li>
-    </ul>
-  </div>
-</section>
-
-<section class="block">
-  <div class="wrap">
-    <p class="eyebrow">The network, drawn</p>
-    <h2>The map</h2>
-    <p class="sub">Route lengths below are measured over the track each service uses, so a section carrying two routes is counted in both. The network measure of 5,482 km counts every such section once. Station counts work the same way: the 145 stations of the network include interchanges that appear in the count of each route serving them. Distances and directions are simplified so that all thirty-eight routes fit in one picture. Large rings are the twenty-two towns, small rings the other stations. Dashed lines are the sub-regional boundaries. Each route is drawn in the colour of the group that operates it, and the key below the map lists them.</p>
-  </div>
-  <div class="wrap">
-    <figure class="mapfig">
-      <img src="img/map.svg" width="1660" height="1000" alt="Map of the railway network. Thirty-six routes are drawn in the colour of the route group that operates each one, with the 145 stations named along them, the sub-regional boundaries dashed and labelled, the connection to Iosmein at Quessina, and the ferry to Reformed Luces Aporia at Lutoliluri.">
-      <figcaption>
-        <span>The network map. Open the image in a tab to read it at full size, or take the print copy.</span>
-        <a class="go" href="img/map.png" download>Download the map, PNG, 8300 by 5000</a>
-      </figcaption>
-    </figure>
-    <ul class="keys">
-      <li><span class="dot" style="--g:#667aff"></span>Northern Coast</li>
-      <li><span class="dot" style="--g:#00662b"></span>Central Valley</li>
-      <li><span class="dot" style="--g:#994a00"></span>Western Uplands</li>
-      <li><span class="dot" style="--g:#7a33ff"></span>Inland Plain</li>
-      <li><span class="dot" style="--g:#cc0000"></span>Southern</li>
-      <li><span class="dot" style="--g:#00998a"></span>Eastern Main</li>
-      <li><span class="dot" style="--g:#549900"></span>Grain Basin</li>
-      <li><span class="dot" style="--g:#cc008b"></span>South-east Coast</li>
-    </ul>
-  </div>
-</section>
-
-<section class="block">
-  <div class="wrap">
-    <p class="eyebrow">The routes</p>
-    <h2>Where the thirty-eight routes go to</h2>
-  </div>
-  <div class="wrap">
-    <div class="tablewrap">
-      <table>
-        <caption>Route, group, length, journey time end to end, and stations counted</caption>
-        <thead><tr><th scope="col" class="num">No</th><th scope="col">Route</th><th scope="col">Group</th><th scope="col" class="num">km</th><th scope="col" class="num">Time</th><th scope="col" class="num">Stns</th><th scope="col">Note</th></tr></thead>
-        <tbody>
-<tr><td class="num">1</td><th scope="row">Lindoma to Torvena</th><td><span class="dot" style="--g:#667aff"></span>Northern Coast</td><td class="num">214</td><td class="num">3 h 02</td><td class="num">7</td><td>Wired as far as Ardessa. The last 34 km to Torvena run on the battery reserve.</td></tr>
-<tr><td class="num">2</td><th scope="row">Lindoma to Maravel</th><td><span class="dot" style="--g:#667aff"></span>Northern Coast</td><td class="num">148</td><td class="num">2 h 04</td><td class="num">5</td><td>The bay line. Two sections stand on causeway across the salt marsh, and both close to freight in a spring tide.</td></tr>
-<tr><td class="num">3</td><th scope="row">Sederna factory branch</th><td><span class="dot" style="--g:#667aff"></span>Northern Coast</td><td class="num">18</td><td class="num">0 h 20</td><td class="num">3</td><td>Runs to the carriage factory and the two Sederna depots. Empty stock, and one passenger train an hour for the shift changes.</td></tr>
-<tr><td class="num">4</td><th scope="row">Sederna to Durorilaqui</th><td><span class="dot" style="--g:#00662b"></span>Central Valley</td><td class="num">356</td><td class="num">7 h 03</td><td class="num">7</td><td>The valley climbs at 3.5 per cent between Halvena and Iscura, which fixes the timings for the whole route.</td></tr>
-<tr><td class="num">5</td><th scope="row">Calmena to Ilvara</th><td><span class="dot" style="--g:#00662b"></span>Central Valley</td><td class="num">112</td><td class="num">1 h 46</td><td class="num">4</td><td>Terrace line along the river. Single track, with passing loops at Merquena and Jorvela.</td></tr>
-<tr><td class="num">6</td><th scope="row">Calmena to Tavrino</th><td><span class="dot" style="--g:#00662b"></span>Central Valley</td><td class="num">169</td><td class="num">2 h 46</td><td class="num">4</td><td>Opened 1974 for the Tessilius fruit crop, and it now takes the morning workers to Tavrino.</td></tr>
-<tr><td class="num">7</td><th scope="row">Maravel to Ossira</th><td><span class="dot" style="--g:#994a00"></span>Western Uplands</td><td class="num">232</td><td class="num">3 h 34</td><td class="num">6</td><td>Quarry gradients from Solmena. Ossira is the last station before the open frontier with Iosmein.</td></tr>
-<tr><td class="num">8</td><th scope="row">Ferrista to Venasca</th><td><span class="dot" style="--g:#994a00"></span>Western Uplands</td><td class="num">165</td><td class="num">2 h 48</td><td class="num">5</td><td>Forestry line. Battery operation beyond Zelmura, where the wire stops.</td></tr>
-<tr><td class="num">9</td><th scope="row">Ossira frontier link</th><td><span class="dot" style="--g:#994a00"></span>Western Uplands</td><td class="num">47</td><td class="num">0 h 44</td><td class="num">3</td><td>Runs to the frontier at Quessina, where the Iosmein network takes over. Through carriages twice a day.</td></tr>
-<tr><td class="num">10</td><th scope="row">Durorilaqui to Venasca</th><td><span class="dot" style="--g:#7a33ff"></span>Inland Plain</td><td class="num">118</td><td class="num">1 h 52</td><td class="num">4</td><td>Straight across the arable plain, level for its whole length.</td></tr>
-<tr><td class="num">11</td><th scope="row">Durorilaqui to Vestrano</th><td><span class="dot" style="--g:#7a33ff"></span>Inland Plain</td><td class="num">156</td><td class="num">2 h 26</td><td class="num">5</td><td>Transports grain north in the autumn via the parralel freight night path.</td></tr>
-<tr><td class="num">12</td><th scope="row">Durorilaqui to Sarnova</th><td><span class="dot" style="--g:#7a33ff"></span>Inland Plain</td><td class="num">143</td><td class="num">2 h 20</td><td class="num">4</td><td>Single track. The passing loop at Ilmara sets the frequency at one train an hour each way.</td></tr>
-<tr><td class="num">13</td><th scope="row">Sarnova to Sornorum</th><td><span class="dot" style="--g:#cc0000"></span>Southern</td><td class="num">270</td><td class="num">4 h 29</td><td class="num">5</td><td>The southern route. The 14:40 from Sarnova runs it, and the R8/A is allocated to it.</td></tr>
-<tr><td class="num">14</td><th scope="row">Sarnova to Dromera</th><td><span class="dot" style="--g:#cc0000"></span>Southern</td><td class="num">121</td><td class="num">1 h 58</td><td class="num">6</td><td>The line stops 4 km short of the closed frontier with Bor Brashavenko.</td></tr>
-<tr><td class="num">15</td><th scope="row">Dromera to Sornorum</th><td><span class="dot" style="--g:#cc0000"></span>Southern</td><td class="num">134</td><td class="num">2 h 10</td><td class="num">4</td><td>Southern link line, opened 1988. Half its length is embankment across drained ground.</td></tr>
-<tr><td class="num">16</td><th scope="row">Torvena to Leriduson</th><td><span class="dot" style="--g:#00998a"></span>Eastern Main</td><td class="num">178</td><td class="num">2 h 52</td><td class="num">5</td><td>Crosses between the regions on the moor. Wired in 1996.</td></tr>
-<tr><td class="num">17</td><th scope="row">Leriduson to Prevessa</th><td><span class="dot" style="--g:#00998a"></span>Eastern Main</td><td class="num">108</td><td class="num">1 h 42</td><td class="num">4</td><td>Mixed farming country. Four trains an hour at the peak, two the rest of the day.</td></tr>
-<tr><td class="num">18</td><th scope="row">Leriduson to Marendo</th><td><span class="dot" style="--g:#00998a"></span>Eastern Main</td><td class="num">196</td><td class="num">3 h 41</td><td class="num">5</td><td>Follows the lagoon shore. The ecological budget holds speed to 90 km per hour over the dune section.</td></tr>
-<tr><td class="num">19</td><th scope="row">Ilvara to Cortius</th><td><span class="dot" style="--g:#549900"></span>Grain Basin</td><td class="num">298</td><td class="num">4 h 37</td><td class="num">6</td><td>The grain basin trunk. Runs 31 km straight between Irbena and Lundara.</td></tr>
-<tr><td class="num">20</td><th scope="row">Solvena to Prevessa</th><td><span class="dot" style="--g:#549900"></span>Grain Basin</td><td class="num">116</td><td class="num">1 h 50</td><td class="num">5</td><td>Links the two eastern trunks. Through trains from Lindoma to Prevessa use it.</td></tr>
-<tr><td class="num">21</td><th scope="row">Ilvara to Sornorum</th><td><span class="dot" style="--g:#549900"></span>Grain Basin</td><td class="num">264</td><td class="num">4 h 12</td><td class="num">6</td><td>Large section of the central 1907 artery.</td></tr>
-<tr><td class="num">22</td><th scope="row">Cortius to Lutoliluri</th><td><span class="dot" style="--g:#cc008b"></span>South-east Coast</td><td class="num">158</td><td class="num">2 h 32</td><td class="num">4</td><td>Ends at the southern port and the ferry berth for Sluland. Freight paths are held for the yard.</td></tr>
-<tr><td class="num">23</td><th scope="row">Cortius to Corcina</th><td><span class="dot" style="--g:#cc008b"></span>South-east Coast</td><td class="num">121</td><td class="num">2 h 04</td><td class="num">4</td><td>Hill line. Climbs at 3.5 per cent for 11 km above Vadura.</td></tr>
-<tr><td class="num">24</td><th scope="row">Marendo to Corcina</th><td><span class="dot" style="--g:#cc008b"></span>South-east Coast</td><td class="num">103</td><td class="num">1 h 46</td><td class="num">4</td><td>Coastal, single track, wired 2004. Closed to freight above 18 tonnes per axle.</td></tr>
-<tr><td class="num">25</td><th scope="row">Sornorum to Lutoliluri</th><td><span class="dot" style="--g:#cc008b"></span>South-east Coast</td><td class="num">132</td><td class="num">2 h 08</td><td class="num">4</td><td>Completes the 1907 artery at the port. Eight R7 units an hour each way at the peak.</td></tr>
-<tr><td class="num">26</td><th scope="row">Lutoliluri harbour branch</th><td><span class="dot" style="--g:#cc008b"></span>South-east Coast</td><td class="num">29</td><td class="num">0 h 26</td><td class="num">3</td><td>Serves the yard, the ferry berth and the fishery at Espara. Two carriages, every twenty minutes.</td></tr>
-<tr><td class="num">27</td><th scope="row">Maravel to Calmena</th><td><span class="dot" style="--g:#00662b"></span>Central Valley</td><td class="num">133</td><td class="num">2 h 08</td><td class="num">4</td><td>Chord across the valley head. Opened 1961 to spare the Sederna junction.</td></tr>
-<tr><td class="num">28</td><th scope="row">Torvena to Ilvara</th><td><span class="dot" style="--g:#667aff"></span>Northern Coast</td><td class="num">137</td><td class="num">2 h 12</td><td class="num">4</td><td>Direct route for the northern trains south without reversing at Sederna.</td></tr>
-<tr><td class="num">29</td><th scope="row">Ferrista to Durorilaqui</th><td><span class="dot" style="--g:#994a00"></span>Western Uplands</td><td class="num">141</td><td class="num">2 h 16</td><td class="num">4</td><td>Links the upland routes to the plain. Single track, one loop at Cordena.</td></tr>
-<tr><td class="num">30</td><th scope="row">Vestrano to Tavrino</th><td><span class="dot" style="--g:#7a33ff"></span>Inland Plain</td><td class="num">118</td><td class="num">1 h 54</td><td class="num">4</td><td>Diagonal between the southern and the central routes.</td></tr>
-<tr><td class="num">31</td><th scope="row">Tavrino to Cortius</th><td><span class="dot" style="--g:#549900"></span>Grain Basin</td><td class="num">205</td><td class="num">3 h 13</td><td class="num">5</td><td>Crosses the basin, and trains terminating at the coast avoid Solvena by it.</td></tr>
-<tr><td class="num">32</td><th scope="row">Solvena to Marendo</th><td><span class="dot" style="--g:#549900"></span>Grain Basin</td><td class="num">126</td><td class="num">2 h 02</td><td class="num">4</td><td>Eastern chord to the lagoon. Wired 1998.</td></tr>
-<tr><td class="num">33</td><th scope="row">Sarnova to Venasca</th><td><span class="dot" style="--g:#cc0000"></span>Southern</td><td class="num">131</td><td class="num">2 h 06</td><td class="num">4</td><td>Western chord. Two trains an hour, three in the harvest.</td></tr>
-<tr><td class="num">34</td><th scope="row">Dromera to Vestrano</th><td><span class="dot" style="--g:#cc0000"></span>Southern</td><td class="num">92</td><td class="num">1 h 30</td><td class="num">4</td><td>Short link between the southern branches.</td></tr>
-<tr><td class="num">35</td><th scope="row">Lindoma to Torvena direct</th><td><span class="dot" style="--g:#667aff"></span>Northern Coast</td><td class="num">168</td><td class="num">2 h 20</td><td class="num">4</td><td>The coast line, avoiding the Sederna junction. Through trains to Leriduson use it.</td></tr>
-<tr><td class="num">36</td><th scope="row">Prevessa to Marendo</th><td><span class="dot" style="--g:#00998a"></span>Eastern Main</td><td class="num">125</td><td class="num">1 h 59</td><td class="num">4</td><td>Joins the two eastern trunks along the lagoon head, so Leriduson trains reach Marendo without reversing.</td></tr>
-<tr><td class="num">37</td><th scope="row">Leriduson to Marendo direct</th><td><span class="dot" style="--g:#00998a"></span>Eastern Main</td><td class="num">233</td><td class="num">3 h 14</td><td class="num">7</td><td>Through service over the tracks of routes 17 and 36. Four trains a day, and the first of them calls at Marendo before the market opens.</td></tr>
-<tr><td class="num">38</td><th scope="row">Lonvera to Rusquena</th><td><span class="dot" style="--g:#cc0000"></span>Southern</td><td class="num">247</td><td class="num">3 h 54</td><td class="num">6</td><td>Southern cross-country service. Calls at Halid and Beslic, and holds four minutes at Beslic for the tunnel walk.</td></tr>
-        </tbody>
-      </table>
+  <header class="head">
+    <div class="wrap">
+      <svg class="mark" viewBox="0 0 48 48" role="img" aria-label="Emblem of the National Railways Federation">
+        <rect width="48" height="48" fill="#0b4ea2"></rect>
+        <path d="M0 20 Q6 14 12 20 T24 20 T36 20 T48 20 V30 H0 Z" fill="#ffffff"></path>
+        <rect x="0" y="30" width="48" height="3" fill="#08376f"></rect>
+        <rect x="14" y="34" width="3" height="14" fill="#ffffff"></rect>
+        <rect x="31" y="34" width="3" height="14" fill="#ffffff"></rect>
+      </svg>
+      <span>
+        <p class="wordmark"><a href="index.html">National Railways Federation</a></p>
+        <p class="standfirst">Branch federation of the railway operating cooperatives</p>
+      </span>
     </div>
-  </div>
-</section>
+  </header>
+  <div class="band" role="presentation"></div>
 
-<section class="block">
-  <div class="wrap">
-    <p class="eyebrow">Stations</p>
-    <h2>The 145, route by route</h2>
-    <p class="sub">Towns are in bold. The 110 stations below are the ones through trains call at. The 35 halts after them are served by the local trains of the sub-regional members.</p>
-  </div>
-  <div class="wrap">
-    <ul class="routes">
-<li><p class="rl"><span class="rn" style="--g:#667aff">1</span> Lindoma to Torvena</p><p class="rs"><b>Lindoma</b> &middot; Ospena &middot; <b>Sederna</b> &middot; Corvena &middot; Brastina &middot; Ardessa &middot; <b>Torvena</b></p></li>
-<li><p class="rl"><span class="rn" style="--g:#667aff">2</span> Lindoma to Maravel</p><p class="rs"><b>Lindoma</b> &middot; Palura &middot; Fossena &middot; Nervara &middot; <b>Maravel</b></p></li>
-<li><p class="rl"><span class="rn" style="--g:#667aff">3</span> Sederna factory branch</p><p class="rs"><b>Sederna</b> &middot; Delvena &middot; Cassura</p></li>
-<li><p class="rl"><span class="rn" style="--g:#00662b">4</span> Sederna to Durorilaqui</p><p class="rs"><b>Sederna</b> &middot; Grimela &middot; <b>Calmena</b> &middot; Halvena &middot; Iscura &middot; Lascura &middot; <b>Durorilaqui</b></p></li>
-<li><p class="rl"><span class="rn" style="--g:#00662b">5</span> Calmena to Ilvara</p><p class="rs"><b>Calmena</b> &middot; Merquena &middot; Jorvela &middot; <b>Ilvara</b></p></li>
-<li><p class="rl"><span class="rn" style="--g:#00662b">6</span> Calmena to Tavrino</p><p class="rs"><b>Calmena</b> &middot; Dolvara &middot; Erresta &middot; <b>Tavrino</b></p></li>
-<li><p class="rl"><span class="rn" style="--g:#994a00">7</span> Maravel to Ossira</p><p class="rs"><b>Maravel</b> &middot; Solmena &middot; <b>Ferrista</b> &middot; Terrona &middot; Ulmara &middot; <b>Ossira</b></p></li>
-<li><p class="rl"><span class="rn" style="--g:#994a00">8</span> Ferrista to Venasca</p><p class="rs"><b>Ferrista</b> &middot; Varsena &middot; Zelmura &middot; Ravella &middot; <b>Venasca</b></p></li>
-<li><p class="rl"><span class="rn" style="--g:#994a00">9</span> Ossira frontier link</p><p class="rs"><b>Ossira</b> &middot; Nossira &middot; <b>Quessina</b></p></li>
-<li><p class="rl"><span class="rn" style="--g:#7a33ff">10</span> Durorilaqui to Venasca</p><p class="rs"><b>Durorilaqui</b> &middot; Prunara &middot; Ondela &middot; <b>Venasca</b></p></li>
-<li><p class="rl"><span class="rn" style="--g:#7a33ff">11</span> Durorilaqui to Vestrano</p><p class="rs"><b>Durorilaqui</b> &middot; Falcura &middot; Gonvara &middot; Estrela &middot; <b>Vestrano</b></p></li>
-<li><p class="rl"><span class="rn" style="--g:#7a33ff">12</span> Durorilaqui to Sarnova</p><p class="rs"><b>Durorilaqui</b> &middot; Herrena &middot; Ilmara &middot; <b>Sarnova</b></p></li>
-<li><p class="rl"><span class="rn" style="--g:#cc0000">13</span> Sarnova to Sornorum</p><p class="rs"><b>Sarnova</b> &middot; Lonvera &middot; <b>Vestrano</b> &middot; Marquessa &middot; <b>Sornorum</b></p></li>
-<li><p class="rl"><span class="rn" style="--g:#cc0000">14</span> Sarnova to Dromera</p><p class="rs"><b>Sarnova</b> &middot; Rondura &middot; Halid &middot; Beslic &middot; Sabrena &middot; <b>Dromera</b></p></li>
-<li><p class="rl"><span class="rn" style="--g:#cc0000">15</span> Dromera to Sornorum</p><p class="rs"><b>Dromera</b> &middot; Tolmena &middot; Urvena &middot; <b>Sornorum</b></p></li>
-<li><p class="rl"><span class="rn" style="--g:#00998a">16</span> Torvena to Leriduson</p><p class="rs"><b>Torvena</b> &middot; Velsura &middot; Andrena &middot; Bosquela &middot; <b>Leriduson</b></p></li>
-<li><p class="rl"><span class="rn" style="--g:#00998a">17</span> Leriduson to Prevessa</p><p class="rs"><b>Leriduson</b> &middot; Cerreta &middot; Drumena &middot; <b>Prevessa</b></p></li>
-<li><p class="rl"><span class="rn" style="--g:#00998a">18</span> Leriduson to Marendo</p><p class="rs"><b>Leriduson</b> &middot; Ervara &middot; Fenestra &middot; Galvena &middot; <b>Marendo</b></p></li>
-<li><p class="rl"><span class="rn" style="--g:#549900">19</span> Ilvara to Cortius</p><p class="rs"><b>Ilvara</b> &middot; Hostena &middot; <b>Solvena</b> &middot; Irbena &middot; Lundara &middot; <b>Cortius</b></p></li>
-<li><p class="rl"><span class="rn" style="--g:#549900">20</span> Solvena to Prevessa</p><p class="rs"><b>Solvena</b> &middot; Mestura &middot; Sarki &middot; Nolvara &middot; <b>Prevessa</b></p></li>
-<li><p class="rl"><span class="rn" style="--g:#549900">21</span> Ilvara to Sornorum</p><p class="rs"><b>Ilvara</b> &middot; Orsena &middot; <b>Tavrino</b> &middot; Pilvara &middot; Rusquena &middot; <b>Sornorum</b></p></li>
-<li><p class="rl"><span class="rn" style="--g:#cc008b">22</span> Cortius to Lutoliluri</p><p class="rs"><b>Cortius</b> &middot; Sallura &middot; Trevena &middot; <b>Lutoliluri</b></p></li>
-<li><p class="rl"><span class="rn" style="--g:#cc008b">23</span> Cortius to Corcina</p><p class="rs"><b>Cortius</b> &middot; Umbrela &middot; Vadura &middot; <b>Corcina</b></p></li>
-<li><p class="rl"><span class="rn" style="--g:#cc008b">24</span> Marendo to Corcina</p><p class="rs"><b>Marendo</b> &middot; Zerrona &middot; Alvessa &middot; <b>Corcina</b></p></li>
-<li><p class="rl"><span class="rn" style="--g:#cc008b">25</span> Sornorum to Lutoliluri</p><p class="rs"><b>Sornorum</b> &middot; Brenova &middot; Calduri &middot; <b>Lutoliluri</b></p></li>
-<li><p class="rl"><span class="rn" style="--g:#cc008b">26</span> Lutoliluri harbour branch</p><p class="rs"><b>Lutoliluri</b> &middot; Dortena &middot; Espara</p></li>
-<li><p class="rl"><span class="rn" style="--g:#00662b">27</span> Maravel to Calmena</p><p class="rs"><b>Maravel</b> &middot; Almora &middot; Ambrena &middot; <b>Calmena</b></p></li>
-<li><p class="rl"><span class="rn" style="--g:#667aff">28</span> Torvena to Ilvara</p><p class="rs"><b>Torvena</b> &middot; Brantela &middot; Brusela &middot; <b>Ilvara</b></p></li>
-<li><p class="rl"><span class="rn" style="--g:#994a00">29</span> Ferrista to Durorilaqui</p><p class="rs"><b>Ferrista</b> &middot; Cirvena &middot; Cordena &middot; <b>Durorilaqui</b></p></li>
-<li><p class="rl"><span class="rn" style="--g:#7a33ff">30</span> Vestrano to Tavrino</p><p class="rs"><b>Vestrano</b> &middot; Dalvura &middot; Domvara &middot; <b>Tavrino</b></p></li>
-<li><p class="rl"><span class="rn" style="--g:#549900">31</span> Tavrino to Cortius</p><p class="rs"><b>Tavrino</b> &middot; Drumessa &middot; Ermena &middot; Estrona &middot; <b>Cortius</b></p></li>
-<li><p class="rl"><span class="rn" style="--g:#549900">32</span> Solvena to Marendo</p><p class="rs"><b>Solvena</b> &middot; Farnela &middot; Fostella &middot; <b>Marendo</b></p></li>
-<li><p class="rl"><span class="rn" style="--g:#cc0000">33</span> Sarnova to Venasca</p><p class="rs"><b>Sarnova</b> &middot; Fulvena &middot; Gormela &middot; <b>Venasca</b></p></li>
-<li><p class="rl"><span class="rn" style="--g:#cc0000">34</span> Dromera to Vestrano</p><p class="rs"><b>Dromera</b> &middot; Gostura &middot; Gravena &middot; <b>Vestrano</b></p></li>
-<li><p class="rl"><span class="rn" style="--g:#667aff">35</span> Lindoma to Torvena direct</p><p class="rs"><b>Lindoma</b> &middot; Nurella &middot; Ortella &middot; <b>Torvena</b></p></li>
-<li><p class="rl"><span class="rn" style="--g:#00998a">36</span> Prevessa to Marendo</p><p class="rs"><b>Prevessa</b> &middot; Hirvena &middot; Imbrena &middot; <b>Marendo</b></p></li>
-<li><p class="rl"><span class="rn" style="--g:#00998a">37</span> Leriduson to Marendo direct</p><p class="rs"><b>Leriduson</b> &middot; Cerreta &middot; Drumena &middot; <b>Prevessa</b> &middot; Hirvena &middot; Imbrena &middot; <b>Marendo</b></p></li>
-<li><p class="rl"><span class="rn" style="--g:#cc0000">38</span> Lonvera to Rusquena</p><p class="rs">Lonvera &middot; Halid &middot; Beslic &middot; <b>Vestrano</b> &middot; Marquessa &middot; Rusquena</p></li>
-    </ul>
-  </div>
-  <div class="wrap">
-    <p class="eyebrow" style="margin-top:1.2rem">Halts served by local trains</p>
-    <p class="halts">Bosquena &middot; Halvora &middot; Hastura &middot; Hirvena &middot; Instara &middot; Ivrena &middot; Larvena &middot; Lastura &middot; Lorvessa &middot; Mirvena &middot; Molvena &middot; Mondela &middot; Nastira &middot; Nostela &middot; Orvura &middot; Ovrena &middot; Pastena &middot; Pelmura &middot; Pervena &middot; Quandira &middot; Quirena &middot; Rasquela &middot; Rivessa &middot; Ruvella &middot; Serrola &middot; Silvura &middot; Sonvara &middot; Tavella &middot; Tornela &middot; Trelmena &middot; Ulvessa &middot; Undela &middot; Urvessa &middot; Ustrena &middot; Velmara</p>
-  </div>
-</section>
+  <nav class="nav" aria-label="Sections of this site">
+    <div class="wrap">
+      <a class="navtop" href="index.html">Front</a>
+      <details class="grp">
+        <summary class="on">Travelling</summary>
+        <ul>
+          <li><a href="network.html" aria-current="page">Network and routes</a></li>
+          <li><a href="stations.html">Stations and equipment</a></li>
+          <li><a href="night.html">Night trains and sleepers</a></li>
+          <li><a href="access.html">Access and assistance</a></li>
+          <li><a href="carriage.html">Conditions of carriage</a></li>
+        </ul>
+      </details>
+      <details class="grp">
+        <summary>Systems</summary>
+        <ul>
+          <li><a href="app.html">The application</a></li>
+          <li><a href="card.html">CARD-ROM</a></li>
+          <li><a href="comparison.html">Comparison of card standards</a></li>
+        </ul>
+      </details>
+      <details class="grp">
+        <summary>Federation</summary>
+        <ul>
+          <li><a href="cooperatives.html">Member cooperatives</a></li>
+          <li><a href="about.html">About the federation</a></li>
+        </ul>
+      </details>
+      <a class="navtop" href="dev/">Developers</a>
+    </div>
+  </nav>
 
-<section class="block">
-  <div class="wrap">
-    <p class="eyebrow">Working the network</p>
-    <h2>Four constraints on the timetable</h2>
-  </div>
-  <div class="wrap">
-    <ul class="plates four">
-      <li>
-        <h3>Single track with loops</h3>
-        <p>Fifteen of the thirty-eight routes are single track. The spacing of the passing loops fixes the frequency. A route with one loop takes one train an hour each way, whatever the demand.</p>
-      </li>
-      <li>
-        <h3>Gradient at 3.5 per cent</h3>
-        <p>The valley line above Halvena and the hill line above Vadura climb at 3.5 per cent. Every rail vehicle in the Podnik catalogue is built to hold that gradient with a full load.</p>
-      </li>
-      <li>
-        <h3>The wire and the battery</h3>
-        <p>785 km stand beyond the wire. An R8 holds 220 kWh in reserve and runs 40 km on it, which reopened the branch ends without new catenary.</p>
-      </li>
-      <li>
-        <h3>Ecological ceilings</h3>
-        <p>The budget in force holds speed over the dune section of route 18 to 90 km per hour. Route 11 keeps its night freight paths because grain moved by rail sits inside the ceiling and grain moved by road does not.</p>
-      </li>
-    </ul>
-  </div>
-</section>
+  <main id="main">
 
-</main>
+    <section class="opening">
+      <div class="wrap">
+        <p class="eyebrow">Thirty-eight routes, twenty sub-regions</p>
+        <h1>The network</h1>
+        <p class="lede">Passenger trains run over 5,482 km. The federation holds 6,210 km in all, and the rest is freight-only or lies inside the yards. The gauge is 1,435 mm everywhere, fixed by the Czechoslovak stock bought in the trade years. The wire is at 25 kV, 50 Hz over 5,425 km. The 785 km without wire are operated by R8 units on their battery reserve.</p>
+        <ul class="figures">
+          <li><b>38</b> routes</li>
+          <li><b>145</b> stations</li>
+          <li><b>5,482</b> passenger route km</li>
+          <li><b>1,435 mm</b> gauge</li>
+          <li><b>25 kV</b> 50 Hz overhead</li>
+        </ul>
+      </div>
+    </section>
 
-<div class="band-foot" role="presentation"></div>
-<footer class="foot">
-  <div class="wrap">
-    <ul class="footlinks">
-      <li><a href="index.html">Front</a></li>
-      <li><a href="network.html">Network</a></li>
-      <li><a href="app.html">Application</a></li>
-      <li><a href="card.html">CARD-ROM</a></li>
-      <li><a href="dev/">Developers</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="../podnik/">Podnik</a></li>
-      <li><a href="../../register/links.html">Public Register</a></li>
-    </ul>
-    <p class="standing">A branch federation of the railway operating cooperatives, constituted under Article 89. It exercises no public authority and represents no organ. Its accounts, its minutes and its yearly reviews are public.</p>
-  </div>
-</footer>
-<script src="site.js" defer></script>
+    <section class="block">
+      <div class="wrap">
+        <p class="eyebrow">The network, drawn</p>
+        <h2>The map</h2>
+        <p class="sub">Route lengths below are measured over the track each service uses, so a section carrying two routes is counted in both. The network measure of 5,482 km counts every such section once. Station counts work the same way: the 145 stations of the network include interchanges that appear in the count of each route serving them. Distances and directions are simplified so that all thirty-eight routes fit in one picture. Large rings are the twenty-two towns, small rings the other stations. Dashed lines are the sub-regional boundaries. Each route is drawn in the colour of the group that operates it, and the key below the map lists them.</p>
+      </div>
+      <div class="wrap">
+        <figure class="mapfig">
+          <img src="img/map.svg" width="1660" height="1000" alt="Map of the railway network. Thirty-six routes are drawn in the colour of the route group that operates each one, with the 145 stations named along them, the sub-regional boundaries dashed and labelled, the connection to Iosmein at Quessina, and the ferry to Reformed Luces Aporia at Lutoliluri.">
+          <figcaption>
+            <span>The network map. Open the image in a tab to read it at full size, or take the print copy.</span>
+            <a class="go" href="img/map.png" download>Download the map, PNG, 8300 by 5000</a>
+          </figcaption>
+        </figure>
+        <ul class="keys">
+          <li><span class="dot" style="--g:#667aff"></span>Northern Coast</li>
+          <li><span class="dot" style="--g:#00662b"></span>Central Valley</li>
+          <li><span class="dot" style="--g:#994a00"></span>Western Uplands</li>
+          <li><span class="dot" style="--g:#7a33ff"></span>Inland Plain</li>
+          <li><span class="dot" style="--g:#cc0000"></span>Southern</li>
+          <li><span class="dot" style="--g:#00998a"></span>Eastern Main</li>
+          <li><span class="dot" style="--g:#549900"></span>Grain Basin</li>
+          <li><span class="dot" style="--g:#cc008b"></span>South-east Coast</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="wrap">
+        <p class="eyebrow">The routes</p>
+        <h2>Where the thirty-eight routes go to</h2>
+      </div>
+      <div class="wrap">
+        <div class="tablewrap">
+          <table>
+            <caption>Route, group, length, journey time end to end, and stations counted</caption>
+            <thead>
+              <tr>
+                <th scope="col" class="num">No</th>
+                <th scope="col">Route</th>
+                <th scope="col">Group</th>
+                <th scope="col" class="num">km</th>
+                <th scope="col" class="num">Time</th>
+                <th scope="col" class="num">Stns</th>
+                <th scope="col">Note</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="num">1</td>
+                <th scope="row">Lindoma to Torvena</th>
+                <td><span class="dot" style="--g:#667aff"></span>Northern Coast</td>
+                <td class="num">214</td>
+                <td class="num">3 h 02</td>
+                <td class="num">7</td>
+                <td>Wired as far as Ardessa. The last 34 km to Torvena run on the battery reserve.</td>
+              </tr>
+              <tr>
+                <td class="num">2</td>
+                <th scope="row">Lindoma to Maravel</th>
+                <td><span class="dot" style="--g:#667aff"></span>Northern Coast</td>
+                <td class="num">148</td>
+                <td class="num">2 h 04</td>
+                <td class="num">5</td>
+                <td>The bay line. Two sections stand on causeway across the salt marsh, and both close to freight in a spring tide.</td>
+              </tr>
+              <tr>
+                <td class="num">3</td>
+                <th scope="row">Sederna factory branch</th>
+                <td><span class="dot" style="--g:#667aff"></span>Northern Coast</td>
+                <td class="num">18</td>
+                <td class="num">0 h 20</td>
+                <td class="num">3</td>
+                <td>Runs to the carriage factory and the two Sederna depots. Empty stock, and one passenger train an hour for the shift changes.</td>
+              </tr>
+              <tr>
+                <td class="num">4</td>
+                <th scope="row">Sederna to Durorilaqui</th>
+                <td><span class="dot" style="--g:#00662b"></span>Central Valley</td>
+                <td class="num">356</td>
+                <td class="num">7 h 03</td>
+                <td class="num">7</td>
+                <td>The valley climbs at 3.5 per cent between Halvena and Iscura, which fixes the timings for the whole route.</td>
+              </tr>
+              <tr>
+                <td class="num">5</td>
+                <th scope="row">Calmena to Ilvara</th>
+                <td><span class="dot" style="--g:#00662b"></span>Central Valley</td>
+                <td class="num">112</td>
+                <td class="num">1 h 46</td>
+                <td class="num">4</td>
+                <td>Terrace line along the river. Single track, with passing loops at Merquena and Jorvela.</td>
+              </tr>
+              <tr>
+                <td class="num">6</td>
+                <th scope="row">Calmena to Tavrino</th>
+                <td><span class="dot" style="--g:#00662b"></span>Central Valley</td>
+                <td class="num">169</td>
+                <td class="num">2 h 46</td>
+                <td class="num">4</td>
+                <td>Opened 1974 for the Tessilius fruit crop, and it now takes the morning workers to Tavrino.</td>
+              </tr>
+              <tr>
+                <td class="num">7</td>
+                <th scope="row">Maravel to Ossira</th>
+                <td><span class="dot" style="--g:#994a00"></span>Western Uplands</td>
+                <td class="num">232</td>
+                <td class="num">3 h 34</td>
+                <td class="num">6</td>
+                <td>Quarry gradients from Solmena. Ossira is the last station before the open frontier with Iosmein.</td>
+              </tr>
+              <tr>
+                <td class="num">8</td>
+                <th scope="row">Ferrista to Venasca</th>
+                <td><span class="dot" style="--g:#994a00"></span>Western Uplands</td>
+                <td class="num">165</td>
+                <td class="num">2 h 48</td>
+                <td class="num">5</td>
+                <td>Forestry line. Battery operation beyond Zelmura, where the wire stops.</td>
+              </tr>
+              <tr>
+                <td class="num">9</td>
+                <th scope="row">Ossira frontier link</th>
+                <td><span class="dot" style="--g:#994a00"></span>Western Uplands</td>
+                <td class="num">47</td>
+                <td class="num">0 h 44</td>
+                <td class="num">3</td>
+                <td>Runs to the frontier at Quessina, where the Iosmein network takes over. Through carriages twice a day.</td>
+              </tr>
+              <tr>
+                <td class="num">10</td>
+                <th scope="row">Durorilaqui to Venasca</th>
+                <td><span class="dot" style="--g:#7a33ff"></span>Inland Plain</td>
+                <td class="num">118</td>
+                <td class="num">1 h 52</td>
+                <td class="num">4</td>
+                <td>Straight across the arable plain, level for its whole length.</td>
+              </tr>
+              <tr>
+                <td class="num">11</td>
+                <th scope="row">Durorilaqui to Vestrano</th>
+                <td><span class="dot" style="--g:#7a33ff"></span>Inland Plain</td>
+                <td class="num">156</td>
+                <td class="num">2 h 26</td>
+                <td class="num">5</td>
+                <td>Transports grain north in the autumn via the parralel freight night path.</td>
+              </tr>
+              <tr>
+                <td class="num">12</td>
+                <th scope="row">Durorilaqui to Sarnova</th>
+                <td><span class="dot" style="--g:#7a33ff"></span>Inland Plain</td>
+                <td class="num">143</td>
+                <td class="num">2 h 20</td>
+                <td class="num">4</td>
+                <td>Single track. The passing loop at Ilmara sets the frequency at one train an hour each way.</td>
+              </tr>
+              <tr>
+                <td class="num">13</td>
+                <th scope="row">Sarnova to Sornorum</th>
+                <td><span class="dot" style="--g:#cc0000"></span>Southern</td>
+                <td class="num">270</td>
+                <td class="num">4 h 29</td>
+                <td class="num">5</td>
+                <td>The southern route. The 14:40 from Sarnova runs it, and the R8/A is allocated to it.</td>
+              </tr>
+              <tr>
+                <td class="num">14</td>
+                <th scope="row">Sarnova to Dromera</th>
+                <td><span class="dot" style="--g:#cc0000"></span>Southern</td>
+                <td class="num">121</td>
+                <td class="num">1 h 58</td>
+                <td class="num">6</td>
+                <td>The line stops 4 km short of the closed frontier with Bor Brashavenko.</td>
+              </tr>
+              <tr>
+                <td class="num">15</td>
+                <th scope="row">Dromera to Sornorum</th>
+                <td><span class="dot" style="--g:#cc0000"></span>Southern</td>
+                <td class="num">134</td>
+                <td class="num">2 h 10</td>
+                <td class="num">4</td>
+                <td>Southern link line, opened 1988. Half its length is embankment across drained ground.</td>
+              </tr>
+              <tr>
+                <td class="num">16</td>
+                <th scope="row">Torvena to Leriduson</th>
+                <td><span class="dot" style="--g:#00998a"></span>Eastern Main</td>
+                <td class="num">178</td>
+                <td class="num">2 h 52</td>
+                <td class="num">5</td>
+                <td>Crosses between the regions on the moor. Wired in 1996.</td>
+              </tr>
+              <tr>
+                <td class="num">17</td>
+                <th scope="row">Leriduson to Prevessa</th>
+                <td><span class="dot" style="--g:#00998a"></span>Eastern Main</td>
+                <td class="num">108</td>
+                <td class="num">1 h 42</td>
+                <td class="num">4</td>
+                <td>Mixed farming country. Four trains an hour at the peak, two the rest of the day.</td>
+              </tr>
+              <tr>
+                <td class="num">18</td>
+                <th scope="row">Leriduson to Marendo</th>
+                <td><span class="dot" style="--g:#00998a"></span>Eastern Main</td>
+                <td class="num">196</td>
+                <td class="num">3 h 41</td>
+                <td class="num">5</td>
+                <td>Follows the lagoon shore. The ecological budget holds speed to 90 km per hour over the dune section.</td>
+              </tr>
+              <tr>
+                <td class="num">19</td>
+                <th scope="row">Ilvara to Cortius</th>
+                <td><span class="dot" style="--g:#549900"></span>Grain Basin</td>
+                <td class="num">298</td>
+                <td class="num">4 h 37</td>
+                <td class="num">6</td>
+                <td>The grain basin trunk. Runs 31 km straight between Irbena and Lundara.</td>
+              </tr>
+              <tr>
+                <td class="num">20</td>
+                <th scope="row">Solvena to Prevessa</th>
+                <td><span class="dot" style="--g:#549900"></span>Grain Basin</td>
+                <td class="num">116</td>
+                <td class="num">1 h 50</td>
+                <td class="num">5</td>
+                <td>Links the two eastern trunks. Through trains from Lindoma to Prevessa use it.</td>
+              </tr>
+              <tr>
+                <td class="num">21</td>
+                <th scope="row">Ilvara to Sornorum</th>
+                <td><span class="dot" style="--g:#549900"></span>Grain Basin</td>
+                <td class="num">264</td>
+                <td class="num">4 h 12</td>
+                <td class="num">6</td>
+                <td>Large section of the central 1907 artery.</td>
+              </tr>
+              <tr>
+                <td class="num">22</td>
+                <th scope="row">Cortius to Lutoliluri</th>
+                <td><span class="dot" style="--g:#cc008b"></span>South-east Coast</td>
+                <td class="num">158</td>
+                <td class="num">2 h 32</td>
+                <td class="num">4</td>
+                <td>Ends at the southern port and the ferry berth for Sluland. Freight paths are held for the yard.</td>
+              </tr>
+              <tr>
+                <td class="num">23</td>
+                <th scope="row">Cortius to Corcina</th>
+                <td><span class="dot" style="--g:#cc008b"></span>South-east Coast</td>
+                <td class="num">121</td>
+                <td class="num">2 h 04</td>
+                <td class="num">4</td>
+                <td>Hill line. Climbs at 3.5 per cent for 11 km above Vadura.</td>
+              </tr>
+              <tr>
+                <td class="num">24</td>
+                <th scope="row">Marendo to Corcina</th>
+                <td><span class="dot" style="--g:#cc008b"></span>South-east Coast</td>
+                <td class="num">103</td>
+                <td class="num">1 h 46</td>
+                <td class="num">4</td>
+                <td>Coastal, single track, wired 2004. Closed to freight above 18 tonnes per axle.</td>
+              </tr>
+              <tr>
+                <td class="num">25</td>
+                <th scope="row">Sornorum to Lutoliluri</th>
+                <td><span class="dot" style="--g:#cc008b"></span>South-east Coast</td>
+                <td class="num">132</td>
+                <td class="num">2 h 08</td>
+                <td class="num">4</td>
+                <td>Completes the 1907 artery at the port. Eight R7 units an hour each way at the peak.</td>
+              </tr>
+              <tr>
+                <td class="num">26</td>
+                <th scope="row">Lutoliluri harbour branch</th>
+                <td><span class="dot" style="--g:#cc008b"></span>South-east Coast</td>
+                <td class="num">29</td>
+                <td class="num">0 h 26</td>
+                <td class="num">3</td>
+                <td>Serves the yard, the ferry berth and the fishery at Espara. Two carriages, every twenty minutes.</td>
+              </tr>
+              <tr>
+                <td class="num">27</td>
+                <th scope="row">Maravel to Calmena</th>
+                <td><span class="dot" style="--g:#00662b"></span>Central Valley</td>
+                <td class="num">133</td>
+                <td class="num">2 h 08</td>
+                <td class="num">4</td>
+                <td>Chord across the valley head. Opened 1961 to spare the Sederna junction.</td>
+              </tr>
+              <tr>
+                <td class="num">28</td>
+                <th scope="row">Torvena to Ilvara</th>
+                <td><span class="dot" style="--g:#667aff"></span>Northern Coast</td>
+                <td class="num">137</td>
+                <td class="num">2 h 12</td>
+                <td class="num">4</td>
+                <td>Direct route for the northern trains south without reversing at Sederna.</td>
+              </tr>
+              <tr>
+                <td class="num">29</td>
+                <th scope="row">Ferrista to Durorilaqui</th>
+                <td><span class="dot" style="--g:#994a00"></span>Western Uplands</td>
+                <td class="num">141</td>
+                <td class="num">2 h 16</td>
+                <td class="num">4</td>
+                <td>Links the upland routes to the plain. Single track, one loop at Cordena.</td>
+              </tr>
+              <tr>
+                <td class="num">30</td>
+                <th scope="row">Vestrano to Tavrino</th>
+                <td><span class="dot" style="--g:#7a33ff"></span>Inland Plain</td>
+                <td class="num">118</td>
+                <td class="num">1 h 54</td>
+                <td class="num">4</td>
+                <td>Diagonal between the southern and the central routes.</td>
+              </tr>
+              <tr>
+                <td class="num">31</td>
+                <th scope="row">Tavrino to Cortius</th>
+                <td><span class="dot" style="--g:#549900"></span>Grain Basin</td>
+                <td class="num">205</td>
+                <td class="num">3 h 13</td>
+                <td class="num">5</td>
+                <td>Crosses the basin, and trains terminating at the coast avoid Solvena by it.</td>
+              </tr>
+              <tr>
+                <td class="num">32</td>
+                <th scope="row">Solvena to Marendo</th>
+                <td><span class="dot" style="--g:#549900"></span>Grain Basin</td>
+                <td class="num">126</td>
+                <td class="num">2 h 02</td>
+                <td class="num">4</td>
+                <td>Eastern chord to the lagoon. Wired 1998.</td>
+              </tr>
+              <tr>
+                <td class="num">33</td>
+                <th scope="row">Sarnova to Venasca</th>
+                <td><span class="dot" style="--g:#cc0000"></span>Southern</td>
+                <td class="num">131</td>
+                <td class="num">2 h 06</td>
+                <td class="num">4</td>
+                <td>Western chord. Two trains an hour, three in the harvest.</td>
+              </tr>
+              <tr>
+                <td class="num">34</td>
+                <th scope="row">Dromera to Vestrano</th>
+                <td><span class="dot" style="--g:#cc0000"></span>Southern</td>
+                <td class="num">92</td>
+                <td class="num">1 h 30</td>
+                <td class="num">4</td>
+                <td>Short link between the southern branches.</td>
+              </tr>
+              <tr>
+                <td class="num">35</td>
+                <th scope="row">Lindoma to Torvena direct</th>
+                <td><span class="dot" style="--g:#667aff"></span>Northern Coast</td>
+                <td class="num">168</td>
+                <td class="num">2 h 20</td>
+                <td class="num">4</td>
+                <td>The coast line, avoiding the Sederna junction. Through trains to Leriduson use it.</td>
+              </tr>
+              <tr>
+                <td class="num">36</td>
+                <th scope="row">Prevessa to Marendo</th>
+                <td><span class="dot" style="--g:#00998a"></span>Eastern Main</td>
+                <td class="num">125</td>
+                <td class="num">1 h 59</td>
+                <td class="num">4</td>
+                <td>Joins the two eastern trunks along the lagoon head, so Leriduson trains reach Marendo without reversing.</td>
+              </tr>
+              <tr>
+                <td class="num">37</td>
+                <th scope="row">Leriduson to Marendo direct</th>
+                <td><span class="dot" style="--g:#00998a"></span>Eastern Main</td>
+                <td class="num">233</td>
+                <td class="num">3 h 14</td>
+                <td class="num">7</td>
+                <td>Through service over the tracks of routes 17 and 36. Four trains a day, and the first of them calls at Marendo before the market opens.</td>
+              </tr>
+              <tr>
+                <td class="num">38</td>
+                <th scope="row">Lonvera to Rusquena</th>
+                <td><span class="dot" style="--g:#cc0000"></span>Southern</td>
+                <td class="num">247</td>
+                <td class="num">3 h 54</td>
+                <td class="num">6</td>
+                <td>Southern cross-country service. Calls at Halid and Beslic, and holds four minutes at Beslic for the tunnel walk.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="wrap">
+        <p class="eyebrow">Stations</p>
+        <h2>The 145, route by route</h2>
+        <p class="sub">Towns are in bold. The 110 stations below are the ones through trains call at. The 35 halts after them are served by the local trains of the sub-regional members.</p>
+      </div>
+      <div class="wrap">
+        <ul class="routes">
+          <li>
+            <p class="rl"><span class="rn" style="--g:#667aff">1</span> Lindoma to Torvena</p>
+            <p class="rs"><b>Lindoma</b> &middot; Ospena &middot; <b>Sederna</b> &middot; Corvena &middot; Brastina &middot; Ardessa &middot; <b>Torvena</b></p>
+          </li>
+          <li>
+            <p class="rl"><span class="rn" style="--g:#667aff">2</span> Lindoma to Maravel</p>
+            <p class="rs"><b>Lindoma</b> &middot; Palura &middot; Fossena &middot; Nervara &middot; <b>Maravel</b></p>
+          </li>
+          <li>
+            <p class="rl"><span class="rn" style="--g:#667aff">3</span> Sederna factory branch</p>
+            <p class="rs"><b>Sederna</b> &middot; Delvena &middot; Cassura</p>
+          </li>
+          <li>
+            <p class="rl"><span class="rn" style="--g:#00662b">4</span> Sederna to Durorilaqui</p>
+            <p class="rs"><b>Sederna</b> &middot; Grimela &middot; <b>Calmena</b> &middot; Halvena &middot; Iscura &middot; Lascura &middot; <b>Durorilaqui</b></p>
+          </li>
+          <li>
+            <p class="rl"><span class="rn" style="--g:#00662b">5</span> Calmena to Ilvara</p>
+            <p class="rs"><b>Calmena</b> &middot; Merquena &middot; Jorvela &middot; <b>Ilvara</b></p>
+          </li>
+          <li>
+            <p class="rl"><span class="rn" style="--g:#00662b">6</span> Calmena to Tavrino</p>
+            <p class="rs"><b>Calmena</b> &middot; Dolvara &middot; Erresta &middot; <b>Tavrino</b></p>
+          </li>
+          <li>
+            <p class="rl"><span class="rn" style="--g:#994a00">7</span> Maravel to Ossira</p>
+            <p class="rs"><b>Maravel</b> &middot; Solmena &middot; <b>Ferrista</b> &middot; Terrona &middot; Ulmara &middot; <b>Ossira</b></p>
+          </li>
+          <li>
+            <p class="rl"><span class="rn" style="--g:#994a00">8</span> Ferrista to Venasca</p>
+            <p class="rs"><b>Ferrista</b> &middot; Varsena &middot; Zelmura &middot; Ravella &middot; <b>Venasca</b></p>
+          </li>
+          <li>
+            <p class="rl"><span class="rn" style="--g:#994a00">9</span> Ossira frontier link</p>
+            <p class="rs"><b>Ossira</b> &middot; Nossira &middot; <b>Quessina</b></p>
+          </li>
+          <li>
+            <p class="rl"><span class="rn" style="--g:#7a33ff">10</span> Durorilaqui to Venasca</p>
+            <p class="rs"><b>Durorilaqui</b> &middot; Prunara &middot; Ondela &middot; <b>Venasca</b></p>
+          </li>
+          <li>
+            <p class="rl"><span class="rn" style="--g:#7a33ff">11</span> Durorilaqui to Vestrano</p>
+            <p class="rs"><b>Durorilaqui</b> &middot; Falcura &middot; Gonvara &middot; Estrela &middot; <b>Vestrano</b></p>
+          </li>
+          <li>
+            <p class="rl"><span class="rn" style="--g:#7a33ff">12</span> Durorilaqui to Sarnova</p>
+            <p class="rs"><b>Durorilaqui</b> &middot; Herrena &middot; Ilmara &middot; <b>Sarnova</b></p>
+          </li>
+          <li>
+            <p class="rl"><span class="rn" style="--g:#cc0000">13</span> Sarnova to Sornorum</p>
+            <p class="rs"><b>Sarnova</b> &middot; Lonvera &middot; <b>Vestrano</b> &middot; Marquessa &middot; <b>Sornorum</b></p>
+          </li>
+          <li>
+            <p class="rl"><span class="rn" style="--g:#cc0000">14</span> Sarnova to Dromera</p>
+            <p class="rs"><b>Sarnova</b> &middot; Rondura &middot; Halid &middot; Beslic &middot; Sabrena &middot; <b>Dromera</b></p>
+          </li>
+          <li>
+            <p class="rl"><span class="rn" style="--g:#cc0000">15</span> Dromera to Sornorum</p>
+            <p class="rs"><b>Dromera</b> &middot; Tolmena &middot; Urvena &middot; <b>Sornorum</b></p>
+          </li>
+          <li>
+            <p class="rl"><span class="rn" style="--g:#00998a">16</span> Torvena to Leriduson</p>
+            <p class="rs"><b>Torvena</b> &middot; Velsura &middot; Andrena &middot; Bosquela &middot; <b>Leriduson</b></p>
+          </li>
+          <li>
+            <p class="rl"><span class="rn" style="--g:#00998a">17</span> Leriduson to Prevessa</p>
+            <p class="rs"><b>Leriduson</b> &middot; Cerreta &middot; Drumena &middot; <b>Prevessa</b></p>
+          </li>
+          <li>
+            <p class="rl"><span class="rn" style="--g:#00998a">18</span> Leriduson to Marendo</p>
+            <p class="rs"><b>Leriduson</b> &middot; Ervara &middot; Fenestra &middot; Galvena &middot; <b>Marendo</b></p>
+          </li>
+          <li>
+            <p class="rl"><span class="rn" style="--g:#549900">19</span> Ilvara to Cortius</p>
+            <p class="rs"><b>Ilvara</b> &middot; Hostena &middot; <b>Solvena</b> &middot; Irbena &middot; Lundara &middot; <b>Cortius</b></p>
+          </li>
+          <li>
+            <p class="rl"><span class="rn" style="--g:#549900">20</span> Solvena to Prevessa</p>
+            <p class="rs"><b>Solvena</b> &middot; Mestura &middot; Sarki &middot; Nolvara &middot; <b>Prevessa</b></p>
+          </li>
+          <li>
+            <p class="rl"><span class="rn" style="--g:#549900">21</span> Ilvara to Sornorum</p>
+            <p class="rs"><b>Ilvara</b> &middot; Orsena &middot; <b>Tavrino</b> &middot; Pilvara &middot; Rusquena &middot; <b>Sornorum</b></p>
+          </li>
+          <li>
+            <p class="rl"><span class="rn" style="--g:#cc008b">22</span> Cortius to Lutoliluri</p>
+            <p class="rs"><b>Cortius</b> &middot; Sallura &middot; Trevena &middot; <b>Lutoliluri</b></p>
+          </li>
+          <li>
+            <p class="rl"><span class="rn" style="--g:#cc008b">23</span> Cortius to Corcina</p>
+            <p class="rs"><b>Cortius</b> &middot; Umbrela &middot; Vadura &middot; <b>Corcina</b></p>
+          </li>
+          <li>
+            <p class="rl"><span class="rn" style="--g:#cc008b">24</span> Marendo to Corcina</p>
+            <p class="rs"><b>Marendo</b> &middot; Zerrona &middot; Alvessa &middot; <b>Corcina</b></p>
+          </li>
+          <li>
+            <p class="rl"><span class="rn" style="--g:#cc008b">25</span> Sornorum to Lutoliluri</p>
+            <p class="rs"><b>Sornorum</b> &middot; Brenova &middot; Calduri &middot; <b>Lutoliluri</b></p>
+          </li>
+          <li>
+            <p class="rl"><span class="rn" style="--g:#cc008b">26</span> Lutoliluri harbour branch</p>
+            <p class="rs"><b>Lutoliluri</b> &middot; Dortena &middot; Espara</p>
+          </li>
+          <li>
+            <p class="rl"><span class="rn" style="--g:#00662b">27</span> Maravel to Calmena</p>
+            <p class="rs"><b>Maravel</b> &middot; Almora &middot; Ambrena &middot; <b>Calmena</b></p>
+          </li>
+          <li>
+            <p class="rl"><span class="rn" style="--g:#667aff">28</span> Torvena to Ilvara</p>
+            <p class="rs"><b>Torvena</b> &middot; Brantela &middot; Brusela &middot; <b>Ilvara</b></p>
+          </li>
+          <li>
+            <p class="rl"><span class="rn" style="--g:#994a00">29</span> Ferrista to Durorilaqui</p>
+            <p class="rs"><b>Ferrista</b> &middot; Cirvena &middot; Cordena &middot; <b>Durorilaqui</b></p>
+          </li>
+          <li>
+            <p class="rl"><span class="rn" style="--g:#7a33ff">30</span> Vestrano to Tavrino</p>
+            <p class="rs"><b>Vestrano</b> &middot; Dalvura &middot; Domvara &middot; <b>Tavrino</b></p>
+          </li>
+          <li>
+            <p class="rl"><span class="rn" style="--g:#549900">31</span> Tavrino to Cortius</p>
+            <p class="rs"><b>Tavrino</b> &middot; Drumessa &middot; Ermena &middot; Estrona &middot; <b>Cortius</b></p>
+          </li>
+          <li>
+            <p class="rl"><span class="rn" style="--g:#549900">32</span> Solvena to Marendo</p>
+            <p class="rs"><b>Solvena</b> &middot; Farnela &middot; Fostella &middot; <b>Marendo</b></p>
+          </li>
+          <li>
+            <p class="rl"><span class="rn" style="--g:#cc0000">33</span> Sarnova to Venasca</p>
+            <p class="rs"><b>Sarnova</b> &middot; Fulvena &middot; Gormela &middot; <b>Venasca</b></p>
+          </li>
+          <li>
+            <p class="rl"><span class="rn" style="--g:#cc0000">34</span> Dromera to Vestrano</p>
+            <p class="rs"><b>Dromera</b> &middot; Gostura &middot; Gravena &middot; <b>Vestrano</b></p>
+          </li>
+          <li>
+            <p class="rl"><span class="rn" style="--g:#667aff">35</span> Lindoma to Torvena direct</p>
+            <p class="rs"><b>Lindoma</b> &middot; Nurella &middot; Ortella &middot; <b>Torvena</b></p>
+          </li>
+          <li>
+            <p class="rl"><span class="rn" style="--g:#00998a">36</span> Prevessa to Marendo</p>
+            <p class="rs"><b>Prevessa</b> &middot; Hirvena &middot; Imbrena &middot; <b>Marendo</b></p>
+          </li>
+          <li>
+            <p class="rl"><span class="rn" style="--g:#00998a">37</span> Leriduson to Marendo direct</p>
+            <p class="rs"><b>Leriduson</b> &middot; Cerreta &middot; Drumena &middot; <b>Prevessa</b> &middot; Hirvena &middot; Imbrena &middot; <b>Marendo</b></p>
+          </li>
+          <li>
+            <p class="rl"><span class="rn" style="--g:#cc0000">38</span> Lonvera to Rusquena</p>
+            <p class="rs">Lonvera &middot; Halid &middot; Beslic &middot; <b>Vestrano</b> &middot; Marquessa &middot; Rusquena</p>
+          </li>
+        </ul>
+      </div>
+      <div class="wrap">
+        <p class="eyebrow" style="margin-top:1.2rem">Halts served by local trains</p>
+        <p class="halts">Bosquena &middot; Halvora &middot; Hastura &middot; Hirvena &middot; Instara &middot; Ivrena &middot; Larvena &middot; Lastura &middot; Lorvessa &middot; Mirvena &middot; Molvena &middot; Mondela &middot; Nastira &middot; Nostela &middot; Orvura &middot; Ovrena &middot; Pastena &middot; Pelmura &middot; Pervena &middot; Quandira &middot; Quirena &middot; Rasquela &middot; Rivessa &middot; Ruvella &middot; Serrola &middot; Silvura &middot; Sonvara &middot; Tavella &middot; Tornela &middot; Trelmena &middot; Ulvessa &middot; Undela &middot; Urvessa &middot; Ustrena &middot; Velmara</p>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="wrap">
+        <p class="eyebrow">Working the network</p>
+        <h2>Four constraints on the timetable</h2>
+      </div>
+      <div class="wrap">
+        <ul class="plates four">
+          <li>
+            <h3>Single track with loops</h3>
+            <p>Fifteen of the thirty-eight routes are single track. The spacing of the passing loops fixes the frequency. A route with one loop takes one train an hour each way, whatever the demand.</p>
+          </li>
+          <li>
+            <h3>Gradient at 3.5 per cent</h3>
+            <p>The valley line above Halvena and the hill line above Vadura climb at 3.5 per cent. Every rail vehicle in the Podnik catalogue is built to hold that gradient with a full load.</p>
+          </li>
+          <li>
+            <h3>The wire and the battery</h3>
+            <p>785 km stand beyond the wire. An R8 holds 220 kWh in reserve and runs 40 km on it, which reopened the branch ends without new catenary.</p>
+          </li>
+          <li>
+            <h3>Ecological ceilings</h3>
+            <p>The budget in force holds speed over the dune section of route 18 to 90 km per hour. Route 11 keeps its night freight paths because grain moved by rail sits inside the ceiling and grain moved by road does not.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <div class="band-foot" role="presentation"></div>
+  <footer class="foot">
+    <div class="wrap">
+      <ul class="footlinks">
+        <li><a href="index.html">Front</a></li>
+        <li><a href="network.html">Network</a></li>
+        <li><a href="app.html">Application</a></li>
+        <li><a href="card.html">CARD-ROM</a></li>
+        <li><a href="dev/">Developers</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="../podnik/">Podnik</a></li>
+        <li><a href="../../register/links.html">Public Register</a></li>
+      </ul>
+      <p class="standing">A branch federation of the railway operating cooperatives, constituted under Article 89. It exercises no public authority and represents no organ. Its accounts, its minutes and its yearly reviews are public.</p>
+    </div>
+  </footer>
+  <script src="site.js" defer></script>
 </body>
 </html>

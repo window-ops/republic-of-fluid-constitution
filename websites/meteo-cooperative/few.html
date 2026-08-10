@@ -1,243 +1,324 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>REP-FEW, the flood system - Meteorological Cooperative</title>
-<meta name="description" content="The flood probing and early warning system: flash, riverine, coastal surge and lagoon overtopping, the warning steps, the Sornorum floods of 2017 and the limits.">
-<link rel="stylesheet" href="site.css">
-<link rel="icon" href="../../assets/flag.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>REP-FEW, the flood system - Meteorological Cooperative</title>
+  <meta name="description" content="The flood probing and early warning system: flash, riverine, coastal surge and lagoon overtopping, the warning steps, the Sornorum floods of 2017 and the limits.">
+  <link rel="stylesheet" href="site.css">
+  <link rel="icon" href="../../assets/flag.png">
 </head>
 <body>
 
-<header class="masthead">
-  <div class="wrap">
-    <span class="marque"><svg viewBox="0 0 58 58" role="img" aria-label="Emblem of the Meteorological Cooperative">
-<circle cx="29" cy="31" r="20" fill="none" stroke="#9a6516" stroke-width="2.4"/>
-<circle cx="29" cy="31" r="12.5" fill="none" stroke="#9a6516" stroke-width="1.6"/>
-<circle cx="29" cy="31" r="5" fill="none" stroke="#9a6516" stroke-width="1.6"/>
-<path d="M29 31 L29 9" stroke="#5f3d0c" stroke-width="2.4" stroke-linecap="round"/>
-<path d="M29 12 L38 15" stroke="#5f3d0c" stroke-width="2.4" stroke-linecap="round"/>
-<path d="M29 18 L36 20.5" stroke="#5f3d0c" stroke-width="2.4" stroke-linecap="round"/>
-<circle cx="29" cy="31" r="2" fill="#5f3d0c"/>
-</svg></span>
-    <span class="idblock">
-      <p class="coopname"><a href="index.html">Meteorological Cooperative of the Republic</a></p>
-      <p class="basis">Weather, climate, seismicity, landslide and flood &middot; mandate held under the organic law on observation and warning</p>
-    </span>
-  </div>
-</header>
+  <header class="masthead">
+    <div class="wrap">
+      <span class="marque"><svg viewBox="0 0 58 58" role="img" aria-label="Emblem of the Meteorological Cooperative">
+          <circle cx="29" cy="31" r="20" fill="none" stroke="#9a6516" stroke-width="2.4" />
+          <circle cx="29" cy="31" r="12.5" fill="none" stroke="#9a6516" stroke-width="1.6" />
+          <circle cx="29" cy="31" r="5" fill="none" stroke="#9a6516" stroke-width="1.6" />
+          <path d="M29 31 L29 9" stroke="#5f3d0c" stroke-width="2.4" stroke-linecap="round" />
+          <path d="M29 12 L38 15" stroke="#5f3d0c" stroke-width="2.4" stroke-linecap="round" />
+          <path d="M29 18 L36 20.5" stroke="#5f3d0c" stroke-width="2.4" stroke-linecap="round" />
+          <circle cx="29" cy="31" r="2" fill="#5f3d0c" />
+        </svg></span>
+      <span class="idblock">
+        <p class="coopname"><a href="index.html">Meteorological Cooperative of the Republic</a></p>
+        <p class="basis">Weather, climate, seismicity, landslide and flood &middot; mandate held under the organic law on observation and warning</p>
+      </span>
+    </div>
+  </header>
 
-<nav class="mainnav" aria-label="Sections of this site">
-  <div class="wrap">
-    <a class="navtop" href="index.html">Home</a>
-    <details class="grp">
-      <summary>Weather and climate</summary>
-      <ul>
-        <li><a href="climate.html">Climate of the Republic</a></li>
-        <li><a href="change.html">Observed change</a></li>
-        <li><a href="forecasting.html">How a forecast is made</a></li>
-        <li class="has"><details class="sub">
-          <summary><a href="emissions.html">Emissions position</a></summary>
-          <ul>
-            <li><a href="periphery.html">Harm to the periphery</a></li>
-          </ul>
-        </details></li>
-      </ul>
-    </details>
-    <details class="grp">
-      <summary>Warning systems</summary>
-      <ul>
-        <li><a href="rationale.html">Why these systems exist</a></li>
-        <li><a href="seismicity.html">Seismicity of the Republic</a></li>
-        <li class="has"><details class="sub">
-          <summary><a href="kjs.html">REP-KJS, earthquake</a></summary>
-          <ul>
-            <li><a href="scale.html">REP intensity scale</a></li>
-            <li><a href="kjs-method.html">Detection, latency and limits</a></li>
-          </ul>
-        </details></li>
-        <li><a href="lew.html">REP-LEW, landslide</a></li>
-        <li><a href="few.html">REP-FEW, flood</a></li>
-        <li><a href="devices.html">Certified devices and RQUAK</a></li>
-      </ul>
-    </details>
-    <a class="navtop" href="species.html">Species catalogue</a>
-    <a class="navtop" href="network.html">Observing network</a>
-    <details class="grp">
-      <summary>Developers</summary>
-      <ul>
-        <li><a href="dev/index.html">Specifications and source</a></li>
-        <li><a href="dev/wire-format.html">Warning wire format</a></li>
-        <li><a href="dev/vectors.html">Conformance test vectors</a></li>
-        <li><a href="dev/hardware.html">Sensor and station hardware</a></li>
-        <li><a href="dev/forking.html">Porting to another country</a></li>
-      </ul>
-    </details>
-    <a class="navtop" href="about.html">About the cooperative</a>
-  </div>
-</nav>
-
-<main id="main" class="sheet">
-<p class="crumb"><a href="index.html">Meteorological Cooperative</a> &rsaquo; Warning systems &rsaquo; REP-FEW</p>
-<h1 class="page-title">REP-FEW, the flood system</h1>
-<p class="lede">REP-FEW probes the rivers, the drainage and the coast of the Republic and warns where water is likely to arrive where it should not. It handles four kinds of flood, each with a different lead time and a different method. It was specified after the Sornorum floods of 2017 and entered service in April 2025.</p>
-
-<div class="facts">
-  <div class="row"><span class="k">In service</span><span class="v">Since April 2025</span></div>
-  <div class="row"><span class="k">Kinds of flood handled</span><span class="v">Flash, riverine, coastal surge, and lagoon overtopping</span></div>
-  <div class="row"><span class="k">Gauges</span><span class="v">312 river stage, 41 soil moisture, 9 tide, and 4 weather radars</span></div>
-  <div class="row"><span class="k">Warning granularity</span><span class="v">Reach for riverine, town or catchment for flash, coastal cell for surge</span></div>
-  <div class="row"><span class="k">Administrative unit</span><span class="v">The watershed, under Article 28 (2), which takes precedence over the sub-regional map</span></div>
-  <div class="row"><span class="k">Specified after</span><span class="v">The Sornorum floods of July 2017</span></div>
-</div>
-
-<h2>The four kinds of flood</h2>
-<div class="prose">
-<p>Each kind arises differently and admits of a different amount of notice.</p>
-<ul>
-  <li><b>Flash flood:</b> A convective storm delivers more rain than the drainage or the small watercourse can accept. This is the southern and eastern pattern, the one that produced the 2017 event, and it is becoming more frequent as rainfall concentrates into fewer heavy days. Notice amounts to between thirty and ninety minutes and depends entirely on the radar nowcast.</li>
-  <li><b>Riverine flood:</b> Prolonged rainfall over a catchment raises a river until it leaves its channel. The Marnaqui, the longest river in the Republic, and the western watercourses draining the Vandorum upland behave this way. The catchment converts rainfall to river stage over hours or days, so notice runs from six hours on the small catchments to forty-eight on the Marnaqui.</li>
-  <li><b>Coastal surge:</b> Wind and low pressure raise sea level above the astronomical tide. The north-western bay at Merrisoma is the most exposed, its shape amplifying a surge from the north-west, and the eastern shore is increasingly exposed as the dune barrier retreats. Notice runs from twelve to thirty-six hours, since the weather producing a surge is itself forecast that far ahead.</li>
-  <li><b>Lagoon overtopping:</b> The Ravelluri lagoon lies behind a dune barrier that has retreated roughly nine hundred metres since 2013. Surge combined with a high tide overtops the barrier and floods the lagoon margin, where the commune of Marendo stands. This is treated separately because the threshold moves as the barrier does, and it is revised twice a year on survey.</li>
-</ul>
-</div>
-
-<h2>How a warning is produced</h2>
-<div class="tablewrap">
-<table class="data">
-<caption>Method by kind of flood</caption>
-<thead>
-<tr><th>Kind</th><th class="num">Lead time</th><th>Inputs</th><th>Test applied</th></tr>
-</thead>
-<tbody>
-<tr><td>Flash</td><td class="num">30 to 90 min</td><td>1 km radar nowcast, soil moisture, drainage capacity of the settlement</td><td>Rainfall rate over the catchment against the capacity, adjusted for current wetness</td></tr>
-<tr><td>Riverine</td><td class="num">6 to 48 h</td><td>Rainfall observed and forecast, snowmelt, soil moisture, upstream gauges</td><td>Rainfall-runoff model producing stage at each gauged reach, against three fixed levels</td></tr>
-<tr><td>Coastal surge</td><td class="num">12 to 36 h</td><td>Pressure and wind forecast, astronomical tide, tide gauge record</td><td>Surge model over the shelf; total water level against the defended level of each coastal cell</td></tr>
-<tr><td>Lagoon overtopping</td><td class="num">12 to 36 h</td><td>Surge output, tide, current barrier crest survey</td><td>Total water level against the surveyed crest, with a margin left above it</td></tr>
-</tbody>
-</table>
-</div>
-
-<div class="prose">
-<p>The rainfall-runoff model runs by watershed. Article 28 (2) makes the watershed the unit of water administration and gives its boundaries precedence over the sub-regional map, so a warning follows the basin and crosses administrative lines where the basin does. Where a basin spans a boundary, the warning goes to the joint body of the councils concerned as well as to the public.</p>
-</div>
-
-<h2>Warning steps</h2>
-<div class="tablewrap">
-<table class="data">
-<caption>Steps and what each states</caption>
-<thead>
-<tr><th>Step</th><th class="num">Condition</th><th>Statement and action</th></tr>
-</thead>
-<tbody>
-<tr><td>Watch</td><td class="num">Threshold reachable on the forecast</td><td>Published to the commune, the basin body and route operators; no public broadcast</td></tr>
-<tr><td>Warning</td><td class="num">First level exceeded or expected</td><td>Broadcast to the reach or cell. Water expected out of channel; move vehicles and stock; avoid the floodplain and the fords</td></tr>
-<tr><td>Severe</td><td class="num">Second level exceeded or expected</td><td>Broadcast with the action stated. Danger to life; move to higher ground; ground floors evacuated by the commune</td></tr>
-<tr><td>Recession</td><td class="num">Stage falling below the first level</td><td>Broadcast stating that water is falling and that the ground remains saturated</td></tr>
-</tbody>
-</table>
-</div>
-<p class="note">The recession step exists because a large share of flood injury occurs after the peak, when people return to a floodplain that is still moving water.</p>
-
-<h2>The 2017 event and what followed</h2>
-<div class="box water">
-<span class="lbl">Sornorum, July 2017</span>
-<p>Two convective systems crossed the southern crossroads within thirty hours and delivered 191 mm at the Sornorum station, of which 106 mm fell in four hours. The drainage of the town had been designed against a one-hour intensity of 26 mm.</p>
-<p>Three findings followed. Radar coverage over the southern sub-regions was too coarse to resolve either system in time. No arrangement existed for converting a rainfall observation into a warning to residents. The design intensity for urban drainage was drawn from a rainfall record already superseded.</p>
-<p>The first two findings produced REP-FEW. The third produced the revision of the drainage design intensity in 2019, which raised the southern figure from 26 mm to 37 mm an hour.</p>
-</div>
-
-<h2>Performance record</h2>
-<div class="tablewrap">
-<table class="data">
-<caption>REP-FEW performance, April 2025 to the present</caption>
-<thead>
-<tr><th>Measure</th><th class="num">Count</th><th>Note</th></tr>
-</thead>
-<tbody>
-<tr><td>Flood events of record</td><td class="num">31</td><td>Water out of channel or drainage surcharged</td></tr>
-<tr><td>Preceded by a warning</td><td class="num">24</td><td>Warning step or above</td></tr>
-<tr><td>Occurring with no warning</td><td class="num">7</td><td>Six were flash events in catchments distant from a radar</td></tr>
-<tr><td>Warnings with no flood following</td><td class="num">88</td><td>Ordinary behaviour of a threshold set to favour notice</td></tr>
-<tr><td>Severe steps issued</td><td class="num">6</td><td>Five followed by flooding; one surge fell 0.3 m short of the defended level</td></tr>
-<tr><td>Median flash lead time</td><td class="num">47 min</td><td>From broadcast to water out of channel</td></tr>
-<tr><td>Median riverine lead time</td><td class="num">14 h</td><td>From broadcast to the first level being crossed</td></tr>
-</tbody>
-</table>
-</div>
-
-<h2>Limits</h2>
-<div class="box limit">
-<span class="lbl">What REP-FEW cannot do</span>
-<p>Flash flooding is the least predictable kind and the most dangerous. The warning depends on the radar nowcast, and the four radar sites leave the interior of Halvorum, western Aspreduson and the upper Vandorum valleys with coarse coverage. Six of the seven unwarned events over the period occurred in exactly those places.</p>
-<p>The rainfall-runoff model is calibrated on gauged reaches. Roughly 3,400 km of watercourse in the Republic is ungauged, mostly small streams on the upland, and stage on those is inferred from the model with no observation to correct it.</p>
-<p>Urban surface flooding depends on the state of drains, gullies and screens at the moment of the storm. A blocked gully converts a manageable rainfall into a flooded street, and no instrument reports that condition.</p>
-<p>A warning names a reach, a catchment or a coastal cell. Whether a particular building floods depends on ground levels, on defences and on the state of its own drainage, and the system makes no statement at that scale.</p>
-<p>Ice affects stage in the continental interior in a hard winter and the model handles it poorly. Warnings during ice conditions on the upper Marnaqui are issued with the qualification stated in the message.</p>
-</div>
-
-<h2>See also</h2>
-<div class="prose">
-<ul>
-<li><a href="lew.html">REP-LEW</a>, the landslide system, which shares the catchment model</li>
-<li><a href="change.html">Observed change</a>, on rainfall intensity and coastal retreat</li>
-<li><a href="forecasting.html">How a forecast is made</a>, including the radar nowcast that feeds the flash limb</li>
-<li><a href="network.html">Observing network</a>, the gauges and the radar sites</li>
-</ul>
-</div>
-
-</main>
-
-<footer class="coopfoot">
-  <div class="wrap">
-    <div class="cols">
-      <div>
-        <h4>Weather and climate</h4>
+  <nav class="mainnav" aria-label="Sections of this site">
+    <div class="wrap">
+      <a class="navtop" href="index.html">Home</a>
+      <details class="grp">
+        <summary>Weather and climate</summary>
         <ul>
           <li><a href="climate.html">Climate of the Republic</a></li>
           <li><a href="change.html">Observed change</a></li>
           <li><a href="forecasting.html">How a forecast is made</a></li>
-          <li><a href="emissions.html">Emissions position</a></li>
-          <li><a href="periphery.html">Harm to the periphery</a></li>
+          <li class="has">
+            <details class="sub">
+              <summary><a href="emissions.html">Emissions position</a></summary>
+              <ul>
+                <li><a href="periphery.html">Harm to the periphery</a></li>
+              </ul>
+            </details>
+          </li>
         </ul>
-      </div>
-      <div>
-        <h4>Warning systems</h4>
+      </details>
+      <details class="grp">
+        <summary>Warning systems</summary>
         <ul>
           <li><a href="rationale.html">Why these systems exist</a></li>
           <li><a href="seismicity.html">Seismicity of the Republic</a></li>
-          <li><a href="kjs.html">REP-KJS, earthquake</a></li>
-          <li><a href="scale.html">REP intensity scale</a></li>
-          <li><a href="kjs-method.html">Detection, latency and limits</a></li>
+          <li class="has">
+            <details class="sub">
+              <summary><a href="kjs.html">REP-KJS, earthquake</a></summary>
+              <ul>
+                <li><a href="scale.html">REP intensity scale</a></li>
+                <li><a href="kjs-method.html">Detection, latency and limits</a></li>
+              </ul>
+            </details>
+          </li>
           <li><a href="lew.html">REP-LEW, landslide</a></li>
           <li><a href="few.html">REP-FEW, flood</a></li>
           <li><a href="devices.html">Certified devices and RQUAK</a></li>
         </ul>
-      </div>
-      <div>
-        <h4>Record and network</h4>
+      </details>
+      <a class="navtop" href="species.html">Species catalogue</a>
+      <a class="navtop" href="network.html">Observing network</a>
+      <details class="grp">
+        <summary>Developers</summary>
         <ul>
-          <li><a href="species.html">Species catalogue</a></li>
-          <li><a href="network.html">Observing network</a></li>
-          <li><a href="about.html">About the cooperative</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Developers</h4>
-        <ul>
-          <li><a href="dev/index.html">Specifications and licence</a></li>
+          <li><a href="dev/index.html">Specifications and source</a></li>
           <li><a href="dev/wire-format.html">Warning wire format</a></li>
           <li><a href="dev/vectors.html">Conformance test vectors</a></li>
           <li><a href="dev/hardware.html">Sensor and station hardware</a></li>
           <li><a href="dev/forking.html">Porting to another country</a></li>
         </ul>
-      </div>
+      </details>
+      <a class="navtop" href="about.html">About the cooperative</a>
     </div>
-    <p class="basis">Published by the Meteorological Cooperative of the Republic under the organic law on observation and warning. Free of charge, without licence, registration or account. No external resource is loaded by this page. See also the <a href="../../index.html">Republic of Fluid</a> and the <a href="../../register/">Public Register</a>.</p>
-  </div>
-</footer>
+  </nav>
 
-<script src="site.js"></script>
+  <main id="main" class="sheet">
+    <p class="crumb"><a href="index.html">Meteorological Cooperative</a> &rsaquo; Warning systems &rsaquo; REP-FEW</p>
+    <h1 class="page-title">REP-FEW, the flood system</h1>
+    <p class="lede">REP-FEW probes the rivers, the drainage and the coast of the Republic and warns where water is likely to arrive where it should not. It handles four kinds of flood, each with a different lead time and a different method. It was specified after the Sornorum floods of 2017 and entered service in April 2025.</p>
+
+    <div class="facts">
+      <div class="row"><span class="k">In service</span><span class="v">Since April 2025</span></div>
+      <div class="row"><span class="k">Kinds of flood handled</span><span class="v">Flash, riverine, coastal surge, and lagoon overtopping</span></div>
+      <div class="row"><span class="k">Gauges</span><span class="v">312 river stage, 41 soil moisture, 9 tide, and 4 weather radars</span></div>
+      <div class="row"><span class="k">Warning granularity</span><span class="v">Reach for riverine, town or catchment for flash, coastal cell for surge</span></div>
+      <div class="row"><span class="k">Administrative unit</span><span class="v">The watershed, under Article 28 (2), which takes precedence over the sub-regional map</span></div>
+      <div class="row"><span class="k">Specified after</span><span class="v">The Sornorum floods of July 2017</span></div>
+    </div>
+
+    <h2>The four kinds of flood</h2>
+    <div class="prose">
+      <p>Each kind arises differently and admits of a different amount of notice.</p>
+      <ul>
+        <li><b>Flash flood:</b> A convective storm delivers more rain than the drainage or the small watercourse can accept. This is the southern and eastern pattern, the one that produced the 2017 event, and it is becoming more frequent as rainfall concentrates into fewer heavy days. Notice amounts to between thirty and ninety minutes and depends entirely on the radar nowcast.</li>
+        <li><b>Riverine flood:</b> Prolonged rainfall over a catchment raises a river until it leaves its channel. The Marnaqui, the longest river in the Republic, and the western watercourses draining the Vandorum upland behave this way. The catchment converts rainfall to river stage over hours or days, so notice runs from six hours on the small catchments to forty-eight on the Marnaqui.</li>
+        <li><b>Coastal surge:</b> Wind and low pressure raise sea level above the astronomical tide. The north-western bay at Merrisoma is the most exposed, its shape amplifying a surge from the north-west, and the eastern shore is increasingly exposed as the dune barrier retreats. Notice runs from twelve to thirty-six hours, since the weather producing a surge is itself forecast that far ahead.</li>
+        <li><b>Lagoon overtopping:</b> The Ravelluri lagoon lies behind a dune barrier that has retreated roughly nine hundred metres since 2013. Surge combined with a high tide overtops the barrier and floods the lagoon margin, where the commune of Marendo stands. This is treated separately because the threshold moves as the barrier does, and it is revised twice a year on survey.</li>
+      </ul>
+    </div>
+
+    <h2>How a warning is produced</h2>
+    <div class="tablewrap">
+      <table class="data">
+        <caption>Method by kind of flood</caption>
+        <thead>
+          <tr>
+            <th>Kind</th>
+            <th class="num">Lead time</th>
+            <th>Inputs</th>
+            <th>Test applied</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Flash</td>
+            <td class="num">30 to 90 min</td>
+            <td>1 km radar nowcast, soil moisture, drainage capacity of the settlement</td>
+            <td>Rainfall rate over the catchment against the capacity, adjusted for current wetness</td>
+          </tr>
+          <tr>
+            <td>Riverine</td>
+            <td class="num">6 to 48 h</td>
+            <td>Rainfall observed and forecast, snowmelt, soil moisture, upstream gauges</td>
+            <td>Rainfall-runoff model producing stage at each gauged reach, against three fixed levels</td>
+          </tr>
+          <tr>
+            <td>Coastal surge</td>
+            <td class="num">12 to 36 h</td>
+            <td>Pressure and wind forecast, astronomical tide, tide gauge record</td>
+            <td>Surge model over the shelf; total water level against the defended level of each coastal cell</td>
+          </tr>
+          <tr>
+            <td>Lagoon overtopping</td>
+            <td class="num">12 to 36 h</td>
+            <td>Surge output, tide, current barrier crest survey</td>
+            <td>Total water level against the surveyed crest, with a margin left above it</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="prose">
+      <p>The rainfall-runoff model runs by watershed. Article 28 (2) makes the watershed the unit of water administration and gives its boundaries precedence over the sub-regional map, so a warning follows the basin and crosses administrative lines where the basin does. Where a basin spans a boundary, the warning goes to the joint body of the councils concerned as well as to the public.</p>
+    </div>
+
+    <h2>Warning steps</h2>
+    <div class="tablewrap">
+      <table class="data">
+        <caption>Steps and what each states</caption>
+        <thead>
+          <tr>
+            <th>Step</th>
+            <th class="num">Condition</th>
+            <th>Statement and action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Watch</td>
+            <td class="num">Threshold reachable on the forecast</td>
+            <td>Published to the commune, the basin body and route operators; no public broadcast</td>
+          </tr>
+          <tr>
+            <td>Warning</td>
+            <td class="num">First level exceeded or expected</td>
+            <td>Broadcast to the reach or cell. Water expected out of channel; move vehicles and stock; avoid the floodplain and the fords</td>
+          </tr>
+          <tr>
+            <td>Severe</td>
+            <td class="num">Second level exceeded or expected</td>
+            <td>Broadcast with the action stated. Danger to life; move to higher ground; ground floors evacuated by the commune</td>
+          </tr>
+          <tr>
+            <td>Recession</td>
+            <td class="num">Stage falling below the first level</td>
+            <td>Broadcast stating that water is falling and that the ground remains saturated</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note">The recession step exists because a large share of flood injury occurs after the peak, when people return to a floodplain that is still moving water.</p>
+
+    <h2>The 2017 event and what followed</h2>
+    <div class="box water">
+      <span class="lbl">Sornorum, July 2017</span>
+      <p>Two convective systems crossed the southern crossroads within thirty hours and delivered 191 mm at the Sornorum station, of which 106 mm fell in four hours. The drainage of the town had been designed against a one-hour intensity of 26 mm.</p>
+      <p>Three findings followed. Radar coverage over the southern sub-regions was too coarse to resolve either system in time. No arrangement existed for converting a rainfall observation into a warning to residents. The design intensity for urban drainage was drawn from a rainfall record already superseded.</p>
+      <p>The first two findings produced REP-FEW. The third produced the revision of the drainage design intensity in 2019, which raised the southern figure from 26 mm to 37 mm an hour.</p>
+    </div>
+
+    <h2>Performance record</h2>
+    <div class="tablewrap">
+      <table class="data">
+        <caption>REP-FEW performance, April 2025 to the present</caption>
+        <thead>
+          <tr>
+            <th>Measure</th>
+            <th class="num">Count</th>
+            <th>Note</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Flood events of record</td>
+            <td class="num">31</td>
+            <td>Water out of channel or drainage surcharged</td>
+          </tr>
+          <tr>
+            <td>Preceded by a warning</td>
+            <td class="num">24</td>
+            <td>Warning step or above</td>
+          </tr>
+          <tr>
+            <td>Occurring with no warning</td>
+            <td class="num">7</td>
+            <td>Six were flash events in catchments distant from a radar</td>
+          </tr>
+          <tr>
+            <td>Warnings with no flood following</td>
+            <td class="num">88</td>
+            <td>Ordinary behaviour of a threshold set to favour notice</td>
+          </tr>
+          <tr>
+            <td>Severe steps issued</td>
+            <td class="num">6</td>
+            <td>Five followed by flooding; one surge fell 0.3 m short of the defended level</td>
+          </tr>
+          <tr>
+            <td>Median flash lead time</td>
+            <td class="num">47 min</td>
+            <td>From broadcast to water out of channel</td>
+          </tr>
+          <tr>
+            <td>Median riverine lead time</td>
+            <td class="num">14 h</td>
+            <td>From broadcast to the first level being crossed</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>Limits</h2>
+    <div class="box limit">
+      <span class="lbl">What REP-FEW cannot do</span>
+      <p>Flash flooding is the least predictable kind and the most dangerous. The warning depends on the radar nowcast, and the four radar sites leave the interior of Halvorum, western Aspreduson and the upper Vandorum valleys with coarse coverage. Six of the seven unwarned events over the period occurred in exactly those places.</p>
+      <p>The rainfall-runoff model is calibrated on gauged reaches. Roughly 3,400 km of watercourse in the Republic is ungauged, mostly small streams on the upland, and stage on those is inferred from the model with no observation to correct it.</p>
+      <p>Urban surface flooding depends on the state of drains, gullies and screens at the moment of the storm. A blocked gully converts a manageable rainfall into a flooded street, and no instrument reports that condition.</p>
+      <p>A warning names a reach, a catchment or a coastal cell. Whether a particular building floods depends on ground levels, on defences and on the state of its own drainage, and the system makes no statement at that scale.</p>
+      <p>Ice affects stage in the continental interior in a hard winter and the model handles it poorly. Warnings during ice conditions on the upper Marnaqui are issued with the qualification stated in the message.</p>
+    </div>
+
+    <h2>See also</h2>
+    <div class="prose">
+      <ul>
+        <li><a href="lew.html">REP-LEW</a>, the landslide system, which shares the catchment model</li>
+        <li><a href="change.html">Observed change</a>, on rainfall intensity and coastal retreat</li>
+        <li><a href="forecasting.html">How a forecast is made</a>, including the radar nowcast that feeds the flash limb</li>
+        <li><a href="network.html">Observing network</a>, the gauges and the radar sites</li>
+      </ul>
+    </div>
+
+  </main>
+
+  <footer class="coopfoot">
+    <div class="wrap">
+      <div class="cols">
+        <div>
+          <h4>Weather and climate</h4>
+          <ul>
+            <li><a href="climate.html">Climate of the Republic</a></li>
+            <li><a href="change.html">Observed change</a></li>
+            <li><a href="forecasting.html">How a forecast is made</a></li>
+            <li><a href="emissions.html">Emissions position</a></li>
+            <li><a href="periphery.html">Harm to the periphery</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Warning systems</h4>
+          <ul>
+            <li><a href="rationale.html">Why these systems exist</a></li>
+            <li><a href="seismicity.html">Seismicity of the Republic</a></li>
+            <li><a href="kjs.html">REP-KJS, earthquake</a></li>
+            <li><a href="scale.html">REP intensity scale</a></li>
+            <li><a href="kjs-method.html">Detection, latency and limits</a></li>
+            <li><a href="lew.html">REP-LEW, landslide</a></li>
+            <li><a href="few.html">REP-FEW, flood</a></li>
+            <li><a href="devices.html">Certified devices and RQUAK</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Record and network</h4>
+          <ul>
+            <li><a href="species.html">Species catalogue</a></li>
+            <li><a href="network.html">Observing network</a></li>
+            <li><a href="about.html">About the cooperative</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Developers</h4>
+          <ul>
+            <li><a href="dev/index.html">Specifications and licence</a></li>
+            <li><a href="dev/wire-format.html">Warning wire format</a></li>
+            <li><a href="dev/vectors.html">Conformance test vectors</a></li>
+            <li><a href="dev/hardware.html">Sensor and station hardware</a></li>
+            <li><a href="dev/forking.html">Porting to another country</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="basis">Published by the Meteorological Cooperative of the Republic under the organic law on observation and warning. Free of charge, without licence, registration or account. No external resource is loaded by this page. See also the <a href="../../index.html">Republic of Fluid</a> and the <a href="../../register/">Public Register</a>.</p>
+    </div>
+  </footer>
+
+  <script src="site.js"></script>
 </body>
 </html>

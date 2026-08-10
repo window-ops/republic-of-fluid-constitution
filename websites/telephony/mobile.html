@@ -1,137 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Mobile, LTE and 5G &middot; Telephony</title>
-<meta name="description" content="The mobile network of the Republic of Fluid: an Open5GS core anyone can read, VoLTE, slow standalone 5G, unlocked SIMs, no handset register, and coverage shaped by communal votes on masts.">
-<meta name="theme-color" content="#23201a">
-<link rel="stylesheet" href="site.css">
-<link rel="icon" href="../../assets/flag.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mobile, LTE and 5G &middot; Telephony</title>
+  <meta name="description" content="The mobile network of the Republic of Fluid: an Open5GS core anyone can read, VoLTE, slow standalone 5G, unlocked SIMs, no handset register, and coverage shaped by communal votes on masts.">
+  <meta name="theme-color" content="#23201a">
+  <link rel="stylesheet" href="site.css">
+  <link rel="icon" href="../../assets/flag.png">
 </head>
 <body>
-<a class="skip" href="#main">Skip to the content</a>
+  <a class="skip" href="#main">Skip to the content</a>
 
-<header class="cover">
-  <div class="wrap">
-    <p class="title"><a href="index.html">Telephony</a></p>
-    <p class="imprint">Lines, exchanges and services of the <b>Republic of Fluid</b></p>
-  </div>
-</header>
-
-<nav class="thumbs" aria-label="Sections of this directory">
-  <div class="wrap">
-    <a href="index.html">Front</a>
-    <a href="connect.html">Get a line</a>
-    <a href="dialup.html">Dial-up</a>
-    <a href="mobile.html" aria-current="page">Mobile</a>
-    <a href="voice.html">Calling</a>
-    <a href="chat.html">Chat</a>
-    <a href="meet.html">Meet</a>
-    <a href="hardware.html">Hardware</a>
-    <a href="privacy.html">Privacy</a>
-    <a href="about.html">About</a>
-  </div>
-</nav>
-
-<main id="main">
-<div class="wrap">
-
-<section class="opening">
-  <h1>The mobile network</h1>
-  <p class="lede">LTE reaches 98 per cent of people and 71 per cent of the ground. The core runs on software you can read, the SIM is provision, and nothing about the handset is registered anywhere.</p>
-</section>
-
-<section class="sheet">
-  <p class="runhead">The core<span class="span">Open5GS at four sites</span></p>
-  <h2>What runs the network</h2>
-<div class="cols">
-  <div class="prose">
-    <h3>The core is Open5GS</h3>
-    <p>The packet core, the subscriber register and the call session control all run on Open5GS on ordinary machines at four sites. The configuration is published alongside the software, so anyone can see exactly what the network does with a handset that attaches to it.</p>
-    <p>There is no vendor core here and there never has been. A core that cannot be read cannot be audited, and an unauditable core would fail the constitutional rule about software the user cannot examine.</p>
-  </div>
-  <div class="prose">
-    <h3>VoLTE is how calls go</h3>
-    <p>Voice runs over the data bearer. There is no circuit fallback to maintain, because there is no legacy 2G or 3G network under it: the Republic went from analogue trunking straight to LTE in 2013.</p>
-    <p>Calls between two handsets with a clear path between them are handed to WebRTC and carried directly, which keeps them off the core entirely.</p>
-  </div>
-</div>
-</section>
-
-<section class="sheet">
-  <p class="runhead">Coverage<span class="span">June 2026</span></p>
-  <h2>Where it reaches</h2>
-<div class="tbl-scroll">
-  <table class="tbl">
-    <caption>Population covered, end of June 2026</caption>
-    <thead><tr><th>Generation</th><th>Population covered</th><th>Land covered</th><th>Where</th></tr></thead>
-    <tbody>
-          <tr><td>LTE</td><td class="num">98.1 %</td><td class="num">71 %</td><td>All twenty sub-regions</td></tr>
-          <tr><td>5G standalone</td><td class="num">31 %</td><td class="num">4 %</td><td>Lindoma, Cortius, Sornorum, part of Sederna</td></tr>
-          <tr><td>Fixed wireless on LTE</td><td class="num">&mdash;</td><td class="num">&mdash;</td><td>504,000 households, mostly on the plain</td></tr>
-    </tbody>
-  </table>
-</div>
-<p class="tbl-note">Land coverage is low and stays low. Masts need a communal vote and objections are common, so coverage follows the roads and the valleys, and leaves the map alone.</p>
-</section>
-
-<section class="sheet">
-  <p class="runhead">5G<span class="span">31 per cent of people, 4 per cent of the ground</span></p>
-  <h2>Standalone, and slow</h2>
-<div class="prose">
-  <p><b>5G is going in slowly and on purpose.</b> Each site is a communal decision, each one costs materials against a ceiling the commune holds. The federation's position is that LTE already handles what most people do. The assembly reviews the programme yearly and has twice voted to slow it.</p>
-  <p>The rollout is standalone from the start. There is no non-standalone stage, because anchoring 5G to an LTE carrier would have meant a second core to audit.</p>
-</div>
-</section>
-
-<section class="sheet">
-  <p class="runhead">SIMs and handsets<span class="span">One per resident, more on asking</span></p>
-  <h2>What you get and what is never recorded</h2>
-<ul class="listing">
-  <li class="entry"><span class="what">Getting a SIM</span><span class="lead" aria-hidden="true"></span><span class="host">At any commune office</span><span class="also">One per resident, more on request, no reason asked and no name required for the extra ones.</span></li>
-  <li class="entry"><span class="what">Locking</span><span class="lead" aria-hidden="true"></span><span class="host">None, anywhere</span><span class="also">No handset lock, no network lock, no carrier profile. A SIM from here works in anything that will take it.</span></li>
-  <li class="entry"><span class="what">IMEI register</span><span class="lead" aria-hidden="true"></span><span class="host">Does not exist</span><span class="also">The network does not record handset identifiers and has no table in which to keep them.</span></li>
-  <li class="entry"><span class="what">Bands</span><span class="lead" aria-hidden="true"></span><span class="host">B1 B3 B7 B20 &middot; n78</span><span class="also">Common European allocations. Almost any imported handset works on the radio side.</span></li>
-  <li class="entry"><span class="what">Handsets</span><span class="lead" aria-hidden="true"></span><span class="host">Anything you can examine</span><span class="also">A handset running software you cannot inspect, replace or remove is prohibited from sale, and most foreign models fail on that alone.</span></li>
-  <li class="entry"><span class="what">Roaming</span><span class="lead" aria-hidden="true"></span><span class="host">Across the Bloc</span><span class="also">Your number and your data follow you into the Bloc states at no charge. Outside the Bloc there is no agreement to roam under.</span></li>
-</ul>
-</section>
-
-</div>
-</main>
-
-<footer class="colophon">
-  <div class="wrap cols cols-3">
-    <div>
-      <h2>Lines</h2>
-      <ul>
-        <li><a href="connect.html">Get a line</a></li>
-        <li><a href="dialup.html">Dial-up and the voiceband</a></li>
-        <li><a href="mobile.html">Mobile, LTE and 5G</a></li>
-      </ul>
+  <header class="cover">
+    <div class="wrap">
+      <p class="title"><a href="index.html">Telephony</a></p>
+      <p class="imprint">Lines, exchanges and services of the <b>Republic of Fluid</b></p>
     </div>
-    <div>
-      <h2>Services</h2>
-      <ul>
-        <li><a href="voice.html">Calling and numbering</a></li>
-        <li><a href="chat.html">IRC and Matrix</a></li>
-        <li><a href="meet.html">Conferencing</a></li>
-      </ul>
+  </header>
+
+  <nav class="thumbs" aria-label="Sections of this directory">
+    <div class="wrap">
+      <a href="index.html">Front</a>
+      <a href="connect.html">Get a line</a>
+      <a href="dialup.html">Dial-up</a>
+      <a href="mobile.html" aria-current="page">Mobile</a>
+      <a href="voice.html">Calling</a>
+      <a href="chat.html">Chat</a>
+      <a href="meet.html">Meet</a>
+      <a href="hardware.html">Hardware</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="about.html">About</a>
     </div>
-    <div>
-      <h2>The federation</h2>
-      <ul>
-        <li><a href="hardware.html">Published specifications</a></li>
-        <li><a href="privacy.html">What is never kept</a></li>
-        <li><a href="about.html">About Telephony</a></li>
-        <li><a href="../../register/links.html">Public Register of the Republic</a></li>
-      </ul>
+  </nav>
+
+  <main id="main">
+    <div class="wrap">
+
+      <section class="opening">
+        <h1>The mobile network</h1>
+        <p class="lede">LTE reaches 98 per cent of people and 71 per cent of the ground. The core runs on software you can read, the SIM is provision, and nothing about the handset is registered anywhere.</p>
+      </section>
+
+      <section class="sheet">
+        <p class="runhead">The core<span class="span">Open5GS at four sites</span></p>
+        <h2>What runs the network</h2>
+        <div class="cols">
+          <div class="prose">
+            <h3>The core is Open5GS</h3>
+            <p>The packet core, the subscriber register and the call session control all run on Open5GS on ordinary machines at four sites. The configuration is published alongside the software, so anyone can see exactly what the network does with a handset that attaches to it.</p>
+            <p>There is no vendor core here and there never has been. A core that cannot be read cannot be audited, and an unauditable core would fail the constitutional rule about software the user cannot examine.</p>
+          </div>
+          <div class="prose">
+            <h3>VoLTE is how calls go</h3>
+            <p>Voice runs over the data bearer. There is no circuit fallback to maintain, because there is no legacy 2G or 3G network under it: the Republic went from analogue trunking straight to LTE in 2013.</p>
+            <p>Calls between two handsets with a clear path between them are handed to WebRTC and carried directly, which keeps them off the core entirely.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="sheet">
+        <p class="runhead">Coverage<span class="span">June 2026</span></p>
+        <h2>Where it reaches</h2>
+        <div class="tbl-scroll">
+          <table class="tbl">
+            <caption>Population covered, end of June 2026</caption>
+            <thead>
+              <tr>
+                <th>Generation</th>
+                <th>Population covered</th>
+                <th>Land covered</th>
+                <th>Where</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>LTE</td>
+                <td class="num">98.1 %</td>
+                <td class="num">71 %</td>
+                <td>All twenty sub-regions</td>
+              </tr>
+              <tr>
+                <td>5G standalone</td>
+                <td class="num">31 %</td>
+                <td class="num">4 %</td>
+                <td>Lindoma, Cortius, Sornorum, part of Sederna</td>
+              </tr>
+              <tr>
+                <td>Fixed wireless on LTE</td>
+                <td class="num">&mdash;</td>
+                <td class="num">&mdash;</td>
+                <td>504,000 households, mostly on the plain</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="tbl-note">Land coverage is low and stays low. Masts need a communal vote and objections are common, so coverage follows the roads and the valleys, and leaves the map alone.</p>
+      </section>
+
+      <section class="sheet">
+        <p class="runhead">5G<span class="span">31 per cent of people, 4 per cent of the ground</span></p>
+        <h2>Standalone, and slow</h2>
+        <div class="prose">
+          <p><b>5G is going in slowly and on purpose.</b> Each site is a communal decision, each one costs materials against a ceiling the commune holds. The federation's position is that LTE already handles what most people do. The assembly reviews the programme yearly and has twice voted to slow it.</p>
+          <p>The rollout is standalone from the start. There is no non-standalone stage, because anchoring 5G to an LTE carrier would have meant a second core to audit.</p>
+        </div>
+      </section>
+
+      <section class="sheet">
+        <p class="runhead">SIMs and handsets<span class="span">One per resident, more on asking</span></p>
+        <h2>What you get and what is never recorded</h2>
+        <ul class="listing">
+          <li class="entry"><span class="what">Getting a SIM</span><span class="lead" aria-hidden="true"></span><span class="host">At any commune office</span><span class="also">One per resident, more on request, no reason asked and no name required for the extra ones.</span></li>
+          <li class="entry"><span class="what">Locking</span><span class="lead" aria-hidden="true"></span><span class="host">None, anywhere</span><span class="also">No handset lock, no network lock, no carrier profile. A SIM from here works in anything that will take it.</span></li>
+          <li class="entry"><span class="what">IMEI register</span><span class="lead" aria-hidden="true"></span><span class="host">Does not exist</span><span class="also">The network does not record handset identifiers and has no table in which to keep them.</span></li>
+          <li class="entry"><span class="what">Bands</span><span class="lead" aria-hidden="true"></span><span class="host">B1 B3 B7 B20 &middot; n78</span><span class="also">Common European allocations. Almost any imported handset works on the radio side.</span></li>
+          <li class="entry"><span class="what">Handsets</span><span class="lead" aria-hidden="true"></span><span class="host">Anything you can examine</span><span class="also">A handset running software you cannot inspect, replace or remove is prohibited from sale, and most foreign models fail on that alone.</span></li>
+          <li class="entry"><span class="what">Roaming</span><span class="lead" aria-hidden="true"></span><span class="host">Across the Bloc</span><span class="also">Your number and your data follow you into the Bloc states at no charge. Outside the Bloc there is no agreement to roam under.</span></li>
+        </ul>
+      </section>
+
     </div>
-  </div>
-  <div class="wrap">
-    <p>Telephony holds a licence the Republic grants and is audited in its use of common resources. It exercises no public authority and represents no organ.</p>
-  </div>
-</footer>
+  </main>
+
+  <footer class="colophon">
+    <div class="wrap cols cols-3">
+      <div>
+        <h2>Lines</h2>
+        <ul>
+          <li><a href="connect.html">Get a line</a></li>
+          <li><a href="dialup.html">Dial-up and the voiceband</a></li>
+          <li><a href="mobile.html">Mobile, LTE and 5G</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Services</h2>
+        <ul>
+          <li><a href="voice.html">Calling and numbering</a></li>
+          <li><a href="chat.html">IRC and Matrix</a></li>
+          <li><a href="meet.html">Conferencing</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>The federation</h2>
+        <ul>
+          <li><a href="hardware.html">Published specifications</a></li>
+          <li><a href="privacy.html">What is never kept</a></li>
+          <li><a href="about.html">About Telephony</a></li>
+          <li><a href="../../register/links.html">Public Register of the Republic</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="wrap">
+      <p>Telephony holds a licence the Republic grants and is audited in its use of common resources. It exercises no public authority and represents no organ.</p>
+    </div>
+  </footer>
 </body>
 </html>

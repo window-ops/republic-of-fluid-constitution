@@ -1,186 +1,342 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Depots and maintenance &middot; Podnik</title>
-<meta name="description" content="The depot network of the Republic of Fluid, the inspection cycle for each mode, how the imported fleet is supported from inside the federation, and the published drawings anyone may work from.">
-<meta name="theme-color" content="#14181b">
-<link rel="stylesheet" href="site.css">
-<link rel="icon" href="../../assets/flag.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Depots and maintenance &middot; Podnik</title>
+  <meta name="description" content="The depot network of the Republic of Fluid, the inspection cycle for each mode, how the imported fleet is supported from inside the federation, and the published drawings anyone may work from.">
+  <meta name="theme-color" content="#14181b">
+  <link rel="stylesheet" href="site.css">
+  <link rel="icon" href="../../assets/flag.png">
 </head>
 <body>
-<a class="skip" href="#main">Skip to the content</a>
+  <a class="skip" href="#main">Skip to the content</a>
 
-<header class="head">
-  <div class="wrap">
-    <svg class="mark" viewBox="0 0 46 46" role="img" aria-label="Emblem of Podnik">
-      <rect width="46" height="46" fill="#ffd100"></rect>
-      <path d="M8 36V16a5 5 0 0 1 5-5h20a5 5 0 0 1 5 5v20" fill="none" stroke="#14181b" stroke-width="4.4"></path>
-      <path d="M23 36V11" stroke="#14181b" stroke-width="4.4"></path>
-      <circle cx="14" cy="38" r="3.4" fill="#14181b"></circle>
-      <circle cx="32" cy="38" r="3.4" fill="#14181b"></circle>
-    </svg>
-    <span>
-      <p class="wordmark"><a href="index.html">Podnik</a></p>
-      <p class="standfirst">Federation of transport cooperatives of the Republic of Fluid</p>
-    </span>
-  </div>
-</header>
-
-<nav class="nav" aria-label="Sections of this site">
-  <div class="wrap">
-    <a href="index.html">Front</a>
-    <a href="catalogue.html">Catalogue</a>
-    <a href="live.html">Live positions</a>
-    <a href="fleets.html">Fleet advice</a>
-    <a href="social.html">Social</a>
-    <a href="reserve.html">Reserve</a>
-    <a href="surplus.html">Surplus</a>
-    <a href="retired.html">Retired</a>
-    <a href="depots.html" aria-current="page">Depots</a>
-    <a href="about.html">About</a>
-  </div>
-</nav>
-
-<main id="main">
-
-<section class="opening">
-  <div class="wrap">
-    <p class="eyebrow">Where the fleet sleeps</p>
-    <h1>Depots and maintenance</h1>
-    <p class="lede">Fifteen main depots and 94 small depots hold 18,592 vehicles. Every inspection interval, every rebuild and every drawing behind them is published, and any workshop with the drawings may do the work.</p>
-  </div>
-</section>
-
-<section class="block">
-  <div class="wrap">
-    <p class="eyebrow">The network</p>
-    <h2>Main depots</h2>
-    <p class="sub">The last column counts the vehicles based there, including those out for rebuild.</p>
-  </div>
-  <div class="wrap">
-    <div class="tbl-scroll">
-      <table class="tbl">
-        <thead><tr><th>Depot</th><th>Town</th><th>Modes</th><th>Bays</th><th>Longest bay</th><th>Vehicles based there</th></tr></thead>
-        <tbody>
-          <tr><td>Lindoma North</td><td>Lindoma</td><td>Tram, bus</td><td class="num">28</td><td class="num">46 m</td><td class="num">412</td></tr>
-          <tr><td>Lindoma Port</td><td>Lindoma</td><td>Bus, trolley</td><td class="num">22</td><td class="num">24 m</td><td class="num">368</td></tr>
-          <tr><td>Lindoma Lanes</td><td>Lindoma</td><td>Pod</td><td class="num">14</td><td class="num">18 m</td><td class="num">356</td></tr>
-          <tr><td>Lindoma Kesar</td><td>Lindoma</td><td>Metro</td><td class="num">16</td><td class="num">124 m</td><td class="num">624</td></tr>
-          <tr><td>Sederna Depot</td><td>Sederna</td><td>Rail</td><td class="num">18</td><td class="num">210 m</td><td class="num">1,104</td></tr>
-          <tr><td>Cortius East</td><td>Cortius</td><td>Tram, bus</td><td class="num">24</td><td class="num">46 m</td><td class="num">386</td></tr>
-          <tr><td>Cortius Yard</td><td>Cortius</td><td>Rail</td><td class="num">12</td><td class="num">180 m</td><td class="num">642</td></tr>
-          <tr><td>Durorilaqui</td><td>Durorilaqui</td><td>Tram, coach</td><td class="num">20</td><td class="num">42 m</td><td class="num">298</td></tr>
-          <tr><td>Sornorum Junction</td><td>Sornorum</td><td>Bus, coach</td><td class="num">26</td><td class="num">28 m</td><td class="num">454</td></tr>
-          <tr><td>Lutoliluri Quay</td><td>Lutoliluri</td><td>Ferry, bus</td><td class="num">9</td><td class="num">116 m</td><td class="num">186</td></tr>
-          <tr><td>Leriduson Coast</td><td>Leriduson</td><td>Tram, rail</td><td class="num">16</td><td class="num">180 m</td><td class="num">342</td></tr>
-          <tr><td>Ferrista Hill</td><td>Ferrista</td><td>Tram, bus</td><td class="num">14</td><td class="num">32 m</td><td class="num">204</td></tr>
-          <tr><td>Solvena Grain</td><td>Solvena</td><td>Coach, bus</td><td class="num">18</td><td class="num">28 m</td><td class="num">276</td></tr>
-          <tr><td>Maravel Basin</td><td>Maravel</td><td>Ferry</td><td class="num">6</td><td class="num">40 m</td><td class="num">82</td></tr>
-          <tr><td>Torvena Moor</td><td>Torvena</td><td>Bus</td><td class="num">12</td><td class="num">18 m</td><td class="num">168</td></tr>
-        </tbody>
-      </table>
+  <header class="head">
+    <div class="wrap">
+      <svg class="mark" viewBox="0 0 46 46" role="img" aria-label="Emblem of Podnik">
+        <rect width="46" height="46" fill="#ffd100"></rect>
+        <path d="M8 36V16a5 5 0 0 1 5-5h20a5 5 0 0 1 5 5v20" fill="none" stroke="#14181b" stroke-width="4.4"></path>
+        <path d="M23 36V11" stroke="#14181b" stroke-width="4.4"></path>
+        <circle cx="14" cy="38" r="3.4" fill="#14181b"></circle>
+        <circle cx="32" cy="38" r="3.4" fill="#14181b"></circle>
+      </svg>
+      <span>
+        <p class="wordmark"><a href="index.html">Podnik</a></p>
+        <p class="standfirst">Federation of transport cooperatives of the Republic of Fluid</p>
+      </span>
     </div>
-    <p class="tbl-note">Fifteen main depots. Another 94 small depots hold between four and forty vehicles each.</p>
-  </div>
-</section>
+  </header>
 
-<section class="block">
-  <div class="wrap">
-    <p class="eyebrow">The cycle</p>
-    <h2>How often, and for how long</h2>
-  </div>
-  <div class="wrap">
-    <div class="tbl-scroll">
-      <table class="tbl">
-        <thead><tr><th>Examination</th><th>Interval</th><th>Off the road for</th><th>Done by</th></tr></thead>
-        <tbody>
-          <tr><td>Daily check</td><td>Every night in service</td><td class="num">25 minutes</td><td>Depot mechanics</td></tr>
-          <tr><td>Check A</td><td>10,000 km, or 30 days</td><td class="num">4 hours</td><td>Depot mechanics</td></tr>
-          <tr><td>Check B</td><td>60,000 km</td><td class="num">2 days</td><td>Depot building workshop</td></tr>
-          <tr><td>Yearly check</td><td>12 months</td><td class="num">5 days</td><td>Depot building workshop</td></tr>
-          <tr><td>Half-life rebuild</td><td>Half the design life</td><td class="num">9 to 16 weeks</td><td>The factory that built it</td></tr>
-          <tr><td>Ferry inspection</td><td>12 months, dry dock every 30</td><td class="num">3 weeks</td><td>Lutoliluri or Maravel</td></tr>
-          <tr><td>Pod check</td><td>4,000 km, or 14 days</td><td class="num">90 minutes</td><td>Lindoma Lanes</td></tr>
-        </tbody>
-      </table>
+  <nav class="nav" aria-label="Sections of this site">
+    <div class="wrap">
+      <a href="index.html">Front</a>
+      <a href="catalogue.html">Catalogue</a>
+      <a href="live.html">Live positions</a>
+      <a href="fleets.html">Fleet advice</a>
+      <a href="social.html">Social</a>
+      <a href="reserve.html">Reserve</a>
+      <a href="surplus.html">Surplus</a>
+      <a href="retired.html">Retired</a>
+      <a href="depots.html" aria-current="page">Depots</a>
+      <a href="about.html">About</a>
     </div>
-    <p class="tbl-note">A half-life rebuild returns a vehicle to the accounts as a rebuild, with its own build account, and the vehicle keeps its model code.</p>
-  </div>
-</section>
+  </nav>
 
-<section class="block">
-  <div class="wrap">
-    <p class="eyebrow">The older fleet</p>
-    <h2>Who supports the imports</h2>
-  </div>
-  <div class="wrap">
-    <ul class="plates">
-      <li>
-        <h3>Trams, at Ferrista</h3>
-        <p>The CKD T3, KT8D5 and T6A5 are supported entirely from Ferrista, which holds the drawings under the transfer of 1993. Wheel unit frames, controller parts and pressed body panels are made on site. The builder has supplied nothing since 1994.</p>
-      </li>
-      <li>
-        <h3>Trolleybuses, at Tavrino and Ilvara</h3>
-        <p>The ZIU B9 runs on a Calmena drive fitted between 2006 and 2012. Ilvara presses the body panels from the original moulds, which came with the last delivery and were kept.</p>
-      </li>
-      <li>
-        <h3>Carriages, at Sederna</h3>
-        <p>The VAG R1 was fitted with new wheel units to the Sederna standard in 2003, which is why it shares brake parts with everything else on the railway.</p>
-      </li>
-      <li>
-        <h3>The one that is running on borrowed time</h3>
-        <p>The KRN C2 coach lost parts support in 2011. Seventy-five remain in service in Ombraqui, kept going by exchange between depots and by parts made one at a time. When a frame goes, that vehicle stops for good.</p>
-      </li>
-    </ul>
-  </div>
-</section>
+  <main id="main">
 
-<section class="block">
-  <div class="wrap">
-    <p class="eyebrow">Open by default</p>
-    <h2>Drawings, manuals and who may use them</h2>
-  </div>
-  <div class="wrap">
-    <div class="essay">
-      <p><strong>The drawings are public.</strong> Knowledge made with public resources belongs to everyone, and patents are banned, so every drawing behind every vehicle in the register is free to read, copy and use. Depot manuals, wiring diagrams, torque figures and fault trees are published in the same place as the catalogue.</p>
-      <p><strong>Anyone may do the work.</strong> A commune workshop, a tool library or a person with the drawings and the skill may repair a vehicle. The federation asks only that a safety-critical repair is recorded against the vehicle, since the record is what the next mechanic reads.</p>
-      <p><strong>Parts stay available for at least ten years.</strong> That is the minimum the Republic sets for any device supplied as provision, and the federation holds to it for vehicles as well. In practice the factories keep parts for the whole design life, which for a tram is thirty-five years and for a carriage is forty.</p>
-    </div>
-  </div>
-</section>
+    <section class="opening">
+      <div class="wrap">
+        <p class="eyebrow">Where the fleet sleeps</p>
+        <h1>Depots and maintenance</h1>
+        <p class="lede">Fifteen main depots and 94 small depots hold 18,592 vehicles. Every inspection interval, every rebuild and every drawing behind them is published, and any workshop with the drawings may do the work.</p>
+      </div>
+    </section>
 
-</main>
+    <section class="block">
+      <div class="wrap">
+        <p class="eyebrow">The network</p>
+        <h2>Main depots</h2>
+        <p class="sub">The last column counts the vehicles based there, including those out for rebuild.</p>
+      </div>
+      <div class="wrap">
+        <div class="tbl-scroll">
+          <table class="tbl">
+            <thead>
+              <tr>
+                <th>Depot</th>
+                <th>Town</th>
+                <th>Modes</th>
+                <th>Bays</th>
+                <th>Longest bay</th>
+                <th>Vehicles based there</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Lindoma North</td>
+                <td>Lindoma</td>
+                <td>Tram, bus</td>
+                <td class="num">28</td>
+                <td class="num">46 m</td>
+                <td class="num">412</td>
+              </tr>
+              <tr>
+                <td>Lindoma Port</td>
+                <td>Lindoma</td>
+                <td>Bus, trolley</td>
+                <td class="num">22</td>
+                <td class="num">24 m</td>
+                <td class="num">368</td>
+              </tr>
+              <tr>
+                <td>Lindoma Lanes</td>
+                <td>Lindoma</td>
+                <td>Pod</td>
+                <td class="num">14</td>
+                <td class="num">18 m</td>
+                <td class="num">356</td>
+              </tr>
+              <tr>
+                <td>Lindoma Kesar</td>
+                <td>Lindoma</td>
+                <td>Metro</td>
+                <td class="num">16</td>
+                <td class="num">124 m</td>
+                <td class="num">624</td>
+              </tr>
+              <tr>
+                <td>Sederna Depot</td>
+                <td>Sederna</td>
+                <td>Rail</td>
+                <td class="num">18</td>
+                <td class="num">210 m</td>
+                <td class="num">1,104</td>
+              </tr>
+              <tr>
+                <td>Cortius East</td>
+                <td>Cortius</td>
+                <td>Tram, bus</td>
+                <td class="num">24</td>
+                <td class="num">46 m</td>
+                <td class="num">386</td>
+              </tr>
+              <tr>
+                <td>Cortius Yard</td>
+                <td>Cortius</td>
+                <td>Rail</td>
+                <td class="num">12</td>
+                <td class="num">180 m</td>
+                <td class="num">642</td>
+              </tr>
+              <tr>
+                <td>Durorilaqui</td>
+                <td>Durorilaqui</td>
+                <td>Tram, coach</td>
+                <td class="num">20</td>
+                <td class="num">42 m</td>
+                <td class="num">298</td>
+              </tr>
+              <tr>
+                <td>Sornorum Junction</td>
+                <td>Sornorum</td>
+                <td>Bus, coach</td>
+                <td class="num">26</td>
+                <td class="num">28 m</td>
+                <td class="num">454</td>
+              </tr>
+              <tr>
+                <td>Lutoliluri Quay</td>
+                <td>Lutoliluri</td>
+                <td>Ferry, bus</td>
+                <td class="num">9</td>
+                <td class="num">116 m</td>
+                <td class="num">186</td>
+              </tr>
+              <tr>
+                <td>Leriduson Coast</td>
+                <td>Leriduson</td>
+                <td>Tram, rail</td>
+                <td class="num">16</td>
+                <td class="num">180 m</td>
+                <td class="num">342</td>
+              </tr>
+              <tr>
+                <td>Ferrista Hill</td>
+                <td>Ferrista</td>
+                <td>Tram, bus</td>
+                <td class="num">14</td>
+                <td class="num">32 m</td>
+                <td class="num">204</td>
+              </tr>
+              <tr>
+                <td>Solvena Grain</td>
+                <td>Solvena</td>
+                <td>Coach, bus</td>
+                <td class="num">18</td>
+                <td class="num">28 m</td>
+                <td class="num">276</td>
+              </tr>
+              <tr>
+                <td>Maravel Basin</td>
+                <td>Maravel</td>
+                <td>Ferry</td>
+                <td class="num">6</td>
+                <td class="num">40 m</td>
+                <td class="num">82</td>
+              </tr>
+              <tr>
+                <td>Torvena Moor</td>
+                <td>Torvena</td>
+                <td>Bus</td>
+                <td class="num">12</td>
+                <td class="num">18 m</td>
+                <td class="num">168</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="tbl-note">Fifteen main depots. Another 94 small depots hold between four and forty vehicles each.</p>
+      </div>
+    </section>
 
-<footer class="foot">
-  <div class="wrap foot-cols">
-    <div>
-      <h2>The register</h2>
-      <ul>
-        <li><a href="catalogue.html">Vehicles in service</a></li>
-        <li><a href="retired.html">Retired models</a></li>
-        <li><a href="depots.html">Depots and maintenance</a></li>
-      </ul>
+    <section class="block">
+      <div class="wrap">
+        <p class="eyebrow">The cycle</p>
+        <h2>How often, and for how long</h2>
+      </div>
+      <div class="wrap">
+        <div class="tbl-scroll">
+          <table class="tbl">
+            <thead>
+              <tr>
+                <th>Examination</th>
+                <th>Interval</th>
+                <th>Off the road for</th>
+                <th>Done by</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Daily check</td>
+                <td>Every night in service</td>
+                <td class="num">25 minutes</td>
+                <td>Depot mechanics</td>
+              </tr>
+              <tr>
+                <td>Check A</td>
+                <td>10,000 km, or 30 days</td>
+                <td class="num">4 hours</td>
+                <td>Depot mechanics</td>
+              </tr>
+              <tr>
+                <td>Check B</td>
+                <td>60,000 km</td>
+                <td class="num">2 days</td>
+                <td>Depot building workshop</td>
+              </tr>
+              <tr>
+                <td>Yearly check</td>
+                <td>12 months</td>
+                <td class="num">5 days</td>
+                <td>Depot building workshop</td>
+              </tr>
+              <tr>
+                <td>Half-life rebuild</td>
+                <td>Half the design life</td>
+                <td class="num">9 to 16 weeks</td>
+                <td>The factory that built it</td>
+              </tr>
+              <tr>
+                <td>Ferry inspection</td>
+                <td>12 months, dry dock every 30</td>
+                <td class="num">3 weeks</td>
+                <td>Lutoliluri or Maravel</td>
+              </tr>
+              <tr>
+                <td>Pod check</td>
+                <td>4,000 km, or 14 days</td>
+                <td class="num">90 minutes</td>
+                <td>Lindoma Lanes</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="tbl-note">A half-life rebuild returns a vehicle to the accounts as a rebuild, with its own build account, and the vehicle keeps its model code.</p>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="wrap">
+        <p class="eyebrow">The older fleet</p>
+        <h2>Who supports the imports</h2>
+      </div>
+      <div class="wrap">
+        <ul class="plates">
+          <li>
+            <h3>Trams, at Ferrista</h3>
+            <p>The CKD T3, KT8D5 and T6A5 are supported entirely from Ferrista, which holds the drawings under the transfer of 1993. Wheel unit frames, controller parts and pressed body panels are made on site. The builder has supplied nothing since 1994.</p>
+          </li>
+          <li>
+            <h3>Trolleybuses, at Tavrino and Ilvara</h3>
+            <p>The ZIU B9 runs on a Calmena drive fitted between 2006 and 2012. Ilvara presses the body panels from the original moulds, which came with the last delivery and were kept.</p>
+          </li>
+          <li>
+            <h3>Carriages, at Sederna</h3>
+            <p>The VAG R1 was fitted with new wheel units to the Sederna standard in 2003, which is why it shares brake parts with everything else on the railway.</p>
+          </li>
+          <li>
+            <h3>The one that is running on borrowed time</h3>
+            <p>The KRN C2 coach lost parts support in 2011. Seventy-five remain in service in Ombraqui, kept going by exchange between depots and by parts made one at a time. When a frame goes, that vehicle stops for good.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="wrap">
+        <p class="eyebrow">Open by default</p>
+        <h2>Drawings, manuals and who may use them</h2>
+      </div>
+      <div class="wrap">
+        <div class="essay">
+          <p><strong>The drawings are public.</strong> Knowledge made with public resources belongs to everyone, and patents are banned, so every drawing behind every vehicle in the register is free to read, copy and use. Depot manuals, wiring diagrams, torque figures and fault trees are published in the same place as the catalogue.</p>
+          <p><strong>Anyone may do the work.</strong> A commune workshop, a tool library or a person with the drawings and the skill may repair a vehicle. The federation asks only that a safety-critical repair is recorded against the vehicle, since the record is what the next mechanic reads.</p>
+          <p><strong>Parts stay available for at least ten years.</strong> That is the minimum the Republic sets for any device supplied as provision, and the federation holds to it for vehicles as well. In practice the factories keep parts for the whole design life, which for a tram is thirty-five years and for a carriage is forty.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="foot">
+    <div class="wrap foot-cols">
+      <div>
+        <h2>The register</h2>
+        <ul>
+          <li><a href="catalogue.html">Vehicles in service</a></li>
+          <li><a href="retired.html">Retired models</a></li>
+          <li><a href="depots.html">Depots and maintenance</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Data and services</h2>
+        <ul>
+          <li><a href="live.html">Live position feed</a></li>
+          <li><a href="fleets.html">Fleet advice</a></li>
+          <li><a href="surplus.html">Surplus abroad</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Standing</h2>
+        <ul>
+          <li><a href="about.html">About the federation</a></li>
+          <li><a href="../../register/links.html">Public Register of the Republic</a></li>
+        </ul>
+        <p>Podnik holds a licence the Republic grants and is audited in its use of common resources. It exercises no public authority and represents no organ.</p>
+      </div>
     </div>
-    <div>
-      <h2>Data and services</h2>
-      <ul>
-        <li><a href="live.html">Live position feed</a></li>
-        <li><a href="fleets.html">Fleet advice</a></li>
-        <li><a href="surplus.html">Surplus abroad</a></li>
-      </ul>
-    </div>
-    <div>
-      <h2>Standing</h2>
-      <ul>
-        <li><a href="about.html">About the federation</a></li>
-        <li><a href="../../register/links.html">Public Register of the Republic</a></li>
-      </ul>
-      <p>Podnik holds a licence the Republic grants and is audited in its use of common resources. It exercises no public authority and represents no organ.</p>
-    </div>
-  </div>
-</footer>
-<script src="site.js" defer></script>
+  </footer>
+  <script src="site.js" defer></script>
 </body>
 </html>
