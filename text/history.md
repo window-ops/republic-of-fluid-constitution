@@ -207,7 +207,7 @@ The Convention adopted the draft on 12 April 2026 by 148 votes to 52. A referend
 
 **1989** - The Corvaluri crossing opens to Iosmein after ninety-nine years shut.
 
-**1994** - The Democratic Socialist Bloc is founded at Lindoma by Fluid, Iosmein and Reformed Luces Aporia, three states that had spent forty years being told to choose a side.
+**1994** - The Democratic Socialist Bloc is founded at Lindoma by Fluid, Iosmein and Reformed Luces Aporia.
 
 **1998** - The hills above Corcina are found to hold the best wind resource in the country and the renewable programme begins in earnest. Fission is reclassified, first by policy and in 2026 by Article 32(6), as a transitional source rather than a permanent one.
 
