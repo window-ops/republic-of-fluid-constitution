@@ -511,7 +511,7 @@ In no case is a provision of this Title to be read as conferring a right to enga
 2. Essential provision is furnished free at the point of use to every person, in the quantity and quality fixed as the minimum core under Article 41(5), and is conditioned upon no contribution, conduct, status, document, debt or behaviour.
 3. Interruption or reduction of essential provision as a sanction, as a means of enforcement, or in consequence of an allocation shortfall is prohibited, and Article 26(4) secures its priority within the plan.
 4. Provision above the minimum core is governed by Article 41(3) and by the plan.
-5. Where a residual unit of account is issued under Article 7(5), it is issued equally to every resident, expires at the end of the period, and in no case is it transferable, lendable, pledgeable or accumulable. Its issue affects the free character of essential provision in no way.
+5. Where a residual unit of account is issued under Article 7(5), it is issued equally to every resident, expires at the end of the period, and in no case is it transferable, lendable, pledgeable or accumulable. Its issue in no way affects the free character of essential provision.
 
 **Article 63. Registration of needs**
 1. Every person may register their needs, and the register is accessible, assisted where required, available in every language of record, and open to amendment at any time.
@@ -675,7 +675,7 @@ In no case is a provision of this Title to be read as conferring a right to enga
 1. Every person who works in a cooperative is a member of it after the probation fixed by organic law, which in no case exceeds six months. Categories of non-member worker are prohibited, and Article 88(2) governs.
 2. The general assembly of members is the supreme organ. Each member holds one vote, and voting power attaching to seniority, function, capital or any other ground is void.
 3. The assembly adopts the internal plan of the enterprise, its offer to the planning procedure, its working conditions and rotation of tasks, its admission of members, and its ecological account, and it elects and dismisses the management organ.
-4. Officers of the cooperative are elected for limited terms, are recallable by the assembly at any time, remain subject to the working time of Article 72, and receive provision distinguishable from that of any other member in no respect.
+4. Officers of the cooperative are elected for limited terms, are recallable by the assembly at any time, remain subject to the working time of Article 72, and receive no provision distinguishable from that of any other member.
 5. Users of the goods the cooperative produces, the council of the commune in which it operates, and a delegate of ecological interest sit in the assembly with the right to be heard and to place items on its agenda, on decisions affecting them.
 6. Minutes, resource accounts, ecological accounts and the internal plan are public under Article 61(2).
 7. Trade union organisation within the cooperative, including action against its own management organ, is protected under Article 56(3).
@@ -763,7 +763,7 @@ In no case is a provision of this Title to be read as conferring a right to enga
 1. Reconciliation seeks agreement among the affected interests, and a level records agreement only where the enterprises, the users and the ecological delegate have each been heard and answered.
 2. Where a level fails to reconcile within the time fixed for the round, the matter passes to the level above with the positions of the parties and the reasons for the disagreement.
 3. Where the Congress fails to reconcile, it decides by vote of its delegates, publishes the dissenting positions, and states the reasons for the choice made among the variants.
-4. A decision under paragraph 3 conforming with Article 91 in no respect is void, and any person may bring an action under Article 43.
+4. A decision under paragraph 3 that does not conform with Article 91 is void, and any person may bring an action under Article 43.
 5. In no case does delay in the procedure suspend the essential provision of Article 62, which continues on the quantities of the preceding period until the new plan takes effect.
 
 **Article 99. Adjustment during the period**
@@ -955,7 +955,7 @@ In no case is a provision of this Title to be read as conferring a right to enga
 2. The ordinary election is held on 10 June of the fifth year, and the Assembly elected convenes within fifteen days of the proclamation of the result.
 3. The term ends upon the convening of the succeeding Assembly, and in no case is it extended by decision of the Assembly itself.
 4. Where a state of emergency under Title X or a state of armed attack makes the holding of an election impossible in part of the territory, the Assembly may postpone the election, by a majority of two thirds, upon the prior finding of the Constitutional Court that the impossibility exists, for a period of six months at the most, renewable once by the same procedure and upon a fresh finding. Beyond twelve months the election is held in the districts where it is possible, and the seats of the remaining districts stay vacant until it can be held there.
-5. Postponement under paragraph 4 suspends the mandate of no member, and in no respect does it suspend the rights of Title III, the procedures of Chapter 4 of this Title, or the review of Article 137.
+5. Postponement under paragraph 4 suspends the mandate of no member, and suspends no right of Title III, no procedure of Chapter 4 of this Title and no review under Article 137.
 
 **Article 124. The mandate**
 1. Members represent the whole people and exercise their mandate according to their own judgement.
@@ -1146,7 +1146,7 @@ In no case is a provision of this Title to be read as conferring a right to enga
 5. Execution follows the law and the plan as adopted. In no case does an executive committee hold a policy of its own against the text it executes.
 
 **Article 148. Constitution and composition of the committees**
-1. Organic law establishes the fields of execution and constitutes one executive committee for each, and the number of committees exceeds twenty in no case.
+1. Organic law establishes the fields of execution and constitutes one executive committee for each, and the number of committees in no case exceeds twenty.
 2. Within thirty days of its convening, the Assembly constitutes the executive committees for its whole term.
 3. The seats of each committee are apportioned among the lists represented in the Assembly in proportion to their seats, by the method of Article 120(2). Every list obtaining seats in the Assembly is represented in every committee whose size permits, and in no case is a list excluded from the Executive Council by reason of its numbers.
 4. Each list designates its own members to the committees, and in no case does any other list, organ or officer approve, refuse or alter a designation.
@@ -1804,7 +1804,7 @@ In no case is a provision of this Title to be read as conferring a right to enga
 
 **Article 241. Powers of information**
 1. Each office may require, within its competence, from any organ of the Republic, any territory, any planning body, any cooperative, public establishment or federation, and any licensed foreign entity: documents, records, data, access to premises and systems, and the attendance and testimony of any person holding a public or delegated function.
-2. Commercial confidentiality is a ground of refusal in no case, and Article 61(2) governs.
+2. Commercial confidentiality is in no case a ground of refusal, and Article 61(2) governs.
 3. Refusal to furnish what an office requires is an offence, and the office reports the refusal publicly and applies to the competent court for an order.
 4. In no case may an office require the reasoning of a judgment, and Article 214(6) governs by analogy.
 
@@ -1918,7 +1918,7 @@ Article 61(3) and (4) protect any person who furnishes information to an office,
 1. Article 241 governs the powers of the Commissioner to obtain information.
 2. The Commissioner is heard by right before the Assembly, before its committees, before the National Planning Congress at every stage of the cycle of Article 97, and before the councils of the territories.
 3. The Commissioner holds standing under Articles 19(2) and 231(3), and may bring an action before the Ecological Chamber under Article 27.
-4. The Commissioner may require the reconsideration of an act on the ground of long-term effect, whereupon the organ concerned reconsiders in public sitting and answers under Article 242(4). The reconsideration binds the outcome in no way.
+4. The Commissioner may require the reconsideration of an act on the ground of long-term effect, whereupon the organ concerned reconsiders in public sitting and answers under Article 242(4). The reconsideration in no way binds the outcome.
 5. The Commissioner participates in the procedure of Article 25(1) and submits evidence to the Ecological Budget Authority.
 
 **Article 258. Long-term impact statements**
@@ -2035,7 +2035,7 @@ The limits of this Chapter bind every organ of the Republic, every territory, ev
 **Article 272. Membership and conditions**
 1. Any resident who has attained the age of eighteen years may enrol, and enrolment is refused on no ground listed in Article 38(2).
 2. Members may leave at any time, except during the period of an attack under Article 276.
-3. Service is contribution under Article 70(2), carries the provision of every resident, and in no respect is the provision of a member distinguishable by rank.
+3. Service is contribution under Article 70(2), carries the provision of every resident, and the provision of a member is not distinguishable by rank.
 4. Conscientious objection is guaranteed under Article 52(4), and in no case does refusal to enrol or to bear arms carry any consequence for provision, contribution, office or standing.
 5. Members remain subject to the ordinary courts under Title VIII. In no case is a separate military jurisdiction established, and Article 77(5) governs.
 
@@ -2159,7 +2159,7 @@ The limits of this Chapter bind every organ of the Republic, every territory, ev
 2. Article 268 governs the renunciation of war and the limits upon armed force.
 3. The Republic supports the self-determination of peoples, the reparation of colonial and ecological debt, and the reform of international bodies toward the equal weight of peoples within them.
 4. In no case may the Republic recognise a territorial acquisition obtained by force, participate in a blockade that deprives a population of food, water, medicine or energy, or apply a measure whose effect falls upon a population instead of upon those governing it.
-5. External relations are conducted publicly. Secret agreements, secret annexes, secret understandings and undisclosed commitments produce no effect and bind the Republic in no respect.
+5. External relations are conducted publicly. Secret agreements, secret annexes, secret understandings and undisclosed commitments produce no effect and do not bind the Republic.
 
 **Article 287. Competence and conduct**
 1. The executive committee competent in external relations conducts them under Article 153(1) and (3), and answers to the Assembly under Articles 144 and 151.
@@ -2178,7 +2178,7 @@ The limits of this Chapter bind every organ of the Republic, every territory, ev
 2. Recognition is made by the ordinary asylum procedure of Article 59, is decided within ninety days, and refusal states reasons and is appealable with suspensive effect.
 3. From arrival the person holds every right of Title III in full, including provision under Chapter 5 of that Title, and Article 59(3) governs pending recognition.
 4. In no case is such a person returned, expelled, extradited or surrendered, and Article 47(2) governs absolutely.
-5. Renunciation of a former nationality is required in no case, and Article 58(4) governs.
+5. Renunciation of a former nationality is in no case required, and Article 58(4) governs.
 6. Persons who assisted the flight of another, and members of the household of a person recognised, are recognised upon the same footing.
 7. In no case does an agreement with another state, a request for extradition, or a listing by a foreign or international body displace this Article.
 
@@ -2188,7 +2188,7 @@ The limits of this Chapter bind every organ of the Republic, every territory, ev
 1. Treaties are negotiated and signed by the committee competent in external relations, upon a mandate adopted under Article 287(3).
 2. Ratification is made by law adopted by a majority of two thirds of the members of the Assembly, and the Presiding Officer signs the instrument under Article 146(3).
 3. A treaty establishing, amending or terminating membership of a union, and a treaty opening or closing a frontier to the free movement of persons, requires in addition the approval of a referendum under Article 140.
-4. Every treaty is submitted to the Constitutional Chamber before ratification, which verifies its conformity with this Constitution within sixty days, and a treaty declared contrary to this Constitution is ratified in no case.
+4. Every treaty is submitted to the Constitutional Chamber before ratification, which verifies its conformity with this Constitution within sixty days, and a treaty declared contrary to this Constitution is in no case ratified.
 5. Treaties are published in full before the vote of the Assembly, together with every annex, protocol, exchange of letters and interpretative declaration, and Article 286(5) governs anything withheld.
 6. Article 15 governs the rank of a ratified treaty, and in no case may a treaty diminish the rights of Title III or the ecological budgets of Title II.
 
@@ -2215,12 +2215,12 @@ The limits of this Chapter bind every organ of the Republic, every territory, ev
 3. Where the Assembly enacts a common standard, it is a law of the Republic and is interpreted, applied and reviewed as such, and Article 137 and Article 195 govern.
 4. Where the Assembly declines to enact a common standard, it states its reasons publicly, and the consequences within the union are those the constituting instrument provides.
 5. In no case may the Republic transfer a competence of the Assembly, of the planning bodies, of the courts, of the offices of Title IX or of the territories to a union organ.
-6. The Republic adopts a common standard stricter than its own, and adopts a common standard weaker than its own in no case, Article 25(5) governing by analogy.
+6. The Republic adopts a common standard stricter than its own, and in no case adopts a common standard weaker than its own, Article 25(5) governing by analogy.
 
 **Article 295. Union settlement and currency**
 1. Exchange within the union is settled in goods, in labour, in technique and in knowledge, recorded in the physical units of Article 7(2), through the single external account of Article 117(1).
 2. The Republic may agree with the union or with any state a clearing arrangement in which obligations are set off in kind, and it uses a unit of settlement only where a counterparty requires one and only for the computation of the balance.
-3. A unit of settlement circulates within the territory in no case, is held by no resident, and is a store of value, an instrument of accumulation and a claim upon labour in no respect, Articles 7(5) and 114(5) governing.
+3. A unit of settlement in no case circulates within the territory, is held by no resident, and is neither a store of value, nor an instrument of accumulation, nor a claim upon labour, Articles 7(5) and 114(5) governing.
 4. The Republic pursues, within the union and beyond it, the settlement of exchange without currency, and Article 267 governs the direction.
 5. In no case may the Republic accept a common currency, a common monetary authority, or an obligation to maintain a rate, a reserve or a convertibility.
 
@@ -2237,7 +2237,7 @@ The limits of this Chapter bind every organ of the Republic, every territory, ev
 **Article 297. Rescue and assistance**
 1. Assistance and rescue are owed to any person in distress at sea or at a frontier under Article 57(5), and the Republic maintains the means to furnish them.
 2. The Republic assists rescue conducted by others, and in no case does it obstruct, penalise, detain or prosecute a person or a vessel engaged in rescue.
-3. A person rescued is brought to the nearest place of safety, and a place governed by Article 47(2) is a place of safety in no case.
+3. A person rescued is brought to the nearest place of safety, and a place governed by Article 47(2) is in no case a place of safety.
 
 ## Chapter 5: Trade, Imports and Technological Sovereignty
 
@@ -2381,7 +2381,7 @@ The limits of this Chapter bind every organ of the Republic, every territory, ev
 
 **Article 313. Limits and continuity**
 1. The core of Article 310 survives the replacement of this Constitution and binds the Convention, the draft it produces, and the text that succeeds this one.
-2. The Constitutional Chamber examines the draft against Article 310 before the referendum, and a provision touching the core is submitted to the vote in no case.
+2. The Constitutional Chamber examines the draft against Article 310 before the referendum, and a provision touching the core is in no case submitted to the vote.
 3. Convening a Convention suspends nothing. The Assembly, the executive committees, the planning bodies, the courts, the offices of Title IX and the councils of the territories continue in office and in function, this Constitution remains in force, and elections are held as they fall due.
 4. In no case may a Convention legislate, plan, allocate resources, exercise any power of another organ, or extend its own term beyond Article 312(6).
 5. Where the referendum rejects the draft, this Constitution continues in force, and a fresh Convention is convened no earlier than four years afterwards.
@@ -2485,7 +2485,7 @@ The limits of this Chapter bind every organ of the Republic, every territory, ev
 3. The eight judicial members are elected under Article 211 by the judges holding office on the day of commencement, by secret ballot, and Article 211(2) applies so far as the courts then existing permit.
 4. The Council so constituted holds the full competences of Article 208 from the day it convenes.
 5. By way of exception to Article 210(3) and Article 211(3), the first resident members serve one, two and three years by lot among them, and the first judicial members serve three and six years by lot among them, so that the staggering of those Articles is established.
-6. Article 237 applies to the Council itself in no respect, and in no case is the first Council confirmed, approved or vetted by any organ.
+6. Article 237 does not apply to the Council itself, and in no case is the first Council confirmed, approved or vetted by any organ.
 
 **Article 326. The Constitutional Court**
 1. Within ninety days of convening, the Judicial Council opens the register of Article 218 and verifies entries upon the published conditions alone.
@@ -2578,7 +2578,7 @@ The limits of this Chapter bind every organ of the Republic, every territory, ev
 2. The record of the drafting, including the questions put, the choices made, the alternatives rejected and the reasons given, is published in the public register and is preserved in the archive of the Republic.
 3. The use of such assistance in the drafting confers upon it no authority, no interpretive weight and no standing, and in no case is a machine cited as a source of meaning in the interpretation of this text.
 4. Article 51(5) binds every organ constituted by this Constitution. Decisions under this Constitution are taken by persons who are identified and accountable, and in no case by a system.
-5. This Article records a fact of provenance and is a rule of construction in no respect, except as paragraph 3 provides.
+5. This Article records a fact of provenance and is not a rule of construction, except as paragraph 3 provides.
 
 **Article 340. Text and languages**
 1. The text of this Constitution in the languages of record is equally authentic, and where the versions diverge, the reading more favourable to the right in issue prevails under Article 39(3).

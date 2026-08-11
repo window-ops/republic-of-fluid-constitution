@@ -22,7 +22,7 @@
     },
     'detention': {
       body: 'The detention division of this office',
-      text: 'The division of Article 255 visits without announcement, speaks with any detained person in private, and may be refused in no case. Anyone may write to it, including a detained person, and correspondence with it is protected.',
+      text: 'The division of Article 255 visits without announcement, speaks with any detained person in private, and may in no case be refused. Anyone may write to it, including a detained person, and correspondence with it is protected.',
       link: 'detention.html',
       label: 'Places of detention'
     },
