@@ -2,10 +2,6 @@
 
 A static site publishing the constitution of a fictional eco-socialist republic, together with the register, guidance, world material and organ sites that surround it.
 
-The repository holds three constitutional texts. The text in force is the third, adopted by referendum on 7 June 2026 and commenced on 7 July 2026. It runs to 340 articles in 13 titles.
-
-Two texts it repealed are preserved unmodified in `/archive`: the seven-article constitution of 2024, and the text of the First National Council of 1890.
-
 This file documents what the repository contains. The changelog and the longer material sit in the files listed under Documentation below.
 
 ## Status
