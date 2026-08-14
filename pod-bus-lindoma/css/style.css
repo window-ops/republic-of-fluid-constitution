@@ -14,13 +14,17 @@
   --accent-second: #c98e85;
   --accent-third: #8fb9a8;
   --accent-fourth: #a3a2c4;
+  --accent-fifth: #85a8c9;
+  --accent-sixth: #aeb985;
+  --accent-seventh: #c48fb4;
+  --accent-eighth: #b9a06a;
   --mark: #3a3120;
 
   --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
   --sans: "IBM Plex Sans", system-ui, sans-serif;
   --mono: "IBM Plex Mono", ui-monospace, monospace;
 
-  --who-col: 9rem;
+  --who-col: 5rem;
   --gap: 1.5rem;
   --measure: 41rem;
   --step: clamp(1rem, 0.95rem + 0.32vw, 1.15rem);
@@ -136,8 +140,7 @@ body {
 /* ---------- section separators ---------- */
 
 .sep {
-  display: grid;
-  grid-template-columns: auto 1fr auto;
+  display: flex;
   align-items: center;
   gap: 0.75rem;
   margin: 2.12rem 0 2.12rem;
@@ -147,17 +150,14 @@ body {
   color: var(--ink-soft);
 }
 
-.sep::after {
-  content: "";
-  grid-column: 2;
+.sep .rule {
+  flex: 1 1 auto;
   height: 1px;
   background: var(--rule-strong);
-  align-self: baseline;
-  transform: translateY(-0.35em);
 }
 
 .sep .perma {
-  grid-column: 3;
+  flex: 0 0 auto;
   font-family: var(--mono);
   font-size: 0.90rem;
   color: var(--rule-strong);
@@ -177,7 +177,7 @@ section:target > .sep {
   color: var(--accent);
 }
 
-section:target > .sep::after {
+section:target > .sep .rule {
   background: var(--accent);
 }
 
@@ -297,6 +297,10 @@ section:first-of-type .sep {
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--ink-soft);
+}
+
+.doc-translation {
+  border-inline-start-style: dashed;
 }
 
 .doc .speaker {
@@ -492,6 +496,206 @@ section:first-of-type .sep {
   letter-spacing: 0.04em;
 }
 
+/* ---------- speakers introduced after part 4 ---------- */
+
+.turn-train .who,
+.turn-bus .who,
+.turn-driver .who {
+  color: var(--accent-fifth);
+  font-family: var(--mono);
+  text-transform: none;
+  letter-spacing: 0.04em;
+}
+
+.turn-mother .who {
+  color: var(--accent-sixth);
+}
+
+.turn-guide .who {
+  color: var(--accent-seventh);
+}
+
+.part-7 .turn-gate .who {
+  color: var(--accent-eighth);
+}
+
+.gloss {
+  color: var(--ink-faint);
+}
+
+/* a stage direction of several paragraphs */
+
+.scene p {
+  margin: 0 0 0.8rem;
+}
+
+.scene p:last-child {
+  margin-block-end: 0;
+}
+
+/* ---------- the messaging thread ---------- */
+
+.thread {
+  margin: 1rem 0;
+  padding: 1rem 1.15rem 1.15rem;
+  background: var(--paper-raised);
+  border: 1px solid var(--rule);
+  border-inline-start: 3px solid var(--rule-strong);
+  border-radius: 2px;
+}
+
+.thread .thread-head {
+  font: 600 0.78rem/1.55 var(--sans);
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  margin: 0 0 0.75rem;
+  padding-block-end: 0.65rem;
+  border-block-end: 1px solid var(--rule);
+}
+
+/* the language toggles are ordinary checkboxes, checked in the markup,
+   so every line is shown when no stylesheet and no script runs */
+.thread .vis {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.thread-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.4rem;
+  margin-block-end: 1rem;
+  font: 0.74rem/1.6 var(--sans);
+}
+
+.thread-controls .lab {
+  color: var(--ink-faint);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-inline-end: 0.25rem;
+}
+
+.thread-controls label {
+  cursor: pointer;
+  padding: 0.16rem 0.6rem;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  color: var(--ink-faint);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  user-select: none;
+}
+
+.thread-controls label::before {
+  content: "\2715\00a0\00a0";
+  font-family: var(--mono);
+  font-size: 0.8em;
+}
+
+#t7-ja:checked ~ .thread-controls label[for="t7-ja"],
+#t7-rj:checked ~ .thread-controls label[for="t7-rj"],
+#t7-en:checked ~ .thread-controls label[for="t7-en"] {
+  color: var(--ink);
+  border-color: var(--accent-fourth);
+}
+
+#t7-ja:checked ~ .thread-controls label[for="t7-ja"]::before,
+#t7-rj:checked ~ .thread-controls label[for="t7-rj"]::before,
+#t7-en:checked ~ .thread-controls label[for="t7-en"]::before {
+  content: "\2713\00a0\00a0";
+  color: var(--accent-fourth);
+}
+
+.thread .vis:focus-visible ~ .thread-controls label[for="t7-ja"],
+.thread .vis:focus-visible ~ .thread-controls label[for="t7-rj"],
+.thread .vis:focus-visible ~ .thread-controls label[for="t7-en"] {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+#t7-ja:not(:checked) ~ .msgs .ln-ja,
+#t7-rj:not(:checked) ~ .msgs .ln-rj,
+#t7-en:not(:checked) ~ .msgs .ln-en {
+  display: none;
+}
+
+.msgs {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.msgs .msg {
+  max-width: 40rem;
+  padding: 0.6rem 0.85rem;
+  border: 1px solid var(--rule);
+  border-radius: 10px;
+  background: var(--paper);
+  font-size: 0.94em;
+}
+
+.msgs .msg-in {
+  align-self: flex-start;
+  border-start-start-radius: 2px;
+}
+
+.msgs .msg-out {
+  align-self: flex-end;
+  border-start-end-radius: 2px;
+  border-color: var(--rule-strong);
+}
+
+.msgs .meta {
+  margin: 0 0 0.4rem;
+  font: 500 0.68rem/1.5 var(--mono);
+  letter-spacing: 0.04em;
+  color: var(--ink-faint);
+}
+
+.msgs .msg-out .meta {
+  text-align: end;
+  color: var(--accent-fourth);
+}
+
+.msgs .ln {
+  margin: 0 0 0.3rem;
+}
+
+.msgs .ln:last-child {
+  margin-block-end: 0;
+}
+
+.msgs .ln-ja {
+  line-height: 1.9;
+}
+
+.msgs .ln-rj {
+  font-family: var(--mono);
+  font-size: 0.84em;
+  color: var(--ink-soft);
+}
+
+.msgs .ln-en {
+  color: var(--ink-soft);
+}
+
+@media (max-width: 34rem) {
+  .msgs .msg {
+    max-width: none;
+  }
+}
+
 /* ---------- pagination ---------- */
 
 .pagination {
@@ -632,8 +836,15 @@ a:focus-visible {
 
   .contents,
   .sep .perma,
-  .skip {
+  .skip,
+  .thread-controls {
     display: none;
+  }
+
+  .msgs .ln-ja,
+  .msgs .ln-rj,
+  .msgs .ln-en {
+    display: block;
   }
 
   .page {
@@ -642,7 +853,8 @@ a:focus-visible {
   }
 
   .turn,
-  .doc {
+  .doc,
+  .msgs .msg {
     break-inside: avoid;
   }
 }
