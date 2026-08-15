@@ -22,6 +22,7 @@
   --accent-tenth: #8fc4c4;
   --accent-eleventh: #9ec27f;
   --accent-twelfth: #b79ad6;
+  --accent-thirteenth: #6fa8a0;
   --mark: #3a3120;
 
   --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
@@ -213,6 +214,11 @@ section:first-of-type .sep {
   color: var(--ink-faint);
   text-align: right;
   white-space: nowrap;
+}
+
+.who > span {
+  display: inline-block;
+  white-space: normal;
 }
 
 .turn-sarena .who {
@@ -528,6 +534,10 @@ section:first-of-type .sep {
 
 .turn-engineer .who {
   color: var(--accent-tenth);
+}
+
+.turn-survey .who {
+  color: var(--accent-thirteenth);
 }
 
 .turn-crew .who {
