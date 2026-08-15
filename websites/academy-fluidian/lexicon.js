@@ -3,19583 +3,2807 @@
    speech, e English, n note. */
 
 const LEX = [
-{
-"f": "abandona",
-"i": "/a.ban.ˈdo.na/",
-"p": "v",
-"e": "abandon",
-"n": ""
-},
-{
-"f": "abaxa",
-"i": "/a.ˈba.ʃa/",
-"p": "v",
-"e": "get down, lower, slow",
-"n": ""
-},
-{
-"f": "abhazan",
-"i": "/ab.ˈha.zan/",
-"p": "adj",
-"e": "Abkhaz",
-"n": "demonym of Abhazia"
-},
-{
-"f": "abraza",
-"i": "/a.ˈbra.za/",
-"p": "v",
-"e": "embrace",
-"n": ""
-},
-{
-"f": "abrevia",
-"i": "/a.bre.ˈvi.a/",
-"p": "v",
-"e": "abbreviate",
-"n": ""
-},
-{
-"f": "abroga",
-"i": "/a.ˈbro.ga/",
-"p": "v",
-"e": "repeal",
-"n": "of a statute; revoca of an appointment"
-},
-{
-"f": "absconde",
-"i": "/abs.ˈkon.de/",
-"p": "v",
-"e": "hide",
-"n": "eastern seaboard; cela in print"
-},
-{
-"f": "absentia",
-"i": "/ab.sen.ˈti.a/",
-"p": "n",
-"e": "absence",
-"n": "recorded in the minutes"
-},
-{
-"f": "absolut",
-"i": "/ab.ˈso.lut/",
-"p": "adj",
-"e": "absolute",
-"n": ""
-},
-{
-"f": "absolutament",
-"i": "/ab.so.lu.ˈta.ment/",
-"p": "adv",
-"e": "absolutely",
-"n": ""
-},
-{
-"f": "abstene",
-"i": "/abs.ˈte.ne/",
-"p": "v",
-"e": "abstain",
-"n": ""
-},
-{
-"f": "abstract",
-"i": "/ˈabs.trakt/",
-"p": "adj",
-"e": "abstract",
-"n": ""
-},
-{
-"f": "abundantia",
-"i": "/a.bun.dan.ˈti.a/",
-"p": "n",
-"e": "abundance",
-"n": ""
-},
-{
-"f": "academia",
-"i": "/a.ka.de.ˈmi.a/",
-"p": "n",
-"e": "academy",
-"n": ""
-},
-{
-"f": "academic",
-"i": "/a.ka.ˈde.mik/",
-"p": "adj",
-"e": "academic",
-"n": "academia is the body"
-},
-{
-"f": "accepta",
-"i": "/ak.ˈt͡ʃep.ta/",
-"p": "v",
-"e": "accept",
-"n": ""
-},
-{
-"f": "accosta",
-"i": "/a.ˈkos.ta/",
-"p": "v",
-"e": "pull in, come alongside",
-"n": ""
-},
-{
-"f": "acelera",
-"i": "/a.t͡ʃe.ˈle.ra/",
-"p": "v",
-"e": "speed up, accelerate",
-"n": ""
-},
-{
-"f": "acentu",
-"i": "/a.ˈt͡ʃen.tu/",
-"p": "n",
-"e": "stress, accent",
-"n": ""
-},
-{
-"f": "acompania",
-"i": "/a.kom.pa.ˈni.a/",
-"p": "v",
-"e": "accompany",
-"n": "acompania me te se peron, come with me to the platform"
-},
-{
-"f": "acordu",
-"i": "/a.ˈkor.du/",
-"p": "n",
-"e": "agreement",
-"n": ""
-},
-{
-"f": "acredita",
-"i": "/a.kre.ˈdi.ta/",
-"p": "v",
-"e": "accredit",
-"n": ""
-},
-{
-"f": "acru",
-"i": "/ˈa.kru/",
-"p": "adj",
-"e": "sour",
-"n": ""
-},
-{
-"f": "act",
-"i": "/akt/",
-"p": "n",
-"e": "act, a thing done",
-"n": "praca is work as a thing; act is the single deed"
-},
-{
-"f": "acta",
-"i": "/ˈak.ta/",
-"p": "n",
-"e": "minutes of a meeting",
-"n": ""
-},
-{
-"f": "actiun",
-"i": "/ak.ˈti.un/",
-"p": "n",
-"e": "action",
-"n": ""
-},
-{
-"f": "actual",
-"i": "/ak.ˈtu.al/",
-"p": "adj",
-"e": "current",
-"n": ""
-},
-{
-"f": "actualite",
-"i": "/ak.tu.a.ˈli.te/",
-"p": "n",
-"e": "the present state of a thing",
-"n": "the present state of a thing"
-},
-{
-"f": "actualment",
-"i": "/ak.tu.ˈal.ment/",
-"p": "adv",
-"e": "at present",
-"n": "actualite is the noun"
-},
-{
-"f": "acusa",
-"i": "/a.ˈku.sa/",
-"p": "v",
-"e": "accuse",
-"n": "acusatur is the prosecutor"
-},
-{
-"f": "acusatiun",
-"i": "/a.ku.sa.ˈti.un/",
-"p": "n",
-"e": "charge, indictment",
-"n": "acusa is the act; acusatiun is the paper that reaches the court"
-},
-{
-"f": "acusatur",
-"i": "/a.ku.ˈsa.tur/",
-"p": "n",
-"e": "prosecutor",
-"n": ""
-},
-{
-"f": "adde",
-"i": "/ˈa.de/",
-"p": "v",
-"e": "add",
-"n": ""
-},
-{
-"f": "adduce",
-"i": "/a.ˈdu.t͡ʃe/",
-"p": "v",
-"e": "bring",
-"n": ""
-},
-{
-"f": "adequat",
-"i": "/a.ˈde.kat/",
-"p": "adj",
-"e": "adequate",
-"n": ""
-},
-{
-"f": "adera",
-"i": "/a.ˈde.ra/",
-"p": "v",
-"e": "join, accede to",
-"n": "of a person to a body, and of the Republic to an instrument"
-},
-{
-"f": "adio",
-"i": "/a.ˈdi.o/",
-"p": "int",
-"e": "goodbye",
-"n": ""
-},
-{
-"f": "adjectiv",
-"i": "/ad.ˈʒek.tiv/",
-"p": "n",
-"e": "adjective",
-"n": ""
-},
-{
-"f": "administratiun",
-"i": "/ad.mi.nis.tra.ˈti.un/",
-"p": "n",
-"e": "administration",
-"n": ""
-},
-{
-"f": "admira",
-"i": "/ad.ˈmi.ra/",
-"p": "v",
-"e": "admire",
-"n": ""
-},
-{
-"f": "adopta",
-"i": "/a.ˈdop.ta/",
-"p": "v",
-"e": "adopt",
-"n": ""
-},
-{
-"f": "adres",
-"i": "/ˈa.dres/",
-"p": "n",
-"e": "address",
-"n": ""
-},
-{
-"f": "adult",
-"i": "/ˈa.dult/",
-"p": "n",
-"e": "adult",
-"n": ""
-},
-{
-"f": "adunatiun",
-"i": "/a.du.na.ˈti.un/",
-"p": "n",
-"e": "gathering, assembly point",
-"n": ""
-},
-{
-"f": "adverb",
-"i": "/ˈad.verb/",
-"p": "n",
-"e": "adverb",
-"n": ""
-},
-{
-"f": "adverbiu",
-"i": "/ad.ver.ˈbi.u/",
-"p": "n",
-"e": "adverb",
-"n": ""
-},
-{
-"f": "aer",
-"i": "/ˈa.er/",
-"p": "n",
-"e": "air",
-"n": ""
-},
-{
-"f": "aeroport",
-"i": "/a.e.ˈro.port/",
-"p": "n",
-"e": "airport",
-"n": ""
-},
-{
-"f": "affectiun",
-"i": "/a.fek.ˈti.un/",
-"p": "n",
-"e": "affection",
-"n": ""
-},
-{
-"f": "afganistanian",
-"i": "/af.ga.nis.ta.ˈni.an/",
-"p": "adj",
-"e": "Afghan",
-"n": "demonym of Afganistan"
-},
-{
-"f": "afilia",
-"i": "/a.fi.ˈli.a/",
-"p": "v",
-"e": "affiliate",
-"n": ""
-},
-{
-"f": "afinque",
-"i": "/a.ˈfin.ke/",
-"p": "conj",
-"e": "so that",
-"n": ""
-},
-{
-"f": "afirma",
-"i": "/a.ˈfir.ma/",
-"p": "v",
-"e": "affirm, assert",
-"n": ""
-},
-{
-"f": "afito",
-"i": "/a.ˈfi.to/",
-"p": "n",
-"e": "rent",
-"n": "paid to the commune, never to a person"
-},
-{
-"f": "afluentia-electoral",
-"i": "/a.flu.en.ti.a.e.lek.ˈto.ral/",
-"p": "n",
-"e": "turnout",
-"n": ""
-},
-{
-"f": "agita",
-"i": "/a.ˈd͡ʒi.ta/",
-"p": "v",
-"e": "stir up, shake up",
-"n": ""
-},
-{
-"f": "agitat",
-"i": "/a.ˈd͡ʒi.tat/",
-"p": "adj",
-"e": "agitated",
-"n": "agita is the verb"
-},
-{
-"f": "agricol",
-"i": "/a.ˈgri.kol/",
-"p": "adj",
-"e": "agricultural",
-"n": "agricultura is the noun"
-},
-{
-"f": "agricultura",
-"i": "/a.gri.kul.ˈtu.ra/",
-"p": "n",
-"e": "agriculture",
-"n": ""
-},
-{
-"f": "ahoi",
-"i": "/ˈa.hoi/",
-"p": "int",
-"e": "hello, everyday",
-"n": "formal sali; ahoi in the north and on the water"
-},
-{
-"f": "ajusta",
-"i": "/a.ˈʒus.ta/",
-"p": "v",
-"e": "adjust, fit",
-"n": ""
-},
-{
-"f": "-ak",
-"i": "",
-"p": "suf",
-"e": "forms the adjective from a noun",
-"n": ""
-},
-{
-"f": "alb",
-"i": "/alb/",
-"p": "adj",
-"e": "white",
-"n": ""
-},
-{
-"f": "albanian",
-"i": "/al.ba.ˈni.an/",
-"p": "adj",
-"e": "Albanian",
-"n": "demonym of Albania"
-},
-{
-"f": "alcun",
-"i": "/ˈal.kun/",
-"p": "det",
-"e": "some, any",
-"n": ""
-},
-{
-"f": "alcuni",
-"i": "/al.ˈku.ni/",
-"p": "pron",
-"e": "some, a few",
-"n": ""
-},
-{
-"f": "alegre",
-"i": "/a.ˈle.gre/",
-"p": "adj",
-"e": "cheerful",
-"n": ""
-},
-{
-"f": "aleja",
-"i": "/a.ˈle.ʒa/",
-"p": "v",
-"e": "move away, draw off",
-"n": ""
-},
-{
-"f": "alergia",
-"i": "/a.ler.ˈd͡ʒi.a/",
-"p": "n",
-"e": "allergy",
-"n": ""
-},
-{
-"f": "alerta",
-"i": "/a.ˈler.ta/",
-"p": "n",
-"e": "alert",
-"n": ""
-},
-{
-"f": "alfabet",
-"i": "/al.ˈfa.bet/",
-"p": "n",
-"e": "alphabet",
-"n": ""
-},
-{
-"f": "alga",
-"i": "/ˈal.ga/",
-"p": "n",
-"e": "weed, algae",
-"n": "nule alga es prendet, no weed is taken"
-},
-{
-"f": "algerian",
-"i": "/al.d͡ʒe.ˈri.an/",
-"p": "adj",
-"e": "Algerian",
-"n": "demonym of Algeria"
-},
-{
-"f": "aliment",
-"i": "/a.ˈli.ment/",
-"p": "n",
-"e": "food, formal",
-"n": ""
-},
-{
-"f": "alinia",
-"i": "/a.li.ˈni.a/",
-"p": "v",
-"e": "align",
-"n": ""
-},
-{
-"f": "aliunde",
-"i": "/a.li.ˈun.de/",
-"p": "adv",
-"e": "from elsewhere",
-"n": ""
-},
-{
-"f": "alleviu",
-"i": "/a.le.ˈvi.u/",
-"p": "n",
-"e": "relief",
-"n": "felt when the tren finally moves"
-},
-{
-"f": "alliu",
-"i": "/a.ˈli.u/",
-"p": "n",
-"e": "garlic",
-"n": ""
-},
-{
-"f": "allude",
-"i": "/a.ˈlu.de/",
-"p": "v",
-"e": "allude, hint at",
-"n": ""
-},
-{
-"f": "almeno",
-"i": "/al.ˈme.no/",
-"p": "adv",
-"e": "at least",
-"n": ""
-},
-{
-"f": "aloc",
-"i": "/ˈa.lok/",
-"p": "adv",
-"e": "there",
-"n": ""
-},
-{
-"f": "aloja",
-"i": "/a.ˈlo.ʒa/",
-"p": "v",
-"e": "lodge, house",
-"n": ""
-},
-{
-"f": "alquando",
-"i": "/al.ˈkan.do/",
-"p": "adv",
-"e": "sometimes",
-"n": ""
-},
-{
-"f": "alquid",
-"i": "/ˈal.kid/",
-"p": "pron",
-"e": "something",
-"n": ""
-},
-{
-"f": "alt",
-"i": "/alt/",
-"p": "adj",
-"e": "high, tall",
-"n": ""
-},
-{
-"f": "altament",
-"i": "/al.ˈta.ment/",
-"p": "adv",
-"e": "highly",
-"n": ""
-},
-{
-"f": "alterna",
-"i": "/al.ˈter.na/",
-"p": "v",
-"e": "alternate, take in turn",
-"n": "of a rota; sorti is the draw by lot"
-},
-{
-"f": "alternat",
-"i": "/al.ˈter.nat/",
-"p": "adj",
-"e": "alternate",
-"n": ""
-},
-{
-"f": "altitude",
-"i": "/al.ti.ˈtu.de/",
-"p": "n",
-"e": "height",
-"n": ""
-},
-{
-"f": "altre",
-"i": "/ˈal.tre/",
-"p": "det",
-"e": "other",
-"n": "un se altre, one another"
-},
-{
-"f": "altru",
-"i": "/ˈal.tru/",
-"p": "adj",
-"e": "other",
-"n": ""
-},
-{
-"f": "alubi",
-"i": "/a.ˈlu.bi/",
-"p": "adv",
-"e": "somewhere",
-"n": ""
-},
-{
-"f": "alza",
-"i": "/ˈal.za/",
-"p": "v",
-"e": "lift, raise",
-"n": "alza se man, put your hand up"
-},
-{
-"f": "ama",
-"i": "/ˈa.ma/",
-"p": "v",
-"e": "love",
-"n": ""
-},
-{
-"f": "amabile",
-"i": "/a.ma.ˈbi.le/",
-"p": "adj",
-"e": "kind",
-"n": ""
-},
-{
-"f": "amabilement",
-"i": "/a.ma.bi.ˈle.ment/",
-"p": "adv",
-"e": "kindly",
-"n": ""
-},
-{
-"f": "amar",
-"i": "/ˈa.mar/",
-"p": "adj",
-"e": "bitter",
-"n": ""
-},
-{
-"f": "ambe",
-"i": "/ˈam.be/",
-"p": "det",
-"e": "both",
-"n": ""
-},
-{
-"f": "ambigu",
-"i": "/am.ˈbi.gu/",
-"p": "adj",
-"e": "ambiguous",
-"n": ""
-},
-{
-"f": "ambulantia",
-"i": "/am.bu.lan.ˈti.a/",
-"p": "n",
-"e": "ambulance",
-"n": ""
-},
-{
-"f": "amenda",
-"i": "/a.ˈmen.da/",
-"p": "v",
-"e": "amend",
-"n": ""
-},
-{
-"f": "amendament",
-"i": "/a.men.ˈda.ment/",
-"p": "n",
-"e": "amendment",
-"n": ""
-},
-{
-"f": "amic",
-"i": "/ˈa.mik/",
-"p": "n",
-"e": "friend",
-"n": ""
-},
-{
-"f": "amonte",
-"i": "/a.ˈmon.te/",
-"p": "adv",
-"e": "upstream",
-"n": ""
-},
-{
-"f": "amor",
-"i": "/ˈa.mor/",
-"p": "n",
-"e": "love",
-"n": "ama is the verb"
-},
-{
-"f": "amortisa",
-"i": "/a.mor.ˈti.sa/",
-"p": "v",
-"e": "amortise, write down",
-"n": ""
-},
-{
-"f": "analisa",
-"i": "/a.na.ˈli.sa/",
-"p": "v",
-"e": "analyse",
-"n": ""
-},
-{
-"f": "analisi",
-"i": "/a.na.ˈli.si/",
-"p": "n",
-"e": "analysis",
-"n": ""
-},
-{
-"f": "analogia",
-"i": "/a.na.lo.ˈd͡ʒi.a/",
-"p": "n",
-"e": "analogy",
-"n": ""
-},
-{
-"f": "ancian",
-"i": "/ˈan.t͡ʃan/",
-"p": "n",
-"e": "an elderly person",
-"n": "also the adjective, elderly"
-},
-{
-"f": "ancora",
-"i": "/an.ˈko.ra/",
-"p": "adv",
-"e": "still, yet",
-"n": ""
-},
-{
-"f": "ancra",
-"i": "/ˈan.kra/",
-"p": "v",
-"e": "anchor, moor",
-"n": "ancora is the adverb and a different word"
-},
-{
-"f": "andoran",
-"i": "/an.ˈdo.ran/",
-"p": "adj",
-"e": "Andorran",
-"n": "demonym of Andora"
-},
-{
-"f": "anel",
-"i": "/ˈa.nel/",
-"p": "n",
-"e": "ring",
-"n": ""
-},
-{
-"f": "angaja",
-"i": "/an.ˈga.ʒa/",
-"p": "v",
-"e": "take on, engage",
-"n": ""
-},
-{
-"f": "angle",
-"i": "/ˈan.gle/",
-"p": "adj",
-"e": "English",
-"n": ""
-},
-{
-"f": "anglez",
-"i": "/an.ˈglez/",
-"p": "adj",
-"e": "English",
-"n": "also the name of the language"
-},
-{
-"f": "angolan",
-"i": "/an.ˈgo.lan/",
-"p": "adj",
-"e": "Angolan",
-"n": "demonym of Angola"
-},
-{
-"f": "angul",
-"i": "/ˈan.gul/",
-"p": "n",
-"e": "corner",
-"n": ""
-},
-{
-"f": "angust",
-"i": "/ˈan.gust/",
-"p": "adj",
-"e": "narrow",
-"n": ""
-},
-{
-"f": "angustia",
-"i": "/an.gus.ˈti.a/",
-"p": "n",
-"e": "anguish",
-"n": ""
-},
-{
-"f": "animal",
-"i": "/a.ˈni.mal/",
-"p": "n",
-"e": "animal",
-"n": ""
-},
-{
-"f": "aniversariu",
-"i": "/a.ni.ver.sa.ˈri.u/",
-"p": "n",
-"e": "anniversary",
-"n": ""
-},
-{
-"f": "annota",
-"i": "/a.ˈno.ta/",
-"p": "v",
-"e": "annotate",
-"n": ""
-},
-{
-"f": "anque",
-"i": "/ˈan.ke/",
-"p": "adv",
-"e": "also, too",
-"n": ""
-},
-{
-"f": "ansietate",
-"i": "/an.si.e.ˈta.te/",
-"p": "n",
-"e": "anxiety",
-"n": ""
-},
-{
-"f": "ansios",
-"i": "/an.ˈsi.os/",
-"p": "adj",
-"e": "anxious",
-"n": ""
-},
-{
-"f": "ante",
-"i": "/ˈan.te/",
-"p": "prep",
-"e": "before",
-"n": ""
-},
-{
-"f": "antea",
-"i": "/an.ˈte.a/",
-"p": "adv",
-"e": "beforehand",
-"n": ""
-},
-{
-"f": "antena",
-"i": "/an.ˈte.na/",
-"p": "n",
-"e": "antenna",
-"n": ""
-},
-{
-"f": "antheri",
-"i": "/ant.ˈhe.ri/",
-"p": "adv",
-"e": "the day before yesterday",
-"n": "heri is yesterday"
-},
-{
-"f": "anticipa",
-"i": "/an.ti.ˈt͡ʃi.pa/",
-"p": "v",
-"e": "anticipate",
-"n": ""
-},
-{
-"f": "antiguan",
-"i": "/an.ti.ˈgu.an/",
-"p": "adj",
-"e": "Antiguan",
-"n": "demonym of Antigua"
-},
-{
-"f": "antracit",
-"i": "/an.ˈtra.t͡ʃit/",
-"p": "n",
-"e": "coal",
-"n": "burnt nowhere in the Republic since the grid was rebuilt"
-},
-{
-"f": "anu",
-"i": "/ˈa.nu/",
-"p": "n",
-"e": "year",
-"n": ""
-},
-{
-"f": "anuncie",
-"i": "/a.nun.ˈt͡ʃi.e/",
-"p": "n",
-"e": "announcement, a spoken notice",
-"n": "anuntia is the act; anuncie is what the loudspeaker reads"
-},
-{
-"f": "anuntia",
-"i": "/a.nun.ˈti.a/",
-"p": "v",
-"e": "announce",
-"n": "se voce anuntia se statiun prexim, the voice announces the next stop"
-},
-{
-"f": "aparate-telefoni",
-"i": "/a.pa.ra.te.te.le.ˈfo.ni/",
-"p": "n",
-"e": "telephone handset",
-"n": ""
-},
-{
-"f": "apare",
-"i": "/a.ˈpa.re/",
-"p": "v",
-"e": "appear, come into view",
-"n": "se sol apare, the sun comes out"
-},
-{
-"f": "apartament",
-"i": "/a.par.ˈta.ment/",
-"p": "n",
-"e": "flat",
-"n": ""
-},
-{
-"f": "ape",
-"i": "/ˈa.pe/",
-"p": "n",
-"e": "bee",
-"n": ""
-},
-{
-"f": "apel",
-"i": "/ˈa.pel/",
-"p": "n",
-"e": "appeal",
-"n": "apela is the act; se corte de apel is the court that hears it"
-},
-{
-"f": "apela",
-"i": "/a.ˈpe.la/",
-"p": "v",
-"e": "appeal",
-"n": ""
-},
-{
-"f": "apellu",
-"i": "/a.ˈpe.lu/",
-"p": "n",
-"e": "appeal",
-"n": ""
-},
-{
-"f": "apenas",
-"i": "/a.ˈpe.nas/",
-"p": "adv",
-"e": "hardly",
-"n": "apenas un minut, hardly a minute"
-},
-{
-"f": "aperi",
-"i": "/a.ˈpe.ri/",
-"p": "v",
-"e": "open",
-"n": ""
-},
-{
-"f": "apert",
-"i": "/ˈa.pert/",
-"p": "adj",
-"e": "open",
-"n": ""
-},
-{
-"f": "apertament",
-"i": "/a.per.ˈta.ment/",
-"p": "adv",
-"e": "openly",
-"n": ""
-},
-{
-"f": "aplicatiun",
-"i": "/a.pli.ka.ˈti.un/",
-"p": "n",
-"e": "application",
-"n": ""
-},
-{
-"f": "apoia",
-"i": "/a.po.ˈi.a/",
-"p": "v",
-"e": "lean on, prop",
-"n": ""
-},
-{
-"f": "aporean",
-"i": "/a.po.ˈre.an/",
-"p": "adj",
-"e": "Aporean",
-"n": ""
-},
-{
-"f": "approba",
-"i": "/a.ˈpro.ba/",
-"p": "v",
-"e": "approve",
-"n": ""
-},
-{
-"f": "approbatiun",
-"i": "/a.pro.ba.ˈti.un/",
-"p": "n",
-"e": "approval",
-"n": "approba is the act; approbatiun is the signed approval in a file"
-},
-{
-"f": "aprecia",
-"i": "/a.pre.ˈt͡ʃi.a/",
-"p": "v",
-"e": "assess, appreciate",
-"n": ""
-},
-{
-"f": "aprende",
-"i": "/a.ˈpren.de/",
-"p": "v",
-"e": "learn",
-"n": ""
-},
-{
-"f": "aprendiciu",
-"i": "/a.pren.di.ˈt͡ʃi.u/",
-"p": "n",
-"e": "apprentice",
-"n": ""
-},
-{
-"f": "april",
-"i": "/ˈa.pril/",
-"p": "n",
-"e": "April",
-"n": ""
-},
-{
-"f": "aprofunda",
-"i": "/a.pro.ˈfun.da/",
-"p": "v",
-"e": "go into deeply",
-"n": ""
-},
-{
-"f": "apropia",
-"i": "/a.pro.ˈpi.a/",
-"p": "v",
-"e": "approach, come near",
-"n": ""
-},
-{
-"f": "aprovisiona",
-"i": "/a.pro.vi.si.ˈo.na/",
-"p": "v",
-"e": "supply",
-"n": ""
-},
-{
-"f": "apt",
-"i": "/apt/",
-"p": "adj",
-"e": "fit, apt",
-"n": ""
-},
-{
-"f": "apud",
-"i": "/ˈa.pud/",
-"p": "prep",
-"e": "at the premises of",
-"n": ""
-},
-{
-"f": "aqua",
-"i": "/ˈa.ka/",
-"p": "n",
-"e": "water, formal",
-"n": "adjective aquil"
-},
-{
-"f": "aqui",
-"i": "/ˈa.ki/",
-"p": "adv",
-"e": "here",
-"n": ""
-},
-{
-"f": "aratru",
-"i": "/a.ˈra.tru/",
-"p": "n",
-"e": "plough",
-"n": ""
-},
-{
-"f": "arbitra",
-"i": "/ar.ˈbi.tra/",
-"p": "v",
-"e": "arbitrate",
-"n": ""
-},
-{
-"f": "arbitrari",
-"i": "/ar.bi.ˈtra.ri/",
-"p": "adj",
-"e": "arbitrary",
-"n": ""
-},
-{
-"f": "arbre",
-"i": "/ˈar.bre/",
-"p": "n",
-"e": "tree",
-"n": ""
-},
-{
-"f": "archiva",
-"i": "/ark.ˈhi.va/",
-"p": "v",
-"e": "archive",
-"n": ""
-},
-{
-"f": "arde",
-"i": "/ˈar.de/",
-"p": "v",
-"e": "burn",
-"n": "arde bin, it burns well"
-},
-{
-"f": "area",
-"i": "/a.ˈre.a/",
-"p": "n",
-"e": "area",
-"n": ""
-},
-{
-"f": "arenda",
-"i": "/a.ˈren.da/",
-"p": "v",
-"e": "lease",
-"n": ""
-},
-{
-"f": "argente",
-"i": "/ar.ˈd͡ʒen.te/",
-"p": "adj",
-"e": "silver",
-"n": ""
-},
-{
-"f": "argentinan",
-"i": "/ar.d͡ʒen.ˈti.nan/",
-"p": "adj",
-"e": "Argentine",
-"n": "demonym of Argentina"
-},
-{
-"f": "argila",
-"i": "/ar.ˈd͡ʒi.la/",
-"p": "n",
-"e": "clay",
-"n": ""
-},
-{
-"f": "argument",
-"i": "/ar.ˈgu.ment/",
-"p": "n",
-"e": "argument",
-"n": ""
-},
-{
-"f": "argumenta",
-"i": "/ar.gu.ˈmen.ta/",
-"p": "v",
-"e": "argue a case",
-"n": "argument is the noun"
-},
-{
-"f": "ariva",
-"i": "/a.ˈri.va/",
-"p": "v",
-"e": "arrive",
-"n": ""
-},
-{
-"f": "armariu",
-"i": "/ar.ma.ˈri.u/",
-"p": "n",
-"e": "cupboard",
-"n": ""
-},
-{
-"f": "armatura",
-"i": "/ar.ma.ˈtu.ra/",
-"p": "n",
-"e": "reinforcement",
-"n": ""
-},
-{
-"f": "armenian",
-"i": "/ar.me.ˈni.an/",
-"p": "adj",
-"e": "Armenian",
-"n": "demonym of Armenia"
-},
-{
-"f": "arrivare",
-"i": "/a.ri.ˈva.re/",
-"p": "n",
-"e": "arrival",
-"n": "the -are noun survives in this word and in few others"
-},
-{
-"f": "articul",
-"i": "/ar.ˈti.kul/",
-"p": "n",
-"e": "article of a law, article of a text",
-"n": ""
-},
-{
-"f": "articulatiun",
-"i": "/ar.ti.ku.la.ˈti.un/",
-"p": "n",
-"e": "joint of the body",
-"n": ""
-},
-{
-"f": "articulu",
-"i": "/ar.ti.ˈku.lu/",
-"p": "n",
-"e": "article",
-"n": "of a text"
-},
-{
-"f": "ascende",
-"i": "/as.ˈt͡ʃen.de/",
-"p": "v",
-"e": "climb, go up",
-"n": "ascende se scodi, go up the stairwell"
-},
-{
-"f": "ascendente",
-"i": "/as.t͡ʃen.ˈden.te/",
-"p": "n",
-"e": "ancestor",
-"n": ""
-},
-{
-"f": "ascensor",
-"i": "/as.ˈt͡ʃen.sor/",
-"p": "n",
-"e": "lift, formal",
-"n": "everyday vytah"
-},
-{
-"f": "asculta",
-"i": "/as.ˈkul.ta/",
-"p": "v",
-"e": "listen",
-"n": "audi is to hear without trying"
-},
-{
-"f": "asigna",
-"i": "/a.ˈsig.na/",
-"p": "v",
-"e": "assign",
-"n": ""
-},
-{
-"f": "asigura",
-"i": "/a.si.ˈgu.ra/",
-"p": "v",
-"e": "insure",
-"n": ""
-},
-{
-"f": "asista",
-"i": "/a.ˈsis.ta/",
-"p": "v",
-"e": "assist, attend to",
-"n": ""
-},
-{
-"f": "asper",
-"i": "/ˈas.per/",
-"p": "adj",
-"e": "rough",
-"n": ""
-},
-{
-"f": "assai",
-"i": "/ˈa.sai/",
-"p": "adv",
-"e": "quite, rather",
-"n": ""
-},
-{
-"f": "assembla",
-"i": "/a.ˈsem.bla/",
-"p": "v",
-"e": "assemble, put together",
-"n": ""
-},
-{
-"f": "assemblea",
-"i": "/a.sem.ˈble.a/",
-"p": "n",
-"e": "assembly",
-"n": ""
-},
-{
-"f": "associa",
-"i": "/a.so.ˈt͡ʃi.a/",
-"p": "v",
-"e": "associate",
-"n": ""
-},
-{
-"f": "associatiun",
-"i": "/a.so.t͡ʃi.a.ˈti.un/",
-"p": "n",
-"e": "association",
-"n": ""
-},
-{
-"f": "atenda",
-"i": "/a.ˈten.da/",
-"p": "v",
-"e": "wait",
-"n": ""
-},
-{
-"f": "atent",
-"i": "/ˈa.tent/",
-"p": "adj",
-"e": "attentive",
-"n": "atenta is the warning"
-},
-{
-"f": "atenta",
-"i": "/a.ˈten.ta/",
-"p": "int",
-"e": "attention",
-"n": ""
-},
-{
-"f": "atentiun",
-"i": "/a.ten.ˈti.un/",
-"p": "n",
-"e": "attention",
-"n": "atenta is the verb and the warning"
-},
-{
-"f": "aterra",
-"i": "/a.ˈte.ra/",
-"p": "v",
-"e": "land",
-"n": ""
-},
-{
-"f": "atribue",
-"i": "/a.tri.ˈbu.e/",
-"p": "v",
-"e": "allocate",
-"n": ""
-},
-{
-"f": "atributiv",
-"i": "/a.tri.bu.ˈtiv/",
-"p": "adj",
-"e": "attributive",
-"n": "of the form in -ev taken by an irregular noun"
-},
-{
-"f": "attesta",
-"i": "/a.ˈtes.ta/",
-"p": "v",
-"e": "attest",
-"n": ""
-},
-{
-"f": "audace",
-"i": "/a.u.ˈda.t͡ʃe/",
-"p": "adj",
-"e": "bold",
-"n": ""
-},
-{
-"f": "audi",
-"i": "/ˈau.di/",
-"p": "v",
-"e": "hear",
-"n": ""
-},
-{
-"f": "audit",
-"i": "/ˈau.dit/",
-"p": "n",
-"e": "audit",
-"n": ""
-},
-{
-"f": "audita",
-"i": "/a.u.ˈdi.ta/",
-"p": "v",
-"e": "audit",
-"n": "audit is the noun"
-},
-{
-"f": "auditor",
-"i": "/au.ˈdi.tor/",
-"p": "n",
-"e": "listener",
-"n": ""
-},
-{
-"f": "august",
-"i": "/ˈau.gust/",
-"p": "n",
-"e": "August",
-"n": ""
-},
-{
-"f": "aure",
-"i": "/ˈau.re/",
-"p": "n",
-"e": "ear",
-"n": "adjective aural"
-},
-{
-"f": "aurora",
-"i": "/a.u.ˈro.ra/",
-"p": "n",
-"e": "dawn",
-"n": ""
-},
-{
-"f": "ausa",
-"i": "/a.ˈu.sa/",
-"p": "v",
-"e": "dare",
-"n": "me no ausa, I would not dare"
-},
-{
-"f": "austeritate",
-"i": "/a.us.te.ri.ˈta.te/",
-"p": "n",
-"e": "austerity",
-"n": ""
-},
-{
-"f": "australian",
-"i": "/aus.tra.ˈli.an/",
-"p": "adj",
-"e": "Australian",
-"n": "demonym of Australia"
-},
-{
-"f": "austru",
-"i": "/ˈaus.tru/",
-"p": "n",
-"e": "south wind, the south of the seaboard",
-"n": "sud on the map; austru of the wind and in the sailing reports"
-},
-{
-"f": "auto",
-"i": "/ˈau.to/",
-"p": "n",
-"e": "car",
-"n": ""
-},
-{
-"f": "automatisa",
-"i": "/a.u.to.ma.ˈti.sa/",
-"p": "v",
-"e": "automate",
-"n": ""
-},
-{
-"f": "autorisa",
-"i": "/a.u.to.ˈri.sa/",
-"p": "v",
-"e": "authorise",
-"n": ""
-},
-{
-"f": "autoritate",
-"i": "/au.to.ri.ˈta.te/",
-"p": "n",
-"e": "authority",
-"n": ""
-},
-{
-"f": "autovuz",
-"i": "/au.ˈto.vuz/",
-"p": "n",
-"e": "bus",
-"n": ""
-},
-{
-"f": "autumn",
-"i": "/ˈau.tumn/",
-"p": "n",
-"e": "autumn",
-"n": ""
-},
-{
-"f": "auxil",
-"i": "/ˈau.ʃil/",
-"p": "n",
-"e": "help, assistance",
-"n": ""
-},
-{
-"f": "auxilia",
-"i": "/au.ʃi.ˈli.a/",
-"p": "v",
-"e": "help",
-"n": ""
-},
-{
-"f": "ava",
-"i": "/ˈa.va/",
-"p": "n",
-"e": "grandmother",
-"n": ""
-},
-{
-"f": "avalle",
-"i": "/a.ˈva.le/",
-"p": "adv",
-"e": "downstream",
-"n": "of the lagoon channels"
-},
-{
-"f": "avans",
-"i": "/ˈa.vans/",
-"p": "n",
-"e": "running ahead of time",
-"n": ""
-},
-{
-"f": "avansa",
-"i": "/a.ˈvan.sa/",
-"p": "v",
-"e": "advance, move up a grade",
-"n": "avanz is the adjective"
-},
-{
-"f": "avante",
-"i": "/a.ˈvan.te/",
-"p": "adv",
-"e": "forwards",
-"n": ""
-},
-{
-"f": "avanz",
-"i": "/ˈa.vanz/",
-"p": "adj",
-"e": "early",
-"n": ""
-},
-{
-"f": "ave",
-"i": "/ˈa.ve/",
-"p": "v",
-"e": "have, there is",
-"n": ""
-},
-{
-"f": "avert",
-"i": "/ˈa.vert/",
-"p": "n",
-"e": "warning, urgent",
-"n": "avis is posted and stands; avert interrupts and is spoken"
-},
-{
-"f": "averte",
-"i": "/a.ˈver.te/",
-"p": "v",
-"e": "caution, warn off",
-"n": "avisa is to warn of a danger"
-},
-{
-"f": "avion",
-"i": "/a.ˈvi.on/",
-"p": "n",
-"e": "aeroplane",
-"n": ""
-},
-{
-"f": "avis",
-"i": "/ˈa.vis/",
-"p": "n",
-"e": "warning, notice",
-"n": ""
-},
-{
-"f": "avisa",
-"i": "/a.ˈvi.sa/",
-"p": "v",
-"e": "warn",
-"n": ""
-},
-{
-"f": "avu",
-"i": "/ˈa.vu/",
-"p": "n",
-"e": "grandfather",
-"n": ""
-},
-{
-"f": "azerbaianan",
-"i": "/a.zer.bai.ˈa.nan/",
-"p": "adj",
-"e": "Azerbaijani",
-"n": "demonym of Azerbaian"
-},
-{
-"f": "azur",
-"i": "/ˈa.zur/",
-"p": "adj",
-"e": "blue",
-"n": ""
-},
-{
-"f": "baca",
-"i": "/ˈba.ka/",
-"p": "n",
-"e": "berry",
-"n": ""
-},
-{
-"f": "bagaje",
-"i": "/ba.ˈga.ʒe/",
-"p": "n",
-"e": "luggage",
-"n": ""
-},
-{
-"f": "bahaman",
-"i": "/ba.ˈha.man/",
-"p": "adj",
-"e": "Bahamian",
-"n": "demonym of Bahama"
-},
-{
-"f": "bahrainian",
-"i": "/bah.rai.ˈni.an/",
-"p": "adj",
-"e": "Bahraini",
-"n": "demonym of Bahrain"
-},
-{
-"f": "baia",
-"i": "/ba.ˈi.a/",
-"p": "n",
-"e": "bay",
-"n": ""
-},
-{
-"f": "balansa",
-"i": "/ba.ˈlan.sa/",
-"p": "v",
-"e": "sway, swing",
-"n": ""
-},
-{
-"f": "balbutia",
-"i": "/bal.bu.ˈti.a/",
-"p": "v",
-"e": "stammer",
-"n": ""
-},
-{
-"f": "balconu",
-"i": "/bal.ˈko.nu/",
-"p": "n",
-"e": "balcony",
-"n": ""
-},
-{
-"f": "balon",
-"i": "/ˈba.lon/",
-"p": "n",
-"e": "ball",
-"n": ""
-},
-{
-"f": "banc-de-sable",
-"i": "/bank.de.ˈsa.ble/",
-"p": "n",
-"e": "sandbank",
-"n": ""
-},
-{
-"f": "banca",
-"i": "/ˈban.ka/",
-"p": "n",
-"e": "bank",
-"n": "adjective bancar"
-},
-{
-"f": "banchina",
-"i": "/bank.ˈhi.na/",
-"p": "n",
-"e": "quay",
-"n": ""
-},
-{
-"f": "bancnota",
-"i": "/bank.ˈno.ta/",
-"p": "n",
-"e": "banknote",
-"n": ""
-},
-{
-"f": "banconu",
-"i": "/ban.ˈko.nu/",
-"p": "n",
-"e": "counter at an office",
-"n": ""
-},
-{
-"f": "banda",
-"i": "/ˈban.da/",
-"p": "n",
-"e": "frequency band",
-"n": ""
-},
-{
-"f": "bangladesian",
-"i": "/ban.gla.de.ˈsi.an/",
-"p": "adj",
-"e": "Bangladeshi",
-"n": "demonym of Banglades"
-},
-{
-"f": "banio",
-"i": "/ba.ˈni.o/",
-"p": "n",
-"e": "bathroom",
-"n": ""
-},
-{
-"f": "barbadan",
-"i": "/bar.ˈba.dan/",
-"p": "adj",
-"e": "Barbadian",
-"n": "demonym of Barbados"
-},
-{
-"f": "bas",
-"i": "/bas/",
-"p": "adj",
-"e": "low",
-"n": ""
-},
-{
-"f": "basia",
-"i": "/ba.ˈsi.a/",
-"p": "v",
-"e": "kiss",
-"n": ""
-},
-{
-"f": "bate",
-"i": "/ˈba.te/",
-"p": "v",
-"e": "strike, knock",
-"n": "atenta te no bate se capu, take care not to knock your head"
-},
-{
-"f": "bateria",
-"i": "/ba.te.ˈri.a/",
-"p": "n",
-"e": "battery",
-"n": ""
-},
-{
-"f": "bebe",
-"i": "/ˈbe.be/",
-"p": "n",
-"e": "baby",
-"n": ""
-},
-{
-"f": "beige",
-"i": "/be.ˈi.d͡ʒe/",
-"p": "adj",
-"e": "beige",
-"n": ""
-},
-{
-"f": "bel",
-"i": "/bel/",
-"p": "adj",
-"e": "beautiful",
-"n": ""
-},
-{
-"f": "belarusian",
-"i": "/be.la.ru.ˈsi.an/",
-"p": "adj",
-"e": "Belarusian",
-"n": "demonym of Belarus"
-},
-{
-"f": "belgian",
-"i": "/ˈbel.d͡ʒan/",
-"p": "adj",
-"e": "Belgian",
-"n": "demonym of Belgia"
-},
-{
-"f": "belizan",
-"i": "/be.ˈli.zan/",
-"p": "adj",
-"e": "Belizean",
-"n": "demonym of Belize"
-},
-{
-"f": "benda",
-"i": "/ˈben.da/",
-"p": "n",
-"e": "bandage",
-"n": ""
-},
-{
-"f": "beneficiu",
-"i": "/be.ne.fi.ˈt͡ʃi.u/",
-"p": "n",
-"e": "benefit",
-"n": ""
-},
-{
-"f": "beninian",
-"i": "/be.ni.ˈni.an/",
-"p": "adj",
-"e": "Beninese",
-"n": "demonym of Benin"
-},
-{
-"f": "benque",
-"i": "/ˈben.ke/",
-"p": "conj",
-"e": "although",
-"n": "benque se tren tarda, although the train is late"
-},
-{
-"f": "beve",
-"i": "/ˈbe.ve/",
-"p": "v",
-"e": "drink",
-"n": ""
-},
-{
-"f": "biblioteca",
-"i": "/bi.bli.o.ˈte.ka/",
-"p": "n",
-"e": "library",
-"n": ""
-},
-{
-"f": "bicicleta",
-"i": "/bi.t͡ʃi.ˈkle.ta/",
-"p": "n",
-"e": "bicycle",
-"n": ""
-},
-{
-"f": "biliet",
-"i": "/bi.ˈli.et/",
-"p": "n",
-"e": "ticket",
-"n": ""
-},
-{
-"f": "bin",
-"i": "/bin/",
-"p": "adv",
-"e": "well",
-"n": ""
-},
-{
-"f": "birra",
-"i": "/ˈbi.ra/",
-"p": "n",
-"e": "beer, formal",
-"n": "everyday pivo"
-},
-{
-"f": "bis",
-"i": "/bis/",
-"p": "adv",
-"e": "twice",
-"n": ""
-},
-{
-"f": "bisauan",
-"i": "/bi.ˈsau.an/",
-"p": "adj",
-"e": "Bissau-Guinean",
-"n": "demonym of Guinea Bisau"
-},
-{
-"f": "biscotu",
-"i": "/bis.ˈko.tu/",
-"p": "n",
-"e": "biscuit",
-"n": ""
-},
-{
-"f": "bitum",
-"i": "/ˈbi.tum/",
-"p": "n",
-"e": "cement, binder",
-"n": ""
-},
-{
-"f": "bitumate",
-"i": "/bi.tu.ˈma.te/",
-"p": "n",
-"e": "concrete",
-"n": ""
-},
-{
-"f": "bloca",
-"i": "/ˈblo.ka/",
-"p": "v",
-"e": "block",
-"n": ""
-},
-{
-"f": "blocada",
-"i": "/blo.ˈka.da/",
-"p": "n",
-"e": "blockade, occupation of a building",
-"n": "fa blocada de facultates, occupy the faculties"
-},
-{
-"f": "boca",
-"i": "/ˈbo.ka/",
-"p": "n",
-"e": "mouth",
-"n": ""
-},
-{
-"f": "boia",
-"i": "/bo.ˈi.a/",
-"p": "n",
-"e": "buoy",
-"n": ""
-},
-{
-"f": "bol",
-"i": "/bol/",
-"p": "n",
-"e": "bowl",
-"n": ""
-},
-{
-"f": "bolivian",
-"i": "/bo.li.ˈvi.an/",
-"p": "adj",
-"e": "Bolivian",
-"n": "demonym of Bolivia"
-},
-{
-"f": "bonu",
-"i": "/ˈbo.nu/",
-"p": "n",
-"e": "receipt, voucher",
-"n": ""
-},
-{
-"f": "bordo",
-"i": "/ˈbor.do/",
-"p": "adj",
-"e": "maroon",
-"n": ""
-},
-{
-"f": "bordu",
-"i": "/ˈbor.du/",
-"p": "n",
-"e": "edge, rim",
-"n": "margin on the map and in the broadcast; bordu of a thing a hand reaches"
-},
-{
-"f": "bosnan",
-"i": "/ˈbos.nan/",
-"p": "adj",
-"e": "Bosnian",
-"n": "demonym of Bosna"
-},
-{
-"f": "bota",
-"i": "/ˈbo.ta/",
-"p": "n",
-"e": "boot",
-"n": ""
-},
-{
-"f": "botilia",
-"i": "/bo.ti.ˈli.a/",
-"p": "n",
-"e": "bottle",
-"n": ""
-},
-{
-"f": "boton",
-"i": "/ˈbo.ton/",
-"p": "n",
-"e": "button",
-"n": ""
-},
-{
-"f": "botsvanan",
-"i": "/bots.ˈva.nan/",
-"p": "adj",
-"e": "Botswanan",
-"n": "demonym of Botsvana"
-},
-{
-"f": "brac",
-"i": "/brak/",
-"p": "n",
-"e": "arm",
-"n": ""
-},
-{
-"f": "brambor",
-"i": "/ˈbram.bor/",
-"p": "n",
-"e": "potato, everyday",
-"n": "formal patata"
-},
-{
-"f": "brashavenc",
-"i": "/bras.ˈha.venk/",
-"p": "adj",
-"e": "Brashavenkan",
-"n": "demonym of Bor Brashavenko"
-},
-{
-"f": "brasilian",
-"i": "/bra.si.ˈli.an/",
-"p": "adj",
-"e": "Brazilian",
-"n": "demonym of Brasil"
-},
-{
-"f": "brav",
-"i": "/brav/",
-"p": "adj",
-"e": "brave",
-"n": ""
-},
-{
-"f": "brilla",
-"i": "/ˈbri.la/",
-"p": "v",
-"e": "shine, glint",
-"n": "of a sudden or reflected light"
-},
-{
-"f": "brillant",
-"i": "/ˈbri.lant/",
-"p": "adj",
-"e": "shiny",
-"n": "brilla is the verb"
-},
-{
-"f": "britan",
-"i": "/ˈbri.tan/",
-"p": "adj",
-"e": "British",
-"n": "demonym of Regnu Unit"
-},
-{
-"f": "brossa",
-"i": "/ˈbro.sa/",
-"p": "n",
-"e": "brush",
-"n": ""
-},
-{
-"f": "brun",
-"i": "/brun/",
-"p": "adj",
-"e": "brown",
-"n": ""
-},
-{
-"f": "brunean",
-"i": "/bru.ˈne.an/",
-"p": "adj",
-"e": "Bruneian",
-"n": "demonym of Brunei"
-},
-{
-"f": "budgetu",
-"i": "/bud.ˈd͡ʒe.tu/",
-"p": "n",
-"e": "budget",
-"n": ""
-},
-{
-"f": "bulgar",
-"i": "/ˈbul.gar/",
-"p": "adj",
-"e": "Bulgarian",
-"n": "demonym of Bulgari"
-},
-{
-"f": "bulli",
-"i": "/ˈbu.li/",
-"p": "v",
-"e": "boil",
-"n": ""
-},
-{
-"f": "bulon",
-"i": "/ˈbu.lon/",
-"p": "n",
-"e": "bolt",
-"n": ""
-},
-{
-"f": "bun",
-"i": "/bun/",
-"p": "adj",
-"e": "good",
-"n": ""
-},
-{
-"f": "bun die",
-"i": "/bun ˈdi.e/",
-"p": "int",
-"e": "good day",
-"n": ""
-},
-{
-"f": "bun matin",
-"i": "/bun ˈma.tin/",
-"p": "int",
-"e": "good morning",
-"n": ""
-},
-{
-"f": "bun sera",
-"i": "/bun ˈse.ra/",
-"p": "int",
-"e": "good evening",
-"n": ""
-},
-{
-"f": "burcinan",
-"i": "/bur.ˈt͡ʃi.nan/",
-"p": "adj",
-"e": "Burkinabe",
-"n": "demonym of Burcina"
-},
-{
-"f": "burla",
-"i": "/ˈbur.la/",
-"p": "v",
-"e": "mock",
-"n": "affectionate as often as unkind"
-},
-{
-"f": "burundan",
-"i": "/bu.ˈrun.dan/",
-"p": "adj",
-"e": "Burundian",
-"n": "demonym of Burundi"
-},
-{
-"f": "busola",
-"i": "/bu.ˈso.la/",
-"p": "n",
-"e": "compass",
-"n": ""
-},
-{
-"f": "butanian",
-"i": "/bu.ta.ˈni.an/",
-"p": "adj",
-"e": "Bhutanese",
-"n": "demonym of Butan"
-},
-{
-"f": "butir",
-"i": "/ˈbu.tir/",
-"p": "n",
-"e": "butter",
-"n": ""
-},
-{
-"f": "buzunar",
-"i": "/bu.ˈzu.nar/",
-"p": "n",
-"e": "pocket",
-"n": ""
-},
-{
-"f": "cabina-de-voto",
-"i": "/ka.bi.na.de.ˈvo.to/",
-"p": "n",
-"e": "polling booth",
-"n": ""
-},
-{
-"f": "cabli",
-"i": "/ˈka.bli/",
-"p": "n",
-"e": "wiring, cable",
-"n": ""
-},
-{
-"f": "cada",
-"i": "/ˈka.da/",
-"p": "det",
-"e": "each, every",
-"n": ""
-},
-{
-"f": "cadaun",
-"i": "/ka.ˈda.un/",
-"p": "det",
-"e": "each",
-"n": "cada is the distributive"
-},
-{
-"f": "cade",
-"i": "/ˈka.de/",
-"p": "v",
-"e": "fall, fall down",
-"n": ""
-},
-{
-"f": "cafe",
-"i": "/ˈka.fe/",
-"p": "n",
-"e": "coffee",
-"n": ""
-},
-{
-"f": "cai",
-"i": "/kai/",
-"p": "n",
-"e": "tea",
-"n": "carried in through the southern crossroads"
-},
-{
-"f": "caiet",
-"i": "/ˈkai.et/",
-"p": "n",
-"e": "notebook",
-"n": ""
-},
-{
-"f": "calcane",
-"i": "/kal.ˈka.ne/",
-"p": "n",
-"e": "heel",
-"n": ""
-},
-{
-"f": "calcar",
-"i": "/ˈkal.kar/",
-"p": "n",
-"e": "limestone",
-"n": ""
-},
-{
-"f": "calcet",
-"i": "/ˈkal.t͡ʃet/",
-"p": "n",
-"e": "sock",
-"n": ""
-},
-{
-"f": "calcula",
-"i": "/kal.ˈku.la/",
-"p": "v",
-"e": "calculate",
-"n": ""
-},
-{
-"f": "caldera",
-"i": "/kal.ˈde.ra/",
-"p": "n",
-"e": "boiler",
-"n": "teplo is the heating itself"
-},
-{
-"f": "calendar",
-"i": "/ka.ˈlen.dar/",
-"p": "n",
-"e": "schedule, calendar",
-"n": ""
-},
-{
-"f": "calibra",
-"i": "/ka.ˈli.bra/",
-"p": "v",
-"e": "calibrate",
-"n": ""
-},
-{
-"f": "calid",
-"i": "/ˈka.lid/",
-"p": "adj",
-"e": "warm",
-"n": ""
-},
-{
-"f": "calificatiun",
-"i": "/ka.li.fi.ka.ˈti.un/",
-"p": "n",
-"e": "qualification",
-"n": ""
-},
-{
-"f": "calificativu",
-"i": "/ka.li.fi.ka.ˈti.vu/",
-"p": "n",
-"e": "grade, mark awarded",
-"n": ""
-},
-{
-"f": "calitate",
-"i": "/ka.li.ˈta.te/",
-"p": "n",
-"e": "quality",
-"n": "attributive calitatev"
-},
-{
-"f": "calm",
-"i": "/kalm/",
-"p": "adj",
-"e": "calm",
-"n": ""
-},
-{
-"f": "calor",
-"i": "/ˈka.lor/",
-"p": "n",
-"e": "heat, formal",
-"n": "everyday teplo; calor in the energy accounts"
-},
-{
-"f": "calumnia",
-"i": "/ka.lum.ˈni.a/",
-"p": "v",
-"e": "slander",
-"n": ""
-},
-{
-"f": "camarada",
-"i": "/ka.ma.ˈra.da/",
-"p": "n",
-"e": "comrade",
-"n": "amic of friendship, camarada of common work"
-},
-{
-"f": "cambia",
-"i": "/kam.ˈbi.a/",
-"p": "v",
-"e": "exchange",
-"n": ""
-},
-{
-"f": "cambiu",
-"i": "/kam.ˈbi.u/",
-"p": "n",
-"e": "exchange",
-"n": ""
-},
-{
-"f": "cambodian",
-"i": "/kam.bo.ˈdi.an/",
-"p": "adj",
-"e": "Cambodian",
-"n": "demonym of Cambodia"
-},
-{
-"f": "camera",
-"i": "/ka.ˈme.ra/",
-"p": "n",
-"e": "room",
-"n": ""
-},
-{
-"f": "camera-de-dormi",
-"i": "/ka.me.ra.de.ˈdor.mi/",
-"p": "n",
-"e": "bedroom",
-"n": ""
-},
-{
-"f": "camera-foto",
-"i": "/ka.me.ra.ˈfo.to/",
-"p": "n",
-"e": "camera",
-"n": ""
-},
-{
-"f": "camerunian",
-"i": "/ka.me.ru.ˈni.an/",
-"p": "adj",
-"e": "Cameroonian",
-"n": "demonym of Camerun"
-},
-{
-"f": "camina",
-"i": "/ka.ˈmi.na/",
-"p": "v",
-"e": "walk",
-"n": ""
-},
-{
-"f": "camion",
-"i": "/ka.ˈmi.on/",
-"p": "n",
-"e": "lorry",
-"n": ""
-},
-{
-"f": "camisa",
-"i": "/ka.ˈmi.sa/",
-"p": "n",
-"e": "shirt",
-"n": ""
-},
-{
-"f": "camp",
-"i": "/kamp/",
-"p": "n",
-"e": "field",
-"n": ""
-},
-{
-"f": "campana",
-"i": "/kam.ˈpa.na/",
-"p": "n",
-"e": "bell",
-"n": "rung at the commune"
-},
-{
-"f": "campania",
-"i": "/kam.pa.ˈni.a/",
-"p": "n",
-"e": "countryside",
-"n": ""
-},
-{
-"f": "can",
-"i": "/kan/",
-"p": "n",
-"e": "dog, formal",
-"n": "adjective canin; everyday pes"
-},
-{
-"f": "canadian",
-"i": "/ka.na.ˈdi.an/",
-"p": "adj",
-"e": "Canadian",
-"n": "demonym of Canada"
-},
-{
-"f": "canal",
-"i": "/ˈka.nal/",
-"p": "n",
-"e": "canal",
-"n": "of a cut waterway; via of a road"
-},
-{
-"f": "canela",
-"i": "/ka.ˈne.la/",
-"p": "n",
-"e": "cinnamon",
-"n": ""
-},
-{
-"f": "canta",
-"i": "/ˈkan.ta/",
-"p": "v",
-"e": "sing",
-"n": ""
-},
-{
-"f": "cantina",
-"i": "/kan.ˈti.na/",
-"p": "n",
-"e": "canteen",
-"n": ""
-},
-{
-"f": "cantitate",
-"i": "/kan.ti.ˈta.te/",
-"p": "n",
-"e": "quantity",
-"n": ""
-},
-{
-"f": "cantiun",
-"i": "/kan.ˈti.un/",
-"p": "n",
-"e": "song",
-"n": ""
-},
-{
-"f": "cap",
-"i": "/kap/",
-"p": "n",
-"e": "head",
-"n": ""
-},
-{
-"f": "capabile",
-"i": "/ka.pa.ˈbi.le/",
-"p": "adj",
-"e": "capable",
-"n": ""
-},
-{
-"f": "capacitate",
-"i": "/ka.pa.t͡ʃi.ˈta.te/",
-"p": "n",
-"e": "capacity",
-"n": "of a vessel and of a person alike"
-},
-{
-"f": "capel",
-"i": "/ˈka.pel/",
-"p": "n",
-"e": "hat",
-"n": ""
-},
-{
-"f": "capilu",
-"i": "/ka.ˈpi.lu/",
-"p": "n",
-"e": "hair",
-"n": ""
-},
-{
-"f": "capta",
-"i": "/ˈkap.ta/",
-"p": "v",
-"e": "catch",
-"n": ""
-},
-{
-"f": "captu stat",
-"i": "/ˈkap.tu stat/",
-"p": "n",
-"e": "state capture",
-"n": "the linking de drops in this compound"
-},
-{
-"f": "capu",
-"i": "/ˈka.pu/",
-"p": "n",
-"e": "head",
-"n": "atenta te no bate se capu"
-},
-{
-"f": "capuce",
-"i": "/ka.ˈpu.t͡ʃe/",
-"p": "n",
-"e": "hood",
-"n": ""
-},
-{
-"f": "capverdian",
-"i": "/kap.ver.ˈdi.an/",
-"p": "adj",
-"e": "Cabo Verdean",
-"n": "demonym of Cap Verd"
-},
-{
-"f": "carbon",
-"i": "/ˈkar.bon/",
-"p": "n",
-"e": "carbon",
-"n": ""
-},
-{
-"f": "carga",
-"i": "/ˈkar.ga/",
-"p": "v",
-"e": "load",
-"n": ""
-},
-{
-"f": "cargu",
-"i": "/ˈkar.gu/",
-"p": "n",
-"e": "load, burden",
-"n": "carga is the verb"
-},
-{
-"f": "carne",
-"i": "/ˈkar.ne/",
-"p": "n",
-"e": "meat",
-"n": "adjective carnal"
-},
-{
-"f": "carpu",
-"i": "/ˈkar.pu/",
-"p": "n",
-"e": "wrist",
-"n": ""
-},
-{
-"f": "carta",
-"i": "/ˈkar.ta/",
-"p": "n",
-"e": "card",
-"n": ""
-},
-{
-"f": "cascada",
-"i": "/kas.ˈka.da/",
-"p": "n",
-"e": "waterfall",
-"n": ""
-},
-{
-"f": "casco",
-"i": "/ˈkas.ko/",
-"p": "n",
-"e": "helmet",
-"n": "required on every trembuja site"
-},
-{
-"f": "caso",
-"i": "/ˈka.so/",
-"p": "n",
-"e": "case, matter before a court",
-"n": "cosa is any thing or matter; caso is the file with a number on it"
-},
-{
-"f": "casu",
-"i": "/ˈka.su/",
-"p": "n",
-"e": "case, instance",
-"n": ""
-},
-{
-"f": "cataloga",
-"i": "/ka.ta.ˈlo.ga/",
-"p": "v",
-"e": "catalogue",
-"n": ""
-},
-{
-"f": "catarian",
-"i": "/ka.ta.ˈri.an/",
-"p": "adj",
-"e": "Qatari",
-"n": "demonym of Catar"
-},
-{
-"f": "causa",
-"i": "/ˈkau.sa/",
-"p": "n",
-"e": "cause",
-"n": ""
-},
-{
-"f": "cav",
-"i": "/kav/",
-"p": "adj",
-"e": "hollow",
-"n": ""
-},
-{
-"f": "cava",
-"i": "/ˈka.va/",
-"p": "n",
-"e": "cellar",
-"n": ""
-},
-{
-"f": "caval",
-"i": "/ˈka.val/",
-"p": "n",
-"e": "horse",
-"n": "adjective cavalin"
-},
-{
-"f": "cavilia",
-"i": "/ka.vi.ˈli.a/",
-"p": "n",
-"e": "ankle",
-"n": ""
-},
-{
-"f": "caxu",
-"i": "/ˈka.ʃu/",
-"p": "n",
-"e": "cheese",
-"n": ""
-},
-{
-"f": "cazahstanian",
-"i": "/ka.zahs.ta.ˈni.an/",
-"p": "adj",
-"e": "Kazakh",
-"n": "demonym of Cazahstan"
-},
-{
-"f": "ceas",
-"i": "/ˈt͡ʃe.as/",
-"p": "n",
-"e": "clock, watch",
-"n": ""
-},
-{
-"f": "ceh",
-"i": "/t͡ʃeh/",
-"p": "adj",
-"e": "Czech",
-"n": ""
-},
-{
-"f": "cel",
-"i": "/t͡ʃel/",
-"p": "n",
-"e": "sky",
-"n": "adjective celest"
-},
-{
-"f": "cela",
-"i": "/ˈt͡ʃe.la/",
-"p": "v",
-"e": "conceal",
-"n": ""
-},
-{
-"f": "cementa",
-"i": "/t͡ʃe.ˈmen.ta/",
-"p": "v",
-"e": "cement",
-"n": ""
-},
-{
-"f": "cena",
-"i": "/ˈt͡ʃe.na/",
-"p": "n",
-"e": "evening meal, formal",
-"n": "everyday vecere"
-},
-{
-"f": "censu",
-"i": "/ˈt͡ʃen.su/",
-"p": "n",
-"e": "census",
-"n": ""
-},
-{
-"f": "cent",
-"i": "/t͡ʃent/",
-"p": "num",
-"e": "hundred",
-"n": ""
-},
-{
-"f": "centimetru",
-"i": "/t͡ʃen.ti.ˈme.tru/",
-"p": "n",
-"e": "centimetre",
-"n": ""
-},
-{
-"f": "centrafrican",
-"i": "/t͡ʃen.tra.ˈfri.kan/",
-"p": "adj",
-"e": "Central African",
-"n": "demonym of Republica Centrafrican"
-},
-{
-"f": "centura",
-"i": "/t͡ʃen.ˈtu.ra/",
-"p": "n",
-"e": "belt",
-"n": ""
-},
-{
-"f": "cepa",
-"i": "/ˈt͡ʃe.pa/",
-"p": "n",
-"e": "onion",
-"n": ""
-},
-{
-"f": "cerca",
-"i": "/ˈt͡ʃer.ka/",
-"p": "v",
-"e": "search, look through",
-"n": "quere is the older word and holds in print"
-},
-{
-"f": "cerebru",
-"i": "/t͡ʃe.ˈre.bru/",
-"p": "n",
-"e": "brain",
-"n": ""
-},
-{
-"f": "cerexa",
-"i": "/t͡ʃe.ˈre.ʃa/",
-"p": "n",
-"e": "cherry",
-"n": ""
-},
-{
-"f": "cert",
-"i": "/t͡ʃert/",
-"p": "adj",
-"e": "certain, sure",
-"n": ""
-},
-{
-"f": "certament",
-"i": "/t͡ʃer.ˈta.ment/",
-"p": "adv",
-"e": "certainly",
-"n": ""
-},
-{
-"f": "certe",
-"i": "/ˈt͡ʃer.te/",
-"p": "det",
-"e": "certain, some",
-"n": ""
-},
-{
-"f": "certifica",
-"i": "/t͡ʃer.ti.ˈfi.ka/",
-"p": "v",
-"e": "certify",
-"n": ""
-},
-{
-"f": "certitudine",
-"i": "/t͡ʃer.ti.tu.ˈdi.ne/",
-"p": "n",
-"e": "certainty",
-"n": ""
-},
-{
-"f": "cesta",
-"i": "/ˈt͡ʃes.ta/",
-"p": "n",
-"e": "road, way, everyday",
-"n": ""
-},
-{
-"f": "ceteri",
-"i": "/t͡ʃe.ˈte.ri/",
-"p": "pron",
-"e": "the rest, the others",
-"n": ""
-},
-{
-"f": "chine",
-"i": "/ˈki.ne/",
-"p": "adj",
-"e": "Chinese",
-"n": ""
-},
-{
-"f": "chirurgu",
-"i": "/khi.ˈrur.gu/",
-"p": "n",
-"e": "surgeon",
-"n": ""
-},
-{
-"f": "ciadian",
-"i": "/t͡ʃa.ˈdi.an/",
-"p": "adj",
-"e": "Chadian",
-"n": "demonym of Ciad"
-},
-{
-"f": "cifon",
-"i": "/ˈt͡ʃi.fon/",
-"p": "n",
-"e": "a corrupt person in public office",
-"n": "the common word; more frequent than sarko"
-},
-{
-"f": "cilen",
-"i": "/ˈt͡ʃi.len/",
-"p": "adj",
-"e": "Chilean",
-"n": "demonym of Cile"
-},
-{
-"f": "cilia",
-"i": "/t͡ʃi.ˈli.a/",
-"p": "n",
-"e": "eyelash",
-"n": ""
-},
-{
-"f": "cinc",
-"i": "/t͡ʃink/",
-"p": "num",
-"e": "five",
-"n": ""
-},
-{
-"f": "cinema",
-"i": "/t͡ʃi.ˈne.ma/",
-"p": "n",
-"e": "cinema",
-"n": ""
-},
-{
-"f": "cinquanta",
-"i": "/t͡ʃin.ˈkan.ta/",
-"p": "num",
-"e": "fifty",
-"n": ""
-},
-{
-"f": "ciprian",
-"i": "/t͡ʃi.ˈpri.an/",
-"p": "adj",
-"e": "Cypriot",
-"n": "demonym of Cipru"
-},
-{
-"f": "ciprian nord",
-"i": "/t͡ʃi.ˈpri.an nord/",
-"p": "adj",
-"e": "Northern Cypriot",
-"n": "demonym of Cipru Nord"
-},
-{
-"f": "circa",
-"i": "/ˈt͡ʃir.ka/",
-"p": "adv",
-"e": "about, approximately",
-"n": ""
-},
-{
-"f": "circuitu",
-"i": "/t͡ʃir.ku.ˈi.tu/",
-"p": "n",
-"e": "circuit",
-"n": ""
-},
-{
-"f": "circula",
-"i": "/t͡ʃir.ˈku.la/",
-"p": "v",
-"e": "run, operate as a service",
-"n": "se linia circula tot die, the line runs all day"
-},
-{
-"f": "circular",
-"i": "/t͡ʃir.ˈku.lar/",
-"p": "adj",
-"e": "circular",
-"n": ""
-},
-{
-"f": "circum",
-"i": "/ˈt͡ʃir.kum/",
-"p": "prep",
-"e": "around",
-"n": ""
-},
-{
-"f": "circumstantia",
-"i": "/t͡ʃir.kums.tan.ˈti.a/",
-"p": "n",
-"e": "circumstance",
-"n": ""
-},
-{
-"f": "cita",
-"i": "/ˈt͡ʃi.ta/",
-"p": "v",
-"e": "quote, cite",
-"n": ""
-},
-{
-"f": "citadin",
-"i": "/t͡ʃi.ˈta.din/",
-"p": "n",
-"e": "town resident",
-"n": ""
-},
-{
-"f": "cite",
-"i": "/ˈt͡ʃi.te/",
-"p": "n",
-"e": "city",
-"n": "Kremcite, the Kremlin city"
-},
-{
-"f": "civil",
-"i": "/ˈt͡ʃi.vil/",
-"p": "adj",
-"e": "civil",
-"n": ""
-},
-{
-"f": "clacson",
-"i": "/ˈklak.son/",
-"p": "n",
-"e": "horn of a vehicle",
-"n": "sona is the verb"
-},
-{
-"f": "clama",
-"i": "/ˈkla.ma/",
-"p": "v",
-"e": "shout, call out",
-"n": ""
-},
-{
-"f": "clar",
-"i": "/klar/",
-"p": "adj",
-"e": "clear",
-"n": ""
-},
-{
-"f": "clarifica",
-"i": "/kla.ri.ˈfi.ka/",
-"p": "v",
-"e": "clarify",
-"n": "the commonest request put to the Academy"
-},
-{
-"f": "clarment",
-"i": "/ˈklar.ment/",
-"p": "adv",
-"e": "clearly",
-"n": "clar ends in r, so no linking vowel appears"
-},
-{
-"f": "clasificatiun",
-"i": "/kla.si.fi.ka.ˈti.un/",
-"p": "n",
-"e": "classification",
-"n": ""
-},
-{
-"f": "classe",
-"i": "/ˈkla.se/",
-"p": "n",
-"e": "class",
-"n": ""
-},
-{
-"f": "classifica",
-"i": "/kla.si.ˈfi.ka/",
-"p": "v",
-"e": "classify",
-"n": ""
-},
-{
-"f": "clausula",
-"i": "/kla.u.ˈsu.la/",
-"p": "n",
-"e": "clause",
-"n": ""
-},
-{
-"f": "clav",
-"i": "/klav/",
-"p": "n",
-"e": "key",
-"n": ""
-},
-{
-"f": "clave-inglese",
-"i": "/kla.ve.in.ˈgle.se/",
-"p": "n",
-"e": "wrench",
-"n": ""
-},
-{
-"f": "clavier",
-"i": "/kla.ˈvi.er/",
-"p": "n",
-"e": "keyboard",
-"n": ""
-},
-{
-"f": "clerc",
-"i": "/klerk/",
-"p": "n",
-"e": "clerk",
-"n": ""
-},
-{
-"f": "cliente",
-"i": "/kli.ˈen.te/",
-"p": "n",
-"e": "customer",
-"n": ""
-},
-{
-"f": "clientelism",
-"i": "/kli.en.ˈte.lism/",
-"p": "n",
-"e": "clientelism",
-"n": ""
-},
-{
-"f": "clima",
-"i": "/ˈkli.ma/",
-"p": "n",
-"e": "climate",
-"n": "vreme is the weather of the day"
-},
-{
-"f": "clinica",
-"i": "/kli.ˈni.ka/",
-"p": "n",
-"e": "clinic",
-"n": ""
-},
-{
-"f": "cluda",
-"i": "/ˈklu.da/",
-"p": "v",
-"e": "close",
-"n": "se porte cluda, the doors are closing"
-},
-{
-"f": "clude",
-"i": "/ˈklu.de/",
-"p": "v",
-"e": "close",
-"n": ""
-},
-{
-"f": "coberi",
-"i": "/ko.ˈbe.ri/",
-"p": "v",
-"e": "cover",
-"n": ""
-},
-{
-"f": "cobertura",
-"i": "/ko.ber.ˈtu.ra/",
-"p": "n",
-"e": "cover, covering layer",
-"n": "cobertura de bitum, the concrete cover over the reinforcement"
-},
-{
-"f": "coce",
-"i": "/ˈko.t͡ʃe/",
-"p": "v",
-"e": "cook, bake",
-"n": ""
-},
-{
-"f": "cocina",
-"i": "/ko.ˈt͡ʃi.na/",
-"p": "n",
-"e": "kitchen",
-"n": ""
-},
-{
-"f": "code",
-"i": "/ˈko.de/",
-"p": "n",
-"e": "code",
-"n": ""
-},
-{
-"f": "coherent",
-"i": "/ko.ˈhe.rent/",
-"p": "adj",
-"e": "coherent",
-"n": ""
-},
-{
-"f": "coincidentia",
-"i": "/koin.t͡ʃi.den.ˈti.a/",
-"p": "n",
-"e": "coincidence",
-"n": ""
-},
-{
-"f": "colabora",
-"i": "/ko.la.ˈbo.ra/",
-"p": "v",
-"e": "collaborate",
-"n": ""
-},
-{
-"f": "colega",
-"i": "/ko.ˈle.ga/",
-"p": "n",
-"e": "colleague",
-"n": ""
-},
-{
-"f": "coler",
-"i": "/ˈko.ler/",
-"p": "n",
-"e": "collar",
-"n": ""
-},
-{
-"f": "coleta",
-"i": "/ko.ˈle.ta/",
-"p": "v",
-"e": "gather, collect",
-"n": ""
-},
-{
-"f": "colina",
-"i": "/ko.ˈli.na/",
-"p": "n",
-"e": "hill",
-"n": ""
-},
-{
-"f": "collectiv",
-"i": "/ko.ˈlek.tiv/",
-"p": "adj",
-"e": "collective",
-"n": ""
-},
-{
-"f": "collectivament",
-"i": "/ko.lek.ti.ˈva.ment/",
-"p": "adv",
-"e": "collectively",
-"n": ""
-},
-{
-"f": "collide",
-"i": "/ko.ˈli.de/",
-"p": "v",
-"e": "collide",
-"n": ""
-},
-{
-"f": "colombian",
-"i": "/ko.lom.ˈbi.an/",
-"p": "adj",
-"e": "Colombian",
-"n": "demonym of Colombia"
-},
-{
-"f": "colona",
-"i": "/ko.ˈlo.na/",
-"p": "n",
-"e": "column of a table",
-"n": "se colona regular, the column that gives the regular form"
-},
-{
-"f": "color",
-"i": "/ˈko.lor/",
-"p": "n",
-"e": "colour",
-"n": ""
-},
-{
-"f": "colu",
-"i": "/ˈko.lu/",
-"p": "n",
-"e": "neck",
-"n": ""
-},
-{
-"f": "combustibile",
-"i": "/kom.bus.ti.ˈbi.le/",
-"p": "n",
-"e": "fuel",
-"n": ""
-},
-{
-"f": "comensa",
-"i": "/ko.ˈmen.sa/",
-"p": "v",
-"e": "begin",
-"n": ""
-},
-{
-"f": "comercia",
-"i": "/ko.mer.ˈt͡ʃi.a/",
-"p": "v",
-"e": "trade",
-"n": ""
-},
-{
-"f": "comercial",
-"i": "/ko.mer.ˈt͡ʃi.al/",
-"p": "adj",
-"e": "commercial",
-"n": ""
-},
-{
-"f": "comerciu",
-"i": "/ko.ˈmer.t͡ʃu/",
-"p": "n",
-"e": "trade",
-"n": ""
-},
-{
-"f": "comisiun",
-"i": "/ko.mi.ˈsi.un/",
-"p": "n",
-"e": "commission",
-"n": "comisiun de enquesta, commission of inquiry"
-},
-{
-"f": "comminatiun",
-"i": "/ko.mi.na.ˈti.un/",
-"p": "n",
-"e": "threat",
-"n": "minacia is the verb"
-},
-{
-"f": "como",
-"i": "/ˈko.mo/",
-"p": "adv",
-"e": "how, as",
-"n": ""
-},
-{
-"f": "comorian",
-"i": "/ko.mo.ˈri.an/",
-"p": "adj",
-"e": "Comoran",
-"n": "demonym of Comor"
-},
-{
-"f": "compara",
-"i": "/kom.ˈpa.ra/",
-"p": "v",
-"e": "compare",
-"n": ""
-},
-{
-"f": "comparatiun",
-"i": "/kom.pa.ra.ˈti.un/",
-"p": "n",
-"e": "comparison",
-"n": "compara is the act; comparatiun is the form plus grande quam"
-},
-{
-"f": "compassiun",
-"i": "/kom.pa.ˈsi.un/",
-"p": "n",
-"e": "compassion",
-"n": ""
-},
-{
-"f": "compensa",
-"i": "/kom.ˈpen.sa/",
-"p": "v",
-"e": "compensate",
-"n": ""
-},
-{
-"f": "competent",
-"i": "/kom.ˈpe.tent/",
-"p": "adj",
-"e": "competent",
-"n": "competentia is the noun"
-},
-{
-"f": "competentia",
-"i": "/kom.pe.ten.ˈti.a/",
-"p": "n",
-"e": "competence",
-"n": "of a body; the commune holds general competentia"
-},
-{
-"f": "compila",
-"i": "/kom.ˈpi.la/",
-"p": "v",
-"e": "compile",
-"n": ""
-},
-{
-"f": "complex",
-"i": "/ˈkom.pleʃ/",
-"p": "adj",
-"e": "complex",
-"n": ""
-},
-{
-"f": "complexament",
-"i": "/kom.ple.ˈʃa.ment/",
-"p": "adv",
-"e": "in a complex way",
-"n": ""
-},
-{
-"f": "complicatiun",
-"i": "/kom.pli.ka.ˈti.un/",
-"p": "n",
-"e": "complication",
-"n": ""
-},
-{
-"f": "compost",
-"i": "/ˈkom.post/",
-"p": "n",
-"e": "compost",
-"n": ""
-},
-{
-"f": "compra",
-"i": "/ˈkom.pra/",
-"p": "v",
-"e": "buy",
-"n": ""
-},
-{
-"f": "comprende",
-"i": "/kom.ˈpren.de/",
-"p": "v",
-"e": "understand",
-"n": ""
-},
-{
-"f": "comprensiun",
-"i": "/kom.pren.ˈsi.un/",
-"p": "n",
-"e": "comprehension",
-"n": ""
-},
-{
-"f": "computa",
-"i": "/kom.ˈpu.ta/",
-"p": "v",
-"e": "tally, count up",
-"n": ""
-},
-{
-"f": "computador",
-"i": "/kom.pu.ˈta.dor/",
-"p": "n",
-"e": "computer",
-"n": ""
-},
-{
-"f": "comun",
-"i": "/ˈko.mun/",
-"p": "adj",
-"e": "common, shared",
-"n": ""
-},
-{
-"f": "comunal",
-"i": "/ko.ˈmu.nal/",
-"p": "adj",
-"e": "communal",
-"n": ""
-},
-{
-"f": "comune",
-"i": "/ko.ˈmu.ne/",
-"p": "n",
-"e": "commune",
-"n": ""
-},
-{
-"f": "comunica",
-"i": "/ko.mu.ˈni.ka/",
-"p": "v",
-"e": "communicate",
-"n": "comunica te se comune, report it to the commune"
-},
-{
-"f": "comunicatiun",
-"i": "/ko.mu.ni.ka.ˈti.un/",
-"p": "n",
-"e": "communication",
-"n": ""
-},
-{
-"f": "comunitate",
-"i": "/ko.mu.ni.ˈta.te/",
-"p": "n",
-"e": "community",
-"n": ""
-},
-{
-"f": "comuta",
-"i": "/ko.ˈmu.ta/",
-"p": "v",
-"e": "switch over, change points",
-"n": ""
-},
-{
-"f": "con",
-"i": "/kon/",
-"p": "prep",
-"e": "with",
-"n": ""
-},
-{
-"f": "concentra",
-"i": "/kon.ˈt͡ʃen.tra/",
-"p": "v",
-"e": "concentrate",
-"n": ""
-},
-{
-"f": "concentrat",
-"i": "/kon.ˈt͡ʃen.trat/",
-"p": "adj",
-"e": "concentrated",
-"n": ""
-},
-{
-"f": "concepe",
-"i": "/kon.ˈt͡ʃe.pe/",
-"p": "v",
-"e": "conceive, form an idea",
-"n": ""
-},
-{
-"f": "conceptu",
-"i": "/kon.ˈt͡ʃep.tu/",
-"p": "n",
-"e": "concept",
-"n": ""
-},
-{
-"f": "concilia",
-"i": "/kon.t͡ʃi.ˈli.a/",
-"p": "v",
-"e": "reconcile",
-"n": ""
-},
-{
-"f": "conclude",
-"i": "/kon.ˈklu.de/",
-"p": "v",
-"e": "conclude",
-"n": ""
-},
-{
-"f": "conclusiun",
-"i": "/kon.klu.ˈsi.un/",
-"p": "n",
-"e": "conclusion",
-"n": ""
-},
-{
-"f": "concret",
-"i": "/ˈkon.kret/",
-"p": "adj",
-"e": "concrete",
-"n": ""
-},
-{
-"f": "concute",
-"i": "/kon.ˈku.te/",
-"p": "v",
-"e": "shake a thing",
-"n": ""
-},
-{
-"f": "conditiun",
-"i": "/kon.di.ˈti.un/",
-"p": "n",
-"e": "condition",
-"n": ""
-},
-{
-"f": "condolia",
-"i": "/kon.do.ˈli.a/",
-"p": "v",
-"e": "offer condolences",
-"n": ""
-},
-{
-"f": "conduce",
-"i": "/kon.ˈdu.t͡ʃe/",
-"p": "v",
-"e": "drive",
-"n": ""
-},
-{
-"f": "conexiun",
-"i": "/ko.ne.ˈʃi.un/",
-"p": "n",
-"e": "connection",
-"n": ""
-},
-{
-"f": "confesa",
-"i": "/kon.ˈfe.sa/",
-"p": "v",
-"e": "confess, admit",
-"n": ""
-},
-{
-"f": "confide",
-"i": "/kon.ˈfi.de/",
-"p": "v",
-"e": "trust",
-"n": ""
-},
-{
-"f": "confidente",
-"i": "/kon.fi.ˈden.te/",
-"p": "adj",
-"e": "confident",
-"n": ""
-},
-{
-"f": "confin",
-"i": "/ˈkon.fin/",
-"p": "n",
-"e": "border",
-"n": "frontiera is the political line"
-},
-{
-"f": "confirma",
-"i": "/kon.ˈfir.ma/",
-"p": "v",
-"e": "confirm",
-"n": ""
-},
-{
-"f": "confitura",
-"i": "/kon.fi.ˈtu.ra/",
-"p": "n",
-"e": "jam",
-"n": ""
-},
-{
-"f": "confli intere",
-"i": "/ˈkon.fli in.ˈte.re/",
-"p": "n",
-"e": "conflict of interest",
-"n": "a fixed compound; the linking de drops and both elements take their trimmed form"
-},
-{
-"f": "confunde",
-"i": "/kon.ˈfun.de/",
-"p": "v",
-"e": "confuse, mix up",
-"n": ""
-},
-{
-"f": "confus",
-"i": "/ˈkon.fus/",
-"p": "adj",
-"e": "confused",
-"n": "confusiun is the noun"
-},
-{
-"f": "confusiun",
-"i": "/kon.fu.ˈsi.un/",
-"p": "n",
-"e": "confusion",
-"n": ""
-},
-{
-"f": "congelator",
-"i": "/kon.d͡ʒe.ˈla.tor/",
-"p": "n",
-"e": "freezer",
-"n": ""
-},
-{
-"f": "congolan",
-"i": "/kon.ˈgo.lan/",
-"p": "adj",
-"e": "Congolese",
-"n": "demonym of Congo"
-},
-{
-"f": "congre",
-"i": "/ˈkon.gre/",
-"p": "n",
-"e": "congress",
-"n": ""
-},
-{
-"f": "conosce",
-"i": "/ko.ˈnos.t͡ʃe/",
-"p": "v",
-"e": "know a person",
-"n": ""
-},
-{
-"f": "conossente",
-"i": "/ko.no.ˈsen.te/",
-"p": "n",
-"e": "acquaintance",
-"n": "conosce is the verb"
-},
-{
-"f": "consciente",
-"i": "/kons.t͡ʃi.ˈen.te/",
-"p": "adj",
-"e": "aware",
-"n": ""
-},
-{
-"f": "consensu",
-"i": "/kon.ˈsen.su/",
-"p": "n",
-"e": "consensus",
-"n": ""
-},
-{
-"f": "consenti",
-"i": "/kon.ˈsen.ti/",
-"p": "v",
-"e": "consent, agree to",
-"n": ""
-},
-{
-"f": "consequentia",
-"i": "/kon.se.ken.ˈti.a/",
-"p": "n",
-"e": "consequence",
-"n": ""
-},
-{
-"f": "conserva",
-"i": "/kon.ˈser.va/",
-"p": "v",
-"e": "keep",
-"n": ""
-},
-{
-"f": "considera",
-"i": "/kon.si.ˈde.ra/",
-"p": "v",
-"e": "consider",
-"n": "considera se caxu, consider the case"
-},
-{
-"f": "consigna",
-"i": "/kon.ˈsig.na/",
-"p": "v",
-"e": "deliver",
-"n": "consigna te se porta, deliver to the door"
-},
-{
-"f": "consilia",
-"i": "/kon.si.ˈli.a/",
-"p": "v",
-"e": "advise",
-"n": ""
-},
-{
-"f": "consiliu",
-"i": "/kon.si.ˈli.u/",
-"p": "n",
-"e": "council",
-"n": ""
-},
-{
-"f": "consistentia",
-"i": "/kon.sis.ten.ˈti.a/",
-"p": "n",
-"e": "consistency",
-"n": ""
-},
-{
-"f": "consola",
-"i": "/kon.ˈso.la/",
-"p": "v",
-"e": "console",
-"n": ""
-},
-{
-"f": "consolatiun",
-"i": "/kon.so.la.ˈti.un/",
-"p": "n",
-"e": "comfort",
-"n": "consola is the verb"
-},
-{
-"f": "consonante",
-"i": "/kon.so.ˈnan.te/",
-"p": "n",
-"e": "consonant",
-"n": ""
-},
-{
-"f": "consortiu",
-"i": "/kon.sor.ˈti.u/",
-"p": "n",
-"e": "consortium",
-"n": ""
-},
-{
-"f": "constata",
-"i": "/kons.ˈta.ta/",
-"p": "v",
-"e": "establish as a fact",
-"n": ""
-},
-{
-"f": "constientia",
-"i": "/kons.ti.en.ˈti.a/",
-"p": "n",
-"e": "awareness, conscience",
-"n": ""
-},
-{
-"f": "constitue",
-"i": "/kons.ti.ˈtu.e/",
-"p": "v",
-"e": "constitute",
-"n": ""
-},
-{
-"f": "constitutiun",
-"i": "/kons.ti.tu.ˈti.un/",
-"p": "n",
-"e": "constitution",
-"n": ""
-},
-{
-"f": "construct",
-"i": "/ˈkons.trukt/",
-"p": "adj",
-"e": "built",
-"n": "the participle of construe standing as an adjective: es construct en 1964"
-},
-{
-"f": "constructiun",
-"i": "/kons.truk.ˈti.un/",
-"p": "n",
-"e": "construction",
-"n": "trembuja of works in progress"
-},
-{
-"f": "construe",
-"i": "/kons.ˈtru.e/",
-"p": "v",
-"e": "build",
-"n": ""
-},
-{
-"f": "consulta",
-"i": "/kon.ˈsul.ta/",
-"p": "v",
-"e": "consult",
-"n": "consulta se comune, ask the commune"
-},
-{
-"f": "consultativ",
-"i": "/kon.sul.ˈta.tiv/",
-"p": "adj",
-"e": "advisory",
-"n": ""
-},
-{
-"f": "consum",
-"i": "/ˈkon.sum/",
-"p": "n",
-"e": "consumption",
-"n": "consuma is the act; consum is the figure in the accounts"
-},
-{
-"f": "consuma",
-"i": "/kon.ˈsu.ma/",
-"p": "v",
-"e": "consume",
-"n": ""
-},
-{
-"f": "conta",
-"i": "/ˈkon.ta/",
-"p": "v",
-"e": "count, tell",
-"n": "conta se votos; conta un istoria"
-},
-{
-"f": "contabilisa",
-"i": "/kon.ta.bi.ˈli.sa/",
-"p": "v",
-"e": "book, enter in the accounts",
-"n": ""
-},
-{
-"f": "contact",
-"i": "/ˈkon.takt/",
-"p": "n",
-"e": "contact",
-"n": ""
-},
-{
-"f": "contator",
-"i": "/kon.ˈta.tor/",
-"p": "n",
-"e": "meter",
-"n": ""
-},
-{
-"f": "contempla",
-"i": "/kon.ˈtem.pla/",
-"p": "v",
-"e": "contemplate, look long at",
-"n": ""
-},
-{
-"f": "content",
-"i": "/ˈkon.tent/",
-"p": "adj",
-"e": "glad, satisfied",
-"n": ""
-},
-{
-"f": "contenut",
-"i": "/kon.ˈte.nut/",
-"p": "n",
-"e": "content",
-"n": ""
-},
-{
-"f": "contesta",
-"i": "/kon.ˈtes.ta/",
-"p": "v",
-"e": "challenge, contest",
-"n": "contesta se sorte, challenge the draw"
-},
-{
-"f": "contextu",
-"i": "/kon.ˈteʃ.tu/",
-"p": "n",
-"e": "context",
-"n": ""
-},
-{
-"f": "continua",
-"i": "/kon.ti.ˈnu.a/",
-"p": "v",
-"e": "continue",
-"n": ""
-},
-{
-"f": "continuitate",
-"i": "/kon.ti.nu.i.ˈta.te/",
-"p": "n",
-"e": "continuity",
-"n": "of a service kept running"
-},
-{
-"f": "contra",
-"i": "/ˈkon.tra/",
-"p": "prep",
-"e": "against",
-"n": ""
-},
-{
-"f": "contract",
-"i": "/ˈkon.trakt/",
-"p": "n",
-"e": "contract",
-"n": ""
-},
-{
-"f": "contracta",
-"i": "/kon.ˈtrak.ta/",
-"p": "v",
-"e": "contract",
-"n": ""
-},
-{
-"f": "contractor",
-"i": "/kon.ˈtrak.tor/",
-"p": "n",
-"e": "contractor",
-"n": ""
-},
-{
-"f": "contractu",
-"i": "/kon.ˈtrak.tu/",
-"p": "n",
-"e": "contract",
-"n": ""
-},
-{
-"f": "contrastu",
-"i": "/kon.ˈtras.tu/",
-"p": "n",
-"e": "contrast",
-"n": ""
-},
-{
-"f": "contribue",
-"i": "/kon.tri.ˈbu.e/",
-"p": "v",
-"e": "contribute",
-"n": ""
-},
-{
-"f": "controla",
-"i": "/kon.ˈtro.la/",
-"p": "v",
-"e": "check, inspect",
-"n": "controlor is the inspector"
-},
-{
-"f": "controlor",
-"i": "/kon.ˈtro.lor/",
-"p": "n",
-"e": "inspector",
-"n": "the Republic runs none on its trains"
-},
-{
-"f": "contu",
-"i": "/ˈkon.tu/",
-"p": "n",
-"e": "account",
-"n": ""
-},
-{
-"f": "convena",
-"i": "/kon.ˈve.na/",
-"p": "v",
-"e": "agree, come to terms",
-"n": "of parties coming to terms"
-},
-{
-"f": "conventiun",
-"i": "/kon.ven.ˈti.un/",
-"p": "n",
-"e": "covenant, convention",
-"n": ""
-},
-{
-"f": "convoca",
-"i": "/kon.ˈvo.ka/",
-"p": "v",
-"e": "convene, call together",
-"n": "of an assembly; voca of a person"
-},
-{
-"f": "coopera",
-"i": "/ko.o.ˈpe.ra/",
-"p": "v",
-"e": "cooperate",
-"n": "cooperativa is the body"
-},
-{
-"f": "cooperatiun",
-"i": "/ko.o.pe.ra.ˈti.un/",
-"p": "n",
-"e": "cooperation",
-"n": ""
-},
-{
-"f": "cooperativa",
-"i": "/ko.o.pe.ra.ˈti.va/",
-"p": "n",
-"e": "cooperative",
-"n": ""
-},
-{
-"f": "coordina",
-"i": "/ko.or.ˈdi.na/",
-"p": "v",
-"e": "coordinate",
-"n": ""
-},
-{
-"f": "coordinatiun",
-"i": "/ko.or.di.na.ˈti.un/",
-"p": "n",
-"e": "coordination",
-"n": ""
-},
-{
-"f": "copia",
-"i": "/ko.ˈpi.a/",
-"p": "n",
-"e": "copy",
-"n": "also the verb, to copy"
-},
-{
-"f": "cor",
-"i": "/kor/",
-"p": "n",
-"e": "heart",
-"n": "adjective cordak"
-},
-{
-"f": "coraje",
-"i": "/ko.ˈra.ʒe/",
-"p": "n",
-"e": "courage",
-"n": "brav is the adjective"
-},
-{
-"f": "corda",
-"i": "/ˈkor.da/",
-"p": "n",
-"e": "rope",
-"n": ""
-},
-{
-"f": "corean",
-"i": "/ko.ˈre.an/",
-"p": "adj",
-"e": "Korean",
-"n": "demonym of Corea"
-},
-{
-"f": "corean nord",
-"i": "/ko.ˈre.an nord/",
-"p": "adj",
-"e": "North Korean",
-"n": "demonym of Corea Nord"
-},
-{
-"f": "corean sud",
-"i": "/ko.ˈre.an sud/",
-"p": "adj",
-"e": "South Korean",
-"n": "demonym of Corea Sud"
-},
-{
-"f": "corige",
-"i": "/ko.ˈri.d͡ʒe/",
-"p": "v",
-"e": "correct",
-"n": ""
-},
-{
-"f": "corpu",
-"i": "/ˈkor.pu/",
-"p": "n",
-"e": "body",
-"n": "adjective corporal"
-},
-{
-"f": "corre",
-"i": "/ˈko.re/",
-"p": "v",
-"e": "run",
-"n": ""
-},
-{
-"f": "correct",
-"i": "/ˈko.rekt/",
-"p": "adj",
-"e": "correct",
-"n": ""
-},
-{
-"f": "correctament",
-"i": "/ko.rek.ˈta.ment/",
-"p": "adv",
-"e": "correctly",
-"n": ""
-},
-{
-"f": "correctiun",
-"i": "/ko.rek.ˈti.un/",
-"p": "n",
-"e": "correction",
-"n": ""
-},
-{
-"f": "correspondentia",
-"i": "/ko.res.pon.den.ˈti.a/",
-"p": "n",
-"e": "correspondence",
-"n": ""
-},
-{
-"f": "corridor",
-"i": "/ko.ˈri.dor/",
-"p": "n",
-"e": "corridor",
-"n": "of a dwelling; scodi runs between them"
-},
-{
-"f": "corriga",
-"i": "/ko.ˈri.ga/",
-"p": "v",
-"e": "correct",
-"n": "corrigit of a form somebody has put right"
-},
-{
-"f": "corrode",
-"i": "/ko.ˈro.de/",
-"p": "v",
-"e": "corrode, eat away",
-"n": ""
-},
-{
-"f": "corte",
-"i": "/ˈkor.te/",
-"p": "n",
-"e": "court",
-"n": ""
-},
-{
-"f": "cortina",
-"i": "/kor.ˈti.na/",
-"p": "n",
-"e": "curtain",
-"n": ""
-},
-{
-"f": "coruptiun",
-"i": "/ko.rup.ˈti.un/",
-"p": "n",
-"e": "corruption, formal",
-"n": ""
-},
-{
-"f": "cosa",
-"i": "/ˈko.sa/",
-"p": "n",
-"e": "thing, matter",
-"n": ""
-},
-{
-"f": "cosovan",
-"i": "/ko.ˈso.van/",
-"p": "adj",
-"e": "Kosovar",
-"n": "demonym of Cosov"
-},
-{
-"f": "costa",
-"i": "/ˈkos.ta/",
-"p": "n",
-"e": "coast",
-"n": "also the verb, to cost"
-},
-{
-"f": "costal",
-"i": "/ˈkos.tal/",
-"p": "adj",
-"e": "coastal",
-"n": "irregular adjective of costa; the rule would give costak"
-},
-{
-"f": "costarican",
-"i": "/kos.ta.ˈri.kan/",
-"p": "adj",
-"e": "Costa Rican",
-"n": "demonym of Costa Rica"
-},
-{
-"f": "costella",
-"i": "/kos.ˈte.la/",
-"p": "n",
-"e": "rib",
-"n": "costa is the coast"
-},
-{
-"f": "cotisa",
-"i": "/ko.ˈti.sa/",
-"p": "v",
-"e": "pay a share",
-"n": ""
-},
-{
-"f": "coton",
-"i": "/ˈko.ton/",
-"p": "n",
-"e": "cotton",
-"n": ""
-},
-{
-"f": "coxa",
-"i": "/ˈko.ʃa/",
-"p": "n",
-"e": "hip",
-"n": ""
-},
-{
-"f": "cra",
-"i": "/kra/",
-"p": "n",
-"e": "Christmas",
-"n": "mercat de Cra, the Christmas market"
-},
-{
-"f": "crani",
-"i": "/ˈkra.ni/",
-"p": "n",
-"e": "skull",
-"n": ""
-},
-{
-"f": "crede",
-"i": "/ˈkre.de/",
-"p": "v",
-"e": "believe",
-"n": ""
-},
-{
-"f": "credibilitate",
-"i": "/kre.di.bi.li.ˈta.te/",
-"p": "n",
-"e": "credibility",
-"n": ""
-},
-{
-"f": "creditu",
-"i": "/kre.ˈdi.tu/",
-"p": "n",
-"e": "credit",
-"n": ""
-},
-{
-"f": "creion",
-"i": "/ˈkrei.on/",
-"p": "n",
-"e": "pencil",
-"n": ""
-},
-{
-"f": "crem",
-"i": "/krem/",
-"p": "adj",
-"e": "cream",
-"n": ""
-},
-{
-"f": "crepa",
-"i": "/ˈkre.pa/",
-"p": "v",
-"e": "crack",
-"n": ""
-},
-{
-"f": "crepuscul",
-"i": "/kre.ˈpus.kul/",
-"p": "n",
-"e": "dusk",
-"n": ""
-},
-{
-"f": "cresce",
-"i": "/ˈkres.t͡ʃe/",
-"p": "v",
-"e": "grow",
-"n": ""
-},
-{
-"f": "critica",
-"i": "/kri.ˈti.ka/",
-"p": "v",
-"e": "criticise",
-"n": "carries no reproach on its own"
-},
-{
-"f": "crusta",
-"i": "/ˈkrus.ta/",
-"p": "n",
-"e": "crust",
-"n": ""
-},
-{
-"f": "cualcun",
-"i": "/ku.ˈal.kun/",
-"p": "det",
-"e": "whichever",
-"n": ""
-},
-{
-"f": "cuban",
-"i": "/ˈku.ban/",
-"p": "adj",
-"e": "Cuban",
-"n": "demonym of Cuba"
-},
-{
-"f": "cubitu",
-"i": "/ku.ˈbi.tu/",
-"p": "n",
-"e": "elbow",
-"n": ""
-},
-{
-"f": "cui",
-"i": "/ˈku.i/",
-"p": "pron",
-"e": "to whom",
-"n": ""
-},
-{
-"f": "cuie",
-"i": "/ku.ˈi.e/",
-"p": "pron",
-"e": "whose",
-"n": ""
-},
-{
-"f": "cuir",
-"i": "/ˈku.ir/",
-"p": "n",
-"e": "leather",
-"n": ""
-},
-{
-"f": "culpa",
-"i": "/ˈkul.pa/",
-"p": "n",
-"e": "fault, guilt",
-"n": ""
-},
-{
-"f": "culpabilitate",
-"i": "/kul.pa.bi.li.ˈta.te/",
-"p": "n",
-"e": "blame",
-"n": "culpa is the fault itself"
-},
-{
-"f": "cultura",
-"i": "/kul.ˈtu.ra/",
-"p": "n",
-"e": "crop",
-"n": ""
-},
-{
-"f": "cunea",
-"i": "/ku.ˈne.a/",
-"p": "v",
-"e": "nail",
-"n": ""
-},
-{
-"f": "cura",
-"i": "/ˈku.ra/",
-"p": "n",
-"e": "care",
-"n": "cura de un persone es praca"
-},
-{
-"f": "curba",
-"i": "/ˈkur.ba/",
-"p": "v",
-"e": "bend, curve, flow",
-"n": ""
-},
-{
-"f": "curiositate",
-"i": "/ku.ri.o.si.ˈta.te/",
-"p": "n",
-"e": "curiosity",
-"n": ""
-},
-{
-"f": "current",
-"i": "/ˈku.rent/",
-"p": "adj",
-"e": "current, in use",
-"n": "said of both members of a pair, and it carries no recommendation"
-},
-{
-"f": "curs",
-"i": "/kurs/",
-"p": "n",
-"e": "course, run of a thing",
-"n": "en curs, in progress"
-},
-{
-"f": "curt",
-"i": "/kurt/",
-"p": "adj",
-"e": "short",
-"n": ""
-},
-{
-"f": "curtament",
-"i": "/kur.ˈta.ment/",
-"p": "adv",
-"e": "briefly",
-"n": ""
-},
-{
-"f": "curtz",
-"i": "/kurt͡s/",
-"p": "n",
-"e": "filth, excrement",
-"n": "coarse; the polite reply is ia dan zasta"
-},
-{
-"f": "curv",
-"i": "/kurv/",
-"p": "adj",
-"e": "curved",
-"n": "of a track and of a road"
-},
-{
-"f": "cusin",
-"i": "/ˈku.sin/",
-"p": "n",
-"e": "cousin",
-"n": ""
-},
-{
-"f": "cusinete",
-"i": "/ku.si.ˈne.te/",
-"p": "n",
-"e": "bearing",
-"n": ""
-},
-{
-"f": "custa",
-"i": "/ˈkus.ta/",
-"p": "v",
-"e": "cost",
-"n": "quanto custa, what does it cost"
-},
-{
-"f": "custodi",
-"i": "/kus.ˈto.di/",
-"p": "v",
-"e": "look after, have charge of",
-"n": "cura is the care itself"
-},
-{
-"f": "custu",
-"i": "/ˈkus.tu/",
-"p": "n",
-"e": "cost",
-"n": "custa is the verb"
-},
-{
-"f": "cutzit",
-"i": "/ˈku.t͡sit/",
-"p": "n",
-"e": "knife",
-"n": ""
-},
-{
-"f": "cuvaitian",
-"i": "/ku.vai.ˈti.an/",
-"p": "adj",
-"e": "Kuwaiti",
-"n": "demonym of Cuvait"
-},
-{
-"f": "da",
-"i": "/da/",
-"p": "v",
-"e": "give, in print",
-"n": "dan in speech and in the phrasebook; da in print, and the participle dat comes from it"
-},
-{
-"f": "daca",
-"i": "/ˈda.ka/",
-"p": "conj",
-"e": "if",
-"n": ""
-},
-{
-"f": "dan",
-"i": "/dan/",
-"p": "v",
-"e": "give",
-"n": ""
-},
-{
-"f": "dane",
-"i": "/ˈda.ne/",
-"p": "adj",
-"e": "Danish",
-"n": "demonym of Danmark"
-},
-{
-"f": "dansa",
-"i": "/ˈdan.sa/",
-"p": "v",
-"e": "dance",
-"n": ""
-},
-{
-"f": "data",
-"i": "/ˈda.ta/",
-"p": "n",
-"e": "date",
-"n": ""
-},
-{
-"f": "de",
-"i": "/de/",
-"p": "prep",
-"e": "of, from",
-"n": ""
-},
-{
-"f": "de zasta",
-"i": "/de ˈzas.ta/",
-"p": "int",
-"e": "you are welcome",
-"n": "the ordinary reply to gratias"
-},
-{
-"f": "debarcader",
-"i": "/de.bar.ˈka.der/",
-"p": "n",
-"e": "jetty",
-"n": ""
-},
-{
-"f": "debate",
-"i": "/de.ˈba.te/",
-"p": "v",
-"e": "debate",
-"n": ""
-},
-{
-"f": "deber",
-"i": "/ˈde.ber/",
-"p": "n",
-"e": "duty",
-"n": "jure is the right that answers it"
-},
-{
-"f": "debitu",
-"i": "/de.ˈbi.tu/",
-"p": "n",
-"e": "debt",
-"n": ""
-},
-{
-"f": "deca",
-"i": "/ˈde.ka/",
-"p": "n",
-"e": "blanket",
-"n": ""
-},
-{
-"f": "decada",
-"i": "/de.ˈka.da/",
-"p": "n",
-"e": "decade",
-"n": ""
-},
-{
-"f": "dece",
-"i": "/ˈde.t͡ʃe/",
-"p": "num",
-"e": "ten",
-"n": "teens are formed dece-un, dece-du and so on"
-},
-{
-"f": "december",
-"i": "/de.ˈt͡ʃem.ber/",
-"p": "n",
-"e": "December",
-"n": ""
-},
-{
-"f": "decembre",
-"i": "/de.ˈt͡ʃem.bre/",
-"p": "n",
-"e": "December",
-"n": ""
-},
-{
-"f": "decene",
-"i": "/de.ˈt͡ʃe.ne/",
-"p": "n",
-"e": "ten, a group of ten",
-"n": "vinte, trinta and the rest are se decenes"
-},
-{
-"f": "deceptiun",
-"i": "/de.t͡ʃep.ˈti.un/",
-"p": "n",
-"e": "disappointment",
-"n": ""
-},
-{
-"f": "decide",
-"i": "/de.ˈt͡ʃi.de/",
-"p": "v",
-"e": "decide",
-"n": ""
-},
-{
-"f": "decimale",
-"i": "/de.t͡ʃi.ˈma.le/",
-"p": "n",
-"e": "decimal",
-"n": "lecti con punt, read with punt"
-},
-{
-"f": "decis",
-"i": "/ˈde.t͡ʃis/",
-"p": "adj",
-"e": "resolute",
-"n": ""
-},
-{
-"f": "decisiun",
-"i": "/de.t͡ʃi.ˈsi.un/",
-"p": "n",
-"e": "decision",
-"n": ""
-},
-{
-"f": "declara",
-"i": "/de.ˈkla.ra/",
-"p": "v",
-"e": "declare, state on the record",
-"n": "declara supra se onor, declare on one's honour"
-},
-{
-"f": "declaratiun",
-"i": "/de.kla.ra.ˈti.un/",
-"p": "n",
-"e": "statement",
-"n": "declara is the act; declaratiun is what stands on the record"
-},
-{
-"f": "decolla",
-"i": "/de.ˈko.la/",
-"p": "v",
-"e": "take off",
-"n": ""
-},
-{
-"f": "decret",
-"i": "/ˈde.kret/",
-"p": "n",
-"e": "decree",
-"n": ""
-},
-{
-"f": "decretu",
-"i": "/de.ˈkre.tu/",
-"p": "n",
-"e": "decree",
-"n": ""
-},
-{
-"f": "deduce",
-"i": "/de.ˈdu.t͡ʃe/",
-"p": "v",
-"e": "deduce",
-"n": ""
-},
-{
-"f": "defect",
-"i": "/ˈde.fekt/",
-"p": "n",
-"e": "defect, fault",
-"n": ""
-},
-{
-"f": "defende",
-"i": "/de.ˈfen.de/",
-"p": "v",
-"e": "defend",
-"n": ""
-},
-{
-"f": "deficite",
-"i": "/de.fi.ˈt͡ʃi.te/",
-"p": "n",
-"e": "deficit",
-"n": ""
-},
-{
-"f": "deglute",
-"i": "/de.ˈglu.te/",
-"p": "v",
-"e": "swallow",
-"n": ""
-},
-{
-"f": "dekui",
-"i": "/de.ˈku.i/",
-"p": "int",
-"e": "thank you, everyday",
-"n": "formal gratias; dekui between people who know each other"
-},
-{
-"f": "delega",
-"i": "/de.ˈle.ga/",
-"p": "v",
-"e": "delegate",
-"n": ""
-},
-{
-"f": "delegat",
-"i": "/de.ˈle.gat/",
-"p": "n",
-"e": "delegate",
-"n": ""
-},
-{
-"f": "delegatiun",
-"i": "/de.le.ga.ˈti.un/",
-"p": "n",
-"e": "delegation",
-"n": ""
-},
-{
-"f": "delibera",
-"i": "/de.li.ˈbe.ra/",
-"p": "v",
-"e": "deliberate",
-"n": "in the assemblies and in the working groups"
-},
-{
-"f": "deliberatiun",
-"i": "/de.li.be.ra.ˈti.un/",
-"p": "n",
-"e": "deliberation",
-"n": ""
-},
-{
-"f": "delictu",
-"i": "/de.ˈlik.tu/",
-"p": "n",
-"e": "offence",
-"n": ""
-},
-{
-"f": "deman",
-"i": "/ˈde.man/",
-"p": "adv",
-"e": "tomorrow",
-"n": ""
-},
-{
-"f": "demanda",
-"i": "/de.ˈman.da/",
-"p": "v",
-"e": "ask",
-"n": ""
-},
-{
-"f": "demissiona",
-"i": "/de.mi.si.ˈo.na/",
-"p": "v",
-"e": "resign",
-"n": ""
-},
-{
-"f": "demoli",
-"i": "/de.ˈmo.li/",
-"p": "v",
-"e": "demolish, pull down",
-"n": ""
-},
-{
-"f": "dens",
-"i": "/dens/",
-"p": "adj",
-"e": "dense",
-"n": "densitate is the noun"
-},
-{
-"f": "densificatiun",
-"i": "/den.si.fi.ka.ˈti.un/",
-"p": "n",
-"e": "densification",
-"n": "one word carrying several senses at once"
-},
-{
-"f": "densitate",
-"i": "/den.si.ˈta.te/",
-"p": "n",
-"e": "density",
-"n": "densificatiun is the property of the language"
-},
-{
-"f": "dent",
-"i": "/dent/",
-"p": "n",
-"e": "tooth",
-"n": "adjective dental"
-},
-{
-"f": "dentista",
-"i": "/den.ˈtis.ta/",
-"p": "n",
-"e": "dentist",
-"n": ""
-},
-{
-"f": "denuntia",
-"i": "/de.nun.ˈti.a/",
-"p": "v",
-"e": "report wrongdoing",
-"n": ""
-},
-{
-"f": "denuntiator",
-"i": "/de.nun.ti.ˈa.tor/",
-"p": "n",
-"e": "a person who reports wrongdoing",
-"n": ""
-},
-{
-"f": "depende",
-"i": "/de.ˈpen.de/",
-"p": "v",
-"e": "depend",
-"n": "depende de, hang on"
-},
-{
-"f": "dependentia",
-"i": "/de.pen.den.ˈti.a/",
-"p": "n",
-"e": "dependence",
-"n": ""
-},
-{
-"f": "depos",
-"i": "/ˈde.pos/",
-"p": "prep",
-"e": "since",
-"n": ""
-},
-{
-"f": "depositu",
-"i": "/de.po.ˈsi.tu/",
-"p": "n",
-"e": "deposit",
-"n": ""
-},
-{
-"f": "depou",
-"i": "/ˈde.pou/",
-"p": "n",
-"e": "depot",
-"n": ""
-},
-{
-"f": "deprimit",
-"i": "/de.ˈpri.mit/",
-"p": "adj",
-"e": "low, depressed",
-"n": ""
-},
-{
-"f": "deraila",
-"i": "/de.ra.ˈi.la/",
-"p": "v",
-"e": "derail",
-"n": ""
-},
-{
-"f": "derapa",
-"i": "/de.ˈra.pa/",
-"p": "v",
-"e": "skid",
-"n": ""
-},
-{
-"f": "deriva",
-"i": "/de.ˈri.va/",
-"p": "n",
-"e": "drift",
-"n": "of a boat off the lagun"
-},
-{
-"f": "derivatiun",
-"i": "/de.ri.va.ˈti.un/",
-"p": "n",
-"e": "derivation",
-"n": ""
-},
-{
-"f": "deroga",
-"i": "/de.ˈro.ga/",
-"p": "v",
-"e": "derogate",
-"n": ""
-},
-{
-"f": "desagu",
-"i": "/de.ˈsa.gu/",
-"p": "n",
-"e": "drain",
-"n": ""
-},
-{
-"f": "desapproba",
-"i": "/de.sa.ˈpro.ba/",
-"p": "v",
-"e": "disapprove",
-"n": ""
-},
-{
-"f": "descarga",
-"i": "/des.ˈkar.ga/",
-"p": "v",
-"e": "unload",
-"n": "carga is to load"
-},
-{
-"f": "descende",
-"i": "/des.ˈt͡ʃen.de/",
-"p": "v",
-"e": "descend, go down",
-"n": ""
-},
-{
-"f": "descendente",
-"i": "/des.t͡ʃen.ˈden.te/",
-"p": "n",
-"e": "descendant",
-"n": ""
-},
-{
-"f": "desconfide",
-"i": "/des.kon.ˈfi.de/",
-"p": "v",
-"e": "mistrust",
-"n": ""
-},
-{
-"f": "descontent",
-"i": "/des.ˈkon.tent/",
-"p": "adj",
-"e": "dissatisfied",
-"n": ""
-},
-{
-"f": "descriptiun",
-"i": "/des.krip.ˈti.un/",
-"p": "n",
-"e": "description",
-"n": ""
-},
-{
-"f": "descriva",
-"i": "/des.ˈkri.va/",
-"p": "v",
-"e": "describe",
-"n": ""
-},
-{
-"f": "descuraja",
-"i": "/des.ku.ˈra.ʒa/",
-"p": "v",
-"e": "discourage",
-"n": ""
-},
-{
-"f": "desembarca",
-"i": "/de.sem.ˈbar.ka/",
-"p": "v",
-"e": "alight, disembark",
-"n": ""
-},
-{
-"f": "desert",
-"i": "/ˈde.sert/",
-"p": "n",
-"e": "pudding, dessert",
-"n": ""
-},
-{
-"f": "desesperantia",
-"i": "/de.ses.pe.ran.ˈti.a/",
-"p": "n",
-"e": "despair",
-"n": ""
-},
-{
-"f": "designa",
-"i": "/de.ˈsig.na/",
-"p": "v",
-"e": "designate",
-"n": ""
-},
-{
-"f": "designatiun",
-"i": "/de.sig.na.ˈti.un/",
-"p": "n",
-"e": "designation",
-"n": "the slot a numeral fills: autovuz nove"
-},
-{
-"f": "desira",
-"i": "/de.ˈsi.ra/",
-"p": "v",
-"e": "desire, want",
-"n": "vole of a decision, desira of a wish"
-},
-{
-"f": "desjunu",
-"i": "/des.ˈʒu.nu/",
-"p": "n",
-"e": "breakfast",
-"n": ""
-},
-{
-"f": "desliga",
-"i": "/de.ˈsli.ga/",
-"p": "v",
-"e": "untie, release",
-"n": ""
-},
-{
-"f": "desminti",
-"i": "/des.ˈmin.ti/",
-"p": "v",
-"e": "contradict, deny a report",
-"n": ""
-},
-{
-"f": "desmonta",
-"i": "/des.ˈmon.ta/",
-"p": "v",
-"e": "dismantle, strip down",
-"n": ""
-},
-{
-"f": "desperat",
-"i": "/des.ˈpe.rat/",
-"p": "adj",
-"e": "desperate",
-"n": ""
-},
-{
-"f": "desperta",
-"i": "/des.ˈper.ta/",
-"p": "v",
-"e": "wake",
-"n": ""
-},
-{
-"f": "despretia",
-"i": "/des.pre.ˈti.a/",
-"p": "v",
-"e": "despise",
-"n": ""
-},
-{
-"f": "desque",
-"i": "/ˈdes.ke/",
-"p": "conj",
-"e": "since, from the time that",
-"n": ""
-},
-{
-"f": "destin",
-"i": "/ˈdes.tin/",
-"p": "n",
-"e": "fate",
-"n": ""
-},
-{
-"f": "destitue",
-"i": "/des.ti.ˈtu.e/",
-"p": "v",
-"e": "remove from office",
-"n": ""
-},
-{
-"f": "destra",
-"i": "/ˈdes.tra/",
-"p": "n",
-"e": "right hand side",
-"n": "also the adjective and the adverb; the entitlement is dret"
-},
-{
-"f": "destructiun",
-"i": "/des.truk.ˈti.un/",
-"p": "n",
-"e": "destruction",
-"n": ""
-},
-{
-"f": "desturba",
-"i": "/des.ˈtur.ba/",
-"p": "v",
-"e": "disturb, trouble",
-"n": ""
-},
-{
-"f": "desvolve",
-"i": "/des.ˈvol.ve/",
-"p": "v",
-"e": "unwrap, unroll",
-"n": ""
-},
-{
-"f": "detalie",
-"i": "/de.ta.ˈli.e/",
-"p": "n",
-"e": "detail",
-"n": "detalie de se seism opens the second segment of a warning"
-},
-{
-"f": "detecta",
-"i": "/de.ˈtek.ta/",
-"p": "v",
-"e": "detect",
-"n": ""
-},
-{
-"f": "detege",
-"i": "/de.ˈte.d͡ʒe/",
-"p": "v",
-"e": "discover, uncover",
-"n": ""
-},
-{
-"f": "determinante",
-"i": "/de.ter.mi.ˈnan.te/",
-"p": "n",
-"e": "determiner",
-"n": ""
-},
-{
-"f": "determinat",
-"i": "/de.ter.ˈmi.nat/",
-"p": "adj",
-"e": "determined",
-"n": ""
-},
-{
-"f": "detona",
-"i": "/de.ˈto.na/",
-"p": "v",
-"e": "go off, detonate",
-"n": ""
-},
-{
-"f": "detra",
-"i": "/ˈde.tra/",
-"p": "prep",
-"e": "behind",
-"n": "abaxa detra se linia zolt"
-},
-{
-"f": "deve",
-"i": "/ˈde.ve/",
-"p": "v",
-"e": "must",
-"n": ""
-},
-{
-"f": "devia",
-"i": "/de.ˈvi.a/",
-"p": "v",
-"e": "turn off, divert",
-"n": ""
-},
-{
-"f": "diagnostic",
-"i": "/di.ag.ˈnos.tik/",
-"p": "n",
-"e": "diagnosis",
-"n": ""
-},
-{
-"f": "dialectu",
-"i": "/di.a.ˈlek.tu/",
-"p": "n",
-"e": "dialect",
-"n": "the twenty sub-regions differ audibly"
-},
-{
-"f": "dialoga",
-"i": "/di.a.ˈlo.ga/",
-"p": "v",
-"e": "talk with, hold a dialogue",
-"n": ""
-},
-{
-"f": "diametru",
-"i": "/di.a.ˈme.tru/",
-"p": "n",
-"e": "diameter",
-"n": ""
-},
-{
-"f": "dice",
-"i": "/ˈdi.t͡ʃe/",
-"p": "v",
-"e": "say, state",
-"n": ""
-},
-{
-"f": "dicit",
-"i": "/ˈdi.t͡ʃit/",
-"p": "v",
-"e": "said, stated",
-"n": "the participle of dice kept in the register; dicet in ordinary print"
-},
-{
-"f": "dictionar",
-"i": "/dik.ti.ˈo.nar/",
-"p": "n",
-"e": "dictionary",
-"n": ""
-},
-{
-"f": "die",
-"i": "/ˈdi.e/",
-"p": "n",
-"e": "day",
-"n": ""
-},
-{
-"f": "die-laborabile",
-"i": "/di.e.la.bo.ra.ˈbi.le/",
-"p": "n",
-"e": "weekday",
-"n": ""
-},
-{
-"f": "dieta",
-"i": "/di.ˈe.ta/",
-"p": "n",
-"e": "diet",
-"n": ""
-},
-{
-"f": "different",
-"i": "/di.ˈfe.rent/",
-"p": "adj",
-"e": "different",
-"n": ""
-},
-{
-"f": "differentia",
-"i": "/di.fe.ren.ˈti.a/",
-"p": "n",
-"e": "difference",
-"n": ""
-},
-{
-"f": "dificil",
-"i": "/di.ˈfi.t͡ʃil/",
-"p": "adj",
-"e": "difficult",
-"n": ""
-},
-{
-"f": "dificilment",
-"i": "/di.fi.ˈt͡ʃil.ment/",
-"p": "adv",
-"e": "with difficulty",
-"n": ""
-},
-{
-"f": "dificultate",
-"i": "/di.fi.kul.ˈta.te/",
-"p": "n",
-"e": "difficulty",
-"n": ""
-},
-{
-"f": "difunde",
-"i": "/di.ˈfun.de/",
-"p": "v",
-"e": "circulate, broadcast",
-"n": ""
-},
-{
-"f": "diget",
-"i": "/ˈdi.d͡ʒet/",
-"p": "n",
-"e": "finger, toe",
-"n": ""
-},
-{
-"f": "digne",
-"i": "/ˈdig.ne/",
-"p": "adj",
-"e": "worthy",
-"n": ""
-},
-{
-"f": "dignitate",
-"i": "/dig.ni.ˈta.te/",
-"p": "n",
-"e": "dignity",
-"n": "of a person; onor of what is owed to one"
-},
-{
-"f": "diligentia",
-"i": "/di.li.d͡ʒen.ˈti.a/",
-"p": "n",
-"e": "diligence",
-"n": ""
-},
-{
-"f": "dioxi",
-"i": "/di.ˈo.ʃi/",
-"p": "n",
-"e": "dioxide",
-"n": "du dioxi carbon, two carbon dioxide"
-},
-{
-"f": "diploma",
-"i": "/di.ˈplo.ma/",
-"p": "n",
-"e": "diploma",
-"n": ""
-},
-{
-"f": "direct",
-"i": "/ˈdi.rekt/",
-"p": "adj",
-"e": "direct",
-"n": ""
-},
-{
-"f": "directament",
-"i": "/di.rek.ˈta.ment/",
-"p": "adv",
-"e": "directly",
-"n": ""
-},
-{
-"f": "directiun",
-"i": "/di.rek.ˈti.un/",
-"p": "n",
-"e": "direction",
-"n": ""
-},
-{
-"f": "directorat",
-"i": "/di.rek.ˈto.rat/",
-"p": "n",
-"e": "directorate",
-"n": "the Republic between 1948 and 1989"
-},
-{
-"f": "disciplina",
-"i": "/dis.t͡ʃi.ˈpli.na/",
-"p": "v",
-"e": "discipline",
-"n": ""
-},
-{
-"f": "discute",
-"i": "/dis.ˈku.te/",
-"p": "v",
-"e": "discuss",
-"n": ""
-},
-{
-"f": "disensu",
-"i": "/di.ˈsen.su/",
-"p": "n",
-"e": "dissent",
-"n": "printed by name in the decisions register"
-},
-{
-"f": "disolve",
-"i": "/di.ˈsol.ve/",
-"p": "v",
-"e": "dissolve a body",
-"n": ""
-},
-{
-"f": "dispare",
-"i": "/dis.ˈpa.re/",
-"p": "v",
-"e": "disappear",
-"n": ""
-},
-{
-"f": "dispersa",
-"i": "/dis.ˈper.sa/",
-"p": "v",
-"e": "scatter, spill",
-"n": ""
-},
-{
-"f": "disputa",
-"i": "/dis.ˈpu.ta/",
-"p": "n",
-"e": "dispute",
-"n": "also the verb, to dispute"
-},
-{
-"f": "distantia",
-"i": "/dis.tan.ˈti.a/",
-"p": "n",
-"e": "distance",
-"n": "distantia entre statiunes, distance between stops"
-},
-{
-"f": "distinct",
-"i": "/ˈdis.tinkt/",
-"p": "adj",
-"e": "distinct",
-"n": ""
-},
-{
-"f": "distinctiun",
-"i": "/dis.tink.ˈti.un/",
-"p": "n",
-"e": "distinction",
-"n": ""
-},
-{
-"f": "distinge",
-"i": "/dis.ˈtin.d͡ʒe/",
-"p": "v",
-"e": "distinguish, tell apart",
-"n": ""
-},
-{
-"f": "distrae",
-"i": "/dis.ˈtra.e/",
-"p": "v",
-"e": "distract",
-"n": ""
-},
-{
-"f": "distribue",
-"i": "/dis.tri.ˈbu.e/",
-"p": "v",
-"e": "distribute",
-"n": ""
-},
-{
-"f": "dite",
-"i": "/ˈdi.te/",
-"p": "n",
-"e": "child, everyday",
-"n": ""
-},
-{
-"f": "divan",
-"i": "/ˈdi.van/",
-"p": "n",
-"e": "sofa",
-"n": ""
-},
-{
-"f": "diverse",
-"i": "/di.ˈver.se/",
-"p": "det",
-"e": "several, various",
-"n": ""
-},
-{
-"f": "diversitate",
-"i": "/di.ver.si.ˈta.te/",
-"p": "n",
-"e": "diversity",
-"n": ""
-},
-{
-"f": "divis",
-"i": "/ˈdi.vis/",
-"p": "adj",
-"e": "divided",
-"n": ""
-},
-{
-"f": "divisiun",
-"i": "/di.vi.ˈsi.un/",
-"p": "n",
-"e": "division",
-"n": ""
-},
-{
-"f": "divorcia",
-"i": "/di.vor.ˈt͡ʃi.a/",
-"p": "v",
-"e": "divorce",
-"n": ""
-},
-{
-"f": "documenta",
-"i": "/do.ku.ˈmen.ta/",
-"p": "v",
-"e": "document",
-"n": ""
-},
-{
-"f": "documente",
-"i": "/do.ku.ˈmen.te/",
-"p": "n",
-"e": "document",
-"n": ""
-},
-{
-"f": "dogana",
-"i": "/do.ˈga.na/",
-"p": "n",
-"e": "customs",
-"n": "absent on the frontiers within the Bloc"
-},
-{
-"f": "dolor",
-"i": "/ˈdo.lor/",
-"p": "n",
-"e": "pain",
-"n": ""
-},
-{
-"f": "dolora",
-"i": "/do.ˈlo.ra/",
-"p": "v",
-"e": "ache, hurt",
-"n": "of a part of the body; dolor is the noun"
-},
-{
-"f": "dom",
-"i": "/dom/",
-"p": "n",
-"e": "house",
-"n": "adjective domes; the noun domes is the formal word for a dwelling"
-},
-{
-"f": "domes",
-"i": "/ˈdo.mes/",
-"p": "n",
-"e": "dwelling, formal",
-"n": ""
-},
-{
-"f": "dominica",
-"i": "/do.mi.ˈni.ka/",
-"p": "n",
-"e": "Sunday",
-"n": ""
-},
-{
-"f": "dominican",
-"i": "/do.mi.ˈni.kan/",
-"p": "adj",
-"e": "Dominican",
-"n": "demonym of Dominica"
-},
-{
-"f": "dorat",
-"i": "/ˈdo.rat/",
-"p": "adj",
-"e": "gilded, gold-coloured",
-"n": ""
-},
-{
-"f": "dormi",
-"i": "/ˈdor.mi/",
-"p": "v",
-"e": "sleep",
-"n": ""
-},
-{
-"f": "dorsu",
-"i": "/ˈdor.su/",
-"p": "n",
-"e": "spine, back",
-"n": ""
-},
-{
-"f": "dosis",
-"i": "/ˈdo.sis/",
-"p": "n",
-"e": "dose",
-"n": ""
-},
-{
-"f": "dossier",
-"i": "/do.ˈsi.er/",
-"p": "n",
-"e": "folder of papers",
-"n": ""
-},
-{
-"f": "dota",
-"i": "/ˈdo.ta/",
-"p": "v",
-"e": "endow",
-"n": ""
-},
-{
-"f": "dozena",
-"i": "/do.ˈze.na/",
-"p": "n",
-"e": "dozen",
-"n": ""
-},
-{
-"f": "dragaje",
-"i": "/dra.ˈga.ʒe/",
-"p": "n",
-"e": "dredging",
-"n": ""
-},
-{
-"f": "dret",
-"i": "/dret/",
-"p": "n",
-"e": "right, entitlement",
-"n": ""
-},
-{
-"f": "du",
-"i": "/du/",
-"p": "num",
-"e": "two",
-"n": ""
-},
-{
-"f": "dubita",
-"i": "/du.ˈbi.ta/",
-"p": "v",
-"e": "doubt",
-"n": ""
-},
-{
-"f": "dubiu",
-"i": "/du.ˈbi.u/",
-"p": "n",
-"e": "doubt",
-"n": "dubita is the verb"
-},
-{
-"f": "duce",
-"i": "/ˈdu.t͡ʃe/",
-"p": "v",
-"e": "carry, lead",
-"n": ""
-},
-{
-"f": "dulce",
-"i": "/ˈdul.t͡ʃe/",
-"p": "adj",
-"e": "sweet",
-"n": ""
-},
-{
-"f": "dum",
-"i": "/dum/",
-"p": "n",
-"e": "building",
-"n": ""
-},
-{
-"f": "dun",
-"i": "/dun/",
-"p": "n",
-"e": "dune",
-"n": "of the Ravelluri seaboard"
-},
-{
-"f": "dunque",
-"i": "/ˈdun.ke/",
-"p": "adv",
-"e": "therefore",
-"n": ""
-},
-{
-"f": "duple",
-"i": "/ˈdu.ple/",
-"p": "adj",
-"e": "double",
-"n": ""
-},
-{
-"f": "dur",
-"i": "/dur/",
-"p": "adj",
-"e": "hard",
-"n": ""
-},
-{
-"f": "dura",
-"i": "/ˈdu.ra/",
-"p": "v",
-"e": "last, take time",
-"n": ""
-},
-{
-"f": "durabilitate",
-"i": "/du.ra.bi.li.ˈta.te/",
-"p": "n",
-"e": "durability",
-"n": ""
-},
-{
-"f": "durante",
-"i": "/du.ˈran.te/",
-"p": "prep",
-"e": "during",
-"n": ""
-},
-{
-"f": "duratiun",
-"i": "/du.ra.ˈti.un/",
-"p": "n",
-"e": "duration",
-"n": ""
-},
-{
-"f": "dvere",
-"i": "/ˈdve.re/",
-"p": "n",
-"e": "door, everyday",
-"n": "porta of a building and of a gate; dvere of the doors of a vehicle"
-},
-{
-"f": "dvor",
-"i": "/dvor/",
-"p": "n",
-"e": "yard, courtyard",
-"n": ""
-},
-{
-"f": "e",
-"i": "/e/",
-"p": "conj",
-"e": "and",
-"n": ""
-},
-{
-"f": "eclesia",
-"i": "/e.kle.ˈsi.a/",
-"p": "n",
-"e": "church",
-"n": ""
-},
-{
-"f": "economia",
-"i": "/e.ko.no.ˈmi.a/",
-"p": "n",
-"e": "economy",
-"n": ""
-},
-{
-"f": "economisa",
-"i": "/e.ko.no.ˈmi.sa/",
-"p": "v",
-"e": "save, husband",
-"n": ""
-},
-{
-"f": "ecran",
-"i": "/ˈe.kran/",
-"p": "n",
-"e": "screen",
-"n": ""
-},
-{
-"f": "ecuadorian",
-"i": "/e.ku.a.do.ˈri.an/",
-"p": "adj",
-"e": "Ecuadorian",
-"n": "demonym of Ecuador"
-},
-{
-"f": "edita",
-"i": "/e.ˈdi.ta/",
-"p": "v",
-"e": "edit",
-"n": ""
-},
-{
-"f": "educa",
-"i": "/e.ˈdu.ka/",
-"p": "v",
-"e": "bring up, educate",
-"n": ""
-},
-{
-"f": "educatiun",
-"i": "/e.du.ka.ˈti.un/",
-"p": "n",
-"e": "education",
-"n": ""
-},
-{
-"f": "efect",
-"i": "/ˈe.fekt/",
-"p": "n",
-"e": "effect",
-"n": ""
-},
-{
-"f": "efectu",
-"i": "/e.ˈfek.tu/",
-"p": "n",
-"e": "effect",
-"n": ""
-},
-{
-"f": "eficacitate",
-"i": "/e.fi.ka.t͡ʃi.ˈta.te/",
-"p": "n",
-"e": "effectiveness",
-"n": "of a measure; utilitate of a thing"
-},
-{
-"f": "eftin",
-"i": "/ˈef.tin/",
-"p": "adj",
-"e": "cheap",
-"n": ""
-},
-{
-"f": "egalite",
-"i": "/e.ga.ˈli.te/",
-"p": "n",
-"e": "equality",
-"n": "egalite de tratamentu, equality of treatment"
-},
-{
-"f": "egiptian",
-"i": "/e.d͡ʒip.ˈti.an/",
-"p": "adj",
-"e": "Egyptian",
-"n": "demonym of Egipt"
-},
-{
-"f": "egoiste",
-"i": "/e.go.ˈis.te/",
-"p": "adj",
-"e": "selfish",
-"n": ""
-},
-{
-"f": "el",
-"i": "/el/",
-"p": "pron",
-"e": "he, she, it",
-"n": "no gender is marked"
-},
-{
-"f": "electrolis",
-"i": "/e.lek.ˈtro.lis/",
-"p": "n",
-"e": "electrolysis",
-"n": "de se voda salat, from the salt water"
-},
-{
-"f": "elev",
-"i": "/ˈe.lev/",
-"p": "n",
-"e": "pupil",
-"n": ""
-},
-{
-"f": "elige",
-"i": "/e.ˈli.d͡ʒe/",
-"p": "v",
-"e": "choose",
-"n": ""
-},
-{
-"f": "els",
-"i": "/els/",
-"p": "pron",
-"e": "they, them",
-"n": ""
-},
-{
-"f": "elvetian",
-"i": "/el.ve.ˈti.an/",
-"p": "adj",
-"e": "Swiss",
-"n": "demonym of Elvetia"
-},
-{
-"f": "embarca",
-"i": "/em.ˈbar.ka/",
-"p": "v",
-"e": "board",
-"n": "of a vessel; abaxa is used of a train"
-},
-{
-"f": "emergentia",
-"i": "/e.mer.d͡ʒen.ˈti.a/",
-"p": "n",
-"e": "emergency",
-"n": "urgentia of a case, emergentia of a situation"
-},
-{
-"f": "emiratan",
-"i": "/e.mi.ˈra.tan/",
-"p": "adj",
-"e": "Emirati",
-"n": "demonym of Emirat Arab"
-},
-{
-"f": "emotiun",
-"i": "/e.mo.ˈti.un/",
-"p": "n",
-"e": "emotion",
-"n": ""
-},
-{
-"f": "empleu",
-"i": "/ˈem.pleu/",
-"p": "n",
-"e": "job, post",
-"n": ""
-},
-{
-"f": "en",
-"i": "/en/",
-"p": "prep",
-"e": "in",
-"n": ""
-},
-{
-"f": "energia",
-"i": "/e.ˈner.d͡ʒa/",
-"p": "n",
-"e": "energy",
-"n": ""
-},
-{
-"f": "enorme",
-"i": "/e.ˈnor.me/",
-"p": "adj",
-"e": "huge",
-"n": ""
-},
-{
-"f": "enquesta",
-"i": "/en.ˈkes.ta/",
-"p": "n",
-"e": "survey",
-"n": ""
-},
-{
-"f": "enquesti",
-"i": "/en.ˈkes.ti/",
-"p": "v",
-"e": "survey, poll",
-"n": "enquesta is the survey itself"
-},
-{
-"f": "entra",
-"i": "/ˈen.tra/",
-"p": "v",
-"e": "enter",
-"n": ""
-},
-{
-"f": "entrada",
-"i": "/en.ˈtra.da/",
-"p": "n",
-"e": "entry in a list",
-"n": "of a lexicon or a register; sortida is the way out of a building"
-},
-{
-"f": "entusiasmu",
-"i": "/en.tu.si.ˈas.mu/",
-"p": "n",
-"e": "enthusiasm",
-"n": ""
-},
-{
-"f": "epicentru",
-"i": "/e.pi.ˈt͡ʃen.tru/",
-"p": "n",
-"e": "epicentre",
-"n": ""
-},
-{
-"f": "equipa",
-"i": "/e.ˈki.pa/",
-"p": "n",
-"e": "team, crew",
-"n": ""
-},
-{
-"f": "equitate",
-"i": "/e.ki.ˈta.te/",
-"p": "n",
-"e": "fairness",
-"n": "of a share; egalitate of a rule"
-},
-{
-"f": "equivalent",
-"i": "/e.ki.va.ˈlent/",
-"p": "adj",
-"e": "equivalent",
-"n": ""
-},
-{
-"f": "eritrean",
-"i": "/e.ri.ˈtre.an/",
-"p": "adj",
-"e": "Eritrean",
-"n": "demonym of Eritrea"
-},
-{
-"f": "eror",
-"i": "/ˈe.ror/",
-"p": "n",
-"e": "error",
-"n": ""
-},
-{
-"f": "erosiun",
-"i": "/e.ro.ˈsi.un/",
-"p": "n",
-"e": "erosion",
-"n": ""
-},
-{
-"f": "es",
-"i": "/es/",
-"p": "v",
-"e": "is, are",
-"n": "also forms the past with a participle: es cadut, has fallen"
-},
-{
-"f": "esantion",
-"i": "/e.san.ˈti.on/",
-"p": "n",
-"e": "sample",
-"n": ""
-},
-{
-"f": "escala",
-"i": "/es.ˈka.la/",
-"p": "n",
-"e": "stopover",
-"n": ""
-},
-{
-"f": "escorta",
-"i": "/es.ˈkor.ta/",
-"p": "v",
-"e": "escort, accompany",
-"n": ""
-},
-{
-"f": "espaniol",
-"i": "/es.pa.ˈni.ol/",
-"p": "adj",
-"e": "Spanish",
-"n": "demonym of Espania"
-},
-{
-"f": "est",
-"i": "/est/",
-"p": "n",
-"e": "east",
-"n": ""
-},
-{
-"f": "estate",
-"i": "/es.ˈta.te/",
-"p": "n",
-"e": "summer",
-"n": ""
-},
-{
-"f": "esti",
-"i": "/ˈes.ti/",
-"p": "pron",
-"e": "this one",
-"n": "esto is the determiner"
-},
-{
-"f": "estima",
-"i": "/es.ˈti.ma/",
-"p": "v",
-"e": "estimate",
-"n": "estimat is the adjective"
-},
-{
-"f": "estimat",
-"i": "/es.ˈti.mat/",
-"p": "adj",
-"e": "estimated",
-"n": ""
-},
-{
-"f": "esto",
-"i": "/ˈes.to/",
-"p": "det",
-"e": "this one, the said",
-"n": "used of a thing already named"
-},
-{
-"f": "estonian",
-"i": "/es.to.ˈni.an/",
-"p": "adj",
-"e": "Estonian",
-"n": "demonym of Estonia"
-},
-{
-"f": "estuariu",
-"i": "/es.tu.a.ˈri.u/",
-"p": "n",
-"e": "estuary",
-"n": "where the lagun meets the mar"
-},
-{
-"f": "esvatinan",
-"i": "/es.va.ˈti.nan/",
-"p": "adj",
-"e": "Swazi",
-"n": "demonym of Esvatini"
-},
-{
-"f": "et",
-"i": "/et/",
-"p": "det",
-"e": "this",
-"n": ""
-},
-{
-"f": "etaje",
-"i": "/e.ˈta.ʒe/",
-"p": "n",
-"e": "floor, storey",
-"n": ""
-},
-{
-"f": "etanol",
-"i": "/e.ˈta.nol/",
-"p": "n",
-"e": "ethanol",
-"n": ""
-},
-{
-"f": "etapa",
-"i": "/e.ˈta.pa/",
-"p": "n",
-"e": "stage",
-"n": ""
-},
-{
-"f": "etate",
-"i": "/e.ˈta.te/",
-"p": "n",
-"e": "age",
-"n": ""
-},
-{
-"f": "eti",
-"i": "/ˈe.ti/",
-"p": "pron",
-"e": "that one",
-"n": "et is the determiner"
-},
-{
-"f": "etiopian",
-"i": "/e.ti.o.ˈpi.an/",
-"p": "adj",
-"e": "Ethiopian",
-"n": "demonym of Etiopia"
-},
-{
-"f": "euro",
-"i": "/ˈeu.ro/",
-"p": "n",
-"e": "euro",
-"n": "of foreign funds and of accounts kept outside the Republic"
-},
-{
-"f": "europei",
-"i": "/eu.ro.ˈpe.i/",
-"p": "adj",
-"e": "European",
-"n": "of the Union outside the Republic: fondus europei"
-},
-{
-"f": "-ev",
-"i": "",
-"p": "suf",
-"e": "attributive form, irregular nouns only",
-"n": ""
-},
-{
-"f": "evacua",
-"i": "/e.va.ˈku.a/",
-"p": "v",
-"e": "evacuate",
-"n": ""
-},
-{
-"f": "evalua",
-"i": "/e.va.ˈlu.a/",
-"p": "v",
-"e": "evaluate",
-"n": ""
-},
-{
-"f": "evapora",
-"i": "/e.va.ˈpo.ra/",
-"p": "v",
-"e": "evaporate",
-"n": ""
-},
-{
-"f": "evident",
-"i": "/e.ˈvi.dent/",
-"p": "adj",
-"e": "evident",
-"n": "evidentia is the noun"
-},
-{
-"f": "evidentament",
-"i": "/e.vi.den.ˈta.ment/",
-"p": "adv",
-"e": "evidently",
-"n": ""
-},
-{
-"f": "evidentia",
-"i": "/e.vi.den.ˈti.a/",
-"p": "n",
-"e": "evidence",
-"n": ""
-},
-{
-"f": "evita",
-"i": "/e.ˈvi.ta/",
-"p": "v",
-"e": "avoid",
-"n": "evita se linia zolt, keep off the yellow line"
-},
-{
-"f": "ex-",
-"i": "",
-"p": "pref",
-"e": "former",
-"n": "ex-ministru, the former minister"
-},
-{
-"f": "exact",
-"i": "/ˈe.ʃakt/",
-"p": "adj",
-"e": "exact",
-"n": ""
-},
-{
-"f": "exactament",
-"i": "/e.ʃak.ˈta.ment/",
-"p": "adv",
-"e": "exactly",
-"n": ""
-},
-{
-"f": "examen",
-"i": "/e.ˈʃa.men/",
-"p": "n",
-"e": "examination",
-"n": ""
-},
-{
-"f": "examina",
-"i": "/e.ʃa.ˈmi.na/",
-"p": "v",
-"e": "examine",
-"n": "examen is the examination"
-},
-{
-"f": "excedente",
-"i": "/eʃ.t͡ʃe.ˈden.te/",
-"p": "n",
-"e": "surplus",
-"n": ""
-},
-{
-"f": "excellent",
-"i": "/eʃ.ˈt͡ʃe.lent/",
-"p": "adj",
-"e": "excellent",
-"n": ""
-},
-{
-"f": "exceptiun",
-"i": "/eʃ.t͡ʃep.ˈti.un/",
-"p": "n",
-"e": "exception",
-"n": ""
-},
-{
-"f": "excepto",
-"i": "/eʃ.ˈt͡ʃep.to/",
-"p": "conj",
-"e": "except that",
-"n": ""
-},
-{
-"f": "exclama",
-"i": "/eʃ.ˈkla.ma/",
-"p": "v",
-"e": "exclaim",
-"n": ""
-},
-{
-"f": "exclude",
-"i": "/eʃ.ˈklu.de/",
-"p": "v",
-"e": "exclude",
-"n": ""
-},
-{
-"f": "executiv",
-"i": "/e.ʃe.ˈku.tiv/",
-"p": "adj",
-"e": "executive",
-"n": ""
-},
-{
-"f": "exemplifica",
-"i": "/e.ʃem.pli.ˈfi.ka/",
-"p": "v",
-"e": "give an example of",
-"n": "exemplu is the example"
-},
-{
-"f": "exemplu",
-"i": "/e.ˈʃem.plu/",
-"p": "n",
-"e": "example",
-"n": ""
-},
-{
-"f": "exercita",
-"i": "/e.ʃer.ˈt͡ʃi.ta/",
-"p": "v",
-"e": "exercise a function",
-"n": ""
-},
-{
-"f": "exercitiu",
-"i": "/e.ʃer.t͡ʃi.ˈti.u/",
-"p": "n",
-"e": "physical exercise",
-"n": "exercita is the verb"
-},
-{
-"f": "exi",
-"i": "/ˈe.ʃi/",
-"p": "v",
-"e": "go out",
-"n": ""
-},
-{
-"f": "existe",
-"i": "/e.ˈʃis.te/",
-"p": "v",
-"e": "exist",
-"n": ""
-},
-{
-"f": "existentia",
-"i": "/e.ʃis.ten.ˈti.a/",
-"p": "n",
-"e": "existence",
-"n": ""
-},
-{
-"f": "expedi",
-"i": "/eʃ.ˈpe.di/",
-"p": "v",
-"e": "dispatch",
-"n": ""
-},
-{
-"f": "experientia",
-"i": "/eʃ.pe.ri.en.ˈti.a/",
-"p": "n",
-"e": "experience",
-"n": "of a person; proba of a trial run"
-},
-{
-"f": "explica",
-"i": "/eʃ.ˈpli.ka/",
-"p": "v",
-"e": "explain",
-"n": ""
-},
-{
-"f": "explicatiun",
-"i": "/eʃ.pli.ka.ˈti.un/",
-"p": "n",
-"e": "explanation",
-"n": ""
-},
-{
-"f": "expone",
-"i": "/eʃ.ˈpo.ne/",
-"p": "v",
-"e": "set out, expound",
-"n": ""
-},
-{
-"f": "exporta",
-"i": "/eʃ.ˈpor.ta/",
-"p": "v",
-"e": "export",
-"n": ""
-},
-{
-"f": "expresiun",
-"i": "/eʃ.pre.ˈsi.un/",
-"p": "n",
-"e": "expression",
-"n": ""
-},
-{
-"f": "extern",
-"i": "/ˈeʃ.tern/",
-"p": "adj",
-"e": "external",
-"n": ""
-},
-{
-"f": "extra",
-"i": "/ˈeʃ.tra/",
-"p": "prep",
-"e": "outside",
-"n": ""
-},
-{
-"f": "fa",
-"i": "/fa/",
-"p": "v",
-"e": "do, make, run",
-"n": "se tren fa statiun, the train stops"
-},
-{
-"f": "fabrica",
-"i": "/fa.ˈbri.ka/",
-"p": "n",
-"e": "factory",
-"n": ""
-},
-{
-"f": "facie",
-"i": "/ˈfa.t͡ʃe/",
-"p": "n",
-"e": "face",
-"n": ""
-},
-{
-"f": "facil",
-"i": "/ˈfa.t͡ʃil/",
-"p": "adj",
-"e": "light, easy",
-"n": ""
-},
-{
-"f": "facilitate",
-"i": "/fa.t͡ʃi.li.ˈta.te/",
-"p": "n",
-"e": "ease",
-"n": ""
-},
-{
-"f": "facilment",
-"i": "/fa.ˈt͡ʃil.ment/",
-"p": "adv",
-"e": "easily",
-"n": ""
-},
-{
-"f": "facit",
-"i": "/ˈfa.t͡ʃit/",
-"p": "v",
-"e": "done, occurred",
-"n": "participle of fa on the eastern seaboard; fat elsewhere"
-},
-{
-"f": "fact",
-"i": "/fakt/",
-"p": "n",
-"e": "fact, deed",
-"n": ""
-},
-{
-"f": "factura",
-"i": "/fak.ˈtu.ra/",
-"p": "n",
-"e": "invoice",
-"n": ""
-},
-{
-"f": "facturisa",
-"i": "/fak.tu.ˈri.sa/",
-"p": "v",
-"e": "invoice, make out a bill",
-"n": "factura is the invoice"
-},
-{
-"f": "facultate",
-"i": "/fa.kul.ˈta.te/",
-"p": "n",
-"e": "faculty",
-"n": ""
-},
-{
-"f": "falcata",
-"i": "/fal.ˈka.ta/",
-"p": "n",
-"e": "stride",
-"n": ""
-},
-{
-"f": "falli",
-"i": "/ˈfa.li/",
-"p": "v",
-"e": "fail, go under",
-"n": ""
-},
-{
-"f": "fals",
-"i": "/fals/",
-"p": "adj",
-"e": "false",
-"n": ""
-},
-{
-"f": "false",
-"i": "/ˈfal.se/",
-"p": "adj",
-"e": "wrong, false",
-"n": ""
-},
-{
-"f": "falsment",
-"i": "/ˈfals.ment/",
-"p": "adv",
-"e": "falsely",
-"n": ""
-},
-{
-"f": "falta",
-"i": "/ˈfal.ta/",
-"p": "n",
-"e": "error, fault",
-"n": "falta of a person; defect of a thing"
-},
-{
-"f": "fam",
-"i": "/fam/",
-"p": "n",
-"e": "hunger",
-"n": ""
-},
-{
-"f": "familia",
-"i": "/fa.mi.ˈli.a/",
-"p": "n",
-"e": "family",
-"n": "adjective familiar"
-},
-{
-"f": "far",
-"i": "/far/",
-"p": "n",
-"e": "lighthouse",
-"n": ""
-},
-{
-"f": "farina",
-"i": "/fa.ˈri.na/",
-"p": "n",
-"e": "flour",
-"n": ""
-},
-{
-"f": "farmacia",
-"i": "/far.ˈma.t͡ʃa/",
-"p": "n",
-"e": "pharmacy",
-"n": ""
-},
-{
-"f": "farmacista",
-"i": "/far.ma.ˈt͡ʃis.ta/",
-"p": "n",
-"e": "pharmacist",
-"n": "farmacia is the shop"
-},
-{
-"f": "fase",
-"i": "/ˈfa.se/",
-"p": "n",
-"e": "phase",
-"n": ""
-},
-{
-"f": "fat",
-"i": "/fat/",
-"p": "v",
-"e": "done, made",
-"n": "the standard participle of fa; facit on the eastern seaboard"
-},
-{
-"f": "fatiga",
-"i": "/fa.ˈti.ga/",
-"p": "v",
-"e": "tire, wear out",
-"n": ""
-},
-{
-"f": "fatigat",
-"i": "/fa.ˈti.gat/",
-"p": "adj",
-"e": "tired",
-"n": ""
-},
-{
-"f": "favor",
-"i": "/ˈfa.vor/",
-"p": "n",
-"e": "favour",
-"n": "per favor, please"
-},
-{
-"f": "febre",
-"i": "/ˈfe.bre/",
-"p": "n",
-"e": "fever",
-"n": ""
-},
-{
-"f": "februar",
-"i": "/fe.ˈbru.ar/",
-"p": "n",
-"e": "February",
-"n": ""
-},
-{
-"f": "fed",
-"i": "/fed/",
-"p": "adj",
-"e": "ugly",
-"n": ""
-},
-{
-"f": "federatiun",
-"i": "/fe.de.ra.ˈti.un/",
-"p": "n",
-"e": "federation",
-"n": ""
-},
-{
-"f": "felice",
-"i": "/fe.ˈli.t͡ʃe/",
-"p": "adj",
-"e": "happy",
-"n": ""
-},
-{
-"f": "felicita",
-"i": "/fe.li.ˈt͡ʃi.ta/",
-"p": "v",
-"e": "congratulate",
-"n": "felicitatiun is the noun"
-},
-{
-"f": "felicitate",
-"i": "/fe.li.t͡ʃi.ˈta.te/",
-"p": "n",
-"e": "happiness",
-"n": "felicita is to congratulate"
-},
-{
-"f": "femin",
-"i": "/ˈfe.min/",
-"p": "n",
-"e": "woman",
-"n": ""
-},
-{
-"f": "fenestra",
-"i": "/fe.ˈnes.tra/",
-"p": "n",
-"e": "window, formal",
-"n": "everyday okna; fenestra survives in building law"
-},
-{
-"f": "fere",
-"i": "/ˈfe.re/",
-"p": "v",
-"e": "carry, bear",
-"n": ""
-},
-{
-"f": "fermatura",
-"i": "/fer.ma.ˈtu.ra/",
-"p": "n",
-"e": "zip",
-"n": ""
-},
-{
-"f": "feta",
-"i": "/ˈfe.ta/",
-"p": "v",
-"e": "stink",
-"n": ""
-},
-{
-"f": "fiabilitate",
-"i": "/fi.a.bi.li.ˈta.te/",
-"p": "n",
-"e": "reliability",
-"n": "of stock and of a service"
-},
-{
-"f": "figatu",
-"i": "/fi.ˈga.tu/",
-"p": "n",
-"e": "liver",
-"n": ""
-},
-{
-"f": "fijian",
-"i": "/fi.ˈʒi.an/",
-"p": "adj",
-"e": "Fijian",
-"n": "demonym of Fiji"
-},
-{
-"f": "fila",
-"i": "/ˈfi.la/",
-"p": "n",
-"e": "queue, formal",
-"n": ""
-},
-{
-"f": "filia",
-"i": "/fi.ˈli.a/",
-"p": "n",
-"e": "daughter",
-"n": ""
-},
-{
-"f": "filipinian",
-"i": "/fi.li.pi.ˈni.an/",
-"p": "adj",
-"e": "Filipino",
-"n": "demonym of Filipin"
-},
-{
-"f": "filiu",
-"i": "/fi.ˈli.u/",
-"p": "n",
-"e": "son",
-"n": ""
-},
-{
-"f": "film",
-"i": "/film/",
-"p": "n",
-"e": "film",
-"n": ""
-},
-{
-"f": "filolog",
-"i": "/fi.ˈlo.log/",
-"p": "n",
-"e": "philologist",
-"n": ""
-},
-{
-"f": "filtra",
-"i": "/ˈfil.tra/",
-"p": "v",
-"e": "filter, strain",
-"n": ""
-},
-{
-"f": "fin",
-"i": "/fin/",
-"p": "n",
-"e": "end",
-"n": ""
-},
-{
-"f": "fin-de-septimana",
-"i": "/fin.de.sep.ti.ˈma.na/",
-"p": "n",
-"e": "weekend",
-"n": ""
-},
-{
-"f": "final",
-"i": "/ˈfi.nal/",
-"p": "adj",
-"e": "final",
-"n": ""
-},
-{
-"f": "finalment",
-"i": "/fi.ˈnal.ment/",
-"p": "adv",
-"e": "at last, finally",
-"n": ""
-},
-{
-"f": "finansa",
-"i": "/fi.ˈnan.sa/",
-"p": "v",
-"e": "finance",
-"n": ""
-},
-{
-"f": "fini",
-"i": "/ˈfi.ni/",
-"p": "v",
-"e": "finish",
-"n": ""
-},
-{
-"f": "finit",
-"i": "/ˈfi.nit/",
-"p": "adj",
-"e": "finished",
-"n": ""
-},
-{
-"f": "finlande",
-"i": "/fin.ˈlan.de/",
-"p": "adj",
-"e": "Finnish",
-"n": "demonym of Finland"
-},
-{
-"f": "fiscalisa",
-"i": "/fis.ka.ˈli.sa/",
-"p": "v",
-"e": "oversee the accounts of",
-"n": ""
-},
-{
-"f": "fisic",
-"i": "/ˈfi.sik/",
-"p": "adj",
-"e": "physical",
-"n": "progres fisic, work visible on the ground"
-},
-{
-"f": "fisica",
-"i": "/fi.ˈsi.ka/",
-"p": "n",
-"e": "physics",
-"n": ""
-},
-{
-"f": "fisura",
-"i": "/fi.ˈsu.ra/",
-"p": "v",
-"e": "crack open, fissure",
-"n": ""
-},
-{
-"f": "fixa",
-"i": "/ˈfi.ʃa/",
-"p": "adj",
-"e": "fixed",
-"n": ""
-},
-{
-"f": "fixat",
-"i": "/fi.ˈʃat/",
-"p": "adj",
-"e": "made fast, secured",
-"n": "fixa is fixed by design; fixat is fixed by somebody"
-},
-{
-"f": "flexibile",
-"i": "/fle.ʃi.ˈbi.le/",
-"p": "adj",
-"e": "flexible",
-"n": ""
-},
-{
-"f": "flor",
-"i": "/flor/",
-"p": "n",
-"e": "flower",
-"n": "adjective floral"
-},
-{
-"f": "flori",
-"i": "/ˈflo.ri/",
-"p": "v",
-"e": "bloom, flower",
-"n": "flor is the flower"
-},
-{
-"f": "flotatiun",
-"i": "/flo.ta.ˈti.un/",
-"p": "n",
-"e": "floating",
-"n": ""
-},
-{
-"f": "flue",
-"i": "/ˈflu.e/",
-"p": "v",
-"e": "flow, run",
-"n": ""
-},
-{
-"f": "fluidian",
-"i": "/flu.i.ˈdi.an/",
-"p": "adj",
-"e": "Fluidian",
-"n": ""
-},
-{
-"f": "foc",
-"i": "/fok/",
-"p": "n",
-"e": "fire",
-"n": "adjective focar"
-},
-{
-"f": "fode",
-"i": "/ˈfo.de/",
-"p": "v",
-"e": "dig",
-"n": "of ground; demoli of a structure"
-},
-{
-"f": "folia",
-"i": "/fo.ˈli.a/",
-"p": "n",
-"e": "leaf",
-"n": ""
-},
-{
-"f": "fonda",
-"i": "/ˈfon.da/",
-"p": "v",
-"e": "found, establish",
-"n": "fondatiun is the noun"
-},
-{
-"f": "fonde",
-"i": "/ˈfon.de/",
-"p": "v",
-"e": "melt",
-"n": ""
-},
-{
-"f": "fondu",
-"i": "/ˈfon.du/",
-"p": "n",
-"e": "fund",
-"n": ""
-},
-{
-"f": "foras",
-"i": "/ˈfo.ras/",
-"p": "adv",
-"e": "outside",
-"n": ""
-},
-{
-"f": "forja",
-"i": "/ˈfor.ʒa/",
-"p": "v",
-"e": "forge",
-"n": ""
-},
-{
-"f": "forma",
-"i": "/ˈfor.ma/",
-"p": "n",
-"e": "form, shape",
-"n": ""
-},
-{
-"f": "formal",
-"i": "/ˈfor.mal/",
-"p": "adj",
-"e": "formal",
-"n": "of register; the register lists the formal member of each pair"
-},
-{
-"f": "formatiun",
-"i": "/for.ma.ˈti.un/",
-"p": "n",
-"e": "training",
-"n": ""
-},
-{
-"f": "formular",
-"i": "/for.ˈmu.lar/",
-"p": "n",
-"e": "form to be filled in",
-"n": ""
-},
-{
-"f": "fornu",
-"i": "/ˈfor.nu/",
-"p": "n",
-"e": "oven, stove",
-"n": ""
-},
-{
-"f": "forsa",
-"i": "/ˈfor.sa/",
-"p": "n",
-"e": "force, effect",
-"n": "en vigor in the written instrument; en forsa in the broadcast"
-},
-{
-"f": "forsi",
-"i": "/ˈfor.si/",
-"p": "adv",
-"e": "perhaps",
-"n": ""
-},
-{
-"f": "fort",
-"i": "/fort/",
-"p": "adj",
-"e": "strong",
-"n": ""
-},
-{
-"f": "fortament",
-"i": "/for.ˈta.ment/",
-"p": "adv",
-"e": "strongly",
-"n": ""
-},
-{
-"f": "fortuna",
-"i": "/for.ˈtu.na/",
-"p": "n",
-"e": "luck",
-"n": ""
-},
-{
-"f": "fosil",
-"i": "/ˈfo.sil/",
-"p": "adj",
-"e": "fossilised, kept from an older rule",
-"n": ""
-},
-{
-"f": "foto",
-"i": "/ˈfo.to/",
-"p": "n",
-"e": "photograph",
-"n": ""
-},
-{
-"f": "fractiun",
-"i": "/frak.ˈti.un/",
-"p": "n",
-"e": "fraction",
-"n": ""
-},
-{
-"f": "fractura",
-"i": "/frak.ˈtu.ra/",
-"p": "n",
-"e": "fracture",
-"n": "os is the bone"
-},
-{
-"f": "fragilitate",
-"i": "/fra.d͡ʒi.li.ˈta.te/",
-"p": "n",
-"e": "fragility",
-"n": ""
-},
-{
-"f": "france",
-"i": "/ˈfran.t͡ʃe/",
-"p": "adj",
-"e": "French",
-"n": ""
-},
-{
-"f": "fras",
-"i": "/fras/",
-"p": "n",
-"e": "sentence",
-"n": ""
-},
-{
-"f": "frate",
-"i": "/ˈfra.te/",
-"p": "n",
-"e": "brother",
-"n": "adjective fratern"
-},
-{
-"f": "frecventa",
-"i": "/frek.ˈven.ta/",
-"p": "v",
-"e": "attend regularly",
-"n": ""
-},
-{
-"f": "fren",
-"i": "/fren/",
-"p": "n",
-"e": "brake",
-"n": "frena is the act and the instruction; fren is the handle and the gear"
-},
-{
-"f": "frena",
-"i": "/ˈfre.na/",
-"p": "v",
-"e": "brake",
-"n": ""
-},
-{
-"f": "frequent",
-"i": "/ˈfre.kent/",
-"p": "adj",
-"e": "frequent",
-"n": "frequentia is the noun"
-},
-{
-"f": "frequentament",
-"i": "/fre.ken.ˈta.ment/",
-"p": "adv",
-"e": "frequently",
-"n": ""
-},
-{
-"f": "frequentia",
-"i": "/fre.ken.ˈti.a/",
-"p": "n",
-"e": "frequency",
-"n": "of a service and of a sound"
-},
-{
-"f": "fresc",
-"i": "/fresk/",
-"p": "adj",
-"e": "fresh",
-"n": ""
-},
-{
-"f": "fricta",
-"i": "/ˈfrik.ta/",
-"p": "v",
-"e": "rub",
-"n": ""
-},
-{
-"f": "frige",
-"i": "/ˈfri.d͡ʒe/",
-"p": "v",
-"e": "fry, roast",
-"n": ""
-},
-{
-"f": "frigider",
-"i": "/fri.ˈd͡ʒi.der/",
-"p": "n",
-"e": "fridge",
-"n": ""
-},
-{
-"f": "fronte",
-"i": "/ˈfron.te/",
-"p": "n",
-"e": "forehead",
-"n": "under se capu"
-},
-{
-"f": "frontiera",
-"i": "/fron.ti.ˈe.ra/",
-"p": "n",
-"e": "frontier",
-"n": ""
-},
-{
-"f": "fruct",
-"i": "/frukt/",
-"p": "n",
-"e": "fruit",
-"n": ""
-},
-{
-"f": "frustra",
-"i": "/ˈfrus.tra/",
-"p": "adv",
-"e": "in vain",
-"n": ""
-},
-{
-"f": "frustrat",
-"i": "/ˈfrus.trat/",
-"p": "adj",
-"e": "frustrated",
-"n": ""
-},
-{
-"f": "frustratiun",
-"i": "/frus.tra.ˈti.un/",
-"p": "n",
-"e": "frustration",
-"n": ""
-},
-{
-"f": "fuge",
-"i": "/ˈfu.d͡ʒe/",
-"p": "v",
-"e": "flee, run off",
-"n": ""
-},
-{
-"f": "fulger",
-"i": "/ˈful.d͡ʒer/",
-"p": "n",
-"e": "lightning",
-"n": ""
-},
-{
-"f": "fum",
-"i": "/fum/",
-"p": "n",
-"e": "smoke",
-"n": ""
-},
-{
-"f": "fuma",
-"i": "/ˈfu.ma/",
-"p": "v",
-"e": "smoke",
-"n": ""
-},
-{
-"f": "functiun",
-"i": "/funk.ˈti.un/",
-"p": "n",
-"e": "function",
-"n": ""
-},
-{
-"f": "furceta",
-"i": "/fur.ˈt͡ʃe.ta/",
-"p": "n",
-"e": "fork",
-"n": ""
-},
-{
-"f": "furios",
-"i": "/fu.ˈri.os/",
-"p": "adj",
-"e": "furious",
-"n": "irat is the milder word"
-},
-{
-"f": "furnitor",
-"i": "/fur.ˈni.tor/",
-"p": "n",
-"e": "supplier",
-"n": ""
-},
-{
-"f": "fusibile",
-"i": "/fu.si.ˈbi.le/",
-"p": "n",
-"e": "fuse",
-"n": ""
-},
-{
-"f": "fusiona",
-"i": "/fu.si.ˈo.na/",
-"p": "v",
-"e": "merge",
-"n": ""
-},
-{
-"f": "fusta",
-"i": "/ˈfus.ta/",
-"p": "n",
-"e": "skirt",
-"n": ""
-},
-{
-"f": "futur",
-"i": "/ˈfu.tur/",
-"p": "n",
-"e": "future",
-"n": ""
-},
-{
-"f": "gabone",
-"i": "/ga.ˈbo.ne/",
-"p": "adj",
-"e": "Gabonese",
-"n": "demonym of Gabon"
-},
-{
-"f": "galbe",
-"i": "/ˈgal.be/",
-"p": "adj",
-"e": "yellow",
-"n": "zolt is the everyday form in the east and on the platforms"
-},
-{
-"f": "gallina",
-"i": "/ga.ˈli.na/",
-"p": "n",
-"e": "hen",
-"n": ""
-},
-{
-"f": "gamba",
-"i": "/ˈgam.ba/",
-"p": "n",
-"e": "leg",
-"n": ""
-},
-{
-"f": "gambian",
-"i": "/gam.ˈbi.an/",
-"p": "adj",
-"e": "Gambian",
-"n": "demonym of Gambia"
-},
-{
-"f": "ganan",
-"i": "/ˈga.nan/",
-"p": "adj",
-"e": "Ghanaian",
-"n": "demonym of Gana"
-},
-{
-"f": "garage",
-"i": "/ga.ˈra.d͡ʒe/",
-"p": "n",
-"e": "garage",
-"n": ""
-},
-{
-"f": "garanti",
-"i": "/ga.ˈran.ti/",
-"p": "v",
-"e": "guarantee",
-"n": "garanti se qualitate, guarantee the quality"
-},
-{
-"f": "gargata",
-"i": "/gar.ˈga.ta/",
-"p": "n",
-"e": "throat",
-"n": ""
-},
-{
-"f": "gat",
-"i": "/gat/",
-"p": "n",
-"e": "cat",
-"n": ""
-},
-{
-"f": "gaudiu",
-"i": "/ga.u.ˈdi.u/",
-"p": "n",
-"e": "joy",
-"n": ""
-},
-{
-"f": "gaz",
-"i": "/gaz/",
-"p": "n",
-"e": "gas",
-"n": ""
-},
-{
-"f": "gel",
-"i": "/d͡ʒel/",
-"p": "n",
-"e": "cold",
-"n": ""
-},
-{
-"f": "geli",
-"i": "/ˈd͡ʒe.li/",
-"p": "v",
-"e": "freeze",
-"n": "gel is the cold"
-},
-{
-"f": "gemelle",
-"i": "/d͡ʒe.ˈme.le/",
-"p": "n",
-"e": "twin",
-"n": ""
-},
-{
-"f": "gena",
-"i": "/ˈd͡ʒe.na/",
-"p": "n",
-"e": "cheek",
-"n": ""
-},
-{
-"f": "general",
-"i": "/d͡ʒe.ˈne.ral/",
-"p": "adj",
-"e": "general",
-"n": ""
-},
-{
-"f": "generalisa",
-"i": "/d͡ʒe.ne.ra.ˈli.sa/",
-"p": "v",
-"e": "generalise",
-"n": ""
-},
-{
-"f": "generalment",
-"i": "/d͡ʒe.ne.ˈral.ment/",
-"p": "adv",
-"e": "generally",
-"n": ""
-},
-{
-"f": "generator",
-"i": "/d͡ʒe.ne.ˈra.tor/",
-"p": "n",
-"e": "generator",
-"n": ""
-},
-{
-"f": "generos",
-"i": "/d͡ʒe.ˈne.ros/",
-"p": "adj",
-"e": "generous",
-"n": ""
-},
-{
-"f": "gent",
-"i": "/d͡ʒent/",
-"p": "n",
-"e": "people",
-"n": ""
-},
-{
-"f": "gentilic",
-"i": "/d͡ʒen.ˈti.lik/",
-"p": "n",
-"e": "demonym",
-"n": ""
-},
-{
-"f": "genu",
-"i": "/ˈd͡ʒe.nu/",
-"p": "n",
-"e": "knee",
-"n": ""
-},
-{
-"f": "german",
-"i": "/ˈd͡ʒer.man/",
-"p": "adj",
-"e": "German",
-"n": ""
-},
-{
-"f": "germina",
-"i": "/d͡ʒer.ˈmi.na/",
-"p": "v",
-"e": "sprout",
-"n": ""
-},
-{
-"f": "gira",
-"i": "/ˈd͡ʒi.ra/",
-"p": "v",
-"e": "turn, rotate",
-"n": ""
-},
-{
-"f": "glacie",
-"i": "/ˈgla.t͡ʃe/",
-"p": "n",
-"e": "ice",
-"n": "adjective glacial"
-},
-{
-"f": "glosa",
-"i": "/ˈglo.sa/",
-"p": "n",
-"e": "gloss",
-"n": "also the verb, to gloss"
-},
-{
-"f": "glossariu",
-"i": "/glo.sa.ˈri.u/",
-"p": "n",
-"e": "glossary",
-"n": ""
-},
-{
-"f": "gola",
-"i": "/ˈgo.la/",
-"p": "n",
-"e": "gorge",
-"n": ""
-},
-{
-"f": "golfu",
-"i": "/ˈgol.fu/",
-"p": "n",
-"e": "gulf",
-"n": ""
-},
-{
-"f": "grad",
-"i": "/grad/",
-"p": "n",
-"e": "step, degree",
-"n": ""
-},
-{
-"f": "gradatim",
-"i": "/gra.ˈda.tim/",
-"p": "adv",
-"e": "little by little",
-"n": ""
-},
-{
-"f": "gram",
-"i": "/gram/",
-"p": "n",
-"e": "gram",
-"n": ""
-},
-{
-"f": "gramatica",
-"i": "/gra.ma.ˈti.ka/",
-"p": "n",
-"e": "grammar",
-"n": ""
-},
-{
-"f": "granariu",
-"i": "/gra.na.ˈri.u/",
-"p": "n",
-"e": "barn",
-"n": ""
-},
-{
-"f": "grande",
-"i": "/ˈgran.de/",
-"p": "adj",
-"e": "large",
-"n": ""
-},
-{
-"f": "granul",
-"i": "/ˈgra.nul/",
-"p": "n",
-"e": "grain of a surface",
-"n": ""
-},
-{
-"f": "grata",
-"i": "/ˈgra.ta/",
-"p": "v",
-"e": "scratch",
-"n": ""
-},
-{
-"f": "gratia",
-"i": "/gra.ˈti.a/",
-"p": "v",
-"e": "thank",
-"n": ""
-},
-{
-"f": "gratias",
-"i": "/gra.ˈti.as/",
-"p": "int",
-"e": "thank you",
-"n": ""
-},
-{
-"f": "gratie",
-"i": "/gra.ˈti.e/",
-"p": "int",
-"e": "thank you",
-"n": "the older platform recording ends on it"
-},
-{
-"f": "gratis",
-"i": "/ˈgra.tis/",
-"p": "adv",
-"e": "free of charge",
-"n": "gratuit is the adjective"
-},
-{
-"f": "gratuit",
-"i": "/gra.ˈtu.it/",
-"p": "adj",
-"e": "free of charge",
-"n": ""
-},
-{
-"f": "gratuitament",
-"i": "/gra.tu.i.ˈta.ment/",
-"p": "adv",
-"e": "free of charge",
-"n": "gratis is the shorter everyday form"
-},
-{
-"f": "grav",
-"i": "/grav/",
-"p": "adj",
-"e": "grave, serious",
-"n": ""
-},
-{
-"f": "gravament",
-"i": "/gra.ˈva.ment/",
-"p": "adv",
-"e": "seriously",
-"n": ""
-},
-{
-"f": "gravidantia",
-"i": "/gra.vi.dan.ˈti.a/",
-"p": "n",
-"e": "pregnancy",
-"n": ""
-},
-{
-"f": "gravitate",
-"i": "/gra.vi.ˈta.te/",
-"p": "n",
-"e": "seriousness",
-"n": "of a matter; peso of a weight"
-},
-{
-"f": "grec",
-"i": "/grek/",
-"p": "adj",
-"e": "Greek",
-"n": ""
-},
-{
-"f": "grenadan",
-"i": "/gre.ˈna.dan/",
-"p": "adj",
-"e": "Grenadian",
-"n": "demonym of Grenada"
-},
-{
-"f": "greva",
-"i": "/ˈgre.va/",
-"p": "v",
-"e": "take strike action",
-"n": "greve is the strike itself"
-},
-{
-"f": "gripa",
-"i": "/ˈgri.pa/",
-"p": "n",
-"e": "flu",
-"n": ""
-},
-{
-"f": "gris",
-"i": "/gris/",
-"p": "adj",
-"e": "grey",
-"n": ""
-},
-{
-"f": "gros",
-"i": "/gros/",
-"p": "adj",
-"e": "thick",
-"n": ""
-},
-{
-"f": "grosier",
-"i": "/gro.ˈsi.er/",
-"p": "adj",
-"e": "coarse",
-"n": ""
-},
-{
-"f": "gruia",
-"i": "/gru.ˈi.a/",
-"p": "n",
-"e": "crane",
-"n": ""
-},
-{
-"f": "grupe",
-"i": "/ˈgru.pe/",
-"p": "n",
-"e": "group",
-"n": ""
-},
-{
-"f": "gruzian",
-"i": "/gru.ˈzi.an/",
-"p": "adj",
-"e": "Georgian",
-"n": "demonym of Gruzia"
-},
-{
-"f": "guant",
-"i": "/ˈgu.ant/",
-"p": "n",
-"e": "glove",
-"n": ""
-},
-{
-"f": "guatemaltec",
-"i": "/gu.a.te.ˈmal.tek/",
-"p": "adj",
-"e": "Guatemalan",
-"n": "demonym of Guatemala"
-},
-{
-"f": "guianan",
-"i": "/gu.i.ˈa.nan/",
-"p": "adj",
-"e": "Guyanese",
-"n": "demonym of Guiana"
-},
-{
-"f": "guinean",
-"i": "/gu.i.ˈne.an/",
-"p": "adj",
-"e": "Guinean",
-"n": "demonym of Guinea"
-},
-{
-"f": "guinean ecuatorial",
-"i": "/gu.i.ˈne.an e.ku.a.to.ˈri.al/",
-"p": "adj",
-"e": "Equatorial Guinean",
-"n": "demonym of Guinea Ecuatorial"
-},
-{
-"f": "guisatu",
-"i": "/gu.i.ˈsa.tu/",
-"p": "n",
-"e": "stew",
-"n": ""
-},
-{
-"f": "gust",
-"i": "/gust/",
-"p": "n",
-"e": "taste, flavour",
-"n": ""
-},
-{
-"f": "gusta",
-"i": "/ˈgus.ta/",
-"p": "v",
-"e": "taste",
-"n": ""
-},
-{
-"f": "gutta",
-"i": "/ˈgu.ta/",
-"p": "v",
-"e": "drip",
-"n": ""
-},
-{
-"f": "guvern",
-"i": "/ˈgu.vern/",
-"p": "n",
-"e": "government",
-"n": ""
-},
-{
-"f": "habita",
-"i": "/ha.ˈbi.ta/",
-"p": "v",
-"e": "live in, inhabit",
-"n": ""
-},
-{
-"f": "habitante",
-"i": "/ha.bi.ˈtan.te/",
-"p": "n",
-"e": "inhabitant",
-"n": ""
-},
-{
-"f": "habitatiun",
-"i": "/ha.bi.ta.ˈti.un/",
-"p": "n",
-"e": "housing",
-"n": "habita is to live in a place; habitatiun is the stock and the office that keeps it"
-},
-{
-"f": "haitian",
-"i": "/hai.ˈti.an/",
-"p": "adj",
-"e": "Haitian",
-"n": "demonym of Haiti"
-},
-{
-"f": "halta",
-"i": "/ˈhal.ta/",
-"p": "v",
-"e": "halt, come to a stand",
-"n": ""
-},
-{
-"f": "hasard",
-"i": "/ˈha.sard/",
-"p": "n",
-"e": "chance",
-"n": "sorti is the draw by lot"
-},
-{
-"f": "herba",
-"i": "/ˈher.ba/",
-"p": "n",
-"e": "grass",
-"n": ""
-},
-{
-"f": "herbe",
-"i": "/ˈher.be/",
-"p": "n",
-"e": "culinary herb",
-"n": ""
-},
-{
-"f": "hereda",
-"i": "/he.ˈre.da/",
-"p": "v",
-"e": "inherit",
-"n": "heredat of a form carried over from an older stage"
-},
-{
-"f": "heri",
-"i": "/ˈhe.ri/",
-"p": "adv",
-"e": "yesterday",
-"n": ""
-},
-{
-"f": "hesita",
-"i": "/he.ˈsi.ta/",
-"p": "v",
-"e": "hesitate",
-"n": ""
-},
-{
-"f": "hesitant",
-"i": "/he.ˈsi.tant/",
-"p": "adj",
-"e": "hesitant",
-"n": "hesita is the verb"
-},
-{
-"f": "hiza",
-"i": "/ˈhi.za/",
-"p": "n",
-"e": "dwelling, everyday",
-"n": ""
-},
-{
-"f": "hodie",
-"i": "/ho.ˈdi.e/",
-"p": "adv",
-"e": "today",
-"n": ""
-},
-{
-"f": "homin",
-"i": "/ˈho.min/",
-"p": "n",
-"e": "man",
-"n": ""
-},
-{
-"f": "homologa",
-"i": "/ho.mo.ˈlo.ga/",
-"p": "v",
-"e": "approve formally",
-"n": ""
-},
-{
-"f": "honduran",
-"i": "/hon.ˈdu.ran/",
-"p": "adj",
-"e": "Honduran",
-"n": "demonym of Honduras"
-},
-{
-"f": "hora",
-"i": "/ˈho.ra/",
-"p": "n",
-"e": "hour",
-"n": ""
-},
-{
-"f": "hora praca",
-"i": "/ˈho.ra ˈpra.ka/",
-"p": "n",
-"e": "working hour",
-"n": "the linking de drops in this compound"
-},
-{
-"f": "horizontal",
-"i": "/ho.ri.ˈzon.tal/",
-"p": "adj",
-"e": "horizontal",
-"n": ""
-},
-{
-"f": "hospita",
-"i": "/hos.ˈpi.ta/",
-"p": "v",
-"e": "put up, host",
-"n": "of a household putting someone up"
-},
-{
-"f": "hospite",
-"i": "/hos.ˈpi.te/",
-"p": "n",
-"e": "guest",
-"n": ""
-},
-{
-"f": "hospoda",
-"i": "/hos.ˈpo.da/",
-"p": "n",
-"e": "pub, everyday",
-"n": "formal taberna"
-},
-{
-"f": "hotel",
-"i": "/ˈho.tel/",
-"p": "n",
-"e": "hotel",
-"n": ""
-},
-{
-"f": "hrvat",
-"i": "/hrvat/",
-"p": "adj",
-"e": "Croatian",
-"n": "demonym of Hrvatia"
-},
-{
-"f": "huclav",
-"i": "/ˈhu.klav/",
-"p": "adj",
-"e": "hungry",
-"n": "the base of the place name Huclavy"
-},
-{
-"f": "huclava",
-"i": "/hu.ˈkla.va/",
-"p": "n",
-"e": "the hungry one",
-"n": "from huclav, and the base the place name Huclavy is argued from"
-},
-{
-"f": "ia",
-"i": "/ja/",
-"p": "pron",
-"e": "I, emphatic subject",
-"n": "the ordinary subject is me; ia is used for stress and in set phrases"
-},
-{
-"f": "idea",
-"i": "/i.ˈde.a/",
-"p": "n",
-"e": "idea",
-"n": ""
-},
-{
-"f": "idem",
-"i": "/ˈi.dem/",
-"p": "pron",
-"e": "the same one",
-"n": ""
-},
-{
-"f": "identifica",
-"i": "/i.den.ti.ˈfi.ka/",
-"p": "v",
-"e": "identify",
-"n": ""
-},
-{
-"f": "identitate",
-"i": "/i.den.ti.ˈta.te/",
-"p": "n",
-"e": "identity",
-"n": "carta de identitate, identity card"
-},
-{
-"f": "idrogen",
-"i": "/i.ˈdro.d͡ʒen/",
-"p": "n",
-"e": "hydrogen",
-"n": ""
-},
-{
-"f": "iemenian",
-"i": "/je.me.ˈni.an/",
-"p": "adj",
-"e": "Yemeni",
-"n": "demonym of Iemen"
-},
-{
-"f": "ignorantia",
-"i": "/ig.no.ran.ˈti.a/",
-"p": "n",
-"e": "ignorance",
-"n": ""
-},
-{
-"f": "imagina",
-"i": "/i.ma.ˈd͡ʒi.na/",
-"p": "v",
-"e": "imagine",
-"n": ""
-},
-{
-"f": "immediat",
-"i": "/i.me.ˈdi.at/",
-"p": "adj",
-"e": "immediate",
-"n": ""
-},
-{
-"f": "immediatament",
-"i": "/i.me.di.a.ˈta.ment/",
-"p": "adv",
-"e": "immediately",
-"n": "statim is the shorter form"
-},
-{
-"f": "immersiun",
-"i": "/i.mer.ˈsi.un/",
-"p": "n",
-"e": "sinking",
-"n": "cade is the general word"
-},
-{
-"f": "impatiente",
-"i": "/im.pa.ti.ˈen.te/",
-"p": "adj",
-"e": "impatient",
-"n": ""
-},
-{
-"f": "impatientia",
-"i": "/im.pa.ti.en.ˈti.a/",
-"p": "n",
-"e": "impatience",
-"n": ""
-},
-{
-"f": "implicatiun",
-"i": "/im.pli.ka.ˈti.un/",
-"p": "n",
-"e": "implication",
-"n": ""
-},
-{
-"f": "implora",
-"i": "/im.ˈplo.ra/",
-"p": "v",
-"e": "beg, plead",
-"n": ""
-},
-{
-"f": "importa",
-"i": "/im.ˈpor.ta/",
-"p": "v",
-"e": "import",
-"n": ""
-},
-{
-"f": "important",
-"i": "/im.ˈpor.tant/",
-"p": "adj",
-"e": "important",
-"n": ""
-},
-{
-"f": "impresiun",
-"i": "/im.pre.ˈsi.un/",
-"p": "n",
-"e": "impression",
-"n": ""
-},
-{
-"f": "imprimante",
-"i": "/im.pri.ˈman.te/",
-"p": "n",
-"e": "printer",
-"n": "imprime is the verb"
-},
-{
-"f": "imprime",
-"i": "/im.ˈpri.me/",
-"p": "v",
-"e": "print",
-"n": ""
-},
-{
-"f": "imunitate",
-"i": "/i.mu.ni.ˈta.te/",
-"p": "n",
-"e": "immunity",
-"n": ""
-},
-{
-"f": "incendiu",
-"i": "/in.t͡ʃen.ˈdi.u/",
-"p": "n",
-"e": "fire, as an event",
-"n": ""
-},
-{
-"f": "incertitudine",
-"i": "/in.t͡ʃer.ti.tu.ˈdi.ne/",
-"p": "n",
-"e": "uncertainty",
-"n": ""
-},
-{
-"f": "inclina",
-"i": "/in.ˈkli.na/",
-"p": "v",
-"e": "tilt, lean",
-"n": ""
-},
-{
-"f": "inclus",
-"i": "/ˈin.klus/",
-"p": "conj",
-"e": "including",
-"n": ""
-},
-{
-"f": "incompetentia",
-"i": "/in.kom.pe.ten.ˈti.a/",
-"p": "n",
-"e": "incompetence",
-"n": ""
-},
-{
-"f": "incontra",
-"i": "/in.ˈkon.tra/",
-"p": "v",
-"e": "meet",
-"n": ""
-},
-{
-"f": "incuraja",
-"i": "/in.ku.ˈra.ʒa/",
-"p": "v",
-"e": "encourage",
-"n": ""
-},
-{
-"f": "indemnisa",
-"i": "/in.dem.ˈni.sa/",
-"p": "v",
-"e": "indemnify",
-"n": ""
-},
-{
-"f": "independentia",
-"i": "/in.de.pen.den.ˈti.a/",
-"p": "n",
-"e": "independence",
-"n": ""
-},
-{
-"f": "indian",
-"i": "/in.ˈdi.an/",
-"p": "adj",
-"e": "Indian",
-"n": "demonym of India"
-},
-{
-"f": "indica",
-"i": "/in.ˈdi.ka/",
-"p": "v",
-"e": "point out, indicate",
-"n": "se signa indica se sortida, the sign points to the exit"
-},
-{
-"f": "indicatiun",
-"i": "/in.di.ka.ˈti.un/",
-"p": "n",
-"e": "indication",
-"n": ""
-},
-{
-"f": "indifferent",
-"i": "/in.di.ˈfe.rent/",
-"p": "adj",
-"e": "indifferent",
-"n": ""
-},
-{
-"f": "indirect",
-"i": "/in.ˈdi.rekt/",
-"p": "adj",
-"e": "indirect",
-"n": ""
-},
-{
-"f": "indirectament",
-"i": "/in.di.rek.ˈta.ment/",
-"p": "adv",
-"e": "indirectly",
-"n": ""
-},
-{
-"f": "individual",
-"i": "/in.di.vi.ˈdu.al/",
-"p": "adj",
-"e": "individual",
-"n": ""
-},
-{
-"f": "individualment",
-"i": "/in.di.vi.du.ˈal.ment/",
-"p": "adv",
-"e": "individually",
-"n": ""
-},
-{
-"f": "indonesian",
-"i": "/in.do.ne.ˈsi.an/",
-"p": "adj",
-"e": "Indonesian",
-"n": "demonym of Indonesia"
-},
-{
-"f": "induce",
-"i": "/in.ˈdu.t͡ʃe/",
-"p": "v",
-"e": "infer",
-"n": ""
-},
-{
-"f": "industria",
-"i": "/in.dus.ˈtri.a/",
-"p": "n",
-"e": "industry",
-"n": ""
-},
-{
-"f": "industrial",
-"i": "/in.dus.ˈtri.al/",
-"p": "adj",
-"e": "industrial",
-"n": ""
-},
-{
-"f": "infant",
-"i": "/ˈin.fant/",
-"p": "n",
-"e": "child, formal register",
-"n": ""
-},
-{
-"f": "infectiun",
-"i": "/in.fek.ˈti.un/",
-"p": "n",
-"e": "infection",
-"n": ""
-},
-{
-"f": "infirmier",
-"i": "/in.fir.ˈmi.er/",
-"p": "n",
-"e": "nurse",
-"n": ""
-},
-{
-"f": "influentia",
-"i": "/in.flu.en.ˈti.a/",
-"p": "n",
-"e": "influence",
-"n": ""
-},
-{
-"f": "informal",
-"i": "/in.ˈfor.mal/",
-"p": "adj",
-"e": "informal",
-"n": "noformal is the regular derivation; informal is what print keeps"
-},
-{
-"f": "informatiun",
-"i": "/in.for.ma.ˈti.un/",
-"p": "n",
-"e": "information",
-"n": "se sistem public de informatiun, the public information system"
-},
-{
-"f": "infra",
-"i": "/ˈin.fra/",
-"p": "adv",
-"e": "below",
-"n": ""
-},
-{
-"f": "ingenua",
-"i": "/in.d͡ʒe.ˈnu.a/",
-"p": "v",
-"e": "kneel",
-"n": ""
-},
-{
-"f": "ingranaje",
-"i": "/in.gra.ˈna.ʒe/",
-"p": "n",
-"e": "gear",
-"n": ""
-},
-{
-"f": "ingrassu",
-"i": "/in.ˈgra.su/",
-"p": "n",
-"e": "fertiliser",
-"n": ""
-},
-{
-"f": "inimic",
-"i": "/i.ˈni.mik/",
-"p": "n",
-"e": "enemy",
-"n": ""
-},
-{
-"f": "initial",
-"i": "/i.ni.ˈti.al/",
-"p": "adj",
-"e": "initial",
-"n": ""
-},
-{
-"f": "initialment",
-"i": "/i.ni.ti.ˈal.ment/",
-"p": "adv",
-"e": "initially",
-"n": ""
-},
-{
-"f": "injust",
-"i": "/ˈin.ʒust/",
-"p": "adj",
-"e": "unjust",
-"n": ""
-},
-{
-"f": "injustitia",
-"i": "/in.ʒus.ti.ˈti.a/",
-"p": "n",
-"e": "injustice",
-"n": ""
-},
-{
-"f": "inocentia",
-"i": "/i.no.t͡ʃen.ˈti.a/",
-"p": "n",
-"e": "innocence",
-"n": "presumed until the corte rules"
-},
-{
-"f": "inquiet",
-"i": "/in.ˈki.et/",
-"p": "adj",
-"e": "restless",
-"n": "quiet is the opposite"
-},
-{
-"f": "inquietudine",
-"i": "/in.ki.e.tu.ˈdi.ne/",
-"p": "n",
-"e": "worry",
-"n": "inquiet is the adjective"
-},
-{
-"f": "inscriva",
-"i": "/ins.ˈkri.va/",
-"p": "v",
-"e": "enrol, put on a roll",
-"n": "inscriva vos te se lista, put your name on the list"
-},
-{
-"f": "insect",
-"i": "/ˈin.sekt/",
-"p": "n",
-"e": "insect",
-"n": ""
-},
-{
-"f": "insiste",
-"i": "/in.ˈsis.te/",
-"p": "v",
-"e": "insist",
-"n": ""
-},
-{
-"f": "inspecta",
-"i": "/ins.ˈpek.ta/",
-"p": "v",
-"e": "inspect",
-"n": ""
-},
-{
-"f": "inspectiun",
-"i": "/ins.pek.ˈti.un/",
-"p": "n",
-"e": "inspection",
-"n": "inspecta is the act; inspectiun is the round and the report it leaves"
-},
-{
-"f": "instructiun",
-"i": "/ins.truk.ˈti.un/",
-"p": "n",
-"e": "instruction",
-"n": ""
-},
-{
-"f": "instrue",
-"i": "/ins.ˈtru.e/",
-"p": "v",
-"e": "teach",
-"n": ""
-},
-{
-"f": "instrument",
-"i": "/ins.ˈtru.ment/",
-"p": "n",
-"e": "tool, instrument",
-"n": ""
-},
-{
-"f": "insula",
-"i": "/in.ˈsu.la/",
-"p": "n",
-"e": "island",
-"n": ""
-},
-{
-"f": "insult",
-"i": "/ˈin.sult/",
-"p": "n",
-"e": "insult",
-"n": ""
-},
-{
-"f": "insulta",
-"i": "/in.ˈsul.ta/",
-"p": "v",
-"e": "insult",
-"n": ""
-},
-{
-"f": "integr",
-"i": "/ˈin.tegr/",
-"p": "adj",
-"e": "whole, entire",
-"n": ""
-},
-{
-"f": "integra",
-"i": "/in.ˈte.gra/",
-"p": "v",
-"e": "integrate",
-"n": ""
-},
-{
-"f": "integratiun",
-"i": "/in.te.gra.ˈti.un/",
-"p": "n",
-"e": "integration",
-"n": ""
-},
-{
-"f": "integritate",
-"i": "/in.te.gri.ˈta.te/",
-"p": "n",
-"e": "integrity",
-"n": ""
-},
-{
-"f": "intende",
-"i": "/in.ˈten.de/",
-"p": "v",
-"e": "intend",
-"n": ""
-},
-{
-"f": "intens",
-"i": "/ˈin.tens/",
-"p": "adj",
-"e": "intense",
-"n": "intensitate is the noun"
-},
-{
-"f": "intensitate",
-"i": "/in.ten.si.ˈta.te/",
-"p": "n",
-"e": "intensity",
-"n": ""
-},
-{
-"f": "intentiun",
-"i": "/in.ten.ˈti.un/",
-"p": "n",
-"e": "intention",
-"n": ""
-},
-{
-"f": "inter",
-"i": "/ˈin.ter/",
-"p": "prep",
-"e": "among, between",
-"n": ""
-},
-{
-"f": "interdice",
-"i": "/in.ter.ˈdi.t͡ʃe/",
-"p": "v",
-"e": "ban, forbid by order",
-"n": "prohibe is the general word"
-},
-{
-"f": "interes",
-"i": "/in.ˈte.res/",
-"p": "n",
-"e": "interest",
-"n": "of a subject and of a stake held"
-},
-{
-"f": "interferentia",
-"i": "/in.ter.fe.ren.ˈti.a/",
-"p": "n",
-"e": "interference",
-"n": ""
-},
-{
-"f": "interim",
-"i": "/in.ˈte.rim/",
-"p": "adv",
-"e": "meanwhile",
-"n": "interim, tena se linia, meanwhile, hold the line"
-},
-{
-"f": "intermediar",
-"i": "/in.ter.me.ˈdi.ar/",
-"p": "n",
-"e": "broker",
-"n": ""
-},
-{
-"f": "internal",
-"i": "/in.ˈter.nal/",
-"p": "adj",
-"e": "inland, internal",
-"n": ""
-},
-{
-"f": "international",
-"i": "/in.ter.na.ti.ˈo.nal/",
-"p": "adj",
-"e": "international",
-"n": ""
-},
-{
-"f": "interpela",
-"i": "/in.ter.ˈpe.la/",
-"p": "v",
-"e": "put a question to a body",
-"n": ""
-},
-{
-"f": "interpreta",
-"i": "/in.ter.ˈpre.ta/",
-"p": "v",
-"e": "interpret, translate aloud",
-"n": "the Ossira service is the largest in the country"
-},
-{
-"f": "interpretatiun",
-"i": "/in.ter.pre.ta.ˈti.un/",
-"p": "n",
-"e": "interpretation",
-"n": "the Ossira service is the largest in the country"
-},
-{
-"f": "interroga",
-"i": "/in.te.ˈro.ga/",
-"p": "v",
-"e": "question, interrogate",
-"n": ""
-},
-{
-"f": "interruptor",
-"i": "/in.te.ˈrup.tor/",
-"p": "n",
-"e": "switch",
-"n": ""
-},
-{
-"f": "intervalu",
-"i": "/in.ter.ˈva.lu/",
-"p": "n",
-"e": "interval",
-"n": ""
-},
-{
-"f": "intima",
-"i": "/in.ˈti.ma/",
-"p": "v",
-"e": "serve notice on",
-"n": ""
-},
-{
-"f": "intimitate",
-"i": "/in.ti.mi.ˈta.te/",
-"p": "n",
-"e": "privacy",
-"n": "of a dwelling and of a letter"
-},
-{
-"f": "intitula",
-"i": "/in.ti.ˈtu.la/",
-"p": "v",
-"e": "head, give a title to",
-"n": ""
-},
-{
-"f": "intra",
-"i": "/ˈin.tra/",
-"p": "prep",
-"e": "within",
-"n": ""
-},
-{
-"f": "intrevidi",
-"i": "/in.tre.ˈvi.di/",
-"p": "v",
-"e": "glimpse",
-"n": ""
-},
-{
-"f": "intus",
-"i": "/ˈin.tus/",
-"p": "adv",
-"e": "inside",
-"n": ""
-},
-{
-"f": "inunda",
-"i": "/i.ˈnun.da/",
-"p": "v",
-"e": "flood",
-"n": "inundatiun is the noun"
-},
-{
-"f": "inundatiun",
-"i": "/i.nun.da.ˈti.un/",
-"p": "n",
-"e": "flood",
-"n": ""
-},
-{
-"f": "invalida",
-"i": "/in.va.ˈli.da/",
-"p": "v",
-"e": "invalidate",
-"n": ""
-},
-{
-"f": "inventiun",
-"i": "/in.ven.ˈti.un/",
-"p": "n",
-"e": "invention",
-"n": ""
-},
-{
-"f": "invern",
-"i": "/ˈin.vern/",
-"p": "n",
-"e": "winter",
-"n": ""
-},
-{
-"f": "invernaculu",
-"i": "/in.ver.na.ˈku.lu/",
-"p": "n",
-"e": "greenhouse",
-"n": ""
-},
-{
-"f": "investa",
-"i": "/in.ˈves.ta/",
-"p": "v",
-"e": "invest",
-"n": ""
-},
-{
-"f": "investiga",
-"i": "/in.ves.ˈti.ga/",
-"p": "v",
-"e": "investigate",
-"n": ""
-},
-{
-"f": "investigatiun",
-"i": "/in.ves.ti.ga.ˈti.un/",
-"p": "n",
-"e": "investigation",
-"n": ""
-},
-{
-"f": "invidia",
-"i": "/in.vi.ˈdi.a/",
-"p": "v",
-"e": "envy",
-"n": ""
-},
-{
-"f": "invidios",
-"i": "/in.vi.ˈdi.os/",
-"p": "adj",
-"e": "envious",
-"n": ""
-},
-{
-"f": "invita",
-"i": "/in.ˈvi.ta/",
-"p": "v",
-"e": "invite",
-"n": ""
-},
-{
-"f": "iordanian",
-"i": "/jor.da.ˈni.an/",
-"p": "adj",
-"e": "Jordanian",
-"n": "demonym of Iordan"
-},
-{
-"f": "iosmen",
-"i": "/ˈjos.men/",
-"p": "adj",
-"e": "Iosmenian",
-"n": ""
-},
-{
-"f": "ipse",
-"i": "/ˈip.se/",
-"p": "pron",
-"e": "himself, herself, itself",
-"n": "emphatic, never reflexive"
-},
-{
-"f": "ir",
-"i": "/ir/",
-"p": "v",
-"e": "go",
-"n": ""
-},
-{
-"f": "iracian",
-"i": "/i.ˈra.t͡ʃan/",
-"p": "adj",
-"e": "Iraqi",
-"n": "demonym of Irac"
-},
-{
-"f": "iranian",
-"i": "/i.ra.ˈni.an/",
-"p": "adj",
-"e": "Iranian",
-"n": "demonym of Iran"
-},
-{
-"f": "irat",
-"i": "/ˈi.rat/",
-"p": "adj",
-"e": "angry",
-"n": ""
-},
-{
-"f": "irlande",
-"i": "/ir.ˈlan.de/",
-"p": "adj",
-"e": "Irish",
-"n": "demonym of Irlanda"
-},
-{
-"f": "irregular",
-"i": "/i.re.ˈgu.lar/",
-"p": "adj",
-"e": "irregular",
-"n": ""
-},
-{
-"f": "irrigatiun",
-"i": "/i.ri.ga.ˈti.un/",
-"p": "n",
-"e": "irrigation",
-"n": ""
-},
-{
-"f": "irritat",
-"i": "/i.ˈri.tat/",
-"p": "adj",
-"e": "irritated",
-"n": ""
-},
-{
-"f": "islande",
-"i": "/i.ˈslan.de/",
-"p": "adj",
-"e": "Icelandic",
-"n": "demonym of Island"
-},
-{
-"f": "isola",
-"i": "/i.ˈso.la/",
-"p": "v",
-"e": "insulate",
-"n": "isolatiun is the noun"
-},
-{
-"f": "isolatiun",
-"i": "/i.so.la.ˈti.un/",
-"p": "n",
-"e": "insulation",
-"n": ""
-},
-{
-"f": "isolator",
-"i": "/i.so.ˈla.tor/",
-"p": "n",
-"e": "insulator",
-"n": "isola is the verb"
-},
-{
-"f": "israelian",
-"i": "/i.sra.e.ˈli.an/",
-"p": "adj",
-"e": "Israeli",
-"n": "demonym of Israel"
-},
-{
-"f": "istoria",
-"i": "/is.to.ˈri.a/",
-"p": "n",
-"e": "story, history",
-"n": "adjective istoric"
-},
-{
-"f": "istoric",
-"i": "/is.ˈto.rik/",
-"p": "adj",
-"e": "historical",
-"n": ""
-},
-{
-"f": "italian",
-"i": "/i.ta.ˈli.an/",
-"p": "adj",
-"e": "Italian",
-"n": ""
-},
-{
-"f": "itere",
-"i": "/i.ˈte.re/",
-"p": "adv",
-"e": "again",
-"n": "re- prefixed to the verb does the same work"
-},
-{
-"f": "ivorian",
-"i": "/i.vo.ˈri.an/",
-"p": "adj",
-"e": "Ivorian",
-"n": "demonym of Costa Ivor"
-},
-{
-"f": "ja",
-"i": "/ʒa/",
-"p": "adv",
-"e": "already",
-"n": ""
-},
-{
-"f": "jaca",
-"i": "/ˈʒa.ka/",
-"p": "n",
-"e": "jacket",
-"n": ""
-},
-{
-"f": "jace",
-"i": "/ˈʒa.t͡ʃe/",
-"p": "v",
-"e": "lie down",
-"n": ""
-},
-{
-"f": "jamaican",
-"i": "/ʒa.ˈmai.kan/",
-"p": "adj",
-"e": "Jamaican",
-"n": "demonym of Jamaica"
-},
-{
-"f": "jamas",
-"i": "/ˈʒa.mas/",
-"p": "adv",
-"e": "never",
-"n": ""
-},
-{
-"f": "januar",
-"i": "/ʒa.ˈnu.ar/",
-"p": "n",
-"e": "January",
-"n": ""
-},
-{
-"f": "japone",
-"i": "/ʒa.ˈpo.ne/",
-"p": "adj",
-"e": "Japanese",
-"n": ""
-},
-{
-"f": "jardin",
-"i": "/ˈʒar.din/",
-"p": "n",
-"e": "garden",
-"n": ""
-},
-{
-"f": "jecta",
-"i": "/ˈʒek.ta/",
-"p": "v",
-"e": "throw",
-"n": ""
-},
-{
-"f": "jibutan",
-"i": "/ʒi.ˈbu.tan/",
-"p": "adj",
-"e": "Djiboutian",
-"n": "demonym of Jibuti"
-},
-{
-"f": "jidlo",
-"i": "/ˈʒi.dlo/",
-"p": "n",
-"e": "food, a meal, everyday",
-"n": ""
-},
-{
-"f": "jizdaie",
-"i": "/ʒiz.da.ˈi.e/",
-"p": "int",
-"e": "the tram is coming, a child's word",
-"n": "informal, of the jizde family, said when the tram appears"
-},
-{
-"f": "jizdator",
-"i": "/ʒiz.ˈda.tor/",
-"p": "n",
-"e": "rider, passenger",
-"n": "plural jizdatores"
-},
-{
-"f": "jizde",
-"i": "/ˈʒiz.de/",
-"p": "v",
-"e": "ride, riding",
-"n": "noun and verb alike"
-},
-{
-"f": "jizdent",
-"i": "/ˈʒiz.dent/",
-"p": "v",
-"e": "they ride, informal",
-"n": "jizdont on the eastern seaboard; jizdent in the west"
-},
-{
-"f": "jizder",
-"i": "/ˈʒiz.der/",
-"p": "n",
-"e": "the one who rides, informal",
-"n": "jizdator in the register; jizder in speech among family"
-},
-{
-"f": "jizdez",
-"i": "/ˈʒiz.dez/",
-"p": "v",
-"e": "ride, said to a carriage, informal",
-"n": "addressed to a whole carriage at once"
-},
-{
-"f": "jizdons",
-"i": "/ˈʒiz.dons/",
-"p": "v",
-"e": "we ride, let us ride, informal",
-"n": ""
-},
-{
-"f": "jizdont",
-"i": "/ˈʒiz.dont/",
-"p": "v",
-"e": "they ride, informal",
-"n": ""
-},
-{
-"f": "jizdu",
-"i": "/ˈʒiz.du/",
-"p": "n",
-"e": "the ride; get off, informal",
-"n": "kept for family and for people who will laugh; abaxa is the word for anybody else"
-},
-{
-"f": "joc",
-"i": "/ʒok/",
-"p": "n",
-"e": "game",
-"n": ""
-},
-{
-"f": "jovi",
-"i": "/ˈʒo.vi/",
-"p": "n",
-"e": "Thursday",
-"n": ""
-},
-{
-"f": "judica",
-"i": "/ʒu.ˈdi.ka/",
-"p": "v",
-"e": "judge",
-"n": "of a court and of a person forming a view"
-},
-{
-"f": "judiciar",
-"i": "/ʒu.ˈdi.t͡ʃar/",
-"p": "adj",
-"e": "judicial",
-"n": ""
-},
-{
-"f": "judiciu",
-"i": "/ʒu.di.ˈt͡ʃi.u/",
-"p": "n",
-"e": "judgement",
-"n": ""
-},
-{
-"f": "judicium",
-"i": "/ʒu.di.ˈt͡ʃi.um/",
-"p": "n",
-"e": "judgment, final",
-"n": "judica is the act; judicium is the judgment that closes a case"
-},
-{
-"f": "juga",
-"i": "/ˈʒu.ga/",
-"p": "v",
-"e": "play",
-"n": ""
-},
-{
-"f": "juli",
-"i": "/ˈʒu.li/",
-"p": "n",
-"e": "July",
-"n": ""
-},
-{
-"f": "julie",
-"i": "/ʒu.ˈli.e/",
-"p": "n",
-"e": "July",
-"n": ""
-},
-{
-"f": "junctiun",
-"i": "/ʒunk.ˈti.un/",
-"p": "n",
-"e": "junction, joint",
-"n": "junctiun de balconu, the joint where a balcony meets the wall"
-},
-{
-"f": "juni",
-"i": "/ˈʒu.ni/",
-"p": "n",
-"e": "June",
-"n": ""
-},
-{
-"f": "junie",
-"i": "/ʒu.ˈni.e/",
-"p": "n",
-"e": "June",
-"n": ""
-},
-{
-"f": "junto",
-"i": "/ˈʒun.to/",
-"p": "adv",
-"e": "together",
-"n": ""
-},
-{
-"f": "jura",
-"i": "/ˈʒu.ra/",
-"p": "v",
-"e": "swear, take an oath",
-"n": "before a court and at the taking of an office"
-},
-{
-"f": "jure",
-"i": "/ˈʒu.re/",
-"p": "n",
-"e": "right, law",
-"n": "the Constitution uses it of a right held"
-},
-{
-"f": "juri",
-"i": "/ˈʒu.ri/",
-"p": "n",
-"e": "jury",
-"n": ""
-},
-{
-"f": "jurisdictiun",
-"i": "/ʒu.ris.dik.ˈti.un/",
-"p": "n",
-"e": "jurisdiction",
-"n": ""
-},
-{
-"f": "jurnal",
-"i": "/ˈʒur.nal/",
-"p": "n",
-"e": "newspaper",
-"n": ""
-},
-{
-"f": "just",
-"i": "/ʒust/",
-"p": "adj",
-"e": "just",
-"n": "of a share and of a ruling"
-},
-{
-"f": "justament",
-"i": "/ʒus.ˈta.ment/",
-"p": "adv",
-"e": "justly",
-"n": ""
-},
-{
-"f": "justificatiun",
-"i": "/ʒus.ti.fi.ka.ˈti.un/",
-"p": "n",
-"e": "justification",
-"n": ""
-},
-{
-"f": "justitia",
-"i": "/ʒus.ti.ˈti.a/",
-"p": "n",
-"e": "justice",
-"n": ""
-},
-{
-"f": "juven",
-"i": "/ˈʒu.ven/",
-"p": "adj",
-"e": "young",
-"n": ""
-},
-{
-"f": "juventa",
-"i": "/ʒu.ˈven.ta/",
-"p": "n",
-"e": "youth, young people",
-"n": ""
-},
-{
-"f": "juxta",
-"i": "/ˈʒuʃ.ta/",
-"p": "prep",
-"e": "beside, next to",
-"n": ""
-},
-{
-"f": "kancel",
-"i": "/ˈkan.t͡ʃel/",
-"p": "n",
-"e": "office as a room, everyday",
-"n": "formal officiu, which is a body"
-},
-{
-"f": "kniha",
-"i": "/ˈkni.ha/",
-"p": "n",
-"e": "book, everyday",
-"n": "formal libru; kniha in speech, libru on the spine"
-},
-{
-"f": "kopetz",
-"i": "/ˈko.pet͡s/",
-"p": "n",
-"e": "hill, everyday",
-"n": "colina in print and in geography; kopetz in speech"
-},
-{
-"f": "labor",
-"i": "/ˈla.bor/",
-"p": "n",
-"e": "work, formal",
-"n": ""
-},
-{
-"f": "laboratoriu",
-"i": "/la.bo.ra.to.ˈri.u/",
-"p": "n",
-"e": "laboratory",
-"n": "proba is the trial run"
-},
-{
-"f": "laboro",
-"i": "/la.ˈbo.ro/",
-"p": "n",
-"e": "the works, the job on site",
-"n": "labor is work as such; laboro is the job with a start and an end"
-},
-{
-"f": "lac",
-"i": "/lak/",
-"p": "n",
-"e": "lake",
-"n": ""
-},
-{
-"f": "lact",
-"i": "/lakt/",
-"p": "n",
-"e": "milk",
-"n": "adjective lactic"
-},
-{
-"f": "lagun",
-"i": "/ˈla.gun/",
-"p": "n",
-"e": "lagoon",
-"n": "the Ravelluri seaboard is built round one"
-},
-{
-"f": "laku",
-"i": "/ˈla.ku/",
-"p": "adj",
-"e": "easy, light, in the greeting",
-"n": "carried in laku noc, good night"
-},
-{
-"f": "laku noc",
-"i": "/ˈla.ku nok/",
-"p": "int",
-"e": "good night",
-"n": "two borrowed words, kept whole"
-},
-{
-"f": "lampa",
-"i": "/ˈlam.pa/",
-"p": "n",
-"e": "lamp",
-"n": ""
-},
-{
-"f": "lana",
-"i": "/ˈla.na/",
-"p": "n",
-"e": "wool",
-"n": ""
-},
-{
-"f": "lanterna",
-"i": "/lan.ˈter.na/",
-"p": "n",
-"e": "torch",
-"n": ""
-},
-{
-"f": "laosian",
-"i": "/la.o.ˈsi.an/",
-"p": "adj",
-"e": "Lao",
-"n": "demonym of Laos"
-},
-{
-"f": "larg",
-"i": "/larg/",
-"p": "adj",
-"e": "wide",
-"n": ""
-},
-{
-"f": "largament",
-"i": "/lar.ˈga.ment/",
-"p": "adv",
-"e": "widely",
-"n": ""
-},
-{
-"f": "lassa",
-"i": "/ˈla.sa/",
-"p": "v",
-"e": "leave, let, allow to stand",
-"n": ""
-},
-{
-"f": "latitude",
-"i": "/la.ti.ˈtu.de/",
-"p": "n",
-"e": "width",
-"n": ""
-},
-{
-"f": "lava",
-"i": "/ˈla.va/",
-"p": "v",
-"e": "wash",
-"n": ""
-},
-{
-"f": "lecca",
-"i": "/ˈle.ka/",
-"p": "v",
-"e": "lick",
-"n": ""
-},
-{
-"f": "lecte",
-"i": "/ˈlek.te/",
-"p": "n",
-"e": "bed, formal",
-"n": "everyday postel"
-},
-{
-"f": "lecti",
-"i": "/ˈlek.ti/",
-"p": "v",
-"e": "read",
-"n": ""
-},
-{
-"f": "lectiun",
-"i": "/lek.ˈti.un/",
-"p": "n",
-"e": "lesson",
-"n": ""
-},
-{
-"f": "lectura",
-"i": "/lek.ˈtu.ra/",
-"p": "n",
-"e": "reading",
-"n": ""
-},
-{
-"f": "legalite",
-"i": "/le.ga.ˈli.te/",
-"p": "n",
-"e": "legality",
-"n": "legalite de se acte, the lawfulness of the act"
-},
-{
-"f": "lege",
-"i": "/ˈle.d͡ʒe/",
-"p": "n",
-"e": "law",
-"n": ""
-},
-{
-"f": "lege organic",
-"i": "/ˈle.d͡ʒe or.ˈga.nik/",
-"p": "n",
-"e": "organic law",
-"n": ""
-},
-{
-"f": "legier",
-"i": "/le.ˈd͡ʒi.er/",
-"p": "adj",
-"e": "slight, of low intensity",
-"n": "leve of weight; legier of a tremor, a rain, a knock"
-},
-{
-"f": "legislativ",
-"i": "/le.d͡ʒi.ˈsla.tiv/",
-"p": "adj",
-"e": "legislative",
-"n": ""
-},
-{
-"f": "legitime",
-"i": "/le.d͡ʒi.ˈti.me/",
-"p": "adj",
-"e": "legitimate",
-"n": ""
-},
-{
-"f": "legitimement",
-"i": "/le.d͡ʒi.ti.ˈme.ment/",
-"p": "adv",
-"e": "legitimately",
-"n": ""
-},
-{
-"f": "legitimitate",
-"i": "/le.d͡ʒi.ti.mi.ˈta.te/",
-"p": "n",
-"e": "legitimacy",
-"n": ""
-},
-{
-"f": "legume",
-"i": "/le.ˈgu.me/",
-"p": "n",
-"e": "vegetable",
-"n": ""
-},
-{
-"f": "lekar",
-"i": "/ˈle.kar/",
-"p": "n",
-"e": "doctor, everyday",
-"n": ""
-},
-{
-"f": "lent",
-"i": "/lent/",
-"p": "adj",
-"e": "slow",
-"n": ""
-},
-{
-"f": "lentament",
-"i": "/len.ˈta.ment/",
-"p": "adv",
-"e": "slowly",
-"n": ""
-},
-{
-"f": "lenti",
-"i": "/ˈlen.ti/",
-"p": "v",
-"e": "slow down",
-"n": "from lent; of a service as readily as a vehicle"
-},
-{
-"f": "les",
-"i": "/les/",
-"p": "n",
-"e": "forest, everyday",
-"n": "formal silva"
-},
-{
-"f": "lesa",
-"i": "/ˈle.sa/",
-"p": "v",
-"e": "injure",
-"n": "broadcast wording keeps the older participle lesada"
-},
-{
-"f": "lesiun",
-"i": "/le.ˈsi.un/",
-"p": "n",
-"e": "injury",
-"n": ""
-},
-{
-"f": "lesotan",
-"i": "/le.ˈso.tan/",
-"p": "adj",
-"e": "Basotho",
-"n": "demonym of Lesoto"
-},
-{
-"f": "letonian",
-"i": "/le.to.ˈni.an/",
-"p": "adj",
-"e": "Latvian",
-"n": "demonym of Letonia"
-},
-{
-"f": "leva",
-"i": "/ˈle.va/",
-"p": "v",
-"e": "raise, get up",
-"n": ""
-},
-{
-"f": "levatura",
-"i": "/le.va.ˈtu.ra/",
-"p": "n",
-"e": "yeast",
-"n": ""
-},
-{
-"f": "leve",
-"i": "/ˈle.ve/",
-"p": "adj",
-"e": "light in weight",
-"n": "facil is light in the sense of easy"
-},
-{
-"f": "levement",
-"i": "/le.ˈve.ment/",
-"p": "adv",
-"e": "lightly",
-"n": ""
-},
-{
-"f": "levier",
-"i": "/le.ˈvi.er/",
-"p": "n",
-"e": "lever",
-"n": ""
-},
-{
-"f": "lexic",
-"i": "/ˈle.ʃik/",
-"p": "n",
-"e": "lexicon, word stock",
-"n": ""
-},
-{
-"f": "lexicon",
-"i": "/le.ˈʃi.kon/",
-"p": "n",
-"e": "lexicon",
-"n": "se lexicon is the published file; se registru is the list of what refuses the rule"
-},
-{
-"f": "libanian",
-"i": "/li.ba.ˈni.an/",
-"p": "adj",
-"e": "Lebanese",
-"n": "demonym of Liban"
-},
-{
-"f": "liber",
-"i": "/ˈli.ber/",
-"p": "adj",
-"e": "clear, free, unobstructed",
-"n": ""
-},
-{
-"f": "libera",
-"i": "/li.ˈbe.ra/",
-"p": "v",
-"e": "clear, free",
-"n": ""
-},
-{
-"f": "liberatiun",
-"i": "/li.be.ra.ˈti.un/",
-"p": "n",
-"e": "clearing, release",
-"n": "liberatiun de vias, clearing of the track"
-},
-{
-"f": "liberian",
-"i": "/li.be.ˈri.an/",
-"p": "adj",
-"e": "Liberian",
-"n": "demonym of Liberia"
-},
-{
-"f": "libertate",
-"i": "/li.ber.ˈta.te/",
-"p": "n",
-"e": "freedom",
-"n": ""
-},
-{
-"f": "libian",
-"i": "/li.ˈbi.an/",
-"p": "adj",
-"e": "Libyan",
-"n": "demonym of Libia"
-},
-{
-"f": "libru",
-"i": "/ˈli.bru/",
-"p": "n",
-"e": "book",
-"n": ""
-},
-{
-"f": "licentia",
-"i": "/li.t͡ʃen.ˈti.a/",
-"p": "v",
-"e": "license",
-"n": ""
-},
-{
-"f": "licentiat",
-"i": "/li.t͡ʃen.ˈti.at/",
-"p": "adj",
-"e": "licensed",
-"n": ""
-},
-{
-"f": "licit",
-"i": "/ˈli.t͡ʃit/",
-"p": "adj",
-"e": "lawful",
-"n": ""
-},
-{
-"f": "liga",
-"i": "/ˈli.ga/",
-"p": "v",
-"e": "tie, bind",
-"n": ""
-},
-{
-"f": "ligatura",
-"i": "/li.ga.ˈtu.ra/",
-"p": "n",
-"e": "linking form",
-"n": "the de of a compound, where it stands"
-},
-{
-"f": "lihtenstainian",
-"i": "/lih.tens.tai.ˈni.an/",
-"p": "adj",
-"e": "Liechtenstein",
-"n": "demonym of Lihtenstain"
-},
-{
-"f": "lima",
-"i": "/ˈli.ma/",
-"p": "n",
-"e": "file for metal",
-"n": ""
-},
-{
-"f": "limit",
-"i": "/ˈli.mit/",
-"p": "n",
-"e": "ceiling, limit",
-"n": ""
-},
-{
-"f": "limite",
-"i": "/li.ˈmi.te/",
-"p": "n",
-"e": "limit",
-"n": ""
-},
-{
-"f": "limon",
-"i": "/ˈli.mon/",
-"p": "n",
-"e": "lemon",
-"n": ""
-},
-{
-"f": "limpa",
-"i": "/ˈlim.pa/",
-"p": "v",
-"e": "clean",
-"n": ""
-},
-{
-"f": "limu",
-"i": "/ˈli.mu/",
-"p": "n",
-"e": "silt",
-"n": ""
-},
-{
-"f": "lingua",
-"i": "/lin.ˈgu.a/",
-"p": "n",
-"e": "language",
-"n": ""
-},
-{
-"f": "lingura",
-"i": "/lin.ˈgu.ra/",
-"p": "n",
-"e": "spoon",
-"n": ""
-},
-{
-"f": "linia",
-"i": "/li.ˈni.a/",
-"p": "n",
-"e": "line, route",
-"n": ""
-},
-{
-"f": "liniete",
-"i": "/li.ni.ˈe.te/",
-"p": "n",
-"e": "hyphen",
-"n": "joins a compound numeral and a prefix: dece-du, ex-ministru"
-},
-{
-"f": "liquid",
-"i": "/ˈli.kid/",
-"p": "adj",
-"e": "liquid",
-"n": ""
-},
-{
-"f": "liquida",
-"i": "/li.ˈki.da/",
-"p": "v",
-"e": "wind up",
-"n": ""
-},
-{
-"f": "lisce",
-"i": "/ˈlis.t͡ʃe/",
-"p": "adj",
-"e": "smooth",
-"n": ""
-},
-{
-"f": "lista",
-"i": "/ˈlis.ta/",
-"p": "n",
-"e": "list",
-"n": ""
-},
-{
-"f": "liter",
-"i": "/ˈli.ter/",
-"p": "n",
-"e": "letter",
-"n": ""
-},
-{
-"f": "litiga",
-"i": "/li.ˈti.ga/",
-"p": "v",
-"e": "litigate",
-"n": ""
-},
-{
-"f": "litru",
-"i": "/ˈli.tru/",
-"p": "n",
-"e": "litre",
-"n": ""
-},
-{
-"f": "lituanian",
-"i": "/li.tu.a.ˈni.an/",
-"p": "adj",
-"e": "Lithuanian",
-"n": "demonym of Lituania"
-},
-{
-"f": "loc",
-"i": "/lok/",
-"p": "n",
-"e": "place, spot",
-"n": ""
-},
-{
-"f": "loca",
-"i": "/ˈlo.ka/",
-"p": "v",
-"e": "rent out",
-"n": ""
-},
-{
-"f": "local",
-"i": "/ˈlo.kal/",
-"p": "adj",
-"e": "local",
-"n": "localitate is the noun"
-},
-{
-"f": "localisa",
-"i": "/lo.ka.ˈli.sa/",
-"p": "v",
-"e": "locate",
-"n": ""
-},
-{
-"f": "localitate",
-"i": "/lo.ka.li.ˈta.te/",
-"p": "n",
-"e": "settlement",
-"n": ""
-},
-{
-"f": "localment",
-"i": "/lo.ˈkal.ment/",
-"p": "adv",
-"e": "locally",
-"n": ""
-},
-{
-"f": "locatariu",
-"i": "/lo.ka.ta.ˈri.u/",
-"p": "n",
-"e": "tenant",
-"n": ""
-},
-{
-"f": "locomotiva",
-"i": "/lo.ko.mo.ˈti.va/",
-"p": "n",
-"e": "locomotive",
-"n": ""
-},
-{
-"f": "logic",
-"i": "/ˈlo.d͡ʒik/",
-"p": "adj",
-"e": "logical",
-"n": ""
-},
-{
-"f": "logicament",
-"i": "/lo.d͡ʒi.ˈka.ment/",
-"p": "adv",
-"e": "logically",
-"n": ""
-},
-{
-"f": "long",
-"i": "/long/",
-"p": "adj",
-"e": "long",
-"n": ""
-},
-{
-"f": "longa",
-"i": "/ˈlon.ga/",
-"p": "adj",
-"e": "long",
-"n": "of a form, a sentence or a wait"
-},
-{
-"f": "longament",
-"i": "/lon.ˈga.ment/",
-"p": "adv",
-"e": "at length",
-"n": ""
-},
-{
-"f": "longe",
-"i": "/ˈlon.d͡ʒe/",
-"p": "adv",
-"e": "far, by far",
-"n": ""
-},
-{
-"f": "longitude",
-"i": "/lon.d͡ʒi.ˈtu.de/",
-"p": "n",
-"e": "length",
-"n": ""
-},
-{
-"f": "lonx",
-"i": "/lonʃ/",
-"p": "prep",
-"e": "clear of, away from",
-"n": "lonx de portes, clear of the doors; prope is its opposite"
-},
-{
-"f": "lubrica",
-"i": "/lu.ˈbri.ka/",
-"p": "v",
-"e": "slip, slide",
-"n": ""
-},
-{
-"f": "luce",
-"i": "/ˈlu.t͡ʃe/",
-"p": "n",
-"e": "light",
-"n": "adjective lucid"
-},
-{
-"f": "luci",
-"i": "/ˈlu.t͡ʃi/",
-"p": "v",
-"e": "shine steadily",
-"n": "of daylight and of a lamp left on"
-},
-{
-"f": "lucian",
-"i": "/ˈlu.t͡ʃan/",
-"p": "adj",
-"e": "Saint Lucian",
-"n": "demonym of Santa Lucia"
-},
-{
-"f": "lucsemburgian",
-"i": "/luk.sem.ˈbur.d͡ʒan/",
-"p": "adj",
-"e": "Luxembourgish",
-"n": "demonym of Lucsemburg"
-},
-{
-"f": "luctu",
-"i": "/ˈluk.tu/",
-"p": "n",
-"e": "grief",
-"n": ""
-},
-{
-"f": "luna",
-"i": "/ˈlu.na/",
-"p": "n",
-"e": "moon",
-"n": "adjective lunar"
-},
-{
-"f": "lundi",
-"i": "/ˈlun.di/",
-"p": "n",
-"e": "Monday",
-"n": ""
-},
-{
-"f": "lupu",
-"i": "/ˈlu.pu/",
-"p": "n",
-"e": "wolf",
-"n": ""
-},
-{
-"f": "ma",
-"i": "/ma/",
-"p": "conj",
-"e": "but",
-"n": ""
-},
-{
-"f": "macedonian",
-"i": "/ma.t͡ʃe.do.ˈni.an/",
-"p": "adj",
-"e": "Macedonian",
-"n": "demonym of Macedonia Nord"
-},
-{
-"f": "machina",
-"i": "/ma.ˈki.na/",
-"p": "n",
-"e": "machine",
-"n": "adjective machinal"
-},
-{
-"f": "magazin",
-"i": "/ma.ˈga.zin/",
-"p": "n",
-"e": "shop",
-"n": ""
-},
-{
-"f": "magnitud",
-"i": "/mag.ˈni.tud/",
-"p": "n",
-"e": "magnitude",
-"n": ""
-},
-{
-"f": "mai",
-"i": "/mai/",
-"p": "n",
-"e": "May",
-"n": ""
-},
-{
-"f": "maimune",
-"i": "/mai.ˈmu.ne/",
-"p": "n",
-"e": "monkey",
-"n": "carried in laku noc maimune, said of politicians"
-},
-{
-"f": "maioritate",
-"i": "/mai.o.ri.ˈta.te/",
-"p": "n",
-"e": "majority",
-"n": ""
-},
-{
-"f": "mal",
-"i": "/mal/",
-"p": "adv",
-"e": "badly",
-"n": ""
-},
-{
-"f": "malad",
-"i": "/ˈma.lad/",
-"p": "adj",
-"e": "ill",
-"n": ""
-},
-{
-"f": "malan",
-"i": "/ˈma.lan/",
-"p": "adj",
-"e": "Malian",
-"n": "demonym of Mali"
-},
-{
-"f": "malasian",
-"i": "/ma.la.ˈsi.an/",
-"p": "adj",
-"e": "Malaysian",
-"n": "demonym of Malasia"
-},
-{
-"f": "malatia",
-"i": "/ma.la.ˈti.a/",
-"p": "n",
-"e": "illness",
-"n": ""
-},
-{
-"f": "malavan",
-"i": "/ma.ˈla.van/",
-"p": "adj",
-"e": "Malawian",
-"n": "demonym of Malavi"
-},
-{
-"f": "maldivian",
-"i": "/mal.di.ˈvi.an/",
-"p": "adj",
-"e": "Maldivian",
-"n": "demonym of Maldiv"
-},
-{
-"f": "malgax",
-"i": "/ˈmal.gaʃ/",
-"p": "adj",
-"e": "Malagasy",
-"n": "demonym of Madagascar"
-},
-{
-"f": "malgrado",
-"i": "/mal.ˈgra.do/",
-"p": "conj",
-"e": "despite the fact that",
-"n": ""
-},
-{
-"f": "malte",
-"i": "/ˈmal.te/",
-"p": "adj",
-"e": "Maltese",
-"n": "demonym of Malta"
-},
-{
-"f": "malversatiun",
-"i": "/mal.ver.sa.ˈti.un/",
-"p": "n",
-"e": "embezzlement, formal",
-"n": ""
-},
-{
-"f": "mama",
-"i": "/ˈma.ma/",
-"p": "n",
-"e": "mother, everyday",
-"n": ""
-},
-{
-"f": "man",
-"i": "/man/",
-"p": "n",
-"e": "hand",
-"n": "adjective manval"
-},
-{
-"f": "manc",
-"i": "/mank/",
-"p": "n",
-"e": "shortage",
-"n": ""
-},
-{
-"f": "manda",
-"i": "/ˈman.da/",
-"p": "v",
-"e": "send",
-"n": ""
-},
-{
-"f": "mandat",
-"i": "/ˈman.dat/",
-"p": "n",
-"e": "term of office",
-"n": ""
-},
-{
-"f": "mandata",
-"i": "/man.ˈda.ta/",
-"p": "v",
-"e": "mandate",
-"n": ""
-},
-{
-"f": "mandatar",
-"i": "/man.ˈda.tar/",
-"p": "n",
-"e": "holder of a mandate",
-"n": ""
-},
-{
-"f": "mandra",
-"i": "/ˈman.dra/",
-"p": "n",
-"e": "herd",
-"n": "turma of sheep, mandra of cattle"
-},
-{
-"f": "manevra",
-"i": "/ma.ˈne.vra/",
-"p": "v",
-"e": "shunt, manoeuvre",
-"n": "in the depots; manevra de nox, night shunting"
-},
-{
-"f": "manica",
-"i": "/ma.ˈni.ka/",
-"p": "n",
-"e": "sleeve",
-"n": ""
-},
-{
-"f": "manja",
-"i": "/ˈman.ʒa/",
-"p": "v",
-"e": "eat",
-"n": ""
-},
-{
-"f": "manometru",
-"i": "/ma.no.ˈme.tru/",
-"p": "n",
-"e": "gauge",
-"n": ""
-},
-{
-"f": "mansarda",
-"i": "/man.ˈsar.da/",
-"p": "n",
-"e": "attic",
-"n": ""
-},
-{
-"f": "manuale",
-"i": "/ma.nu.ˈa.le/",
-"p": "n",
-"e": "textbook",
-"n": ""
-},
-{
-"f": "mapa",
-"i": "/ˈma.pa/",
-"p": "n",
-"e": "map",
-"n": ""
-},
-{
-"f": "mar",
-"i": "/mar/",
-"p": "n",
-"e": "sea",
-"n": "adjective marin"
-},
-{
-"f": "marca",
-"i": "/ˈmar.ka/",
-"p": "v",
-"e": "mark",
-"n": ""
-},
-{
-"f": "mardi",
-"i": "/ˈmar.di/",
-"p": "n",
-"e": "Tuesday",
-"n": ""
-},
-{
-"f": "marea",
-"i": "/ma.ˈre.a/",
-"p": "n",
-"e": "tide",
-"n": "the lagoon runs on it"
-},
-{
-"f": "margin",
-"i": "/mar.ˈd͡ʒin/",
-"p": "n",
-"e": "margin, edge",
-"n": ""
-},
-{
-"f": "marit",
-"i": "/ˈma.rit/",
-"p": "n",
-"e": "husband",
-"n": ""
-},
-{
-"f": "marita",
-"i": "/ma.ˈri.ta/",
-"p": "v",
-"e": "marry",
-"n": "of either party; the older use marked only one"
-},
-{
-"f": "marocan",
-"i": "/ma.ˈro.kan/",
-"p": "adj",
-"e": "Moroccan",
-"n": "demonym of Maroc"
-},
-{
-"f": "mars",
-"i": "/mars/",
-"p": "n",
-"e": "March",
-"n": ""
-},
-{
-"f": "marte",
-"i": "/ˈmar.te/",
-"p": "n",
-"e": "March",
-"n": ""
-},
-{
-"f": "martella",
-"i": "/mar.ˈte.la/",
-"p": "v",
-"e": "hammer",
-"n": ""
-},
-{
-"f": "marxalan",
-"i": "/mar.ˈʃa.lan/",
-"p": "adj",
-"e": "Marshallese",
-"n": "demonym of Insulas Marxal"
-},
-{
-"f": "mas",
-"i": "/mas/",
-"p": "adv",
-"e": "more, most",
-"n": "mas comun, commonest"
-},
-{
-"f": "mastica",
-"i": "/mas.ˈti.ka/",
-"p": "v",
-"e": "chew",
-"n": ""
-},
-{
-"f": "materia",
-"i": "/ma.te.ˈri.a/",
-"p": "n",
-"e": "material, matter",
-"n": ""
-},
-{
-"f": "materiale",
-"i": "/ma.te.ri.ˈa.le/",
-"p": "n",
-"e": "materials",
-"n": ""
-},
-{
-"f": "materinu",
-"i": "/ma.te.ˈri.nu/",
-"p": "adj",
-"e": "shoddy, of rotten workmanship",
-"n": "the strongest word the press has for bad work"
-},
-{
-"f": "matin",
-"i": "/ˈma.tin/",
-"p": "n",
-"e": "morning",
-"n": ""
-},
-{
-"f": "matre",
-"i": "/ˈma.tre/",
-"p": "n",
-"e": "mother",
-"n": "adjective matern; everyday mama"
-},
-{
-"f": "mau",
-"i": "/mau/",
-"p": "adj",
-"e": "bad",
-"n": ""
-},
-{
-"f": "mauritanian",
-"i": "/mau.ri.ta.ˈni.an/",
-"p": "adj",
-"e": "Mauritanian",
-"n": "demonym of Mauritania"
-},
-{
-"f": "mauritian",
-"i": "/mau.ri.ˈti.an/",
-"p": "adj",
-"e": "Mauritian",
-"n": "demonym of Mauritiu"
-},
-{
-"f": "maxila",
-"i": "/ma.ˈʃi.la/",
-"p": "n",
-"e": "jaw",
-"n": ""
-},
-{
-"f": "me",
-"i": "/me/",
-"p": "pron",
-"e": "I, me",
-"n": "subject and object alike: me no jizde, skuza me"
-},
-{
-"f": "mecanisa",
-"i": "/me.ka.ˈni.sa/",
-"p": "v",
-"e": "mechanise",
-"n": ""
-},
-{
-"f": "media",
-"i": "/me.ˈdi.a/",
-"p": "v",
-"e": "mediate",
-"n": ""
-},
-{
-"f": "medianox",
-"i": "/me.di.ˈa.noʃ/",
-"p": "n",
-"e": "midnight",
-"n": ""
-},
-{
-"f": "mediante",
-"i": "/me.di.ˈan.te/",
-"p": "prep",
-"e": "by means of",
-"n": ""
-},
-{
-"f": "medic",
-"i": "/ˈme.dik/",
-"p": "n",
-"e": "doctor, formal",
-"n": ""
-},
-{
-"f": "medicament",
-"i": "/me.di.ˈka.ment/",
-"p": "n",
-"e": "medicine",
-"n": ""
-},
-{
-"f": "medie",
-"i": "/me.ˈdi.e/",
-"p": "adj",
-"e": "middle, average",
-"n": ""
-},
-{
-"f": "medietate",
-"i": "/me.di.e.ˈta.te/",
-"p": "n",
-"e": "half",
-"n": ""
-},
-{
-"f": "medita",
-"i": "/me.ˈdi.ta/",
-"p": "v",
-"e": "reflect, think over",
-"n": ""
-},
-{
-"f": "mel",
-"i": "/mel/",
-"p": "n",
-"e": "honey",
-"n": ""
-},
-{
-"f": "melodia",
-"i": "/me.lo.ˈdi.a/",
-"p": "n",
-"e": "melody",
-"n": ""
-},
-{
-"f": "membru",
-"i": "/ˈmem.bru/",
-"p": "n",
-"e": "member",
-"n": ""
-},
-{
-"f": "memora",
-"i": "/me.ˈmo.ra/",
-"p": "v",
-"e": "commit to memory",
-"n": ""
-},
-{
-"f": "memoria",
-"i": "/me.mo.ˈri.a/",
-"p": "n",
-"e": "memory",
-"n": ""
-},
-{
-"f": "mensual",
-"i": "/men.ˈsu.al/",
-"p": "adj",
-"e": "monthly",
-"n": "mes is the month"
-},
-{
-"f": "-ment",
-"i": "",
-"p": "suf",
-"e": "adverb from an adjective, action noun from a verb",
-"n": "finalment from final; pagament from paga"
-},
-{
-"f": "mente",
-"i": "/ˈmen.te/",
-"p": "n",
-"e": "mind",
-"n": ""
-},
-{
-"f": "mentiona",
-"i": "/men.ti.ˈo.na/",
-"p": "v",
-"e": "mention",
-"n": ""
-},
-{
-"f": "mentre",
-"i": "/ˈmen.tre/",
-"p": "conj",
-"e": "while",
-"n": ""
-},
-{
-"f": "mentu",
-"i": "/ˈmen.tu/",
-"p": "n",
-"e": "chin",
-"n": ""
-},
-{
-"f": "menu",
-"i": "/ˈme.nu/",
-"p": "n",
-"e": "menu",
-"n": ""
-},
-{
-"f": "mercat",
-"i": "/ˈmer.kat/",
-"p": "n",
-"e": "market",
-"n": ""
-},
-{
-"f": "mercuri",
-"i": "/mer.ˈku.ri/",
-"p": "n",
-"e": "Wednesday",
-"n": ""
-},
-{
-"f": "meridie",
-"i": "/me.ri.ˈdi.e/",
-"p": "n",
-"e": "midday",
-"n": ""
-},
-{
-"f": "merite",
-"i": "/me.ˈri.te/",
-"p": "n",
-"e": "the merits of a case",
-"n": "ir te se merite, to reach the merits"
-},
-{
-"f": "meritu",
-"i": "/me.ˈri.tu/",
-"p": "n",
-"e": "merit",
-"n": ""
-},
-{
-"f": "mes",
-"i": "/mes/",
-"p": "n",
-"e": "month",
-"n": ""
-},
-{
-"f": "mesa",
-"i": "/ˈme.sa/",
-"p": "n",
-"e": "table, formal",
-"n": "everyday stol"
-},
-{
-"f": "mesaje",
-"i": "/me.ˈsa.ʒe/",
-"p": "n",
-"e": "message",
-"n": ""
-},
-{
-"f": "mescla",
-"i": "/ˈmes.kla/",
-"p": "v",
-"e": "mix, stir",
-"n": ""
-},
-{
-"f": "mesme",
-"i": "/ˈmes.me/",
-"p": "adj",
-"e": "same, itself",
-"n": ""
-},
-{
-"f": "mesmo",
-"i": "/ˈmes.mo/",
-"p": "adv",
-"e": "even",
-"n": ""
-},
-{
-"f": "messe",
-"i": "/ˈme.se/",
-"p": "n",
-"e": "harvest",
-"n": "of the grain basin at Quintorum"
-},
-{
-"f": "mesura",
-"i": "/me.ˈsu.ra/",
-"p": "n",
-"e": "size, measurement",
-"n": "also the verb, to measure"
-},
-{
-"f": "metal",
-"i": "/ˈme.tal/",
-"p": "n",
-"e": "metal",
-"n": ""
-},
-{
-"f": "metodic",
-"i": "/me.ˈto.dik/",
-"p": "adj",
-"e": "methodical",
-"n": ""
-},
-{
-"f": "metodicament",
-"i": "/me.to.di.ˈka.ment/",
-"p": "adv",
-"e": "methodically",
-"n": ""
-},
-{
-"f": "metodu",
-"i": "/me.ˈto.du/",
-"p": "n",
-"e": "method",
-"n": ""
-},
-{
-"f": "metra",
-"i": "/ˈme.tra/",
-"p": "v",
-"e": "measure",
-"n": "metru is the unit"
-},
-{
-"f": "metro",
-"i": "/ˈme.tro/",
-"p": "n",
-"e": "metro",
-"n": ""
-},
-{
-"f": "metru",
-"i": "/ˈme.tru/",
-"p": "n",
-"e": "metre",
-"n": ""
-},
-{
-"f": "mexican",
-"i": "/me.ˈʃi.kan/",
-"p": "adj",
-"e": "Mexican",
-"n": "demonym of Mexic"
-},
-{
-"f": "mianmarian",
-"i": "/mi.an.ma.ˈri.an/",
-"p": "adj",
-"e": "Burmese",
-"n": "demonym of Mianmar"
-},
-{
-"f": "micronesian",
-"i": "/mi.kro.ne.ˈsi.an/",
-"p": "adj",
-"e": "Micronesian",
-"n": "demonym of Micronesia"
-},
-{
-"f": "mie",
-"i": "/ˈmi.e/",
-"p": "det",
-"e": "my",
-"n": ""
-},
-{
-"f": "mil",
-"i": "/mil/",
-"p": "num",
-"e": "thousand",
-"n": ""
-},
-{
-"f": "miliard",
-"i": "/mi.ˈli.ard/",
-"p": "num",
-"e": "thousand million",
-"n": ""
-},
-{
-"f": "miliun",
-"i": "/mi.ˈli.un/",
-"p": "num",
-"e": "million",
-"n": ""
-},
-{
-"f": "minacia",
-"i": "/mi.na.ˈt͡ʃi.a/",
-"p": "v",
-"e": "threaten",
-"n": ""
-},
-{
-"f": "mineral",
-"i": "/mi.ˈne.ral/",
-"p": "n",
-"e": "mineral",
-"n": ""
-},
-{
-"f": "ministru",
-"i": "/mi.ˈnis.tru/",
-"p": "n",
-"e": "minister",
-"n": ""
-},
-{
-"f": "minor",
-"i": "/ˈmi.nor/",
-"p": "adj",
-"e": "lesser",
-"n": "mas is the higher degree; minor has no adverb of its own"
-},
-{
-"f": "minoritate",
-"i": "/mi.no.ri.ˈta.te/",
-"p": "n",
-"e": "minority",
-"n": ""
-},
-{
-"f": "minut",
-"i": "/ˈmi.nut/",
-"p": "n",
-"e": "minute",
-"n": ""
-},
-{
-"f": "mira",
-"i": "/ˈmi.ra/",
-"p": "v",
-"e": "gaze at, wonder at",
-"n": ""
-},
-{
-"f": "mobil",
-"i": "/ˈmo.bil/",
-"p": "n",
-"e": "furniture",
-"n": ""
-},
-{
-"f": "mobilie",
-"i": "/mo.bi.ˈli.e/",
-"p": "n",
-"e": "fitted furniture, furnishing of a room",
-"n": "mobil is one piece; mobilie is what the room carries"
-},
-{
-"f": "mobilitate",
-"i": "/mo.bi.li.ˈta.te/",
-"p": "n",
-"e": "mobility",
-"n": "the sub-region runs local transport"
-},
-{
-"f": "mochila",
-"i": "/mok.ˈhi.la/",
-"p": "n",
-"e": "rucksack",
-"n": ""
-},
-{
-"f": "modem",
-"i": "/ˈmo.dem/",
-"p": "n",
-"e": "modem",
-"n": ""
-},
-{
-"f": "modern",
-"i": "/ˈmo.dern/",
-"p": "adj",
-"e": "modern",
-"n": ""
-},
-{
-"f": "modificatiun",
-"i": "/mo.di.fi.ka.ˈti.un/",
-"p": "n",
-"e": "modification",
-"n": ""
-},
-{
-"f": "mol",
-"i": "/mol/",
-"p": "adj",
-"e": "soft",
-"n": ""
-},
-{
-"f": "moldovan",
-"i": "/mol.ˈdo.van/",
-"p": "adj",
-"e": "Moldovan",
-"n": "demonym of Moldova"
-},
-{
-"f": "molin-de-vent",
-"i": "/mo.lin.ˈde.vent/",
-"p": "n",
-"e": "windmill",
-"n": ""
-},
-{
-"f": "mollia",
-"i": "/mo.ˈli.a/",
-"p": "v",
-"e": "soak, wet",
-"n": ""
-},
-{
-"f": "momentu",
-"i": "/mo.ˈmen.tu/",
-"p": "n",
-"e": "moment",
-"n": ""
-},
-{
-"f": "monacan",
-"i": "/mo.ˈna.kan/",
-"p": "adj",
-"e": "Monegasque",
-"n": "demonym of Monaco"
-},
-{
-"f": "moneda",
-"i": "/mo.ˈne.da/",
-"p": "n",
-"e": "coin",
-"n": ""
-},
-{
-"f": "moneta",
-"i": "/mo.ˈne.ta/",
-"p": "n",
-"e": "money, formal",
-"n": "adjective monetar; everyday penez"
-},
-{
-"f": "mongolian",
-"i": "/mon.go.ˈli.an/",
-"p": "adj",
-"e": "Mongolian",
-"n": "demonym of Mongolia"
-},
-{
-"f": "monstra",
-"i": "/ˈmons.tra/",
-"p": "v",
-"e": "show",
-"n": ""
-},
-{
-"f": "monta",
-"i": "/ˈmon.ta/",
-"p": "v",
-"e": "rise, climb",
-"n": ""
-},
-{
-"f": "montania",
-"i": "/mon.ta.ˈni.a/",
-"p": "n",
-"e": "mountain",
-"n": ""
-},
-{
-"f": "montenegran",
-"i": "/mon.te.ˈne.gran/",
-"p": "adj",
-"e": "Montenegrin",
-"n": "demonym of Montenegru"
-},
-{
-"f": "moralite",
-"i": "/mo.ra.ˈli.te/",
-"p": "n",
-"e": "morality",
-"n": ""
-},
-{
-"f": "morcov",
-"i": "/ˈmor.kov/",
-"p": "n",
-"e": "carrot",
-"n": ""
-},
-{
-"f": "mordi",
-"i": "/ˈmor.di/",
-"p": "v",
-"e": "bite",
-"n": ""
-},
-{
-"f": "mori",
-"i": "/ˈmo.ri/",
-"p": "v",
-"e": "die",
-"n": ""
-},
-{
-"f": "morte",
-"i": "/ˈmor.te/",
-"p": "n",
-"e": "death",
-"n": "adjective mortal"
-},
-{
-"f": "mosaic",
-"i": "/ˈmo.saik/",
-"p": "n",
-"e": "patchwork",
-"n": ""
-},
-{
-"f": "mostarda",
-"i": "/mos.ˈtar.da/",
-"p": "n",
-"e": "mustard",
-"n": ""
-},
-{
-"f": "motiona",
-"i": "/mo.ti.ˈo.na/",
-"p": "v",
-"e": "move a motion",
-"n": ""
-},
-{
-"f": "motiv",
-"i": "/ˈmo.tiv/",
-"p": "n",
-"e": "reason, cause",
-"n": "motiv opens the reason given in a service announcement"
-},
-{
-"f": "motivatiun",
-"i": "/mo.ti.va.ˈti.un/",
-"p": "n",
-"e": "motivation",
-"n": "motivu is the motive"
-},
-{
-"f": "motivu",
-"i": "/mo.ˈti.vu/",
-"p": "n",
-"e": "motive",
-"n": ""
-},
-{
-"f": "motor",
-"i": "/ˈmo.tor/",
-"p": "n",
-"e": "engine, motor",
-"n": ""
-},
-{
-"f": "motornik",
-"i": "/mo.ˈtor.nik/",
-"p": "n",
-"e": "small engine",
-"n": "the diminutive of motor"
-},
-{
-"f": "mova",
-"i": "/ˈmo.va/",
-"p": "v",
-"e": "move",
-"n": ""
-},
-{
-"f": "movimentu",
-"i": "/mo.vi.ˈmen.tu/",
-"p": "n",
-"e": "movement",
-"n": ""
-},
-{
-"f": "mozambician",
-"i": "/mo.zam.ˈbi.t͡ʃan/",
-"p": "adj",
-"e": "Mozambican",
-"n": "demonym of Mozambic"
-},
-{
-"f": "multa",
-"i": "/ˈmul.ta/",
-"p": "n",
-"e": "fine",
-"n": ""
-},
-{
-"f": "multe",
-"i": "/ˈmul.te/",
-"p": "det",
-"e": "many, much",
-"n": ""
-},
-{
-"f": "multitud",
-"i": "/mul.ˈti.tud/",
-"p": "n",
-"e": "crowd",
-"n": ""
-},
-{
-"f": "multo",
-"i": "/ˈmul.to/",
-"p": "adv",
-"e": "very",
-"n": "multe is the determiner"
-},
-{
-"f": "mund",
-"i": "/mund/",
-"p": "adj",
-"e": "clean",
-"n": ""
-},
-{
-"f": "murdar",
-"i": "/ˈmur.dar/",
-"p": "adj",
-"e": "dirty",
-"n": ""
-},
-{
-"f": "murmura",
-"i": "/mur.ˈmu.ra/",
-"p": "v",
-"e": "mutter, murmur",
-"n": ""
-},
-{
-"f": "muro",
-"i": "/ˈmu.ro/",
-"p": "n",
-"e": "wall",
-"n": ""
-},
-{
-"f": "musca",
-"i": "/ˈmus.ka/",
-"p": "n",
-"e": "fly",
-"n": ""
-},
-{
-"f": "muscla",
-"i": "/ˈmus.kla/",
-"p": "n",
-"e": "mussel",
-"n": ""
-},
-{
-"f": "muscul",
-"i": "/ˈmus.kul/",
-"p": "n",
-"e": "muscle",
-"n": ""
-},
-{
-"f": "museu",
-"i": "/ˈmu.seu/",
-"p": "n",
-"e": "museum",
-"n": ""
-},
-{
-"f": "musica",
-"i": "/mu.ˈsi.ka/",
-"p": "n",
-"e": "music",
-"n": "adjective musical"
-},
-{
-"f": "muta",
-"i": "/ˈmu.ta/",
-"p": "v",
-"e": "change, shift",
-"n": ""
-},
-{
-"f": "mutua",
-"i": "/mu.ˈtu.a/",
-"p": "v",
-"e": "borrow",
-"n": ""
-},
-{
-"f": "mutual",
-"i": "/mu.ˈtu.al/",
-"p": "adj",
-"e": "mutual",
-"n": ""
-},
-{
-"f": "mutualisa",
-"i": "/mu.tu.a.ˈli.sa/",
-"p": "v",
-"e": "pool, hold in common",
-"n": ""
-},
-{
-"f": "mutualment",
-"i": "/mu.tu.ˈal.ment/",
-"p": "adv",
-"e": "mutually",
-"n": ""
-},
-{
-"f": "nadrazi",
-"i": "/na.ˈdra.zi/",
-"p": "n",
-"e": "station, everyday",
-"n": "older station signage in the west"
-},
-{
-"f": "namibian",
-"i": "/na.mi.ˈbi.an/",
-"p": "adj",
-"e": "Namibian",
-"n": "demonym of Namibia"
-},
-{
-"f": "nas",
-"i": "/nas/",
-"p": "n",
-"e": "nose",
-"n": "adjective nasal"
-},
-{
-"f": "nasce",
-"i": "/ˈnas.t͡ʃe/",
-"p": "v",
-"e": "be born",
-"n": ""
-},
-{
-"f": "nascentia",
-"i": "/nas.t͡ʃen.ˈti.a/",
-"p": "n",
-"e": "birth",
-"n": "nasce is the verb"
-},
-{
-"f": "nata",
-"i": "/ˈna.ta/",
-"p": "v",
-"e": "swim",
-"n": ""
-},
-{
-"f": "national",
-"i": "/na.ti.ˈo.nal/",
-"p": "adj",
-"e": "national",
-"n": "natiun is the noun"
-},
-{
-"f": "nationalment",
-"i": "/na.ti.o.ˈnal.ment/",
-"p": "adv",
-"e": "nationally",
-"n": ""
-},
-{
-"f": "natiun",
-"i": "/na.ˈti.un/",
-"p": "n",
-"e": "nation",
-"n": ""
-},
-{
-"f": "natura",
-"i": "/na.ˈtu.ra/",
-"p": "n",
-"e": "nature",
-"n": ""
-},
-{
-"f": "nauran",
-"i": "/ˈnau.ran/",
-"p": "adj",
-"e": "Nauruan",
-"n": "demonym of Nauru"
-},
-{
-"f": "nav",
-"i": "/nav/",
-"p": "n",
-"e": "boat, ferry",
-"n": ""
-},
-{
-"f": "navega",
-"i": "/na.ˈve.ga/",
-"p": "v",
-"e": "sail, navigate",
-"n": ""
-},
-{
-"f": "nebla",
-"i": "/ˈne.bla/",
-"p": "n",
-"e": "fog",
-"n": ""
-},
-{
-"f": "necesar",
-"i": "/ne.ˈt͡ʃe.sar/",
-"p": "adj",
-"e": "necessary",
-"n": ""
-},
-{
-"f": "necesarment",
-"i": "/ne.t͡ʃe.ˈsar.ment/",
-"p": "adv",
-"e": "necessarily",
-"n": ""
-},
-{
-"f": "necesita",
-"i": "/ne.t͡ʃe.ˈsi.ta/",
-"p": "v",
-"e": "need",
-"n": ""
-},
-{
-"f": "necesitate",
-"i": "/ne.t͡ʃe.si.ˈta.te/",
-"p": "n",
-"e": "need",
-"n": ""
-},
-{
-"f": "necun",
-"i": "/ˈne.kun/",
-"p": "det",
-"e": "neither",
-"n": ""
-},
-{
-"f": "nega",
-"i": "/ˈne.ga/",
-"p": "v",
-"e": "deny",
-"n": ""
-},
-{
-"f": "negliga",
-"i": "/ne.ˈgli.ga/",
-"p": "v",
-"e": "neglect",
-"n": ""
-},
-{
-"f": "negligentia",
-"i": "/ne.gli.d͡ʒen.ˈti.a/",
-"p": "n",
-"e": "negligence",
-"n": "a ground of liability before the corte"
-},
-{
-"f": "negocia",
-"i": "/ne.go.ˈt͡ʃi.a/",
-"p": "v",
-"e": "negotiate",
-"n": ""
-},
-{
-"f": "negociatiun",
-"i": "/ne.go.t͡ʃi.a.ˈti.un/",
-"p": "n",
-"e": "negotiation",
-"n": "the plan cycle is negotiated, never imposed"
-},
-{
-"f": "negru",
-"i": "/ˈne.gru/",
-"p": "adj",
-"e": "black",
-"n": ""
-},
-{
-"f": "nepale",
-"i": "/ne.ˈpa.le/",
-"p": "adj",
-"e": "Nepali",
-"n": "demonym of Nepal"
-},
-{
-"f": "nepote",
-"i": "/ne.ˈpo.te/",
-"p": "n",
-"e": "grandchild, nephew, niece",
-"n": "the sense is settled by the sentence"
-},
-{
-"f": "nepotism",
-"i": "/ne.ˈpo.tism/",
-"p": "n",
-"e": "nepotism",
-"n": ""
-},
-{
-"f": "nervos",
-"i": "/ˈner.vos/",
-"p": "adj",
-"e": "nervous",
-"n": ""
-},
-{
-"f": "nervu",
-"i": "/ˈner.vu/",
-"p": "n",
-"e": "nerve",
-"n": ""
-},
-{
-"f": "neutralite",
-"i": "/ne.u.tra.ˈli.te/",
-"p": "n",
-"e": "neutrality",
-"n": "an adjective in -al takes -ite, never -tate"
-},
-{
-"f": "neve",
-"i": "/ˈne.ve/",
-"p": "n",
-"e": "snow",
-"n": "adjective nevos"
-},
-{
-"f": "ni",
-"i": "/ni/",
-"p": "conj",
-"e": "nor",
-"n": ""
-},
-{
-"f": "nicaraguan",
-"i": "/ni.ka.ra.ˈgu.an/",
-"p": "adj",
-"e": "Nicaraguan",
-"n": "demonym of Nicaragua"
-},
-{
-"f": "nicta",
-"i": "/ˈnik.ta/",
-"p": "v",
-"e": "blink",
-"n": ""
-},
-{
-"f": "nigerian",
-"i": "/ni.d͡ʒe.ˈri.an/",
-"p": "adj",
-"e": "Nigerian",
-"n": "demonym of Nigeria"
-},
-{
-"f": "nigerien",
-"i": "/ni.d͡ʒe.ˈri.en/",
-"p": "adj",
-"e": "Nigerien",
-"n": "demonym of Niger"
-},
-{
-"f": "-nik",
-"i": "",
-"p": "suf",
-"e": "diminutive",
-"n": ""
-},
-{
-"f": "nisi",
-"i": "/ˈni.si/",
-"p": "conj",
-"e": "unless",
-"n": "nisi se corte decide altru, unless the court rules otherwise"
-},
-{
-"f": "nivel",
-"i": "/ˈni.vel/",
-"p": "n",
-"e": "tier, level",
-"n": ""
-},
-{
-"f": "nivella",
-"i": "/ni.ˈve.la/",
-"p": "v",
-"e": "level",
-"n": ""
-},
-{
-"f": "no",
-"i": "/no/",
-"p": "adv",
-"e": "not, no",
-"n": ""
-},
-{
-"f": "no-",
-"i": "",
-"p": "pref",
-"e": "un-, not",
-"n": ""
-},
-{
-"f": "noc",
-"i": "/nok/",
-"p": "n",
-"e": "night, everyday",
-"n": "nox in print and in the register; noc in the greeting laku noc"
-},
-{
-"f": "noda",
-"i": "/ˈno.da/",
-"p": "v",
-"e": "knot",
-"n": ""
-},
-{
-"f": "nome",
-"i": "/ˈno.me/",
-"p": "n",
-"e": "name",
-"n": ""
-},
-{
-"f": "nomina",
-"i": "/no.ˈmi.na/",
-"p": "v",
-"e": "name, call",
-"n": ""
-},
-{
-"f": "nondum",
-"i": "/ˈnon.dum/",
-"p": "adv",
-"e": "not yet",
-"n": ""
-},
-{
-"f": "nord",
-"i": "/nord/",
-"p": "n",
-"e": "north",
-"n": ""
-},
-{
-"f": "norma",
-"i": "/ˈnor.ma/",
-"p": "n",
-"e": "norm, standard",
-"n": ""
-},
-{
-"f": "norvegian",
-"i": "/nor.ˈve.d͡ʒan/",
-"p": "adj",
-"e": "Norwegian",
-"n": "demonym of Norvegia"
-},
-{
-"f": "nos",
-"i": "/nos/",
-"p": "pron",
-"e": "we, us",
-"n": ""
-},
-{
-"f": "nostre",
-"i": "/ˈnos.tre/",
-"p": "det",
-"e": "our",
-"n": ""
-},
-{
-"f": "nota",
-"i": "/ˈno.ta/",
-"p": "v",
-"e": "note, record",
-"n": "also the noun, a note"
-},
-{
-"f": "notifica",
-"i": "/no.ti.ˈfi.ka/",
-"p": "v",
-"e": "notify",
-"n": "notifica te se persone, give the person notice"
-},
-{
-"f": "notificatiun",
-"i": "/no.ti.fi.ka.ˈti.un/",
-"p": "n",
-"e": "notification",
-"n": ""
-},
-{
-"f": "notiun",
-"i": "/no.ˈti.un/",
-"p": "n",
-"e": "notion",
-"n": ""
-},
-{
-"f": "novanta",
-"i": "/no.ˈvan.ta/",
-"p": "num",
-"e": "ninety",
-"n": ""
-},
-{
-"f": "nove",
-"i": "/ˈno.ve/",
-"p": "adj",
-"e": "new",
-"n": "also the numeral nine; position decides"
-},
-{
-"f": "november",
-"i": "/no.ˈvem.ber/",
-"p": "n",
-"e": "November",
-"n": ""
-},
-{
-"f": "novembre",
-"i": "/no.ˈvem.bre/",
-"p": "n",
-"e": "November",
-"n": ""
-},
-{
-"f": "novitate",
-"i": "/no.vi.ˈta.te/",
-"p": "n",
-"e": "news",
-"n": ""
-},
-{
-"f": "novzelandan",
-"i": "/nov.ze.ˈlan.dan/",
-"p": "adj",
-"e": "New Zealand",
-"n": "demonym of Nov Zeland"
-},
-{
-"f": "nox",
-"i": "/noʃ/",
-"p": "n",
-"e": "night",
-"n": "adjective notiv"
-},
-{
-"f": "nube",
-"i": "/ˈnu.be/",
-"p": "n",
-"e": "cloud",
-"n": ""
-},
-{
-"f": "nuce",
-"i": "/ˈnu.t͡ʃe/",
-"p": "n",
-"e": "nut",
-"n": ""
-},
-{
-"f": "nulcosa",
-"i": "/nul.ˈko.sa/",
-"p": "pron",
-"e": "nothing",
-"n": ""
-},
-{
-"f": "nule",
-"i": "/ˈnu.le/",
-"p": "det",
-"e": "no, none, nobody",
-"n": ""
-},
-{
-"f": "nullubi",
-"i": "/nu.ˈlu.bi/",
-"p": "adv",
-"e": "nowhere",
-"n": ""
-},
-{
-"f": "nulu",
-"i": "/ˈnu.lu/",
-"p": "pron",
-"e": "no one",
-"n": "nule is the determiner"
-},
-{
-"f": "numer",
-"i": "/ˈnu.mer/",
-"p": "n",
-"e": "number",
-"n": ""
-},
-{
-"f": "numera",
-"i": "/nu.ˈme.ra/",
-"p": "v",
-"e": "number",
-"n": ""
-},
-{
-"f": "nunc",
-"i": "/nunk/",
-"p": "adv",
-"e": "now",
-"n": ""
-},
-{
-"f": "o",
-"i": "/o/",
-"p": "conj",
-"e": "or",
-"n": ""
-},
-{
-"f": "obchod",
-"i": "/ˈob.kod/",
-"p": "n",
-"e": "shop, everyday",
-"n": "formal magazin; obchod above the door in the older estates"
-},
-{
-"f": "obed",
-"i": "/ˈo.bed/",
-"p": "n",
-"e": "midday meal, everyday",
-"n": "formal prandiu"
-},
-{
-"f": "object",
-"i": "/ob.ˈd͡ʒekt/",
-"p": "n",
-"e": "object of a verb",
-"n": "se articul se sta ante un object direct"
-},
-{
-"f": "objecta",
-"i": "/ob.ˈʒek.ta/",
-"p": "v",
-"e": "object",
-"n": ""
-},
-{
-"f": "objectivu",
-"i": "/ob.ʒek.ˈti.vu/",
-"p": "n",
-"e": "objective, aim",
-"n": ""
-},
-{
-"f": "oblida",
-"i": "/o.ˈbli.da/",
-"p": "v",
-"e": "forget",
-"n": ""
-},
-{
-"f": "oblidu",
-"i": "/o.ˈbli.du/",
-"p": "n",
-"e": "forgetting",
-"n": "oblida is the verb"
-},
-{
-"f": "obligatiun",
-"i": "/o.bli.ga.ˈti.un/",
-"p": "n",
-"e": "obligation",
-"n": ""
-},
-{
-"f": "obligatoriu",
-"i": "/o.bli.ga.to.ˈri.u/",
-"p": "adj",
-"e": "binding",
-"n": ""
-},
-{
-"f": "obligatoriument",
-"i": "/o.bli.ga.to.ri.ˈu.ment/",
-"p": "adv",
-"e": "compulsorily",
-"n": ""
-},
-{
-"f": "obscur",
-"i": "/ˈobs.kur/",
-"p": "adj",
-"e": "dark, obscure",
-"n": ""
-},
-{
-"f": "observa",
-"i": "/ob.ˈser.va/",
-"p": "v",
-"e": "observe, watch",
-"n": "of a rule as readily as of a thing seen"
-},
-{
-"f": "obvi",
-"i": "/ˈob.vi/",
-"p": "adj",
-"e": "obvious",
-"n": ""
-},
-{
-"f": "obviment",
-"i": "/ob.ˈvi.ment/",
-"p": "adv",
-"e": "obviously",
-"n": ""
-},
-{
-"f": "ocelar",
-"i": "/o.ˈt͡ʃe.lar/",
-"p": "n",
-"e": "glasses",
-"n": "plural ocelares, and the plural is the ordinary form"
-},
-{
-"f": "oct",
-"i": "/okt/",
-"p": "num",
-"e": "eight",
-"n": ""
-},
-{
-"f": "octanta",
-"i": "/ok.ˈtan.ta/",
-"p": "num",
-"e": "eighty",
-"n": ""
-},
-{
-"f": "october",
-"i": "/ok.ˈto.ber/",
-"p": "n",
-"e": "October",
-"n": ""
-},
-{
-"f": "octobre",
-"i": "/ok.ˈto.bre/",
-"p": "n",
-"e": "October",
-"n": ""
-},
-{
-"f": "ocul",
-"i": "/ˈo.kul/",
-"p": "n",
-"e": "eye",
-"n": "adjective ocular"
-},
-{
-"f": "ocupat",
-"i": "/o.ˈku.pat/",
-"p": "adj",
-"e": "busy, occupied",
-"n": ""
-},
-{
-"f": "ocupatiun",
-"i": "/o.ku.pa.ˈti.un/",
-"p": "n",
-"e": "occupation",
-"n": ""
-},
-{
-"f": "odia",
-"i": "/o.ˈdi.a/",
-"p": "v",
-"e": "hate",
-"n": ""
-},
-{
-"f": "odiu",
-"i": "/o.ˈdi.u/",
-"p": "n",
-"e": "hatred",
-"n": "odia is the verb"
-},
-{
-"f": "odora",
-"i": "/o.ˈdo.ra/",
-"p": "v",
-"e": "smell",
-"n": "odora bin, it smells good"
-},
-{
-"f": "ofende",
-"i": "/o.ˈfen.de/",
-"p": "v",
-"e": "offend",
-"n": ""
-},
-{
-"f": "oferta",
-"i": "/o.ˈfer.ta/",
-"p": "n",
-"e": "offer",
-"n": ""
-},
-{
-"f": "officina",
-"i": "/o.fi.ˈt͡ʃi.na/",
-"p": "n",
-"e": "workshop",
-"n": "praca is the work done in one"
-},
-{
-"f": "officiu",
-"i": "/o.ˈfi.t͡ʃu/",
-"p": "n",
-"e": "office",
-"n": ""
-},
-{
-"f": "oficial",
-"i": "/o.ˈfi.t͡ʃal/",
-"p": "adj",
-"e": "official",
-"n": ""
-},
-{
-"f": "oficialment",
-"i": "/o.fi.t͡ʃi.ˈal.ment/",
-"p": "adv",
-"e": "officially",
-"n": ""
-},
-{
-"f": "oglinda",
-"i": "/o.ˈglin.da/",
-"p": "n",
-"e": "mirror",
-"n": ""
-},
-{
-"f": "okna",
-"i": "/ˈok.na/",
-"p": "n",
-"e": "window",
-"n": ""
-},
-{
-"f": "olande",
-"i": "/o.ˈlan.de/",
-"p": "adj",
-"e": "Dutch",
-"n": "demonym of Neerland"
-},
-{
-"f": "olim",
-"i": "/ˈo.lim/",
-"p": "adv",
-"e": "formerly",
-"n": ""
-},
-{
-"f": "oliu",
-"i": "/o.ˈli.u/",
-"p": "n",
-"e": "oil",
-"n": ""
-},
-{
-"f": "olivastre",
-"i": "/o.li.ˈvas.tre/",
-"p": "adj",
-"e": "olive",
-"n": ""
-},
-{
-"f": "olla",
-"i": "/ˈo.la/",
-"p": "n",
-"e": "pot",
-"n": ""
-},
-{
-"f": "omanian",
-"i": "/o.ma.ˈni.an/",
-"p": "adj",
-"e": "Omani",
-"n": "demonym of Oman"
-},
-{
-"f": "onda",
-"i": "/ˈon.da/",
-"p": "n",
-"e": "wave",
-"n": ""
-},
-{
-"f": "onest",
-"i": "/ˈo.nest/",
-"p": "adj",
-"e": "honest",
-"n": ""
-},
-{
-"f": "onora",
-"i": "/o.ˈno.ra/",
-"p": "v",
-"e": "honour",
-"n": ""
-},
-{
-"f": "opac",
-"i": "/ˈo.pak/",
-"p": "adj",
-"e": "opaque",
-"n": ""
-},
-{
-"f": "operatiun",
-"i": "/o.pe.ra.ˈti.un/",
-"p": "n",
-"e": "operation",
-"n": ""
-},
-{
-"f": "opiniun",
-"i": "/o.pi.ˈni.un/",
-"p": "n",
-"e": "opinion",
-"n": ""
-},
-{
-"f": "opta",
-"i": "/ˈop.ta/",
-"p": "v",
-"e": "opt, choose between",
-"n": ""
-},
-{
-"f": "ordinantia",
-"i": "/or.di.nan.ˈti.a/",
-"p": "n",
-"e": "ordinance",
-"n": ""
-},
-{
-"f": "ordine",
-"i": "/or.ˈdi.ne/",
-"p": "n",
-"e": "order, tidiness",
-"n": ""
-},
-{
-"f": "ordine-de-die",
-"i": "/or.di.ne.de.ˈdi.e/",
-"p": "n",
-"e": "agenda",
-"n": ""
-},
-{
-"f": "orfano",
-"i": "/or.ˈfa.no/",
-"p": "n",
-"e": "orphan",
-"n": ""
-},
-{
-"f": "organisa",
-"i": "/or.ga.ˈni.sa/",
-"p": "v",
-"e": "organise",
-"n": ""
-},
-{
-"f": "organisatiun",
-"i": "/or.ga.ni.sa.ˈti.un/",
-"p": "n",
-"e": "organisation",
-"n": ""
-},
-{
-"f": "orgulio",
-"i": "/or.gu.ˈli.o/",
-"p": "n",
-"e": "pride",
-"n": ""
-},
-{
-"f": "orgulios",
-"i": "/or.gu.ˈli.os/",
-"p": "adj",
-"e": "proud",
-"n": ""
-},
-{
-"f": "origine",
-"i": "/o.ri.ˈd͡ʒi.ne/",
-"p": "n",
-"e": "origin",
-"n": ""
-},
-{
-"f": "os",
-"i": "/os/",
-"p": "n",
-"e": "bone",
-"n": ""
-},
-{
-"f": "oscita",
-"i": "/os.ˈt͡ʃi.ta/",
-"p": "v",
-"e": "yawn",
-"n": ""
-},
-{
-"f": "osetian",
-"i": "/o.se.ˈti.an/",
-"p": "adj",
-"e": "South Ossetian",
-"n": "demonym of Osetia Sud"
-},
-{
-"f": "ospital",
-"i": "/os.ˈpi.tal/",
-"p": "n",
-"e": "hospital",
-"n": ""
-},
-{
-"f": "ostrea",
-"i": "/os.ˈtre.a/",
-"p": "n",
-"e": "oyster",
-"n": "of the Ravelluri beds"
-},
-{
-"f": "ostrian",
-"i": "/os.ˈtri.an/",
-"p": "adj",
-"e": "Austrian",
-"n": "demonym of Ostri"
-},
-{
-"f": "ove",
-"i": "/ˈo.ve/",
-"p": "n",
-"e": "sheep",
-"n": ""
-},
-{
-"f": "ovest",
-"i": "/ˈo.vest/",
-"p": "n",
-"e": "west",
-"n": ""
-},
-{
-"f": "ovu",
-"i": "/ˈo.vu/",
-"p": "n",
-"e": "egg",
-"n": "adjective oval"
-},
-{
-"f": "paga",
-"i": "/ˈpa.ga/",
-"p": "v",
-"e": "pay",
-"n": ""
-},
-{
-"f": "pagament",
-"i": "/pa.ˈga.ment/",
-"p": "n",
-"e": "payment",
-"n": ""
-},
-{
-"f": "pagina",
-"i": "/pa.ˈd͡ʒi.na/",
-"p": "n",
-"e": "page",
-"n": ""
-},
-{
-"f": "palauan",
-"i": "/pa.ˈlau.an/",
-"p": "adj",
-"e": "Palauan",
-"n": "demonym of Palau"
-},
-{
-"f": "palestinan",
-"i": "/pa.les.ˈti.nan/",
-"p": "adj",
-"e": "Palestinian",
-"n": "demonym of Palestina"
-},
-{
-"f": "palide",
-"i": "/pa.ˈli.de/",
-"p": "adj",
-"e": "pale",
-"n": ""
-},
-{
-"f": "palma",
-"i": "/ˈpal.ma/",
-"p": "n",
-"e": "palm of the hand",
-"n": ""
-},
-{
-"f": "palpa",
-"i": "/ˈpal.pa/",
-"p": "v",
-"e": "feel with the hand",
-"n": ""
-},
-{
-"f": "palton",
-"i": "/ˈpal.ton/",
-"p": "n",
-"e": "coat",
-"n": ""
-},
-{
-"f": "pan",
-"i": "/pan/",
-"p": "n",
-"e": "bread",
-"n": "adjective panar"
-},
-{
-"f": "panaman",
-"i": "/pa.ˈna.man/",
-"p": "adj",
-"e": "Panamanian",
-"n": "demonym of Panama"
-},
-{
-"f": "panel-solar",
-"i": "/pa.nel.ˈso.lar/",
-"p": "n",
-"e": "solar panel",
-"n": ""
-},
-{
-"f": "panelcu",
-"i": "/pa.ˈnel.ku/",
-"p": "n",
-"e": "panel building",
-"n": ""
-},
-{
-"f": "pantalon",
-"i": "/pan.ˈta.lon/",
-"p": "n",
-"e": "trousers",
-"n": ""
-},
-{
-"f": "pantano",
-"i": "/pan.ˈta.no/",
-"p": "n",
-"e": "marsh",
-"n": ""
-},
-{
-"f": "papir",
-"i": "/ˈpa.pir/",
-"p": "n",
-"e": "paper",
-"n": ""
-},
-{
-"f": "papuan",
-"i": "/pa.ˈpu.an/",
-"p": "adj",
-"e": "Papua New Guinean",
-"n": "demonym of Papua Nov Guinea"
-},
-{
-"f": "paquistanian",
-"i": "/pa.kis.ta.ˈni.an/",
-"p": "adj",
-"e": "Pakistani",
-"n": "demonym of Paquistan"
-},
-{
-"f": "par",
-"i": "/par/",
-"p": "n",
-"e": "pair",
-"n": ""
-},
-{
-"f": "para",
-"i": "/ˈpa.ra/",
-"p": "v",
-"e": "stop, bring to a halt",
-"n": ""
-},
-{
-"f": "paraguaian",
-"i": "/pa.ra.gu.ˈai.an/",
-"p": "adj",
-"e": "Paraguayan",
-"n": "demonym of Paraguai"
-},
-{
-"f": "parc",
-"i": "/park/",
-"p": "n",
-"e": "park",
-"n": ""
-},
-{
-"f": "parente",
-"i": "/pa.ˈren.te/",
-"p": "n",
-"e": "parent",
-"n": ""
-},
-{
-"f": "parla",
-"i": "/ˈpar.la/",
-"p": "v",
-"e": "speak",
-"n": ""
-},
-{
-"f": "parola",
-"i": "/pa.ˈro.la/",
-"p": "n",
-"e": "word",
-"n": ""
-},
-{
-"f": "parte",
-"i": "/ˈpar.te/",
-"p": "n",
-"e": "part, side",
-"n": ""
-},
-{
-"f": "partenar",
-"i": "/par.ˈte.nar/",
-"p": "n",
-"e": "partner",
-"n": ""
-},
-{
-"f": "parti",
-"i": "/ˈpar.ti/",
-"p": "v",
-"e": "depart, leave a place",
-"n": ""
-},
-{
-"f": "partial",
-"i": "/par.ˈti.al/",
-"p": "adj",
-"e": "partial",
-"n": ""
-},
-{
-"f": "partialment",
-"i": "/par.ti.ˈal.ment/",
-"p": "adv",
-"e": "partially",
-"n": ""
-},
-{
-"f": "participatiun",
-"i": "/par.ti.t͡ʃi.pa.ˈti.un/",
-"p": "n",
-"e": "participation",
-"n": ""
-},
-{
-"f": "participe",
-"i": "/par.ti.ˈt͡ʃi.pe/",
-"p": "n",
-"e": "participle",
-"n": ""
-},
-{
-"f": "parv",
-"i": "/parv/",
-"p": "adj",
-"e": "small",
-"n": ""
-},
-{
-"f": "pasaje",
-"i": "/pa.ˈsa.ʒe/",
-"p": "n",
-"e": "crossing, passage",
-"n": ""
-},
-{
-"f": "pasare",
-"i": "/pa.ˈsa.re/",
-"p": "n",
-"e": "bird",
-"n": ""
-},
-{
-"f": "passa",
-"i": "/ˈpa.sa/",
-"p": "v",
-"e": "pass, go by",
-"n": "se tren passa sin sta, the train goes through without stopping"
-},
-{
-"f": "passaporte",
-"i": "/pa.sa.ˈpor.te/",
-"p": "n",
-"e": "passport",
-"n": ""
-},
-{
-"f": "passat",
-"i": "/ˈpa.sat/",
-"p": "n",
-"e": "past",
-"n": ""
-},
-{
-"f": "passu",
-"i": "/ˈpa.su/",
-"p": "n",
-"e": "pace",
-"n": ""
-},
-{
-"f": "pasta",
-"i": "/ˈpas.ta/",
-"p": "n",
-"e": "pasta, dough",
-"n": ""
-},
-{
-"f": "pastilia",
-"i": "/pas.ti.ˈli.a/",
-"p": "n",
-"e": "tablet",
-"n": "pilula is the smaller round form"
-},
-{
-"f": "pastura",
-"i": "/pas.ˈtu.ra/",
-"p": "n",
-"e": "pasture",
-"n": ""
-},
-{
-"f": "patata",
-"i": "/pa.ˈta.ta/",
-"p": "n",
-"e": "potato",
-"n": "everyday brambor"
-},
-{
-"f": "patela",
-"i": "/pa.ˈte.la/",
-"p": "n",
-"e": "pan",
-"n": ""
-},
-{
-"f": "patiente",
-"i": "/pa.ti.ˈen.te/",
-"p": "adj",
-"e": "patient",
-"n": "patientia is the noun"
-},
-{
-"f": "patientement",
-"i": "/pa.ti.en.ˈte.ment/",
-"p": "adv",
-"e": "patiently",
-"n": ""
-},
-{
-"f": "patientia",
-"i": "/pa.ti.en.ˈti.a/",
-"p": "n",
-"e": "patience",
-"n": ""
-},
-{
-"f": "patre",
-"i": "/ˈpa.tre/",
-"p": "n",
-"e": "father",
-"n": "adjective patern; everyday tata"
-},
-{
-"f": "patron",
-"i": "/ˈpa.tron/",
-"p": "n",
-"e": "employer",
-"n": ""
-},
-{
-"f": "paupre",
-"i": "/ˈpau.pre/",
-"p": "adj",
-"e": "poor",
-"n": ""
-},
-{
-"f": "pausa",
-"i": "/pa.ˈu.sa/",
-"p": "n",
-"e": "pause, wait",
-"n": "sin pausa, without a wait"
-},
-{
-"f": "pava",
-"i": "/ˈpa.va/",
-"p": "v",
-"e": "pave",
-"n": ""
-},
-{
-"f": "pect",
-"i": "/pekt/",
-"p": "n",
-"e": "chest",
-"n": ""
-},
-{
-"f": "pectine",
-"i": "/pek.ˈti.ne/",
-"p": "n",
-"e": "comb",
-"n": ""
-},
-{
-"f": "ped",
-"i": "/ped/",
-"p": "n",
-"e": "foot",
-"n": ""
-},
-{
-"f": "pelle",
-"i": "/ˈpe.le/",
-"p": "n",
-"e": "skin",
-"n": ""
-},
-{
-"f": "pena",
-"i": "/ˈpe.na/",
-"p": "n",
-"e": "penalty",
-"n": ""
-},
-{
-"f": "pendente",
-"i": "/pen.ˈden.te/",
-"p": "prep",
-"e": "pending",
-"n": ""
-},
-{
-"f": "penez",
-"i": "/ˈpe.nez/",
-"p": "n",
-"e": "money, everyday",
-"n": "formal moneta"
-},
-{
-"f": "peninsula",
-"i": "/pe.nin.ˈsu.la/",
-"p": "n",
-"e": "peninsula",
-"n": ""
-},
-{
-"f": "penna",
-"i": "/ˈpe.na/",
-"p": "n",
-"e": "pen",
-"n": ""
-},
-{
-"f": "pensa",
-"i": "/ˈpen.sa/",
-"p": "v",
-"e": "think",
-"n": ""
-},
-{
-"f": "pensiona",
-"i": "/pen.si.ˈo.na/",
-"p": "v",
-"e": "retire on a pension",
-"n": ""
-},
-{
-"f": "pensiun",
-"i": "/pen.ˈsi.un/",
-"p": "n",
-"e": "pension",
-"n": "pensiona is the verb"
-},
-{
-"f": "pensu",
-"i": "/ˈpen.su/",
-"p": "n",
-"e": "thought",
-"n": "pensa is the verb"
-},
-{
-"f": "per",
-"i": "/per/",
-"p": "prep",
-"e": "by, through, because of",
-"n": ""
-},
-{
-"f": "per cent",
-"i": "/per t͡ʃent/",
-"p": "n",
-"e": "per cent",
-"n": ""
-},
-{
-"f": "pera",
-"i": "/ˈpe.ra/",
-"p": "n",
-"e": "pear",
-"n": ""
-},
-{
-"f": "percentagiu",
-"i": "/per.t͡ʃen.ta.ˈd͡ʒi.u/",
-"p": "n",
-"e": "percentage",
-"n": ""
-},
-{
-"f": "percipe",
-"i": "/per.ˈt͡ʃi.pe/",
-"p": "v",
-"e": "perceive",
-"n": ""
-},
-{
-"f": "perde",
-"i": "/ˈper.de/",
-"p": "v",
-"e": "lose",
-"n": ""
-},
-{
-"f": "perfora",
-"i": "/per.ˈfo.ra/",
-"p": "v",
-"e": "drill, bore",
-"n": ""
-},
-{
-"f": "periculos",
-"i": "/pe.ri.ˈku.los/",
-"p": "adj",
-"e": "dangerous",
-"n": ""
-},
-{
-"f": "periodu",
-"i": "/pe.ri.ˈo.du/",
-"p": "n",
-"e": "period",
-"n": ""
-},
-{
-"f": "permanent",
-"i": "/per.ˈma.nent/",
-"p": "adj",
-"e": "permanent",
-"n": ""
-},
-{
-"f": "permanentament",
-"i": "/per.ma.nen.ˈta.ment/",
-"p": "adv",
-"e": "permanently",
-"n": ""
-},
-{
-"f": "permis",
-"i": "/ˈper.mis/",
-"p": "n",
-"e": "permit",
-"n": ""
-},
-{
-"f": "permisiun",
-"i": "/per.mi.ˈsi.un/",
-"p": "n",
-"e": "permission",
-"n": ""
-},
-{
-"f": "permite",
-"i": "/per.ˈmi.te/",
-"p": "v",
-"e": "allow",
-"n": ""
-},
-{
-"f": "perna",
-"i": "/ˈper.na/",
-"p": "n",
-"e": "pillow",
-"n": ""
-},
-{
-"f": "peron",
-"i": "/ˈpe.ron/",
-"p": "n",
-"e": "platform",
-"n": "peron un, platform one"
-},
-{
-"f": "perque",
-"i": "/ˈper.ke/",
-"p": "conj",
-"e": "because, why",
-"n": ""
-},
-{
-"f": "persequi",
-"i": "/per.ˈse.ki/",
-"p": "v",
-"e": "chase, pursue",
-"n": ""
-},
-{
-"f": "persiana",
-"i": "/per.si.ˈa.na/",
-"p": "n",
-"e": "shutter",
-"n": ""
-},
-{
-"f": "persiste",
-"i": "/per.ˈsis.te/",
-"p": "v",
-"e": "persist",
-"n": ""
-},
-{
-"f": "persistentia",
-"i": "/per.sis.ten.ˈti.a/",
-"p": "n",
-"e": "persistence",
-"n": ""
-},
-{
-"f": "persone",
-"i": "/per.ˈso.ne/",
-"p": "n",
-"e": "person",
-"n": ""
-},
-{
-"f": "peruan",
-"i": "/pe.ˈru.an/",
-"p": "adj",
-"e": "Peruvian",
-"n": "demonym of Peru"
-},
-{
-"f": "pes",
-"i": "/pes/",
-"p": "n",
-"e": "dog, everyday",
-"n": "formal can"
-},
-{
-"f": "pesa",
-"i": "/ˈpe.sa/",
-"p": "v",
-"e": "weigh",
-"n": ""
-},
-{
-"f": "pesant",
-"i": "/ˈpe.sant/",
-"p": "adj",
-"e": "heavy",
-"n": ""
-},
-{
-"f": "pesce",
-"i": "/ˈpes.t͡ʃe/",
-"p": "n",
-"e": "fish",
-"n": "adjective piscin"
-},
-{
-"f": "pesu",
-"i": "/ˈpe.su/",
-"p": "n",
-"e": "weight",
-"n": ""
-},
-{
-"f": "peti",
-"i": "/ˈpe.ti/",
-"p": "v",
-"e": "request",
-"n": ""
-},
-{
-"f": "petia",
-"i": "/pe.ˈti.a/",
-"p": "n",
-"e": "piece",
-"n": ""
-},
-{
-"f": "petitiun",
-"i": "/pe.ti.ˈti.un/",
-"p": "n",
-"e": "petition",
-"n": "any person may put one, in any language"
-},
-{
-"f": "petra",
-"i": "/ˈpe.tra/",
-"p": "n",
-"e": "stone",
-"n": "adjective petros"
-},
-{
-"f": "piatza",
-"i": "/pi.ˈa.t͡sa/",
-"p": "n",
-"e": "square",
-"n": ""
-},
-{
-"f": "picheta",
-"i": "/pik.ˈhe.ta/",
-"p": "v",
-"e": "picket",
-"n": ""
-},
-{
-"f": "pietate",
-"i": "/pi.e.ˈta.te/",
-"p": "n",
-"e": "pity",
-"n": ""
-},
-{
-"f": "pila",
-"i": "/ˈpi.la/",
-"p": "v",
-"e": "stack, pile",
-"n": ""
-},
-{
-"f": "pilota",
-"i": "/pi.ˈlo.ta/",
-"p": "v",
-"e": "steer, drive a vessel",
-"n": ""
-},
-{
-"f": "pilula",
-"i": "/pi.ˈlu.la/",
-"p": "n",
-"e": "pill",
-"n": ""
-},
-{
-"f": "pinsa",
-"i": "/ˈpin.sa/",
-"p": "v",
-"e": "pinch",
-"n": ""
-},
-{
-"f": "pinta",
-"i": "/ˈpin.ta/",
-"p": "v",
-"e": "paint",
-"n": ""
-},
-{
-"f": "piper",
-"i": "/ˈpi.per/",
-"p": "n",
-"e": "pepper",
-"n": ""
-},
-{
-"f": "pivo",
-"i": "/ˈpi.vo/",
-"p": "n",
-"e": "beer, everyday",
-"n": "formal birra; pivo everywhere in speech"
-},
-{
-"f": "placa",
-"i": "/ˈpla.ka/",
-"p": "n",
-"e": "slab",
-"n": ""
-},
-{
-"f": "place",
-"i": "/ˈpla.t͡ʃe/",
-"p": "v",
-"e": "please, be liked",
-"n": "se cafe place te me, I like the coffee"
-},
-{
-"f": "plafon",
-"i": "/ˈpla.fon/",
-"p": "n",
-"e": "ceiling",
-"n": ""
-},
-{
-"f": "plaga",
-"i": "/ˈpla.ga/",
-"p": "n",
-"e": "wound",
-"n": ""
-},
-{
-"f": "plaj",
-"i": "/plaʒ/",
-"p": "n",
-"e": "beach",
-"n": ""
-},
-{
-"f": "plan",
-"i": "/plan/",
-"p": "n",
-"e": "plan",
-"n": ""
-},
-{
-"f": "plana",
-"i": "/ˈpla.na/",
-"p": "n",
-"e": "plain",
-"n": ""
-},
-{
-"f": "plane",
-"i": "/ˈpla.ne/",
-"p": "adj",
-"e": "flat",
-"n": "plan is the plan"
-},
-{
-"f": "planifica",
-"i": "/pla.ni.ˈfi.ka/",
-"p": "v",
-"e": "plan",
-"n": "planificatiun is the noun"
-},
-{
-"f": "planificat",
-"i": "/pla.ni.ˈfi.kat/",
-"p": "adj",
-"e": "planned",
-"n": ""
-},
-{
-"f": "planificatiun",
-"i": "/pla.ni.fi.ka.ˈti.un/",
-"p": "n",
-"e": "planning",
-"n": ""
-},
-{
-"f": "planta",
-"i": "/ˈplan.ta/",
-"p": "n",
-"e": "plant",
-"n": ""
-},
-{
-"f": "platu",
-"i": "/ˈpla.tu/",
-"p": "n",
-"e": "plate",
-"n": ""
-},
-{
-"f": "plen",
-"i": "/plen/",
-"p": "adj",
-"e": "full",
-"n": ""
-},
-{
-"f": "plena",
-"i": "/ˈple.na/",
-"p": "v",
-"e": "fill",
-"n": "from plen"
-},
-{
-"f": "plicu",
-"i": "/ˈpli.ku/",
-"p": "n",
-"e": "envelope",
-"n": ""
-},
-{
-"f": "plora",
-"i": "/ˈplo.ra/",
-"p": "v",
-"e": "cry, weep",
-"n": ""
-},
-{
-"f": "plural",
-"i": "/ˈplu.ral/",
-"p": "n",
-"e": "plural",
-"n": ""
-},
-{
-"f": "pluralite",
-"i": "/plu.ra.ˈli.te/",
-"p": "n",
-"e": "plurality",
-"n": ""
-},
-{
-"f": "plures",
-"i": "/ˈplu.res/",
-"p": "pron",
-"e": "several",
-"n": ""
-},
-{
-"f": "plus",
-"i": "/plus/",
-"p": "adv",
-"e": "more than, over",
-"n": "plus de un anu, more than a year"
-},
-{
-"f": "pluvia",
-"i": "/plu.ˈvi.a/",
-"p": "n",
-"e": "rain",
-"n": "adjective pluvios"
-},
-{
-"f": "poc",
-"i": "/pok/",
-"p": "det",
-"e": "few, little",
-"n": ""
-},
-{
-"f": "pod",
-"i": "/pod/",
-"p": "n",
-"e": "bridge",
-"n": "adjective podak"
-},
-{
-"f": "podlaha",
-"i": "/po.ˈdla.ha/",
-"p": "n",
-"e": "floor of a room",
-"n": ""
-},
-{
-"f": "podnik",
-"i": "/ˈpod.nik/",
-"p": "n",
-"e": "enterprise, a public undertaking",
-"n": "the everyday word for a public undertaking"
-},
-{
-"f": "polac",
-"i": "/ˈpo.lak/",
-"p": "adj",
-"e": "Polish",
-"n": ""
-},
-{
-"f": "police",
-"i": "/po.ˈli.t͡ʃe/",
-"p": "n",
-"e": "thumb",
-"n": ""
-},
-{
-"f": "policia",
-"i": "/po.ˈli.t͡ʃa/",
-"p": "n",
-"e": "police",
-"n": ""
-},
-{
-"f": "polisce",
-"i": "/po.ˈlis.t͡ʃe/",
-"p": "v",
-"e": "polish",
-"n": ""
-},
-{
-"f": "polu",
-"i": "/ˈpo.lu/",
-"p": "n",
-"e": "chicken",
-"n": ""
-},
-{
-"f": "pom",
-"i": "/pom/",
-"p": "n",
-"e": "apple",
-"n": ""
-},
-{
-"f": "pomar",
-"i": "/ˈpo.mar/",
-"p": "n",
-"e": "orchard",
-"n": ""
-},
-{
-"f": "pomoc",
-"i": "/ˈpo.mok/",
-"p": "n",
-"e": "help, everyday",
-"n": "formal auxil; pomoc is what a person shouts"
-},
-{
-"f": "pompa",
-"i": "/ˈpom.pa/",
-"p": "n",
-"e": "pump",
-"n": "the lagun works run on them"
-},
-{
-"f": "pompiere",
-"i": "/pom.pi.ˈe.re/",
-"p": "n",
-"e": "firefighter",
-"n": ""
-},
-{
-"f": "pone",
-"i": "/ˈpo.ne/",
-"p": "v",
-"e": "put",
-"n": ""
-},
-{
-"f": "ponte",
-"i": "/ˈpon.te/",
-"p": "n",
-"e": "bridge, in the building trade",
-"n": "pod is the bridge a person crosses; ponte termic is a thermal bridge"
-},
-{
-"f": "pontile",
-"i": "/pon.ˈti.le/",
-"p": "n",
-"e": "pier",
-"n": ""
-},
-{
-"f": "popular",
-"i": "/po.ˈpu.lar/",
-"p": "adj",
-"e": "popular",
-"n": ""
-},
-{
-"f": "populatiun",
-"i": "/po.pu.la.ˈti.un/",
-"p": "n",
-"e": "population",
-"n": ""
-},
-{
-"f": "porc",
-"i": "/pork/",
-"p": "n",
-"e": "pig, pork",
-"n": "the animal and the meat alike"
-},
-{
-"f": "poros",
-"i": "/ˈpo.ros/",
-"p": "adj",
-"e": "porous",
-"n": ""
-},
-{
-"f": "port",
-"i": "/port/",
-"p": "n",
-"e": "port",
-"n": ""
-},
-{
-"f": "porta",
-"i": "/ˈpor.ta/",
-"p": "n",
-"e": "door",
-"n": ""
-},
-{
-"f": "portiun",
-"i": "/por.ˈti.un/",
-"p": "n",
-"e": "portion",
-"n": ""
-},
-{
-"f": "portmoneu",
-"i": "/port.ˈmo.neu/",
-"p": "n",
-"e": "wallet",
-"n": ""
-},
-{
-"f": "portocal",
-"i": "/por.ˈto.kal/",
-"p": "n",
-"e": "orange",
-"n": "the fruit; the colour is portocaliu"
-},
-{
-"f": "portocaliu",
-"i": "/por.to.ka.ˈli.u/",
-"p": "adj",
-"e": "orange",
-"n": "from portocal, the fruit"
-},
-{
-"f": "portughe",
-"i": "/por.ˈtug.he/",
-"p": "adj",
-"e": "Portuguese",
-"n": "demonym of Portugal"
-},
-{
-"f": "posdeman",
-"i": "/pos.ˈde.man/",
-"p": "adv",
-"e": "the day after tomorrow",
-"n": "deman is tomorrow"
-},
-{
-"f": "positiun",
-"i": "/po.si.ˈti.un/",
-"p": "n",
-"e": "position",
-"n": ""
-},
-{
-"f": "possessiun",
-"i": "/po.se.ˈsi.un/",
-"p": "n",
-"e": "possession",
-"n": "carried by de and by nothing else"
-},
-{
-"f": "possibile",
-"i": "/po.si.ˈbi.le/",
-"p": "adj",
-"e": "possible",
-"n": "the negative is nopossibile"
-},
-{
-"f": "possibilement",
-"i": "/po.si.bi.ˈle.ment/",
-"p": "adv",
-"e": "possibly",
-"n": "possibilitate is the noun"
-},
-{
-"f": "possibilitate",
-"i": "/po.si.bi.li.ˈta.te/",
-"p": "n",
-"e": "possibility",
-"n": ""
-},
-{
-"f": "post",
-"i": "/post/",
-"p": "prep",
-"e": "after",
-"n": ""
-},
-{
-"f": "posta",
-"i": "/ˈpos.ta/",
-"p": "n",
-"e": "post, post office",
-"n": ""
-},
-{
-"f": "postea",
-"i": "/pos.ˈte.a/",
-"p": "adv",
-"e": "afterwards",
-"n": ""
-},
-{
-"f": "postel",
-"i": "/ˈpos.tel/",
-"p": "n",
-"e": "bed, everyday",
-"n": "formal lecte"
-},
-{
-"f": "postque",
-"i": "/ˈpost.ke/",
-"p": "conj",
-"e": "after, once",
-"n": ""
-},
-{
-"f": "pote",
-"i": "/ˈpo.te/",
-"p": "v",
-"e": "can, may",
-"n": ""
-},
-{
-"f": "potentia",
-"i": "/po.ten.ˈti.a/",
-"p": "n",
-"e": "power",
-"n": "of a body and of a machine"
-},
-{
-"f": "poter",
-"i": "/ˈpo.ter/",
-"p": "n",
-"e": "power",
-"n": ""
-},
-{
-"f": "praca",
-"i": "/ˈpra.ka/",
-"p": "v",
-"e": "work",
-"n": "also the everyday noun for work"
-},
-{
-"f": "practica",
-"i": "/prak.ˈti.ka/",
-"p": "v",
-"e": "practise a trade",
-"n": "of a trade; praca of work in general"
-},
-{
-"f": "prandiu",
-"i": "/pran.ˈdi.u/",
-"p": "n",
-"e": "midday meal, formal",
-"n": "everyday obed"
-},
-{
-"f": "praxi",
-"i": "/ˈpra.ʃi/",
-"p": "n",
-"e": "practice",
-"n": "practica is the verb"
-},
-{
-"f": "precedent",
-"i": "/pre.ˈt͡ʃe.dent/",
-"p": "adj",
-"e": "preceding",
-"n": ""
-},
-{
-"f": "precis",
-"i": "/ˈpre.t͡ʃis/",
-"p": "adj",
-"e": "precise",
-"n": "precisa is the verb"
-},
-{
-"f": "precisa",
-"i": "/pre.ˈt͡ʃi.sa/",
-"p": "v",
-"e": "state precisely",
-"n": "precisa se hora, give the exact time"
-},
-{
-"f": "precisment",
-"i": "/pre.ˈt͡ʃis.ment/",
-"p": "adv",
-"e": "precisely",
-"n": ""
-},
-{
-"f": "prefere",
-"i": "/pre.ˈfe.re/",
-"p": "v",
-"e": "prefer",
-"n": ""
-},
-{
-"f": "preferentia",
-"i": "/pre.fe.ren.ˈti.a/",
-"p": "n",
-"e": "preference",
-"n": ""
-},
-{
-"f": "prefix",
-"i": "/ˈpre.fiʃ/",
-"p": "n",
-"e": "prefix",
-"n": ""
-},
-{
-"f": "prelectiun",
-"i": "/pre.lek.ˈti.un/",
-"p": "n",
-"e": "lecture",
-"n": ""
-},
-{
-"f": "prende",
-"i": "/ˈpren.de/",
-"p": "v",
-"e": "take",
-"n": ""
-},
-{
-"f": "prenome",
-"i": "/pre.ˈno.me/",
-"p": "n",
-"e": "given name",
-"n": ""
-},
-{
-"f": "preocupatiun",
-"i": "/pre.o.ku.pa.ˈti.un/",
-"p": "n",
-"e": "concern, preoccupation",
-"n": ""
-},
-{
-"f": "prepara",
-"i": "/pre.ˈpa.ra/",
-"p": "v",
-"e": "prepare",
-"n": ""
-},
-{
-"f": "prepositiun",
-"i": "/pre.po.si.ˈti.un/",
-"p": "n",
-"e": "preposition",
-"n": ""
-},
-{
-"f": "presa",
-"i": "/ˈpre.sa/",
-"p": "n",
-"e": "press",
-"n": ""
-},
-{
-"f": "present",
-"i": "/ˈpre.sent/",
-"p": "adj",
-"e": "present",
-"n": ""
-},
-{
-"f": "presenta",
-"i": "/pre.ˈsen.ta/",
-"p": "v",
-"e": "present, put forward",
-"n": ""
-},
-{
-"f": "presente",
-"i": "/pre.ˈsen.te/",
-"p": "n",
-"e": "present time",
-"n": "also the adjective, present"
-},
-{
-"f": "presentia",
-"i": "/pre.sen.ˈti.a/",
-"p": "n",
-"e": "presence",
-"n": ""
-},
-{
-"f": "presida",
-"i": "/pre.ˈsi.da/",
-"p": "v",
-"e": "preside",
-"n": ""
-},
-{
-"f": "presiun",
-"i": "/pre.ˈsi.un/",
-"p": "n",
-"e": "pressure",
-"n": "read on a manometru"
-},
-{
-"f": "presso",
-"i": "/ˈpre.so/",
-"p": "prep",
-"e": "hard against, right beside",
-"n": "prope is nearness; presso is contact or all but"
-},
-{
-"f": "prest",
-"i": "/prest/",
-"p": "adj",
-"e": "ready",
-"n": ""
-},
-{
-"f": "presta",
-"i": "/ˈpres.ta/",
-"p": "v",
-"e": "lend",
-"n": "presta is to lend, mutua to borrow"
-},
-{
-"f": "presto",
-"i": "/ˈpres.to/",
-"p": "adv",
-"e": "soon",
-"n": ""
-},
-{
-"f": "prestu",
-"i": "/ˈpres.tu/",
-"p": "n",
-"e": "loanword",
-"n": "prestu lassat integr, a loan left whole"
-},
-{
-"f": "presuma",
-"i": "/pre.ˈsu.ma/",
-"p": "v",
-"e": "presume",
-"n": ""
-},
-{
-"f": "pretia",
-"i": "/pre.ˈti.a/",
-"p": "v",
-"e": "price, put a price on",
-"n": ""
-},
-{
-"f": "pretiu",
-"i": "/pre.ˈti.u/",
-"p": "n",
-"e": "price",
-"n": ""
-},
-{
-"f": "previde",
-"i": "/pre.ˈvi.de/",
-"p": "v",
-"e": "foresee",
-"n": ""
-},
-{
-"f": "previsiun",
-"i": "/pre.vi.ˈsi.un/",
-"p": "n",
-"e": "forecast",
-"n": "the meteo cooperative issues them"
-},
-{
-"f": "prexa",
-"i": "/ˈpre.ʃa/",
-"p": "adj",
-"e": "next in a sequence",
-"n": "prexa statiun, the next stop"
-},
-{
-"f": "prexim",
-"i": "/ˈpre.ʃim/",
-"p": "adj",
-"e": "next",
-"n": "statiun prexim, the next stop"
-},
-{
-"f": "prim",
-"i": "/prim/",
-"p": "adj",
-"e": "first",
-"n": ""
-},
-{
-"f": "primavera",
-"i": "/pri.ma.ˈve.ra/",
-"p": "n",
-"e": "spring",
-"n": ""
-},
-{
-"f": "primo",
-"i": "/ˈpri.mo/",
-"p": "adv",
-"e": "firstly",
-"n": "primo, secundo, ultimo in a list"
-},
-{
-"f": "principal",
-"i": "/prin.ˈt͡ʃi.pal/",
-"p": "adj",
-"e": "main",
-"n": ""
-},
-{
-"f": "principalment",
-"i": "/prin.t͡ʃi.ˈpal.ment/",
-"p": "adv",
-"e": "principally",
-"n": ""
-},
-{
-"f": "principiu",
-"i": "/prin.t͡ʃi.ˈpi.u/",
-"p": "n",
-"e": "principle",
-"n": ""
-},
-{
-"f": "prioritate",
-"i": "/pri.o.ri.ˈta.te/",
-"p": "n",
-"e": "priority",
-"n": "prioritate te se abaxa, priority to those getting down"
-},
-{
-"f": "prisa",
-"i": "/ˈpri.sa/",
-"p": "n",
-"e": "socket",
-"n": ""
-},
-{
-"f": "privat",
-"i": "/ˈpri.vat/",
-"p": "adj",
-"e": "private",
-"n": ""
-},
-{
-"f": "privatament",
-"i": "/pri.va.ˈta.ment/",
-"p": "adv",
-"e": "privately",
-"n": ""
-},
-{
-"f": "proba",
-"i": "/ˈpro.ba/",
-"p": "v",
-"e": "test, try out",
-"n": ""
-},
-{
-"f": "probabile",
-"i": "/pro.ba.ˈbi.le/",
-"p": "adj",
-"e": "probable",
-"n": ""
-},
-{
-"f": "probabilement",
-"i": "/pro.ba.bi.ˈle.ment/",
-"p": "adv",
-"e": "probably",
-"n": ""
-},
-{
-"f": "probatiun",
-"i": "/pro.ba.ˈti.un/",
-"p": "n",
-"e": "proof, the proving of a thing",
-"n": ""
-},
-{
-"f": "problem",
-"i": "/ˈpro.blem/",
-"p": "n",
-"e": "problem",
-"n": ""
-},
-{
-"f": "problema",
-"i": "/pro.ˈble.ma/",
-"p": "n",
-"e": "problem",
-"n": ""
-},
-{
-"f": "proce",
-"i": "/ˈpro.t͡ʃe/",
-"p": "n",
-"e": "process",
-"n": ""
-},
-{
-"f": "procedura",
-"i": "/pro.t͡ʃe.ˈdu.ra/",
-"p": "n",
-"e": "procedure",
-"n": ""
-},
-{
-"f": "proclama",
-"i": "/pro.ˈkla.ma/",
-"p": "v",
-"e": "proclaim a result",
-"n": "the result is proclaimed at the commune"
-},
-{
-"f": "procul",
-"i": "/ˈpro.kul/",
-"p": "prep",
-"e": "far from",
-"n": ""
-},
-{
-"f": "produce",
-"i": "/pro.ˈdu.t͡ʃe/",
-"p": "v",
-"e": "produce",
-"n": ""
-},
-{
-"f": "product",
-"i": "/ˈpro.dukt/",
-"p": "n",
-"e": "product",
-"n": ""
-},
-{
-"f": "productiun",
-"i": "/pro.duk.ˈti.un/",
-"p": "n",
-"e": "production",
-"n": ""
-},
-{
-"f": "productiv",
-"i": "/pro.ˈduk.tiv/",
-"p": "adj",
-"e": "productive, of a suffix still in use",
-"n": ""
-},
-{
-"f": "productivitate",
-"i": "/pro.duk.ti.vi.ˈta.te/",
-"p": "n",
-"e": "productivity",
-"n": ""
-},
-{
-"f": "profesa",
-"i": "/pro.ˈfe.sa/",
-"p": "v",
-"e": "practise professionally",
-"n": ""
-},
-{
-"f": "profesor",
-"i": "/pro.ˈfe.sor/",
-"p": "n",
-"e": "teacher",
-"n": ""
-},
-{
-"f": "profund",
-"i": "/ˈpro.fund/",
-"p": "adj",
-"e": "deep",
-"n": ""
-},
-{
-"f": "profundament",
-"i": "/pro.fun.ˈda.ment/",
-"p": "adv",
-"e": "deeply",
-"n": ""
-},
-{
-"f": "profundu",
-"i": "/pro.ˈfun.du/",
-"p": "n",
-"e": "depth",
-"n": ""
-},
-{
-"f": "programa",
-"i": "/pro.ˈgra.ma/",
-"p": "n",
-"e": "programme",
-"n": ""
-},
-{
-"f": "programisa",
-"i": "/pro.gra.ˈmi.sa/",
-"p": "v",
-"e": "schedule, put on the timetable",
-"n": "programa is the programme"
-},
-{
-"f": "progres",
-"i": "/ˈpro.gres/",
-"p": "n",
-"e": "progress",
-"n": ""
-},
-{
-"f": "prohibe",
-"i": "/pro.ˈhi.be/",
-"p": "v",
-"e": "forbid",
-"n": ""
-},
-{
-"f": "projectu",
-"i": "/pro.ˈʒek.tu/",
-"p": "n",
-"e": "project",
-"n": ""
-},
-{
-"f": "promete",
-"i": "/pro.ˈme.te/",
-"p": "v",
-"e": "promise",
-"n": ""
-},
-{
-"f": "promova",
-"i": "/pro.ˈmo.va/",
-"p": "v",
-"e": "promote",
-"n": ""
-},
-{
-"f": "promulga",
-"i": "/pro.ˈmul.ga/",
-"p": "v",
-"e": "promulgate",
-"n": ""
-},
-{
-"f": "pronome",
-"i": "/pro.ˈno.me/",
-"p": "n",
-"e": "pronoun",
-"n": ""
-},
-{
-"f": "prononciatiun",
-"i": "/pro.non.t͡ʃa.ˈti.un/",
-"p": "n",
-"e": "pronunciation",
-"n": ""
-},
-{
-"f": "pronuncia",
-"i": "/pro.nun.ˈt͡ʃi.a/",
-"p": "v",
-"e": "pronounce, deliver a ruling",
-"n": "of a court; prononciatiun is the noun"
-},
-{
-"f": "prope",
-"i": "/ˈpro.pe/",
-"p": "prep",
-"e": "near",
-"n": "prope se statiun, near the stop"
-},
-{
-"f": "propone",
-"i": "/pro.ˈpo.ne/",
-"p": "v",
-"e": "propose",
-"n": ""
-},
-{
-"f": "proportiun",
-"i": "/pro.por.ˈti.un/",
-"p": "n",
-"e": "proportion",
-"n": ""
-},
-{
-"f": "proposta",
-"i": "/pro.ˈpos.ta/",
-"p": "n",
-"e": "proposal",
-"n": ""
-},
-{
-"f": "propri",
-"i": "/ˈpro.pri/",
-"p": "adj",
-"e": "own, proper to a thing",
-"n": ""
-},
-{
-"f": "proprietariu",
-"i": "/pro.pri.e.ta.ˈri.u/",
-"p": "n",
-"e": "owner",
-"n": "no dwelling is held for gain"
-},
-{
-"f": "prosop",
-"i": "/ˈpro.sop/",
-"p": "n",
-"e": "towel",
-"n": ""
-},
-{
-"f": "prosperitate",
-"i": "/pros.pe.ri.ˈta.te/",
-"p": "n",
-"e": "prosperity",
-"n": ""
-},
-{
-"f": "protege",
-"i": "/pro.ˈte.d͡ʒe/",
-"p": "v",
-"e": "protect",
-"n": ""
-},
-{
-"f": "protejat",
-"i": "/pro.ˈte.ʒat/",
-"p": "adj",
-"e": "protected",
-"n": ""
-},
-{
-"f": "protesta",
-"i": "/pro.ˈtes.ta/",
-"p": "v",
-"e": "protest",
-"n": ""
-},
-{
-"f": "proteste",
-"i": "/pro.ˈtes.te/",
-"p": "n",
-"e": "a protest",
-"n": "protesta is the act; proteste is the thing that lasts and gets counted"
-},
-{
-"f": "protocola",
-"i": "/pro.to.ˈko.la/",
-"p": "v",
-"e": "minute, record formally",
-"n": ""
-},
-{
-"f": "protocolu",
-"i": "/pro.to.ˈko.lu/",
-"p": "n",
-"e": "formal record of proceedings",
-"n": ""
-},
-{
-"f": "prototip",
-"i": "/pro.ˈto.tip/",
-"p": "n",
-"e": "prototype",
-"n": ""
-},
-{
-"f": "prova",
-"i": "/ˈpro.va/",
-"p": "n",
-"e": "test, trial",
-"n": ""
-},
-{
-"f": "provisiun",
-"i": "/pro.vi.ˈsi.un/",
-"p": "n",
-"e": "provision",
-"n": "of a text and of a store laid in"
-},
-{
-"f": "provoca",
-"i": "/pro.ˈvo.ka/",
-"p": "v",
-"e": "provoke",
-"n": ""
-},
-{
-"f": "proxim",
-"i": "/ˈpro.ʃim/",
-"p": "adj",
-"e": "next, nearby",
-"n": ""
-},
-{
-"f": "proximitate",
-"i": "/pro.ʃi.mi.ˈta.te/",
-"p": "n",
-"e": "nearness",
-"n": "prexim is the adjective on the eastern seaboard"
-},
-{
-"f": "prudente",
-"i": "/pru.ˈden.te/",
-"p": "adj",
-"e": "prudent",
-"n": ""
-},
-{
-"f": "prudentement",
-"i": "/pru.den.ˈte.ment/",
-"p": "adv",
-"e": "prudently",
-"n": ""
-},
-{
-"f": "prudentia",
-"i": "/pru.den.ˈti.a/",
-"p": "n",
-"e": "prudence",
-"n": ""
-},
-{
-"f": "pruna",
-"i": "/ˈpru.na/",
-"p": "n",
-"e": "plum",
-"n": ""
-},
-{
-"f": "public",
-"i": "/ˈpu.blik/",
-"p": "adj",
-"e": "public",
-"n": ""
-},
-{
-"f": "publica",
-"i": "/pu.ˈbli.ka/",
-"p": "v",
-"e": "publish",
-"n": ""
-},
-{
-"f": "publicament",
-"i": "/pu.bli.ˈka.ment/",
-"p": "adv",
-"e": "publicly",
-"n": "of a sitting held in the open"
-},
-{
-"f": "publicatiun",
-"i": "/pu.bli.ka.ˈti.un/",
-"p": "n",
-"e": "publication",
-"n": ""
-},
-{
-"f": "puella",
-"i": "/pu.ˈe.la/",
-"p": "n",
-"e": "girl",
-"n": ""
-},
-{
-"f": "puer",
-"i": "/ˈpu.er/",
-"p": "n",
-"e": "boy",
-"n": ""
-},
-{
-"f": "pullover",
-"i": "/pu.ˈlo.ver/",
-"p": "n",
-"e": "jumper",
-"n": ""
-},
-{
-"f": "pulmon",
-"i": "/ˈpul.mon/",
-"p": "n",
-"e": "lung",
-"n": ""
-},
-{
-"f": "pulsu",
-"i": "/ˈpul.su/",
-"p": "n",
-"e": "pulse",
-"n": ""
-},
-{
-"f": "punt",
-"i": "/punt/",
-"p": "n",
-"e": "point, spot",
-"n": ""
-},
-{
-"f": "pupitre",
-"i": "/pu.ˈpi.tre/",
-"p": "n",
-"e": "desk",
-"n": ""
-},
-{
-"f": "purpure",
-"i": "/pur.ˈpu.re/",
-"p": "adj",
-"e": "purple",
-"n": ""
-},
-{
-"f": "pusa",
-"i": "/ˈpu.sa/",
-"p": "v",
-"e": "push",
-"n": "no pusa vos un se altre"
-},
-{
-"f": "pussa",
-"i": "/ˈpu.sa/",
-"p": "v",
-"e": "push",
-"n": ""
-},
-{
-"f": "putri",
-"i": "/ˈpu.tri/",
-"p": "v",
-"e": "rot",
-"n": "putrid is the adjective"
-},
-{
-"f": "putrid",
-"i": "/ˈpu.trid/",
-"p": "adj",
-"e": "rotten",
-"n": ""
-},
-{
-"f": "quadrat",
-"i": "/ˈka.drat/",
-"p": "adj",
-"e": "square",
-"n": ""
-},
-{
-"f": "quale",
-"i": "/ˈka.le/",
-"p": "det",
-"e": "which, what sort of",
-"n": ""
-},
-{
-"f": "qualifica",
-"i": "/ka.li.ˈfi.ka/",
-"p": "v",
-"e": "qualify",
-"n": ""
-},
-{
-"f": "quam",
-"i": "/kam/",
-"p": "conj",
-"e": "than",
-"n": "plus grande quam; que is common in speech"
-},
-{
-"f": "quando",
-"i": "/ˈkan.do/",
-"p": "adv",
-"e": "when",
-"n": ""
-},
-{
-"f": "quante",
-"i": "/ˈkan.te/",
-"p": "det",
-"e": "how many, how much",
-"n": ""
-},
-{
-"f": "quanto",
-"i": "/ˈkan.to/",
-"p": "adv",
-"e": "how much",
-"n": ""
-},
-{
-"f": "quaranta",
-"i": "/ka.ˈran.ta/",
-"p": "num",
-"e": "forty",
-"n": ""
-},
-{
-"f": "quart",
-"i": "/kart/",
-"p": "n",
-"e": "quarter, a fourth",
-"n": "past the third the numeral stands after the noun: articul quatre"
-},
-{
-"f": "quartier",
-"i": "/kar.ˈti.er/",
-"p": "n",
-"e": "district of a town",
-"n": ""
-},
-{
-"f": "quasi",
-"i": "/ˈka.si/",
-"p": "adv",
-"e": "almost",
-"n": ""
-},
-{
-"f": "quatre",
-"i": "/ˈka.tre/",
-"p": "num",
-"e": "four",
-"n": ""
-},
-{
-"f": "que",
-"i": "/ke/",
-"p": "pron",
-"e": "what, which, that",
-"n": ""
-},
-{
-"f": "quenian",
-"i": "/ke.ˈni.an/",
-"p": "adj",
-"e": "Kenyan",
-"n": "demonym of Quenia"
-},
-{
-"f": "quere",
-"i": "/ˈke.re/",
-"p": "v",
-"e": "look for, seek",
-"n": ""
-},
-{
-"f": "question",
-"i": "/kes.ˈti.un/",
-"p": "n",
-"e": "question, matter in issue",
-"n": "demanda is what a person asks; question is the matter itself"
-},
-{
-"f": "questiun",
-"i": "/kes.ˈti.un/",
-"p": "n",
-"e": "question",
-"n": ""
-},
-{
-"f": "qui",
-"i": "/ki/",
-"p": "pron",
-"e": "who",
-"n": ""
-},
-{
-"f": "quiet",
-"i": "/ˈki.et/",
-"p": "adj",
-"e": "quiet",
-"n": ""
-},
-{
-"f": "quilo",
-"i": "/ˈki.lo/",
-"p": "n",
-"e": "kilogram",
-"n": ""
-},
-{
-"f": "quilometru",
-"i": "/ki.lo.ˈme.tru/",
-"p": "n",
-"e": "kilometre",
-"n": ""
-},
-{
-"f": "quirgizstanian",
-"i": "/kir.d͡ʒizs.ta.ˈni.an/",
-"p": "adj",
-"e": "Kyrgyz",
-"n": "demonym of Quirgizstan"
-},
-{
-"f": "quiribatan",
-"i": "/ki.ri.ˈba.tan/",
-"p": "adj",
-"e": "I-Kiribati",
-"n": "demonym of Quiribati"
-},
-{
-"f": "quisque",
-"i": "/ˈkis.ke/",
-"p": "pron",
-"e": "each one",
-"n": ""
-},
-{
-"f": "quo",
-"i": "/ko/",
-"p": "adv",
-"e": "whither, to where",
-"n": ""
-},
-{
-"f": "quorum",
-"i": "/ˈko.rum/",
-"p": "n",
-"e": "quorum",
-"n": ""
-},
-{
-"f": "quota",
-"i": "/ˈko.ta/",
-"p": "n",
-"e": "quota",
-"n": ""
-},
-{
-"f": "quotidian",
-"i": "/ko.ti.ˈdi.an/",
-"p": "adj",
-"e": "daily",
-"n": "die is the day"
-},
-{
-"f": "quotidianment",
-"i": "/ko.ti.di.ˈan.ment/",
-"p": "adv",
-"e": "daily",
-"n": ""
-},
-{
-"f": "rada",
-"i": "/ˈra.da/",
-"p": "n",
-"e": "anchorage",
-"n": ""
-},
-{
-"f": "radia",
-"i": "/ra.ˈdi.a/",
-"p": "v",
-"e": "strike off a register",
-"n": ""
-},
-{
-"f": "radiator",
-"i": "/ra.di.ˈa.tor/",
-"p": "n",
-"e": "radiator",
-"n": ""
-},
-{
-"f": "radice",
-"i": "/ra.ˈdi.t͡ʃe/",
-"p": "n",
-"e": "stem of a word, root",
-"n": ""
-},
-{
-"f": "radio",
-"i": "/ra.ˈdi.o/",
-"p": "n",
-"e": "radio",
-"n": ""
-},
-{
-"f": "radiu",
-"i": "/ra.ˈdi.u/",
-"p": "n",
-"e": "radius",
-"n": ""
-},
-{
-"f": "rafred",
-"i": "/ˈra.fred/",
-"p": "n",
-"e": "a cold",
-"n": ""
-},
-{
-"f": "raft",
-"i": "/raft/",
-"p": "n",
-"e": "shelf",
-"n": ""
-},
-{
-"f": "ramu",
-"i": "/ˈra.mu/",
-"p": "n",
-"e": "frame",
-"n": "se ramu de porta, the door frame"
-},
-{
-"f": "rand",
-"i": "/rand/",
-"p": "n",
-"e": "queue, everyday",
-"n": "formal fila; kept from the Directorate years"
-},
-{
-"f": "rapid",
-"i": "/ˈra.pid/",
-"p": "adj",
-"e": "fast",
-"n": ""
-},
-{
-"f": "rapidament",
-"i": "/ra.pi.ˈda.ment/",
-"p": "adv",
-"e": "quickly",
-"n": "the suffix takes a linking a after any consonant but l, n, r or s"
-},
-{
-"f": "rapiditate",
-"i": "/ra.pi.di.ˈta.te/",
-"p": "n",
-"e": "speed",
-"n": ""
-},
-{
-"f": "raport",
-"i": "/ˈra.port/",
-"p": "n",
-"e": "report",
-"n": ""
-},
-{
-"f": "rar",
-"i": "/rar/",
-"p": "adj",
-"e": "rare",
-"n": "raro is the adverb"
-},
-{
-"f": "raro",
-"i": "/ˈra.ro/",
-"p": "adv",
-"e": "seldom",
-"n": ""
-},
-{
-"f": "rasa",
-"i": "/ˈra.sa/",
-"p": "v",
-"e": "plane, level off",
-"n": ""
-},
-{
-"f": "ratifica",
-"i": "/ra.ti.ˈfi.ka/",
-"p": "v",
-"e": "ratify",
-"n": ""
-},
-{
-"f": "ratificatiun",
-"i": "/ra.ti.fi.ka.ˈti.un/",
-"p": "n",
-"e": "ratification",
-"n": ""
-},
-{
-"f": "rationa",
-"i": "/ra.ti.ˈo.na/",
-"p": "v",
-"e": "reason",
-"n": ""
-},
-{
-"f": "rational",
-"i": "/ra.ti.ˈo.nal/",
-"p": "adj",
-"e": "rational",
-"n": ""
-},
-{
-"f": "rationalisa",
-"i": "/ra.ti.o.na.ˈli.sa/",
-"p": "v",
-"e": "rationalise",
-"n": ""
-},
-{
-"f": "rationalment",
-"i": "/ra.ti.o.ˈnal.ment/",
-"p": "adv",
-"e": "rationally",
-"n": ""
-},
-{
-"f": "ratiun",
-"i": "/ra.ˈti.un/",
-"p": "n",
-"e": "reason, ground",
-"n": "causa of what brings a thing about"
-},
-{
-"f": "re-",
-"i": "",
-"p": "pref",
-"e": "again",
-"n": ""
-},
-{
-"f": "reactiun",
-"i": "/re.ak.ˈti.un/",
-"p": "n",
-"e": "chemical reaction",
-"n": ""
-},
-{
-"f": "real",
-"i": "/ˈre.al/",
-"p": "adj",
-"e": "real, actual",
-"n": "se data real, the date the work will actually end"
-},
-{
-"f": "realite",
-"i": "/re.a.ˈli.te/",
-"p": "n",
-"e": "reality",
-"n": ""
-},
-{
-"f": "reaperture",
-"i": "/re.a.per.ˈtu.re/",
-"p": "n",
-"e": "reopening",
-"n": "aperi is to open; reaperture is the opening of a thing closed for work"
-},
-{
-"f": "recent",
-"i": "/ˈre.t͡ʃent/",
-"p": "adj",
-"e": "recent",
-"n": ""
-},
-{
-"f": "recentament",
-"i": "/re.t͡ʃen.ˈta.ment/",
-"p": "adv",
-"e": "recently",
-"n": ""
-},
-{
-"f": "receptor",
-"i": "/re.ˈt͡ʃep.tor/",
-"p": "n",
-"e": "receiver",
-"n": ""
-},
-{
-"f": "receta",
-"i": "/re.ˈt͡ʃe.ta/",
-"p": "n",
-"e": "recipe, prescription",
-"n": ""
-},
-{
-"f": "recif",
-"i": "/ˈre.t͡ʃif/",
-"p": "n",
-"e": "reef",
-"n": ""
-},
-{
-"f": "reciproc",
-"i": "/re.ˈt͡ʃi.prok/",
-"p": "adj",
-"e": "reciprocal",
-"n": ""
-},
-{
-"f": "reciprocament",
-"i": "/re.t͡ʃi.pro.ˈka.ment/",
-"p": "adv",
-"e": "reciprocally",
-"n": ""
-},
-{
-"f": "recive",
-"i": "/re.ˈt͡ʃi.ve/",
-"p": "v",
-"e": "receive",
-"n": ""
-},
-{
-"f": "reclama",
-"i": "/re.ˈkla.ma/",
-"p": "v",
-"e": "claim, complain formally",
-"n": "of a formal complaint; clama of a shout"
-},
-{
-"f": "reclina",
-"i": "/re.ˈkli.na/",
-"p": "v",
-"e": "lean back",
-"n": ""
-},
-{
-"f": "recomanda",
-"i": "/re.ko.ˈman.da/",
-"p": "v",
-"e": "recommend",
-"n": ""
-},
-{
-"f": "recomandatiun",
-"i": "/re.ko.man.da.ˈti.un/",
-"p": "n",
-"e": "recommendation",
-"n": ""
-},
-{
-"f": "reconosce",
-"i": "/re.ko.ˈnos.t͡ʃe/",
-"p": "v",
-"e": "recognise",
-"n": ""
-},
-{
-"f": "record",
-"i": "/ˈre.kord/",
-"p": "n",
-"e": "record",
-"n": ""
-},
-{
-"f": "recorda",
-"i": "/re.ˈkor.da/",
-"p": "v",
-"e": "remember",
-"n": ""
-},
-{
-"f": "recruta",
-"i": "/re.ˈkru.ta/",
-"p": "v",
-"e": "recruit",
-"n": ""
-},
-{
-"f": "rect",
-"i": "/rekt/",
-"p": "adj",
-"e": "straight",
-"n": "recte is the adverb"
-},
-{
-"f": "recte",
-"i": "/ˈrek.te/",
-"p": "adv",
-"e": "straight on",
-"n": ""
-},
-{
-"f": "recuperatiun",
-"i": "/re.ku.pe.ra.ˈti.un/",
-"p": "n",
-"e": "recovery",
-"n": ""
-},
-{
-"f": "recursu",
-"i": "/re.ˈkur.su/",
-"p": "n",
-"e": "recourse",
-"n": ""
-},
-{
-"f": "redacta",
-"i": "/re.ˈdak.ta/",
-"p": "v",
-"e": "draft, write up",
-"n": "of a text put into form; scriva of the act"
-},
-{
-"f": "redactiun",
-"i": "/re.dak.ˈti.un/",
-"p": "n",
-"e": "editorial desk",
-"n": "presa is the press as a body; redactiun is the desk that signs a piece"
-},
-{
-"f": "reductiun",
-"i": "/re.duk.ˈti.un/",
-"p": "n",
-"e": "discount",
-"n": ""
-},
-{
-"f": "reelige",
-"i": "/re.e.ˈli.d͡ʒe/",
-"p": "v",
-"e": "re-elect",
-"n": ""
-},
-{
-"f": "referendu",
-"i": "/re.fe.ˈren.du/",
-"p": "n",
-"e": "referendum",
-"n": ""
-},
-{
-"f": "referentia",
-"i": "/re.fe.ren.ˈti.a/",
-"p": "n",
-"e": "reference",
-"n": ""
-},
-{
-"f": "reflexiv",
-"i": "/re.fle.ˈʃiv/",
-"p": "adj",
-"e": "reflexive",
-"n": "sese is the reflexive; ipse is emphatic"
-},
-{
-"f": "refugiu",
-"i": "/re.ˈfu.d͡ʒu/",
-"p": "n",
-"e": "shelter",
-"n": ""
-},
-{
-"f": "refusa",
-"i": "/re.ˈfu.sa/",
-"p": "v",
-"e": "refuse",
-"n": "refusa se transbord, refuse the transfer"
-},
-{
-"f": "regarda",
-"i": "/re.ˈgar.da/",
-"p": "v",
-"e": "look at",
-"n": "vidi is to see, regarda is to look"
-},
-{
-"f": "regional",
-"i": "/re.d͡ʒi.ˈo.nal/",
-"p": "adj",
-"e": "regional",
-"n": ""
-},
-{
-"f": "regionalment",
-"i": "/re.d͡ʒi.o.ˈnal.ment/",
-"p": "adv",
-"e": "regionally",
-"n": ""
-},
-{
-"f": "registra",
-"i": "/re.ˈd͡ʒis.tra/",
-"p": "v",
-"e": "enter in a register",
-"n": "registru is the register"
-},
-{
-"f": "registru",
-"i": "/re.ˈd͡ʒis.tru/",
-"p": "n",
-"e": "register",
-"n": ""
-},
-{
-"f": "registru-contabil",
-"i": "/re.d͡ʒis.tru.kon.ˈta.bil/",
-"p": "n",
-"e": "ledger",
-"n": ""
-},
-{
-"f": "regiun",
-"i": "/ˈre.d͡ʒun/",
-"p": "n",
-"e": "region",
-"n": ""
-},
-{
-"f": "regla",
-"i": "/ˈre.gla/",
-"p": "v",
-"e": "set, regulate",
-"n": "of an instrument; regula is the rule"
-},
-{
-"f": "regretu",
-"i": "/re.ˈgre.tu/",
-"p": "n",
-"e": "regret",
-"n": "of a thing done; luctu of a person lost"
-},
-{
-"f": "regula",
-"i": "/re.ˈgu.la/",
-"p": "n",
-"e": "rule",
-"n": ""
-},
-{
-"f": "regulament",
-"i": "/re.gu.ˈla.ment/",
-"p": "n",
-"e": "regulation",
-"n": ""
-},
-{
-"f": "regulamentu",
-"i": "/re.gu.la.ˈmen.tu/",
-"p": "n",
-"e": "regulation",
-"n": "regula is the rule itself"
-},
-{
-"f": "reintegra",
-"i": "/re.in.ˈte.gra/",
-"p": "v",
-"e": "reinstate",
-"n": ""
-},
-{
-"f": "relata",
-"i": "/re.ˈla.ta/",
-"p": "v",
-"e": "report",
-"n": ""
-},
-{
-"f": "relatiun",
-"i": "/re.la.ˈti.un/",
-"p": "n",
-"e": "relation",
-"n": ""
-},
-{
-"f": "relativ",
-"i": "/re.ˈla.tiv/",
-"p": "adj",
-"e": "relative",
-"n": ""
-},
-{
-"f": "relativament",
-"i": "/re.la.ti.ˈva.ment/",
-"p": "adv",
-"e": "relatively",
-"n": ""
-},
-{
-"f": "remar",
-"i": "/ˈre.mar/",
-"p": "v",
-"e": "row",
-"n": ""
-},
-{
-"f": "remarca",
-"i": "/re.ˈmar.ka/",
-"p": "v",
-"e": "notice",
-"n": ""
-},
-{
-"f": "rembursa",
-"i": "/rem.ˈbur.sa/",
-"p": "v",
-"e": "reimburse",
-"n": ""
-},
-{
-"f": "rememora",
-"i": "/re.me.ˈmo.ra/",
-"p": "v",
-"e": "call to mind",
-"n": ""
-},
-{
-"f": "remolca",
-"i": "/re.ˈmol.ka/",
-"p": "v",
-"e": "tow",
-"n": ""
-},
-{
-"f": "remuneratiun",
-"i": "/re.mu.ne.ra.ˈti.un/",
-"p": "n",
-"e": "remuneration",
-"n": ""
-},
-{
-"f": "ren",
-"i": "/ren/",
-"p": "n",
-"e": "kidney",
-"n": ""
-},
-{
-"f": "renova",
-"i": "/re.ˈno.va/",
-"p": "v",
-"e": "renovate",
-"n": ""
-},
-{
-"f": "renovatiun",
-"i": "/re.no.va.ˈti.un/",
-"p": "n",
-"e": "renovation",
-"n": "renova is the act; renovatiun is the programme and the item in it"
-},
-{
-"f": "renuncia",
-"i": "/re.nun.ˈt͡ʃi.a/",
-"p": "v",
-"e": "give up, renounce",
-"n": ""
-},
-{
-"f": "repara",
-"i": "/re.ˈpa.ra/",
-"p": "v",
-"e": "repair",
-"n": ""
-},
-{
-"f": "reparatiun",
-"i": "/re.pa.ra.ˈti.un/",
-"p": "n",
-"e": "repair",
-"n": "repara is the act; reparatiun is the item in a programme"
-},
-{
-"f": "reparti",
-"i": "/re.ˈpar.ti/",
-"p": "v",
-"e": "distribute, share out",
-"n": ""
-},
-{
-"f": "repete",
-"i": "/re.ˈpe.te/",
-"p": "v",
-"e": "repeat",
-"n": "repete, per favor, say that again please"
-},
-{
-"f": "repetitiun",
-"i": "/re.pe.ti.ˈti.un/",
-"p": "n",
-"e": "repetition",
-"n": ""
-},
-{
-"f": "replica",
-"i": "/re.ˈpli.ka/",
-"p": "n",
-"e": "aftershock",
-"n": ""
-},
-{
-"f": "repos",
-"i": "/ˈre.pos/",
-"p": "n",
-"e": "rest",
-"n": ""
-},
-{
-"f": "reposa",
-"i": "/re.ˈpo.sa/",
-"p": "v",
-"e": "rest",
-"n": ""
-},
-{
-"f": "repta",
-"i": "/ˈrep.ta/",
-"p": "v",
-"e": "crawl",
-"n": ""
-},
-{
-"f": "republica",
-"i": "/re.pu.ˈbli.ka/",
-"p": "n",
-"e": "republic",
-"n": ""
-},
-{
-"f": "requesta",
-"i": "/re.ˈkes.ta/",
-"p": "n",
-"e": "demand, request",
-"n": ""
-},
-{
-"f": "rescinde",
-"i": "/res.ˈt͡ʃin.de/",
-"p": "v",
-"e": "rescind",
-"n": ""
-},
-{
-"f": "reserva",
-"i": "/re.ˈser.va/",
-"p": "v",
-"e": "book, set aside",
-"n": ""
-},
-{
-"f": "residente",
-"i": "/re.si.ˈden.te/",
-"p": "n",
-"e": "resident",
-"n": ""
-},
-{
-"f": "resistentia",
-"i": "/re.sis.ten.ˈti.a/",
-"p": "n",
-"e": "resistance",
-"n": "of a material and of a people"
-},
-{
-"f": "resolve",
-"i": "/re.ˈsol.ve/",
-"p": "v",
-"e": "resolve, make up one's mind",
-"n": "solve is to settle a matter"
-},
-{
-"f": "resona",
-"i": "/re.ˈso.na/",
-"p": "v",
-"e": "echo, resound",
-"n": ""
-},
-{
-"f": "respecta",
-"i": "/res.ˈpek.ta/",
-"p": "v",
-"e": "respect",
-"n": ""
-},
-{
-"f": "respira",
-"i": "/res.ˈpi.ra/",
-"p": "v",
-"e": "breathe",
-"n": ""
-},
-{
-"f": "respiratiun",
-"i": "/res.pi.ra.ˈti.un/",
-"p": "n",
-"e": "breathing",
-"n": "respira is the verb"
-},
-{
-"f": "responde",
-"i": "/res.ˈpon.de/",
-"p": "v",
-"e": "answer",
-"n": ""
-},
-{
-"f": "responsabile",
-"i": "/res.pon.sa.ˈbi.le/",
-"p": "adj",
-"e": "accountable",
-"n": ""
-},
-{
-"f": "responsabilitate",
-"i": "/res.pon.sa.bi.li.ˈta.te/",
-"p": "n",
-"e": "responsibility",
-"n": ""
-},
-{
-"f": "resta",
-"i": "/ˈres.ta/",
-"p": "v",
-"e": "remain",
-"n": ""
-},
-{
-"f": "restant",
-"i": "/res.ˈtant/",
-"p": "adj",
-"e": "remaining, outstanding",
-"n": "praca restant, the work still to do"
-},
-{
-"f": "restar",
-"i": "/ˈres.tar/",
-"p": "v",
-"e": "stay, remain in place",
-"n": ""
-},
-{
-"f": "restorant",
-"i": "/res.ˈto.rant/",
-"p": "n",
-"e": "restaurant",
-"n": ""
-},
-{
-"f": "resultat",
-"i": "/re.ˈsul.tat/",
-"p": "n",
-"e": "result",
-"n": ""
-},
-{
-"f": "resuma",
-"i": "/re.ˈsu.ma/",
-"p": "v",
-"e": "sum up",
-"n": ""
-},
-{
-"f": "resursa",
-"i": "/re.ˈsur.sa/",
-"p": "n",
-"e": "resource",
-"n": ""
-},
-{
-"f": "retard",
-"i": "/ˈre.tard/",
-"p": "n",
-"e": "delay",
-"n": ""
-},
-{
-"f": "rete",
-"i": "/ˈre.te/",
-"p": "n",
-"e": "network",
-"n": ""
-},
-{
-"f": "rete-de-pesce",
-"i": "/re.te.de.ˈpes.t͡ʃe/",
-"p": "n",
-"e": "fishing net",
-"n": ""
-},
-{
-"f": "rete-electric",
-"i": "/re.te.e.ˈlek.trik/",
-"p": "n",
-"e": "electricity grid",
-"n": "rete is the network in general"
-},
-{
-"f": "retira",
-"i": "/re.ˈti.ra/",
-"p": "v",
-"e": "withdraw",
-"n": ""
-},
-{
-"f": "retorca",
-"i": "/re.ˈtor.ka/",
-"p": "v",
-"e": "retort, answer back",
-"n": ""
-},
-{
-"f": "retro",
-"i": "/ˈre.tro/",
-"p": "adv",
-"e": "backwards",
-"n": ""
-},
-{
-"f": "retrocede",
-"i": "/re.tro.ˈt͡ʃe.de/",
-"p": "v",
-"e": "reverse, back up",
-"n": "of a vehicle; used in the depots"
-},
-{
-"f": "returna",
-"i": "/re.ˈtur.na/",
-"p": "v",
-"e": "return, come back",
-"n": ""
-},
-{
-"f": "reuniun",
-"i": "/reu.ˈni.un/",
-"p": "n",
-"e": "meeting",
-"n": ""
-},
-{
-"f": "revela",
-"i": "/re.ˈve.la/",
-"p": "v",
-"e": "reveal",
-"n": ""
-},
-{
-"f": "revide",
-"i": "/re.ˈvi.de/",
-"p": "v",
-"e": "review, look over again",
-"n": ""
-},
-{
-"f": "revisa",
-"i": "/re.ˈvi.sa/",
-"p": "v",
-"e": "revise",
-"n": ""
-},
-{
-"f": "revisiun",
-"i": "/re.vi.ˈsi.un/",
-"p": "n",
-"e": "revision",
-"n": ""
-},
-{
-"f": "revoca",
-"i": "/re.ˈvo.ka/",
-"p": "v",
-"e": "recall, revoke",
-"n": "revocatiun is the noun"
-},
-{
-"f": "revocatiun",
-"i": "/re.vo.ka.ˈti.un/",
-"p": "n",
-"e": "recall of a member",
-"n": ""
-},
-{
-"f": "ric",
-"i": "/rik/",
-"p": "adj",
-"e": "rich",
-"n": ""
-},
-{
-"f": "ride",
-"i": "/ˈri.de/",
-"p": "v",
-"e": "laugh",
-"n": ""
-},
-{
-"f": "rigid",
-"i": "/ˈri.d͡ʒid/",
-"p": "adj",
-"e": "rigid",
-"n": ""
-},
-{
-"f": "risca",
-"i": "/ˈris.ka/",
-"p": "v",
-"e": "risk",
-"n": ""
-},
-{
-"f": "ritmu",
-"i": "/ˈrit.mu/",
-"p": "n",
-"e": "rhythm",
-"n": "of speech and of a machine"
-},
-{
-"f": "riu",
-"i": "/ˈri.u/",
-"p": "n",
-"e": "river",
-"n": ""
-},
-{
-"f": "riz",
-"i": "/riz/",
-"p": "n",
-"e": "rice",
-"n": ""
-},
-{
-"f": "roba",
-"i": "/ˈro.ba/",
-"p": "n",
-"e": "dress",
-"n": ""
-},
-{
-"f": "robiga",
-"i": "/ro.ˈbi.ga/",
-"p": "v",
-"e": "rust",
-"n": ""
-},
-{
-"f": "robinete",
-"i": "/ro.bi.ˈne.te/",
-"p": "n",
-"e": "tap",
-"n": ""
-},
-{
-"f": "roga",
-"i": "/ˈro.ga/",
-"p": "v",
-"e": "ask for, request",
-"n": "milder than peti and commoner in speech"
-},
-{
-"f": "rola",
-"i": "/ˈro.la/",
-"p": "v",
-"e": "roll",
-"n": ""
-},
-{
-"f": "rolu",
-"i": "/ˈro.lu/",
-"p": "n",
-"e": "role",
-"n": ""
-},
-{
-"f": "rompe",
-"i": "/ˈrom.pe/",
-"p": "v",
-"e": "break",
-"n": ""
-},
-{
-"f": "rondela",
-"i": "/ron.ˈde.la/",
-"p": "n",
-"e": "washer",
-"n": ""
-},
-{
-"f": "rondu",
-"i": "/ˈron.du/",
-"p": "n",
-"e": "round",
-"n": "rondu de negociatiun, a round of the plan cycle"
-},
-{
-"f": "rosa",
-"i": "/ˈro.sa/",
-"p": "adj",
-"e": "pink",
-"n": ""
-},
-{
-"f": "rota",
-"i": "/ˈro.ta/",
-"p": "n",
-"e": "roll, list of names",
-"n": ""
-},
-{
-"f": "rotationa",
-"i": "/ro.ta.ti.ˈo.na/",
-"p": "v",
-"e": "rotate a duty",
-"n": ""
-},
-{
-"f": "rotatiun",
-"i": "/ro.ta.ˈti.un/",
-"p": "n",
-"e": "spin, rotation",
-"n": "rota is the wheel"
-},
-{
-"f": "rotund",
-"i": "/ˈro.tund/",
-"p": "adj",
-"e": "round",
-"n": "quadrat is the square"
-},
-{
-"f": "rox",
-"i": "/roʃ/",
-"p": "adj",
-"e": "red",
-"n": ""
-},
-{
-"f": "ruandan",
-"i": "/ru.ˈan.dan/",
-"p": "adj",
-"e": "Rwandan",
-"n": "demonym of Ruanda"
-},
-{
-"f": "rumen",
-"i": "/ˈru.men/",
-"p": "adj",
-"e": "Romanian",
-"n": ""
-},
-{
-"f": "rumor",
-"i": "/ˈru.mor/",
-"p": "n",
-"e": "noise",
-"n": ""
-},
-{
-"f": "rumpe",
-"i": "/ˈrum.pe/",
-"p": "v",
-"e": "break",
-"n": ""
-},
-{
-"f": "rural",
-"i": "/ˈru.ral/",
-"p": "adj",
-"e": "rural",
-"n": ""
-},
-{
-"f": "rus",
-"i": "/rus/",
-"p": "adj",
-"e": "Russian",
-"n": ""
-},
-{
-"f": "ruta",
-"i": "/ˈru.ta/",
-"p": "n",
-"e": "route",
-"n": ""
-},
-{
-"f": "sabate",
-"i": "/sa.ˈba.te/",
-"p": "n",
-"e": "Saturday",
-"n": ""
-},
-{
-"f": "sabla",
-"i": "/ˈsa.bla/",
-"p": "n",
-"e": "sand",
-"n": ""
-},
-{
-"f": "sac",
-"i": "/sak/",
-"p": "n",
-"e": "bag",
-"n": ""
-},
-{
-"f": "saharan",
-"i": "/sa.ˈha.ran/",
-"p": "adj",
-"e": "Sahrawi",
-"n": "demonym of Sahara Ovest"
-},
-{
-"f": "sal",
-"i": "/sal/",
-"p": "n",
-"e": "salt",
-"n": ""
-},
-{
-"f": "salariatu",
-"i": "/sa.la.ri.ˈa.tu/",
-"p": "n",
-"e": "employee",
-"n": ""
-},
-{
-"f": "salariu",
-"i": "/sa.la.ˈri.u/",
-"p": "n",
-"e": "wage",
-"n": ""
-},
-{
-"f": "salat",
-"i": "/ˈsa.lat/",
-"p": "adj",
-"e": "salty",
-"n": ""
-},
-{
-"f": "sali",
-"i": "/ˈsa.li/",
-"p": "int",
-"e": "hello",
-"n": ""
-},
-{
-"f": "salinitate",
-"i": "/sa.li.ni.ˈta.te/",
-"p": "n",
-"e": "salinity",
-"n": ""
-},
-{
-"f": "salomonan",
-"i": "/sa.lo.ˈmo.nan/",
-"p": "adj",
-"e": "Solomon Islander",
-"n": "demonym of Insulas Salomon"
-},
-{
-"f": "salsa",
-"i": "/ˈsal.sa/",
-"p": "n",
-"e": "sauce",
-"n": ""
-},
-{
-"f": "salta",
-"i": "/ˈsal.ta/",
-"p": "v",
-"e": "jump",
-"n": ""
-},
-{
-"f": "saltu",
-"i": "/ˈsal.tu/",
-"p": "n",
-"e": "leap",
-"n": "salta is the verb"
-},
-{
-"f": "saluta",
-"i": "/sa.ˈlu.ta/",
-"p": "v",
-"e": "greet",
-"n": "sali is the greeting itself"
-},
-{
-"f": "salva",
-"i": "/ˈsal.va/",
-"p": "v",
-"e": "save, rescue",
-"n": ""
-},
-{
-"f": "salvadorian",
-"i": "/sal.va.do.ˈri.an/",
-"p": "adj",
-"e": "Salvadoran",
-"n": "demonym of Salvador"
-},
-{
-"f": "salvo",
-"i": "/ˈsal.vo/",
-"p": "prep",
-"e": "except, save for",
-"n": ""
-},
-{
-"f": "samoan",
-"i": "/sa.ˈmo.an/",
-"p": "adj",
-"e": "Samoan",
-"n": "demonym of Samoa"
-},
-{
-"f": "san",
-"i": "/san/",
-"p": "adj",
-"e": "healthy",
-"n": ""
-},
-{
-"f": "sana",
-"i": "/ˈsa.na/",
-"p": "v",
-"e": "heal, cure",
-"n": ""
-},
-{
-"f": "sancristan",
-"i": "/san.ˈkris.tan/",
-"p": "adj",
-"e": "Kittitian",
-"n": "demonym of San Cris"
-},
-{
-"f": "sanctiona",
-"i": "/sank.ti.ˈo.na/",
-"p": "v",
-"e": "sanction, penalise",
-"n": ""
-},
-{
-"f": "sandale",
-"i": "/san.ˈda.le/",
-"p": "n",
-"e": "sandal",
-"n": ""
-},
-{
-"f": "sang",
-"i": "/sang/",
-"p": "n",
-"e": "blood",
-"n": ""
-},
-{
-"f": "sanguina",
-"i": "/san.gu.ˈi.na/",
-"p": "v",
-"e": "bleed",
-"n": "me ave sang is the everyday form"
-},
-{
-"f": "sanitate",
-"i": "/sa.ni.ˈta.te/",
-"p": "n",
-"e": "health",
-"n": "adjective sanitar"
-},
-{
-"f": "sanmarinan",
-"i": "/san.ma.ˈri.nan/",
-"p": "adj",
-"e": "Sammarinese",
-"n": "demonym of San Marin"
-},
-{
-"f": "santoman",
-"i": "/san.ˈto.man/",
-"p": "adj",
-"e": "Sao Tomean",
-"n": "demonym of San Tome"
-},
-{
-"f": "sapi",
-"i": "/ˈsa.pi/",
-"p": "v",
-"e": "know",
-"n": ""
-},
-{
-"f": "sapientia",
-"i": "/sa.pi.en.ˈti.a/",
-"p": "n",
-"e": "knowledge, wisdom",
-"n": "sapi is the verb"
-},
-{
-"f": "sapon",
-"i": "/ˈsa.pon/",
-"p": "n",
-"e": "soap",
-"n": ""
-},
-{
-"f": "sapora",
-"i": "/sa.ˈpo.ra/",
-"p": "v",
-"e": "taste of",
-"n": ""
-},
-{
-"f": "saramura",
-"i": "/sa.ra.ˈmu.ra/",
-"p": "n",
-"e": "brine",
-"n": "the electrolis runs on it"
-},
-{
-"f": "sarko",
-"i": "/ˈsar.ko/",
-"p": "n",
-"e": "a corrupt person outside the public sector",
-"n": ""
-},
-{
-"f": "sat",
-"i": "/sat/",
-"p": "adv",
-"e": "enough",
-"n": ""
-},
-{
-"f": "satisfactiun",
-"i": "/sa.tis.fak.ˈti.un/",
-"p": "n",
-"e": "satisfaction",
-"n": ""
-},
-{
-"f": "saudit",
-"i": "/ˈsau.dit/",
-"p": "adj",
-"e": "Saudi",
-"n": "demonym of Arabia Saudit"
-},
-{
-"f": "scadentia",
-"i": "/ska.den.ˈti.a/",
-"p": "n",
-"e": "deadline, expiry",
-"n": "scadentia de se termine, the falling due of the term"
-},
-{
-"f": "scala",
-"i": "/ˈska.la/",
-"p": "n",
-"e": "scale",
-"n": ""
-},
-{
-"f": "scalinata",
-"i": "/ska.li.ˈna.ta/",
-"p": "n",
-"e": "stairs inside a dwelling",
-"n": "scodi is the shared stairwell"
-},
-{
-"f": "scalpru",
-"i": "/ˈskal.pru/",
-"p": "n",
-"e": "chisel",
-"n": ""
-},
-{
-"f": "scara",
-"i": "/ˈska.ra/",
-"p": "n",
-"e": "ladder",
-"n": "scala is the scale"
-},
-{
-"f": "scarpa",
-"i": "/ˈskar.pa/",
-"p": "n",
-"e": "shoe",
-"n": ""
-},
-{
-"f": "schela",
-"i": "/ˈskhe.la/",
-"p": "n",
-"e": "scaffold",
-"n": ""
-},
-{
-"f": "scientific",
-"i": "/st͡ʃi.en.ˈti.fik/",
-"p": "adj",
-"e": "scientific",
-"n": ""
-},
-{
-"f": "scinde",
-"i": "/ˈst͡ʃin.de/",
-"p": "v",
-"e": "split off",
-"n": ""
-},
-{
-"f": "scodi",
-"i": "/ˈsko.di/",
-"p": "n",
-"e": "stairwell",
-"n": ""
-},
-{
-"f": "scola",
-"i": "/ˈsko.la/",
-"p": "n",
-"e": "school",
-"n": ""
-},
-{
-"f": "scopa",
-"i": "/ˈsko.pa/",
-"p": "n",
-"e": "broom",
-"n": ""
-},
-{
-"f": "scopu",
-"i": "/ˈsko.pu/",
-"p": "n",
-"e": "purpose",
-"n": ""
-},
-{
-"f": "scosa",
-"i": "/ˈsko.sa/",
-"p": "n",
-"e": "jolt, a single shock",
-"n": "tremor is the shaking that lasts; scosa is one movement of the floor"
-},
-{
-"f": "scribe",
-"i": "/ˈskri.be/",
-"p": "v",
-"e": "write",
-"n": ""
-},
-{
-"f": "scrit",
-"i": "/skrit/",
-"p": "adj",
-"e": "written",
-"n": "the participle of scribe standing as an adjective; parlat is its opposite"
-},
-{
-"f": "scriva",
-"i": "/ˈskri.va/",
-"p": "v",
-"e": "write",
-"n": ""
-},
-{
-"f": "scruta",
-"i": "/ˈskru.ta/",
-"p": "v",
-"e": "scan, search with the eyes",
-"n": ""
-},
-{
-"f": "scrutina",
-"i": "/skru.ˈti.na/",
-"p": "v",
-"e": "scrutinise a count",
-"n": ""
-},
-{
-"f": "scrutiniu",
-"i": "/skru.ti.ˈni.u/",
-"p": "n",
-"e": "ballot",
-"n": ""
-},
-{
-"f": "scump",
-"i": "/skump/",
-"p": "adj",
-"e": "expensive",
-"n": ""
-},
-{
-"f": "se",
-"i": "/se/",
-"p": "art",
-"e": "the",
-"n": "also the object article: me no se jizde"
-},
-{
-"f": "sec",
-"i": "/sek/",
-"p": "adj",
-"e": "dry",
-"n": ""
-},
-{
-"f": "secca",
-"i": "/ˈse.ka/",
-"p": "v",
-"e": "dry, dry out",
-"n": ""
-},
-{
-"f": "seconde",
-"i": "/se.ˈkon.de/",
-"p": "n",
-"e": "second of time, spoken",
-"n": "secunde in the tables and the wire format; seconde in the voice count"
-},
-{
-"f": "secret",
-"i": "/ˈse.kret/",
-"p": "adj",
-"e": "secret",
-"n": ""
-},
-{
-"f": "secretament",
-"i": "/se.kre.ˈta.ment/",
-"p": "adv",
-"e": "secretly",
-"n": ""
-},
-{
-"f": "sectiun",
-"i": "/sek.ˈti.un/",
-"p": "n",
-"e": "section, stretch of a road",
-"n": ""
-},
-{
-"f": "secul",
-"i": "/ˈse.kul/",
-"p": "n",
-"e": "century",
-"n": ""
-},
-{
-"f": "secund",
-"i": "/ˈse.kund/",
-"p": "n",
-"e": "second",
-"n": ""
-},
-{
-"f": "secunde",
-"i": "/se.ˈkun.de/",
-"p": "n",
-"e": "second of time",
-"n": "the written form; seconde is what the broadcast says"
-},
-{
-"f": "secundo",
-"i": "/se.ˈkun.do/",
-"p": "adv",
-"e": "secondly",
-"n": ""
-},
-{
-"f": "secundu",
-"i": "/se.ˈkun.du/",
-"p": "prep",
-"e": "according to",
-"n": "secundu se regulamentu, according to the regulation"
-},
-{
-"f": "secur",
-"i": "/ˈse.kur/",
-"p": "adj",
-"e": "safe",
-"n": ""
-},
-{
-"f": "securitate",
-"i": "/se.ku.ri.ˈta.te/",
-"p": "n",
-"e": "security, safety",
-"n": ""
-},
-{
-"f": "sed",
-"i": "/sed/",
-"p": "n",
-"e": "thirst",
-"n": ""
-},
-{
-"f": "sede",
-"i": "/ˈse.de/",
-"p": "v",
-"e": "sit",
-"n": ""
-},
-{
-"f": "sedia",
-"i": "/se.ˈdi.a/",
-"p": "n",
-"e": "chair",
-"n": ""
-},
-{
-"f": "sedile",
-"i": "/se.ˈdi.le/",
-"p": "n",
-"e": "seat",
-"n": ""
-},
-{
-"f": "sedimentu",
-"i": "/se.di.ˈmen.tu/",
-"p": "n",
-"e": "sediment",
-"n": ""
-},
-{
-"f": "sedni",
-"i": "/ˈsed.ni/",
-"p": "v",
-"e": "sit down, everyday",
-"n": "sede in print and in the instruction; sedni is what a person says"
-},
-{
-"f": "seism",
-"i": "/seism/",
-"p": "n",
-"e": "earthquake",
-"n": ""
-},
-{
-"f": "semafor",
-"i": "/se.ˈma.for/",
-"p": "n",
-"e": "traffic light",
-"n": ""
-},
-{
-"f": "semel",
-"i": "/ˈse.mel/",
-"p": "adv",
-"e": "once",
-"n": "semel, bis, ter in the timetables"
-},
-{
-"f": "seminariu",
-"i": "/se.mi.na.ˈri.u/",
-"p": "n",
-"e": "seminar",
-"n": ""
-},
-{
-"f": "semine",
-"i": "/se.ˈmi.ne/",
-"p": "n",
-"e": "seed",
-"n": ""
-},
-{
-"f": "sempre",
-"i": "/ˈsem.pre/",
-"p": "adv",
-"e": "always",
-"n": ""
-},
-{
-"f": "senegale",
-"i": "/se.ne.ˈga.le/",
-"p": "adj",
-"e": "Senegalese",
-"n": "demonym of Senegal"
-},
-{
-"f": "senso",
-"i": "/ˈsen.so/",
-"p": "n",
-"e": "sense, meaning",
-"n": ""
-},
-{
-"f": "sensu",
-"i": "/ˈsen.su/",
-"p": "n",
-"e": "sense, direction",
-"n": ""
-},
-{
-"f": "sententia",
-"i": "/sen.ten.ˈti.a/",
-"p": "n",
-"e": "ruling, sentence",
-"n": ""
-},
-{
-"f": "senti",
-"i": "/ˈsen.ti/",
-"p": "v",
-"e": "feel",
-"n": ""
-},
-{
-"f": "sentiment",
-"i": "/sen.ˈti.ment/",
-"p": "n",
-"e": "feeling",
-"n": ""
-},
-{
-"f": "sentimentu",
-"i": "/sen.ti.ˈmen.tu/",
-"p": "n",
-"e": "feeling",
-"n": ""
-},
-{
-"f": "separa",
-"i": "/se.ˈpa.ra/",
-"p": "v",
-"e": "separate",
-"n": ""
-},
-{
-"f": "separat",
-"i": "/se.ˈpa.rat/",
-"p": "adj",
-"e": "separate",
-"n": ""
-},
-{
-"f": "september",
-"i": "/sep.ˈtem.ber/",
-"p": "n",
-"e": "September",
-"n": ""
-},
-{
-"f": "septembre",
-"i": "/sep.ˈtem.bre/",
-"p": "n",
-"e": "September",
-"n": ""
-},
-{
-"f": "septimana",
-"i": "/sep.ti.ˈma.na/",
-"p": "n",
-"e": "week",
-"n": ""
-},
-{
-"f": "sequi",
-"i": "/ˈse.ki/",
-"p": "v",
-"e": "follow, come next",
-"n": ""
-},
-{
-"f": "sera",
-"i": "/ˈse.ra/",
-"p": "n",
-"e": "evening",
-"n": ""
-},
-{
-"f": "serb",
-"i": "/serb/",
-"p": "adj",
-"e": "Serbian",
-"n": ""
-},
-{
-"f": "seria",
-"i": "/se.ˈri.a/",
-"p": "n",
-"e": "series",
-"n": ""
-},
-{
-"f": "serie",
-"i": "/se.ˈri.e/",
-"p": "n",
-"e": "series, the run of a model",
-"n": "tip is the type; serie is the run built to it"
-},
-{
-"f": "serra",
-"i": "/ˈse.ra/",
-"p": "v",
-"e": "saw",
-"n": "the saw and the act of sawing alike"
-},
-{
-"f": "serratura",
-"i": "/se.ra.ˈtu.ra/",
-"p": "n",
-"e": "lock",
-"n": ""
-},
-{
-"f": "servi",
-"i": "/ˈser.vi/",
-"p": "v",
-"e": "serve",
-"n": ""
-},
-{
-"f": "serviciu",
-"i": "/ser.ˈvi.t͡ʃu/",
-"p": "n",
-"e": "service",
-"n": ""
-},
-{
-"f": "ses",
-"i": "/ses/",
-"p": "num",
-"e": "six",
-"n": ""
-},
-{
-"f": "sesanta",
-"i": "/se.ˈsan.ta/",
-"p": "num",
-"e": "sixty",
-"n": ""
-},
-{
-"f": "sese",
-"i": "/ˈse.se/",
-"p": "pron",
-"e": "oneself",
-"n": ""
-},
-{
-"f": "sesun",
-"i": "/ˈse.sun/",
-"p": "n",
-"e": "season",
-"n": ""
-},
-{
-"f": "setanta",
-"i": "/se.ˈtan.ta/",
-"p": "num",
-"e": "seventy",
-"n": ""
-},
-{
-"f": "sete",
-"i": "/ˈse.te/",
-"p": "num",
-"e": "seven",
-"n": ""
-},
-{
-"f": "sever",
-"i": "/ˈse.ver/",
-"p": "adj",
-"e": "severe",
-"n": ""
-},
-{
-"f": "severment",
-"i": "/se.ˈver.ment/",
-"p": "adv",
-"e": "severely",
-"n": ""
-},
-{
-"f": "sexelan",
-"i": "/se.ˈʃe.lan/",
-"p": "adj",
-"e": "Seychellois",
-"n": "demonym of Sexel"
-},
-{
-"f": "si",
-"i": "/si/",
-"p": "adv",
-"e": "yes",
-"n": ""
-},
-{
-"f": "sia",
-"i": "/ˈsi.a/",
-"p": "conj",
-"e": "either, or",
-"n": ""
-},
-{
-"f": "sieraleonan",
-"i": "/si.e.ra.le.ˈo.nan/",
-"p": "adj",
-"e": "Sierra Leonean",
-"n": "demonym of Siera Leon"
-},
-{
-"f": "sigla",
-"i": "/ˈsi.gla/",
-"p": "v",
-"e": "seal, close with a seal",
-"n": ""
-},
-{
-"f": "signa",
-"i": "/ˈsig.na/",
-"p": "v",
-"e": "sign",
-"n": ""
-},
-{
-"f": "signala",
-"i": "/sig.ˈna.la/",
-"p": "v",
-"e": "signal",
-"n": ""
-},
-{
-"f": "signatura",
-"i": "/sig.na.ˈtu.ra/",
-"p": "n",
-"e": "signature",
-"n": ""
-},
-{
-"f": "signature",
-"i": "/sig.na.ˈtu.re/",
-"p": "n",
-"e": "signature, byline",
-"n": "signa is the act; signature carries the name at the head of a piece"
-},
-{
-"f": "significa",
-"i": "/sig.ni.ˈfi.ka/",
-"p": "v",
-"e": "mean",
-"n": ""
-},
-{
-"f": "significatu",
-"i": "/sig.ni.fi.ˈka.tu/",
-"p": "n",
-"e": "meaning",
-"n": "significa is the verb"
-},
-{
-"f": "silaba",
-"i": "/si.ˈla.ba/",
-"p": "n",
-"e": "syllable",
-"n": ""
-},
-{
-"f": "silentiu",
-"i": "/si.len.ˈti.u/",
-"p": "n",
-"e": "silence",
-"n": "tace is the verb"
-},
-{
-"f": "silies",
-"i": "/si.ˈli.es/",
-"p": "n",
-"e": "housing estate, block",
-"n": ""
-},
-{
-"f": "silo",
-"i": "/ˈsi.lo/",
-"p": "n",
-"e": "silo",
-"n": ""
-},
-{
-"f": "silva",
-"i": "/ˈsil.va/",
-"p": "n",
-"e": "forest, formal",
-"n": "adjective silvestre; everyday les"
-},
-{
-"f": "similitude",
-"i": "/si.mi.li.ˈtu.de/",
-"p": "n",
-"e": "resemblance",
-"n": ""
-},
-{
-"f": "simpatia",
-"i": "/sim.pa.ˈti.a/",
-"p": "n",
-"e": "sympathy",
-"n": ""
-},
-{
-"f": "simple",
-"i": "/ˈsim.ple/",
-"p": "adj",
-"e": "simple",
-"n": ""
-},
-{
-"f": "simplement",
-"i": "/sim.ˈple.ment/",
-"p": "adv",
-"e": "simply",
-"n": "a vowel-final adjective adds the suffix whole"
-},
-{
-"f": "simplifica",
-"i": "/sim.pli.ˈfi.ka/",
-"p": "v",
-"e": "simplify",
-"n": ""
-},
-{
-"f": "simul",
-"i": "/ˈsi.mul/",
-"p": "adv",
-"e": "at the same time",
-"n": "junto of company, simul of time"
-},
-{
-"f": "sin",
-"i": "/sin/",
-"p": "prep",
-"e": "without",
-"n": ""
-},
-{
-"f": "sinceritate",
-"i": "/sin.t͡ʃe.ri.ˈta.te/",
-"p": "n",
-"e": "sincerity",
-"n": ""
-},
-{
-"f": "sindica",
-"i": "/sin.ˈdi.ka/",
-"p": "v",
-"e": "organise in a union",
-"n": ""
-},
-{
-"f": "sindicat",
-"i": "/sin.ˈdi.kat/",
-"p": "n",
-"e": "union",
-"n": ""
-},
-{
-"f": "singapurian",
-"i": "/sin.ga.pu.ˈri.an/",
-"p": "adj",
-"e": "Singaporean",
-"n": "demonym of Singapur"
-},
-{
-"f": "sinistra",
-"i": "/si.ˈnis.tra/",
-"p": "n",
-"e": "left",
-"n": "also the adjective and the adverb"
-},
-{
-"f": "sinon",
-"i": "/ˈsi.non/",
-"p": "conj",
-"e": "otherwise, if not",
-"n": ""
-},
-{
-"f": "sintesi",
-"i": "/sin.ˈte.si/",
-"p": "n",
-"e": "synthesis",
-"n": ""
-},
-{
-"f": "sintetic",
-"i": "/sin.ˈte.tik/",
-"p": "adj",
-"e": "synthetic",
-"n": "se prim pivo sintetic, the first synthetic beer"
-},
-{
-"f": "sintetisa",
-"i": "/sin.te.ˈti.sa/",
-"p": "v",
-"e": "synthesise",
-"n": ""
-},
-{
-"f": "sirena",
-"i": "/si.ˈre.na/",
-"p": "n",
-"e": "siren",
-"n": "the warning system uses it"
-},
-{
-"f": "sirian",
-"i": "/si.ˈri.an/",
-"p": "adj",
-"e": "Syrian",
-"n": "demonym of Siria"
-},
-{
-"f": "sistem",
-"i": "/ˈsis.tem/",
-"p": "n",
-"e": "system",
-"n": ""
-},
-{
-"f": "sistematic",
-"i": "/sis.te.ˈma.tik/",
-"p": "adj",
-"e": "systematic",
-"n": ""
-},
-{
-"f": "sistematicament",
-"i": "/sis.te.ma.ti.ˈka.ment/",
-"p": "adv",
-"e": "systematically",
-"n": ""
-},
-{
-"f": "situatiun",
-"i": "/si.tu.a.ˈti.un/",
-"p": "n",
-"e": "situation",
-"n": ""
-},
-{
-"f": "sive",
-"i": "/ˈsi.ve/",
-"p": "conj",
-"e": "whether",
-"n": "sive si sive no, whether yes or no"
-},
-{
-"f": "skuza",
-"i": "/ˈsku.za/",
-"p": "v",
-"e": "excuse, forgive",
-"n": ""
-},
-{
-"f": "skuza me",
-"i": "/ˈsku.za me/",
-"p": "int",
-"e": "excuse me, I am sorry",
-"n": ""
-},
-{
-"f": "slab",
-"i": "/slab/",
-"p": "adj",
-"e": "weak",
-"n": ""
-},
-{
-"f": "slovac",
-"i": "/ˈslo.vak/",
-"p": "adj",
-"e": "Slovak",
-"n": "demonym of Slovaki"
-},
-{
-"f": "slovenian",
-"i": "/slo.ve.ˈni.an/",
-"p": "adj",
-"e": "Slovenian",
-"n": "demonym of Slovenia"
-},
-{
-"f": "smeti",
-"i": "/ˈsme.ti/",
-"p": "n",
-"e": "rubbish",
-"n": ""
-},
-{
-"f": "societate",
-"i": "/so.t͡ʃe.ˈta.te/",
-"p": "n",
-"e": "society",
-"n": ""
-},
-{
-"f": "sol",
-"i": "/sol/",
-"p": "n",
-"e": "sun",
-"n": "adjective solar; also the adjective sol, alone"
-},
-{
-"f": "solda",
-"i": "/ˈsol.da/",
-"p": "v",
-"e": "weld",
-"n": ""
-},
-{
-"f": "solid",
-"i": "/ˈso.lid/",
-"p": "adj",
-"e": "solid",
-"n": ""
-},
-{
-"f": "solidarisa",
-"i": "/so.li.da.ˈri.sa/",
-"p": "v",
-"e": "act in solidarity with",
-"n": "of communes and of cooperatives"
-},
-{
-"f": "solidaritate",
-"i": "/so.li.da.ri.ˈta.te/",
-"p": "n",
-"e": "solidarity",
-"n": "Article 303 provides for the transfers"
-},
-{
-"f": "solitari",
-"i": "/so.li.ˈta.ri/",
-"p": "adj",
-"e": "lonely, solitary",
-"n": ""
-},
-{
-"f": "solitude",
-"i": "/so.li.ˈtu.de/",
-"p": "n",
-"e": "loneliness",
-"n": ""
-},
-{
-"f": "solmente",
-"i": "/sol.ˈmen.te/",
-"p": "adv",
-"e": "only",
-"n": ""
-},
-{
-"f": "solu",
-"i": "/ˈso.lu/",
-"p": "adv",
-"e": "alone",
-"n": "solmente is the adverb of restriction"
-},
-{
-"f": "solutiun",
-"i": "/so.lu.ˈti.un/",
-"p": "n",
-"e": "solution",
-"n": ""
-},
-{
-"f": "solve",
-"i": "/ˈsol.ve/",
-"p": "v",
-"e": "solve, settle",
-"n": ""
-},
-{
-"f": "somalian",
-"i": "/so.ma.ˈli.an/",
-"p": "adj",
-"e": "Somali",
-"n": "demonym of Somalia"
-},
-{
-"f": "son",
-"i": "/son/",
-"p": "n",
-"e": "sound",
-"n": ""
-},
-{
-"f": "sona",
-"i": "/ˈso.na/",
-"p": "v",
-"e": "sound, ring",
-"n": ""
-},
-{
-"f": "sonda",
-"i": "/ˈson.da/",
-"p": "v",
-"e": "survey, poll",
-"n": ""
-},
-{
-"f": "sondaj",
-"i": "/son.ˈdaʒ/",
-"p": "n",
-"e": "a survey",
-"n": "sonda is the act; sondaj is the published result"
-},
-{
-"f": "sonia",
-"i": "/so.ˈni.a/",
-"p": "v",
-"e": "dream",
-"n": ""
-},
-{
-"f": "sonio",
-"i": "/so.ˈni.o/",
-"p": "n",
-"e": "dream",
-"n": "the verb is sonia"
-},
-{
-"f": "sorece",
-"i": "/so.ˈre.t͡ʃe/",
-"p": "n",
-"e": "mouse",
-"n": ""
-},
-{
-"f": "sorore",
-"i": "/so.ˈro.re/",
-"p": "n",
-"e": "sister",
-"n": ""
-},
-{
-"f": "sorta",
-"i": "/ˈsor.ta/",
-"p": "v",
-"e": "sort",
-"n": "of post and of parts; sorti is to draw by lot"
-},
-{
-"f": "sorti",
-"i": "/ˈsor.ti/",
-"p": "v",
-"e": "draw by lot",
-"n": ""
-},
-{
-"f": "sortida",
-"i": "/sor.ˈti.da/",
-"p": "n",
-"e": "exit",
-"n": ""
-},
-{
-"f": "sortitiun",
-"i": "/sor.ti.ˈti.un/",
-"p": "n",
-"e": "selection by lot",
-"n": ""
-},
-{
-"f": "sovente",
-"i": "/so.ˈven.te/",
-"p": "adv",
-"e": "often",
-"n": ""
-},
-{
-"f": "soveranitate",
-"i": "/so.ve.ra.ni.ˈta.te/",
-"p": "n",
-"e": "sovereignty",
-"n": ""
-},
-{
-"f": "spalla",
-"i": "/ˈspa.la/",
-"p": "n",
-"e": "shoulder",
-"n": ""
-},
-{
-"f": "special",
-"i": "/ˈspe.t͡ʃal/",
-"p": "adj",
-"e": "special",
-"n": ""
-},
-{
-"f": "specialisa",
-"i": "/spe.t͡ʃi.a.ˈli.sa/",
-"p": "v",
-"e": "specialise",
-"n": ""
-},
-{
-"f": "specialment",
-"i": "/spe.t͡ʃi.ˈal.ment/",
-"p": "adv",
-"e": "specially",
-"n": ""
-},
-{
-"f": "spera",
-"i": "/ˈspe.ra/",
-"p": "v",
-"e": "hope",
-"n": ""
-},
-{
-"f": "sperantia",
-"i": "/spe.ran.ˈti.a/",
-"p": "n",
-"e": "hope",
-"n": "spera is the verb"
-},
-{
-"f": "spessura",
-"i": "/spe.ˈsu.ra/",
-"p": "n",
-"e": "thickness",
-"n": ""
-},
-{
-"f": "spetia",
-"i": "/spe.ˈti.a/",
-"p": "n",
-"e": "spice",
-"n": "the southern crossroads brought most of them"
-},
-{
-"f": "spia",
-"i": "/ˈspi.a/",
-"p": "v",
-"e": "watch covertly",
-"n": ""
-},
-{
-"f": "spira",
-"i": "/ˈspi.ra/",
-"p": "v",
-"e": "screw in",
-"n": ""
-},
-{
-"f": "sponte",
-"i": "/ˈspon.te/",
-"p": "adv",
-"e": "of one's own accord",
-"n": ""
-},
-{
-"f": "sport",
-"i": "/sport/",
-"p": "n",
-"e": "sport",
-"n": ""
-},
-{
-"f": "sposa",
-"i": "/ˈspo.sa/",
-"p": "n",
-"e": "wife",
-"n": ""
-},
-{
-"f": "spue",
-"i": "/ˈspu.e/",
-"p": "v",
-"e": "spit",
-"n": ""
-},
-{
-"f": "srilancan",
-"i": "/sri.ˈlan.kan/",
-"p": "adj",
-"e": "Sri Lankan",
-"n": "demonym of Sri Lanca"
-},
-{
-"f": "sta",
-"i": "/sta/",
-"p": "v",
-"e": "stand, be situated",
-"n": ""
-},
-{
-"f": "stabilitate",
-"i": "/sta.bi.li.ˈta.te/",
-"p": "n",
-"e": "stability",
-"n": ""
-},
-{
-"f": "stall",
-"i": "/stal/",
-"p": "n",
-"e": "market stall",
-"n": "the mercat de Cra fills the piatza"
-},
-{
-"f": "stalp",
-"i": "/stalp/",
-"p": "n",
-"e": "pole, mast",
-"n": "plural stalpi"
-},
-{
-"f": "stalpi",
-"i": "/ˈstal.pi/",
-"p": "n",
-"e": "poles",
-"n": "irregular plural of stalp; the rule would give stalpes"
-},
-{
-"f": "stat",
-"i": "/stat/",
-"p": "n",
-"e": "state",
-"n": ""
-},
-{
-"f": "statim",
-"i": "/ˈsta.tim/",
-"p": "adv",
-"e": "at once",
-"n": "on the platforms, in place of immediatament"
-},
-{
-"f": "stationa",
-"i": "/sta.ti.ˈo.na/",
-"p": "v",
-"e": "stand, be stabled",
-"n": "of stock held at a depot"
-},
-{
-"f": "statiun",
-"i": "/sta.ˈti.un/",
-"p": "n",
-"e": "stop, station, formal",
-"n": ""
-},
-{
-"f": "statunitan",
-"i": "/sta.tu.ˈni.tan/",
-"p": "adj",
-"e": "of the United States",
-"n": "demonym of Stat Unit"
-},
-{
-"f": "statutu",
-"i": "/sta.ˈtu.tu/",
-"p": "n",
-"e": "statute",
-"n": ""
-},
-{
-"f": "stela",
-"i": "/ˈste.la/",
-"p": "n",
-"e": "star",
-"n": "adjective stelar"
-},
-{
-"f": "sternuta",
-"i": "/ster.ˈnu.ta/",
-"p": "v",
-"e": "sneeze",
-"n": ""
-},
-{
-"f": "stinge",
-"i": "/ˈstin.d͡ʒe/",
-"p": "v",
-"e": "put out, extinguish",
-"n": "stinge se foc, put the fire out"
-},
-{
-"f": "stipula",
-"i": "/sti.ˈpu.la/",
-"p": "v",
-"e": "stipulate",
-"n": ""
-},
-{
-"f": "stiva",
-"i": "/ˈsti.va/",
-"p": "v",
-"e": "stow",
-"n": ""
-},
-{
-"f": "stoc",
-"i": "/stok/",
-"p": "n",
-"e": "stock",
-"n": ""
-},
-{
-"f": "stoca",
-"i": "/ˈsto.ka/",
-"p": "v",
-"e": "stock, hold in store",
-"n": "stoc is the stock"
-},
-{
-"f": "stol",
-"i": "/stol/",
-"p": "n",
-"e": "table, everyday",
-"n": "formal mesa"
-},
-{
-"f": "strada",
-"i": "/ˈstra.da/",
-"p": "n",
-"e": "street",
-"n": "adjective stradal"
-},
-{
-"f": "strexa",
-"i": "/ˈstre.ʃa/",
-"p": "n",
-"e": "roof, eave",
-"n": ""
-},
-{
-"f": "stringe",
-"i": "/ˈstrin.d͡ʒe/",
-"p": "v",
-"e": "squeeze, tighten",
-"n": ""
-},
-{
-"f": "stronz",
-"i": "/stronz/",
-"p": "n",
-"e": "a bad sort",
-"n": "a loan and an insult; never used in the register"
-},
-{
-"f": "structura",
-"i": "/struk.ˈtu.ra/",
-"p": "n",
-"e": "structure",
-"n": ""
-},
-{
-"f": "studente",
-"i": "/stu.ˈden.te/",
-"p": "n",
-"e": "student",
-"n": ""
-},
-{
-"f": "studia",
-"i": "/stu.ˈdi.a/",
-"p": "v",
-"e": "study",
-"n": "of a subject; aprende of a skill"
-},
-{
-"f": "subito",
-"i": "/su.ˈbi.to/",
-"p": "adv",
-"e": "suddenly",
-"n": "of a stop and of a change of weather"
-},
-{
-"f": "subject",
-"i": "/sub.ˈd͡ʒekt/",
-"p": "n",
-"e": "subject of a verb",
-"n": "the subject is never dropped"
-},
-{
-"f": "subprodutu",
-"i": "/sub.pro.ˈdu.tu/",
-"p": "n",
-"e": "byproduct",
-"n": "what the lagun cooperative works from"
-},
-{
-"f": "subregional",
-"i": "/sub.re.d͡ʒi.o.ˈnal/",
-"p": "adj",
-"e": "sub-regional",
-"n": "irregular adjective of subregiun, on the pattern of regional"
-},
-{
-"f": "subregiun",
-"i": "/su.ˈbre.d͡ʒun/",
-"p": "n",
-"e": "sub-region",
-"n": ""
-},
-{
-"f": "subscriva",
-"i": "/subs.ˈkri.va/",
-"p": "v",
-"e": "subscribe, sign underneath",
-"n": ""
-},
-{
-"f": "substantiv",
-"i": "/subs.ˈtan.tiv/",
-"p": "n",
-"e": "noun",
-"n": ""
-},
-{
-"f": "substitue",
-"i": "/subs.ti.ˈtu.e/",
-"p": "v",
-"e": "stand in for",
-"n": ""
-},
-{
-"f": "substituit",
-"i": "/subs.ti.ˈtu.it/",
-"p": "adj",
-"e": "replaced",
-"n": "the participle of substitue kept in the trade; the rule would give substituet"
-},
-{
-"f": "subtil",
-"i": "/ˈsub.til/",
-"p": "adj",
-"e": "thin",
-"n": ""
-},
-{
-"f": "subventiona",
-"i": "/sub.ven.ti.ˈo.na/",
-"p": "v",
-"e": "subsidise",
-"n": ""
-},
-{
-"f": "suc",
-"i": "/suk/",
-"p": "n",
-"e": "juice",
-"n": ""
-},
-{
-"f": "successiun",
-"i": "/su.t͡ʃe.ˈsi.un/",
-"p": "n",
-"e": "succession",
-"n": ""
-},
-{
-"f": "sud",
-"i": "/sud/",
-"p": "n",
-"e": "south",
-"n": ""
-},
-{
-"f": "sudafrican",
-"i": "/su.da.ˈfri.kan/",
-"p": "adj",
-"e": "South African",
-"n": "demonym of Africa Sud"
-},
-{
-"f": "sudanan sud",
-"i": "/su.ˈda.nan sud/",
-"p": "adj",
-"e": "South Sudanese",
-"n": "demonym of Sudan Sud"
-},
-{
-"f": "sudanian",
-"i": "/su.da.ˈni.an/",
-"p": "adj",
-"e": "Sudanese",
-"n": "demonym of Sudan"
-},
-{
-"f": "sudora",
-"i": "/su.ˈdo.ra/",
-"p": "v",
-"e": "sweat",
-"n": ""
-},
-{
-"f": "sue",
-"i": "/ˈsu.e/",
-"p": "det",
-"e": "his, her, its, their",
-"n": ""
-},
-{
-"f": "suffla",
-"i": "/ˈsu.fla/",
-"p": "v",
-"e": "blow",
-"n": ""
-},
-{
-"f": "sufix",
-"i": "/ˈsu.fiʃ/",
-"p": "n",
-"e": "suffix",
-"n": ""
-},
-{
-"f": "sufragiu",
-"i": "/su.ˈfra.d͡ʒu/",
-"p": "n",
-"e": "suffrage",
-"n": ""
-},
-{
-"f": "suge",
-"i": "/ˈsu.d͡ʒe/",
-"p": "v",
-"e": "suck",
-"n": ""
-},
-{
-"f": "suggere",
-"i": "/su.ˈd͡ʒe.re/",
-"p": "v",
-"e": "suggest",
-"n": ""
-},
-{
-"f": "sulcu",
-"i": "/ˈsul.ku/",
-"p": "n",
-"e": "furrow",
-"n": ""
-},
-{
-"f": "summa",
-"i": "/ˈsu.ma/",
-"p": "n",
-"e": "sum",
-"n": ""
-},
-{
-"f": "supa",
-"i": "/ˈsu.pa/",
-"p": "n",
-"e": "soup",
-"n": ""
-},
-{
-"f": "supervisore",
-"i": "/su.per.vi.ˈso.re/",
-"p": "n",
-"e": "supervisor",
-"n": "supravigila is the verb"
-},
-{
-"f": "suplementar",
-"i": "/su.ple.men.ˈtar/",
-"p": "adj",
-"e": "supplementary",
-"n": ""
-},
-{
-"f": "suporta",
-"i": "/su.ˈpor.ta/",
-"p": "v",
-"e": "put up with, bear",
-"n": ""
-},
-{
-"f": "suppone",
-"i": "/su.ˈpo.ne/",
-"p": "v",
-"e": "suppose",
-"n": ""
-},
-{
-"f": "supra",
-"i": "/ˈsu.pra/",
-"p": "prep",
-"e": "on, onto, above",
-"n": ""
-},
-{
-"f": "supracil",
-"i": "/su.ˈpra.t͡ʃil/",
-"p": "n",
-"e": "eyebrow",
-"n": ""
-},
-{
-"f": "supraveglianza",
-"i": "/su.pra.ve.gli.ˈan.za/",
-"p": "n",
-"e": "oversight",
-"n": ""
-},
-{
-"f": "supravigila",
-"i": "/su.pra.vi.ˈd͡ʒi.la/",
-"p": "v",
-"e": "oversee, supervise",
-"n": ""
-},
-{
-"f": "surge",
-"i": "/ˈsur.d͡ʒe/",
-"p": "v",
-"e": "get up, rise from bed",
-"n": "of rising from bed; leva of lifting a thing"
-},
-{
-"f": "surhora",
-"i": "/sur.ˈho.ra/",
-"p": "n",
-"e": "overtime",
-"n": "hora is the hour"
-},
-{
-"f": "surinamian",
-"i": "/su.ri.na.ˈmi.an/",
-"p": "adj",
-"e": "Surinamese",
-"n": "demonym of Surinam"
-},
-{
-"f": "surpres",
-"i": "/ˈsur.pres/",
-"p": "adj",
-"e": "surprised",
-"n": ""
-},
-{
-"f": "surprisa",
-"i": "/sur.ˈpri.sa/",
-"p": "n",
-"e": "surprise",
-"n": ""
-},
-{
-"f": "surride",
-"i": "/su.ˈri.de/",
-"p": "v",
-"e": "smile",
-"n": ""
-},
-{
-"f": "suspecta",
-"i": "/sus.ˈpek.ta/",
-"p": "v",
-"e": "suspect",
-"n": ""
-},
-{
-"f": "suspende",
-"i": "/sus.ˈpen.de/",
-"p": "v",
-"e": "hang, suspend",
-"n": ""
-},
-{
-"f": "suspira",
-"i": "/sus.ˈpi.ra/",
-"p": "v",
-"e": "sigh",
-"n": ""
-},
-{
-"f": "sustene",
-"i": "/sus.ˈte.ne/",
-"p": "v",
-"e": "support, hold up",
-"n": "of a structure; tena of a person"
-},
-{
-"f": "susura",
-"i": "/su.ˈsu.ra/",
-"p": "v",
-"e": "whisper",
-"n": "Ravelluri and the lagoon communes"
-},
-{
-"f": "suz",
-"i": "/suz/",
-"p": "prep",
-"e": "under",
-"n": ""
-},
-{
-"f": "svede",
-"i": "/ˈsve.de/",
-"p": "adj",
-"e": "Swedish",
-"n": "demonym of Sveden"
-},
-{
-"f": "svetlo",
-"i": "/ˈsve.tlo/",
-"p": "n",
-"e": "light, everyday",
-"n": "formal luce; svetlo of a lamp, luce of daylight"
-},
-{
-"f": "taberna",
-"i": "/ta.ˈber.na/",
-"p": "n",
-"e": "pub, formal",
-"n": "everyday hospoda"
-},
-{
-"f": "tablou-electric",
-"i": "/ta.blo.u.e.ˈlek.trik/",
-"p": "n",
-"e": "switchboard",
-"n": ""
-},
-{
-"f": "tabula",
-"i": "/ta.ˈbu.la/",
-"p": "n",
-"e": "table of figures, chart",
-"n": ""
-},
-{
-"f": "tace",
-"i": "/ˈta.t͡ʃe/",
-"p": "v",
-"e": "fall silent, hold one's tongue",
-"n": "tace, se tren veni, quiet, the train is coming"
-},
-{
-"f": "taia",
-"i": "/ˈtai.a/",
-"p": "v",
-"e": "cut",
-"n": ""
-},
-{
-"f": "tailandian",
-"i": "/tai.lan.ˈdi.an/",
-"p": "adj",
-"e": "Thai",
-"n": "demonym of Tailand"
-},
-{
-"f": "taivane",
-"i": "/tai.ˈva.ne/",
-"p": "adj",
-"e": "Taiwanese",
-"n": "demonym of Taivan"
-},
-{
-"f": "tajiquistanian",
-"i": "/ta.ʒi.kis.ta.ˈni.an/",
-"p": "adj",
-"e": "Tajik",
-"n": "demonym of Tajiquistan"
-},
-{
-"f": "tale",
-"i": "/ˈta.le/",
-"p": "det",
-"e": "such",
-"n": ""
-},
-{
-"f": "talia",
-"i": "/ta.ˈli.a/",
-"p": "n",
-"e": "waist",
-"n": ""
-},
-{
-"f": "tanto",
-"i": "/ˈtan.to/",
-"p": "adv",
-"e": "so much",
-"n": ""
-},
-{
-"f": "tanzanian",
-"i": "/tan.za.ˈni.an/",
-"p": "adj",
-"e": "Tanzanian",
-"n": "demonym of Tanzania"
-},
-{
-"f": "tapa",
-"i": "/ˈta.pa/",
-"p": "v",
-"e": "plug, seal off",
-"n": ""
-},
-{
-"f": "tapete",
-"i": "/ta.ˈpe.te/",
-"p": "n",
-"e": "rug",
-"n": ""
-},
-{
-"f": "tarde",
-"i": "/ˈtar.de/",
-"p": "n",
-"e": "afternoon",
-"n": ""
-},
-{
-"f": "tarifa",
-"i": "/ta.ˈri.fa/",
-"p": "n",
-"e": "fare",
-"n": "paga is the act of paying"
-},
-{
-"f": "tarz",
-"i": "/tarz/",
-"p": "adj",
-"e": "late",
-"n": ""
-},
-{
-"f": "tasca",
-"i": "/ˈtas.ka/",
-"p": "n",
-"e": "task",
-"n": ""
-},
-{
-"f": "tassa",
-"i": "/ˈta.sa/",
-"p": "n",
-"e": "cup",
-"n": ""
-},
-{
-"f": "tasta",
-"i": "/ˈtas.ta/",
-"p": "v",
-"e": "feel out, touch to test",
-"n": ""
-},
-{
-"f": "tata",
-"i": "/ˈta.ta/",
-"p": "n",
-"e": "father, everyday",
-"n": ""
-},
-{
-"f": "taxa",
-"i": "/ˈta.ʃa/",
-"p": "v",
-"e": "levy, charge",
-"n": "of a levy; paga of the payment"
-},
-{
-"f": "taxi",
-"i": "/ˈta.ʃi/",
-"p": "n",
-"e": "taxi",
-"n": ""
-},
-{
-"f": "te",
-"i": "/te/",
-"p": "prep",
-"e": "to, toward",
-"n": "te Marendo, to Marendo"
-},
-{
-"f": "teatru",
-"i": "/te.ˈa.tru/",
-"p": "n",
-"e": "theatre",
-"n": "adjective teatral"
-},
-{
-"f": "technic",
-"i": "/ˈtekh.nik/",
-"p": "adj",
-"e": "technical",
-"n": ""
-},
-{
-"f": "tectu",
-"i": "/ˈtek.tu/",
-"p": "n",
-"e": "canopy, roof plate",
-"n": ""
-},
-{
-"f": "tediat",
-"i": "/te.ˈdi.at/",
-"p": "adj",
-"e": "bored",
-"n": ""
-},
-{
-"f": "tedio",
-"i": "/te.ˈdi.o/",
-"p": "n",
-"e": "boredom",
-"n": ""
-},
-{
-"f": "telefon",
-"i": "/te.ˈle.fon/",
-"p": "n",
-"e": "telephone",
-"n": ""
-},
-{
-"f": "televisiun",
-"i": "/te.le.vi.ˈsi.un/",
-"p": "n",
-"e": "television",
-"n": ""
-},
-{
-"f": "tema",
-"i": "/ˈte.ma/",
-"p": "n",
-"e": "homework, topic",
-"n": ""
-},
-{
-"f": "temeros",
-"i": "/te.ˈme.ros/",
-"p": "adj",
-"e": "fearful",
-"n": "time is the verb"
-},
-{
-"f": "temor",
-"i": "/ˈte.mor/",
-"p": "n",
-"e": "fear",
-"n": "time is the verb, temeros the adjective"
-},
-{
-"f": "temp",
-"i": "/temp/",
-"p": "n",
-"e": "time",
-"n": ""
-},
-{
-"f": "temperatura",
-"i": "/tem.pe.ra.ˈtu.ra/",
-"p": "n",
-"e": "temperature",
-"n": ""
-},
-{
-"f": "tempesta",
-"i": "/tem.ˈpes.ta/",
-"p": "n",
-"e": "storm",
-"n": ""
-},
-{
-"f": "temporari",
-"i": "/tem.po.ˈra.ri/",
-"p": "adj",
-"e": "temporary",
-"n": ""
-},
-{
-"f": "temporariment",
-"i": "/tem.po.ra.ˈri.ment/",
-"p": "adv",
-"e": "temporarily",
-"n": ""
-},
-{
-"f": "temprano",
-"i": "/tem.ˈpra.no/",
-"p": "adv",
-"e": "early",
-"n": "avanz is the adjective"
-},
-{
-"f": "tena",
-"i": "/ˈte.na/",
-"p": "v",
-"e": "hold, hold on, keep going",
-"n": ""
-},
-{
-"f": "tenalia",
-"i": "/te.na.ˈli.a/",
-"p": "n",
-"e": "pliers",
-"n": ""
-},
-{
-"f": "tende",
-"i": "/ˈten.de/",
-"p": "v",
-"e": "stretch out, hold out",
-"n": ""
-},
-{
-"f": "tendentia",
-"i": "/ten.den.ˈti.a/",
-"p": "n",
-"e": "tendency",
-"n": ""
-},
-{
-"f": "tensiun",
-"i": "/ten.ˈsi.un/",
-"p": "n",
-"e": "tension",
-"n": "of a wire and of a situation"
-},
-{
-"f": "tenta",
-"i": "/ˈten.ta/",
-"p": "v",
-"e": "try",
-"n": ""
-},
-{
-"f": "tenue",
-"i": "/te.ˈnu.e/",
-"p": "adj",
-"e": "thin",
-"n": ""
-},
-{
-"f": "teoria",
-"i": "/te.o.ˈri.a/",
-"p": "n",
-"e": "theory",
-"n": ""
-},
-{
-"f": "teoric",
-"i": "/te.ˈo.rik/",
-"p": "adj",
-"e": "theoretical",
-"n": "teoria is the noun"
-},
-{
-"f": "teoricament",
-"i": "/te.o.ri.ˈka.ment/",
-"p": "adv",
-"e": "in theory",
-"n": ""
-},
-{
-"f": "teplo",
-"i": "/ˈte.plo/",
-"p": "n",
-"e": "heat, heating",
-"n": ""
-},
-{
-"f": "ter",
-"i": "/ter/",
-"p": "adv",
-"e": "three times",
-"n": ""
-},
-{
-"f": "terge",
-"i": "/ˈter.d͡ʒe/",
-"p": "v",
-"e": "wipe",
-"n": "of a surface; lava of a garment"
-},
-{
-"f": "termic",
-"i": "/ˈter.mik/",
-"p": "adj",
-"e": "thermal",
-"n": ""
-},
-{
-"f": "termin",
-"i": "/ˈter.min/",
-"p": "n",
-"e": "term, a named word",
-"n": "se academia prefere et termin"
-},
-{
-"f": "termine",
-"i": "/ter.ˈmi.ne/",
-"p": "n",
-"e": "term",
-"n": ""
-},
-{
-"f": "termocentral",
-"i": "/ter.mo.ˈt͡ʃen.tral/",
-"p": "n",
-"e": "power station",
-"n": ""
-},
-{
-"f": "terra",
-"i": "/ˈte.ra/",
-"p": "n",
-"e": "ground, land",
-"n": "adjective terren"
-},
-{
-"f": "terramotu",
-"i": "/te.ra.ˈmo.tu/",
-"p": "n",
-"e": "earthquake, urgent",
-"n": "seism in the record and in science; terramotu while the ground moves"
-},
-{
-"f": "terrassa",
-"i": "/te.ˈra.sa/",
-"p": "n",
-"e": "terrace",
-"n": ""
-},
-{
-"f": "territoriu",
-"i": "/te.ri.to.ˈri.u/",
-"p": "n",
-"e": "territory",
-"n": ""
-},
-{
-"f": "tertie",
-"i": "/ter.ˈti.e/",
-"p": "n",
-"e": "third, a fraction",
-"n": ""
-},
-{
-"f": "testimonia",
-"i": "/tes.ti.mo.ˈni.a/",
-"p": "v",
-"e": "testify, give evidence",
-"n": ""
-},
-{
-"f": "testimoniu",
-"i": "/tes.ti.mo.ˈni.u/",
-"p": "n",
-"e": "evidence, testimony",
-"n": ""
-},
-{
-"f": "text",
-"i": "/teʃt/",
-"p": "n",
-"e": "text",
-"n": ""
-},
-{
-"f": "textura",
-"i": "/teʃ.ˈtu.ra/",
-"p": "n",
-"e": "texture",
-"n": "of a surface felt rather than seen"
-},
-{
-"f": "tia",
-"i": "/ˈti.a/",
-"p": "n",
-"e": "aunt",
-"n": ""
-},
-{
-"f": "timbru",
-"i": "/ˈtim.bru/",
-"p": "n",
-"e": "postage stamp",
-"n": ""
-},
-{
-"f": "time",
-"i": "/ˈti.me/",
-"p": "v",
-"e": "fear",
-"n": ""
-},
-{
-"f": "timid",
-"i": "/ˈti.mid/",
-"p": "adj",
-"e": "timid",
-"n": ""
-},
-{
-"f": "timoran",
-"i": "/ti.ˈmo.ran/",
-"p": "adj",
-"e": "Timorese",
-"n": "demonym of Timor Est"
-},
-{
-"f": "tinta",
-"i": "/ˈtin.ta/",
-"p": "n",
-"e": "tint",
-"n": ""
-},
-{
-"f": "tip",
-"i": "/tip/",
-"p": "n",
-"e": "type",
-"n": "tip P-4 names the type; serie is the run built to it"
-},
-{
-"f": "tira",
-"i": "/ˈti.ra/",
-"p": "v",
-"e": "pull, draw",
-"n": ""
-},
-{
-"f": "titul",
-"i": "/ˈti.tul/",
-"p": "n",
-"e": "title, part of a law",
-"n": ""
-},
-{
-"f": "tiu",
-"i": "/ˈti.u/",
-"p": "n",
-"e": "uncle",
-"n": ""
-},
-{
-"f": "-tiun",
-"i": "",
-"p": "suf",
-"e": "forms the action noun",
-"n": ""
-},
-{
-"f": "toaleta",
-"i": "/to.a.ˈle.ta/",
-"p": "n",
-"e": "toilet",
-"n": ""
-},
-{
-"f": "tocar",
-"i": "/to.ˈkar/",
-"p": "v",
-"e": "touch, come into contact",
-"n": "the form after a preposition, as restar stands beside resta: sin tocar se placa"
-},
-{
-"f": "tocat",
-"i": "/to.ˈkat/",
-"p": "adj",
-"e": "touched, disturbed",
-"n": "participle of tocar: se tectu no es tocat per se laboro"
-},
-{
-"f": "tocca",
-"i": "/ˈto.ka/",
-"p": "v",
-"e": "touch",
-"n": ""
-},
-{
-"f": "togole",
-"i": "/to.ˈgo.le/",
-"p": "adj",
-"e": "Togolese",
-"n": "demonym of Togo"
-},
-{
-"f": "tolera",
-"i": "/to.ˈle.ra/",
-"p": "v",
-"e": "tolerate",
-"n": ""
-},
-{
-"f": "tomat",
-"i": "/ˈto.mat/",
-"p": "n",
-"e": "tomato",
-"n": ""
-},
-{
-"f": "tongan",
-"i": "/ˈton.gan/",
-"p": "adj",
-"e": "Tongan",
-"n": "demonym of Tonga"
-},
-{
-"f": "tonitru",
-"i": "/to.ˈni.tru/",
-"p": "n",
-"e": "thunder",
-"n": ""
-},
-{
-"f": "-tor",
-"i": "",
-"p": "suf",
-"e": "forms the agent noun",
-"n": ""
-},
-{
-"f": "torna",
-"i": "/ˈtor.na/",
-"p": "v",
-"e": "turn",
-"n": ""
-},
-{
-"f": "torta",
-"i": "/ˈtor.ta/",
-"p": "n",
-"e": "cake",
-"n": ""
-},
-{
-"f": "tosto",
-"i": "/ˈtos.to/",
-"p": "adv",
-"e": "soon",
-"n": "presto is at once"
-},
-{
-"f": "tot",
-"i": "/tot/",
-"p": "det",
-"e": "all, whole",
-"n": ""
-},
-{
-"f": "total",
-"i": "/ˈto.tal/",
-"p": "adj",
-"e": "total",
-"n": ""
-},
-{
-"f": "totalite",
-"i": "/to.ta.ˈli.te/",
-"p": "n",
-"e": "the whole of a thing",
-"n": ""
-},
-{
-"f": "totalment",
-"i": "/to.ˈtal.ment/",
-"p": "adv",
-"e": "totally",
-"n": "totalite is the noun"
-},
-{
-"f": "totevia",
-"i": "/to.te.ˈvi.a/",
-"p": "conj",
-"e": "however, nevertheless",
-"n": ""
-},
-{
-"f": "toti",
-"i": "/ˈto.ti/",
-"p": "pron",
-"e": "everyone",
-"n": ""
-},
-{
-"f": "tracta",
-"i": "/ˈtrak.ta/",
-"p": "v",
-"e": "haul, work a train",
-"n": ""
-},
-{
-"f": "tractatu",
-"i": "/trak.ˈta.tu/",
-"p": "n",
-"e": "treaty",
-"n": ""
-},
-{
-"f": "traduce",
-"i": "/tra.ˈdu.t͡ʃe/",
-"p": "v",
-"e": "translate",
-"n": ""
-},
-{
-"f": "traductiun",
-"i": "/tra.duk.ˈti.un/",
-"p": "n",
-"e": "translation",
-"n": ""
-},
-{
-"f": "traductor",
-"i": "/tra.ˈduk.tor/",
-"p": "n",
-"e": "translator",
-"n": ""
-},
-{
-"f": "tram",
-"i": "/tram/",
-"p": "n",
-"e": "tram",
-"n": "transbord te tram nove"
-},
-{
-"f": "tramvay",
-"i": "/ˈtram.vai/",
-"p": "n",
-"e": "tram",
-"n": ""
-},
-{
-"f": "trans",
-"i": "/trans/",
-"p": "prep",
-"e": "across",
-"n": ""
-},
-{
-"f": "transbord",
-"i": "/ˈtrans.bord/",
-"p": "n",
-"e": "transfer, change",
-"n": ""
-},
-{
-"f": "transborda",
-"i": "/trans.ˈbor.da/",
-"p": "v",
-"e": "transfer between services",
-"n": "transbord is the noun"
-},
-{
-"f": "transcriva",
-"i": "/trans.ˈkri.va/",
-"p": "v",
-"e": "transcribe",
-"n": ""
-},
-{
-"f": "transfera",
-"i": "/trans.ˈfe.ra/",
-"p": "v",
-"e": "transfer",
-"n": ""
-},
-{
-"f": "transformator",
-"i": "/trans.for.ˈma.tor/",
-"p": "n",
-"e": "transformer",
-"n": ""
-},
-{
-"f": "transita",
-"i": "/tran.ˈsi.ta/",
-"p": "v",
-"e": "pass through, transit",
-"n": "transita sin statiun, pass through without stopping"
-},
-{
-"f": "transmitor",
-"i": "/trans.ˈmi.tor/",
-"p": "n",
-"e": "transmitter",
-"n": ""
-},
-{
-"f": "transparent",
-"i": "/trans.ˈpa.rent/",
-"p": "adj",
-"e": "transparent",
-"n": "transparentia is the noun"
-},
-{
-"f": "transparentia",
-"i": "/trans.pa.ren.ˈti.a/",
-"p": "n",
-"e": "transparency",
-"n": ""
-},
-{
-"f": "transporta",
-"i": "/trans.ˈpor.ta/",
-"p": "v",
-"e": "transport",
-"n": ""
-},
-{
-"f": "tratamentu",
-"i": "/tra.ta.ˈmen.tu/",
-"p": "n",
-"e": "treatment",
-"n": ""
-},
-{
-"f": "traul",
-"i": "/ˈtra.ul/",
-"p": "n",
-"e": "trawl",
-"n": ""
-},
-{
-"f": "traversa",
-"i": "/tra.ˈver.sa/",
-"p": "v",
-"e": "cross",
-"n": ""
-},
-{
-"f": "traxa",
-"i": "/ˈtra.ʃa/",
-"p": "v",
-"e": "drag, haul",
-"n": ""
-},
-{
-"f": "trema",
-"i": "/ˈtre.ma/",
-"p": "v",
-"e": "tremble, shake",
-"n": "of a person or a structure; tremor is the noun"
-},
-{
-"f": "trembuja",
-"i": "/trem.ˈbu.ʒa/",
-"p": "n",
-"e": "construction, highway, works",
-"n": ""
-},
-{
-"f": "trembujat",
-"i": "/trem.ˈbu.ʒat/",
-"p": "adj",
-"e": "dug up, under works",
-"n": "of a street the works have not left"
-},
-{
-"f": "tremor",
-"i": "/ˈtre.mor/",
-"p": "n",
-"e": "tremor, shaking",
-"n": ""
-},
-{
-"f": "tren",
-"i": "/tren/",
-"p": "n",
-"e": "train",
-"n": ""
-},
-{
-"f": "trenu",
-"i": "/ˈtre.nu/",
-"p": "v",
-"e": "pull",
-"n": ""
-},
-{
-"f": "tri",
-"i": "/tri/",
-"p": "num",
-"e": "three",
-"n": ""
-},
-{
-"f": "tribunal",
-"i": "/tri.ˈbu.nal/",
-"p": "n",
-"e": "tribunal",
-"n": "corte is the ordinary court"
-},
-{
-"f": "trinidadan",
-"i": "/tri.ni.ˈda.dan/",
-"p": "adj",
-"e": "Trinidadian",
-"n": "demonym of Trinidad"
-},
-{
-"f": "trinta",
-"i": "/ˈtrin.ta/",
-"p": "num",
-"e": "thirty",
-"n": ""
-},
-{
-"f": "trist",
-"i": "/trist/",
-"p": "adj",
-"e": "sad",
-"n": ""
-},
-{
-"f": "tristia",
-"i": "/tris.ˈti.a/",
-"p": "n",
-"e": "sadness",
-"n": "trist is the adjective"
-},
-{
-"f": "troca",
-"i": "/ˈtro.ka/",
-"p": "v",
-"e": "barter",
-"n": ""
-},
-{
-"f": "tropo",
-"i": "/ˈtro.po/",
-"p": "adv",
-"e": "too, too much",
-"n": "tropo tarde, too late"
-},
-{
-"f": "trova",
-"i": "/ˈtro.va/",
-"p": "v",
-"e": "find",
-"n": ""
-},
-{
-"f": "tu",
-"i": "/tu/",
-"p": "pron",
-"e": "you, singular",
-"n": ""
-},
-{
-"f": "tubu",
-"i": "/ˈtu.bu/",
-"p": "n",
-"e": "pipe",
-"n": ""
-},
-{
-"f": "tuca",
-"i": "/ˈtu.ka/",
-"p": "v",
-"e": "touch",
-"n": "no tuca se cabli supra se stalpi"
-},
-{
-"f": "tumba",
-"i": "/ˈtum.ba/",
-"p": "v",
-"e": "topple, fall over",
-"n": ""
-},
-{
-"f": "tunc",
-"i": "/tunk/",
-"p": "adv",
-"e": "then, at that time",
-"n": ""
-},
-{
-"f": "tunel",
-"i": "/ˈtu.nel/",
-"p": "n",
-"e": "tunnel",
-"n": ""
-},
-{
-"f": "tunisian",
-"i": "/tu.ni.ˈsi.an/",
-"p": "adj",
-"e": "Tunisian",
-"n": "demonym of Tunisia"
-},
-{
-"f": "turbina",
-"i": "/tur.ˈbi.na/",
-"p": "n",
-"e": "turbine",
-"n": ""
-},
-{
-"f": "turc",
-"i": "/turk/",
-"p": "adj",
-"e": "Turkish",
-"n": ""
-},
-{
-"f": "turchese",
-"i": "/turk.ˈhe.se/",
-"p": "adj",
-"e": "turquoise",
-"n": ""
-},
-{
-"f": "turcmenistanian",
-"i": "/turk.me.nis.ta.ˈni.an/",
-"p": "adj",
-"e": "Turkmen",
-"n": "demonym of Turcmenistan"
-},
-{
-"f": "turma",
-"i": "/ˈtur.ma/",
-"p": "n",
-"e": "flock",
-"n": ""
-},
-{
-"f": "turnu",
-"i": "/ˈtur.nu/",
-"p": "n",
-"e": "shift",
-"n": "turnu de nox, the night shift"
-},
-{
-"f": "tuse",
-"i": "/ˈtu.se/",
-"p": "n",
-"e": "cough",
-"n": "the verb is tusi"
-},
-{
-"f": "tusi",
-"i": "/ˈtu.si/",
-"p": "v",
-"e": "cough",
-"n": ""
-},
-{
-"f": "tutor-legal",
-"i": "/tu.tor.ˈle.gal/",
-"p": "n",
-"e": "legal guardian",
-"n": ""
-},
-{
-"f": "tuvalan",
-"i": "/tu.ˈva.lan/",
-"p": "adj",
-"e": "Tuvaluan",
-"n": "demonym of Tuvalu"
-},
-{
-"f": "ubi",
-"i": "/ˈu.bi/",
-"p": "adv",
-"e": "where",
-"n": "ubi es se statiun"
-},
-{
-"f": "ubique",
-"i": "/u.ˈbi.ke/",
-"p": "adv",
-"e": "everywhere",
-"n": "ubi is where"
-},
-{
-"f": "ucrainan",
-"i": "/u.ˈkrai.nan/",
-"p": "adj",
-"e": "Ukrainian",
-"n": "demonym of Ucraina"
-},
-{
-"f": "ugandan",
-"i": "/u.ˈgan.dan/",
-"p": "adj",
-"e": "Ugandan",
-"n": "demonym of Uganda"
-},
-{
-"f": "ultim",
-"i": "/ˈul.tim/",
-"p": "adj",
-"e": "last",
-"n": ""
-},
-{
-"f": "ultimo",
-"i": "/ul.ˈti.mo/",
-"p": "adv",
-"e": "lastly",
-"n": "ultim is the adjective"
-},
-{
-"f": "ultra",
-"i": "/ˈul.tra/",
-"p": "prep",
-"e": "beyond",
-"n": ""
-},
-{
-"f": "umbra",
-"i": "/ˈum.bra/",
-"p": "v",
-"e": "shade, cast shade",
-"n": ""
-},
-{
-"f": "umbrela",
-"i": "/um.ˈbre.la/",
-"p": "n",
-"e": "umbrella",
-"n": ""
-},
-{
-"f": "umid",
-"i": "/ˈu.mid/",
-"p": "adj",
-"e": "wet, damp",
-"n": ""
-},
-{
-"f": "umiditate",
-"i": "/u.mi.di.ˈta.te/",
-"p": "n",
-"e": "humidity",
-"n": ""
-},
-{
-"f": "umor",
-"i": "/ˈu.mor/",
-"p": "n",
-"e": "mood",
-"n": ""
-},
-{
-"f": "un",
-"i": "/un/",
-"p": "art",
-"e": "a, one",
-"n": ""
-},
-{
-"f": "uncta",
-"i": "/ˈunk.ta/",
-"p": "v",
-"e": "grease, oil",
-"n": ""
-},
-{
-"f": "unde",
-"i": "/ˈun.de/",
-"p": "adv",
-"e": "whence, from where",
-"n": ""
-},
-{
-"f": "ungar",
-"i": "/ˈun.gar/",
-"p": "adj",
-"e": "Hungarian",
-"n": ""
-},
-{
-"f": "unic",
-"i": "/ˈu.nik/",
-"p": "adj",
-"e": "single, sole",
-"n": ""
-},
-{
-"f": "unitate",
-"i": "/u.ni.ˈta.te/",
-"p": "n",
-"e": "unity, a unit",
-"n": "of measurement and of a body held together"
-},
-{
-"f": "universal",
-"i": "/u.ni.ˈver.sal/",
-"p": "adj",
-"e": "universal",
-"n": ""
-},
-{
-"f": "universalment",
-"i": "/u.ni.ver.ˈsal.ment/",
-"p": "adv",
-"e": "universally",
-"n": ""
-},
-{
-"f": "universitate",
-"i": "/u.ni.ver.si.ˈta.te/",
-"p": "n",
-"e": "university",
-"n": "the region runs them"
-},
-{
-"f": "urban",
-"i": "/ˈur.ban/",
-"p": "adj",
-"e": "urban",
-"n": "of a commune with a town at its centre"
-},
-{
-"f": "urgentia",
-"i": "/ur.d͡ʒen.ˈti.a/",
-"p": "n",
-"e": "emergency",
-"n": ""
-},
-{
-"f": "urs",
-"i": "/urs/",
-"p": "n",
-"e": "bear",
-"n": ""
-},
-{
-"f": "uruguaian",
-"i": "/u.ru.gu.ˈai.an/",
-"p": "adj",
-"e": "Uruguayan",
-"n": "demonym of Uruguai"
-},
-{
-"f": "usa",
-"i": "/ˈu.sa/",
-"p": "v",
-"e": "use",
-"n": ""
-},
-{
-"f": "usaj",
-"i": "/ˈu.saʒ/",
-"p": "n",
-"e": "usage",
-"n": ""
-},
-{
-"f": "usator",
-"i": "/u.ˈsa.tor/",
-"p": "n",
-"e": "user",
-"n": ""
-},
-{
-"f": "usque",
-"i": "/ˈus.ke/",
-"p": "prep",
-"e": "until",
-"n": ""
-},
-{
-"f": "util",
-"i": "/ˈu.til/",
-"p": "adj",
-"e": "useful",
-"n": ""
-},
-{
-"f": "utilitate",
-"i": "/u.ti.li.ˈta.te/",
-"p": "n",
-"e": "usefulness",
-"n": ""
-},
-{
-"f": "utiliza",
-"i": "/u.ti.ˈli.za/",
-"p": "v",
-"e": "use, draw down",
-"n": "of a fund or an allocation"
-},
-{
-"f": "uva",
-"i": "/ˈu.va/",
-"p": "n",
-"e": "grape",
-"n": ""
-},
-{
-"f": "uzbequistanian",
-"i": "/uz.be.kis.ta.ˈni.an/",
-"p": "adj",
-"e": "Uzbek",
-"n": "demonym of Uzbequistan"
-},
-{
-"f": "va",
-"i": "/va/",
-"p": "v",
-"e": "will",
-"n": "future particle: va ariva, will arrive"
-},
-{
-"f": "vaca",
-"i": "/ˈva.ka/",
-"p": "n",
-"e": "cow",
-"n": ""
-},
-{
-"f": "vacantia",
-"i": "/va.kan.ˈti.a/",
-"p": "n",
-"e": "holiday",
-"n": "of leave taken; congedu of leave granted"
-},
-{
-"f": "vaccin",
-"i": "/ˈva.t͡ʃin/",
-"p": "n",
-"e": "vaccine",
-"n": ""
-},
-{
-"f": "vacu",
-"i": "/ˈva.ku/",
-"p": "adj",
-"e": "empty",
-"n": ""
-},
-{
-"f": "vacua",
-"i": "/va.ˈku.a/",
-"p": "v",
-"e": "empty",
-"n": "from vacu"
-},
-{
-"f": "vad",
-"i": "/vad/",
-"p": "n",
-"e": "ford",
-"n": ""
-},
-{
-"f": "vagon",
-"i": "/ˈva.gon/",
-"p": "n",
-"e": "carriage",
-"n": "vuz is the tram car"
-},
-{
-"f": "vague",
-"i": "/va.ˈgu.e/",
-"p": "adj",
-"e": "vague",
-"n": ""
-},
-{
-"f": "vaguement",
-"i": "/va.gu.ˈe.ment/",
-"p": "adv",
-"e": "vaguely",
-"n": ""
-},
-{
-"f": "vai",
-"i": "/vai/",
-"p": "v",
-"e": "go, imperative of ir",
-"n": ""
-},
-{
-"f": "valid",
-"i": "/ˈva.lid/",
-"p": "adj",
-"e": "valid",
-"n": ""
-},
-{
-"f": "valisa",
-"i": "/va.ˈli.sa/",
-"p": "n",
-"e": "suitcase",
-"n": ""
-},
-{
-"f": "valle",
-"i": "/ˈva.le/",
-"p": "n",
-"e": "valley",
-"n": ""
-},
-{
-"f": "valor",
-"i": "/ˈva.lor/",
-"p": "n",
-"e": "value",
-"n": ""
-},
-{
-"f": "valora",
-"i": "/va.ˈlo.ra/",
-"p": "v",
-"e": "be worth",
-"n": "valor is the value"
-},
-{
-"f": "valvula",
-"i": "/val.ˈvu.la/",
-"p": "n",
-"e": "valve",
-"n": ""
-},
-{
-"f": "vanuatan",
-"i": "/va.nu.ˈa.tan/",
-"p": "adj",
-"e": "Ni-Vanuatu",
-"n": "demonym of Vanuatu"
-},
-{
-"f": "vapor",
-"i": "/ˈva.por/",
-"p": "n",
-"e": "steam",
-"n": ""
-},
-{
-"f": "variante",
-"i": "/va.ri.ˈan.te/",
-"p": "n",
-"e": "variant",
-"n": "a form held by one sub-region against the rest"
-},
-{
-"f": "vast",
-"i": "/vast/",
-"p": "adj",
-"e": "vast",
-"n": ""
-},
-{
-"f": "vaticanian",
-"i": "/va.ti.ka.ˈni.an/",
-"p": "adj",
-"e": "Vatican",
-"n": "demonym of Vatican"
-},
-{
-"f": "vecere",
-"i": "/ve.ˈt͡ʃe.re/",
-"p": "n",
-"e": "evening meal, everyday",
-"n": "formal cena"
-},
-{
-"f": "veglia",
-"i": "/ve.ˈgli.a/",
-"p": "v",
-"e": "sit up with, watch over",
-"n": "at a sickbed and at a wake alike"
-},
-{
-"f": "vehicul",
-"i": "/ve.ˈhi.kul/",
-"p": "n",
-"e": "vehicle, formal",
-"n": ""
-},
-{
-"f": "vellus",
-"i": "/ˈve.lus/",
-"p": "n",
-"e": "fleece",
-"n": "lana is the wool once shorn"
-},
-{
-"f": "vende",
-"i": "/ˈven.de/",
-"p": "v",
-"e": "sell",
-"n": ""
-},
-{
-"f": "veneri",
-"i": "/ve.ˈne.ri/",
-"p": "n",
-"e": "Friday",
-"n": ""
-},
-{
-"f": "venezuelan",
-"i": "/ve.ne.zu.ˈe.lan/",
-"p": "adj",
-"e": "Venezuelan",
-"n": "demonym of Venezuela"
-},
-{
-"f": "veni",
-"i": "/ˈve.ni/",
-"p": "v",
-"e": "come",
-"n": ""
-},
-{
-"f": "vent",
-"i": "/vent/",
-"p": "n",
-"e": "wind",
-"n": "adjective ventos"
-},
-{
-"f": "ventre",
-"i": "/ˈven.tre/",
-"p": "n",
-"e": "belly, stomach",
-"n": ""
-},
-{
-"f": "ver",
-"i": "/ver/",
-"p": "adj",
-"e": "true",
-"n": ""
-},
-{
-"f": "verbu",
-"i": "/ˈver.bu/",
-"p": "n",
-"e": "verb",
-"n": ""
-},
-{
-"f": "verd",
-"i": "/verd/",
-"p": "adj",
-"e": "green",
-"n": ""
-},
-{
-"f": "vergonia",
-"i": "/ver.go.ˈni.a/",
-"p": "n",
-"e": "shame",
-"n": ""
-},
-{
-"f": "vergonios",
-"i": "/ver.go.ˈni.os/",
-"p": "adj",
-"e": "ashamed",
-"n": ""
-},
-{
-"f": "verifica",
-"i": "/ve.ri.ˈfi.ka/",
-"p": "v",
-"e": "verify",
-"n": ""
-},
-{
-"f": "verificatiun",
-"i": "/ve.ri.fi.ka.ˈti.un/",
-"p": "n",
-"e": "verification",
-"n": ""
-},
-{
-"f": "veritate",
-"i": "/ve.ri.ˈta.te/",
-"p": "n",
-"e": "truth",
-"n": ""
-},
-{
-"f": "vernisa",
-"i": "/ver.ˈni.sa/",
-"p": "v",
-"e": "varnish",
-"n": ""
-},
-{
-"f": "versa",
-"i": "/ˈver.sa/",
-"p": "v",
-"e": "pour",
-"n": ""
-},
-{
-"f": "versu",
-"i": "/ˈver.su/",
-"p": "prep",
-"e": "towards",
-"n": "versu se peron, towards the platform"
-},
-{
-"f": "vertical",
-"i": "/ver.ˈti.kal/",
-"p": "adj",
-"e": "vertical",
-"n": ""
-},
-{
-"f": "vesti",
-"i": "/ˈves.ti/",
-"p": "v",
-"e": "dress, wear",
-"n": ""
-},
-{
-"f": "vestibul",
-"i": "/ves.ˈti.bul/",
-"p": "n",
-"e": "entrance hall",
-"n": ""
-},
-{
-"f": "vestimente",
-"i": "/ves.ti.ˈmen.te/",
-"p": "n",
-"e": "clothes",
-"n": ""
-},
-{
-"f": "veto",
-"i": "/ˈve.to/",
-"p": "n",
-"e": "veto",
-"n": ""
-},
-{
-"f": "vetu",
-"i": "/ˈve.tu/",
-"p": "adj",
-"e": "old",
-"n": ""
-},
-{
-"f": "via",
-"i": "/ˈvi.a/",
-"p": "n",
-"e": "road, way, formal",
-"n": ""
-},
-{
-"f": "viaja",
-"i": "/vi.ˈa.ʒa/",
-"p": "v",
-"e": "travel",
-"n": ""
-},
-{
-"f": "viaje",
-"i": "/vi.ˈa.ʒe/",
-"p": "n",
-"e": "journey",
-"n": ""
-},
-{
-"f": "vibra",
-"i": "/ˈvi.bra/",
-"p": "v",
-"e": "vibrate",
-"n": ""
-},
-{
-"f": "vice",
-"i": "/ˈvi.t͡ʃe/",
-"p": "n",
-"e": "time, occasion",
-"n": "tri vices, three times"
-},
-{
-"f": "vicin",
-"i": "/ˈvi.t͡ʃin/",
-"p": "n",
-"e": "neighbour",
-"n": ""
-},
-{
-"f": "vidi",
-"i": "/ˈvi.di/",
-"p": "v",
-"e": "see",
-"n": ""
-},
-{
-"f": "vidue",
-"i": "/vi.ˈdu.e/",
-"p": "n",
-"e": "widow or widower",
-"n": ""
-},
-{
-"f": "vietname",
-"i": "/vi.et.ˈna.me/",
-"p": "adj",
-"e": "Vietnamese",
-"n": "demonym of Vietnam"
-},
-{
-"f": "vigor",
-"i": "/ˈvi.gor/",
-"p": "n",
-"e": "force, effect",
-"n": "en vigor, in force"
-},
-{
-"f": "vilaje",
-"i": "/vi.ˈla.ʒe/",
-"p": "n",
-"e": "village",
-"n": ""
-},
-{
-"f": "vin",
-"i": "/vin/",
-"p": "n",
-"e": "wine",
-"n": ""
-},
-{
-"f": "vinagre",
-"i": "/vi.ˈna.gre/",
-"p": "n",
-"e": "vinegar",
-"n": ""
-},
-{
-"f": "vincentan",
-"i": "/vin.ˈt͡ʃen.tan/",
-"p": "adj",
-"e": "Vincentian",
-"n": "demonym of San Vincent"
-},
-{
-"f": "vinia",
-"i": "/vi.ˈni.a/",
-"p": "n",
-"e": "vineyard",
-"n": ""
-},
-{
-"f": "vinte",
-"i": "/ˈvin.te/",
-"p": "num",
-"e": "twenty",
-"n": ""
-},
-{
-"f": "visa",
-"i": "/ˈvi.sa/",
-"p": "n",
-"e": "visa",
-"n": ""
-},
-{
-"f": "visita",
-"i": "/vi.ˈsi.ta/",
-"p": "v",
-"e": "visit",
-"n": ""
-},
-{
-"f": "vita",
-"i": "/ˈvi.ta/",
-"p": "n",
-"e": "life",
-"n": "adjective vital"
-},
-{
-"f": "vite",
-"i": "/ˈvi.te/",
-"p": "n",
-"e": "screw",
-"n": "spira is the act of screwing in"
-},
-{
-"f": "vitri",
-"i": "/ˈvi.tri/",
-"p": "n",
-"e": "pane, glazing",
-"n": "vitru is the material; vitri is the counted pane, so okna con tri vitri is triple glazing"
-},
-{
-"f": "vitru",
-"i": "/ˈvi.tru/",
-"p": "n",
-"e": "glass",
-"n": "the material and the drinking glass alike"
-},
-{
-"f": "vive",
-"i": "/ˈvi.ve/",
-"p": "v",
-"e": "live, be alive",
-"n": "habita is to live in a place"
-},
-{
-"f": "vlak",
-"i": "/vlak/",
-"p": "n",
-"e": "train, everyday",
-"n": "formal tren; vlak in the east"
-},
-{
-"f": "voca",
-"i": "/ˈvo.ka/",
-"p": "v",
-"e": "call, summon",
-"n": ""
-},
-{
-"f": "vocabular",
-"i": "/vo.ka.ˈbu.lar/",
-"p": "n",
-"e": "vocabulary",
-"n": ""
-},
-{
-"f": "vocal",
-"i": "/ˈvo.kal/",
-"p": "n",
-"e": "vowel",
-"n": ""
-},
-{
-"f": "vocifera",
-"i": "/vo.t͡ʃi.ˈfe.ra/",
-"p": "v",
-"e": "shout, call out loudly",
-"n": "Ravelluri and the eastern seaboard; clama elsewhere"
-},
-{
-"f": "voda",
-"i": "/ˈvo.da/",
-"p": "n",
-"e": "water, everyday",
-"n": ""
-},
-{
-"f": "vola",
-"i": "/ˈvo.la/",
-"p": "v",
-"e": "fly",
-"n": "of aircraft and of birds alike"
-},
-{
-"f": "vole",
-"i": "/ˈvo.le/",
-"p": "v",
-"e": "want",
-"n": ""
-},
-{
-"f": "voltaje",
-"i": "/vol.ˈta.ʒe/",
-"p": "n",
-"e": "voltage",
-"n": "read at the tablou-electric"
-},
-{
-"f": "volume",
-"i": "/vo.ˈlu.me/",
-"p": "n",
-"e": "volume",
-"n": "of a solid; cantitate of an amount"
-},
-{
-"f": "volve",
-"i": "/ˈvol.ve/",
-"p": "v",
-"e": "wrap, roll up",
-"n": ""
-},
-{
-"f": "vomi",
-"i": "/ˈvo.mi/",
-"p": "v",
-"e": "vomit",
-"n": ""
-},
-{
-"f": "vos",
-"i": "/vos/",
-"p": "pron",
-"e": "you, plural",
-"n": ""
-},
-{
-"f": "vostre",
-"i": "/ˈvos.tre/",
-"p": "det",
-"e": "your, plural",
-"n": ""
-},
-{
-"f": "vota",
-"i": "/ˈvo.ta/",
-"p": "v",
-"e": "vote",
-"n": ""
-},
-{
-"f": "votu",
-"i": "/ˈvo.tu/",
-"p": "n",
-"e": "a vote",
-"n": ""
-},
-{
-"f": "vreme",
-"i": "/ˈvre.me/",
-"p": "n",
-"e": "weather",
-"n": ""
-},
-{
-"f": "vulpe",
-"i": "/ˈvul.pe/",
-"p": "n",
-"e": "fox",
-"n": ""
-},
-{
-"f": "vuz",
-"i": "/vuz/",
-"p": "n",
-"e": "tram car, vehicle, everyday",
-"n": ""
-},
-{
-"f": "vychod",
-"i": "/ˈvi.kod/",
-"p": "n",
-"e": "exit, everyday",
-"n": "formal sortida; vychod on the older signs"
-},
-{
-"f": "vytah",
-"i": "/ˈvi.tah/",
-"p": "n",
-"e": "lift",
-"n": ""
-},
-{
-"f": "xal",
-"i": "/ʃal/",
-"p": "n",
-"e": "scarf",
-"n": ""
-},
-{
-"f": "xef",
-"i": "/ʃef/",
-"p": "n",
-"e": "chief, head of a team",
-"n": ""
-},
-{
-"f": "xu-",
-"i": "",
-"p": "pref",
-"e": "deliberately, on purpose",
-"n": ""
-},
-{
-"f": "xuclar",
-"i": "/ˈʃu.klar/",
-"p": "adj",
-"e": "corrupt",
-"n": "from xu, on purpose, and clar, clear"
-},
-{
-"f": "xulent",
-"i": "/ˈʃu.lent/",
-"p": "adj",
-"e": "slowed on purpose",
-"n": "of a service degraded to force a decision"
-},
-{
-"f": "-y",
-"i": "",
-"p": "suf",
-"e": "place name from an adjective, property from a noun",
-"n": ""
-},
-{
-"f": "zambian",
-"i": "/zam.ˈbi.an/",
-"p": "adj",
-"e": "Zambian",
-"n": "demonym of Zambia"
-},
-{
-"f": "zasta",
-"i": "/ˈzas.ta/",
-"p": "n",
-"e": "nothing, not a thing",
-"n": ""
-},
-{
-"f": "zeli",
-"i": "/ˈze.li/",
-"p": "n",
-"e": "cabbage",
-"n": ""
-},
-{
-"f": "zero",
-"i": "/ˈze.ro/",
-"p": "num",
-"e": "zero",
-"n": ""
-},
-{
-"f": "zida",
-"i": "/ˈzi.da/",
-"p": "v",
-"e": "wall up, build in brick",
-"n": ""
-},
-{
-"f": "zimbabvan",
-"i": "/zim.ˈbab.van/",
-"p": "adj",
-"e": "Zimbabwean",
-"n": "demonym of Zimbabve"
-},
-{
-"f": "zolt",
-"i": "/zolt/",
-"p": "adj",
-"e": "yellow",
-"n": "tena se linia zolt, keep behind the yellow line"
-},
-{
-"f": "zucre",
-"i": "/ˈzu.kre/",
-"p": "n",
-"e": "sugar",
-"n": ""
-}
+  {"f": "-ak", "i": "", "p": "suf", "e": "forms the adjective from a noun", "n": ""},
+  {"f": "-ev", "i": "", "p": "suf", "e": "attributive form, irregular nouns only", "n": ""},
+  {"f": "-ment", "i": "", "p": "suf", "e": "adverb from an adjective, action noun from a verb", "n": "finalment from final; pagament from paga"},
+  {"f": "-nik", "i": "", "p": "suf", "e": "diminutive", "n": ""},
+  {"f": "-tiun", "i": "", "p": "suf", "e": "forms the action noun", "n": ""},
+  {"f": "-tor", "i": "", "p": "suf", "e": "forms the agent noun", "n": ""},
+  {"f": "-y", "i": "", "p": "suf", "e": "place name from an adjective, property from a noun", "n": ""},
+  {"f": "abandona", "i": "/a.ban.ˈdo.na/", "p": "v", "e": "abandon", "n": ""},
+  {"f": "abaxa", "i": "/a.ˈba.ʃa/", "p": "v", "e": "get down, lower, slow", "n": ""},
+  {"f": "abhazan", "i": "/ab.ˈha.zan/", "p": "adj", "e": "Abkhaz", "n": "demonym of Abhazia"},
+  {"f": "abraza", "i": "/a.ˈbra.za/", "p": "v", "e": "embrace", "n": ""},
+  {"f": "abrevia", "i": "/a.bre.ˈvi.a/", "p": "v", "e": "abbreviate", "n": ""},
+  {"f": "abroga", "i": "/a.ˈbro.ga/", "p": "v", "e": "repeal", "n": "of a statute; revoca of an appointment"},
+  {"f": "absconde", "i": "/abs.ˈkon.de/", "p": "v", "e": "hide", "n": "eastern seaboard; cela in print"},
+  {"f": "absentia", "i": "/ab.sen.ˈti.a/", "p": "n", "e": "absence", "n": "recorded in the minutes"},
+  {"f": "absolut", "i": "/ab.ˈso.lut/", "p": "adj", "e": "absolute", "n": ""},
+  {"f": "absolutament", "i": "/ab.so.lu.ˈta.ment/", "p": "adv", "e": "absolutely", "n": ""},
+  {"f": "abstene", "i": "/abs.ˈte.ne/", "p": "v", "e": "abstain", "n": ""},
+  {"f": "abstract", "i": "/ˈabs.trakt/", "p": "adj", "e": "abstract", "n": ""},
+  {"f": "abundantia", "i": "/a.bun.dan.ˈti.a/", "p": "n", "e": "abundance", "n": ""},
+  {"f": "academia", "i": "/a.ka.de.ˈmi.a/", "p": "n", "e": "academy", "n": ""},
+  {"f": "academic", "i": "/a.ka.ˈde.mik/", "p": "adj", "e": "academic", "n": "academia is the body"},
+  {"f": "accepta", "i": "/ak.ˈt͡ʃep.ta/", "p": "v", "e": "accept", "n": ""},
+  {"f": "accosta", "i": "/a.ˈkos.ta/", "p": "v", "e": "pull in, come alongside", "n": ""},
+  {"f": "acelera", "i": "/a.t͡ʃe.ˈle.ra/", "p": "v", "e": "speed up, accelerate", "n": ""},
+  {"f": "acentu", "i": "/a.ˈt͡ʃen.tu/", "p": "n", "e": "stress, accent", "n": ""},
+  {"f": "acompania", "i": "/a.kom.pa.ˈni.a/", "p": "v", "e": "accompany", "n": "acompania me te se peron, come with me to the platform"},
+  {"f": "acordu", "i": "/a.ˈkor.du/", "p": "n", "e": "agreement", "n": ""},
+  {"f": "acredita", "i": "/a.kre.ˈdi.ta/", "p": "v", "e": "accredit", "n": ""},
+  {"f": "acru", "i": "/ˈa.kru/", "p": "adj", "e": "sour", "n": ""},
+  {"f": "act", "i": "/akt/", "p": "n", "e": "act, a thing done", "n": "praca is work as a thing; act is the single deed"},
+  {"f": "acta", "i": "/ˈak.ta/", "p": "n", "e": "minutes of a meeting", "n": ""},
+  {"f": "actiun", "i": "/ak.ˈti.un/", "p": "n", "e": "action", "n": ""},
+  {"f": "actual", "i": "/ak.ˈtu.al/", "p": "adj", "e": "current", "n": ""},
+  {"f": "actualite", "i": "/ak.tu.a.ˈli.te/", "p": "n", "e": "the present state of a thing", "n": "the present state of a thing"},
+  {"f": "actualment", "i": "/ak.tu.ˈal.ment/", "p": "adv", "e": "at present", "n": "actualite is the noun"},
+  {"f": "acusa", "i": "/a.ˈku.sa/", "p": "v", "e": "accuse", "n": "acusatur is the prosecutor"},
+  {"f": "acusatiun", "i": "/a.ku.sa.ˈti.un/", "p": "n", "e": "charge, indictment", "n": "acusa is the act; acusatiun is the paper that reaches the court"},
+  {"f": "acusatur", "i": "/a.ku.ˈsa.tur/", "p": "n", "e": "prosecutor", "n": ""},
+  {"f": "adde", "i": "/ˈa.de/", "p": "v", "e": "add", "n": ""},
+  {"f": "adduce", "i": "/a.ˈdu.t͡ʃe/", "p": "v", "e": "bring", "n": ""},
+  {"f": "adequat", "i": "/a.ˈde.kat/", "p": "adj", "e": "adequate", "n": ""},
+  {"f": "adera", "i": "/a.ˈde.ra/", "p": "v", "e": "join, accede to", "n": "of a person to a body, and of the Republic to an instrument"},
+  {"f": "adio", "i": "/a.ˈdi.o/", "p": "int", "e": "goodbye", "n": ""},
+  {"f": "adjectiv", "i": "/ad.ˈʒek.tiv/", "p": "n", "e": "adjective", "n": ""},
+  {"f": "administratiun", "i": "/ad.mi.nis.tra.ˈti.un/", "p": "n", "e": "administration", "n": ""},
+  {"f": "admira", "i": "/ad.ˈmi.ra/", "p": "v", "e": "admire", "n": ""},
+  {"f": "adopta", "i": "/a.ˈdop.ta/", "p": "v", "e": "adopt", "n": ""},
+  {"f": "adres", "i": "/ˈa.dres/", "p": "n", "e": "address", "n": ""},
+  {"f": "adult", "i": "/ˈa.dult/", "p": "n", "e": "adult", "n": ""},
+  {"f": "adunatiun", "i": "/a.du.na.ˈti.un/", "p": "n", "e": "gathering, assembly point", "n": ""},
+  {"f": "adverb", "i": "/ˈad.verb/", "p": "n", "e": "adverb", "n": ""},
+  {"f": "adverbiu", "i": "/ad.ver.ˈbi.u/", "p": "n", "e": "adverb", "n": ""},
+  {"f": "aer", "i": "/ˈa.er/", "p": "n", "e": "air", "n": ""},
+  {"f": "aeroport", "i": "/a.e.ˈro.port/", "p": "n", "e": "airport", "n": ""},
+  {"f": "affectiun", "i": "/a.fek.ˈti.un/", "p": "n", "e": "affection", "n": ""},
+  {"f": "afganistanian", "i": "/af.ga.nis.ta.ˈni.an/", "p": "adj", "e": "Afghan", "n": "demonym of Afganistan"},
+  {"f": "afilia", "i": "/a.fi.ˈli.a/", "p": "v", "e": "affiliate", "n": ""},
+  {"f": "afinque", "i": "/a.ˈfin.ke/", "p": "conj", "e": "so that", "n": ""},
+  {"f": "afirma", "i": "/a.ˈfir.ma/", "p": "v", "e": "affirm, assert", "n": ""},
+  {"f": "afito", "i": "/a.ˈfi.to/", "p": "n", "e": "rent", "n": "paid to the commune, never to a person"},
+  {"f": "afluentia-electoral", "i": "/a.flu.en.ti.a.e.lek.ˈto.ral/", "p": "n", "e": "turnout", "n": ""},
+  {"f": "agita", "i": "/a.ˈd͡ʒi.ta/", "p": "v", "e": "stir up, shake up", "n": ""},
+  {"f": "agitat", "i": "/a.ˈd͡ʒi.tat/", "p": "adj", "e": "agitated", "n": "agita is the verb"},
+  {"f": "agricol", "i": "/a.ˈgri.kol/", "p": "adj", "e": "agricultural", "n": "agricultura is the noun"},
+  {"f": "agricultura", "i": "/a.gri.kul.ˈtu.ra/", "p": "n", "e": "agriculture", "n": ""},
+  {"f": "ahoi", "i": "/ˈa.hoi/", "p": "int", "e": "hello, everyday", "n": "formal sali; ahoi in the north and on the water"},
+  {"f": "ajusta", "i": "/a.ˈʒus.ta/", "p": "v", "e": "adjust, fit", "n": ""},
+  {"f": "alb", "i": "/alb/", "p": "adj", "e": "white", "n": ""},
+  {"f": "albanian", "i": "/al.ba.ˈni.an/", "p": "adj", "e": "Albanian", "n": "demonym of Albania"},
+  {"f": "alcun", "i": "/ˈal.kun/", "p": "det", "e": "some, any", "n": ""},
+  {"f": "alcuni", "i": "/al.ˈku.ni/", "p": "pron", "e": "some, a few", "n": ""},
+  {"f": "alegre", "i": "/a.ˈle.gre/", "p": "adj", "e": "cheerful", "n": ""},
+  {"f": "aleja", "i": "/a.ˈle.ʒa/", "p": "v", "e": "move away, draw off", "n": ""},
+  {"f": "alergia", "i": "/a.ler.ˈd͡ʒi.a/", "p": "n", "e": "allergy", "n": ""},
+  {"f": "alerta", "i": "/a.ˈler.ta/", "p": "n", "e": "alert", "n": ""},
+  {"f": "alfabet", "i": "/al.ˈfa.bet/", "p": "n", "e": "alphabet", "n": ""},
+  {"f": "alga", "i": "/ˈal.ga/", "p": "n", "e": "weed, algae", "n": "nule alga es prendet, no weed is taken"},
+  {"f": "algerian", "i": "/al.d͡ʒe.ˈri.an/", "p": "adj", "e": "Algerian", "n": "demonym of Algeria"},
+  {"f": "aliment", "i": "/a.ˈli.ment/", "p": "n", "e": "food, formal", "n": ""},
+  {"f": "alinia", "i": "/a.li.ˈni.a/", "p": "v", "e": "align", "n": ""},
+  {"f": "aliunde", "i": "/a.li.ˈun.de/", "p": "adv", "e": "from elsewhere", "n": ""},
+  {"f": "alleviu", "i": "/a.le.ˈvi.u/", "p": "n", "e": "relief", "n": "felt when the tren finally moves"},
+  {"f": "alliu", "i": "/a.ˈli.u/", "p": "n", "e": "garlic", "n": ""},
+  {"f": "allude", "i": "/a.ˈlu.de/", "p": "v", "e": "allude, hint at", "n": ""},
+  {"f": "almeno", "i": "/al.ˈme.no/", "p": "adv", "e": "at least", "n": ""},
+  {"f": "aloc", "i": "/ˈa.lok/", "p": "adv", "e": "there", "n": ""},
+  {"f": "aloja", "i": "/a.ˈlo.ʒa/", "p": "v", "e": "lodge, house", "n": ""},
+  {"f": "alquando", "i": "/al.ˈkan.do/", "p": "adv", "e": "sometimes", "n": ""},
+  {"f": "alquid", "i": "/ˈal.kid/", "p": "pron", "e": "something", "n": ""},
+  {"f": "alt", "i": "/alt/", "p": "adj", "e": "high, tall", "n": ""},
+  {"f": "altament", "i": "/al.ˈta.ment/", "p": "adv", "e": "highly", "n": ""},
+  {"f": "alterna", "i": "/al.ˈter.na/", "p": "v", "e": "alternate, take in turn", "n": "of a rota; sorti is the draw by lot"},
+  {"f": "alternat", "i": "/al.ˈter.nat/", "p": "adj", "e": "alternate", "n": ""},
+  {"f": "altitude", "i": "/al.ti.ˈtu.de/", "p": "n", "e": "height", "n": ""},
+  {"f": "altre", "i": "/ˈal.tre/", "p": "det", "e": "other", "n": "un se altre, one another"},
+  {"f": "altru", "i": "/ˈal.tru/", "p": "adj", "e": "other", "n": ""},
+  {"f": "alubi", "i": "/a.ˈlu.bi/", "p": "adv", "e": "somewhere", "n": ""},
+  {"f": "alza", "i": "/ˈal.za/", "p": "v", "e": "lift, raise", "n": "alza se man, put your hand up"},
+  {"f": "ama", "i": "/ˈa.ma/", "p": "v", "e": "love", "n": ""},
+  {"f": "amabile", "i": "/a.ma.ˈbi.le/", "p": "adj", "e": "kind", "n": ""},
+  {"f": "amabilement", "i": "/a.ma.bi.ˈle.ment/", "p": "adv", "e": "kindly", "n": ""},
+  {"f": "amar", "i": "/ˈa.mar/", "p": "adj", "e": "bitter", "n": ""},
+  {"f": "ambe", "i": "/ˈam.be/", "p": "det", "e": "both", "n": ""},
+  {"f": "ambigu", "i": "/am.ˈbi.gu/", "p": "adj", "e": "ambiguous", "n": ""},
+  {"f": "ambulantia", "i": "/am.bu.lan.ˈti.a/", "p": "n", "e": "ambulance", "n": ""},
+  {"f": "amenda", "i": "/a.ˈmen.da/", "p": "v", "e": "amend", "n": ""},
+  {"f": "amendament", "i": "/a.men.ˈda.ment/", "p": "n", "e": "amendment", "n": ""},
+  {"f": "amic", "i": "/ˈa.mik/", "p": "n", "e": "friend", "n": ""},
+  {"f": "amonte", "i": "/a.ˈmon.te/", "p": "adv", "e": "upstream", "n": ""},
+  {"f": "amor", "i": "/ˈa.mor/", "p": "n", "e": "love", "n": "ama is the verb"},
+  {"f": "amortisa", "i": "/a.mor.ˈti.sa/", "p": "v", "e": "amortise, write down", "n": ""},
+  {"f": "analisa", "i": "/a.na.ˈli.sa/", "p": "v", "e": "analyse", "n": ""},
+  {"f": "analisi", "i": "/a.na.ˈli.si/", "p": "n", "e": "analysis", "n": ""},
+  {"f": "analogia", "i": "/a.na.lo.ˈd͡ʒi.a/", "p": "n", "e": "analogy", "n": ""},
+  {"f": "ancian", "i": "/ˈan.t͡ʃan/", "p": "n", "e": "an elderly person", "n": "also the adjective, elderly"},
+  {"f": "ancora", "i": "/an.ˈko.ra/", "p": "adv", "e": "still, yet", "n": ""},
+  {"f": "ancra", "i": "/ˈan.kra/", "p": "v", "e": "anchor, moor", "n": "ancora is the adverb and a different word"},
+  {"f": "andoran", "i": "/an.ˈdo.ran/", "p": "adj", "e": "Andorran", "n": "demonym of Andora"},
+  {"f": "anel", "i": "/ˈa.nel/", "p": "n", "e": "ring", "n": ""},
+  {"f": "angaja", "i": "/an.ˈga.ʒa/", "p": "v", "e": "take on, engage", "n": ""},
+  {"f": "angle", "i": "/ˈan.gle/", "p": "adj", "e": "English", "n": ""},
+  {"f": "anglez", "i": "/an.ˈglez/", "p": "adj", "e": "English", "n": "also the name of the language"},
+  {"f": "angolan", "i": "/an.ˈgo.lan/", "p": "adj", "e": "Angolan", "n": "demonym of Angola"},
+  {"f": "angul", "i": "/ˈan.gul/", "p": "n", "e": "corner", "n": ""},
+  {"f": "angust", "i": "/ˈan.gust/", "p": "adj", "e": "narrow", "n": ""},
+  {"f": "angustia", "i": "/an.gus.ˈti.a/", "p": "n", "e": "anguish", "n": ""},
+  {"f": "animal", "i": "/a.ˈni.mal/", "p": "n", "e": "animal", "n": ""},
+  {"f": "aniversariu", "i": "/a.ni.ver.sa.ˈri.u/", "p": "n", "e": "anniversary", "n": ""},
+  {"f": "annota", "i": "/a.ˈno.ta/", "p": "v", "e": "annotate", "n": ""},
+  {"f": "anque", "i": "/ˈan.ke/", "p": "adv", "e": "also, too", "n": ""},
+  {"f": "ansietate", "i": "/an.si.e.ˈta.te/", "p": "n", "e": "anxiety", "n": ""},
+  {"f": "ansios", "i": "/an.ˈsi.os/", "p": "adj", "e": "anxious", "n": ""},
+  {"f": "ante", "i": "/ˈan.te/", "p": "prep", "e": "before", "n": ""},
+  {"f": "antea", "i": "/an.ˈte.a/", "p": "adv", "e": "beforehand", "n": ""},
+  {"f": "antena", "i": "/an.ˈte.na/", "p": "n", "e": "antenna", "n": ""},
+  {"f": "antheri", "i": "/ant.ˈhe.ri/", "p": "adv", "e": "the day before yesterday", "n": "heri is yesterday"},
+  {"f": "anticipa", "i": "/an.ti.ˈt͡ʃi.pa/", "p": "v", "e": "anticipate", "n": ""},
+  {"f": "antiguan", "i": "/an.ti.ˈgu.an/", "p": "adj", "e": "Antiguan", "n": "demonym of Antigua"},
+  {"f": "antracit", "i": "/an.ˈtra.t͡ʃit/", "p": "n", "e": "coal", "n": "burnt nowhere in the Republic since the grid was rebuilt"},
+  {"f": "anu", "i": "/ˈa.nu/", "p": "n", "e": "year", "n": ""},
+  {"f": "anuncie", "i": "/a.nun.ˈt͡ʃi.e/", "p": "n", "e": "announcement, a spoken notice", "n": "anuntia is the act; anuncie is what the loudspeaker reads"},
+  {"f": "anuntia", "i": "/a.nun.ˈti.a/", "p": "v", "e": "announce", "n": "se voce anuntia se statiun prexim, the voice announces the next stop"},
+  {"f": "aparate-telefoni", "i": "/a.pa.ra.te.te.le.ˈfo.ni/", "p": "n", "e": "telephone handset", "n": ""},
+  {"f": "apare", "i": "/a.ˈpa.re/", "p": "v", "e": "appear, come into view", "n": "se sol apare, the sun comes out"},
+  {"f": "apartament", "i": "/a.par.ˈta.ment/", "p": "n", "e": "flat", "n": ""},
+  {"f": "ape", "i": "/ˈa.pe/", "p": "n", "e": "bee", "n": ""},
+  {"f": "apel", "i": "/ˈa.pel/", "p": "n", "e": "appeal", "n": "apela is the act; se corte de apel is the court that hears it"},
+  {"f": "apela", "i": "/a.ˈpe.la/", "p": "v", "e": "appeal", "n": ""},
+  {"f": "apellu", "i": "/a.ˈpe.lu/", "p": "n", "e": "appeal", "n": ""},
+  {"f": "apenas", "i": "/a.ˈpe.nas/", "p": "adv", "e": "hardly", "n": "apenas un minut, hardly a minute"},
+  {"f": "aperi", "i": "/a.ˈpe.ri/", "p": "v", "e": "open", "n": ""},
+  {"f": "apert", "i": "/ˈa.pert/", "p": "adj", "e": "open", "n": ""},
+  {"f": "apertament", "i": "/a.per.ˈta.ment/", "p": "adv", "e": "openly", "n": ""},
+  {"f": "aplicatiun", "i": "/a.pli.ka.ˈti.un/", "p": "n", "e": "application", "n": ""},
+  {"f": "apoia", "i": "/a.po.ˈi.a/", "p": "v", "e": "lean on, prop", "n": ""},
+  {"f": "aporean", "i": "/a.po.ˈre.an/", "p": "adj", "e": "Aporean", "n": ""},
+  {"f": "approba", "i": "/a.ˈpro.ba/", "p": "v", "e": "approve", "n": ""},
+  {"f": "approbatiun", "i": "/a.pro.ba.ˈti.un/", "p": "n", "e": "approval", "n": "approba is the act; approbatiun is the signed approval in a file"},
+  {"f": "aprecia", "i": "/a.pre.ˈt͡ʃi.a/", "p": "v", "e": "assess, appreciate", "n": ""},
+  {"f": "aprende", "i": "/a.ˈpren.de/", "p": "v", "e": "learn", "n": ""},
+  {"f": "aprendiciu", "i": "/a.pren.di.ˈt͡ʃi.u/", "p": "n", "e": "apprentice", "n": ""},
+  {"f": "april", "i": "/ˈa.pril/", "p": "n", "e": "April", "n": ""},
+  {"f": "aprofunda", "i": "/a.pro.ˈfun.da/", "p": "v", "e": "go into deeply", "n": ""},
+  {"f": "apropia", "i": "/a.pro.ˈpi.a/", "p": "v", "e": "approach, come near", "n": ""},
+  {"f": "aprovisiona", "i": "/a.pro.vi.si.ˈo.na/", "p": "v", "e": "supply", "n": ""},
+  {"f": "apt", "i": "/apt/", "p": "adj", "e": "fit, apt", "n": ""},
+  {"f": "apud", "i": "/ˈa.pud/", "p": "prep", "e": "at the premises of", "n": ""},
+  {"f": "aqua", "i": "/ˈa.ka/", "p": "n", "e": "water, formal", "n": "adjective aquil"},
+  {"f": "aqui", "i": "/ˈa.ki/", "p": "adv", "e": "here", "n": ""},
+  {"f": "aratru", "i": "/a.ˈra.tru/", "p": "n", "e": "plough", "n": ""},
+  {"f": "arbitra", "i": "/ar.ˈbi.tra/", "p": "v", "e": "arbitrate", "n": ""},
+  {"f": "arbitrari", "i": "/ar.bi.ˈtra.ri/", "p": "adj", "e": "arbitrary", "n": ""},
+  {"f": "arbre", "i": "/ˈar.bre/", "p": "n", "e": "tree", "n": ""},
+  {"f": "archiva", "i": "/ark.ˈhi.va/", "p": "v", "e": "archive", "n": ""},
+  {"f": "arde", "i": "/ˈar.de/", "p": "v", "e": "burn", "n": "arde bin, it burns well"},
+  {"f": "area", "i": "/a.ˈre.a/", "p": "n", "e": "area", "n": ""},
+  {"f": "arenda", "i": "/a.ˈren.da/", "p": "v", "e": "lease", "n": ""},
+  {"f": "argente", "i": "/ar.ˈd͡ʒen.te/", "p": "adj", "e": "silver", "n": ""},
+  {"f": "argentinan", "i": "/ar.d͡ʒen.ˈti.nan/", "p": "adj", "e": "Argentine", "n": "demonym of Argentina"},
+  {"f": "argila", "i": "/ar.ˈd͡ʒi.la/", "p": "n", "e": "clay", "n": ""},
+  {"f": "argument", "i": "/ar.ˈgu.ment/", "p": "n", "e": "argument", "n": ""},
+  {"f": "argumenta", "i": "/ar.gu.ˈmen.ta/", "p": "v", "e": "argue a case", "n": "argument is the noun"},
+  {"f": "ariva", "i": "/a.ˈri.va/", "p": "v", "e": "arrive", "n": ""},
+  {"f": "armariu", "i": "/ar.ma.ˈri.u/", "p": "n", "e": "cupboard", "n": ""},
+  {"f": "armatura", "i": "/ar.ma.ˈtu.ra/", "p": "n", "e": "reinforcement", "n": ""},
+  {"f": "armenian", "i": "/ar.me.ˈni.an/", "p": "adj", "e": "Armenian", "n": "demonym of Armenia"},
+  {"f": "arrivare", "i": "/a.ri.ˈva.re/", "p": "n", "e": "arrival", "n": "the -are noun survives in this word and in few others"},
+  {"f": "articul", "i": "/ar.ˈti.kul/", "p": "n", "e": "article of a law, article of a text", "n": ""},
+  {"f": "articulatiun", "i": "/ar.ti.ku.la.ˈti.un/", "p": "n", "e": "joint of the body", "n": ""},
+  {"f": "articulu", "i": "/ar.ti.ˈku.lu/", "p": "n", "e": "article", "n": "of a text"},
+  {"f": "ascende", "i": "/as.ˈt͡ʃen.de/", "p": "v", "e": "climb, go up", "n": "ascende se scodi, go up the stairwell"},
+  {"f": "ascendente", "i": "/as.t͡ʃen.ˈden.te/", "p": "n", "e": "ancestor", "n": ""},
+  {"f": "ascensor", "i": "/as.ˈt͡ʃen.sor/", "p": "n", "e": "lift, formal", "n": "everyday vytah"},
+  {"f": "asculta", "i": "/as.ˈkul.ta/", "p": "v", "e": "listen", "n": "audi is to hear without trying"},
+  {"f": "asigna", "i": "/a.ˈsig.na/", "p": "v", "e": "assign", "n": ""},
+  {"f": "asigura", "i": "/a.si.ˈgu.ra/", "p": "v", "e": "insure", "n": ""},
+  {"f": "asista", "i": "/a.ˈsis.ta/", "p": "v", "e": "assist, attend to", "n": ""},
+  {"f": "asper", "i": "/ˈas.per/", "p": "adj", "e": "rough", "n": ""},
+  {"f": "assai", "i": "/ˈa.sai/", "p": "adv", "e": "quite, rather", "n": ""},
+  {"f": "assembla", "i": "/a.ˈsem.bla/", "p": "v", "e": "assemble, put together", "n": ""},
+  {"f": "assemblea", "i": "/a.sem.ˈble.a/", "p": "n", "e": "assembly", "n": ""},
+  {"f": "associa", "i": "/a.so.ˈt͡ʃi.a/", "p": "v", "e": "associate", "n": ""},
+  {"f": "associatiun", "i": "/a.so.t͡ʃi.a.ˈti.un/", "p": "n", "e": "association", "n": ""},
+  {"f": "atenda", "i": "/a.ˈten.da/", "p": "v", "e": "wait", "n": ""},
+  {"f": "atent", "i": "/ˈa.tent/", "p": "adj", "e": "attentive", "n": "atenta is the warning"},
+  {"f": "atenta", "i": "/a.ˈten.ta/", "p": "int", "e": "attention", "n": ""},
+  {"f": "atentiun", "i": "/a.ten.ˈti.un/", "p": "n", "e": "attention", "n": "atenta is the verb and the warning"},
+  {"f": "aterra", "i": "/a.ˈte.ra/", "p": "v", "e": "land", "n": ""},
+  {"f": "atribue", "i": "/a.tri.ˈbu.e/", "p": "v", "e": "allocate", "n": ""},
+  {"f": "atributiv", "i": "/a.tri.bu.ˈtiv/", "p": "adj", "e": "attributive", "n": "of the form in -ev taken by an irregular noun"},
+  {"f": "attesta", "i": "/a.ˈtes.ta/", "p": "v", "e": "attest", "n": ""},
+  {"f": "audace", "i": "/a.u.ˈda.t͡ʃe/", "p": "adj", "e": "bold", "n": ""},
+  {"f": "audi", "i": "/ˈau.di/", "p": "v", "e": "hear", "n": ""},
+  {"f": "audit", "i": "/ˈau.dit/", "p": "n", "e": "audit", "n": ""},
+  {"f": "audita", "i": "/a.u.ˈdi.ta/", "p": "v", "e": "audit", "n": "audit is the noun"},
+  {"f": "auditor", "i": "/au.ˈdi.tor/", "p": "n", "e": "listener", "n": ""},
+  {"f": "august", "i": "/ˈau.gust/", "p": "n", "e": "August", "n": ""},
+  {"f": "aure", "i": "/ˈau.re/", "p": "n", "e": "ear", "n": "adjective aural"},
+  {"f": "aurora", "i": "/a.u.ˈro.ra/", "p": "n", "e": "dawn", "n": ""},
+  {"f": "ausa", "i": "/a.ˈu.sa/", "p": "v", "e": "dare", "n": "me no ausa, I would not dare"},
+  {"f": "austeritate", "i": "/a.us.te.ri.ˈta.te/", "p": "n", "e": "austerity", "n": ""},
+  {"f": "australian", "i": "/aus.tra.ˈli.an/", "p": "adj", "e": "Australian", "n": "demonym of Australia"},
+  {"f": "austru", "i": "/ˈaus.tru/", "p": "n", "e": "south wind, the south of the seaboard", "n": "sud on the map; austru of the wind and in the sailing reports"},
+  {"f": "auto", "i": "/ˈau.to/", "p": "n", "e": "car", "n": ""},
+  {"f": "automatisa", "i": "/a.u.to.ma.ˈti.sa/", "p": "v", "e": "automate", "n": ""},
+  {"f": "autorisa", "i": "/a.u.to.ˈri.sa/", "p": "v", "e": "authorise", "n": ""},
+  {"f": "autoritate", "i": "/au.to.ri.ˈta.te/", "p": "n", "e": "authority", "n": ""},
+  {"f": "autovuz", "i": "/au.ˈto.vuz/", "p": "n", "e": "bus", "n": ""},
+  {"f": "autumn", "i": "/ˈau.tumn/", "p": "n", "e": "autumn", "n": ""},
+  {"f": "auxil", "i": "/ˈau.ʃil/", "p": "n", "e": "help, assistance", "n": ""},
+  {"f": "auxilia", "i": "/au.ʃi.ˈli.a/", "p": "v", "e": "help", "n": ""},
+  {"f": "ava", "i": "/ˈa.va/", "p": "n", "e": "grandmother", "n": ""},
+  {"f": "avalle", "i": "/a.ˈva.le/", "p": "adv", "e": "downstream", "n": "of the lagoon channels"},
+  {"f": "avans", "i": "/ˈa.vans/", "p": "n", "e": "running ahead of time", "n": ""},
+  {"f": "avansa", "i": "/a.ˈvan.sa/", "p": "v", "e": "advance, move up a grade", "n": "avanz is the adjective"},
+  {"f": "avante", "i": "/a.ˈvan.te/", "p": "adv", "e": "forwards", "n": ""},
+  {"f": "avanz", "i": "/ˈa.vanz/", "p": "adj", "e": "early", "n": ""},
+  {"f": "ave", "i": "/ˈa.ve/", "p": "v", "e": "have, there is", "n": ""},
+  {"f": "avert", "i": "/ˈa.vert/", "p": "n", "e": "warning, urgent", "n": "avis is posted and stands; avert interrupts and is spoken"},
+  {"f": "averte", "i": "/a.ˈver.te/", "p": "v", "e": "caution, warn off", "n": "avisa is to warn of a danger"},
+  {"f": "avion", "i": "/a.ˈvi.on/", "p": "n", "e": "aeroplane", "n": ""},
+  {"f": "avis", "i": "/ˈa.vis/", "p": "n", "e": "warning, notice", "n": ""},
+  {"f": "avisa", "i": "/a.ˈvi.sa/", "p": "v", "e": "warn", "n": ""},
+  {"f": "avu", "i": "/ˈa.vu/", "p": "n", "e": "grandfather", "n": ""},
+  {"f": "azerbaianan", "i": "/a.zer.bai.ˈa.nan/", "p": "adj", "e": "Azerbaijani", "n": "demonym of Azerbaian"},
+  {"f": "azur", "i": "/ˈa.zur/", "p": "adj", "e": "blue", "n": ""},
+  {"f": "baca", "i": "/ˈba.ka/", "p": "n", "e": "berry", "n": ""},
+  {"f": "bagaje", "i": "/ba.ˈga.ʒe/", "p": "n", "e": "luggage", "n": ""},
+  {"f": "bahaman", "i": "/ba.ˈha.man/", "p": "adj", "e": "Bahamian", "n": "demonym of Bahama"},
+  {"f": "bahrainian", "i": "/bah.rai.ˈni.an/", "p": "adj", "e": "Bahraini", "n": "demonym of Bahrain"},
+  {"f": "baia", "i": "/ba.ˈi.a/", "p": "n", "e": "bay", "n": ""},
+  {"f": "balansa", "i": "/ba.ˈlan.sa/", "p": "v", "e": "sway, swing", "n": ""},
+  {"f": "balbutia", "i": "/bal.bu.ˈti.a/", "p": "v", "e": "stammer", "n": ""},
+  {"f": "balconu", "i": "/bal.ˈko.nu/", "p": "n", "e": "balcony", "n": ""},
+  {"f": "balon", "i": "/ˈba.lon/", "p": "n", "e": "ball", "n": ""},
+  {"f": "banc-de-sable", "i": "/bank.de.ˈsa.ble/", "p": "n", "e": "sandbank", "n": ""},
+  {"f": "banca", "i": "/ˈban.ka/", "p": "n", "e": "bank", "n": "adjective bancar"},
+  {"f": "banchina", "i": "/bank.ˈhi.na/", "p": "n", "e": "quay", "n": ""},
+  {"f": "bancnota", "i": "/bank.ˈno.ta/", "p": "n", "e": "banknote", "n": ""},
+  {"f": "banconu", "i": "/ban.ˈko.nu/", "p": "n", "e": "counter at an office", "n": ""},
+  {"f": "banda", "i": "/ˈban.da/", "p": "n", "e": "frequency band", "n": ""},
+  {"f": "bangladesian", "i": "/ban.gla.de.ˈsi.an/", "p": "adj", "e": "Bangladeshi", "n": "demonym of Banglades"},
+  {"f": "banio", "i": "/ba.ˈni.o/", "p": "n", "e": "bathroom", "n": ""},
+  {"f": "barbadan", "i": "/bar.ˈba.dan/", "p": "adj", "e": "Barbadian", "n": "demonym of Barbados"},
+  {"f": "bas", "i": "/bas/", "p": "adj", "e": "low", "n": ""},
+  {"f": "basia", "i": "/ba.ˈsi.a/", "p": "v", "e": "kiss", "n": ""},
+  {"f": "bate", "i": "/ˈba.te/", "p": "v", "e": "strike, knock", "n": "atenta te no bate se capu, take care not to knock your head"},
+  {"f": "bateria", "i": "/ba.te.ˈri.a/", "p": "n", "e": "battery", "n": ""},
+  {"f": "bebe", "i": "/ˈbe.be/", "p": "n", "e": "baby", "n": ""},
+  {"f": "beige", "i": "/be.ˈi.d͡ʒe/", "p": "adj", "e": "beige", "n": ""},
+  {"f": "bel", "i": "/bel/", "p": "adj", "e": "beautiful", "n": ""},
+  {"f": "belarusian", "i": "/be.la.ru.ˈsi.an/", "p": "adj", "e": "Belarusian", "n": "demonym of Belarus"},
+  {"f": "belgian", "i": "/ˈbel.d͡ʒan/", "p": "adj", "e": "Belgian", "n": "demonym of Belgia"},
+  {"f": "belizan", "i": "/be.ˈli.zan/", "p": "adj", "e": "Belizean", "n": "demonym of Belize"},
+  {"f": "benda", "i": "/ˈben.da/", "p": "n", "e": "bandage", "n": ""},
+  {"f": "beneficiu", "i": "/be.ne.fi.ˈt͡ʃi.u/", "p": "n", "e": "benefit", "n": ""},
+  {"f": "beninian", "i": "/be.ni.ˈni.an/", "p": "adj", "e": "Beninese", "n": "demonym of Benin"},
+  {"f": "benque", "i": "/ˈben.ke/", "p": "conj", "e": "although", "n": "benque se tren tarda, although the train is late"},
+  {"f": "beve", "i": "/ˈbe.ve/", "p": "v", "e": "drink", "n": ""},
+  {"f": "biblioteca", "i": "/bi.bli.o.ˈte.ka/", "p": "n", "e": "library", "n": ""},
+  {"f": "bicicleta", "i": "/bi.t͡ʃi.ˈkle.ta/", "p": "n", "e": "bicycle", "n": ""},
+  {"f": "biliet", "i": "/bi.ˈli.et/", "p": "n", "e": "ticket", "n": ""},
+  {"f": "bin", "i": "/bin/", "p": "adv", "e": "well", "n": ""},
+  {"f": "birra", "i": "/ˈbi.ra/", "p": "n", "e": "beer, formal", "n": "everyday pivo"},
+  {"f": "bis", "i": "/bis/", "p": "adv", "e": "twice", "n": ""},
+  {"f": "bisauan", "i": "/bi.ˈsau.an/", "p": "adj", "e": "Bissau-Guinean", "n": "demonym of Guinea Bisau"},
+  {"f": "biscotu", "i": "/bis.ˈko.tu/", "p": "n", "e": "biscuit", "n": ""},
+  {"f": "bitum", "i": "/ˈbi.tum/", "p": "n", "e": "cement, binder", "n": ""},
+  {"f": "bitumate", "i": "/bi.tu.ˈma.te/", "p": "n", "e": "concrete", "n": ""},
+  {"f": "bloca", "i": "/ˈblo.ka/", "p": "v", "e": "block", "n": ""},
+  {"f": "blocada", "i": "/blo.ˈka.da/", "p": "n", "e": "blockade, occupation of a building", "n": "fa blocada de facultates, occupy the faculties"},
+  {"f": "boca", "i": "/ˈbo.ka/", "p": "n", "e": "mouth", "n": ""},
+  {"f": "boia", "i": "/bo.ˈi.a/", "p": "n", "e": "buoy", "n": ""},
+  {"f": "bol", "i": "/bol/", "p": "n", "e": "bowl", "n": ""},
+  {"f": "bolivian", "i": "/bo.li.ˈvi.an/", "p": "adj", "e": "Bolivian", "n": "demonym of Bolivia"},
+  {"f": "bonu", "i": "/ˈbo.nu/", "p": "n", "e": "receipt, voucher", "n": ""},
+  {"f": "bordo", "i": "/ˈbor.do/", "p": "adj", "e": "maroon", "n": ""},
+  {"f": "bordu", "i": "/ˈbor.du/", "p": "n", "e": "edge, rim", "n": "margin on the map and in the broadcast; bordu of a thing a hand reaches"},
+  {"f": "bosnan", "i": "/ˈbos.nan/", "p": "adj", "e": "Bosnian", "n": "demonym of Bosna"},
+  {"f": "bota", "i": "/ˈbo.ta/", "p": "n", "e": "boot", "n": ""},
+  {"f": "botilia", "i": "/bo.ti.ˈli.a/", "p": "n", "e": "bottle", "n": ""},
+  {"f": "boton", "i": "/ˈbo.ton/", "p": "n", "e": "button", "n": ""},
+  {"f": "botsvanan", "i": "/bots.ˈva.nan/", "p": "adj", "e": "Botswanan", "n": "demonym of Botsvana"},
+  {"f": "brac", "i": "/brak/", "p": "n", "e": "arm", "n": ""},
+  {"f": "brambor", "i": "/ˈbram.bor/", "p": "n", "e": "potato, everyday", "n": "formal patata"},
+  {"f": "brashavenc", "i": "/bras.ˈha.venk/", "p": "adj", "e": "Brashavenkan", "n": "demonym of Bor Brashavenko"},
+  {"f": "brasilian", "i": "/bra.si.ˈli.an/", "p": "adj", "e": "Brazilian", "n": "demonym of Brasil"},
+  {"f": "brav", "i": "/brav/", "p": "adj", "e": "brave", "n": ""},
+  {"f": "brilla", "i": "/ˈbri.la/", "p": "v", "e": "shine, glint", "n": "of a sudden or reflected light"},
+  {"f": "brillant", "i": "/ˈbri.lant/", "p": "adj", "e": "shiny", "n": "brilla is the verb"},
+  {"f": "britan", "i": "/ˈbri.tan/", "p": "adj", "e": "British", "n": "demonym of Regnu Unit"},
+  {"f": "brossa", "i": "/ˈbro.sa/", "p": "n", "e": "brush", "n": ""},
+  {"f": "brun", "i": "/brun/", "p": "adj", "e": "brown", "n": ""},
+  {"f": "brunean", "i": "/bru.ˈne.an/", "p": "adj", "e": "Bruneian", "n": "demonym of Brunei"},
+  {"f": "budgetu", "i": "/bud.ˈd͡ʒe.tu/", "p": "n", "e": "budget", "n": ""},
+  {"f": "bulgar", "i": "/ˈbul.gar/", "p": "adj", "e": "Bulgarian", "n": "demonym of Bulgari"},
+  {"f": "bulli", "i": "/ˈbu.li/", "p": "v", "e": "boil", "n": ""},
+  {"f": "bulon", "i": "/ˈbu.lon/", "p": "n", "e": "bolt", "n": ""},
+  {"f": "bun", "i": "/bun/", "p": "adj", "e": "good", "n": ""},
+  {"f": "bun die", "i": "/bun ˈdi.e/", "p": "int", "e": "good day", "n": ""},
+  {"f": "bun matin", "i": "/bun ˈma.tin/", "p": "int", "e": "good morning", "n": ""},
+  {"f": "bun sera", "i": "/bun ˈse.ra/", "p": "int", "e": "good evening", "n": ""},
+  {"f": "burcinan", "i": "/bur.ˈt͡ʃi.nan/", "p": "adj", "e": "Burkinabe", "n": "demonym of Burcina"},
+  {"f": "burla", "i": "/ˈbur.la/", "p": "v", "e": "mock", "n": "affectionate as often as unkind"},
+  {"f": "burundan", "i": "/bu.ˈrun.dan/", "p": "adj", "e": "Burundian", "n": "demonym of Burundi"},
+  {"f": "busola", "i": "/bu.ˈso.la/", "p": "n", "e": "compass", "n": ""},
+  {"f": "butanian", "i": "/bu.ta.ˈni.an/", "p": "adj", "e": "Bhutanese", "n": "demonym of Butan"},
+  {"f": "butir", "i": "/ˈbu.tir/", "p": "n", "e": "butter", "n": ""},
+  {"f": "buzunar", "i": "/bu.ˈzu.nar/", "p": "n", "e": "pocket", "n": ""},
+  {"f": "cabina-de-voto", "i": "/ka.bi.na.de.ˈvo.to/", "p": "n", "e": "polling booth", "n": ""},
+  {"f": "cabli", "i": "/ˈka.bli/", "p": "n", "e": "wiring, cable", "n": ""},
+  {"f": "cada", "i": "/ˈka.da/", "p": "det", "e": "each, every", "n": ""},
+  {"f": "cadaun", "i": "/ka.ˈda.un/", "p": "det", "e": "each", "n": "cada is the distributive"},
+  {"f": "cade", "i": "/ˈka.de/", "p": "v", "e": "fall, fall down", "n": ""},
+  {"f": "cafe", "i": "/ˈka.fe/", "p": "n", "e": "coffee", "n": ""},
+  {"f": "cai", "i": "/kai/", "p": "n", "e": "tea", "n": "carried in through the southern crossroads"},
+  {"f": "caiet", "i": "/ˈkai.et/", "p": "n", "e": "notebook", "n": ""},
+  {"f": "calcane", "i": "/kal.ˈka.ne/", "p": "n", "e": "heel", "n": ""},
+  {"f": "calcar", "i": "/ˈkal.kar/", "p": "n", "e": "limestone", "n": ""},
+  {"f": "calcet", "i": "/ˈkal.t͡ʃet/", "p": "n", "e": "sock", "n": ""},
+  {"f": "calcula", "i": "/kal.ˈku.la/", "p": "v", "e": "calculate", "n": ""},
+  {"f": "caldera", "i": "/kal.ˈde.ra/", "p": "n", "e": "boiler", "n": "teplo is the heating itself"},
+  {"f": "calendar", "i": "/ka.ˈlen.dar/", "p": "n", "e": "schedule, calendar", "n": ""},
+  {"f": "calibra", "i": "/ka.ˈli.bra/", "p": "v", "e": "calibrate", "n": ""},
+  {"f": "calid", "i": "/ˈka.lid/", "p": "adj", "e": "warm", "n": ""},
+  {"f": "calificatiun", "i": "/ka.li.fi.ka.ˈti.un/", "p": "n", "e": "qualification", "n": ""},
+  {"f": "calificativu", "i": "/ka.li.fi.ka.ˈti.vu/", "p": "n", "e": "grade, mark awarded", "n": ""},
+  {"f": "calitate", "i": "/ka.li.ˈta.te/", "p": "n", "e": "quality", "n": "attributive calitatev"},
+  {"f": "calm", "i": "/kalm/", "p": "adj", "e": "calm", "n": ""},
+  {"f": "calor", "i": "/ˈka.lor/", "p": "n", "e": "heat, formal", "n": "everyday teplo; calor in the energy accounts"},
+  {"f": "calumnia", "i": "/ka.lum.ˈni.a/", "p": "v", "e": "slander", "n": ""},
+  {"f": "camarada", "i": "/ka.ma.ˈra.da/", "p": "n", "e": "comrade", "n": "amic of friendship, camarada of common work"},
+  {"f": "cambia", "i": "/kam.ˈbi.a/", "p": "v", "e": "exchange", "n": ""},
+  {"f": "cambiu", "i": "/kam.ˈbi.u/", "p": "n", "e": "exchange", "n": ""},
+  {"f": "cambodian", "i": "/kam.bo.ˈdi.an/", "p": "adj", "e": "Cambodian", "n": "demonym of Cambodia"},
+  {"f": "camera", "i": "/ka.ˈme.ra/", "p": "n", "e": "room", "n": ""},
+  {"f": "camera-de-dormi", "i": "/ka.me.ra.de.ˈdor.mi/", "p": "n", "e": "bedroom", "n": ""},
+  {"f": "camera-foto", "i": "/ka.me.ra.ˈfo.to/", "p": "n", "e": "camera", "n": ""},
+  {"f": "camerunian", "i": "/ka.me.ru.ˈni.an/", "p": "adj", "e": "Cameroonian", "n": "demonym of Camerun"},
+  {"f": "camina", "i": "/ka.ˈmi.na/", "p": "v", "e": "walk", "n": ""},
+  {"f": "camion", "i": "/ka.ˈmi.on/", "p": "n", "e": "lorry", "n": ""},
+  {"f": "camisa", "i": "/ka.ˈmi.sa/", "p": "n", "e": "shirt", "n": ""},
+  {"f": "camp", "i": "/kamp/", "p": "n", "e": "field", "n": ""},
+  {"f": "campana", "i": "/kam.ˈpa.na/", "p": "n", "e": "bell", "n": "rung at the commune"},
+  {"f": "campania", "i": "/kam.pa.ˈni.a/", "p": "n", "e": "countryside", "n": ""},
+  {"f": "can", "i": "/kan/", "p": "n", "e": "dog, formal", "n": "adjective canin; everyday pes"},
+  {"f": "canadian", "i": "/ka.na.ˈdi.an/", "p": "adj", "e": "Canadian", "n": "demonym of Canada"},
+  {"f": "canal", "i": "/ˈka.nal/", "p": "n", "e": "canal", "n": "of a cut waterway; via of a road"},
+  {"f": "canela", "i": "/ka.ˈne.la/", "p": "n", "e": "cinnamon", "n": ""},
+  {"f": "canta", "i": "/ˈkan.ta/", "p": "v", "e": "sing", "n": ""},
+  {"f": "cantina", "i": "/kan.ˈti.na/", "p": "n", "e": "canteen", "n": ""},
+  {"f": "cantitate", "i": "/kan.ti.ˈta.te/", "p": "n", "e": "quantity", "n": ""},
+  {"f": "cantiun", "i": "/kan.ˈti.un/", "p": "n", "e": "song", "n": ""},
+  {"f": "cap", "i": "/kap/", "p": "n", "e": "head", "n": ""},
+  {"f": "capabile", "i": "/ka.pa.ˈbi.le/", "p": "adj", "e": "capable", "n": ""},
+  {"f": "capacitate", "i": "/ka.pa.t͡ʃi.ˈta.te/", "p": "n", "e": "capacity", "n": "of a vessel and of a person alike"},
+  {"f": "capel", "i": "/ˈka.pel/", "p": "n", "e": "hat", "n": ""},
+  {"f": "capilu", "i": "/ka.ˈpi.lu/", "p": "n", "e": "hair", "n": ""},
+  {"f": "capta", "i": "/ˈkap.ta/", "p": "v", "e": "catch", "n": ""},
+  {"f": "captu stat", "i": "/ˈkap.tu stat/", "p": "n", "e": "state capture", "n": "the linking de drops in this compound"},
+  {"f": "capu", "i": "/ˈka.pu/", "p": "n", "e": "head", "n": "atenta te no bate se capu"},
+  {"f": "capuce", "i": "/ka.ˈpu.t͡ʃe/", "p": "n", "e": "hood", "n": ""},
+  {"f": "capverdian", "i": "/kap.ver.ˈdi.an/", "p": "adj", "e": "Cabo Verdean", "n": "demonym of Cap Verd"},
+  {"f": "carbon", "i": "/ˈkar.bon/", "p": "n", "e": "carbon", "n": ""},
+  {"f": "carga", "i": "/ˈkar.ga/", "p": "v", "e": "load", "n": ""},
+  {"f": "cargu", "i": "/ˈkar.gu/", "p": "n", "e": "load, burden", "n": "carga is the verb"},
+  {"f": "carne", "i": "/ˈkar.ne/", "p": "n", "e": "meat", "n": "adjective carnal"},
+  {"f": "carpu", "i": "/ˈkar.pu/", "p": "n", "e": "wrist", "n": ""},
+  {"f": "carta", "i": "/ˈkar.ta/", "p": "n", "e": "card", "n": ""},
+  {"f": "cascada", "i": "/kas.ˈka.da/", "p": "n", "e": "waterfall", "n": ""},
+  {"f": "casco", "i": "/ˈkas.ko/", "p": "n", "e": "helmet", "n": "required on every trembuja site"},
+  {"f": "caso", "i": "/ˈka.so/", "p": "n", "e": "case, matter before a court", "n": "cosa is any thing or matter; caso is the file with a number on it"},
+  {"f": "casu", "i": "/ˈka.su/", "p": "n", "e": "case, instance", "n": ""},
+  {"f": "cataloga", "i": "/ka.ta.ˈlo.ga/", "p": "v", "e": "catalogue", "n": ""},
+  {"f": "catarian", "i": "/ka.ta.ˈri.an/", "p": "adj", "e": "Qatari", "n": "demonym of Catar"},
+  {"f": "causa", "i": "/ˈkau.sa/", "p": "n", "e": "cause", "n": ""},
+  {"f": "cav", "i": "/kav/", "p": "adj", "e": "hollow", "n": ""},
+  {"f": "cava", "i": "/ˈka.va/", "p": "n", "e": "cellar", "n": ""},
+  {"f": "caval", "i": "/ˈka.val/", "p": "n", "e": "horse", "n": "adjective cavalin"},
+  {"f": "cavilia", "i": "/ka.vi.ˈli.a/", "p": "n", "e": "ankle", "n": ""},
+  {"f": "caxu", "i": "/ˈka.ʃu/", "p": "n", "e": "cheese", "n": ""},
+  {"f": "cazahstanian", "i": "/ka.zahs.ta.ˈni.an/", "p": "adj", "e": "Kazakh", "n": "demonym of Cazahstan"},
+  {"f": "ceas", "i": "/ˈt͡ʃe.as/", "p": "n", "e": "clock, watch", "n": ""},
+  {"f": "ceh", "i": "/t͡ʃeh/", "p": "adj", "e": "Czech", "n": ""},
+  {"f": "cel", "i": "/t͡ʃel/", "p": "n", "e": "sky", "n": "adjective celest"},
+  {"f": "cela", "i": "/ˈt͡ʃe.la/", "p": "v", "e": "conceal", "n": ""},
+  {"f": "cementa", "i": "/t͡ʃe.ˈmen.ta/", "p": "v", "e": "cement", "n": ""},
+  {"f": "cena", "i": "/ˈt͡ʃe.na/", "p": "n", "e": "evening meal, formal", "n": "everyday vecere"},
+  {"f": "censu", "i": "/ˈt͡ʃen.su/", "p": "n", "e": "census", "n": ""},
+  {"f": "cent", "i": "/t͡ʃent/", "p": "num", "e": "hundred", "n": ""},
+  {"f": "centimetru", "i": "/t͡ʃen.ti.ˈme.tru/", "p": "n", "e": "centimetre", "n": ""},
+  {"f": "centrafrican", "i": "/t͡ʃen.tra.ˈfri.kan/", "p": "adj", "e": "Central African", "n": "demonym of Republica Centrafrican"},
+  {"f": "centura", "i": "/t͡ʃen.ˈtu.ra/", "p": "n", "e": "belt", "n": ""},
+  {"f": "cepa", "i": "/ˈt͡ʃe.pa/", "p": "n", "e": "onion", "n": ""},
+  {"f": "cerca", "i": "/ˈt͡ʃer.ka/", "p": "v", "e": "search, look through", "n": "quere is the older word and holds in print"},
+  {"f": "cerebru", "i": "/t͡ʃe.ˈre.bru/", "p": "n", "e": "brain", "n": ""},
+  {"f": "cerexa", "i": "/t͡ʃe.ˈre.ʃa/", "p": "n", "e": "cherry", "n": ""},
+  {"f": "cert", "i": "/t͡ʃert/", "p": "adj", "e": "certain, sure", "n": ""},
+  {"f": "certament", "i": "/t͡ʃer.ˈta.ment/", "p": "adv", "e": "certainly", "n": ""},
+  {"f": "certe", "i": "/ˈt͡ʃer.te/", "p": "det", "e": "certain, some", "n": ""},
+  {"f": "certifica", "i": "/t͡ʃer.ti.ˈfi.ka/", "p": "v", "e": "certify", "n": ""},
+  {"f": "certitudine", "i": "/t͡ʃer.ti.tu.ˈdi.ne/", "p": "n", "e": "certainty", "n": ""},
+  {"f": "cesta", "i": "/ˈt͡ʃes.ta/", "p": "n", "e": "road, way, everyday", "n": ""},
+  {"f": "ceteri", "i": "/t͡ʃe.ˈte.ri/", "p": "pron", "e": "the rest, the others", "n": ""},
+  {"f": "chine", "i": "/ˈki.ne/", "p": "adj", "e": "Chinese", "n": ""},
+  {"f": "chirurgu", "i": "/khi.ˈrur.gu/", "p": "n", "e": "surgeon", "n": ""},
+  {"f": "ciadian", "i": "/t͡ʃa.ˈdi.an/", "p": "adj", "e": "Chadian", "n": "demonym of Ciad"},
+  {"f": "cifon", "i": "/ˈt͡ʃi.fon/", "p": "n", "e": "a corrupt person in public office", "n": "the common word; more frequent than sarko"},
+  {"f": "cilen", "i": "/ˈt͡ʃi.len/", "p": "adj", "e": "Chilean", "n": "demonym of Cile"},
+  {"f": "cilia", "i": "/t͡ʃi.ˈli.a/", "p": "n", "e": "eyelash", "n": ""},
+  {"f": "cinc", "i": "/t͡ʃink/", "p": "num", "e": "five", "n": ""},
+  {"f": "cinema", "i": "/t͡ʃi.ˈne.ma/", "p": "n", "e": "cinema", "n": ""},
+  {"f": "cinquanta", "i": "/t͡ʃin.ˈkan.ta/", "p": "num", "e": "fifty", "n": ""},
+  {"f": "ciprian", "i": "/t͡ʃi.ˈpri.an/", "p": "adj", "e": "Cypriot", "n": "demonym of Cipru"},
+  {"f": "ciprian nord", "i": "/t͡ʃi.ˈpri.an nord/", "p": "adj", "e": "Northern Cypriot", "n": "demonym of Cipru Nord"},
+  {"f": "circa", "i": "/ˈt͡ʃir.ka/", "p": "adv", "e": "about, approximately", "n": ""},
+  {"f": "circuitu", "i": "/t͡ʃir.ku.ˈi.tu/", "p": "n", "e": "circuit", "n": ""},
+  {"f": "circula", "i": "/t͡ʃir.ˈku.la/", "p": "v", "e": "run, operate as a service", "n": "se linia circula tot die, the line runs all day"},
+  {"f": "circular", "i": "/t͡ʃir.ˈku.lar/", "p": "adj", "e": "circular", "n": ""},
+  {"f": "circum", "i": "/ˈt͡ʃir.kum/", "p": "prep", "e": "around", "n": ""},
+  {"f": "circumstantia", "i": "/t͡ʃir.kums.tan.ˈti.a/", "p": "n", "e": "circumstance", "n": ""},
+  {"f": "cita", "i": "/ˈt͡ʃi.ta/", "p": "v", "e": "quote, cite", "n": ""},
+  {"f": "citadin", "i": "/t͡ʃi.ˈta.din/", "p": "n", "e": "town resident", "n": ""},
+  {"f": "cite", "i": "/ˈt͡ʃi.te/", "p": "n", "e": "city", "n": "Kremcite, the Kremlin city"},
+  {"f": "civil", "i": "/ˈt͡ʃi.vil/", "p": "adj", "e": "civil", "n": ""},
+  {"f": "clacson", "i": "/ˈklak.son/", "p": "n", "e": "horn of a vehicle", "n": "sona is the verb"},
+  {"f": "clama", "i": "/ˈkla.ma/", "p": "v", "e": "shout, call out", "n": ""},
+  {"f": "clar", "i": "/klar/", "p": "adj", "e": "clear", "n": ""},
+  {"f": "clarifica", "i": "/kla.ri.ˈfi.ka/", "p": "v", "e": "clarify", "n": "the commonest request put to the Academy"},
+  {"f": "clarment", "i": "/ˈklar.ment/", "p": "adv", "e": "clearly", "n": "clar ends in r, so no linking vowel appears"},
+  {"f": "clasificatiun", "i": "/kla.si.fi.ka.ˈti.un/", "p": "n", "e": "classification", "n": ""},
+  {"f": "classe", "i": "/ˈkla.se/", "p": "n", "e": "class", "n": ""},
+  {"f": "classifica", "i": "/kla.si.ˈfi.ka/", "p": "v", "e": "classify", "n": ""},
+  {"f": "clausula", "i": "/kla.u.ˈsu.la/", "p": "n", "e": "clause", "n": ""},
+  {"f": "clav", "i": "/klav/", "p": "n", "e": "key", "n": ""},
+  {"f": "clave-inglese", "i": "/kla.ve.in.ˈgle.se/", "p": "n", "e": "wrench", "n": ""},
+  {"f": "clavier", "i": "/kla.ˈvi.er/", "p": "n", "e": "keyboard", "n": ""},
+  {"f": "clerc", "i": "/klerk/", "p": "n", "e": "clerk", "n": ""},
+  {"f": "cliente", "i": "/kli.ˈen.te/", "p": "n", "e": "customer", "n": ""},
+  {"f": "clientelism", "i": "/kli.en.ˈte.lism/", "p": "n", "e": "clientelism", "n": ""},
+  {"f": "clima", "i": "/ˈkli.ma/", "p": "n", "e": "climate", "n": "vreme is the weather of the day"},
+  {"f": "clinica", "i": "/kli.ˈni.ka/", "p": "n", "e": "clinic", "n": ""},
+  {"f": "cluda", "i": "/ˈklu.da/", "p": "v", "e": "close", "n": "se porte cluda, the doors are closing"},
+  {"f": "clude", "i": "/ˈklu.de/", "p": "v", "e": "close", "n": ""},
+  {"f": "coberi", "i": "/ko.ˈbe.ri/", "p": "v", "e": "cover", "n": ""},
+  {"f": "cobertura", "i": "/ko.ber.ˈtu.ra/", "p": "n", "e": "cover, covering layer", "n": "cobertura de bitum, the concrete cover over the reinforcement"},
+  {"f": "coce", "i": "/ˈko.t͡ʃe/", "p": "v", "e": "cook, bake", "n": ""},
+  {"f": "cocina", "i": "/ko.ˈt͡ʃi.na/", "p": "n", "e": "kitchen", "n": ""},
+  {"f": "code", "i": "/ˈko.de/", "p": "n", "e": "code", "n": ""},
+  {"f": "coherent", "i": "/ko.ˈhe.rent/", "p": "adj", "e": "coherent", "n": ""},
+  {"f": "coincidentia", "i": "/koin.t͡ʃi.den.ˈti.a/", "p": "n", "e": "coincidence", "n": ""},
+  {"f": "colabora", "i": "/ko.la.ˈbo.ra/", "p": "v", "e": "collaborate", "n": ""},
+  {"f": "colega", "i": "/ko.ˈle.ga/", "p": "n", "e": "colleague", "n": ""},
+  {"f": "coler", "i": "/ˈko.ler/", "p": "n", "e": "collar", "n": ""},
+  {"f": "coleta", "i": "/ko.ˈle.ta/", "p": "v", "e": "gather, collect", "n": ""},
+  {"f": "colina", "i": "/ko.ˈli.na/", "p": "n", "e": "hill", "n": ""},
+  {"f": "collectiv", "i": "/ko.ˈlek.tiv/", "p": "adj", "e": "collective", "n": ""},
+  {"f": "collectivament", "i": "/ko.lek.ti.ˈva.ment/", "p": "adv", "e": "collectively", "n": ""},
+  {"f": "collide", "i": "/ko.ˈli.de/", "p": "v", "e": "collide", "n": ""},
+  {"f": "colombian", "i": "/ko.lom.ˈbi.an/", "p": "adj", "e": "Colombian", "n": "demonym of Colombia"},
+  {"f": "colona", "i": "/ko.ˈlo.na/", "p": "n", "e": "column of a table", "n": "se colona regular, the column that gives the regular form"},
+  {"f": "color", "i": "/ˈko.lor/", "p": "n", "e": "colour", "n": ""},
+  {"f": "colu", "i": "/ˈko.lu/", "p": "n", "e": "neck", "n": ""},
+  {"f": "combustibile", "i": "/kom.bus.ti.ˈbi.le/", "p": "n", "e": "fuel", "n": ""},
+  {"f": "comensa", "i": "/ko.ˈmen.sa/", "p": "v", "e": "begin", "n": ""},
+  {"f": "comercia", "i": "/ko.mer.ˈt͡ʃi.a/", "p": "v", "e": "trade", "n": ""},
+  {"f": "comercial", "i": "/ko.mer.ˈt͡ʃi.al/", "p": "adj", "e": "commercial", "n": ""},
+  {"f": "comerciu", "i": "/ko.ˈmer.t͡ʃu/", "p": "n", "e": "trade", "n": ""},
+  {"f": "comisiun", "i": "/ko.mi.ˈsi.un/", "p": "n", "e": "commission", "n": "comisiun de enquesta, commission of inquiry"},
+  {"f": "comminatiun", "i": "/ko.mi.na.ˈti.un/", "p": "n", "e": "threat", "n": "minacia is the verb"},
+  {"f": "como", "i": "/ˈko.mo/", "p": "adv", "e": "how, as", "n": ""},
+  {"f": "comorian", "i": "/ko.mo.ˈri.an/", "p": "adj", "e": "Comoran", "n": "demonym of Comor"},
+  {"f": "compara", "i": "/kom.ˈpa.ra/", "p": "v", "e": "compare", "n": ""},
+  {"f": "comparatiun", "i": "/kom.pa.ra.ˈti.un/", "p": "n", "e": "comparison", "n": "compara is the act; comparatiun is the form plus grande quam"},
+  {"f": "compassiun", "i": "/kom.pa.ˈsi.un/", "p": "n", "e": "compassion", "n": ""},
+  {"f": "compensa", "i": "/kom.ˈpen.sa/", "p": "v", "e": "compensate", "n": ""},
+  {"f": "competent", "i": "/kom.ˈpe.tent/", "p": "adj", "e": "competent", "n": "competentia is the noun"},
+  {"f": "competentia", "i": "/kom.pe.ten.ˈti.a/", "p": "n", "e": "competence", "n": "of a body; the commune holds general competentia"},
+  {"f": "compila", "i": "/kom.ˈpi.la/", "p": "v", "e": "compile", "n": ""},
+  {"f": "complex", "i": "/ˈkom.pleʃ/", "p": "adj", "e": "complex", "n": ""},
+  {"f": "complexament", "i": "/kom.ple.ˈʃa.ment/", "p": "adv", "e": "in a complex way", "n": ""},
+  {"f": "complicatiun", "i": "/kom.pli.ka.ˈti.un/", "p": "n", "e": "complication", "n": ""},
+  {"f": "compost", "i": "/ˈkom.post/", "p": "n", "e": "compost", "n": ""},
+  {"f": "compra", "i": "/ˈkom.pra/", "p": "v", "e": "buy", "n": ""},
+  {"f": "comprende", "i": "/kom.ˈpren.de/", "p": "v", "e": "understand", "n": ""},
+  {"f": "comprensiun", "i": "/kom.pren.ˈsi.un/", "p": "n", "e": "comprehension", "n": ""},
+  {"f": "computa", "i": "/kom.ˈpu.ta/", "p": "v", "e": "tally, count up", "n": ""},
+  {"f": "computador", "i": "/kom.pu.ˈta.dor/", "p": "n", "e": "computer", "n": ""},
+  {"f": "comun", "i": "/ˈko.mun/", "p": "adj", "e": "common, shared", "n": ""},
+  {"f": "comunal", "i": "/ko.ˈmu.nal/", "p": "adj", "e": "communal", "n": ""},
+  {"f": "comune", "i": "/ko.ˈmu.ne/", "p": "n", "e": "commune", "n": ""},
+  {"f": "comunica", "i": "/ko.mu.ˈni.ka/", "p": "v", "e": "communicate", "n": "comunica te se comune, report it to the commune"},
+  {"f": "comunicatiun", "i": "/ko.mu.ni.ka.ˈti.un/", "p": "n", "e": "communication", "n": ""},
+  {"f": "comunitate", "i": "/ko.mu.ni.ˈta.te/", "p": "n", "e": "community", "n": ""},
+  {"f": "comuta", "i": "/ko.ˈmu.ta/", "p": "v", "e": "switch over, change points", "n": ""},
+  {"f": "con", "i": "/kon/", "p": "prep", "e": "with", "n": ""},
+  {"f": "concentra", "i": "/kon.ˈt͡ʃen.tra/", "p": "v", "e": "concentrate", "n": ""},
+  {"f": "concentrat", "i": "/kon.ˈt͡ʃen.trat/", "p": "adj", "e": "concentrated", "n": ""},
+  {"f": "concepe", "i": "/kon.ˈt͡ʃe.pe/", "p": "v", "e": "conceive, form an idea", "n": ""},
+  {"f": "conceptu", "i": "/kon.ˈt͡ʃep.tu/", "p": "n", "e": "concept", "n": ""},
+  {"f": "concilia", "i": "/kon.t͡ʃi.ˈli.a/", "p": "v", "e": "reconcile", "n": ""},
+  {"f": "conclude", "i": "/kon.ˈklu.de/", "p": "v", "e": "conclude", "n": ""},
+  {"f": "conclusiun", "i": "/kon.klu.ˈsi.un/", "p": "n", "e": "conclusion", "n": ""},
+  {"f": "concret", "i": "/ˈkon.kret/", "p": "adj", "e": "concrete", "n": ""},
+  {"f": "concute", "i": "/kon.ˈku.te/", "p": "v", "e": "shake a thing", "n": ""},
+  {"f": "conditiun", "i": "/kon.di.ˈti.un/", "p": "n", "e": "condition", "n": ""},
+  {"f": "condolia", "i": "/kon.do.ˈli.a/", "p": "v", "e": "offer condolences", "n": ""},
+  {"f": "conduce", "i": "/kon.ˈdu.t͡ʃe/", "p": "v", "e": "drive", "n": ""},
+  {"f": "conexiun", "i": "/ko.ne.ˈʃi.un/", "p": "n", "e": "connection", "n": ""},
+  {"f": "confesa", "i": "/kon.ˈfe.sa/", "p": "v", "e": "confess, admit", "n": ""},
+  {"f": "confide", "i": "/kon.ˈfi.de/", "p": "v", "e": "trust", "n": ""},
+  {"f": "confidente", "i": "/kon.fi.ˈden.te/", "p": "adj", "e": "confident", "n": ""},
+  {"f": "confin", "i": "/ˈkon.fin/", "p": "n", "e": "border", "n": "frontiera is the political line"},
+  {"f": "confirma", "i": "/kon.ˈfir.ma/", "p": "v", "e": "confirm", "n": ""},
+  {"f": "confitura", "i": "/kon.fi.ˈtu.ra/", "p": "n", "e": "jam", "n": ""},
+  {"f": "confli intere", "i": "/ˈkon.fli in.ˈte.re/", "p": "n", "e": "conflict of interest", "n": "a fixed compound; the linking de drops and both elements take their trimmed form"},
+  {"f": "confunde", "i": "/kon.ˈfun.de/", "p": "v", "e": "confuse, mix up", "n": ""},
+  {"f": "confus", "i": "/ˈkon.fus/", "p": "adj", "e": "confused", "n": "confusiun is the noun"},
+  {"f": "confusiun", "i": "/kon.fu.ˈsi.un/", "p": "n", "e": "confusion", "n": ""},
+  {"f": "congelator", "i": "/kon.d͡ʒe.ˈla.tor/", "p": "n", "e": "freezer", "n": ""},
+  {"f": "congolan", "i": "/kon.ˈgo.lan/", "p": "adj", "e": "Congolese", "n": "demonym of Congo"},
+  {"f": "congre", "i": "/ˈkon.gre/", "p": "n", "e": "congress", "n": ""},
+  {"f": "conosce", "i": "/ko.ˈnos.t͡ʃe/", "p": "v", "e": "know a person", "n": ""},
+  {"f": "conossente", "i": "/ko.no.ˈsen.te/", "p": "n", "e": "acquaintance", "n": "conosce is the verb"},
+  {"f": "consciente", "i": "/kons.t͡ʃi.ˈen.te/", "p": "adj", "e": "aware", "n": ""},
+  {"f": "consensu", "i": "/kon.ˈsen.su/", "p": "n", "e": "consensus", "n": ""},
+  {"f": "consenti", "i": "/kon.ˈsen.ti/", "p": "v", "e": "consent, agree to", "n": ""},
+  {"f": "consequentia", "i": "/kon.se.ken.ˈti.a/", "p": "n", "e": "consequence", "n": ""},
+  {"f": "conserva", "i": "/kon.ˈser.va/", "p": "v", "e": "keep", "n": ""},
+  {"f": "considera", "i": "/kon.si.ˈde.ra/", "p": "v", "e": "consider", "n": "considera se caxu, consider the case"},
+  {"f": "consigna", "i": "/kon.ˈsig.na/", "p": "v", "e": "deliver", "n": "consigna te se porta, deliver to the door"},
+  {"f": "consilia", "i": "/kon.si.ˈli.a/", "p": "v", "e": "advise", "n": ""},
+  {"f": "consiliu", "i": "/kon.si.ˈli.u/", "p": "n", "e": "council", "n": ""},
+  {"f": "consistentia", "i": "/kon.sis.ten.ˈti.a/", "p": "n", "e": "consistency", "n": ""},
+  {"f": "consola", "i": "/kon.ˈso.la/", "p": "v", "e": "console", "n": ""},
+  {"f": "consolatiun", "i": "/kon.so.la.ˈti.un/", "p": "n", "e": "comfort", "n": "consola is the verb"},
+  {"f": "consonante", "i": "/kon.so.ˈnan.te/", "p": "n", "e": "consonant", "n": ""},
+  {"f": "consortiu", "i": "/kon.sor.ˈti.u/", "p": "n", "e": "consortium", "n": ""},
+  {"f": "constata", "i": "/kons.ˈta.ta/", "p": "v", "e": "establish as a fact", "n": ""},
+  {"f": "constientia", "i": "/kons.ti.en.ˈti.a/", "p": "n", "e": "awareness, conscience", "n": ""},
+  {"f": "constitue", "i": "/kons.ti.ˈtu.e/", "p": "v", "e": "constitute", "n": ""},
+  {"f": "constitutiun", "i": "/kons.ti.tu.ˈti.un/", "p": "n", "e": "constitution", "n": ""},
+  {"f": "construct", "i": "/ˈkons.trukt/", "p": "adj", "e": "built", "n": "the participle of construe standing as an adjective: es construct en 1964"},
+  {"f": "constructiun", "i": "/kons.truk.ˈti.un/", "p": "n", "e": "construction", "n": "trembuja of works in progress"},
+  {"f": "construe", "i": "/kons.ˈtru.e/", "p": "v", "e": "build", "n": ""},
+  {"f": "consulta", "i": "/kon.ˈsul.ta/", "p": "v", "e": "consult", "n": "consulta se comune, ask the commune"},
+  {"f": "consultativ", "i": "/kon.sul.ˈta.tiv/", "p": "adj", "e": "advisory", "n": ""},
+  {"f": "consum", "i": "/ˈkon.sum/", "p": "n", "e": "consumption", "n": "consuma is the act; consum is the figure in the accounts"},
+  {"f": "consuma", "i": "/kon.ˈsu.ma/", "p": "v", "e": "consume", "n": ""},
+  {"f": "conta", "i": "/ˈkon.ta/", "p": "v", "e": "count, tell", "n": "conta se votos; conta un istoria"},
+  {"f": "contabilisa", "i": "/kon.ta.bi.ˈli.sa/", "p": "v", "e": "book, enter in the accounts", "n": ""},
+  {"f": "contact", "i": "/ˈkon.takt/", "p": "n", "e": "contact", "n": ""},
+  {"f": "contator", "i": "/kon.ˈta.tor/", "p": "n", "e": "meter", "n": ""},
+  {"f": "contempla", "i": "/kon.ˈtem.pla/", "p": "v", "e": "contemplate, look long at", "n": ""},
+  {"f": "content", "i": "/ˈkon.tent/", "p": "adj", "e": "glad, satisfied", "n": ""},
+  {"f": "contenut", "i": "/kon.ˈte.nut/", "p": "n", "e": "content", "n": ""},
+  {"f": "contesta", "i": "/kon.ˈtes.ta/", "p": "v", "e": "challenge, contest", "n": "contesta se sorte, challenge the draw"},
+  {"f": "contextu", "i": "/kon.ˈteʃ.tu/", "p": "n", "e": "context", "n": ""},
+  {"f": "continua", "i": "/kon.ti.ˈnu.a/", "p": "v", "e": "continue", "n": ""},
+  {"f": "continuitate", "i": "/kon.ti.nu.i.ˈta.te/", "p": "n", "e": "continuity", "n": "of a service kept running"},
+  {"f": "contra", "i": "/ˈkon.tra/", "p": "prep", "e": "against", "n": ""},
+  {"f": "contract", "i": "/ˈkon.trakt/", "p": "n", "e": "contract", "n": ""},
+  {"f": "contracta", "i": "/kon.ˈtrak.ta/", "p": "v", "e": "contract", "n": ""},
+  {"f": "contractor", "i": "/kon.ˈtrak.tor/", "p": "n", "e": "contractor", "n": ""},
+  {"f": "contractu", "i": "/kon.ˈtrak.tu/", "p": "n", "e": "contract", "n": ""},
+  {"f": "contrastu", "i": "/kon.ˈtras.tu/", "p": "n", "e": "contrast", "n": ""},
+  {"f": "contribue", "i": "/kon.tri.ˈbu.e/", "p": "v", "e": "contribute", "n": ""},
+  {"f": "controla", "i": "/kon.ˈtro.la/", "p": "v", "e": "check, inspect", "n": "controlor is the inspector"},
+  {"f": "controlor", "i": "/kon.ˈtro.lor/", "p": "n", "e": "inspector", "n": "the Republic runs none on its trains"},
+  {"f": "contu", "i": "/ˈkon.tu/", "p": "n", "e": "account", "n": ""},
+  {"f": "convena", "i": "/kon.ˈve.na/", "p": "v", "e": "agree, come to terms", "n": "of parties coming to terms"},
+  {"f": "conventiun", "i": "/kon.ven.ˈti.un/", "p": "n", "e": "covenant, convention", "n": ""},
+  {"f": "convoca", "i": "/kon.ˈvo.ka/", "p": "v", "e": "convene, call together", "n": "of an assembly; voca of a person"},
+  {"f": "coopera", "i": "/ko.o.ˈpe.ra/", "p": "v", "e": "cooperate", "n": "cooperativa is the body"},
+  {"f": "cooperatiun", "i": "/ko.o.pe.ra.ˈti.un/", "p": "n", "e": "cooperation", "n": ""},
+  {"f": "cooperativa", "i": "/ko.o.pe.ra.ˈti.va/", "p": "n", "e": "cooperative", "n": ""},
+  {"f": "coordina", "i": "/ko.or.ˈdi.na/", "p": "v", "e": "coordinate", "n": ""},
+  {"f": "coordinatiun", "i": "/ko.or.di.na.ˈti.un/", "p": "n", "e": "coordination", "n": ""},
+  {"f": "copia", "i": "/ko.ˈpi.a/", "p": "n", "e": "copy", "n": "also the verb, to copy"},
+  {"f": "cor", "i": "/kor/", "p": "n", "e": "heart", "n": "adjective cordak"},
+  {"f": "coraje", "i": "/ko.ˈra.ʒe/", "p": "n", "e": "courage", "n": "brav is the adjective"},
+  {"f": "corda", "i": "/ˈkor.da/", "p": "n", "e": "rope", "n": ""},
+  {"f": "corean", "i": "/ko.ˈre.an/", "p": "adj", "e": "Korean", "n": "demonym of Corea"},
+  {"f": "corean nord", "i": "/ko.ˈre.an nord/", "p": "adj", "e": "North Korean", "n": "demonym of Corea Nord"},
+  {"f": "corean sud", "i": "/ko.ˈre.an sud/", "p": "adj", "e": "South Korean", "n": "demonym of Corea Sud"},
+  {"f": "corige", "i": "/ko.ˈri.d͡ʒe/", "p": "v", "e": "correct", "n": ""},
+  {"f": "corpu", "i": "/ˈkor.pu/", "p": "n", "e": "body", "n": "adjective corporal"},
+  {"f": "corre", "i": "/ˈko.re/", "p": "v", "e": "run", "n": ""},
+  {"f": "correct", "i": "/ˈko.rekt/", "p": "adj", "e": "correct", "n": ""},
+  {"f": "correctament", "i": "/ko.rek.ˈta.ment/", "p": "adv", "e": "correctly", "n": ""},
+  {"f": "correctiun", "i": "/ko.rek.ˈti.un/", "p": "n", "e": "correction", "n": ""},
+  {"f": "correspondentia", "i": "/ko.res.pon.den.ˈti.a/", "p": "n", "e": "correspondence", "n": ""},
+  {"f": "corridor", "i": "/ko.ˈri.dor/", "p": "n", "e": "corridor", "n": "of a dwelling; scodi runs between them"},
+  {"f": "corriga", "i": "/ko.ˈri.ga/", "p": "v", "e": "correct", "n": "corrigit of a form somebody has put right"},
+  {"f": "corrode", "i": "/ko.ˈro.de/", "p": "v", "e": "corrode, eat away", "n": ""},
+  {"f": "corte", "i": "/ˈkor.te/", "p": "n", "e": "court", "n": ""},
+  {"f": "cortina", "i": "/kor.ˈti.na/", "p": "n", "e": "curtain", "n": ""},
+  {"f": "coruptiun", "i": "/ko.rup.ˈti.un/", "p": "n", "e": "corruption, formal", "n": ""},
+  {"f": "cosa", "i": "/ˈko.sa/", "p": "n", "e": "thing, matter", "n": ""},
+  {"f": "cosovan", "i": "/ko.ˈso.van/", "p": "adj", "e": "Kosovar", "n": "demonym of Cosov"},
+  {"f": "costa", "i": "/ˈkos.ta/", "p": "n", "e": "coast", "n": "also the verb, to cost"},
+  {"f": "costal", "i": "/ˈkos.tal/", "p": "adj", "e": "coastal", "n": "irregular adjective of costa; the rule would give costak"},
+  {"f": "costarican", "i": "/kos.ta.ˈri.kan/", "p": "adj", "e": "Costa Rican", "n": "demonym of Costa Rica"},
+  {"f": "costella", "i": "/kos.ˈte.la/", "p": "n", "e": "rib", "n": "costa is the coast"},
+  {"f": "cotisa", "i": "/ko.ˈti.sa/", "p": "v", "e": "pay a share", "n": ""},
+  {"f": "coton", "i": "/ˈko.ton/", "p": "n", "e": "cotton", "n": ""},
+  {"f": "coxa", "i": "/ˈko.ʃa/", "p": "n", "e": "hip", "n": ""},
+  {"f": "cra", "i": "/kra/", "p": "n", "e": "Christmas", "n": "mercat de Cra, the Christmas market"},
+  {"f": "crani", "i": "/ˈkra.ni/", "p": "n", "e": "skull", "n": ""},
+  {"f": "crede", "i": "/ˈkre.de/", "p": "v", "e": "believe", "n": ""},
+  {"f": "credibilitate", "i": "/kre.di.bi.li.ˈta.te/", "p": "n", "e": "credibility", "n": ""},
+  {"f": "creditu", "i": "/kre.ˈdi.tu/", "p": "n", "e": "credit", "n": ""},
+  {"f": "creion", "i": "/ˈkrei.on/", "p": "n", "e": "pencil", "n": ""},
+  {"f": "crem", "i": "/krem/", "p": "adj", "e": "cream", "n": ""},
+  {"f": "crepa", "i": "/ˈkre.pa/", "p": "v", "e": "crack", "n": ""},
+  {"f": "crepuscul", "i": "/kre.ˈpus.kul/", "p": "n", "e": "dusk", "n": ""},
+  {"f": "cresce", "i": "/ˈkres.t͡ʃe/", "p": "v", "e": "grow", "n": ""},
+  {"f": "critica", "i": "/kri.ˈti.ka/", "p": "v", "e": "criticise", "n": "carries no reproach on its own"},
+  {"f": "crusta", "i": "/ˈkrus.ta/", "p": "n", "e": "crust", "n": ""},
+  {"f": "cualcun", "i": "/ku.ˈal.kun/", "p": "det", "e": "whichever", "n": ""},
+  {"f": "cuban", "i": "/ˈku.ban/", "p": "adj", "e": "Cuban", "n": "demonym of Cuba"},
+  {"f": "cubitu", "i": "/ku.ˈbi.tu/", "p": "n", "e": "elbow", "n": ""},
+  {"f": "cui", "i": "/ˈku.i/", "p": "pron", "e": "to whom", "n": ""},
+  {"f": "cuie", "i": "/ku.ˈi.e/", "p": "pron", "e": "whose", "n": ""},
+  {"f": "cuir", "i": "/ˈku.ir/", "p": "n", "e": "leather", "n": ""},
+  {"f": "culpa", "i": "/ˈkul.pa/", "p": "n", "e": "fault, guilt", "n": ""},
+  {"f": "culpabilitate", "i": "/kul.pa.bi.li.ˈta.te/", "p": "n", "e": "blame", "n": "culpa is the fault itself"},
+  {"f": "cultura", "i": "/kul.ˈtu.ra/", "p": "n", "e": "crop", "n": ""},
+  {"f": "cunea", "i": "/ku.ˈne.a/", "p": "v", "e": "nail", "n": ""},
+  {"f": "cura", "i": "/ˈku.ra/", "p": "n", "e": "care", "n": "cura de un persone es praca"},
+  {"f": "curba", "i": "/ˈkur.ba/", "p": "v", "e": "bend, curve, flow", "n": ""},
+  {"f": "curiositate", "i": "/ku.ri.o.si.ˈta.te/", "p": "n", "e": "curiosity", "n": ""},
+  {"f": "current", "i": "/ˈku.rent/", "p": "adj", "e": "current, in use", "n": "said of both members of a pair, and it carries no recommendation"},
+  {"f": "curs", "i": "/kurs/", "p": "n", "e": "course, run of a thing", "n": "en curs, in progress"},
+  {"f": "curt", "i": "/kurt/", "p": "adj", "e": "short", "n": ""},
+  {"f": "curt-circuitu", "i": "/kurt.t͡ʃir.ku.ˈi.tu/", "p": "n", "e": "short circuit", "n": "a fixed compound of curt and circuitu, written with the joint and stressed on the second element"},
+  {"f": "curtament", "i": "/kur.ˈta.ment/", "p": "adv", "e": "briefly", "n": ""},
+  {"f": "curtz", "i": "/kurt͡s/", "p": "n", "e": "filth, excrement", "n": "coarse; the polite reply is ia dan zasta"},
+  {"f": "curv", "i": "/kurv/", "p": "adj", "e": "curved", "n": "of a track and of a road"},
+  {"f": "cusin", "i": "/ˈku.sin/", "p": "n", "e": "cousin", "n": ""},
+  {"f": "cusinete", "i": "/ku.si.ˈne.te/", "p": "n", "e": "bearing", "n": ""},
+  {"f": "custa", "i": "/ˈkus.ta/", "p": "v", "e": "cost", "n": "quanto custa, what does it cost"},
+  {"f": "custodi", "i": "/kus.ˈto.di/", "p": "v", "e": "look after, have charge of", "n": "cura is the care itself"},
+  {"f": "custu", "i": "/ˈkus.tu/", "p": "n", "e": "cost", "n": "custa is the verb"},
+  {"f": "cutzit", "i": "/ˈku.t͡sit/", "p": "n", "e": "knife", "n": ""},
+  {"f": "cuvaitian", "i": "/ku.vai.ˈti.an/", "p": "adj", "e": "Kuwaiti", "n": "demonym of Cuvait"},
+  {"f": "da", "i": "/da/", "p": "v", "e": "give, in print", "n": "dan in speech and in the phrasebook; da in print, and the participle dat comes from it"},
+  {"f": "daca", "i": "/ˈda.ka/", "p": "conj", "e": "if", "n": ""},
+  {"f": "dan", "i": "/dan/", "p": "v", "e": "give", "n": ""},
+  {"f": "dane", "i": "/ˈda.ne/", "p": "adj", "e": "Danish", "n": "demonym of Danmark"},
+  {"f": "dansa", "i": "/ˈdan.sa/", "p": "v", "e": "dance", "n": ""},
+  {"f": "data", "i": "/ˈda.ta/", "p": "n", "e": "date", "n": ""},
+  {"f": "de", "i": "/de/", "p": "prep", "e": "of, from", "n": ""},
+  {"f": "de zasta", "i": "/de ˈzas.ta/", "p": "int", "e": "you are welcome", "n": "the ordinary reply to gratias"},
+  {"f": "debarcader", "i": "/de.bar.ˈka.der/", "p": "n", "e": "jetty", "n": ""},
+  {"f": "debate", "i": "/de.ˈba.te/", "p": "v", "e": "debate", "n": ""},
+  {"f": "deber", "i": "/ˈde.ber/", "p": "n", "e": "duty", "n": "jure is the right that answers it"},
+  {"f": "debitu", "i": "/de.ˈbi.tu/", "p": "n", "e": "debt", "n": ""},
+  {"f": "deca", "i": "/ˈde.ka/", "p": "n", "e": "blanket", "n": ""},
+  {"f": "decada", "i": "/de.ˈka.da/", "p": "n", "e": "decade", "n": ""},
+  {"f": "dece", "i": "/ˈde.t͡ʃe/", "p": "num", "e": "ten", "n": "teens are formed dece-un, dece-du and so on"},
+  {"f": "december", "i": "/de.ˈt͡ʃem.ber/", "p": "n", "e": "December", "n": ""},
+  {"f": "decembre", "i": "/de.ˈt͡ʃem.bre/", "p": "n", "e": "December", "n": ""},
+  {"f": "decene", "i": "/de.ˈt͡ʃe.ne/", "p": "n", "e": "ten, a group of ten", "n": "vinte, trinta and the rest are se decenes"},
+  {"f": "deceptiun", "i": "/de.t͡ʃep.ˈti.un/", "p": "n", "e": "disappointment", "n": ""},
+  {"f": "decide", "i": "/de.ˈt͡ʃi.de/", "p": "v", "e": "decide", "n": ""},
+  {"f": "decimale", "i": "/de.t͡ʃi.ˈma.le/", "p": "n", "e": "decimal", "n": "lecti con punt, read with punt"},
+  {"f": "decis", "i": "/ˈde.t͡ʃis/", "p": "adj", "e": "resolute", "n": ""},
+  {"f": "decisiun", "i": "/de.t͡ʃi.ˈsi.un/", "p": "n", "e": "decision", "n": ""},
+  {"f": "declara", "i": "/de.ˈkla.ra/", "p": "v", "e": "declare, state on the record", "n": "declara supra se onor, declare on one's honour"},
+  {"f": "declaratiun", "i": "/de.kla.ra.ˈti.un/", "p": "n", "e": "statement", "n": "declara is the act; declaratiun is what stands on the record"},
+  {"f": "decolla", "i": "/de.ˈko.la/", "p": "v", "e": "take off", "n": ""},
+  {"f": "decret", "i": "/ˈde.kret/", "p": "n", "e": "decree", "n": ""},
+  {"f": "decretu", "i": "/de.ˈkre.tu/", "p": "n", "e": "decree", "n": ""},
+  {"f": "deduce", "i": "/de.ˈdu.t͡ʃe/", "p": "v", "e": "deduce", "n": ""},
+  {"f": "defect", "i": "/ˈde.fekt/", "p": "n", "e": "defect, fault", "n": ""},
+  {"f": "defende", "i": "/de.ˈfen.de/", "p": "v", "e": "defend", "n": ""},
+  {"f": "deficite", "i": "/de.fi.ˈt͡ʃi.te/", "p": "n", "e": "deficit", "n": ""},
+  {"f": "deglute", "i": "/de.ˈglu.te/", "p": "v", "e": "swallow", "n": ""},
+  {"f": "dekui", "i": "/de.ˈku.i/", "p": "int", "e": "thank you, everyday", "n": "formal gratias; dekui between people who know each other"},
+  {"f": "delega", "i": "/de.ˈle.ga/", "p": "v", "e": "delegate", "n": ""},
+  {"f": "delegat", "i": "/de.ˈle.gat/", "p": "n", "e": "delegate", "n": ""},
+  {"f": "delegatiun", "i": "/de.le.ga.ˈti.un/", "p": "n", "e": "delegation", "n": ""},
+  {"f": "delibera", "i": "/de.li.ˈbe.ra/", "p": "v", "e": "deliberate", "n": "in the assemblies and in the working groups"},
+  {"f": "deliberatiun", "i": "/de.li.be.ra.ˈti.un/", "p": "n", "e": "deliberation", "n": ""},
+  {"f": "delictu", "i": "/de.ˈlik.tu/", "p": "n", "e": "offence", "n": ""},
+  {"f": "deman", "i": "/ˈde.man/", "p": "adv", "e": "tomorrow", "n": ""},
+  {"f": "demanda", "i": "/de.ˈman.da/", "p": "v", "e": "ask", "n": ""},
+  {"f": "demissiona", "i": "/de.mi.si.ˈo.na/", "p": "v", "e": "resign", "n": ""},
+  {"f": "demoli", "i": "/de.ˈmo.li/", "p": "v", "e": "demolish, pull down", "n": ""},
+  {"f": "dens", "i": "/dens/", "p": "adj", "e": "dense", "n": "densitate is the noun"},
+  {"f": "densificatiun", "i": "/den.si.fi.ka.ˈti.un/", "p": "n", "e": "densification", "n": "one word carrying several senses at once"},
+  {"f": "densitate", "i": "/den.si.ˈta.te/", "p": "n", "e": "density", "n": "densificatiun is the property of the language"},
+  {"f": "dent", "i": "/dent/", "p": "n", "e": "tooth", "n": "adjective dental"},
+  {"f": "dentista", "i": "/den.ˈtis.ta/", "p": "n", "e": "dentist", "n": ""},
+  {"f": "denuntia", "i": "/de.nun.ˈti.a/", "p": "v", "e": "report wrongdoing", "n": ""},
+  {"f": "denuntiator", "i": "/de.nun.ti.ˈa.tor/", "p": "n", "e": "a person who reports wrongdoing", "n": ""},
+  {"f": "depende", "i": "/de.ˈpen.de/", "p": "v", "e": "depend", "n": "depende de, hang on"},
+  {"f": "dependentia", "i": "/de.pen.den.ˈti.a/", "p": "n", "e": "dependence", "n": ""},
+  {"f": "depos", "i": "/ˈde.pos/", "p": "prep", "e": "since", "n": ""},
+  {"f": "depositu", "i": "/de.po.ˈsi.tu/", "p": "n", "e": "deposit", "n": ""},
+  {"f": "depou", "i": "/ˈde.pou/", "p": "n", "e": "depot", "n": ""},
+  {"f": "deprimit", "i": "/de.ˈpri.mit/", "p": "adj", "e": "low, depressed", "n": ""},
+  {"f": "deraila", "i": "/de.ra.ˈi.la/", "p": "v", "e": "derail", "n": ""},
+  {"f": "derapa", "i": "/de.ˈra.pa/", "p": "v", "e": "skid", "n": ""},
+  {"f": "deriva", "i": "/de.ˈri.va/", "p": "n", "e": "drift", "n": "of a boat off the lagun"},
+  {"f": "derivatiun", "i": "/de.ri.va.ˈti.un/", "p": "n", "e": "derivation", "n": ""},
+  {"f": "deroga", "i": "/de.ˈro.ga/", "p": "v", "e": "derogate", "n": ""},
+  {"f": "desagu", "i": "/de.ˈsa.gu/", "p": "n", "e": "drain", "n": ""},
+  {"f": "desapproba", "i": "/de.sa.ˈpro.ba/", "p": "v", "e": "disapprove", "n": ""},
+  {"f": "descarga", "i": "/des.ˈkar.ga/", "p": "v", "e": "unload", "n": "carga is to load"},
+  {"f": "descende", "i": "/des.ˈt͡ʃen.de/", "p": "v", "e": "descend, go down", "n": ""},
+  {"f": "descendente", "i": "/des.t͡ʃen.ˈden.te/", "p": "n", "e": "descendant", "n": ""},
+  {"f": "desconfide", "i": "/des.kon.ˈfi.de/", "p": "v", "e": "mistrust", "n": ""},
+  {"f": "descontent", "i": "/des.ˈkon.tent/", "p": "adj", "e": "dissatisfied", "n": ""},
+  {"f": "descriptiun", "i": "/des.krip.ˈti.un/", "p": "n", "e": "description", "n": ""},
+  {"f": "descriva", "i": "/des.ˈkri.va/", "p": "v", "e": "describe", "n": ""},
+  {"f": "descuraja", "i": "/des.ku.ˈra.ʒa/", "p": "v", "e": "discourage", "n": ""},
+  {"f": "desembarca", "i": "/de.sem.ˈbar.ka/", "p": "v", "e": "alight, disembark", "n": ""},
+  {"f": "desert", "i": "/ˈde.sert/", "p": "n", "e": "pudding, dessert", "n": ""},
+  {"f": "desesperantia", "i": "/de.ses.pe.ran.ˈti.a/", "p": "n", "e": "despair", "n": ""},
+  {"f": "designa", "i": "/de.ˈsig.na/", "p": "v", "e": "designate", "n": ""},
+  {"f": "designatiun", "i": "/de.sig.na.ˈti.un/", "p": "n", "e": "designation", "n": "the slot a numeral fills: autovuz nove"},
+  {"f": "desira", "i": "/de.ˈsi.ra/", "p": "v", "e": "desire, want", "n": "vole of a decision, desira of a wish"},
+  {"f": "desjunu", "i": "/des.ˈʒu.nu/", "p": "n", "e": "breakfast", "n": ""},
+  {"f": "desliga", "i": "/de.ˈsli.ga/", "p": "v", "e": "untie, release", "n": ""},
+  {"f": "desminti", "i": "/des.ˈmin.ti/", "p": "v", "e": "contradict, deny a report", "n": ""},
+  {"f": "desmonta", "i": "/des.ˈmon.ta/", "p": "v", "e": "dismantle, strip down", "n": ""},
+  {"f": "desperat", "i": "/des.ˈpe.rat/", "p": "adj", "e": "desperate", "n": ""},
+  {"f": "desperta", "i": "/des.ˈper.ta/", "p": "v", "e": "wake", "n": ""},
+  {"f": "despretia", "i": "/des.pre.ˈti.a/", "p": "v", "e": "despise", "n": ""},
+  {"f": "desque", "i": "/ˈdes.ke/", "p": "conj", "e": "since, from the time that", "n": ""},
+  {"f": "destin", "i": "/ˈdes.tin/", "p": "n", "e": "fate", "n": ""},
+  {"f": "destitue", "i": "/des.ti.ˈtu.e/", "p": "v", "e": "remove from office", "n": ""},
+  {"f": "destra", "i": "/ˈdes.tra/", "p": "n", "e": "right hand side", "n": "also the adjective and the adverb; the entitlement is dret"},
+  {"f": "destructiun", "i": "/des.truk.ˈti.un/", "p": "n", "e": "destruction", "n": ""},
+  {"f": "desturba", "i": "/des.ˈtur.ba/", "p": "v", "e": "disturb, trouble", "n": ""},
+  {"f": "desvolve", "i": "/des.ˈvol.ve/", "p": "v", "e": "unwrap, unroll", "n": ""},
+  {"f": "detalie", "i": "/de.ta.ˈli.e/", "p": "n", "e": "detail", "n": "detalie de se seism opens the second segment of a warning"},
+  {"f": "detecta", "i": "/de.ˈtek.ta/", "p": "v", "e": "detect", "n": ""},
+  {"f": "detege", "i": "/de.ˈte.d͡ʒe/", "p": "v", "e": "discover, uncover", "n": ""},
+  {"f": "determinante", "i": "/de.ter.mi.ˈnan.te/", "p": "n", "e": "determiner", "n": ""},
+  {"f": "determinat", "i": "/de.ter.ˈmi.nat/", "p": "adj", "e": "determined", "n": ""},
+  {"f": "detona", "i": "/de.ˈto.na/", "p": "v", "e": "go off, detonate", "n": ""},
+  {"f": "detra", "i": "/ˈde.tra/", "p": "prep", "e": "behind", "n": "abaxa detra se linia zolt"},
+  {"f": "deve", "i": "/ˈde.ve/", "p": "v", "e": "must", "n": ""},
+  {"f": "devia", "i": "/de.ˈvi.a/", "p": "v", "e": "turn off, divert", "n": ""},
+  {"f": "diagnostic", "i": "/di.ag.ˈnos.tik/", "p": "n", "e": "diagnosis", "n": ""},
+  {"f": "dialectu", "i": "/di.a.ˈlek.tu/", "p": "n", "e": "dialect", "n": "the twenty sub-regions differ audibly"},
+  {"f": "dialoga", "i": "/di.a.ˈlo.ga/", "p": "v", "e": "talk with, hold a dialogue", "n": ""},
+  {"f": "diametru", "i": "/di.a.ˈme.tru/", "p": "n", "e": "diameter", "n": ""},
+  {"f": "dice", "i": "/ˈdi.t͡ʃe/", "p": "v", "e": "say, state", "n": ""},
+  {"f": "dicit", "i": "/ˈdi.t͡ʃit/", "p": "v", "e": "said, stated", "n": "the participle of dice kept in the register; dicet in ordinary print"},
+  {"f": "dictionar", "i": "/dik.ti.ˈo.nar/", "p": "n", "e": "dictionary", "n": ""},
+  {"f": "die", "i": "/ˈdi.e/", "p": "n", "e": "day", "n": ""},
+  {"f": "die-laborabile", "i": "/di.e.la.bo.ra.ˈbi.le/", "p": "n", "e": "weekday", "n": ""},
+  {"f": "dieta", "i": "/di.ˈe.ta/", "p": "n", "e": "diet", "n": ""},
+  {"f": "different", "i": "/di.ˈfe.rent/", "p": "adj", "e": "different", "n": ""},
+  {"f": "differentia", "i": "/di.fe.ren.ˈti.a/", "p": "n", "e": "difference", "n": ""},
+  {"f": "dificil", "i": "/di.ˈfi.t͡ʃil/", "p": "adj", "e": "difficult", "n": ""},
+  {"f": "dificilment", "i": "/di.fi.ˈt͡ʃil.ment/", "p": "adv", "e": "with difficulty", "n": ""},
+  {"f": "dificultate", "i": "/di.fi.kul.ˈta.te/", "p": "n", "e": "difficulty", "n": ""},
+  {"f": "difunde", "i": "/di.ˈfun.de/", "p": "v", "e": "circulate, broadcast", "n": ""},
+  {"f": "diget", "i": "/ˈdi.d͡ʒet/", "p": "n", "e": "finger, toe", "n": ""},
+  {"f": "digne", "i": "/ˈdig.ne/", "p": "adj", "e": "worthy", "n": ""},
+  {"f": "dignitate", "i": "/dig.ni.ˈta.te/", "p": "n", "e": "dignity", "n": "of a person; onor of what is owed to one"},
+  {"f": "diligentia", "i": "/di.li.d͡ʒen.ˈti.a/", "p": "n", "e": "diligence", "n": ""},
+  {"f": "dioxi", "i": "/di.ˈo.ʃi/", "p": "n", "e": "dioxide", "n": "du dioxi carbon, two carbon dioxide"},
+  {"f": "diploma", "i": "/di.ˈplo.ma/", "p": "n", "e": "diploma", "n": ""},
+  {"f": "direct", "i": "/ˈdi.rekt/", "p": "adj", "e": "direct", "n": ""},
+  {"f": "directament", "i": "/di.rek.ˈta.ment/", "p": "adv", "e": "directly", "n": ""},
+  {"f": "directiun", "i": "/di.rek.ˈti.un/", "p": "n", "e": "direction", "n": ""},
+  {"f": "directorat", "i": "/di.rek.ˈto.rat/", "p": "n", "e": "directorate", "n": "the Republic between 1948 and 1989"},
+  {"f": "disciplina", "i": "/dis.t͡ʃi.ˈpli.na/", "p": "v", "e": "discipline", "n": ""},
+  {"f": "discute", "i": "/dis.ˈku.te/", "p": "v", "e": "discuss", "n": ""},
+  {"f": "disensu", "i": "/di.ˈsen.su/", "p": "n", "e": "dissent", "n": "printed by name in the decisions register"},
+  {"f": "disolve", "i": "/di.ˈsol.ve/", "p": "v", "e": "dissolve a body", "n": ""},
+  {"f": "dispare", "i": "/dis.ˈpa.re/", "p": "v", "e": "disappear", "n": ""},
+  {"f": "dispersa", "i": "/dis.ˈper.sa/", "p": "v", "e": "scatter, spill", "n": ""},
+  {"f": "disputa", "i": "/dis.ˈpu.ta/", "p": "n", "e": "dispute", "n": "also the verb, to dispute"},
+  {"f": "distantia", "i": "/dis.tan.ˈti.a/", "p": "n", "e": "distance", "n": "distantia entre statiunes, distance between stops"},
+  {"f": "distinct", "i": "/ˈdis.tinkt/", "p": "adj", "e": "distinct", "n": ""},
+  {"f": "distinctiun", "i": "/dis.tink.ˈti.un/", "p": "n", "e": "distinction", "n": ""},
+  {"f": "distinge", "i": "/dis.ˈtin.d͡ʒe/", "p": "v", "e": "distinguish, tell apart", "n": ""},
+  {"f": "distrae", "i": "/dis.ˈtra.e/", "p": "v", "e": "distract", "n": ""},
+  {"f": "distribue", "i": "/dis.tri.ˈbu.e/", "p": "v", "e": "distribute", "n": ""},
+  {"f": "dite", "i": "/ˈdi.te/", "p": "n", "e": "child, everyday", "n": ""},
+  {"f": "divan", "i": "/ˈdi.van/", "p": "n", "e": "sofa", "n": ""},
+  {"f": "diverse", "i": "/di.ˈver.se/", "p": "det", "e": "several, various", "n": ""},
+  {"f": "diversitate", "i": "/di.ver.si.ˈta.te/", "p": "n", "e": "diversity", "n": ""},
+  {"f": "divis", "i": "/ˈdi.vis/", "p": "adj", "e": "divided", "n": ""},
+  {"f": "divisiun", "i": "/di.vi.ˈsi.un/", "p": "n", "e": "division", "n": ""},
+  {"f": "divorcia", "i": "/di.vor.ˈt͡ʃi.a/", "p": "v", "e": "divorce", "n": ""},
+  {"f": "documenta", "i": "/do.ku.ˈmen.ta/", "p": "v", "e": "document", "n": ""},
+  {"f": "documente", "i": "/do.ku.ˈmen.te/", "p": "n", "e": "document", "n": ""},
+  {"f": "dogana", "i": "/do.ˈga.na/", "p": "n", "e": "customs", "n": "absent on the frontiers within the Bloc"},
+  {"f": "dolor", "i": "/ˈdo.lor/", "p": "n", "e": "pain", "n": ""},
+  {"f": "dolora", "i": "/do.ˈlo.ra/", "p": "v", "e": "ache, hurt", "n": "of a part of the body; dolor is the noun"},
+  {"f": "dom", "i": "/dom/", "p": "n", "e": "house", "n": "adjective domes; the noun domes is the formal word for a dwelling"},
+  {"f": "domes", "i": "/ˈdo.mes/", "p": "n", "e": "dwelling, formal", "n": ""},
+  {"f": "dominica", "i": "/do.mi.ˈni.ka/", "p": "n", "e": "Sunday", "n": ""},
+  {"f": "dominican", "i": "/do.mi.ˈni.kan/", "p": "adj", "e": "Dominican", "n": "demonym of Dominica"},
+  {"f": "dorat", "i": "/ˈdo.rat/", "p": "adj", "e": "gilded, gold-coloured", "n": ""},
+  {"f": "dormi", "i": "/ˈdor.mi/", "p": "v", "e": "sleep", "n": ""},
+  {"f": "dormir", "i": "/dor.ˈmir/", "p": "v", "e": "sleep", "n": "the form after another verb, as restar stands beside resta: pote dormir"},
+  {"f": "dorsu", "i": "/ˈdor.su/", "p": "n", "e": "spine, back", "n": ""},
+  {"f": "dosis", "i": "/ˈdo.sis/", "p": "n", "e": "dose", "n": ""},
+  {"f": "dossier", "i": "/do.ˈsi.er/", "p": "n", "e": "folder of papers", "n": ""},
+  {"f": "dota", "i": "/ˈdo.ta/", "p": "v", "e": "endow", "n": ""},
+  {"f": "dozena", "i": "/do.ˈze.na/", "p": "n", "e": "dozen", "n": ""},
+  {"f": "dragaje", "i": "/dra.ˈga.ʒe/", "p": "n", "e": "dredging", "n": ""},
+  {"f": "dret", "i": "/dret/", "p": "n", "e": "right, entitlement", "n": ""},
+  {"f": "du", "i": "/du/", "p": "num", "e": "two", "n": ""},
+  {"f": "dubita", "i": "/du.ˈbi.ta/", "p": "v", "e": "doubt", "n": ""},
+  {"f": "dubiu", "i": "/du.ˈbi.u/", "p": "n", "e": "doubt", "n": "dubita is the verb"},
+  {"f": "duce", "i": "/ˈdu.t͡ʃe/", "p": "v", "e": "carry, lead", "n": ""},
+  {"f": "dulce", "i": "/ˈdul.t͡ʃe/", "p": "adj", "e": "sweet", "n": ""},
+  {"f": "dum", "i": "/dum/", "p": "n", "e": "building", "n": ""},
+  {"f": "dun", "i": "/dun/", "p": "n", "e": "dune", "n": "of the Ravelluri seaboard"},
+  {"f": "dunque", "i": "/ˈdun.ke/", "p": "adv", "e": "therefore", "n": ""},
+  {"f": "duple", "i": "/ˈdu.ple/", "p": "adj", "e": "double", "n": ""},
+  {"f": "dur", "i": "/dur/", "p": "adj", "e": "hard", "n": ""},
+  {"f": "dura", "i": "/ˈdu.ra/", "p": "v", "e": "last, take time", "n": ""},
+  {"f": "durabilitate", "i": "/du.ra.bi.li.ˈta.te/", "p": "n", "e": "durability", "n": ""},
+  {"f": "durante", "i": "/du.ˈran.te/", "p": "prep", "e": "during", "n": ""},
+  {"f": "duratiun", "i": "/du.ra.ˈti.un/", "p": "n", "e": "duration", "n": ""},
+  {"f": "dvere", "i": "/ˈdve.re/", "p": "n", "e": "door, everyday", "n": "porta of a building and of a gate; dvere of the doors of a vehicle"},
+  {"f": "dvor", "i": "/dvor/", "p": "n", "e": "yard, courtyard", "n": ""},
+  {"f": "e", "i": "/e/", "p": "conj", "e": "and", "n": ""},
+  {"f": "eclesia", "i": "/e.kle.ˈsi.a/", "p": "n", "e": "church", "n": ""},
+  {"f": "economia", "i": "/e.ko.no.ˈmi.a/", "p": "n", "e": "economy", "n": ""},
+  {"f": "economisa", "i": "/e.ko.no.ˈmi.sa/", "p": "v", "e": "save, husband", "n": ""},
+  {"f": "ecran", "i": "/ˈe.kran/", "p": "n", "e": "screen", "n": ""},
+  {"f": "ecuadorian", "i": "/e.ku.a.do.ˈri.an/", "p": "adj", "e": "Ecuadorian", "n": "demonym of Ecuador"},
+  {"f": "edita", "i": "/e.ˈdi.ta/", "p": "v", "e": "edit", "n": ""},
+  {"f": "educa", "i": "/e.ˈdu.ka/", "p": "v", "e": "bring up, educate", "n": ""},
+  {"f": "educatiun", "i": "/e.du.ka.ˈti.un/", "p": "n", "e": "education", "n": ""},
+  {"f": "efect", "i": "/ˈe.fekt/", "p": "n", "e": "effect", "n": ""},
+  {"f": "efectu", "i": "/e.ˈfek.tu/", "p": "n", "e": "effect", "n": ""},
+  {"f": "eficacitate", "i": "/e.fi.ka.t͡ʃi.ˈta.te/", "p": "n", "e": "effectiveness", "n": "of a measure; utilitate of a thing"},
+  {"f": "eftin", "i": "/ˈef.tin/", "p": "adj", "e": "cheap", "n": ""},
+  {"f": "egalite", "i": "/e.ga.ˈli.te/", "p": "n", "e": "equality", "n": "egalite de tratamentu, equality of treatment"},
+  {"f": "egiptian", "i": "/e.d͡ʒip.ˈti.an/", "p": "adj", "e": "Egyptian", "n": "demonym of Egipt"},
+  {"f": "egoiste", "i": "/e.go.ˈis.te/", "p": "adj", "e": "selfish", "n": ""},
+  {"f": "el", "i": "/el/", "p": "pron", "e": "he, she, it", "n": "no gender is marked"},
+  {"f": "electrolis", "i": "/e.lek.ˈtro.lis/", "p": "n", "e": "electrolysis", "n": "de se voda salat, from the salt water"},
+  {"f": "elev", "i": "/ˈe.lev/", "p": "n", "e": "pupil", "n": ""},
+  {"f": "elige", "i": "/e.ˈli.d͡ʒe/", "p": "v", "e": "choose", "n": ""},
+  {"f": "els", "i": "/els/", "p": "pron", "e": "they, them", "n": ""},
+  {"f": "elvetian", "i": "/el.ve.ˈti.an/", "p": "adj", "e": "Swiss", "n": "demonym of Elvetia"},
+  {"f": "embarca", "i": "/em.ˈbar.ka/", "p": "v", "e": "board", "n": "of a vessel; abaxa is used of a train"},
+  {"f": "emergentia", "i": "/e.mer.d͡ʒen.ˈti.a/", "p": "n", "e": "emergency", "n": "urgentia of a case, emergentia of a situation"},
+  {"f": "emiratan", "i": "/e.mi.ˈra.tan/", "p": "adj", "e": "Emirati", "n": "demonym of Emirat Arab"},
+  {"f": "emotiun", "i": "/e.mo.ˈti.un/", "p": "n", "e": "emotion", "n": ""},
+  {"f": "empleu", "i": "/ˈem.pleu/", "p": "n", "e": "job, post", "n": ""},
+  {"f": "en", "i": "/en/", "p": "prep", "e": "in", "n": ""},
+  {"f": "energia", "i": "/e.ˈner.d͡ʒa/", "p": "n", "e": "energy", "n": ""},
+  {"f": "enorme", "i": "/e.ˈnor.me/", "p": "adj", "e": "huge", "n": ""},
+  {"f": "enquesta", "i": "/en.ˈkes.ta/", "p": "n", "e": "survey", "n": ""},
+  {"f": "enquesti", "i": "/en.ˈkes.ti/", "p": "v", "e": "survey, poll", "n": "enquesta is the survey itself"},
+  {"f": "entra", "i": "/ˈen.tra/", "p": "v", "e": "enter", "n": ""},
+  {"f": "entrada", "i": "/en.ˈtra.da/", "p": "n", "e": "entry in a list", "n": "of a lexicon or a register; sortida is the way out of a building"},
+  {"f": "entrar", "i": "/en.ˈtrar/", "p": "v", "e": "enter", "n": "the form after another verb and after a preposition: pote entrar en el"},
+  {"f": "entusiasmu", "i": "/en.tu.si.ˈas.mu/", "p": "n", "e": "enthusiasm", "n": ""},
+  {"f": "epicentru", "i": "/e.pi.ˈt͡ʃen.tru/", "p": "n", "e": "epicentre", "n": ""},
+  {"f": "equipa", "i": "/e.ˈki.pa/", "p": "n", "e": "team, crew", "n": ""},
+  {"f": "equitate", "i": "/e.ki.ˈta.te/", "p": "n", "e": "fairness", "n": "of a share; egalitate of a rule"},
+  {"f": "equivalent", "i": "/e.ki.va.ˈlent/", "p": "adj", "e": "equivalent", "n": ""},
+  {"f": "eritrean", "i": "/e.ri.ˈtre.an/", "p": "adj", "e": "Eritrean", "n": "demonym of Eritrea"},
+  {"f": "eror", "i": "/ˈe.ror/", "p": "n", "e": "error", "n": ""},
+  {"f": "erosiun", "i": "/e.ro.ˈsi.un/", "p": "n", "e": "erosion", "n": ""},
+  {"f": "es", "i": "/es/", "p": "v", "e": "is, are", "n": "also forms the past with a participle: es cadut, has fallen"},
+  {"f": "esantion", "i": "/e.san.ˈti.on/", "p": "n", "e": "sample", "n": ""},
+  {"f": "escala", "i": "/es.ˈka.la/", "p": "n", "e": "stopover", "n": ""},
+  {"f": "escorta", "i": "/es.ˈkor.ta/", "p": "v", "e": "escort, accompany", "n": ""},
+  {"f": "espaniol", "i": "/es.pa.ˈni.ol/", "p": "adj", "e": "Spanish", "n": "demonym of Espania"},
+  {"f": "est", "i": "/est/", "p": "n", "e": "east", "n": ""},
+  {"f": "estate", "i": "/es.ˈta.te/", "p": "n", "e": "summer", "n": ""},
+  {"f": "esti", "i": "/ˈes.ti/", "p": "pron", "e": "this one", "n": "esto is the determiner"},
+  {"f": "estima", "i": "/es.ˈti.ma/", "p": "v", "e": "estimate", "n": "estimat is the adjective"},
+  {"f": "estimat", "i": "/es.ˈti.mat/", "p": "adj", "e": "estimated", "n": ""},
+  {"f": "esto", "i": "/ˈes.to/", "p": "det", "e": "this one, the said", "n": "used of a thing already named"},
+  {"f": "estonian", "i": "/es.to.ˈni.an/", "p": "adj", "e": "Estonian", "n": "demonym of Estonia"},
+  {"f": "estuariu", "i": "/es.tu.a.ˈri.u/", "p": "n", "e": "estuary", "n": "where the lagun meets the mar"},
+  {"f": "esvatinan", "i": "/es.va.ˈti.nan/", "p": "adj", "e": "Swazi", "n": "demonym of Esvatini"},
+  {"f": "et", "i": "/et/", "p": "det", "e": "this", "n": ""},
+  {"f": "etaje", "i": "/e.ˈta.ʒe/", "p": "n", "e": "floor, storey", "n": ""},
+  {"f": "etanol", "i": "/e.ˈta.nol/", "p": "n", "e": "ethanol", "n": ""},
+  {"f": "etapa", "i": "/e.ˈta.pa/", "p": "n", "e": "stage", "n": ""},
+  {"f": "etate", "i": "/e.ˈta.te/", "p": "n", "e": "age", "n": ""},
+  {"f": "eti", "i": "/ˈe.ti/", "p": "pron", "e": "that one", "n": "et is the determiner"},
+  {"f": "etiopian", "i": "/e.ti.o.ˈpi.an/", "p": "adj", "e": "Ethiopian", "n": "demonym of Etiopia"},
+  {"f": "euro", "i": "/ˈeu.ro/", "p": "n", "e": "euro", "n": "of foreign funds and of accounts kept outside the Republic"},
+  {"f": "europei", "i": "/eu.ro.ˈpe.i/", "p": "adj", "e": "European", "n": "of the Union outside the Republic: fondus europei"},
+  {"f": "evacua", "i": "/e.va.ˈku.a/", "p": "v", "e": "evacuate", "n": ""},
+  {"f": "evalua", "i": "/e.va.ˈlu.a/", "p": "v", "e": "evaluate", "n": ""},
+  {"f": "evapora", "i": "/e.va.ˈpo.ra/", "p": "v", "e": "evaporate", "n": ""},
+  {"f": "evident", "i": "/e.ˈvi.dent/", "p": "adj", "e": "evident", "n": "evidentia is the noun"},
+  {"f": "evidentament", "i": "/e.vi.den.ˈta.ment/", "p": "adv", "e": "evidently", "n": ""},
+  {"f": "evidentia", "i": "/e.vi.den.ˈti.a/", "p": "n", "e": "evidence", "n": ""},
+  {"f": "evita", "i": "/e.ˈvi.ta/", "p": "v", "e": "avoid", "n": "evita se linia zolt, keep off the yellow line"},
+  {"f": "ex-", "i": "", "p": "pref", "e": "former", "n": "ex-ministru, the former minister"},
+  {"f": "exact", "i": "/ˈe.ʃakt/", "p": "adj", "e": "exact", "n": ""},
+  {"f": "exactament", "i": "/e.ʃak.ˈta.ment/", "p": "adv", "e": "exactly", "n": ""},
+  {"f": "examen", "i": "/e.ˈʃa.men/", "p": "n", "e": "examination", "n": ""},
+  {"f": "examina", "i": "/e.ʃa.ˈmi.na/", "p": "v", "e": "examine", "n": "examen is the examination"},
+  {"f": "excedente", "i": "/eʃ.t͡ʃe.ˈden.te/", "p": "n", "e": "surplus", "n": ""},
+  {"f": "excellent", "i": "/eʃ.ˈt͡ʃe.lent/", "p": "adj", "e": "excellent", "n": ""},
+  {"f": "exceptiun", "i": "/eʃ.t͡ʃep.ˈti.un/", "p": "n", "e": "exception", "n": ""},
+  {"f": "excepto", "i": "/eʃ.ˈt͡ʃep.to/", "p": "conj", "e": "except that", "n": ""},
+  {"f": "exclama", "i": "/eʃ.ˈkla.ma/", "p": "v", "e": "exclaim", "n": ""},
+  {"f": "exclude", "i": "/eʃ.ˈklu.de/", "p": "v", "e": "exclude", "n": ""},
+  {"f": "executiv", "i": "/e.ʃe.ˈku.tiv/", "p": "adj", "e": "executive", "n": ""},
+  {"f": "exemplifica", "i": "/e.ʃem.pli.ˈfi.ka/", "p": "v", "e": "give an example of", "n": "exemplu is the example"},
+  {"f": "exemplu", "i": "/e.ˈʃem.plu/", "p": "n", "e": "example", "n": ""},
+  {"f": "exercita", "i": "/e.ʃer.ˈt͡ʃi.ta/", "p": "v", "e": "exercise a function", "n": ""},
+  {"f": "exercitiu", "i": "/e.ʃer.t͡ʃi.ˈti.u/", "p": "n", "e": "physical exercise", "n": "exercita is the verb"},
+  {"f": "exi", "i": "/ˈe.ʃi/", "p": "v", "e": "go out", "n": ""},
+  {"f": "existe", "i": "/e.ˈʃis.te/", "p": "v", "e": "exist", "n": ""},
+  {"f": "existentia", "i": "/e.ʃis.ten.ˈti.a/", "p": "n", "e": "existence", "n": ""},
+  {"f": "expedi", "i": "/eʃ.ˈpe.di/", "p": "v", "e": "dispatch", "n": ""},
+  {"f": "experientia", "i": "/eʃ.pe.ri.en.ˈti.a/", "p": "n", "e": "experience", "n": "of a person; proba of a trial run"},
+  {"f": "explica", "i": "/eʃ.ˈpli.ka/", "p": "v", "e": "explain", "n": ""},
+  {"f": "explicatiun", "i": "/eʃ.pli.ka.ˈti.un/", "p": "n", "e": "explanation", "n": ""},
+  {"f": "expone", "i": "/eʃ.ˈpo.ne/", "p": "v", "e": "set out, expound", "n": ""},
+  {"f": "exporta", "i": "/eʃ.ˈpor.ta/", "p": "v", "e": "export", "n": ""},
+  {"f": "expresiun", "i": "/eʃ.pre.ˈsi.un/", "p": "n", "e": "expression", "n": ""},
+  {"f": "extern", "i": "/ˈeʃ.tern/", "p": "adj", "e": "external", "n": ""},
+  {"f": "extra", "i": "/ˈeʃ.tra/", "p": "prep", "e": "outside", "n": ""},
+  {"f": "fa", "i": "/fa/", "p": "v", "e": "do, make, run", "n": "se tren fa statiun, the train stops"},
+  {"f": "fabrica", "i": "/fa.ˈbri.ka/", "p": "n", "e": "factory", "n": ""},
+  {"f": "facie", "i": "/ˈfa.t͡ʃe/", "p": "n", "e": "face", "n": ""},
+  {"f": "facil", "i": "/ˈfa.t͡ʃil/", "p": "adj", "e": "light, easy", "n": ""},
+  {"f": "facilitate", "i": "/fa.t͡ʃi.li.ˈta.te/", "p": "n", "e": "ease", "n": ""},
+  {"f": "facilment", "i": "/fa.ˈt͡ʃil.ment/", "p": "adv", "e": "easily", "n": ""},
+  {"f": "facit", "i": "/ˈfa.t͡ʃit/", "p": "v", "e": "done, occurred", "n": "participle of fa on the eastern seaboard; fat elsewhere"},
+  {"f": "fact", "i": "/fakt/", "p": "n", "e": "fact, deed", "n": ""},
+  {"f": "factura", "i": "/fak.ˈtu.ra/", "p": "n", "e": "invoice", "n": ""},
+  {"f": "facturisa", "i": "/fak.tu.ˈri.sa/", "p": "v", "e": "invoice, make out a bill", "n": "factura is the invoice"},
+  {"f": "facultate", "i": "/fa.kul.ˈta.te/", "p": "n", "e": "faculty", "n": ""},
+  {"f": "falcata", "i": "/fal.ˈka.ta/", "p": "n", "e": "stride", "n": ""},
+  {"f": "falli", "i": "/ˈfa.li/", "p": "v", "e": "fail, go under", "n": ""},
+  {"f": "fals", "i": "/fals/", "p": "adj", "e": "false", "n": ""},
+  {"f": "false", "i": "/ˈfal.se/", "p": "adj", "e": "wrong, false", "n": ""},
+  {"f": "falsment", "i": "/ˈfals.ment/", "p": "adv", "e": "falsely", "n": ""},
+  {"f": "falta", "i": "/ˈfal.ta/", "p": "n", "e": "error, fault", "n": "falta of a person; defect of a thing"},
+  {"f": "fam", "i": "/fam/", "p": "n", "e": "hunger", "n": ""},
+  {"f": "familia", "i": "/fa.mi.ˈli.a/", "p": "n", "e": "family", "n": "adjective familiar"},
+  {"f": "far", "i": "/far/", "p": "n", "e": "lighthouse", "n": ""},
+  {"f": "farina", "i": "/fa.ˈri.na/", "p": "n", "e": "flour", "n": ""},
+  {"f": "farmacia", "i": "/far.ˈma.t͡ʃa/", "p": "n", "e": "pharmacy", "n": ""},
+  {"f": "farmacista", "i": "/far.ma.ˈt͡ʃis.ta/", "p": "n", "e": "pharmacist", "n": "farmacia is the shop"},
+  {"f": "fase", "i": "/ˈfa.se/", "p": "n", "e": "phase", "n": ""},
+  {"f": "fat", "i": "/fat/", "p": "v", "e": "done, made", "n": "the standard participle of fa; facit on the eastern seaboard"},
+  {"f": "fatiga", "i": "/fa.ˈti.ga/", "p": "v", "e": "tire, wear out", "n": ""},
+  {"f": "fatigat", "i": "/fa.ˈti.gat/", "p": "adj", "e": "tired", "n": ""},
+  {"f": "favor", "i": "/ˈfa.vor/", "p": "n", "e": "favour", "n": "per favor, please"},
+  {"f": "febre", "i": "/ˈfe.bre/", "p": "n", "e": "fever", "n": ""},
+  {"f": "februar", "i": "/fe.ˈbru.ar/", "p": "n", "e": "February", "n": ""},
+  {"f": "fed", "i": "/fed/", "p": "adj", "e": "ugly", "n": ""},
+  {"f": "federatiun", "i": "/fe.de.ra.ˈti.un/", "p": "n", "e": "federation", "n": ""},
+  {"f": "felice", "i": "/fe.ˈli.t͡ʃe/", "p": "adj", "e": "happy", "n": ""},
+  {"f": "felicita", "i": "/fe.li.ˈt͡ʃi.ta/", "p": "v", "e": "congratulate", "n": "felicitatiun is the noun"},
+  {"f": "felicitate", "i": "/fe.li.t͡ʃi.ˈta.te/", "p": "n", "e": "happiness", "n": "felicita is to congratulate"},
+  {"f": "femin", "i": "/ˈfe.min/", "p": "n", "e": "woman", "n": ""},
+  {"f": "fenestra", "i": "/fe.ˈnes.tra/", "p": "n", "e": "window, formal", "n": "everyday okna; fenestra survives in building law"},
+  {"f": "fere", "i": "/ˈfe.re/", "p": "v", "e": "carry, bear", "n": ""},
+  {"f": "fermatura", "i": "/fer.ma.ˈtu.ra/", "p": "n", "e": "zip", "n": ""},
+  {"f": "ferroviar", "i": "/fe.ro.vi.ˈar/", "p": "adj", "e": "railway, of the railway", "n": "used of a company, a cooperative and a line: se cooperativa ferroviar"},
+  {"f": "feta", "i": "/ˈfe.ta/", "p": "v", "e": "stink", "n": ""},
+  {"f": "fiabilitate", "i": "/fi.a.bi.li.ˈta.te/", "p": "n", "e": "reliability", "n": "of stock and of a service"},
+  {"f": "figatu", "i": "/fi.ˈga.tu/", "p": "n", "e": "liver", "n": ""},
+  {"f": "fijian", "i": "/fi.ˈʒi.an/", "p": "adj", "e": "Fijian", "n": "demonym of Fiji"},
+  {"f": "fila", "i": "/ˈfi.la/", "p": "n", "e": "queue, formal", "n": ""},
+  {"f": "filia", "i": "/fi.ˈli.a/", "p": "n", "e": "daughter", "n": ""},
+  {"f": "filipinian", "i": "/fi.li.pi.ˈni.an/", "p": "adj", "e": "Filipino", "n": "demonym of Filipin"},
+  {"f": "filiu", "i": "/fi.ˈli.u/", "p": "n", "e": "son", "n": ""},
+  {"f": "film", "i": "/film/", "p": "n", "e": "film", "n": ""},
+  {"f": "filolog", "i": "/fi.ˈlo.log/", "p": "n", "e": "philologist", "n": ""},
+  {"f": "filtra", "i": "/ˈfil.tra/", "p": "v", "e": "filter, strain", "n": ""},
+  {"f": "fin", "i": "/fin/", "p": "n", "e": "end", "n": ""},
+  {"f": "fin-de-septimana", "i": "/fin.de.sep.ti.ˈma.na/", "p": "n", "e": "weekend", "n": ""},
+  {"f": "final", "i": "/ˈfi.nal/", "p": "adj", "e": "final", "n": ""},
+  {"f": "finalment", "i": "/fi.ˈnal.ment/", "p": "adv", "e": "at last, finally", "n": ""},
+  {"f": "finansa", "i": "/fi.ˈnan.sa/", "p": "v", "e": "finance", "n": ""},
+  {"f": "fini", "i": "/ˈfi.ni/", "p": "v", "e": "finish", "n": ""},
+  {"f": "finit", "i": "/ˈfi.nit/", "p": "adj", "e": "finished", "n": ""},
+  {"f": "finlande", "i": "/fin.ˈlan.de/", "p": "adj", "e": "Finnish", "n": "demonym of Finland"},
+  {"f": "fiscalisa", "i": "/fis.ka.ˈli.sa/", "p": "v", "e": "oversee the accounts of", "n": ""},
+  {"f": "fisic", "i": "/ˈfi.sik/", "p": "adj", "e": "physical", "n": "progres fisic, work visible on the ground"},
+  {"f": "fisica", "i": "/fi.ˈsi.ka/", "p": "n", "e": "physics", "n": ""},
+  {"f": "fisura", "i": "/fi.ˈsu.ra/", "p": "v", "e": "crack open, fissure", "n": ""},
+  {"f": "fixa", "i": "/ˈfi.ʃa/", "p": "adj", "e": "fixed", "n": ""},
+  {"f": "fixat", "i": "/fi.ˈʃat/", "p": "adj", "e": "made fast, secured", "n": "fixa is fixed by design; fixat is fixed by somebody"},
+  {"f": "flexibile", "i": "/fle.ʃi.ˈbi.le/", "p": "adj", "e": "flexible", "n": ""},
+  {"f": "flor", "i": "/flor/", "p": "n", "e": "flower", "n": "adjective floral"},
+  {"f": "flori", "i": "/ˈflo.ri/", "p": "v", "e": "bloom, flower", "n": "flor is the flower"},
+  {"f": "flotatiun", "i": "/flo.ta.ˈti.un/", "p": "n", "e": "floating", "n": ""},
+  {"f": "flue", "i": "/ˈflu.e/", "p": "v", "e": "flow, run", "n": ""},
+  {"f": "fluidian", "i": "/flu.i.ˈdi.an/", "p": "adj", "e": "Fluidian", "n": ""},
+  {"f": "foc", "i": "/fok/", "p": "n", "e": "fire", "n": "adjective focar"},
+  {"f": "fode", "i": "/ˈfo.de/", "p": "v", "e": "dig", "n": "of ground; demoli of a structure"},
+  {"f": "folia", "i": "/fo.ˈli.a/", "p": "n", "e": "leaf", "n": ""},
+  {"f": "fonda", "i": "/ˈfon.da/", "p": "v", "e": "found, establish", "n": "fondatiun is the noun"},
+  {"f": "fonde", "i": "/ˈfon.de/", "p": "v", "e": "melt", "n": ""},
+  {"f": "fondu", "i": "/ˈfon.du/", "p": "n", "e": "fund", "n": ""},
+  {"f": "foras", "i": "/ˈfo.ras/", "p": "adv", "e": "outside", "n": ""},
+  {"f": "forja", "i": "/ˈfor.ʒa/", "p": "v", "e": "forge", "n": ""},
+  {"f": "forma", "i": "/ˈfor.ma/", "p": "n", "e": "form, shape", "n": ""},
+  {"f": "formal", "i": "/ˈfor.mal/", "p": "adj", "e": "formal", "n": "of register; the register lists the formal member of each pair"},
+  {"f": "formatiun", "i": "/for.ma.ˈti.un/", "p": "n", "e": "training", "n": ""},
+  {"f": "formular", "i": "/for.ˈmu.lar/", "p": "n", "e": "form to be filled in", "n": ""},
+  {"f": "fornu", "i": "/ˈfor.nu/", "p": "n", "e": "oven, stove", "n": ""},
+  {"f": "forsa", "i": "/ˈfor.sa/", "p": "n", "e": "force, effect", "n": "en vigor in the written instrument; en forsa in the broadcast"},
+  {"f": "forsi", "i": "/ˈfor.si/", "p": "adv", "e": "perhaps", "n": ""},
+  {"f": "fort", "i": "/fort/", "p": "adj", "e": "strong", "n": ""},
+  {"f": "fortament", "i": "/for.ˈta.ment/", "p": "adv", "e": "strongly", "n": ""},
+  {"f": "fortuna", "i": "/for.ˈtu.na/", "p": "n", "e": "luck", "n": ""},
+  {"f": "fosil", "i": "/ˈfo.sil/", "p": "adj", "e": "fossilised, kept from an older rule", "n": ""},
+  {"f": "foto", "i": "/ˈfo.to/", "p": "n", "e": "photograph", "n": ""},
+  {"f": "fractiun", "i": "/frak.ˈti.un/", "p": "n", "e": "fraction", "n": ""},
+  {"f": "fractura", "i": "/frak.ˈtu.ra/", "p": "n", "e": "fracture", "n": "os is the bone"},
+  {"f": "fragilitate", "i": "/fra.d͡ʒi.li.ˈta.te/", "p": "n", "e": "fragility", "n": ""},
+  {"f": "france", "i": "/ˈfran.t͡ʃe/", "p": "adj", "e": "French", "n": ""},
+  {"f": "fras", "i": "/fras/", "p": "n", "e": "sentence", "n": ""},
+  {"f": "frate", "i": "/ˈfra.te/", "p": "n", "e": "brother", "n": "adjective fratern"},
+  {"f": "frecventa", "i": "/frek.ˈven.ta/", "p": "v", "e": "attend regularly", "n": ""},
+  {"f": "fren", "i": "/fren/", "p": "n", "e": "brake", "n": "frena is the act and the instruction; fren is the handle and the gear"},
+  {"f": "frena", "i": "/ˈfre.na/", "p": "v", "e": "brake", "n": ""},
+  {"f": "frequent", "i": "/ˈfre.kent/", "p": "adj", "e": "frequent", "n": "frequentia is the noun"},
+  {"f": "frequentament", "i": "/fre.ken.ˈta.ment/", "p": "adv", "e": "frequently", "n": ""},
+  {"f": "frequentia", "i": "/fre.ken.ˈti.a/", "p": "n", "e": "frequency", "n": "of a service and of a sound"},
+  {"f": "fresc", "i": "/fresk/", "p": "adj", "e": "fresh", "n": ""},
+  {"f": "fricta", "i": "/ˈfrik.ta/", "p": "v", "e": "rub", "n": ""},
+  {"f": "frige", "i": "/ˈfri.d͡ʒe/", "p": "v", "e": "fry, roast", "n": ""},
+  {"f": "frigider", "i": "/fri.ˈd͡ʒi.der/", "p": "n", "e": "fridge", "n": ""},
+  {"f": "fronte", "i": "/ˈfron.te/", "p": "n", "e": "forehead", "n": "under se capu"},
+  {"f": "frontiera", "i": "/fron.ti.ˈe.ra/", "p": "n", "e": "frontier", "n": ""},
+  {"f": "fruct", "i": "/frukt/", "p": "n", "e": "fruit", "n": ""},
+  {"f": "frustra", "i": "/ˈfrus.tra/", "p": "adv", "e": "in vain", "n": ""},
+  {"f": "frustrat", "i": "/ˈfrus.trat/", "p": "adj", "e": "frustrated", "n": ""},
+  {"f": "frustratiun", "i": "/frus.tra.ˈti.un/", "p": "n", "e": "frustration", "n": ""},
+  {"f": "fuge", "i": "/ˈfu.d͡ʒe/", "p": "v", "e": "flee, run off", "n": ""},
+  {"f": "fulger", "i": "/ˈful.d͡ʒer/", "p": "n", "e": "lightning", "n": ""},
+  {"f": "fum", "i": "/fum/", "p": "n", "e": "smoke", "n": ""},
+  {"f": "fuma", "i": "/ˈfu.ma/", "p": "v", "e": "smoke", "n": ""},
+  {"f": "functiun", "i": "/funk.ˈti.un/", "p": "n", "e": "function", "n": ""},
+  {"f": "furceta", "i": "/fur.ˈt͡ʃe.ta/", "p": "n", "e": "fork", "n": ""},
+  {"f": "furios", "i": "/fu.ˈri.os/", "p": "adj", "e": "furious", "n": "irat is the milder word"},
+  {"f": "furnitor", "i": "/fur.ˈni.tor/", "p": "n", "e": "supplier", "n": ""},
+  {"f": "fusibile", "i": "/fu.si.ˈbi.le/", "p": "n", "e": "fuse", "n": ""},
+  {"f": "fusiona", "i": "/fu.si.ˈo.na/", "p": "v", "e": "merge", "n": ""},
+  {"f": "fusta", "i": "/ˈfus.ta/", "p": "n", "e": "skirt", "n": ""},
+  {"f": "futur", "i": "/ˈfu.tur/", "p": "n", "e": "future", "n": ""},
+  {"f": "gabone", "i": "/ga.ˈbo.ne/", "p": "adj", "e": "Gabonese", "n": "demonym of Gabon"},
+  {"f": "galbe", "i": "/ˈgal.be/", "p": "adj", "e": "yellow", "n": "zolt is the everyday form in the east and on the platforms"},
+  {"f": "gallina", "i": "/ga.ˈli.na/", "p": "n", "e": "hen", "n": ""},
+  {"f": "gamba", "i": "/ˈgam.ba/", "p": "n", "e": "leg", "n": ""},
+  {"f": "gambian", "i": "/gam.ˈbi.an/", "p": "adj", "e": "Gambian", "n": "demonym of Gambia"},
+  {"f": "ganan", "i": "/ˈga.nan/", "p": "adj", "e": "Ghanaian", "n": "demonym of Gana"},
+  {"f": "garage", "i": "/ga.ˈra.d͡ʒe/", "p": "n", "e": "garage", "n": ""},
+  {"f": "garanti", "i": "/ga.ˈran.ti/", "p": "v", "e": "guarantee", "n": "garanti se qualitate, guarantee the quality"},
+  {"f": "gargata", "i": "/gar.ˈga.ta/", "p": "n", "e": "throat", "n": ""},
+  {"f": "gat", "i": "/gat/", "p": "n", "e": "cat", "n": ""},
+  {"f": "gaudiu", "i": "/ga.u.ˈdi.u/", "p": "n", "e": "joy", "n": ""},
+  {"f": "gaz", "i": "/gaz/", "p": "n", "e": "gas", "n": ""},
+  {"f": "gel", "i": "/d͡ʒel/", "p": "n", "e": "cold", "n": ""},
+  {"f": "geli", "i": "/ˈd͡ʒe.li/", "p": "v", "e": "freeze", "n": "gel is the cold"},
+  {"f": "gemelle", "i": "/d͡ʒe.ˈme.le/", "p": "n", "e": "twin", "n": ""},
+  {"f": "gena", "i": "/ˈd͡ʒe.na/", "p": "n", "e": "cheek", "n": ""},
+  {"f": "general", "i": "/d͡ʒe.ˈne.ral/", "p": "adj", "e": "general", "n": ""},
+  {"f": "generalisa", "i": "/d͡ʒe.ne.ra.ˈli.sa/", "p": "v", "e": "generalise", "n": ""},
+  {"f": "generalment", "i": "/d͡ʒe.ne.ˈral.ment/", "p": "adv", "e": "generally", "n": ""},
+  {"f": "generator", "i": "/d͡ʒe.ne.ˈra.tor/", "p": "n", "e": "generator", "n": ""},
+  {"f": "generos", "i": "/d͡ʒe.ˈne.ros/", "p": "adj", "e": "generous", "n": ""},
+  {"f": "gent", "i": "/d͡ʒent/", "p": "n", "e": "people", "n": ""},
+  {"f": "gentilic", "i": "/d͡ʒen.ˈti.lik/", "p": "n", "e": "demonym", "n": ""},
+  {"f": "genu", "i": "/ˈd͡ʒe.nu/", "p": "n", "e": "knee", "n": ""},
+  {"f": "german", "i": "/ˈd͡ʒer.man/", "p": "adj", "e": "German", "n": ""},
+  {"f": "germina", "i": "/d͡ʒer.ˈmi.na/", "p": "v", "e": "sprout", "n": ""},
+  {"f": "gira", "i": "/ˈd͡ʒi.ra/", "p": "v", "e": "turn, rotate", "n": ""},
+  {"f": "glacie", "i": "/ˈgla.t͡ʃe/", "p": "n", "e": "ice", "n": "adjective glacial"},
+  {"f": "glosa", "i": "/ˈglo.sa/", "p": "n", "e": "gloss", "n": "also the verb, to gloss"},
+  {"f": "glossariu", "i": "/glo.sa.ˈri.u/", "p": "n", "e": "glossary", "n": ""},
+  {"f": "gola", "i": "/ˈgo.la/", "p": "n", "e": "gorge", "n": ""},
+  {"f": "golfu", "i": "/ˈgol.fu/", "p": "n", "e": "gulf", "n": ""},
+  {"f": "grad", "i": "/grad/", "p": "n", "e": "step, degree", "n": ""},
+  {"f": "gradatim", "i": "/gra.ˈda.tim/", "p": "adv", "e": "little by little", "n": ""},
+  {"f": "gram", "i": "/gram/", "p": "n", "e": "gram", "n": ""},
+  {"f": "gramatica", "i": "/gra.ma.ˈti.ka/", "p": "n", "e": "grammar", "n": ""},
+  {"f": "granariu", "i": "/gra.na.ˈri.u/", "p": "n", "e": "barn", "n": ""},
+  {"f": "grande", "i": "/ˈgran.de/", "p": "adj", "e": "large", "n": ""},
+  {"f": "granul", "i": "/ˈgra.nul/", "p": "n", "e": "grain of a surface", "n": ""},
+  {"f": "grata", "i": "/ˈgra.ta/", "p": "v", "e": "scratch", "n": ""},
+  {"f": "gratia", "i": "/gra.ˈti.a/", "p": "v", "e": "thank", "n": ""},
+  {"f": "gratias", "i": "/gra.ˈti.as/", "p": "int", "e": "thank you", "n": ""},
+  {"f": "gratie", "i": "/gra.ˈti.e/", "p": "int", "e": "thank you", "n": "the older platform recording ends on it"},
+  {"f": "gratis", "i": "/ˈgra.tis/", "p": "adv", "e": "free of charge", "n": "gratuit is the adjective"},
+  {"f": "gratuit", "i": "/gra.ˈtu.it/", "p": "adj", "e": "free of charge", "n": ""},
+  {"f": "gratuitament", "i": "/gra.tu.i.ˈta.ment/", "p": "adv", "e": "free of charge", "n": "gratis is the shorter everyday form"},
+  {"f": "grav", "i": "/grav/", "p": "adj", "e": "grave, serious", "n": ""},
+  {"f": "gravament", "i": "/gra.ˈva.ment/", "p": "adv", "e": "seriously", "n": ""},
+  {"f": "gravidantia", "i": "/gra.vi.dan.ˈti.a/", "p": "n", "e": "pregnancy", "n": ""},
+  {"f": "gravitate", "i": "/gra.vi.ˈta.te/", "p": "n", "e": "seriousness", "n": "of a matter; peso of a weight"},
+  {"f": "grec", "i": "/grek/", "p": "adj", "e": "Greek", "n": ""},
+  {"f": "grenadan", "i": "/gre.ˈna.dan/", "p": "adj", "e": "Grenadian", "n": "demonym of Grenada"},
+  {"f": "greva", "i": "/ˈgre.va/", "p": "v", "e": "take strike action", "n": "greve is the strike itself"},
+  {"f": "gripa", "i": "/ˈgri.pa/", "p": "n", "e": "flu", "n": ""},
+  {"f": "gris", "i": "/gris/", "p": "adj", "e": "grey", "n": ""},
+  {"f": "gros", "i": "/gros/", "p": "adj", "e": "thick", "n": ""},
+  {"f": "grosier", "i": "/gro.ˈsi.er/", "p": "adj", "e": "coarse", "n": ""},
+  {"f": "gruia", "i": "/gru.ˈi.a/", "p": "n", "e": "crane", "n": ""},
+  {"f": "grupe", "i": "/ˈgru.pe/", "p": "n", "e": "group", "n": ""},
+  {"f": "gruzian", "i": "/gru.ˈzi.an/", "p": "adj", "e": "Georgian", "n": "demonym of Gruzia"},
+  {"f": "guant", "i": "/ˈgu.ant/", "p": "n", "e": "glove", "n": ""},
+  {"f": "guatemaltec", "i": "/gu.a.te.ˈmal.tek/", "p": "adj", "e": "Guatemalan", "n": "demonym of Guatemala"},
+  {"f": "guianan", "i": "/gu.i.ˈa.nan/", "p": "adj", "e": "Guyanese", "n": "demonym of Guiana"},
+  {"f": "guinean", "i": "/gu.i.ˈne.an/", "p": "adj", "e": "Guinean", "n": "demonym of Guinea"},
+  {"f": "guinean ecuatorial", "i": "/gu.i.ˈne.an e.ku.a.to.ˈri.al/", "p": "adj", "e": "Equatorial Guinean", "n": "demonym of Guinea Ecuatorial"},
+  {"f": "guisatu", "i": "/gu.i.ˈsa.tu/", "p": "n", "e": "stew", "n": ""},
+  {"f": "gust", "i": "/gust/", "p": "n", "e": "taste, flavour", "n": ""},
+  {"f": "gusta", "i": "/ˈgus.ta/", "p": "v", "e": "taste", "n": ""},
+  {"f": "gutta", "i": "/ˈgu.ta/", "p": "v", "e": "drip", "n": ""},
+  {"f": "guvern", "i": "/ˈgu.vern/", "p": "n", "e": "government", "n": ""},
+  {"f": "habita", "i": "/ha.ˈbi.ta/", "p": "v", "e": "live in, inhabit", "n": ""},
+  {"f": "habitante", "i": "/ha.bi.ˈtan.te/", "p": "n", "e": "inhabitant", "n": ""},
+  {"f": "habitatiun", "i": "/ha.bi.ta.ˈti.un/", "p": "n", "e": "housing", "n": "habita is to live in a place; habitatiun is the stock and the office that keeps it"},
+  {"f": "haitian", "i": "/hai.ˈti.an/", "p": "adj", "e": "Haitian", "n": "demonym of Haiti"},
+  {"f": "halta", "i": "/ˈhal.ta/", "p": "v", "e": "halt, come to a stand", "n": ""},
+  {"f": "hasard", "i": "/ˈha.sard/", "p": "n", "e": "chance", "n": "sorti is the draw by lot"},
+  {"f": "herba", "i": "/ˈher.ba/", "p": "n", "e": "grass", "n": ""},
+  {"f": "herbe", "i": "/ˈher.be/", "p": "n", "e": "culinary herb", "n": ""},
+  {"f": "hereda", "i": "/he.ˈre.da/", "p": "v", "e": "inherit", "n": "heredat of a form carried over from an older stage"},
+  {"f": "heri", "i": "/ˈhe.ri/", "p": "adv", "e": "yesterday", "n": ""},
+  {"f": "hesita", "i": "/he.ˈsi.ta/", "p": "v", "e": "hesitate", "n": ""},
+  {"f": "hesitant", "i": "/he.ˈsi.tant/", "p": "adj", "e": "hesitant", "n": "hesita is the verb"},
+  {"f": "hiza", "i": "/ˈhi.za/", "p": "n", "e": "dwelling, everyday", "n": ""},
+  {"f": "hodie", "i": "/ho.ˈdi.e/", "p": "adv", "e": "today", "n": ""},
+  {"f": "homin", "i": "/ˈho.min/", "p": "n", "e": "man", "n": ""},
+  {"f": "homologa", "i": "/ho.mo.ˈlo.ga/", "p": "v", "e": "approve formally", "n": ""},
+  {"f": "honduran", "i": "/hon.ˈdu.ran/", "p": "adj", "e": "Honduran", "n": "demonym of Honduras"},
+  {"f": "hora", "i": "/ˈho.ra/", "p": "n", "e": "hour", "n": ""},
+  {"f": "hora praca", "i": "/ˈho.ra ˈpra.ka/", "p": "n", "e": "working hour", "n": "the linking de drops in this compound"},
+  {"f": "horizontal", "i": "/ho.ri.ˈzon.tal/", "p": "adj", "e": "horizontal", "n": ""},
+  {"f": "hospita", "i": "/hos.ˈpi.ta/", "p": "v", "e": "put up, host", "n": "of a household putting someone up"},
+  {"f": "hospite", "i": "/hos.ˈpi.te/", "p": "n", "e": "guest", "n": ""},
+  {"f": "hospoda", "i": "/hos.ˈpo.da/", "p": "n", "e": "pub, everyday", "n": "formal taberna"},
+  {"f": "hotel", "i": "/ˈho.tel/", "p": "n", "e": "hotel", "n": ""},
+  {"f": "hrvat", "i": "/hrvat/", "p": "adj", "e": "Croatian", "n": "demonym of Hrvatia"},
+  {"f": "huclav", "i": "/ˈhu.klav/", "p": "adj", "e": "hungry", "n": "the base of the place name Huclavy"},
+  {"f": "huclava", "i": "/hu.ˈkla.va/", "p": "n", "e": "the hungry one", "n": "from huclav, and the base the place name Huclavy is argued from"},
+  {"f": "ia", "i": "/ja/", "p": "pron", "e": "I, emphatic subject", "n": "the ordinary subject is me; ia is used for stress and in set phrases"},
+  {"f": "idea", "i": "/i.ˈde.a/", "p": "n", "e": "idea", "n": ""},
+  {"f": "idem", "i": "/ˈi.dem/", "p": "pron", "e": "the same one", "n": ""},
+  {"f": "identifica", "i": "/i.den.ti.ˈfi.ka/", "p": "v", "e": "identify", "n": ""},
+  {"f": "identitate", "i": "/i.den.ti.ˈta.te/", "p": "n", "e": "identity", "n": "carta de identitate, identity card"},
+  {"f": "idrogen", "i": "/i.ˈdro.d͡ʒen/", "p": "n", "e": "hydrogen", "n": ""},
+  {"f": "iemenian", "i": "/je.me.ˈni.an/", "p": "adj", "e": "Yemeni", "n": "demonym of Iemen"},
+  {"f": "ignorantia", "i": "/ig.no.ran.ˈti.a/", "p": "n", "e": "ignorance", "n": ""},
+  {"f": "imagina", "i": "/i.ma.ˈd͡ʒi.na/", "p": "v", "e": "imagine", "n": ""},
+  {"f": "immediat", "i": "/i.me.ˈdi.at/", "p": "adj", "e": "immediate", "n": ""},
+  {"f": "immediatament", "i": "/i.me.di.a.ˈta.ment/", "p": "adv", "e": "immediately", "n": "statim is the shorter form"},
+  {"f": "immersiun", "i": "/i.mer.ˈsi.un/", "p": "n", "e": "sinking", "n": "cade is the general word"},
+  {"f": "impatiente", "i": "/im.pa.ti.ˈen.te/", "p": "adj", "e": "impatient", "n": ""},
+  {"f": "impatientia", "i": "/im.pa.ti.en.ˈti.a/", "p": "n", "e": "impatience", "n": ""},
+  {"f": "implicatiun", "i": "/im.pli.ka.ˈti.un/", "p": "n", "e": "implication", "n": ""},
+  {"f": "implora", "i": "/im.ˈplo.ra/", "p": "v", "e": "beg, plead", "n": ""},
+  {"f": "importa", "i": "/im.ˈpor.ta/", "p": "v", "e": "import", "n": ""},
+  {"f": "important", "i": "/im.ˈpor.tant/", "p": "adj", "e": "important", "n": ""},
+  {"f": "impresiun", "i": "/im.pre.ˈsi.un/", "p": "n", "e": "impression", "n": ""},
+  {"f": "imprimante", "i": "/im.pri.ˈman.te/", "p": "n", "e": "printer", "n": "imprime is the verb"},
+  {"f": "imprime", "i": "/im.ˈpri.me/", "p": "v", "e": "print", "n": ""},
+  {"f": "imunitate", "i": "/i.mu.ni.ˈta.te/", "p": "n", "e": "immunity", "n": ""},
+  {"f": "incendiu", "i": "/in.t͡ʃen.ˈdi.u/", "p": "n", "e": "fire, as an event", "n": ""},
+  {"f": "incertitudine", "i": "/in.t͡ʃer.ti.tu.ˈdi.ne/", "p": "n", "e": "uncertainty", "n": ""},
+  {"f": "inclina", "i": "/in.ˈkli.na/", "p": "v", "e": "tilt, lean", "n": ""},
+  {"f": "inclus", "i": "/ˈin.klus/", "p": "conj", "e": "including", "n": ""},
+  {"f": "incompetentia", "i": "/in.kom.pe.ten.ˈti.a/", "p": "n", "e": "incompetence", "n": ""},
+  {"f": "incontra", "i": "/in.ˈkon.tra/", "p": "v", "e": "meet", "n": ""},
+  {"f": "incuraja", "i": "/in.ku.ˈra.ʒa/", "p": "v", "e": "encourage", "n": ""},
+  {"f": "indemnisa", "i": "/in.dem.ˈni.sa/", "p": "v", "e": "indemnify", "n": ""},
+  {"f": "independentia", "i": "/in.de.pen.den.ˈti.a/", "p": "n", "e": "independence", "n": ""},
+  {"f": "indian", "i": "/in.ˈdi.an/", "p": "adj", "e": "Indian", "n": "demonym of India"},
+  {"f": "indica", "i": "/in.ˈdi.ka/", "p": "v", "e": "point out, indicate", "n": "se signa indica se sortida, the sign points to the exit"},
+  {"f": "indicatiun", "i": "/in.di.ka.ˈti.un/", "p": "n", "e": "indication", "n": ""},
+  {"f": "indifferent", "i": "/in.di.ˈfe.rent/", "p": "adj", "e": "indifferent", "n": ""},
+  {"f": "indirect", "i": "/in.ˈdi.rekt/", "p": "adj", "e": "indirect", "n": ""},
+  {"f": "indirectament", "i": "/in.di.rek.ˈta.ment/", "p": "adv", "e": "indirectly", "n": ""},
+  {"f": "individual", "i": "/in.di.vi.ˈdu.al/", "p": "adj", "e": "individual", "n": ""},
+  {"f": "individualment", "i": "/in.di.vi.du.ˈal.ment/", "p": "adv", "e": "individually", "n": ""},
+  {"f": "indonesian", "i": "/in.do.ne.ˈsi.an/", "p": "adj", "e": "Indonesian", "n": "demonym of Indonesia"},
+  {"f": "induce", "i": "/in.ˈdu.t͡ʃe/", "p": "v", "e": "infer", "n": ""},
+  {"f": "industria", "i": "/in.dus.ˈtri.a/", "p": "n", "e": "industry", "n": ""},
+  {"f": "industrial", "i": "/in.dus.ˈtri.al/", "p": "adj", "e": "industrial", "n": ""},
+  {"f": "infant", "i": "/ˈin.fant/", "p": "n", "e": "child, formal register", "n": ""},
+  {"f": "infectiun", "i": "/in.fek.ˈti.un/", "p": "n", "e": "infection", "n": ""},
+  {"f": "infirmier", "i": "/in.fir.ˈmi.er/", "p": "n", "e": "nurse", "n": ""},
+  {"f": "influentia", "i": "/in.flu.en.ˈti.a/", "p": "n", "e": "influence", "n": ""},
+  {"f": "informal", "i": "/in.ˈfor.mal/", "p": "adj", "e": "informal", "n": "noformal is the regular derivation; informal is what print keeps"},
+  {"f": "informatiun", "i": "/in.for.ma.ˈti.un/", "p": "n", "e": "information", "n": "se sistem public de informatiun, the public information system"},
+  {"f": "infra", "i": "/ˈin.fra/", "p": "adv", "e": "below", "n": ""},
+  {"f": "ingenua", "i": "/in.d͡ʒe.ˈnu.a/", "p": "v", "e": "kneel", "n": ""},
+  {"f": "ingranaje", "i": "/in.gra.ˈna.ʒe/", "p": "n", "e": "gear", "n": ""},
+  {"f": "ingrassu", "i": "/in.ˈgra.su/", "p": "n", "e": "fertiliser", "n": ""},
+  {"f": "inimic", "i": "/i.ˈni.mik/", "p": "n", "e": "enemy", "n": ""},
+  {"f": "initial", "i": "/i.ni.ˈti.al/", "p": "adj", "e": "initial", "n": ""},
+  {"f": "initialment", "i": "/i.ni.ti.ˈal.ment/", "p": "adv", "e": "initially", "n": ""},
+  {"f": "injust", "i": "/ˈin.ʒust/", "p": "adj", "e": "unjust", "n": ""},
+  {"f": "injustitia", "i": "/in.ʒus.ti.ˈti.a/", "p": "n", "e": "injustice", "n": ""},
+  {"f": "inocentia", "i": "/i.no.t͡ʃen.ˈti.a/", "p": "n", "e": "innocence", "n": "presumed until the corte rules"},
+  {"f": "inquiet", "i": "/in.ˈki.et/", "p": "adj", "e": "restless", "n": "quiet is the opposite"},
+  {"f": "inquietudine", "i": "/in.ki.e.tu.ˈdi.ne/", "p": "n", "e": "worry", "n": "inquiet is the adjective"},
+  {"f": "inscriva", "i": "/ins.ˈkri.va/", "p": "v", "e": "enrol, put on a roll", "n": "inscriva vos te se lista, put your name on the list"},
+  {"f": "insect", "i": "/ˈin.sekt/", "p": "n", "e": "insect", "n": ""},
+  {"f": "insiste", "i": "/in.ˈsis.te/", "p": "v", "e": "insist", "n": ""},
+  {"f": "inspecta", "i": "/ins.ˈpek.ta/", "p": "v", "e": "inspect", "n": ""},
+  {"f": "inspectiun", "i": "/ins.pek.ˈti.un/", "p": "n", "e": "inspection", "n": "inspecta is the act; inspectiun is the round and the report it leaves"},
+  {"f": "instructiun", "i": "/ins.truk.ˈti.un/", "p": "n", "e": "instruction", "n": ""},
+  {"f": "instrue", "i": "/ins.ˈtru.e/", "p": "v", "e": "teach", "n": ""},
+  {"f": "instrument", "i": "/ins.ˈtru.ment/", "p": "n", "e": "tool, instrument", "n": ""},
+  {"f": "insula", "i": "/in.ˈsu.la/", "p": "n", "e": "island", "n": ""},
+  {"f": "insult", "i": "/ˈin.sult/", "p": "n", "e": "insult", "n": ""},
+  {"f": "insulta", "i": "/in.ˈsul.ta/", "p": "v", "e": "insult", "n": ""},
+  {"f": "integr", "i": "/ˈin.tegr/", "p": "adj", "e": "whole, entire", "n": ""},
+  {"f": "integra", "i": "/in.ˈte.gra/", "p": "v", "e": "integrate", "n": ""},
+  {"f": "integratiun", "i": "/in.te.gra.ˈti.un/", "p": "n", "e": "integration", "n": ""},
+  {"f": "integritate", "i": "/in.te.gri.ˈta.te/", "p": "n", "e": "integrity", "n": ""},
+  {"f": "intende", "i": "/in.ˈten.de/", "p": "v", "e": "intend", "n": ""},
+  {"f": "intens", "i": "/ˈin.tens/", "p": "adj", "e": "intense", "n": "intensitate is the noun"},
+  {"f": "intensitate", "i": "/in.ten.si.ˈta.te/", "p": "n", "e": "intensity", "n": ""},
+  {"f": "intentiun", "i": "/in.ten.ˈti.un/", "p": "n", "e": "intention", "n": ""},
+  {"f": "inter", "i": "/ˈin.ter/", "p": "prep", "e": "among, between", "n": ""},
+  {"f": "interdice", "i": "/in.ter.ˈdi.t͡ʃe/", "p": "v", "e": "ban, forbid by order", "n": "prohibe is the general word"},
+  {"f": "interes", "i": "/in.ˈte.res/", "p": "n", "e": "interest", "n": "of a subject and of a stake held"},
+  {"f": "interferentia", "i": "/in.ter.fe.ren.ˈti.a/", "p": "n", "e": "interference", "n": ""},
+  {"f": "interim", "i": "/in.ˈte.rim/", "p": "adv", "e": "meanwhile", "n": "interim, tena se linia, meanwhile, hold the line"},
+  {"f": "intermediar", "i": "/in.ter.me.ˈdi.ar/", "p": "n", "e": "broker", "n": ""},
+  {"f": "internal", "i": "/in.ˈter.nal/", "p": "adj", "e": "inland, internal", "n": ""},
+  {"f": "international", "i": "/in.ter.na.ti.ˈo.nal/", "p": "adj", "e": "international", "n": ""},
+  {"f": "interpela", "i": "/in.ter.ˈpe.la/", "p": "v", "e": "put a question to a body", "n": ""},
+  {"f": "interpreta", "i": "/in.ter.ˈpre.ta/", "p": "v", "e": "interpret, translate aloud", "n": "the Ossira service is the largest in the country"},
+  {"f": "interpretatiun", "i": "/in.ter.pre.ta.ˈti.un/", "p": "n", "e": "interpretation", "n": "the Ossira service is the largest in the country"},
+  {"f": "interroga", "i": "/in.te.ˈro.ga/", "p": "v", "e": "question, interrogate", "n": ""},
+  {"f": "interruptor", "i": "/in.te.ˈrup.tor/", "p": "n", "e": "switch", "n": ""},
+  {"f": "intervalu", "i": "/in.ter.ˈva.lu/", "p": "n", "e": "interval", "n": ""},
+  {"f": "intima", "i": "/in.ˈti.ma/", "p": "v", "e": "serve notice on", "n": ""},
+  {"f": "intimitate", "i": "/in.ti.mi.ˈta.te/", "p": "n", "e": "privacy", "n": "of a dwelling and of a letter"},
+  {"f": "intitula", "i": "/in.ti.ˈtu.la/", "p": "v", "e": "head, give a title to", "n": ""},
+  {"f": "intra", "i": "/ˈin.tra/", "p": "prep", "e": "within", "n": ""},
+  {"f": "intrevidi", "i": "/in.tre.ˈvi.di/", "p": "v", "e": "glimpse", "n": ""},
+  {"f": "intus", "i": "/ˈin.tus/", "p": "adv", "e": "inside", "n": ""},
+  {"f": "inunda", "i": "/i.ˈnun.da/", "p": "v", "e": "flood", "n": "inundatiun is the noun"},
+  {"f": "inundatiun", "i": "/i.nun.da.ˈti.un/", "p": "n", "e": "flood", "n": ""},
+  {"f": "invalida", "i": "/in.va.ˈli.da/", "p": "v", "e": "invalidate", "n": ""},
+  {"f": "inventiun", "i": "/in.ven.ˈti.un/", "p": "n", "e": "invention", "n": ""},
+  {"f": "invern", "i": "/ˈin.vern/", "p": "n", "e": "winter", "n": ""},
+  {"f": "invernaculu", "i": "/in.ver.na.ˈku.lu/", "p": "n", "e": "greenhouse", "n": ""},
+  {"f": "investa", "i": "/in.ˈves.ta/", "p": "v", "e": "invest", "n": ""},
+  {"f": "investiga", "i": "/in.ves.ˈti.ga/", "p": "v", "e": "investigate", "n": ""},
+  {"f": "investigatiun", "i": "/in.ves.ti.ga.ˈti.un/", "p": "n", "e": "investigation", "n": ""},
+  {"f": "invidia", "i": "/in.vi.ˈdi.a/", "p": "v", "e": "envy", "n": ""},
+  {"f": "invidios", "i": "/in.vi.ˈdi.os/", "p": "adj", "e": "envious", "n": ""},
+  {"f": "invita", "i": "/in.ˈvi.ta/", "p": "v", "e": "invite", "n": ""},
+  {"f": "iordanian", "i": "/jor.da.ˈni.an/", "p": "adj", "e": "Jordanian", "n": "demonym of Iordan"},
+  {"f": "iosmen", "i": "/ˈjos.men/", "p": "adj", "e": "Iosmenian", "n": ""},
+  {"f": "ipse", "i": "/ˈip.se/", "p": "pron", "e": "himself, herself, itself", "n": "emphatic, never reflexive"},
+  {"f": "ir", "i": "/ir/", "p": "v", "e": "go", "n": ""},
+  {"f": "iracian", "i": "/i.ˈra.t͡ʃan/", "p": "adj", "e": "Iraqi", "n": "demonym of Irac"},
+  {"f": "iranian", "i": "/i.ra.ˈni.an/", "p": "adj", "e": "Iranian", "n": "demonym of Iran"},
+  {"f": "irat", "i": "/ˈi.rat/", "p": "adj", "e": "angry", "n": ""},
+  {"f": "irlande", "i": "/ir.ˈlan.de/", "p": "adj", "e": "Irish", "n": "demonym of Irlanda"},
+  {"f": "irregular", "i": "/i.re.ˈgu.lar/", "p": "adj", "e": "irregular", "n": ""},
+  {"f": "irrigatiun", "i": "/i.ri.ga.ˈti.un/", "p": "n", "e": "irrigation", "n": ""},
+  {"f": "irritat", "i": "/i.ˈri.tat/", "p": "adj", "e": "irritated", "n": ""},
+  {"f": "islande", "i": "/i.ˈslan.de/", "p": "adj", "e": "Icelandic", "n": "demonym of Island"},
+  {"f": "isola", "i": "/i.ˈso.la/", "p": "v", "e": "insulate", "n": "isolatiun is the noun"},
+  {"f": "isolatiun", "i": "/i.so.la.ˈti.un/", "p": "n", "e": "insulation", "n": ""},
+  {"f": "isolator", "i": "/i.so.ˈla.tor/", "p": "n", "e": "insulator", "n": "isola is the verb"},
+  {"f": "israelian", "i": "/i.sra.e.ˈli.an/", "p": "adj", "e": "Israeli", "n": "demonym of Israel"},
+  {"f": "istoria", "i": "/is.to.ˈri.a/", "p": "n", "e": "story, history", "n": "adjective istoric"},
+  {"f": "istoric", "i": "/is.ˈto.rik/", "p": "adj", "e": "historical", "n": ""},
+  {"f": "italian", "i": "/i.ta.ˈli.an/", "p": "adj", "e": "Italian", "n": ""},
+  {"f": "itere", "i": "/i.ˈte.re/", "p": "adv", "e": "again", "n": "re- prefixed to the verb does the same work"},
+  {"f": "ivorian", "i": "/i.vo.ˈri.an/", "p": "adj", "e": "Ivorian", "n": "demonym of Costa Ivor"},
+  {"f": "ja", "i": "/ʒa/", "p": "adv", "e": "already", "n": ""},
+  {"f": "jaca", "i": "/ˈʒa.ka/", "p": "n", "e": "jacket", "n": ""},
+  {"f": "jace", "i": "/ˈʒa.t͡ʃe/", "p": "v", "e": "lie down", "n": ""},
+  {"f": "jamaican", "i": "/ʒa.ˈmai.kan/", "p": "adj", "e": "Jamaican", "n": "demonym of Jamaica"},
+  {"f": "jamas", "i": "/ˈʒa.mas/", "p": "adv", "e": "never", "n": ""},
+  {"f": "januar", "i": "/ʒa.ˈnu.ar/", "p": "n", "e": "January", "n": ""},
+  {"f": "japone", "i": "/ʒa.ˈpo.ne/", "p": "adj", "e": "Japanese", "n": ""},
+  {"f": "jardin", "i": "/ˈʒar.din/", "p": "n", "e": "garden", "n": ""},
+  {"f": "jecta", "i": "/ˈʒek.ta/", "p": "v", "e": "throw", "n": ""},
+  {"f": "jibutan", "i": "/ʒi.ˈbu.tan/", "p": "adj", "e": "Djiboutian", "n": "demonym of Jibuti"},
+  {"f": "jidlo", "i": "/ˈʒi.dlo/", "p": "n", "e": "food, a meal, everyday", "n": ""},
+  {"f": "jizdaie", "i": "/ʒiz.da.ˈi.e/", "p": "int", "e": "the tram is coming, a child's word", "n": "informal, of the jizde family, said when the tram appears"},
+  {"f": "jizdator", "i": "/ʒiz.ˈda.tor/", "p": "n", "e": "rider, passenger", "n": "plural jizdatores"},
+  {"f": "jizde", "i": "/ˈʒiz.de/", "p": "v", "e": "ride, riding", "n": "noun and verb alike"},
+  {"f": "jizdent", "i": "/ˈʒiz.dent/", "p": "v", "e": "they ride, informal", "n": "jizdont on the eastern seaboard; jizdent in the west"},
+  {"f": "jizder", "i": "/ˈʒiz.der/", "p": "n", "e": "the one who rides, informal", "n": "jizdator in the register; jizder in speech among family"},
+  {"f": "jizdez", "i": "/ˈʒiz.dez/", "p": "v", "e": "ride, said to a carriage, informal", "n": "addressed to a whole carriage at once"},
+  {"f": "jizdons", "i": "/ˈʒiz.dons/", "p": "v", "e": "we ride, let us ride, informal", "n": ""},
+  {"f": "jizdont", "i": "/ˈʒiz.dont/", "p": "v", "e": "they ride, informal", "n": ""},
+  {"f": "jizdu", "i": "/ˈʒiz.du/", "p": "n", "e": "the ride; get off, informal", "n": "kept for family and for people who will laugh; abaxa is the word for anybody else"},
+  {"f": "joc", "i": "/ʒok/", "p": "n", "e": "game", "n": ""},
+  {"f": "jovi", "i": "/ˈʒo.vi/", "p": "n", "e": "Thursday", "n": ""},
+  {"f": "judica", "i": "/ʒu.ˈdi.ka/", "p": "v", "e": "judge", "n": "of a court and of a person forming a view"},
+  {"f": "judiciar", "i": "/ʒu.ˈdi.t͡ʃar/", "p": "adj", "e": "judicial", "n": ""},
+  {"f": "judiciu", "i": "/ʒu.di.ˈt͡ʃi.u/", "p": "n", "e": "judgement", "n": ""},
+  {"f": "judicium", "i": "/ʒu.di.ˈt͡ʃi.um/", "p": "n", "e": "judgment, final", "n": "judica is the act; judicium is the judgment that closes a case"},
+  {"f": "juga", "i": "/ˈʒu.ga/", "p": "v", "e": "play", "n": ""},
+  {"f": "juli", "i": "/ˈʒu.li/", "p": "n", "e": "July", "n": ""},
+  {"f": "julie", "i": "/ʒu.ˈli.e/", "p": "n", "e": "July", "n": ""},
+  {"f": "junctiun", "i": "/ʒunk.ˈti.un/", "p": "n", "e": "junction, joint", "n": "junctiun de balconu, the joint where a balcony meets the wall"},
+  {"f": "juni", "i": "/ˈʒu.ni/", "p": "n", "e": "June", "n": ""},
+  {"f": "junie", "i": "/ʒu.ˈni.e/", "p": "n", "e": "June", "n": ""},
+  {"f": "junto", "i": "/ˈʒun.to/", "p": "adv", "e": "together", "n": ""},
+  {"f": "jura", "i": "/ˈʒu.ra/", "p": "v", "e": "swear, take an oath", "n": "before a court and at the taking of an office"},
+  {"f": "jure", "i": "/ˈʒu.re/", "p": "n", "e": "right, law", "n": "the Constitution uses it of a right held"},
+  {"f": "juri", "i": "/ˈʒu.ri/", "p": "n", "e": "jury", "n": ""},
+  {"f": "jurisdictiun", "i": "/ʒu.ris.dik.ˈti.un/", "p": "n", "e": "jurisdiction", "n": ""},
+  {"f": "jurnal", "i": "/ˈʒur.nal/", "p": "n", "e": "newspaper", "n": ""},
+  {"f": "just", "i": "/ʒust/", "p": "adj", "e": "just", "n": "of a share and of a ruling"},
+  {"f": "justament", "i": "/ʒus.ˈta.ment/", "p": "adv", "e": "justly", "n": ""},
+  {"f": "justificatiun", "i": "/ʒus.ti.fi.ka.ˈti.un/", "p": "n", "e": "justification", "n": ""},
+  {"f": "justitia", "i": "/ʒus.ti.ˈti.a/", "p": "n", "e": "justice", "n": ""},
+  {"f": "juven", "i": "/ˈʒu.ven/", "p": "adj", "e": "young", "n": ""},
+  {"f": "juventa", "i": "/ʒu.ˈven.ta/", "p": "n", "e": "youth, young people", "n": ""},
+  {"f": "juxta", "i": "/ˈʒuʃ.ta/", "p": "prep", "e": "beside, next to", "n": ""},
+  {"f": "kancel", "i": "/ˈkan.t͡ʃel/", "p": "n", "e": "office as a room, everyday", "n": "formal officiu, which is a body"},
+  {"f": "kniha", "i": "/ˈkni.ha/", "p": "n", "e": "book, everyday", "n": "formal libru; kniha in speech, libru on the spine"},
+  {"f": "kopetz", "i": "/ˈko.pet͡s/", "p": "n", "e": "hill, everyday", "n": "colina in print and in geography; kopetz in speech"},
+  {"f": "labor", "i": "/ˈla.bor/", "p": "n", "e": "work, formal", "n": ""},
+  {"f": "laboratoriu", "i": "/la.bo.ra.to.ˈri.u/", "p": "n", "e": "laboratory", "n": "proba is the trial run"},
+  {"f": "laboro", "i": "/la.ˈbo.ro/", "p": "n", "e": "the works, the job on site", "n": "labor is work as such; laboro is the job with a start and an end"},
+  {"f": "lac", "i": "/lak/", "p": "n", "e": "lake", "n": ""},
+  {"f": "lact", "i": "/lakt/", "p": "n", "e": "milk", "n": "adjective lactic"},
+  {"f": "lagun", "i": "/ˈla.gun/", "p": "n", "e": "lagoon", "n": "the Ravelluri seaboard is built round one"},
+  {"f": "laku", "i": "/ˈla.ku/", "p": "adj", "e": "easy, light, in the greeting", "n": "carried in laku noc, good night"},
+  {"f": "laku noc", "i": "/ˈla.ku nok/", "p": "int", "e": "good night", "n": "two borrowed words, kept whole"},
+  {"f": "lampa", "i": "/ˈlam.pa/", "p": "n", "e": "lamp", "n": ""},
+  {"f": "lana", "i": "/ˈla.na/", "p": "n", "e": "wool", "n": ""},
+  {"f": "lanterna", "i": "/lan.ˈter.na/", "p": "n", "e": "torch", "n": ""},
+  {"f": "laosian", "i": "/la.o.ˈsi.an/", "p": "adj", "e": "Lao", "n": "demonym of Laos"},
+  {"f": "larg", "i": "/larg/", "p": "adj", "e": "wide", "n": ""},
+  {"f": "largament", "i": "/lar.ˈga.ment/", "p": "adv", "e": "widely", "n": ""},
+  {"f": "lassa", "i": "/ˈla.sa/", "p": "v", "e": "leave, let, allow to stand", "n": ""},
+  {"f": "latitude", "i": "/la.ti.ˈtu.de/", "p": "n", "e": "width", "n": ""},
+  {"f": "lava", "i": "/ˈla.va/", "p": "v", "e": "wash", "n": ""},
+  {"f": "lecca", "i": "/ˈle.ka/", "p": "v", "e": "lick", "n": ""},
+  {"f": "lecte", "i": "/ˈlek.te/", "p": "n", "e": "bed, formal", "n": "everyday postel"},
+  {"f": "lecti", "i": "/ˈlek.ti/", "p": "v", "e": "read", "n": ""},
+  {"f": "lectiun", "i": "/lek.ˈti.un/", "p": "n", "e": "lesson", "n": ""},
+  {"f": "lectura", "i": "/lek.ˈtu.ra/", "p": "n", "e": "reading", "n": ""},
+  {"f": "legalite", "i": "/le.ga.ˈli.te/", "p": "n", "e": "legality", "n": "legalite de se acte, the lawfulness of the act"},
+  {"f": "lege", "i": "/ˈle.d͡ʒe/", "p": "n", "e": "law", "n": ""},
+  {"f": "lege organic", "i": "/ˈle.d͡ʒe or.ˈga.nik/", "p": "n", "e": "organic law", "n": ""},
+  {"f": "legier", "i": "/le.ˈd͡ʒi.er/", "p": "adj", "e": "slight, of low intensity", "n": "leve of weight; legier of a tremor, a rain, a knock"},
+  {"f": "legislativ", "i": "/le.d͡ʒi.ˈsla.tiv/", "p": "adj", "e": "legislative", "n": ""},
+  {"f": "legitime", "i": "/le.d͡ʒi.ˈti.me/", "p": "adj", "e": "legitimate", "n": ""},
+  {"f": "legitimement", "i": "/le.d͡ʒi.ti.ˈme.ment/", "p": "adv", "e": "legitimately", "n": ""},
+  {"f": "legitimitate", "i": "/le.d͡ʒi.ti.mi.ˈta.te/", "p": "n", "e": "legitimacy", "n": ""},
+  {"f": "legume", "i": "/le.ˈgu.me/", "p": "n", "e": "vegetable", "n": ""},
+  {"f": "lekar", "i": "/ˈle.kar/", "p": "n", "e": "doctor, everyday", "n": ""},
+  {"f": "lent", "i": "/lent/", "p": "adj", "e": "slow", "n": ""},
+  {"f": "lentament", "i": "/len.ˈta.ment/", "p": "adv", "e": "slowly", "n": ""},
+  {"f": "lenti", "i": "/ˈlen.ti/", "p": "v", "e": "slow down", "n": "from lent; of a service as readily as a vehicle"},
+  {"f": "les", "i": "/les/", "p": "n", "e": "forest, everyday", "n": "formal silva"},
+  {"f": "lesa", "i": "/ˈle.sa/", "p": "v", "e": "injure", "n": "broadcast wording keeps the older participle lesada"},
+  {"f": "lesiun", "i": "/le.ˈsi.un/", "p": "n", "e": "injury", "n": ""},
+  {"f": "lesotan", "i": "/le.ˈso.tan/", "p": "adj", "e": "Basotho", "n": "demonym of Lesoto"},
+  {"f": "letonian", "i": "/le.to.ˈni.an/", "p": "adj", "e": "Latvian", "n": "demonym of Letonia"},
+  {"f": "leva", "i": "/ˈle.va/", "p": "v", "e": "raise, get up", "n": ""},
+  {"f": "levatura", "i": "/le.va.ˈtu.ra/", "p": "n", "e": "yeast", "n": ""},
+  {"f": "leve", "i": "/ˈle.ve/", "p": "adj", "e": "light in weight", "n": "facil is light in the sense of easy"},
+  {"f": "levement", "i": "/le.ˈve.ment/", "p": "adv", "e": "lightly", "n": ""},
+  {"f": "levier", "i": "/le.ˈvi.er/", "p": "n", "e": "lever", "n": ""},
+  {"f": "lexic", "i": "/ˈle.ʃik/", "p": "n", "e": "lexicon, word stock", "n": ""},
+  {"f": "lexicon", "i": "/le.ˈʃi.kon/", "p": "n", "e": "lexicon", "n": "se lexicon is the published file; se registru is the list of what refuses the rule"},
+  {"f": "libanian", "i": "/li.ba.ˈni.an/", "p": "adj", "e": "Lebanese", "n": "demonym of Liban"},
+  {"f": "liber", "i": "/ˈli.ber/", "p": "adj", "e": "clear, free, unobstructed", "n": ""},
+  {"f": "libera", "i": "/li.ˈbe.ra/", "p": "v", "e": "clear, free", "n": ""},
+  {"f": "liberatiun", "i": "/li.be.ra.ˈti.un/", "p": "n", "e": "clearing, release", "n": "liberatiun de vias, clearing of the track"},
+  {"f": "liberian", "i": "/li.be.ˈri.an/", "p": "adj", "e": "Liberian", "n": "demonym of Liberia"},
+  {"f": "libertate", "i": "/li.ber.ˈta.te/", "p": "n", "e": "freedom", "n": ""},
+  {"f": "libian", "i": "/li.ˈbi.an/", "p": "adj", "e": "Libyan", "n": "demonym of Libia"},
+  {"f": "libru", "i": "/ˈli.bru/", "p": "n", "e": "book", "n": ""},
+  {"f": "licentia", "i": "/li.t͡ʃen.ˈti.a/", "p": "v", "e": "license", "n": ""},
+  {"f": "licentiat", "i": "/li.t͡ʃen.ˈti.at/", "p": "adj", "e": "licensed", "n": ""},
+  {"f": "licit", "i": "/ˈli.t͡ʃit/", "p": "adj", "e": "lawful", "n": ""},
+  {"f": "liga", "i": "/ˈli.ga/", "p": "v", "e": "tie, bind", "n": ""},
+  {"f": "ligatura", "i": "/li.ga.ˈtu.ra/", "p": "n", "e": "linking form", "n": "the de of a compound, where it stands"},
+  {"f": "lihtenstainian", "i": "/lih.tens.tai.ˈni.an/", "p": "adj", "e": "Liechtenstein", "n": "demonym of Lihtenstain"},
+  {"f": "lima", "i": "/ˈli.ma/", "p": "n", "e": "file for metal", "n": ""},
+  {"f": "limit", "i": "/ˈli.mit/", "p": "n", "e": "ceiling, limit", "n": ""},
+  {"f": "limite", "i": "/li.ˈmi.te/", "p": "n", "e": "limit", "n": ""},
+  {"f": "limon", "i": "/ˈli.mon/", "p": "n", "e": "lemon", "n": ""},
+  {"f": "limpa", "i": "/ˈlim.pa/", "p": "v", "e": "clean", "n": ""},
+  {"f": "limu", "i": "/ˈli.mu/", "p": "n", "e": "silt", "n": ""},
+  {"f": "lingua", "i": "/lin.ˈgu.a/", "p": "n", "e": "language", "n": ""},
+  {"f": "lingura", "i": "/lin.ˈgu.ra/", "p": "n", "e": "spoon", "n": ""},
+  {"f": "linia", "i": "/li.ˈni.a/", "p": "n", "e": "line, route", "n": ""},
+  {"f": "liniete", "i": "/li.ni.ˈe.te/", "p": "n", "e": "hyphen", "n": "joins a compound numeral and a prefix: dece-du, ex-ministru"},
+  {"f": "liquid", "i": "/ˈli.kid/", "p": "adj", "e": "liquid", "n": ""},
+  {"f": "liquida", "i": "/li.ˈki.da/", "p": "v", "e": "wind up", "n": ""},
+  {"f": "lisce", "i": "/ˈlis.t͡ʃe/", "p": "adj", "e": "smooth", "n": ""},
+  {"f": "lista", "i": "/ˈlis.ta/", "p": "n", "e": "list", "n": ""},
+  {"f": "liter", "i": "/ˈli.ter/", "p": "n", "e": "letter", "n": ""},
+  {"f": "litiga", "i": "/li.ˈti.ga/", "p": "v", "e": "litigate", "n": ""},
+  {"f": "litru", "i": "/ˈli.tru/", "p": "n", "e": "litre", "n": ""},
+  {"f": "lituanian", "i": "/li.tu.a.ˈni.an/", "p": "adj", "e": "Lithuanian", "n": "demonym of Lituania"},
+  {"f": "loc", "i": "/lok/", "p": "n", "e": "place, spot", "n": ""},
+  {"f": "loca", "i": "/ˈlo.ka/", "p": "v", "e": "rent out", "n": ""},
+  {"f": "local", "i": "/ˈlo.kal/", "p": "adj", "e": "local", "n": "localitate is the noun"},
+  {"f": "localisa", "i": "/lo.ka.ˈli.sa/", "p": "v", "e": "locate", "n": ""},
+  {"f": "localitate", "i": "/lo.ka.li.ˈta.te/", "p": "n", "e": "settlement", "n": ""},
+  {"f": "localment", "i": "/lo.ˈkal.ment/", "p": "adv", "e": "locally", "n": ""},
+  {"f": "locatariu", "i": "/lo.ka.ta.ˈri.u/", "p": "n", "e": "tenant", "n": ""},
+  {"f": "locomotiva", "i": "/lo.ko.mo.ˈti.va/", "p": "n", "e": "locomotive", "n": ""},
+  {"f": "logic", "i": "/ˈlo.d͡ʒik/", "p": "adj", "e": "logical", "n": ""},
+  {"f": "logicament", "i": "/lo.d͡ʒi.ˈka.ment/", "p": "adv", "e": "logically", "n": ""},
+  {"f": "long", "i": "/long/", "p": "adj", "e": "long", "n": ""},
+  {"f": "longa", "i": "/ˈlon.ga/", "p": "adj", "e": "long", "n": "of a form, a sentence or a wait"},
+  {"f": "longament", "i": "/lon.ˈga.ment/", "p": "adv", "e": "at length", "n": ""},
+  {"f": "longe", "i": "/ˈlon.d͡ʒe/", "p": "adv", "e": "far, by far", "n": ""},
+  {"f": "longitude", "i": "/lon.d͡ʒi.ˈtu.de/", "p": "n", "e": "length", "n": ""},
+  {"f": "lonx", "i": "/lonʃ/", "p": "prep", "e": "clear of, away from", "n": "lonx de portes, clear of the doors; prope is its opposite"},
+  {"f": "lubrica", "i": "/lu.ˈbri.ka/", "p": "v", "e": "slip, slide", "n": ""},
+  {"f": "luce", "i": "/ˈlu.t͡ʃe/", "p": "n", "e": "light", "n": "adjective lucid"},
+  {"f": "luci", "i": "/ˈlu.t͡ʃi/", "p": "v", "e": "shine steadily", "n": "of daylight and of a lamp left on"},
+  {"f": "lucian", "i": "/ˈlu.t͡ʃan/", "p": "adj", "e": "Saint Lucian", "n": "demonym of Santa Lucia"},
+  {"f": "lucsemburgian", "i": "/luk.sem.ˈbur.d͡ʒan/", "p": "adj", "e": "Luxembourgish", "n": "demonym of Lucsemburg"},
+  {"f": "luctu", "i": "/ˈluk.tu/", "p": "n", "e": "grief", "n": ""},
+  {"f": "luna", "i": "/ˈlu.na/", "p": "n", "e": "moon", "n": "adjective lunar"},
+  {"f": "lundi", "i": "/ˈlun.di/", "p": "n", "e": "Monday", "n": ""},
+  {"f": "lupu", "i": "/ˈlu.pu/", "p": "n", "e": "wolf", "n": ""},
+  {"f": "ma", "i": "/ma/", "p": "conj", "e": "but", "n": ""},
+  {"f": "macedonian", "i": "/ma.t͡ʃe.do.ˈni.an/", "p": "adj", "e": "Macedonian", "n": "demonym of Macedonia Nord"},
+  {"f": "machina", "i": "/ma.ˈki.na/", "p": "n", "e": "machine", "n": "adjective machinal"},
+  {"f": "magazin", "i": "/ma.ˈga.zin/", "p": "n", "e": "shop", "n": ""},
+  {"f": "magnitud", "i": "/mag.ˈni.tud/", "p": "n", "e": "magnitude", "n": ""},
+  {"f": "mai", "i": "/mai/", "p": "n", "e": "May", "n": ""},
+  {"f": "maimune", "i": "/mai.ˈmu.ne/", "p": "n", "e": "monkey", "n": "carried in laku noc maimune, said of politicians"},
+  {"f": "maioritate", "i": "/mai.o.ri.ˈta.te/", "p": "n", "e": "majority", "n": ""},
+  {"f": "mal", "i": "/mal/", "p": "adv", "e": "badly", "n": ""},
+  {"f": "malad", "i": "/ˈma.lad/", "p": "adj", "e": "ill", "n": ""},
+  {"f": "malan", "i": "/ˈma.lan/", "p": "adj", "e": "Malian", "n": "demonym of Mali"},
+  {"f": "malasian", "i": "/ma.la.ˈsi.an/", "p": "adj", "e": "Malaysian", "n": "demonym of Malasia"},
+  {"f": "malatia", "i": "/ma.la.ˈti.a/", "p": "n", "e": "illness", "n": ""},
+  {"f": "malavan", "i": "/ma.ˈla.van/", "p": "adj", "e": "Malawian", "n": "demonym of Malavi"},
+  {"f": "maldivian", "i": "/mal.di.ˈvi.an/", "p": "adj", "e": "Maldivian", "n": "demonym of Maldiv"},
+  {"f": "malgax", "i": "/ˈmal.gaʃ/", "p": "adj", "e": "Malagasy", "n": "demonym of Madagascar"},
+  {"f": "malgrado", "i": "/mal.ˈgra.do/", "p": "conj", "e": "despite the fact that", "n": ""},
+  {"f": "malte", "i": "/ˈmal.te/", "p": "adj", "e": "Maltese", "n": "demonym of Malta"},
+  {"f": "malversatiun", "i": "/mal.ver.sa.ˈti.un/", "p": "n", "e": "embezzlement, formal", "n": ""},
+  {"f": "mama", "i": "/ˈma.ma/", "p": "n", "e": "mother, everyday", "n": ""},
+  {"f": "man", "i": "/man/", "p": "n", "e": "hand", "n": "adjective manval"},
+  {"f": "manc", "i": "/mank/", "p": "n", "e": "shortage", "n": ""},
+  {"f": "manda", "i": "/ˈman.da/", "p": "v", "e": "send", "n": ""},
+  {"f": "mandat", "i": "/ˈman.dat/", "p": "n", "e": "term of office", "n": ""},
+  {"f": "mandata", "i": "/man.ˈda.ta/", "p": "v", "e": "mandate", "n": ""},
+  {"f": "mandatar", "i": "/man.ˈda.tar/", "p": "n", "e": "holder of a mandate", "n": ""},
+  {"f": "mandra", "i": "/ˈman.dra/", "p": "n", "e": "herd", "n": "turma of sheep, mandra of cattle"},
+  {"f": "manevra", "i": "/ma.ˈne.vra/", "p": "v", "e": "shunt, manoeuvre", "n": "in the depots; manevra de nox, night shunting"},
+  {"f": "manica", "i": "/ma.ˈni.ka/", "p": "n", "e": "sleeve", "n": ""},
+  {"f": "manja", "i": "/ˈman.ʒa/", "p": "v", "e": "eat", "n": ""},
+  {"f": "manometru", "i": "/ma.no.ˈme.tru/", "p": "n", "e": "gauge", "n": ""},
+  {"f": "mansarda", "i": "/man.ˈsar.da/", "p": "n", "e": "attic", "n": ""},
+  {"f": "manuale", "i": "/ma.nu.ˈa.le/", "p": "n", "e": "textbook", "n": ""},
+  {"f": "mapa", "i": "/ˈma.pa/", "p": "n", "e": "map", "n": ""},
+  {"f": "mar", "i": "/mar/", "p": "n", "e": "sea", "n": "adjective marin"},
+  {"f": "marca", "i": "/ˈmar.ka/", "p": "v", "e": "mark", "n": ""},
+  {"f": "mardi", "i": "/ˈmar.di/", "p": "n", "e": "Tuesday", "n": ""},
+  {"f": "marea", "i": "/ma.ˈre.a/", "p": "n", "e": "tide", "n": "the lagoon runs on it"},
+  {"f": "margin", "i": "/mar.ˈd͡ʒin/", "p": "n", "e": "margin, edge", "n": ""},
+  {"f": "marit", "i": "/ˈma.rit/", "p": "n", "e": "husband", "n": ""},
+  {"f": "marita", "i": "/ma.ˈri.ta/", "p": "v", "e": "marry", "n": "of either party; the older use marked only one"},
+  {"f": "marocan", "i": "/ma.ˈro.kan/", "p": "adj", "e": "Moroccan", "n": "demonym of Maroc"},
+  {"f": "mars", "i": "/mars/", "p": "n", "e": "March", "n": ""},
+  {"f": "marte", "i": "/ˈmar.te/", "p": "n", "e": "March", "n": ""},
+  {"f": "martella", "i": "/mar.ˈte.la/", "p": "v", "e": "hammer", "n": ""},
+  {"f": "marxalan", "i": "/mar.ˈʃa.lan/", "p": "adj", "e": "Marshallese", "n": "demonym of Insulas Marxal"},
+  {"f": "mas", "i": "/mas/", "p": "adv", "e": "more, most", "n": "mas comun, commonest"},
+  {"f": "mastica", "i": "/mas.ˈti.ka/", "p": "v", "e": "chew", "n": ""},
+  {"f": "materia", "i": "/ma.te.ˈri.a/", "p": "n", "e": "material, matter", "n": ""},
+  {"f": "materiale", "i": "/ma.te.ri.ˈa.le/", "p": "n", "e": "materials", "n": ""},
+  {"f": "materinu", "i": "/ma.te.ˈri.nu/", "p": "adj", "e": "shoddy, of rotten workmanship", "n": "the strongest word the press has for bad work"},
+  {"f": "matin", "i": "/ˈma.tin/", "p": "n", "e": "morning", "n": ""},
+  {"f": "matre", "i": "/ˈma.tre/", "p": "n", "e": "mother", "n": "adjective matern; everyday mama"},
+  {"f": "mau", "i": "/mau/", "p": "adj", "e": "bad", "n": ""},
+  {"f": "mauritanian", "i": "/mau.ri.ta.ˈni.an/", "p": "adj", "e": "Mauritanian", "n": "demonym of Mauritania"},
+  {"f": "mauritian", "i": "/mau.ri.ˈti.an/", "p": "adj", "e": "Mauritian", "n": "demonym of Mauritiu"},
+  {"f": "maxila", "i": "/ma.ˈʃi.la/", "p": "n", "e": "jaw", "n": ""},
+  {"f": "me", "i": "/me/", "p": "pron", "e": "I, me", "n": "subject and object alike: me no jizde, skuza me"},
+  {"f": "mecanisa", "i": "/me.ka.ˈni.sa/", "p": "v", "e": "mechanise", "n": ""},
+  {"f": "media", "i": "/me.ˈdi.a/", "p": "v", "e": "mediate", "n": ""},
+  {"f": "medianox", "i": "/me.di.ˈa.noʃ/", "p": "n", "e": "midnight", "n": ""},
+  {"f": "mediante", "i": "/me.di.ˈan.te/", "p": "prep", "e": "by means of", "n": ""},
+  {"f": "medic", "i": "/ˈme.dik/", "p": "n", "e": "doctor, formal", "n": ""},
+  {"f": "medicament", "i": "/me.di.ˈka.ment/", "p": "n", "e": "medicine", "n": ""},
+  {"f": "medie", "i": "/me.ˈdi.e/", "p": "adj", "e": "middle, average", "n": ""},
+  {"f": "medietate", "i": "/me.di.e.ˈta.te/", "p": "n", "e": "half", "n": ""},
+  {"f": "medita", "i": "/me.ˈdi.ta/", "p": "v", "e": "reflect, think over", "n": ""},
+  {"f": "mel", "i": "/mel/", "p": "n", "e": "honey", "n": ""},
+  {"f": "melodia", "i": "/me.lo.ˈdi.a/", "p": "n", "e": "melody", "n": ""},
+  {"f": "membru", "i": "/ˈmem.bru/", "p": "n", "e": "member", "n": ""},
+  {"f": "memora", "i": "/me.ˈmo.ra/", "p": "v", "e": "commit to memory", "n": ""},
+  {"f": "memoria", "i": "/me.mo.ˈri.a/", "p": "n", "e": "memory", "n": ""},
+  {"f": "mensual", "i": "/men.ˈsu.al/", "p": "adj", "e": "monthly", "n": "mes is the month"},
+  {"f": "mente", "i": "/ˈmen.te/", "p": "n", "e": "mind", "n": ""},
+  {"f": "mentiona", "i": "/men.ti.ˈo.na/", "p": "v", "e": "mention", "n": ""},
+  {"f": "mentre", "i": "/ˈmen.tre/", "p": "conj", "e": "while", "n": ""},
+  {"f": "mentu", "i": "/ˈmen.tu/", "p": "n", "e": "chin", "n": ""},
+  {"f": "menu", "i": "/ˈme.nu/", "p": "n", "e": "menu", "n": ""},
+  {"f": "mercat", "i": "/ˈmer.kat/", "p": "n", "e": "market", "n": ""},
+  {"f": "mercuri", "i": "/mer.ˈku.ri/", "p": "n", "e": "Wednesday", "n": ""},
+  {"f": "meridie", "i": "/me.ri.ˈdi.e/", "p": "n", "e": "midday", "n": ""},
+  {"f": "merite", "i": "/me.ˈri.te/", "p": "n", "e": "the merits of a case", "n": "ir te se merite, to reach the merits"},
+  {"f": "meritu", "i": "/me.ˈri.tu/", "p": "n", "e": "merit", "n": ""},
+  {"f": "mes", "i": "/mes/", "p": "n", "e": "month", "n": ""},
+  {"f": "mesa", "i": "/ˈme.sa/", "p": "n", "e": "table, formal", "n": "everyday stol"},
+  {"f": "mesaje", "i": "/me.ˈsa.ʒe/", "p": "n", "e": "message", "n": ""},
+  {"f": "mescla", "i": "/ˈmes.kla/", "p": "v", "e": "mix, stir", "n": ""},
+  {"f": "mesme", "i": "/ˈmes.me/", "p": "adj", "e": "same, itself", "n": ""},
+  {"f": "mesmo", "i": "/ˈmes.mo/", "p": "adv", "e": "even", "n": ""},
+  {"f": "messe", "i": "/ˈme.se/", "p": "n", "e": "harvest", "n": "of the grain basin at Quintorum"},
+  {"f": "mesura", "i": "/me.ˈsu.ra/", "p": "n", "e": "size, measurement", "n": "also the verb, to measure"},
+  {"f": "metal", "i": "/ˈme.tal/", "p": "n", "e": "metal", "n": ""},
+  {"f": "metodic", "i": "/me.ˈto.dik/", "p": "adj", "e": "methodical", "n": ""},
+  {"f": "metodicament", "i": "/me.to.di.ˈka.ment/", "p": "adv", "e": "methodically", "n": ""},
+  {"f": "metodu", "i": "/me.ˈto.du/", "p": "n", "e": "method", "n": ""},
+  {"f": "metra", "i": "/ˈme.tra/", "p": "v", "e": "measure", "n": "metru is the unit"},
+  {"f": "metro", "i": "/ˈme.tro/", "p": "n", "e": "metro", "n": ""},
+  {"f": "metru", "i": "/ˈme.tru/", "p": "n", "e": "metre", "n": ""},
+  {"f": "mexican", "i": "/me.ˈʃi.kan/", "p": "adj", "e": "Mexican", "n": "demonym of Mexic"},
+  {"f": "mianmarian", "i": "/mi.an.ma.ˈri.an/", "p": "adj", "e": "Burmese", "n": "demonym of Mianmar"},
+  {"f": "micronesian", "i": "/mi.kro.ne.ˈsi.an/", "p": "adj", "e": "Micronesian", "n": "demonym of Micronesia"},
+  {"f": "mie", "i": "/ˈmi.e/", "p": "det", "e": "my", "n": ""},
+  {"f": "mil", "i": "/mil/", "p": "num", "e": "thousand", "n": ""},
+  {"f": "miliard", "i": "/mi.ˈli.ard/", "p": "num", "e": "thousand million", "n": ""},
+  {"f": "miliun", "i": "/mi.ˈli.un/", "p": "num", "e": "million", "n": ""},
+  {"f": "minacia", "i": "/mi.na.ˈt͡ʃi.a/", "p": "v", "e": "threaten", "n": ""},
+  {"f": "mineral", "i": "/mi.ˈne.ral/", "p": "n", "e": "mineral", "n": ""},
+  {"f": "ministru", "i": "/mi.ˈnis.tru/", "p": "n", "e": "minister", "n": ""},
+  {"f": "minor", "i": "/ˈmi.nor/", "p": "adj", "e": "lesser", "n": "mas is the higher degree; minor has no adverb of its own"},
+  {"f": "minoritate", "i": "/mi.no.ri.ˈta.te/", "p": "n", "e": "minority", "n": ""},
+  {"f": "minut", "i": "/ˈmi.nut/", "p": "n", "e": "minute", "n": ""},
+  {"f": "mira", "i": "/ˈmi.ra/", "p": "v", "e": "gaze at, wonder at", "n": ""},
+  {"f": "mobil", "i": "/ˈmo.bil/", "p": "n", "e": "furniture", "n": ""},
+  {"f": "mobilie", "i": "/mo.bi.ˈli.e/", "p": "n", "e": "fitted furniture, furnishing of a room", "n": "mobil is one piece; mobilie is what the room carries"},
+  {"f": "mobilitate", "i": "/mo.bi.li.ˈta.te/", "p": "n", "e": "mobility", "n": "the sub-region runs local transport"},
+  {"f": "mochila", "i": "/mok.ˈhi.la/", "p": "n", "e": "rucksack", "n": ""},
+  {"f": "modem", "i": "/ˈmo.dem/", "p": "n", "e": "modem", "n": ""},
+  {"f": "modern", "i": "/ˈmo.dern/", "p": "adj", "e": "modern", "n": ""},
+  {"f": "modificatiun", "i": "/mo.di.fi.ka.ˈti.un/", "p": "n", "e": "modification", "n": ""},
+  {"f": "mol", "i": "/mol/", "p": "adj", "e": "soft", "n": ""},
+  {"f": "moldovan", "i": "/mol.ˈdo.van/", "p": "adj", "e": "Moldovan", "n": "demonym of Moldova"},
+  {"f": "molin-de-vent", "i": "/mo.lin.ˈde.vent/", "p": "n", "e": "windmill", "n": ""},
+  {"f": "mollia", "i": "/mo.ˈli.a/", "p": "v", "e": "soak, wet", "n": ""},
+  {"f": "momentu", "i": "/mo.ˈmen.tu/", "p": "n", "e": "moment", "n": ""},
+  {"f": "monacan", "i": "/mo.ˈna.kan/", "p": "adj", "e": "Monegasque", "n": "demonym of Monaco"},
+  {"f": "moneda", "i": "/mo.ˈne.da/", "p": "n", "e": "coin", "n": ""},
+  {"f": "moneta", "i": "/mo.ˈne.ta/", "p": "n", "e": "money, formal", "n": "adjective monetar; everyday penez"},
+  {"f": "mongolian", "i": "/mon.go.ˈli.an/", "p": "adj", "e": "Mongolian", "n": "demonym of Mongolia"},
+  {"f": "monstra", "i": "/ˈmons.tra/", "p": "v", "e": "show", "n": ""},
+  {"f": "monta", "i": "/ˈmon.ta/", "p": "v", "e": "rise, climb", "n": ""},
+  {"f": "montania", "i": "/mon.ta.ˈni.a/", "p": "n", "e": "mountain", "n": ""},
+  {"f": "montenegran", "i": "/mon.te.ˈne.gran/", "p": "adj", "e": "Montenegrin", "n": "demonym of Montenegru"},
+  {"f": "moralite", "i": "/mo.ra.ˈli.te/", "p": "n", "e": "morality", "n": ""},
+  {"f": "morcov", "i": "/ˈmor.kov/", "p": "n", "e": "carrot", "n": ""},
+  {"f": "mordi", "i": "/ˈmor.di/", "p": "v", "e": "bite", "n": ""},
+  {"f": "mori", "i": "/ˈmo.ri/", "p": "v", "e": "die", "n": ""},
+  {"f": "morte", "i": "/ˈmor.te/", "p": "n", "e": "death", "n": "adjective mortal"},
+  {"f": "mosaic", "i": "/ˈmo.saik/", "p": "n", "e": "patchwork", "n": ""},
+  {"f": "mostarda", "i": "/mos.ˈtar.da/", "p": "n", "e": "mustard", "n": ""},
+  {"f": "motiona", "i": "/mo.ti.ˈo.na/", "p": "v", "e": "move a motion", "n": ""},
+  {"f": "motiv", "i": "/ˈmo.tiv/", "p": "n", "e": "reason, cause", "n": "motiv opens the reason given in a service announcement"},
+  {"f": "motivatiun", "i": "/mo.ti.va.ˈti.un/", "p": "n", "e": "motivation", "n": "motivu is the motive"},
+  {"f": "motivu", "i": "/mo.ˈti.vu/", "p": "n", "e": "motive", "n": ""},
+  {"f": "motor", "i": "/ˈmo.tor/", "p": "n", "e": "engine, motor", "n": ""},
+  {"f": "motornik", "i": "/mo.ˈtor.nik/", "p": "n", "e": "small engine", "n": "the diminutive of motor"},
+  {"f": "mova", "i": "/ˈmo.va/", "p": "v", "e": "move", "n": ""},
+  {"f": "movimentu", "i": "/mo.vi.ˈmen.tu/", "p": "n", "e": "movement", "n": ""},
+  {"f": "mozambician", "i": "/mo.zam.ˈbi.t͡ʃan/", "p": "adj", "e": "Mozambican", "n": "demonym of Mozambic"},
+  {"f": "multa", "i": "/ˈmul.ta/", "p": "n", "e": "fine", "n": ""},
+  {"f": "multe", "i": "/ˈmul.te/", "p": "det", "e": "many, much", "n": ""},
+  {"f": "multitud", "i": "/mul.ˈti.tud/", "p": "n", "e": "crowd", "n": ""},
+  {"f": "multo", "i": "/ˈmul.to/", "p": "adv", "e": "very", "n": "multe is the determiner"},
+  {"f": "mund", "i": "/mund/", "p": "adj", "e": "clean", "n": ""},
+  {"f": "murdar", "i": "/ˈmur.dar/", "p": "adj", "e": "dirty", "n": ""},
+  {"f": "murmura", "i": "/mur.ˈmu.ra/", "p": "v", "e": "mutter, murmur", "n": ""},
+  {"f": "muro", "i": "/ˈmu.ro/", "p": "n", "e": "wall", "n": ""},
+  {"f": "musca", "i": "/ˈmus.ka/", "p": "n", "e": "fly", "n": ""},
+  {"f": "muscla", "i": "/ˈmus.kla/", "p": "n", "e": "mussel", "n": ""},
+  {"f": "muscul", "i": "/ˈmus.kul/", "p": "n", "e": "muscle", "n": ""},
+  {"f": "museu", "i": "/ˈmu.seu/", "p": "n", "e": "museum", "n": ""},
+  {"f": "musica", "i": "/mu.ˈsi.ka/", "p": "n", "e": "music", "n": "adjective musical"},
+  {"f": "muta", "i": "/ˈmu.ta/", "p": "v", "e": "change, shift", "n": ""},
+  {"f": "mutua", "i": "/mu.ˈtu.a/", "p": "v", "e": "borrow", "n": ""},
+  {"f": "mutual", "i": "/mu.ˈtu.al/", "p": "adj", "e": "mutual", "n": ""},
+  {"f": "mutualisa", "i": "/mu.tu.a.ˈli.sa/", "p": "v", "e": "pool, hold in common", "n": ""},
+  {"f": "mutualment", "i": "/mu.tu.ˈal.ment/", "p": "adv", "e": "mutually", "n": ""},
+  {"f": "nadrazi", "i": "/na.ˈdra.zi/", "p": "n", "e": "station, everyday", "n": "older station signage in the west"},
+  {"f": "namibian", "i": "/na.mi.ˈbi.an/", "p": "adj", "e": "Namibian", "n": "demonym of Namibia"},
+  {"f": "nas", "i": "/nas/", "p": "n", "e": "nose", "n": "adjective nasal"},
+  {"f": "nasce", "i": "/ˈnas.t͡ʃe/", "p": "v", "e": "be born", "n": ""},
+  {"f": "nascentia", "i": "/nas.t͡ʃen.ˈti.a/", "p": "n", "e": "birth", "n": "nasce is the verb"},
+  {"f": "nata", "i": "/ˈna.ta/", "p": "v", "e": "swim", "n": ""},
+  {"f": "national", "i": "/na.ti.ˈo.nal/", "p": "adj", "e": "national", "n": "natiun is the noun"},
+  {"f": "nationalment", "i": "/na.ti.o.ˈnal.ment/", "p": "adv", "e": "nationally", "n": ""},
+  {"f": "natiun", "i": "/na.ˈti.un/", "p": "n", "e": "nation", "n": ""},
+  {"f": "natura", "i": "/na.ˈtu.ra/", "p": "n", "e": "nature", "n": ""},
+  {"f": "nauran", "i": "/ˈnau.ran/", "p": "adj", "e": "Nauruan", "n": "demonym of Nauru"},
+  {"f": "nav", "i": "/nav/", "p": "n", "e": "boat, ferry", "n": ""},
+  {"f": "navega", "i": "/na.ˈve.ga/", "p": "v", "e": "sail, navigate", "n": ""},
+  {"f": "nebla", "i": "/ˈne.bla/", "p": "n", "e": "fog", "n": ""},
+  {"f": "necesar", "i": "/ne.ˈt͡ʃe.sar/", "p": "adj", "e": "necessary", "n": ""},
+  {"f": "necesarment", "i": "/ne.t͡ʃe.ˈsar.ment/", "p": "adv", "e": "necessarily", "n": ""},
+  {"f": "necesita", "i": "/ne.t͡ʃe.ˈsi.ta/", "p": "v", "e": "need", "n": ""},
+  {"f": "necesitate", "i": "/ne.t͡ʃe.si.ˈta.te/", "p": "n", "e": "need", "n": ""},
+  {"f": "necun", "i": "/ˈne.kun/", "p": "det", "e": "neither", "n": ""},
+  {"f": "nega", "i": "/ˈne.ga/", "p": "v", "e": "deny", "n": ""},
+  {"f": "negliga", "i": "/ne.ˈgli.ga/", "p": "v", "e": "neglect", "n": ""},
+  {"f": "negligentia", "i": "/ne.gli.d͡ʒen.ˈti.a/", "p": "n", "e": "negligence", "n": "a ground of liability before the corte"},
+  {"f": "negocia", "i": "/ne.go.ˈt͡ʃi.a/", "p": "v", "e": "negotiate", "n": ""},
+  {"f": "negociatiun", "i": "/ne.go.t͡ʃi.a.ˈti.un/", "p": "n", "e": "negotiation", "n": "the plan cycle is negotiated, never imposed"},
+  {"f": "negru", "i": "/ˈne.gru/", "p": "adj", "e": "black", "n": ""},
+  {"f": "nepale", "i": "/ne.ˈpa.le/", "p": "adj", "e": "Nepali", "n": "demonym of Nepal"},
+  {"f": "nepote", "i": "/ne.ˈpo.te/", "p": "n", "e": "grandchild, nephew, niece", "n": "the sense is settled by the sentence"},
+  {"f": "nepotism", "i": "/ne.ˈpo.tism/", "p": "n", "e": "nepotism", "n": ""},
+  {"f": "nervos", "i": "/ˈner.vos/", "p": "adj", "e": "nervous", "n": ""},
+  {"f": "nervu", "i": "/ˈner.vu/", "p": "n", "e": "nerve", "n": ""},
+  {"f": "neutralite", "i": "/ne.u.tra.ˈli.te/", "p": "n", "e": "neutrality", "n": "an adjective in -al takes -ite, never -tate"},
+  {"f": "neve", "i": "/ˈne.ve/", "p": "n", "e": "snow", "n": "adjective nevos"},
+  {"f": "ni", "i": "/ni/", "p": "conj", "e": "nor", "n": ""},
+  {"f": "nicaraguan", "i": "/ni.ka.ra.ˈgu.an/", "p": "adj", "e": "Nicaraguan", "n": "demonym of Nicaragua"},
+  {"f": "nicta", "i": "/ˈnik.ta/", "p": "v", "e": "blink", "n": ""},
+  {"f": "nigerian", "i": "/ni.d͡ʒe.ˈri.an/", "p": "adj", "e": "Nigerian", "n": "demonym of Nigeria"},
+  {"f": "nigerien", "i": "/ni.d͡ʒe.ˈri.en/", "p": "adj", "e": "Nigerien", "n": "demonym of Niger"},
+  {"f": "nisi", "i": "/ˈni.si/", "p": "conj", "e": "unless", "n": "nisi se corte decide altru, unless the court rules otherwise"},
+  {"f": "nivel", "i": "/ˈni.vel/", "p": "n", "e": "tier, level", "n": ""},
+  {"f": "nivella", "i": "/ni.ˈve.la/", "p": "v", "e": "level", "n": ""},
+  {"f": "no", "i": "/no/", "p": "adv", "e": "not, no", "n": ""},
+  {"f": "no-", "i": "", "p": "pref", "e": "un-, not", "n": ""},
+  {"f": "noc", "i": "/nok/", "p": "n", "e": "night, everyday", "n": "nox in print and in the register; noc in the greeting laku noc"},
+  {"f": "noda", "i": "/ˈno.da/", "p": "v", "e": "knot", "n": ""},
+  {"f": "nome", "i": "/ˈno.me/", "p": "n", "e": "name", "n": ""},
+  {"f": "nomina", "i": "/no.ˈmi.na/", "p": "v", "e": "name, call", "n": ""},
+  {"f": "nondum", "i": "/ˈnon.dum/", "p": "adv", "e": "not yet", "n": ""},
+  {"f": "nord", "i": "/nord/", "p": "n", "e": "north", "n": ""},
+  {"f": "norma", "i": "/ˈnor.ma/", "p": "n", "e": "norm, standard", "n": ""},
+  {"f": "norvegian", "i": "/nor.ˈve.d͡ʒan/", "p": "adj", "e": "Norwegian", "n": "demonym of Norvegia"},
+  {"f": "nos", "i": "/nos/", "p": "pron", "e": "we, us", "n": ""},
+  {"f": "nostre", "i": "/ˈnos.tre/", "p": "det", "e": "our", "n": ""},
+  {"f": "nota", "i": "/ˈno.ta/", "p": "v", "e": "note, record", "n": "also the noun, a note"},
+  {"f": "notifica", "i": "/no.ti.ˈfi.ka/", "p": "v", "e": "notify", "n": "notifica te se persone, give the person notice"},
+  {"f": "notificatiun", "i": "/no.ti.fi.ka.ˈti.un/", "p": "n", "e": "notification", "n": ""},
+  {"f": "notiun", "i": "/no.ˈti.un/", "p": "n", "e": "notion", "n": ""},
+  {"f": "novanta", "i": "/no.ˈvan.ta/", "p": "num", "e": "ninety", "n": ""},
+  {"f": "nove", "i": "/ˈno.ve/", "p": "adj", "e": "new", "n": "also the numeral nine; position decides"},
+  {"f": "november", "i": "/no.ˈvem.ber/", "p": "n", "e": "November", "n": ""},
+  {"f": "novembre", "i": "/no.ˈvem.bre/", "p": "n", "e": "November", "n": ""},
+  {"f": "novitate", "i": "/no.vi.ˈta.te/", "p": "n", "e": "news", "n": ""},
+  {"f": "novzelandan", "i": "/nov.ze.ˈlan.dan/", "p": "adj", "e": "New Zealand", "n": "demonym of Nov Zeland"},
+  {"f": "nox", "i": "/noʃ/", "p": "n", "e": "night", "n": "adjective notiv"},
+  {"f": "nube", "i": "/ˈnu.be/", "p": "n", "e": "cloud", "n": ""},
+  {"f": "nuce", "i": "/ˈnu.t͡ʃe/", "p": "n", "e": "nut", "n": ""},
+  {"f": "nulcosa", "i": "/nul.ˈko.sa/", "p": "pron", "e": "nothing", "n": ""},
+  {"f": "nule", "i": "/ˈnu.le/", "p": "det", "e": "no, none, nobody", "n": ""},
+  {"f": "nullubi", "i": "/nu.ˈlu.bi/", "p": "adv", "e": "nowhere", "n": ""},
+  {"f": "nulu", "i": "/ˈnu.lu/", "p": "pron", "e": "no one", "n": "nule is the determiner"},
+  {"f": "numer", "i": "/ˈnu.mer/", "p": "n", "e": "number", "n": ""},
+  {"f": "numera", "i": "/nu.ˈme.ra/", "p": "v", "e": "number", "n": ""},
+  {"f": "nunc", "i": "/nunk/", "p": "adv", "e": "now", "n": ""},
+  {"f": "o", "i": "/o/", "p": "conj", "e": "or", "n": ""},
+  {"f": "obchod", "i": "/ˈob.kod/", "p": "n", "e": "shop, everyday", "n": "formal magazin; obchod above the door in the older estates"},
+  {"f": "obed", "i": "/ˈo.bed/", "p": "n", "e": "midday meal, everyday", "n": "formal prandiu"},
+  {"f": "object", "i": "/ob.ˈd͡ʒekt/", "p": "n", "e": "object of a verb", "n": "se articul se sta ante un object direct"},
+  {"f": "objecta", "i": "/ob.ˈʒek.ta/", "p": "v", "e": "object", "n": ""},
+  {"f": "objectivu", "i": "/ob.ʒek.ˈti.vu/", "p": "n", "e": "objective, aim", "n": ""},
+  {"f": "oblida", "i": "/o.ˈbli.da/", "p": "v", "e": "forget", "n": ""},
+  {"f": "oblidu", "i": "/o.ˈbli.du/", "p": "n", "e": "forgetting", "n": "oblida is the verb"},
+  {"f": "obligatiun", "i": "/o.bli.ga.ˈti.un/", "p": "n", "e": "obligation", "n": ""},
+  {"f": "obligatoriu", "i": "/o.bli.ga.to.ˈri.u/", "p": "adj", "e": "binding", "n": ""},
+  {"f": "obligatoriument", "i": "/o.bli.ga.to.ri.ˈu.ment/", "p": "adv", "e": "compulsorily", "n": ""},
+  {"f": "obscur", "i": "/ˈobs.kur/", "p": "adj", "e": "dark, obscure", "n": ""},
+  {"f": "observa", "i": "/ob.ˈser.va/", "p": "v", "e": "observe, watch", "n": "of a rule as readily as of a thing seen"},
+  {"f": "obvi", "i": "/ˈob.vi/", "p": "adj", "e": "obvious", "n": ""},
+  {"f": "obviment", "i": "/ob.ˈvi.ment/", "p": "adv", "e": "obviously", "n": ""},
+  {"f": "ocelar", "i": "/o.ˈt͡ʃe.lar/", "p": "n", "e": "glasses", "n": "plural ocelares, and the plural is the ordinary form"},
+  {"f": "oct", "i": "/okt/", "p": "num", "e": "eight", "n": ""},
+  {"f": "octanta", "i": "/ok.ˈtan.ta/", "p": "num", "e": "eighty", "n": ""},
+  {"f": "october", "i": "/ok.ˈto.ber/", "p": "n", "e": "October", "n": ""},
+  {"f": "octobre", "i": "/ok.ˈto.bre/", "p": "n", "e": "October", "n": ""},
+  {"f": "ocul", "i": "/ˈo.kul/", "p": "n", "e": "eye", "n": "adjective ocular"},
+  {"f": "ocupat", "i": "/o.ˈku.pat/", "p": "adj", "e": "busy, occupied", "n": ""},
+  {"f": "ocupatiun", "i": "/o.ku.pa.ˈti.un/", "p": "n", "e": "occupation", "n": ""},
+  {"f": "odia", "i": "/o.ˈdi.a/", "p": "v", "e": "hate", "n": ""},
+  {"f": "odiu", "i": "/o.ˈdi.u/", "p": "n", "e": "hatred", "n": "odia is the verb"},
+  {"f": "odora", "i": "/o.ˈdo.ra/", "p": "v", "e": "smell", "n": "odora bin, it smells good"},
+  {"f": "ofende", "i": "/o.ˈfen.de/", "p": "v", "e": "offend", "n": ""},
+  {"f": "oferta", "i": "/o.ˈfer.ta/", "p": "n", "e": "offer", "n": ""},
+  {"f": "officina", "i": "/o.fi.ˈt͡ʃi.na/", "p": "n", "e": "workshop", "n": "praca is the work done in one"},
+  {"f": "officiu", "i": "/o.ˈfi.t͡ʃu/", "p": "n", "e": "office", "n": ""},
+  {"f": "oficial", "i": "/o.ˈfi.t͡ʃal/", "p": "adj", "e": "official", "n": ""},
+  {"f": "oficialment", "i": "/o.fi.t͡ʃi.ˈal.ment/", "p": "adv", "e": "officially", "n": ""},
+  {"f": "oglinda", "i": "/o.ˈglin.da/", "p": "n", "e": "mirror", "n": ""},
+  {"f": "okna", "i": "/ˈok.na/", "p": "n", "e": "window", "n": ""},
+  {"f": "olande", "i": "/o.ˈlan.de/", "p": "adj", "e": "Dutch", "n": "demonym of Neerland"},
+  {"f": "olim", "i": "/ˈo.lim/", "p": "adv", "e": "formerly", "n": ""},
+  {"f": "oliu", "i": "/o.ˈli.u/", "p": "n", "e": "oil", "n": ""},
+  {"f": "olivastre", "i": "/o.li.ˈvas.tre/", "p": "adj", "e": "olive", "n": ""},
+  {"f": "olla", "i": "/ˈo.la/", "p": "n", "e": "pot", "n": ""},
+  {"f": "omanian", "i": "/o.ma.ˈni.an/", "p": "adj", "e": "Omani", "n": "demonym of Oman"},
+  {"f": "onda", "i": "/ˈon.da/", "p": "n", "e": "wave", "n": ""},
+  {"f": "onest", "i": "/ˈo.nest/", "p": "adj", "e": "honest", "n": ""},
+  {"f": "onora", "i": "/o.ˈno.ra/", "p": "v", "e": "honour", "n": ""},
+  {"f": "opac", "i": "/ˈo.pak/", "p": "adj", "e": "opaque", "n": ""},
+  {"f": "operatiun", "i": "/o.pe.ra.ˈti.un/", "p": "n", "e": "operation", "n": ""},
+  {"f": "opiniun", "i": "/o.pi.ˈni.un/", "p": "n", "e": "opinion", "n": ""},
+  {"f": "opta", "i": "/ˈop.ta/", "p": "v", "e": "opt, choose between", "n": ""},
+  {"f": "ordinantia", "i": "/or.di.nan.ˈti.a/", "p": "n", "e": "ordinance", "n": ""},
+  {"f": "ordinar", "i": "/or.di.ˈnar/", "p": "adj", "e": "ordinary, usual", "n": "of a test, a case or a procedure: se proba ordinar"},
+  {"f": "ordine", "i": "/or.ˈdi.ne/", "p": "n", "e": "order, tidiness", "n": ""},
+  {"f": "ordine-de-die", "i": "/or.di.ne.de.ˈdi.e/", "p": "n", "e": "agenda", "n": ""},
+  {"f": "orfano", "i": "/or.ˈfa.no/", "p": "n", "e": "orphan", "n": ""},
+  {"f": "organisa", "i": "/or.ga.ˈni.sa/", "p": "v", "e": "organise", "n": ""},
+  {"f": "organisatiun", "i": "/or.ga.ni.sa.ˈti.un/", "p": "n", "e": "organisation", "n": ""},
+  {"f": "orgulio", "i": "/or.gu.ˈli.o/", "p": "n", "e": "pride", "n": ""},
+  {"f": "orgulios", "i": "/or.gu.ˈli.os/", "p": "adj", "e": "proud", "n": ""},
+  {"f": "origine", "i": "/o.ri.ˈd͡ʒi.ne/", "p": "n", "e": "origin", "n": ""},
+  {"f": "os", "i": "/os/", "p": "n", "e": "bone", "n": ""},
+  {"f": "oscita", "i": "/os.ˈt͡ʃi.ta/", "p": "v", "e": "yawn", "n": ""},
+  {"f": "osetian", "i": "/o.se.ˈti.an/", "p": "adj", "e": "South Ossetian", "n": "demonym of Osetia Sud"},
+  {"f": "ospital", "i": "/os.ˈpi.tal/", "p": "n", "e": "hospital", "n": ""},
+  {"f": "ostrea", "i": "/os.ˈtre.a/", "p": "n", "e": "oyster", "n": "of the Ravelluri beds"},
+  {"f": "ostrian", "i": "/os.ˈtri.an/", "p": "adj", "e": "Austrian", "n": "demonym of Ostri"},
+  {"f": "ove", "i": "/ˈo.ve/", "p": "n", "e": "sheep", "n": ""},
+  {"f": "ovest", "i": "/ˈo.vest/", "p": "n", "e": "west", "n": ""},
+  {"f": "ovu", "i": "/ˈo.vu/", "p": "n", "e": "egg", "n": "adjective oval"},
+  {"f": "paga", "i": "/ˈpa.ga/", "p": "v", "e": "pay", "n": ""},
+  {"f": "pagament", "i": "/pa.ˈga.ment/", "p": "n", "e": "payment", "n": ""},
+  {"f": "pagina", "i": "/pa.ˈd͡ʒi.na/", "p": "n", "e": "page", "n": ""},
+  {"f": "palauan", "i": "/pa.ˈlau.an/", "p": "adj", "e": "Palauan", "n": "demonym of Palau"},
+  {"f": "palestinan", "i": "/pa.les.ˈti.nan/", "p": "adj", "e": "Palestinian", "n": "demonym of Palestina"},
+  {"f": "palide", "i": "/pa.ˈli.de/", "p": "adj", "e": "pale", "n": ""},
+  {"f": "palma", "i": "/ˈpal.ma/", "p": "n", "e": "palm of the hand", "n": ""},
+  {"f": "palpa", "i": "/ˈpal.pa/", "p": "v", "e": "feel with the hand", "n": ""},
+  {"f": "palton", "i": "/ˈpal.ton/", "p": "n", "e": "coat", "n": ""},
+  {"f": "pan", "i": "/pan/", "p": "n", "e": "bread", "n": "adjective panar"},
+  {"f": "panaman", "i": "/pa.ˈna.man/", "p": "adj", "e": "Panamanian", "n": "demonym of Panama"},
+  {"f": "panel-solar", "i": "/pa.nel.ˈso.lar/", "p": "n", "e": "solar panel", "n": ""},
+  {"f": "panelcu", "i": "/pa.ˈnel.ku/", "p": "n", "e": "panel building", "n": ""},
+  {"f": "pantalon", "i": "/pan.ˈta.lon/", "p": "n", "e": "trousers", "n": ""},
+  {"f": "pantano", "i": "/pan.ˈta.no/", "p": "n", "e": "marsh", "n": ""},
+  {"f": "pantograf", "i": "/pan.to.ˈɡraf/", "p": "n", "e": "pantograph", "n": "the contact frame on a locomotive; se ramu de contact is the older wording and both are printed"},
+  {"f": "papir", "i": "/ˈpa.pir/", "p": "n", "e": "paper", "n": ""},
+  {"f": "papuan", "i": "/pa.ˈpu.an/", "p": "adj", "e": "Papua New Guinean", "n": "demonym of Papua Nov Guinea"},
+  {"f": "paquistanian", "i": "/pa.kis.ta.ˈni.an/", "p": "adj", "e": "Pakistani", "n": "demonym of Paquistan"},
+  {"f": "par", "i": "/par/", "p": "n", "e": "pair", "n": ""},
+  {"f": "para", "i": "/ˈpa.ra/", "p": "v", "e": "stop, bring to a halt", "n": ""},
+  {"f": "paraguaian", "i": "/pa.ra.gu.ˈai.an/", "p": "adj", "e": "Paraguayan", "n": "demonym of Paraguai"},
+  {"f": "parc", "i": "/park/", "p": "n", "e": "park", "n": ""},
+  {"f": "parente", "i": "/pa.ˈren.te/", "p": "n", "e": "parent", "n": ""},
+  {"f": "parla", "i": "/ˈpar.la/", "p": "v", "e": "speak", "n": ""},
+  {"f": "parola", "i": "/pa.ˈro.la/", "p": "n", "e": "word", "n": ""},
+  {"f": "parte", "i": "/ˈpar.te/", "p": "n", "e": "part, side", "n": ""},
+  {"f": "partenar", "i": "/par.ˈte.nar/", "p": "n", "e": "partner", "n": ""},
+  {"f": "parti", "i": "/ˈpar.ti/", "p": "v", "e": "depart, leave a place", "n": ""},
+  {"f": "partial", "i": "/par.ˈti.al/", "p": "adj", "e": "partial", "n": ""},
+  {"f": "partialment", "i": "/par.ti.ˈal.ment/", "p": "adv", "e": "partially", "n": ""},
+  {"f": "participatiun", "i": "/par.ti.t͡ʃi.pa.ˈti.un/", "p": "n", "e": "participation", "n": ""},
+  {"f": "participe", "i": "/par.ti.ˈt͡ʃi.pe/", "p": "n", "e": "participle", "n": ""},
+  {"f": "parv", "i": "/parv/", "p": "adj", "e": "small", "n": ""},
+  {"f": "pasaje", "i": "/pa.ˈsa.ʒe/", "p": "n", "e": "crossing, passage", "n": ""},
+  {"f": "pasare", "i": "/pa.ˈsa.re/", "p": "n", "e": "bird", "n": ""},
+  {"f": "passa", "i": "/ˈpa.sa/", "p": "v", "e": "pass, go by", "n": "se tren passa sin sta, the train goes through without stopping"},
+  {"f": "passaporte", "i": "/pa.sa.ˈpor.te/", "p": "n", "e": "passport", "n": ""},
+  {"f": "passat", "i": "/ˈpa.sat/", "p": "n", "e": "past", "n": ""},
+  {"f": "passu", "i": "/ˈpa.su/", "p": "n", "e": "pace", "n": ""},
+  {"f": "pasta", "i": "/ˈpas.ta/", "p": "n", "e": "pasta, dough", "n": ""},
+  {"f": "pastilia", "i": "/pas.ti.ˈli.a/", "p": "n", "e": "tablet", "n": "pilula is the smaller round form"},
+  {"f": "pastura", "i": "/pas.ˈtu.ra/", "p": "n", "e": "pasture", "n": ""},
+  {"f": "patata", "i": "/pa.ˈta.ta/", "p": "n", "e": "potato", "n": "everyday brambor"},
+  {"f": "patela", "i": "/pa.ˈte.la/", "p": "n", "e": "pan", "n": ""},
+  {"f": "patiente", "i": "/pa.ti.ˈen.te/", "p": "adj", "e": "patient", "n": "patientia is the noun"},
+  {"f": "patientement", "i": "/pa.ti.en.ˈte.ment/", "p": "adv", "e": "patiently", "n": ""},
+  {"f": "patientia", "i": "/pa.ti.en.ˈti.a/", "p": "n", "e": "patience", "n": ""},
+  {"f": "patre", "i": "/ˈpa.tre/", "p": "n", "e": "father", "n": "adjective patern; everyday tata"},
+  {"f": "patron", "i": "/ˈpa.tron/", "p": "n", "e": "employer", "n": ""},
+  {"f": "paupre", "i": "/ˈpau.pre/", "p": "adj", "e": "poor", "n": ""},
+  {"f": "pausa", "i": "/pa.ˈu.sa/", "p": "n", "e": "pause, wait", "n": "sin pausa, without a wait"},
+  {"f": "pava", "i": "/ˈpa.va/", "p": "v", "e": "pave", "n": ""},
+  {"f": "pect", "i": "/pekt/", "p": "n", "e": "chest", "n": ""},
+  {"f": "pectine", "i": "/pek.ˈti.ne/", "p": "n", "e": "comb", "n": ""},
+  {"f": "ped", "i": "/ped/", "p": "n", "e": "foot", "n": ""},
+  {"f": "pelle", "i": "/ˈpe.le/", "p": "n", "e": "skin", "n": ""},
+  {"f": "pena", "i": "/ˈpe.na/", "p": "n", "e": "penalty", "n": ""},
+  {"f": "pendente", "i": "/pen.ˈden.te/", "p": "prep", "e": "pending", "n": ""},
+  {"f": "penez", "i": "/ˈpe.nez/", "p": "n", "e": "money, everyday", "n": "formal moneta"},
+  {"f": "peninsula", "i": "/pe.nin.ˈsu.la/", "p": "n", "e": "peninsula", "n": ""},
+  {"f": "penna", "i": "/ˈpe.na/", "p": "n", "e": "pen", "n": ""},
+  {"f": "pensa", "i": "/ˈpen.sa/", "p": "v", "e": "think", "n": ""},
+  {"f": "pensiona", "i": "/pen.si.ˈo.na/", "p": "v", "e": "retire on a pension", "n": ""},
+  {"f": "pensiun", "i": "/pen.ˈsi.un/", "p": "n", "e": "pension", "n": "pensiona is the verb"},
+  {"f": "pensu", "i": "/ˈpen.su/", "p": "n", "e": "thought", "n": "pensa is the verb"},
+  {"f": "per", "i": "/per/", "p": "prep", "e": "by, through, because of", "n": ""},
+  {"f": "per cent", "i": "/per t͡ʃent/", "p": "n", "e": "per cent", "n": ""},
+  {"f": "pera", "i": "/ˈpe.ra/", "p": "n", "e": "pear", "n": ""},
+  {"f": "percentagiu", "i": "/per.t͡ʃen.ta.ˈd͡ʒi.u/", "p": "n", "e": "percentage", "n": ""},
+  {"f": "percipe", "i": "/per.ˈt͡ʃi.pe/", "p": "v", "e": "perceive", "n": ""},
+  {"f": "perde", "i": "/ˈper.de/", "p": "v", "e": "lose", "n": ""},
+  {"f": "perfora", "i": "/per.ˈfo.ra/", "p": "v", "e": "drill, bore", "n": ""},
+  {"f": "periculos", "i": "/pe.ri.ˈku.los/", "p": "adj", "e": "dangerous", "n": ""},
+  {"f": "periodu", "i": "/pe.ri.ˈo.du/", "p": "n", "e": "period", "n": ""},
+  {"f": "permanent", "i": "/per.ˈma.nent/", "p": "adj", "e": "permanent", "n": ""},
+  {"f": "permanentament", "i": "/per.ma.nen.ˈta.ment/", "p": "adv", "e": "permanently", "n": ""},
+  {"f": "permis", "i": "/ˈper.mis/", "p": "n", "e": "permit", "n": ""},
+  {"f": "permisiun", "i": "/per.mi.ˈsi.un/", "p": "n", "e": "permission", "n": ""},
+  {"f": "permite", "i": "/per.ˈmi.te/", "p": "v", "e": "allow", "n": ""},
+  {"f": "perna", "i": "/ˈper.na/", "p": "n", "e": "pillow", "n": ""},
+  {"f": "peron", "i": "/ˈpe.ron/", "p": "n", "e": "platform", "n": "peron un, platform one"},
+  {"f": "perque", "i": "/ˈper.ke/", "p": "conj", "e": "because, why", "n": ""},
+  {"f": "persequi", "i": "/per.ˈse.ki/", "p": "v", "e": "chase, pursue", "n": ""},
+  {"f": "persiana", "i": "/per.si.ˈa.na/", "p": "n", "e": "shutter", "n": ""},
+  {"f": "persiste", "i": "/per.ˈsis.te/", "p": "v", "e": "persist", "n": ""},
+  {"f": "persistentia", "i": "/per.sis.ten.ˈti.a/", "p": "n", "e": "persistence", "n": ""},
+  {"f": "persone", "i": "/per.ˈso.ne/", "p": "n", "e": "person", "n": ""},
+  {"f": "peruan", "i": "/pe.ˈru.an/", "p": "adj", "e": "Peruvian", "n": "demonym of Peru"},
+  {"f": "pes", "i": "/pes/", "p": "n", "e": "dog, everyday", "n": "formal can"},
+  {"f": "pesa", "i": "/ˈpe.sa/", "p": "v", "e": "weigh", "n": ""},
+  {"f": "pesant", "i": "/ˈpe.sant/", "p": "adj", "e": "heavy", "n": ""},
+  {"f": "pesce", "i": "/ˈpes.t͡ʃe/", "p": "n", "e": "fish", "n": "adjective piscin"},
+  {"f": "pesu", "i": "/ˈpe.su/", "p": "n", "e": "weight", "n": ""},
+  {"f": "peti", "i": "/ˈpe.ti/", "p": "v", "e": "request", "n": ""},
+  {"f": "petia", "i": "/pe.ˈti.a/", "p": "n", "e": "piece", "n": ""},
+  {"f": "petitiun", "i": "/pe.ti.ˈti.un/", "p": "n", "e": "petition", "n": "any person may put one, in any language"},
+  {"f": "petra", "i": "/ˈpe.tra/", "p": "n", "e": "stone", "n": "adjective petros"},
+  {"f": "piatza", "i": "/pi.ˈa.t͡sa/", "p": "n", "e": "square", "n": ""},
+  {"f": "picheta", "i": "/pik.ˈhe.ta/", "p": "v", "e": "picket", "n": ""},
+  {"f": "pietate", "i": "/pi.e.ˈta.te/", "p": "n", "e": "pity", "n": ""},
+  {"f": "pila", "i": "/ˈpi.la/", "p": "v", "e": "stack, pile", "n": ""},
+  {"f": "pilota", "i": "/pi.ˈlo.ta/", "p": "v", "e": "steer, drive a vessel", "n": ""},
+  {"f": "pilula", "i": "/pi.ˈlu.la/", "p": "n", "e": "pill", "n": ""},
+  {"f": "pinsa", "i": "/ˈpin.sa/", "p": "v", "e": "pinch", "n": ""},
+  {"f": "pinta", "i": "/ˈpin.ta/", "p": "v", "e": "paint", "n": ""},
+  {"f": "piper", "i": "/ˈpi.per/", "p": "n", "e": "pepper", "n": ""},
+  {"f": "pivo", "i": "/ˈpi.vo/", "p": "n", "e": "beer, everyday", "n": "formal birra; pivo everywhere in speech"},
+  {"f": "placa", "i": "/ˈpla.ka/", "p": "n", "e": "slab", "n": ""},
+  {"f": "place", "i": "/ˈpla.t͡ʃe/", "p": "v", "e": "please, be liked", "n": "se cafe place te me, I like the coffee"},
+  {"f": "plafon", "i": "/ˈpla.fon/", "p": "n", "e": "ceiling", "n": ""},
+  {"f": "plaga", "i": "/ˈpla.ga/", "p": "n", "e": "wound", "n": ""},
+  {"f": "plaj", "i": "/plaʒ/", "p": "n", "e": "beach", "n": ""},
+  {"f": "plan", "i": "/plan/", "p": "n", "e": "plan", "n": ""},
+  {"f": "plana", "i": "/ˈpla.na/", "p": "n", "e": "plain", "n": ""},
+  {"f": "plane", "i": "/ˈpla.ne/", "p": "adj", "e": "flat", "n": "plan is the plan"},
+  {"f": "planifica", "i": "/pla.ni.ˈfi.ka/", "p": "v", "e": "plan", "n": "planificatiun is the noun"},
+  {"f": "planificat", "i": "/pla.ni.ˈfi.kat/", "p": "adj", "e": "planned", "n": ""},
+  {"f": "planificatiun", "i": "/pla.ni.fi.ka.ˈti.un/", "p": "n", "e": "planning", "n": ""},
+  {"f": "planta", "i": "/ˈplan.ta/", "p": "n", "e": "plant", "n": ""},
+  {"f": "platu", "i": "/ˈpla.tu/", "p": "n", "e": "plate", "n": ""},
+  {"f": "plen", "i": "/plen/", "p": "adj", "e": "full", "n": ""},
+  {"f": "plena", "i": "/ˈple.na/", "p": "v", "e": "fill", "n": "from plen"},
+  {"f": "plicu", "i": "/ˈpli.ku/", "p": "n", "e": "envelope", "n": ""},
+  {"f": "plora", "i": "/ˈplo.ra/", "p": "v", "e": "cry, weep", "n": ""},
+  {"f": "plural", "i": "/ˈplu.ral/", "p": "n", "e": "plural", "n": ""},
+  {"f": "pluralite", "i": "/plu.ra.ˈli.te/", "p": "n", "e": "plurality", "n": ""},
+  {"f": "plures", "i": "/ˈplu.res/", "p": "pron", "e": "several", "n": ""},
+  {"f": "plus", "i": "/plus/", "p": "adv", "e": "more than, over", "n": "plus de un anu, more than a year"},
+  {"f": "pluvia", "i": "/plu.ˈvi.a/", "p": "n", "e": "rain", "n": "adjective pluvios"},
+  {"f": "poc", "i": "/pok/", "p": "det", "e": "few, little", "n": ""},
+  {"f": "pod", "i": "/pod/", "p": "n", "e": "bridge", "n": "adjective podak"},
+  {"f": "podlaha", "i": "/po.ˈdla.ha/", "p": "n", "e": "floor of a room", "n": ""},
+  {"f": "podnik", "i": "/ˈpod.nik/", "p": "n", "e": "enterprise, a public undertaking", "n": "the everyday word for a public undertaking"},
+  {"f": "polac", "i": "/ˈpo.lak/", "p": "adj", "e": "Polish", "n": ""},
+  {"f": "police", "i": "/po.ˈli.t͡ʃe/", "p": "n", "e": "thumb", "n": ""},
+  {"f": "policia", "i": "/po.ˈli.t͡ʃa/", "p": "n", "e": "police", "n": ""},
+  {"f": "polisce", "i": "/po.ˈlis.t͡ʃe/", "p": "v", "e": "polish", "n": ""},
+  {"f": "polu", "i": "/ˈpo.lu/", "p": "n", "e": "chicken", "n": ""},
+  {"f": "pom", "i": "/pom/", "p": "n", "e": "apple", "n": ""},
+  {"f": "pomar", "i": "/ˈpo.mar/", "p": "n", "e": "orchard", "n": ""},
+  {"f": "pomoc", "i": "/ˈpo.mok/", "p": "n", "e": "help, everyday", "n": "formal auxil; pomoc is what a person shouts"},
+  {"f": "pompa", "i": "/ˈpom.pa/", "p": "n", "e": "pump", "n": "the lagun works run on them"},
+  {"f": "pompiere", "i": "/pom.pi.ˈe.re/", "p": "n", "e": "firefighter", "n": ""},
+  {"f": "pone", "i": "/ˈpo.ne/", "p": "v", "e": "put", "n": ""},
+  {"f": "ponte", "i": "/ˈpon.te/", "p": "n", "e": "bridge, in the building trade", "n": "pod is the bridge a person crosses; ponte termic is a thermal bridge"},
+  {"f": "pontile", "i": "/pon.ˈti.le/", "p": "n", "e": "pier", "n": ""},
+  {"f": "popular", "i": "/po.ˈpu.lar/", "p": "adj", "e": "popular", "n": ""},
+  {"f": "populatiun", "i": "/po.pu.la.ˈti.un/", "p": "n", "e": "population", "n": ""},
+  {"f": "porc", "i": "/pork/", "p": "n", "e": "pig, pork", "n": "the animal and the meat alike"},
+  {"f": "poros", "i": "/ˈpo.ros/", "p": "adj", "e": "porous", "n": ""},
+  {"f": "port", "i": "/port/", "p": "n", "e": "port", "n": ""},
+  {"f": "porta", "i": "/ˈpor.ta/", "p": "n", "e": "door", "n": ""},
+  {"f": "portiun", "i": "/por.ˈti.un/", "p": "n", "e": "portion", "n": ""},
+  {"f": "portmoneu", "i": "/port.ˈmo.neu/", "p": "n", "e": "wallet", "n": ""},
+  {"f": "portocal", "i": "/por.ˈto.kal/", "p": "n", "e": "orange", "n": "the fruit; the colour is portocaliu"},
+  {"f": "portocaliu", "i": "/por.to.ka.ˈli.u/", "p": "adj", "e": "orange", "n": "from portocal, the fruit"},
+  {"f": "portughe", "i": "/por.ˈtug.he/", "p": "adj", "e": "Portuguese", "n": "demonym of Portugal"},
+  {"f": "posdeman", "i": "/pos.ˈde.man/", "p": "adv", "e": "the day after tomorrow", "n": "deman is tomorrow"},
+  {"f": "positiun", "i": "/po.si.ˈti.un/", "p": "n", "e": "position", "n": ""},
+  {"f": "possessiun", "i": "/po.se.ˈsi.un/", "p": "n", "e": "possession", "n": "carried by de and by nothing else"},
+  {"f": "possibile", "i": "/po.si.ˈbi.le/", "p": "adj", "e": "possible", "n": "the negative is nopossibile"},
+  {"f": "possibilement", "i": "/po.si.bi.ˈle.ment/", "p": "adv", "e": "possibly", "n": "possibilitate is the noun"},
+  {"f": "possibilitate", "i": "/po.si.bi.li.ˈta.te/", "p": "n", "e": "possibility", "n": ""},
+  {"f": "post", "i": "/post/", "p": "prep", "e": "after", "n": ""},
+  {"f": "posta", "i": "/ˈpos.ta/", "p": "n", "e": "post, post office", "n": ""},
+  {"f": "postea", "i": "/pos.ˈte.a/", "p": "adv", "e": "afterwards", "n": ""},
+  {"f": "postel", "i": "/ˈpos.tel/", "p": "n", "e": "bed, everyday", "n": "formal lecte"},
+  {"f": "postque", "i": "/ˈpost.ke/", "p": "conj", "e": "after, once", "n": ""},
+  {"f": "pote", "i": "/ˈpo.te/", "p": "v", "e": "can, may", "n": ""},
+  {"f": "potentia", "i": "/po.ten.ˈti.a/", "p": "n", "e": "power", "n": "of a body and of a machine"},
+  {"f": "poter", "i": "/ˈpo.ter/", "p": "n", "e": "power", "n": ""},
+  {"f": "praca", "i": "/ˈpra.ka/", "p": "v", "e": "work", "n": "also the everyday noun for work"},
+  {"f": "practica", "i": "/prak.ˈti.ka/", "p": "v", "e": "practise a trade", "n": "of a trade; praca of work in general"},
+  {"f": "prandiu", "i": "/pran.ˈdi.u/", "p": "n", "e": "midday meal, formal", "n": "everyday obed"},
+  {"f": "praxi", "i": "/ˈpra.ʃi/", "p": "n", "e": "practice", "n": "practica is the verb"},
+  {"f": "precedent", "i": "/pre.ˈt͡ʃe.dent/", "p": "adj", "e": "preceding", "n": ""},
+  {"f": "precis", "i": "/ˈpre.t͡ʃis/", "p": "adj", "e": "precise", "n": "precisa is the verb"},
+  {"f": "precisa", "i": "/pre.ˈt͡ʃi.sa/", "p": "v", "e": "state precisely", "n": "precisa se hora, give the exact time"},
+  {"f": "precisment", "i": "/pre.ˈt͡ʃis.ment/", "p": "adv", "e": "precisely", "n": ""},
+  {"f": "prefere", "i": "/pre.ˈfe.re/", "p": "v", "e": "prefer", "n": ""},
+  {"f": "preferentia", "i": "/pre.fe.ren.ˈti.a/", "p": "n", "e": "preference", "n": ""},
+  {"f": "prefix", "i": "/ˈpre.fiʃ/", "p": "n", "e": "prefix", "n": ""},
+  {"f": "prelectiun", "i": "/pre.lek.ˈti.un/", "p": "n", "e": "lecture", "n": ""},
+  {"f": "prende", "i": "/ˈpren.de/", "p": "v", "e": "take", "n": ""},
+  {"f": "prenome", "i": "/pre.ˈno.me/", "p": "n", "e": "given name", "n": ""},
+  {"f": "preocupatiun", "i": "/pre.o.ku.pa.ˈti.un/", "p": "n", "e": "concern, preoccupation", "n": ""},
+  {"f": "prepara", "i": "/pre.ˈpa.ra/", "p": "v", "e": "prepare", "n": ""},
+  {"f": "prepositiun", "i": "/pre.po.si.ˈti.un/", "p": "n", "e": "preposition", "n": ""},
+  {"f": "presa", "i": "/ˈpre.sa/", "p": "n", "e": "press", "n": ""},
+  {"f": "present", "i": "/ˈpre.sent/", "p": "adj", "e": "present", "n": ""},
+  {"f": "presenta", "i": "/pre.ˈsen.ta/", "p": "v", "e": "present, put forward", "n": ""},
+  {"f": "presente", "i": "/pre.ˈsen.te/", "p": "n", "e": "present time", "n": "also the adjective, present"},
+  {"f": "presentia", "i": "/pre.sen.ˈti.a/", "p": "n", "e": "presence", "n": ""},
+  {"f": "presida", "i": "/pre.ˈsi.da/", "p": "v", "e": "preside", "n": ""},
+  {"f": "presiun", "i": "/pre.ˈsi.un/", "p": "n", "e": "pressure", "n": "read on a manometru"},
+  {"f": "presso", "i": "/ˈpre.so/", "p": "prep", "e": "hard against, right beside", "n": "prope is nearness; presso is contact or all but"},
+  {"f": "prest", "i": "/prest/", "p": "adj", "e": "ready", "n": ""},
+  {"f": "presta", "i": "/ˈpres.ta/", "p": "v", "e": "lend", "n": "presta is to lend, mutua to borrow"},
+  {"f": "presto", "i": "/ˈpres.to/", "p": "adv", "e": "soon", "n": ""},
+  {"f": "prestu", "i": "/ˈpres.tu/", "p": "n", "e": "loanword", "n": "prestu lassat integr, a loan left whole"},
+  {"f": "presuma", "i": "/pre.ˈsu.ma/", "p": "v", "e": "presume", "n": ""},
+  {"f": "pretia", "i": "/pre.ˈti.a/", "p": "v", "e": "price, put a price on", "n": ""},
+  {"f": "pretiu", "i": "/pre.ˈti.u/", "p": "n", "e": "price", "n": ""},
+  {"f": "previde", "i": "/pre.ˈvi.de/", "p": "v", "e": "foresee", "n": ""},
+  {"f": "previsiun", "i": "/pre.vi.ˈsi.un/", "p": "n", "e": "forecast", "n": "the meteo cooperative issues them"},
+  {"f": "prexa", "i": "/ˈpre.ʃa/", "p": "adj", "e": "next in a sequence", "n": "prexa statiun, the next stop"},
+  {"f": "prexim", "i": "/ˈpre.ʃim/", "p": "adj", "e": "next", "n": "statiun prexim, the next stop"},
+  {"f": "prim", "i": "/prim/", "p": "adj", "e": "first", "n": ""},
+  {"f": "primavera", "i": "/pri.ma.ˈve.ra/", "p": "n", "e": "spring", "n": ""},
+  {"f": "primo", "i": "/ˈpri.mo/", "p": "adv", "e": "firstly", "n": "primo, secundo, ultimo in a list"},
+  {"f": "principal", "i": "/prin.ˈt͡ʃi.pal/", "p": "adj", "e": "main", "n": ""},
+  {"f": "principalment", "i": "/prin.t͡ʃi.ˈpal.ment/", "p": "adv", "e": "principally", "n": ""},
+  {"f": "principiu", "i": "/prin.t͡ʃi.ˈpi.u/", "p": "n", "e": "principle", "n": ""},
+  {"f": "prioritate", "i": "/pri.o.ri.ˈta.te/", "p": "n", "e": "priority", "n": "prioritate te se abaxa, priority to those getting down"},
+  {"f": "prisa", "i": "/ˈpri.sa/", "p": "n", "e": "socket", "n": ""},
+  {"f": "privat", "i": "/ˈpri.vat/", "p": "adj", "e": "private", "n": ""},
+  {"f": "privatament", "i": "/pri.va.ˈta.ment/", "p": "adv", "e": "privately", "n": ""},
+  {"f": "proba", "i": "/ˈpro.ba/", "p": "v", "e": "test, try out", "n": ""},
+  {"f": "probabile", "i": "/pro.ba.ˈbi.le/", "p": "adj", "e": "probable", "n": ""},
+  {"f": "probabilement", "i": "/pro.ba.bi.ˈle.ment/", "p": "adv", "e": "probably", "n": ""},
+  {"f": "probatiun", "i": "/pro.ba.ˈti.un/", "p": "n", "e": "proof, the proving of a thing", "n": ""},
+  {"f": "problem", "i": "/ˈpro.blem/", "p": "n", "e": "problem", "n": ""},
+  {"f": "problema", "i": "/pro.ˈble.ma/", "p": "n", "e": "problem", "n": ""},
+  {"f": "proce", "i": "/ˈpro.t͡ʃe/", "p": "n", "e": "process", "n": ""},
+  {"f": "procedura", "i": "/pro.t͡ʃe.ˈdu.ra/", "p": "n", "e": "procedure", "n": ""},
+  {"f": "proclama", "i": "/pro.ˈkla.ma/", "p": "v", "e": "proclaim a result", "n": "the result is proclaimed at the commune"},
+  {"f": "procul", "i": "/ˈpro.kul/", "p": "prep", "e": "far from", "n": ""},
+  {"f": "produce", "i": "/pro.ˈdu.t͡ʃe/", "p": "v", "e": "produce", "n": ""},
+  {"f": "product", "i": "/ˈpro.dukt/", "p": "n", "e": "product", "n": ""},
+  {"f": "productiun", "i": "/pro.duk.ˈti.un/", "p": "n", "e": "production", "n": ""},
+  {"f": "productiv", "i": "/pro.ˈduk.tiv/", "p": "adj", "e": "productive, of a suffix still in use", "n": ""},
+  {"f": "productivitate", "i": "/pro.duk.ti.vi.ˈta.te/", "p": "n", "e": "productivity", "n": ""},
+  {"f": "profesa", "i": "/pro.ˈfe.sa/", "p": "v", "e": "practise professionally", "n": ""},
+  {"f": "profesor", "i": "/pro.ˈfe.sor/", "p": "n", "e": "teacher", "n": ""},
+  {"f": "profund", "i": "/ˈpro.fund/", "p": "adj", "e": "deep", "n": ""},
+  {"f": "profundament", "i": "/pro.fun.ˈda.ment/", "p": "adv", "e": "deeply", "n": ""},
+  {"f": "profundu", "i": "/pro.ˈfun.du/", "p": "n", "e": "depth", "n": ""},
+  {"f": "programa", "i": "/pro.ˈgra.ma/", "p": "n", "e": "programme", "n": ""},
+  {"f": "programisa", "i": "/pro.gra.ˈmi.sa/", "p": "v", "e": "schedule, put on the timetable", "n": "programa is the programme"},
+  {"f": "progres", "i": "/ˈpro.gres/", "p": "n", "e": "progress", "n": ""},
+  {"f": "prohibe", "i": "/pro.ˈhi.be/", "p": "v", "e": "forbid", "n": ""},
+  {"f": "projectu", "i": "/pro.ˈʒek.tu/", "p": "n", "e": "project", "n": ""},
+  {"f": "promete", "i": "/pro.ˈme.te/", "p": "v", "e": "promise", "n": ""},
+  {"f": "promova", "i": "/pro.ˈmo.va/", "p": "v", "e": "promote", "n": ""},
+  {"f": "promulga", "i": "/pro.ˈmul.ga/", "p": "v", "e": "promulgate", "n": ""},
+  {"f": "pronome", "i": "/pro.ˈno.me/", "p": "n", "e": "pronoun", "n": ""},
+  {"f": "prononciatiun", "i": "/pro.non.t͡ʃa.ˈti.un/", "p": "n", "e": "pronunciation", "n": ""},
+  {"f": "pronuncia", "i": "/pro.nun.ˈt͡ʃi.a/", "p": "v", "e": "pronounce, deliver a ruling", "n": "of a court; prononciatiun is the noun"},
+  {"f": "prope", "i": "/ˈpro.pe/", "p": "prep", "e": "near", "n": "prope se statiun, near the stop"},
+  {"f": "propone", "i": "/pro.ˈpo.ne/", "p": "v", "e": "propose", "n": ""},
+  {"f": "proportiun", "i": "/pro.por.ˈti.un/", "p": "n", "e": "proportion", "n": ""},
+  {"f": "proposta", "i": "/pro.ˈpos.ta/", "p": "n", "e": "proposal", "n": ""},
+  {"f": "propri", "i": "/ˈpro.pri/", "p": "adj", "e": "own, proper to a thing", "n": ""},
+  {"f": "proprietariu", "i": "/pro.pri.e.ta.ˈri.u/", "p": "n", "e": "owner", "n": "no dwelling is held for gain"},
+  {"f": "prosop", "i": "/ˈpro.sop/", "p": "n", "e": "towel", "n": ""},
+  {"f": "prosperitate", "i": "/pros.pe.ri.ˈta.te/", "p": "n", "e": "prosperity", "n": ""},
+  {"f": "protege", "i": "/pro.ˈte.d͡ʒe/", "p": "v", "e": "protect", "n": ""},
+  {"f": "protejat", "i": "/pro.ˈte.ʒat/", "p": "adj", "e": "protected", "n": ""},
+  {"f": "protesta", "i": "/pro.ˈtes.ta/", "p": "v", "e": "protest", "n": ""},
+  {"f": "proteste", "i": "/pro.ˈtes.te/", "p": "n", "e": "a protest", "n": "protesta is the act; proteste is the thing that lasts and gets counted"},
+  {"f": "protocola", "i": "/pro.to.ˈko.la/", "p": "v", "e": "minute, record formally", "n": ""},
+  {"f": "protocolu", "i": "/pro.to.ˈko.lu/", "p": "n", "e": "formal record of proceedings", "n": ""},
+  {"f": "prototip", "i": "/pro.ˈto.tip/", "p": "n", "e": "prototype", "n": ""},
+  {"f": "prova", "i": "/ˈpro.va/", "p": "n", "e": "test, trial", "n": ""},
+  {"f": "provisiun", "i": "/pro.vi.ˈsi.un/", "p": "n", "e": "provision", "n": "of a text and of a store laid in"},
+  {"f": "provoca", "i": "/pro.ˈvo.ka/", "p": "v", "e": "provoke", "n": ""},
+  {"f": "proxim", "i": "/ˈpro.ʃim/", "p": "adj", "e": "next, nearby", "n": ""},
+  {"f": "proximitate", "i": "/pro.ʃi.mi.ˈta.te/", "p": "n", "e": "nearness", "n": "prexim is the adjective on the eastern seaboard"},
+  {"f": "prudente", "i": "/pru.ˈden.te/", "p": "adj", "e": "prudent", "n": ""},
+  {"f": "prudentement", "i": "/pru.den.ˈte.ment/", "p": "adv", "e": "prudently", "n": ""},
+  {"f": "prudentia", "i": "/pru.den.ˈti.a/", "p": "n", "e": "prudence", "n": ""},
+  {"f": "pruna", "i": "/ˈpru.na/", "p": "n", "e": "plum", "n": ""},
+  {"f": "public", "i": "/ˈpu.blik/", "p": "adj", "e": "public", "n": ""},
+  {"f": "publica", "i": "/pu.ˈbli.ka/", "p": "v", "e": "publish", "n": ""},
+  {"f": "publicament", "i": "/pu.bli.ˈka.ment/", "p": "adv", "e": "publicly", "n": "of a sitting held in the open"},
+  {"f": "publicatiun", "i": "/pu.bli.ka.ˈti.un/", "p": "n", "e": "publication", "n": ""},
+  {"f": "puella", "i": "/pu.ˈe.la/", "p": "n", "e": "girl", "n": ""},
+  {"f": "puer", "i": "/ˈpu.er/", "p": "n", "e": "boy", "n": ""},
+  {"f": "pullover", "i": "/pu.ˈlo.ver/", "p": "n", "e": "jumper", "n": ""},
+  {"f": "pulmon", "i": "/ˈpul.mon/", "p": "n", "e": "lung", "n": ""},
+  {"f": "pulsu", "i": "/ˈpul.su/", "p": "n", "e": "pulse", "n": ""},
+  {"f": "punt", "i": "/punt/", "p": "n", "e": "point, spot", "n": ""},
+  {"f": "pupitre", "i": "/pu.ˈpi.tre/", "p": "n", "e": "desk", "n": ""},
+  {"f": "purpure", "i": "/pur.ˈpu.re/", "p": "adj", "e": "purple", "n": ""},
+  {"f": "pusa", "i": "/ˈpu.sa/", "p": "v", "e": "push", "n": "no pusa vos un se altre"},
+  {"f": "pussa", "i": "/ˈpu.sa/", "p": "v", "e": "push", "n": ""},
+  {"f": "putri", "i": "/ˈpu.tri/", "p": "v", "e": "rot", "n": "putrid is the adjective"},
+  {"f": "putrid", "i": "/ˈpu.trid/", "p": "adj", "e": "rotten", "n": ""},
+  {"f": "quadrat", "i": "/ˈka.drat/", "p": "adj", "e": "square", "n": ""},
+  {"f": "quale", "i": "/ˈka.le/", "p": "det", "e": "which, what sort of", "n": ""},
+  {"f": "qualifica", "i": "/ka.li.ˈfi.ka/", "p": "v", "e": "qualify", "n": ""},
+  {"f": "quam", "i": "/kam/", "p": "conj", "e": "than", "n": "plus grande quam; que is common in speech"},
+  {"f": "quando", "i": "/ˈkan.do/", "p": "adv", "e": "when", "n": ""},
+  {"f": "quante", "i": "/ˈkan.te/", "p": "det", "e": "how many, how much", "n": ""},
+  {"f": "quanto", "i": "/ˈkan.to/", "p": "adv", "e": "how much", "n": ""},
+  {"f": "quaranta", "i": "/ka.ˈran.ta/", "p": "num", "e": "forty", "n": ""},
+  {"f": "quart", "i": "/kart/", "p": "n", "e": "quarter, a fourth", "n": "past the third the numeral stands after the noun: articul quatre"},
+  {"f": "quartier", "i": "/kar.ˈti.er/", "p": "n", "e": "district of a town", "n": ""},
+  {"f": "quasi", "i": "/ˈka.si/", "p": "adv", "e": "almost", "n": ""},
+  {"f": "quatre", "i": "/ˈka.tre/", "p": "num", "e": "four", "n": ""},
+  {"f": "que", "i": "/ke/", "p": "pron", "e": "what, which, that", "n": ""},
+  {"f": "quenian", "i": "/ke.ˈni.an/", "p": "adj", "e": "Kenyan", "n": "demonym of Quenia"},
+  {"f": "quere", "i": "/ˈke.re/", "p": "v", "e": "look for, seek", "n": ""},
+  {"f": "question", "i": "/kes.ˈti.un/", "p": "n", "e": "question, matter in issue", "n": "demanda is what a person asks; question is the matter itself"},
+  {"f": "questiun", "i": "/kes.ˈti.un/", "p": "n", "e": "question", "n": ""},
+  {"f": "qui", "i": "/ki/", "p": "pron", "e": "who", "n": ""},
+  {"f": "quiet", "i": "/ˈki.et/", "p": "adj", "e": "quiet", "n": ""},
+  {"f": "quilo", "i": "/ˈki.lo/", "p": "n", "e": "kilogram", "n": ""},
+  {"f": "quilometru", "i": "/ki.lo.ˈme.tru/", "p": "n", "e": "kilometre", "n": ""},
+  {"f": "quirgizstanian", "i": "/kir.d͡ʒizs.ta.ˈni.an/", "p": "adj", "e": "Kyrgyz", "n": "demonym of Quirgizstan"},
+  {"f": "quiribatan", "i": "/ki.ri.ˈba.tan/", "p": "adj", "e": "I-Kiribati", "n": "demonym of Quiribati"},
+  {"f": "quisque", "i": "/ˈkis.ke/", "p": "pron", "e": "each one", "n": ""},
+  {"f": "quo", "i": "/ko/", "p": "adv", "e": "whither, to where", "n": ""},
+  {"f": "quorum", "i": "/ˈko.rum/", "p": "n", "e": "quorum", "n": ""},
+  {"f": "quota", "i": "/ˈko.ta/", "p": "n", "e": "quota", "n": ""},
+  {"f": "quotidian", "i": "/ko.ti.ˈdi.an/", "p": "adj", "e": "daily", "n": "die is the day"},
+  {"f": "quotidianment", "i": "/ko.ti.di.ˈan.ment/", "p": "adv", "e": "daily", "n": ""},
+  {"f": "rada", "i": "/ˈra.da/", "p": "n", "e": "anchorage", "n": ""},
+  {"f": "radia", "i": "/ra.ˈdi.a/", "p": "v", "e": "strike off a register", "n": ""},
+  {"f": "radiator", "i": "/ra.di.ˈa.tor/", "p": "n", "e": "radiator", "n": ""},
+  {"f": "radice", "i": "/ra.ˈdi.t͡ʃe/", "p": "n", "e": "stem of a word, root", "n": ""},
+  {"f": "radio", "i": "/ra.ˈdi.o/", "p": "n", "e": "radio", "n": ""},
+  {"f": "radiu", "i": "/ra.ˈdi.u/", "p": "n", "e": "radius", "n": ""},
+  {"f": "rafred", "i": "/ˈra.fred/", "p": "n", "e": "a cold", "n": ""},
+  {"f": "raft", "i": "/raft/", "p": "n", "e": "shelf", "n": ""},
+  {"f": "ramu", "i": "/ˈra.mu/", "p": "n", "e": "frame", "n": "se ramu de porta, the door frame"},
+  {"f": "rand", "i": "/rand/", "p": "n", "e": "queue, everyday", "n": "formal fila; kept from the Directorate years"},
+  {"f": "rapid", "i": "/ˈra.pid/", "p": "adj", "e": "fast", "n": ""},
+  {"f": "rapidament", "i": "/ra.pi.ˈda.ment/", "p": "adv", "e": "quickly", "n": "the suffix takes a linking a after any consonant but l, n, r or s"},
+  {"f": "rapiditate", "i": "/ra.pi.di.ˈta.te/", "p": "n", "e": "speed", "n": ""},
+  {"f": "raport", "i": "/ˈra.port/", "p": "n", "e": "report", "n": ""},
+  {"f": "rar", "i": "/rar/", "p": "adj", "e": "rare", "n": "raro is the adverb"},
+  {"f": "raro", "i": "/ˈra.ro/", "p": "adv", "e": "seldom", "n": ""},
+  {"f": "rasa", "i": "/ˈra.sa/", "p": "v", "e": "plane, level off", "n": ""},
+  {"f": "ratifica", "i": "/ra.ti.ˈfi.ka/", "p": "v", "e": "ratify", "n": ""},
+  {"f": "ratificatiun", "i": "/ra.ti.fi.ka.ˈti.un/", "p": "n", "e": "ratification", "n": ""},
+  {"f": "rationa", "i": "/ra.ti.ˈo.na/", "p": "v", "e": "reason", "n": ""},
+  {"f": "rational", "i": "/ra.ti.ˈo.nal/", "p": "adj", "e": "rational", "n": ""},
+  {"f": "rationalisa", "i": "/ra.ti.o.na.ˈli.sa/", "p": "v", "e": "rationalise", "n": ""},
+  {"f": "rationalment", "i": "/ra.ti.o.ˈnal.ment/", "p": "adv", "e": "rationally", "n": ""},
+  {"f": "ratiun", "i": "/ra.ˈti.un/", "p": "n", "e": "reason, ground", "n": "causa of what brings a thing about"},
+  {"f": "re-", "i": "", "p": "pref", "e": "again", "n": ""},
+  {"f": "reactiun", "i": "/re.ak.ˈti.un/", "p": "n", "e": "chemical reaction", "n": ""},
+  {"f": "real", "i": "/ˈre.al/", "p": "adj", "e": "real, actual", "n": "se data real, the date the work will actually end"},
+  {"f": "realite", "i": "/re.a.ˈli.te/", "p": "n", "e": "reality", "n": ""},
+  {"f": "reaperture", "i": "/re.a.per.ˈtu.re/", "p": "n", "e": "reopening", "n": "aperi is to open; reaperture is the opening of a thing closed for work"},
+  {"f": "recent", "i": "/ˈre.t͡ʃent/", "p": "adj", "e": "recent", "n": ""},
+  {"f": "recentament", "i": "/re.t͡ʃen.ˈta.ment/", "p": "adv", "e": "recently", "n": ""},
+  {"f": "receptor", "i": "/re.ˈt͡ʃep.tor/", "p": "n", "e": "receiver", "n": ""},
+  {"f": "receta", "i": "/re.ˈt͡ʃe.ta/", "p": "n", "e": "recipe, prescription", "n": ""},
+  {"f": "recif", "i": "/ˈre.t͡ʃif/", "p": "n", "e": "reef", "n": ""},
+  {"f": "reciproc", "i": "/re.ˈt͡ʃi.prok/", "p": "adj", "e": "reciprocal", "n": ""},
+  {"f": "reciprocament", "i": "/re.t͡ʃi.pro.ˈka.ment/", "p": "adv", "e": "reciprocally", "n": ""},
+  {"f": "recive", "i": "/re.ˈt͡ʃi.ve/", "p": "v", "e": "receive", "n": ""},
+  {"f": "reclama", "i": "/re.ˈkla.ma/", "p": "v", "e": "claim, complain formally", "n": "of a formal complaint; clama of a shout"},
+  {"f": "reclina", "i": "/re.ˈkli.na/", "p": "v", "e": "lean back", "n": ""},
+  {"f": "recomanda", "i": "/re.ko.ˈman.da/", "p": "v", "e": "recommend", "n": ""},
+  {"f": "recomandatiun", "i": "/re.ko.man.da.ˈti.un/", "p": "n", "e": "recommendation", "n": ""},
+  {"f": "reconosce", "i": "/re.ko.ˈnos.t͡ʃe/", "p": "v", "e": "recognise", "n": ""},
+  {"f": "record", "i": "/ˈre.kord/", "p": "n", "e": "record", "n": ""},
+  {"f": "recorda", "i": "/re.ˈkor.da/", "p": "v", "e": "remember", "n": ""},
+  {"f": "recruta", "i": "/re.ˈkru.ta/", "p": "v", "e": "recruit", "n": ""},
+  {"f": "rect", "i": "/rekt/", "p": "adj", "e": "straight", "n": "recte is the adverb"},
+  {"f": "recte", "i": "/ˈrek.te/", "p": "adv", "e": "straight on", "n": ""},
+  {"f": "recuperatiun", "i": "/re.ku.pe.ra.ˈti.un/", "p": "n", "e": "recovery", "n": ""},
+  {"f": "recursu", "i": "/re.ˈkur.su/", "p": "n", "e": "recourse", "n": ""},
+  {"f": "redacta", "i": "/re.ˈdak.ta/", "p": "v", "e": "draft, write up", "n": "of a text put into form; scriva of the act"},
+  {"f": "redactiun", "i": "/re.dak.ˈti.un/", "p": "n", "e": "editorial desk", "n": "presa is the press as a body; redactiun is the desk that signs a piece"},
+  {"f": "reductiun", "i": "/re.duk.ˈti.un/", "p": "n", "e": "discount", "n": ""},
+  {"f": "reelige", "i": "/re.e.ˈli.d͡ʒe/", "p": "v", "e": "re-elect", "n": ""},
+  {"f": "referendu", "i": "/re.fe.ˈren.du/", "p": "n", "e": "referendum", "n": ""},
+  {"f": "referentia", "i": "/re.fe.ren.ˈti.a/", "p": "n", "e": "reference", "n": ""},
+  {"f": "reflexiv", "i": "/re.fle.ˈʃiv/", "p": "adj", "e": "reflexive", "n": "sese is the reflexive; ipse is emphatic"},
+  {"f": "refugiu", "i": "/re.ˈfu.d͡ʒu/", "p": "n", "e": "shelter", "n": ""},
+  {"f": "refusa", "i": "/re.ˈfu.sa/", "p": "v", "e": "refuse", "n": "refusa se transbord, refuse the transfer"},
+  {"f": "regarda", "i": "/re.ˈgar.da/", "p": "v", "e": "look at", "n": "vidi is to see, regarda is to look"},
+  {"f": "regional", "i": "/re.d͡ʒi.ˈo.nal/", "p": "adj", "e": "regional", "n": ""},
+  {"f": "regionalment", "i": "/re.d͡ʒi.o.ˈnal.ment/", "p": "adv", "e": "regionally", "n": ""},
+  {"f": "registra", "i": "/re.ˈd͡ʒis.tra/", "p": "v", "e": "enter in a register", "n": "registru is the register"},
+  {"f": "registru", "i": "/re.ˈd͡ʒis.tru/", "p": "n", "e": "register", "n": ""},
+  {"f": "registru-contabil", "i": "/re.d͡ʒis.tru.kon.ˈta.bil/", "p": "n", "e": "ledger", "n": ""},
+  {"f": "regiun", "i": "/ˈre.d͡ʒun/", "p": "n", "e": "region", "n": ""},
+  {"f": "regla", "i": "/ˈre.gla/", "p": "v", "e": "set, regulate", "n": "of an instrument; regula is the rule"},
+  {"f": "regretu", "i": "/re.ˈgre.tu/", "p": "n", "e": "regret", "n": "of a thing done; luctu of a person lost"},
+  {"f": "regula", "i": "/re.ˈgu.la/", "p": "n", "e": "rule", "n": ""},
+  {"f": "regulament", "i": "/re.gu.ˈla.ment/", "p": "n", "e": "regulation", "n": ""},
+  {"f": "regulamentu", "i": "/re.gu.la.ˈmen.tu/", "p": "n", "e": "regulation", "n": "regula is the rule itself"},
+  {"f": "reintegra", "i": "/re.in.ˈte.gra/", "p": "v", "e": "reinstate", "n": ""},
+  {"f": "relata", "i": "/re.ˈla.ta/", "p": "v", "e": "report", "n": ""},
+  {"f": "relatiun", "i": "/re.la.ˈti.un/", "p": "n", "e": "relation", "n": ""},
+  {"f": "relativ", "i": "/re.ˈla.tiv/", "p": "adj", "e": "relative", "n": ""},
+  {"f": "relativament", "i": "/re.la.ti.ˈva.ment/", "p": "adv", "e": "relatively", "n": ""},
+  {"f": "remar", "i": "/ˈre.mar/", "p": "v", "e": "row", "n": ""},
+  {"f": "remarca", "i": "/re.ˈmar.ka/", "p": "v", "e": "notice", "n": ""},
+  {"f": "rembursa", "i": "/rem.ˈbur.sa/", "p": "v", "e": "reimburse", "n": ""},
+  {"f": "rememora", "i": "/re.me.ˈmo.ra/", "p": "v", "e": "call to mind", "n": ""},
+  {"f": "remolca", "i": "/re.ˈmol.ka/", "p": "v", "e": "tow", "n": ""},
+  {"f": "remuneratiun", "i": "/re.mu.ne.ra.ˈti.un/", "p": "n", "e": "remuneration", "n": ""},
+  {"f": "ren", "i": "/ren/", "p": "n", "e": "kidney", "n": ""},
+  {"f": "renova", "i": "/re.ˈno.va/", "p": "v", "e": "renovate", "n": ""},
+  {"f": "renovatiun", "i": "/re.no.va.ˈti.un/", "p": "n", "e": "renovation", "n": "renova is the act; renovatiun is the programme and the item in it"},
+  {"f": "renuncia", "i": "/re.nun.ˈt͡ʃi.a/", "p": "v", "e": "give up, renounce", "n": ""},
+  {"f": "repara", "i": "/re.ˈpa.ra/", "p": "v", "e": "repair", "n": ""},
+  {"f": "reparatiun", "i": "/re.pa.ra.ˈti.un/", "p": "n", "e": "repair", "n": "repara is the act; reparatiun is the item in a programme"},
+  {"f": "reparti", "i": "/re.ˈpar.ti/", "p": "v", "e": "distribute, share out", "n": ""},
+  {"f": "repete", "i": "/re.ˈpe.te/", "p": "v", "e": "repeat", "n": "repete, per favor, say that again please"},
+  {"f": "repetitiun", "i": "/re.pe.ti.ˈti.un/", "p": "n", "e": "repetition", "n": ""},
+  {"f": "replica", "i": "/re.ˈpli.ka/", "p": "n", "e": "aftershock", "n": ""},
+  {"f": "repos", "i": "/ˈre.pos/", "p": "n", "e": "rest", "n": ""},
+  {"f": "reposa", "i": "/re.ˈpo.sa/", "p": "v", "e": "rest", "n": ""},
+  {"f": "repta", "i": "/ˈrep.ta/", "p": "v", "e": "crawl", "n": ""},
+  {"f": "republica", "i": "/re.pu.ˈbli.ka/", "p": "n", "e": "republic", "n": ""},
+  {"f": "requesta", "i": "/re.ˈkes.ta/", "p": "n", "e": "demand, request", "n": ""},
+  {"f": "rescinde", "i": "/res.ˈt͡ʃin.de/", "p": "v", "e": "rescind", "n": ""},
+  {"f": "reserva", "i": "/re.ˈser.va/", "p": "v", "e": "book, set aside", "n": ""},
+  {"f": "residente", "i": "/re.si.ˈden.te/", "p": "n", "e": "resident", "n": ""},
+  {"f": "resistentia", "i": "/re.sis.ten.ˈti.a/", "p": "n", "e": "resistance", "n": "of a material and of a people"},
+  {"f": "resolve", "i": "/re.ˈsol.ve/", "p": "v", "e": "resolve, make up one's mind", "n": "solve is to settle a matter"},
+  {"f": "resona", "i": "/re.ˈso.na/", "p": "v", "e": "echo, resound", "n": ""},
+  {"f": "respecta", "i": "/res.ˈpek.ta/", "p": "v", "e": "respect", "n": ""},
+  {"f": "respira", "i": "/res.ˈpi.ra/", "p": "v", "e": "breathe", "n": ""},
+  {"f": "respiratiun", "i": "/res.pi.ra.ˈti.un/", "p": "n", "e": "breathing", "n": "respira is the verb"},
+  {"f": "responde", "i": "/res.ˈpon.de/", "p": "v", "e": "answer", "n": ""},
+  {"f": "responsabile", "i": "/res.pon.sa.ˈbi.le/", "p": "adj", "e": "accountable", "n": ""},
+  {"f": "responsabilitate", "i": "/res.pon.sa.bi.li.ˈta.te/", "p": "n", "e": "responsibility", "n": ""},
+  {"f": "resta", "i": "/ˈres.ta/", "p": "v", "e": "remain", "n": ""},
+  {"f": "restant", "i": "/res.ˈtant/", "p": "adj", "e": "remaining, outstanding", "n": "praca restant, the work still to do"},
+  {"f": "restar", "i": "/ˈres.tar/", "p": "v", "e": "stay, remain in place", "n": ""},
+  {"f": "restorant", "i": "/res.ˈto.rant/", "p": "n", "e": "restaurant", "n": ""},
+  {"f": "resultat", "i": "/re.ˈsul.tat/", "p": "n", "e": "result", "n": ""},
+  {"f": "resuma", "i": "/re.ˈsu.ma/", "p": "v", "e": "sum up", "n": ""},
+  {"f": "resursa", "i": "/re.ˈsur.sa/", "p": "n", "e": "resource", "n": ""},
+  {"f": "retard", "i": "/ˈre.tard/", "p": "n", "e": "delay", "n": ""},
+  {"f": "rete", "i": "/ˈre.te/", "p": "n", "e": "network", "n": ""},
+  {"f": "rete-de-pesce", "i": "/re.te.de.ˈpes.t͡ʃe/", "p": "n", "e": "fishing net", "n": ""},
+  {"f": "rete-electric", "i": "/re.te.e.ˈlek.trik/", "p": "n", "e": "electricity grid", "n": "rete is the network in general"},
+  {"f": "retira", "i": "/re.ˈti.ra/", "p": "v", "e": "withdraw", "n": ""},
+  {"f": "retorca", "i": "/re.ˈtor.ka/", "p": "v", "e": "retort, answer back", "n": ""},
+  {"f": "retro", "i": "/ˈre.tro/", "p": "adv", "e": "backwards", "n": ""},
+  {"f": "retrocede", "i": "/re.tro.ˈt͡ʃe.de/", "p": "v", "e": "reverse, back up", "n": "of a vehicle; used in the depots"},
+  {"f": "returna", "i": "/re.ˈtur.na/", "p": "v", "e": "return, come back", "n": ""},
+  {"f": "reuniun", "i": "/reu.ˈni.un/", "p": "n", "e": "meeting", "n": ""},
+  {"f": "revela", "i": "/re.ˈve.la/", "p": "v", "e": "reveal", "n": ""},
+  {"f": "revide", "i": "/re.ˈvi.de/", "p": "v", "e": "review, look over again", "n": ""},
+  {"f": "revisa", "i": "/re.ˈvi.sa/", "p": "v", "e": "revise", "n": ""},
+  {"f": "revisiun", "i": "/re.vi.ˈsi.un/", "p": "n", "e": "revision", "n": ""},
+  {"f": "revoca", "i": "/re.ˈvo.ka/", "p": "v", "e": "recall, revoke", "n": "revocatiun is the noun"},
+  {"f": "revocatiun", "i": "/re.vo.ka.ˈti.un/", "p": "n", "e": "recall of a member", "n": ""},
+  {"f": "ric", "i": "/rik/", "p": "adj", "e": "rich", "n": ""},
+  {"f": "ride", "i": "/ˈri.de/", "p": "v", "e": "laugh", "n": ""},
+  {"f": "rigid", "i": "/ˈri.d͡ʒid/", "p": "adj", "e": "rigid", "n": ""},
+  {"f": "risca", "i": "/ˈris.ka/", "p": "v", "e": "risk", "n": ""},
+  {"f": "ritmu", "i": "/ˈrit.mu/", "p": "n", "e": "rhythm", "n": "of speech and of a machine"},
+  {"f": "riu", "i": "/ˈri.u/", "p": "n", "e": "river", "n": ""},
+  {"f": "riz", "i": "/riz/", "p": "n", "e": "rice", "n": ""},
+  {"f": "roba", "i": "/ˈro.ba/", "p": "n", "e": "dress", "n": ""},
+  {"f": "robiga", "i": "/ro.ˈbi.ga/", "p": "v", "e": "rust", "n": ""},
+  {"f": "robinete", "i": "/ro.bi.ˈne.te/", "p": "n", "e": "tap", "n": ""},
+  {"f": "roga", "i": "/ˈro.ga/", "p": "v", "e": "ask for, request", "n": "milder than peti and commoner in speech"},
+  {"f": "rola", "i": "/ˈro.la/", "p": "v", "e": "roll", "n": ""},
+  {"f": "rolu", "i": "/ˈro.lu/", "p": "n", "e": "role", "n": ""},
+  {"f": "rompe", "i": "/ˈrom.pe/", "p": "v", "e": "break", "n": ""},
+  {"f": "rondela", "i": "/ron.ˈde.la/", "p": "n", "e": "washer", "n": ""},
+  {"f": "rondu", "i": "/ˈron.du/", "p": "n", "e": "round", "n": "rondu de negociatiun, a round of the plan cycle"},
+  {"f": "rosa", "i": "/ˈro.sa/", "p": "adj", "e": "pink", "n": ""},
+  {"f": "rota", "i": "/ˈro.ta/", "p": "n", "e": "roll, list of names", "n": ""},
+  {"f": "rotationa", "i": "/ro.ta.ti.ˈo.na/", "p": "v", "e": "rotate a duty", "n": ""},
+  {"f": "rotatiun", "i": "/ro.ta.ˈti.un/", "p": "n", "e": "spin, rotation", "n": "rota is the wheel"},
+  {"f": "rotund", "i": "/ˈro.tund/", "p": "adj", "e": "round", "n": "quadrat is the square"},
+  {"f": "rox", "i": "/roʃ/", "p": "adj", "e": "red", "n": ""},
+  {"f": "ruandan", "i": "/ru.ˈan.dan/", "p": "adj", "e": "Rwandan", "n": "demonym of Ruanda"},
+  {"f": "rumen", "i": "/ˈru.men/", "p": "adj", "e": "Romanian", "n": ""},
+  {"f": "rumor", "i": "/ˈru.mor/", "p": "n", "e": "noise", "n": ""},
+  {"f": "rumpe", "i": "/ˈrum.pe/", "p": "v", "e": "break", "n": ""},
+  {"f": "rural", "i": "/ˈru.ral/", "p": "adj", "e": "rural", "n": ""},
+  {"f": "rus", "i": "/rus/", "p": "adj", "e": "Russian", "n": ""},
+  {"f": "ruta", "i": "/ˈru.ta/", "p": "n", "e": "route", "n": ""},
+  {"f": "sabate", "i": "/sa.ˈba.te/", "p": "n", "e": "Saturday", "n": ""},
+  {"f": "sabla", "i": "/ˈsa.bla/", "p": "n", "e": "sand", "n": ""},
+  {"f": "sac", "i": "/sak/", "p": "n", "e": "bag", "n": ""},
+  {"f": "saharan", "i": "/sa.ˈha.ran/", "p": "adj", "e": "Sahrawi", "n": "demonym of Sahara Ovest"},
+  {"f": "sal", "i": "/sal/", "p": "n", "e": "salt", "n": ""},
+  {"f": "salariatu", "i": "/sa.la.ri.ˈa.tu/", "p": "n", "e": "employee", "n": ""},
+  {"f": "salariu", "i": "/sa.la.ˈri.u/", "p": "n", "e": "wage", "n": ""},
+  {"f": "salat", "i": "/ˈsa.lat/", "p": "adj", "e": "salty", "n": ""},
+  {"f": "sali", "i": "/ˈsa.li/", "p": "int", "e": "hello", "n": ""},
+  {"f": "salinitate", "i": "/sa.li.ni.ˈta.te/", "p": "n", "e": "salinity", "n": ""},
+  {"f": "salomonan", "i": "/sa.lo.ˈmo.nan/", "p": "adj", "e": "Solomon Islander", "n": "demonym of Insulas Salomon"},
+  {"f": "salsa", "i": "/ˈsal.sa/", "p": "n", "e": "sauce", "n": ""},
+  {"f": "salta", "i": "/ˈsal.ta/", "p": "v", "e": "jump", "n": ""},
+  {"f": "saltu", "i": "/ˈsal.tu/", "p": "n", "e": "leap", "n": "salta is the verb"},
+  {"f": "saluta", "i": "/sa.ˈlu.ta/", "p": "v", "e": "greet", "n": "sali is the greeting itself"},
+  {"f": "salva", "i": "/ˈsal.va/", "p": "v", "e": "save, rescue", "n": ""},
+  {"f": "salvadorian", "i": "/sal.va.do.ˈri.an/", "p": "adj", "e": "Salvadoran", "n": "demonym of Salvador"},
+  {"f": "salvo", "i": "/ˈsal.vo/", "p": "prep", "e": "except, save for", "n": ""},
+  {"f": "samoan", "i": "/sa.ˈmo.an/", "p": "adj", "e": "Samoan", "n": "demonym of Samoa"},
+  {"f": "san", "i": "/san/", "p": "adj", "e": "healthy", "n": ""},
+  {"f": "sana", "i": "/ˈsa.na/", "p": "v", "e": "heal, cure", "n": ""},
+  {"f": "sancristan", "i": "/san.ˈkris.tan/", "p": "adj", "e": "Kittitian", "n": "demonym of San Cris"},
+  {"f": "sanctiona", "i": "/sank.ti.ˈo.na/", "p": "v", "e": "sanction, penalise", "n": ""},
+  {"f": "sandale", "i": "/san.ˈda.le/", "p": "n", "e": "sandal", "n": ""},
+  {"f": "sang", "i": "/sang/", "p": "n", "e": "blood", "n": ""},
+  {"f": "sanguina", "i": "/san.gu.ˈi.na/", "p": "v", "e": "bleed", "n": "me ave sang is the everyday form"},
+  {"f": "sanitate", "i": "/sa.ni.ˈta.te/", "p": "n", "e": "health", "n": "adjective sanitar"},
+  {"f": "sanmarinan", "i": "/san.ma.ˈri.nan/", "p": "adj", "e": "Sammarinese", "n": "demonym of San Marin"},
+  {"f": "santoman", "i": "/san.ˈto.man/", "p": "adj", "e": "Sao Tomean", "n": "demonym of San Tome"},
+  {"f": "sapi", "i": "/ˈsa.pi/", "p": "v", "e": "know", "n": ""},
+  {"f": "sapientia", "i": "/sa.pi.en.ˈti.a/", "p": "n", "e": "knowledge, wisdom", "n": "sapi is the verb"},
+  {"f": "sapon", "i": "/ˈsa.pon/", "p": "n", "e": "soap", "n": ""},
+  {"f": "sapora", "i": "/sa.ˈpo.ra/", "p": "v", "e": "taste of", "n": ""},
+  {"f": "saramura", "i": "/sa.ra.ˈmu.ra/", "p": "n", "e": "brine", "n": "the electrolis runs on it"},
+  {"f": "sarko", "i": "/ˈsar.ko/", "p": "n", "e": "a corrupt person outside the public sector", "n": ""},
+  {"f": "sat", "i": "/sat/", "p": "adv", "e": "enough", "n": ""},
+  {"f": "satisfactiun", "i": "/sa.tis.fak.ˈti.un/", "p": "n", "e": "satisfaction", "n": ""},
+  {"f": "saudit", "i": "/ˈsau.dit/", "p": "adj", "e": "Saudi", "n": "demonym of Arabia Saudit"},
+  {"f": "scadentia", "i": "/ska.den.ˈti.a/", "p": "n", "e": "deadline, expiry", "n": "scadentia de se termine, the falling due of the term"},
+  {"f": "scala", "i": "/ˈska.la/", "p": "n", "e": "scale", "n": ""},
+  {"f": "scalinata", "i": "/ska.li.ˈna.ta/", "p": "n", "e": "stairs inside a dwelling", "n": "scodi is the shared stairwell"},
+  {"f": "scalpru", "i": "/ˈskal.pru/", "p": "n", "e": "chisel", "n": ""},
+  {"f": "scara", "i": "/ˈska.ra/", "p": "n", "e": "ladder", "n": "scala is the scale"},
+  {"f": "scarpa", "i": "/ˈskar.pa/", "p": "n", "e": "shoe", "n": ""},
+  {"f": "schela", "i": "/ˈskhe.la/", "p": "n", "e": "scaffold", "n": ""},
+  {"f": "scientific", "i": "/st͡ʃi.en.ˈti.fik/", "p": "adj", "e": "scientific", "n": ""},
+  {"f": "scinde", "i": "/ˈst͡ʃin.de/", "p": "v", "e": "split off", "n": ""},
+  {"f": "scodi", "i": "/ˈsko.di/", "p": "n", "e": "stairwell", "n": ""},
+  {"f": "scola", "i": "/ˈsko.la/", "p": "n", "e": "school", "n": ""},
+  {"f": "scopa", "i": "/ˈsko.pa/", "p": "n", "e": "broom", "n": ""},
+  {"f": "scopu", "i": "/ˈsko.pu/", "p": "n", "e": "purpose", "n": ""},
+  {"f": "scosa", "i": "/ˈsko.sa/", "p": "n", "e": "jolt, a single shock", "n": "tremor is the shaking that lasts; scosa is one movement of the floor"},
+  {"f": "scribe", "i": "/ˈskri.be/", "p": "v", "e": "write", "n": ""},
+  {"f": "scrit", "i": "/skrit/", "p": "adj", "e": "written", "n": "the participle of scribe standing as an adjective; parlat is its opposite"},
+  {"f": "scriva", "i": "/ˈskri.va/", "p": "v", "e": "write", "n": ""},
+  {"f": "scruta", "i": "/ˈskru.ta/", "p": "v", "e": "scan, search with the eyes", "n": ""},
+  {"f": "scrutina", "i": "/skru.ˈti.na/", "p": "v", "e": "scrutinise a count", "n": ""},
+  {"f": "scrutiniu", "i": "/skru.ti.ˈni.u/", "p": "n", "e": "ballot", "n": ""},
+  {"f": "scump", "i": "/skump/", "p": "adj", "e": "expensive", "n": ""},
+  {"f": "se", "i": "/se/", "p": "art", "e": "the", "n": "also the object article: me no se jizde"},
+  {"f": "sec", "i": "/sek/", "p": "adj", "e": "dry", "n": ""},
+  {"f": "secca", "i": "/ˈse.ka/", "p": "v", "e": "dry, dry out", "n": ""},
+  {"f": "seconde", "i": "/se.ˈkon.de/", "p": "n", "e": "second of time, spoken", "n": "secunde in the tables and the wire format; seconde in the voice count"},
+  {"f": "secret", "i": "/ˈse.kret/", "p": "adj", "e": "secret", "n": ""},
+  {"f": "secretament", "i": "/se.kre.ˈta.ment/", "p": "adv", "e": "secretly", "n": ""},
+  {"f": "sectiun", "i": "/sek.ˈti.un/", "p": "n", "e": "section, stretch of a road", "n": ""},
+  {"f": "secul", "i": "/ˈse.kul/", "p": "n", "e": "century", "n": ""},
+  {"f": "secund", "i": "/ˈse.kund/", "p": "n", "e": "second", "n": ""},
+  {"f": "secunde", "i": "/se.ˈkun.de/", "p": "n", "e": "second of time", "n": "the written form; seconde is what the broadcast says"},
+  {"f": "secundo", "i": "/se.ˈkun.do/", "p": "adv", "e": "secondly", "n": ""},
+  {"f": "secundu", "i": "/se.ˈkun.du/", "p": "prep", "e": "according to", "n": "secundu se regulamentu, according to the regulation"},
+  {"f": "secur", "i": "/ˈse.kur/", "p": "adj", "e": "safe", "n": ""},
+  {"f": "securitate", "i": "/se.ku.ri.ˈta.te/", "p": "n", "e": "security, safety", "n": ""},
+  {"f": "sed", "i": "/sed/", "p": "n", "e": "thirst", "n": ""},
+  {"f": "sede", "i": "/ˈse.de/", "p": "v", "e": "sit", "n": ""},
+  {"f": "sedia", "i": "/se.ˈdi.a/", "p": "n", "e": "chair", "n": ""},
+  {"f": "sedile", "i": "/se.ˈdi.le/", "p": "n", "e": "seat", "n": ""},
+  {"f": "sedimentu", "i": "/se.di.ˈmen.tu/", "p": "n", "e": "sediment", "n": ""},
+  {"f": "sedni", "i": "/ˈsed.ni/", "p": "v", "e": "sit down, everyday", "n": "sede in print and in the instruction; sedni is what a person says"},
+  {"f": "seism", "i": "/seism/", "p": "n", "e": "earthquake", "n": ""},
+  {"f": "semafor", "i": "/se.ˈma.for/", "p": "n", "e": "traffic light", "n": ""},
+  {"f": "semel", "i": "/ˈse.mel/", "p": "adv", "e": "once", "n": "semel, bis, ter in the timetables"},
+  {"f": "seminariu", "i": "/se.mi.na.ˈri.u/", "p": "n", "e": "seminar", "n": ""},
+  {"f": "semine", "i": "/se.ˈmi.ne/", "p": "n", "e": "seed", "n": ""},
+  {"f": "sempre", "i": "/ˈsem.pre/", "p": "adv", "e": "always", "n": ""},
+  {"f": "senegale", "i": "/se.ne.ˈga.le/", "p": "adj", "e": "Senegalese", "n": "demonym of Senegal"},
+  {"f": "senso", "i": "/ˈsen.so/", "p": "n", "e": "sense, meaning", "n": ""},
+  {"f": "sensu", "i": "/ˈsen.su/", "p": "n", "e": "sense, direction", "n": ""},
+  {"f": "sententia", "i": "/sen.ten.ˈti.a/", "p": "n", "e": "ruling, sentence", "n": ""},
+  {"f": "senti", "i": "/ˈsen.ti/", "p": "v", "e": "feel", "n": ""},
+  {"f": "sentiment", "i": "/sen.ˈti.ment/", "p": "n", "e": "feeling", "n": ""},
+  {"f": "sentimentu", "i": "/sen.ti.ˈmen.tu/", "p": "n", "e": "feeling", "n": ""},
+  {"f": "separa", "i": "/se.ˈpa.ra/", "p": "v", "e": "separate", "n": ""},
+  {"f": "separat", "i": "/se.ˈpa.rat/", "p": "adj", "e": "separate", "n": ""},
+  {"f": "september", "i": "/sep.ˈtem.ber/", "p": "n", "e": "September", "n": ""},
+  {"f": "septembre", "i": "/sep.ˈtem.bre/", "p": "n", "e": "September", "n": ""},
+  {"f": "septimana", "i": "/sep.ti.ˈma.na/", "p": "n", "e": "week", "n": ""},
+  {"f": "sequi", "i": "/ˈse.ki/", "p": "v", "e": "follow, come next", "n": ""},
+  {"f": "sera", "i": "/ˈse.ra/", "p": "n", "e": "evening", "n": ""},
+  {"f": "serb", "i": "/serb/", "p": "adj", "e": "Serbian", "n": ""},
+  {"f": "seria", "i": "/se.ˈri.a/", "p": "n", "e": "series", "n": ""},
+  {"f": "serie", "i": "/se.ˈri.e/", "p": "n", "e": "series, the run of a model", "n": "tip is the type; serie is the run built to it"},
+  {"f": "serra", "i": "/ˈse.ra/", "p": "v", "e": "saw", "n": "the saw and the act of sawing alike"},
+  {"f": "serratura", "i": "/se.ra.ˈtu.ra/", "p": "n", "e": "lock", "n": ""},
+  {"f": "servi", "i": "/ˈser.vi/", "p": "v", "e": "serve", "n": ""},
+  {"f": "serviciu", "i": "/ser.ˈvi.t͡ʃu/", "p": "n", "e": "service", "n": ""},
+  {"f": "ses", "i": "/ses/", "p": "num", "e": "six", "n": ""},
+  {"f": "sesanta", "i": "/se.ˈsan.ta/", "p": "num", "e": "sixty", "n": ""},
+  {"f": "sese", "i": "/ˈse.se/", "p": "pron", "e": "oneself", "n": ""},
+  {"f": "sesun", "i": "/ˈse.sun/", "p": "n", "e": "season", "n": ""},
+  {"f": "setanta", "i": "/se.ˈtan.ta/", "p": "num", "e": "seventy", "n": ""},
+  {"f": "sete", "i": "/ˈse.te/", "p": "num", "e": "seven", "n": ""},
+  {"f": "sever", "i": "/ˈse.ver/", "p": "adj", "e": "severe", "n": ""},
+  {"f": "severment", "i": "/se.ˈver.ment/", "p": "adv", "e": "severely", "n": ""},
+  {"f": "sexelan", "i": "/se.ˈʃe.lan/", "p": "adj", "e": "Seychellois", "n": "demonym of Sexel"},
+  {"f": "si", "i": "/si/", "p": "adv", "e": "yes", "n": ""},
+  {"f": "sia", "i": "/ˈsi.a/", "p": "conj", "e": "either, or", "n": ""},
+  {"f": "sieraleonan", "i": "/si.e.ra.le.ˈo.nan/", "p": "adj", "e": "Sierra Leonean", "n": "demonym of Siera Leon"},
+  {"f": "sigla", "i": "/ˈsi.gla/", "p": "v", "e": "seal, close with a seal", "n": ""},
+  {"f": "signa", "i": "/ˈsig.na/", "p": "v", "e": "sign", "n": ""},
+  {"f": "signala", "i": "/sig.ˈna.la/", "p": "v", "e": "signal", "n": ""},
+  {"f": "signatura", "i": "/sig.na.ˈtu.ra/", "p": "n", "e": "signature", "n": ""},
+  {"f": "signature", "i": "/sig.na.ˈtu.re/", "p": "n", "e": "signature, byline", "n": "signa is the act; signature carries the name at the head of a piece"},
+  {"f": "significa", "i": "/sig.ni.ˈfi.ka/", "p": "v", "e": "mean", "n": ""},
+  {"f": "significatu", "i": "/sig.ni.fi.ˈka.tu/", "p": "n", "e": "meaning", "n": "significa is the verb"},
+  {"f": "silaba", "i": "/si.ˈla.ba/", "p": "n", "e": "syllable", "n": ""},
+  {"f": "silentiu", "i": "/si.len.ˈti.u/", "p": "n", "e": "silence", "n": "tace is the verb"},
+  {"f": "silies", "i": "/si.ˈli.es/", "p": "n", "e": "housing estate, block", "n": ""},
+  {"f": "silo", "i": "/ˈsi.lo/", "p": "n", "e": "silo", "n": ""},
+  {"f": "silva", "i": "/ˈsil.va/", "p": "n", "e": "forest, formal", "n": "adjective silvestre; everyday les"},
+  {"f": "similitude", "i": "/si.mi.li.ˈtu.de/", "p": "n", "e": "resemblance", "n": ""},
+  {"f": "simpatia", "i": "/sim.pa.ˈti.a/", "p": "n", "e": "sympathy", "n": ""},
+  {"f": "simple", "i": "/ˈsim.ple/", "p": "adj", "e": "simple", "n": ""},
+  {"f": "simplement", "i": "/sim.ˈple.ment/", "p": "adv", "e": "simply", "n": "a vowel-final adjective adds the suffix whole"},
+  {"f": "simplifica", "i": "/sim.pli.ˈfi.ka/", "p": "v", "e": "simplify", "n": ""},
+  {"f": "simul", "i": "/ˈsi.mul/", "p": "adv", "e": "at the same time", "n": "junto of company, simul of time"},
+  {"f": "sin", "i": "/sin/", "p": "prep", "e": "without", "n": ""},
+  {"f": "sinceritate", "i": "/sin.t͡ʃe.ri.ˈta.te/", "p": "n", "e": "sincerity", "n": ""},
+  {"f": "sindica", "i": "/sin.ˈdi.ka/", "p": "v", "e": "organise in a union", "n": ""},
+  {"f": "sindicat", "i": "/sin.ˈdi.kat/", "p": "n", "e": "union", "n": ""},
+  {"f": "singapurian", "i": "/sin.ga.pu.ˈri.an/", "p": "adj", "e": "Singaporean", "n": "demonym of Singapur"},
+  {"f": "sinistra", "i": "/si.ˈnis.tra/", "p": "n", "e": "left", "n": "also the adjective and the adverb"},
+  {"f": "sinon", "i": "/ˈsi.non/", "p": "conj", "e": "otherwise, if not", "n": ""},
+  {"f": "sintesi", "i": "/sin.ˈte.si/", "p": "n", "e": "synthesis", "n": ""},
+  {"f": "sintetic", "i": "/sin.ˈte.tik/", "p": "adj", "e": "synthetic", "n": "se prim pivo sintetic, the first synthetic beer"},
+  {"f": "sintetisa", "i": "/sin.te.ˈti.sa/", "p": "v", "e": "synthesise", "n": ""},
+  {"f": "sirena", "i": "/si.ˈre.na/", "p": "n", "e": "siren", "n": "the warning system uses it"},
+  {"f": "sirian", "i": "/si.ˈri.an/", "p": "adj", "e": "Syrian", "n": "demonym of Siria"},
+  {"f": "sistem", "i": "/ˈsis.tem/", "p": "n", "e": "system", "n": ""},
+  {"f": "sistematic", "i": "/sis.te.ˈma.tik/", "p": "adj", "e": "systematic", "n": ""},
+  {"f": "sistematicament", "i": "/sis.te.ma.ti.ˈka.ment/", "p": "adv", "e": "systematically", "n": ""},
+  {"f": "situatiun", "i": "/si.tu.a.ˈti.un/", "p": "n", "e": "situation", "n": ""},
+  {"f": "sive", "i": "/ˈsi.ve/", "p": "conj", "e": "whether", "n": "sive si sive no, whether yes or no"},
+  {"f": "skuza", "i": "/ˈsku.za/", "p": "v", "e": "excuse, forgive", "n": ""},
+  {"f": "skuza me", "i": "/ˈsku.za me/", "p": "int", "e": "excuse me, I am sorry", "n": ""},
+  {"f": "slab", "i": "/slab/", "p": "adj", "e": "weak", "n": ""},
+  {"f": "slovac", "i": "/ˈslo.vak/", "p": "adj", "e": "Slovak", "n": "demonym of Slovaki"},
+  {"f": "slovenian", "i": "/slo.ve.ˈni.an/", "p": "adj", "e": "Slovenian", "n": "demonym of Slovenia"},
+  {"f": "smeti", "i": "/ˈsme.ti/", "p": "n", "e": "rubbish", "n": ""},
+  {"f": "societate", "i": "/so.t͡ʃe.ˈta.te/", "p": "n", "e": "society", "n": ""},
+  {"f": "sol", "i": "/sol/", "p": "n", "e": "sun", "n": "adjective solar; also the adjective sol, alone"},
+  {"f": "solda", "i": "/ˈsol.da/", "p": "v", "e": "weld", "n": ""},
+  {"f": "solid", "i": "/ˈso.lid/", "p": "adj", "e": "solid", "n": ""},
+  {"f": "solidarisa", "i": "/so.li.da.ˈri.sa/", "p": "v", "e": "act in solidarity with", "n": "of communes and of cooperatives"},
+  {"f": "solidaritate", "i": "/so.li.da.ri.ˈta.te/", "p": "n", "e": "solidarity", "n": "Article 303 provides for the transfers"},
+  {"f": "solitari", "i": "/so.li.ˈta.ri/", "p": "adj", "e": "lonely, solitary", "n": ""},
+  {"f": "solitude", "i": "/so.li.ˈtu.de/", "p": "n", "e": "loneliness", "n": ""},
+  {"f": "solmente", "i": "/sol.ˈmen.te/", "p": "adv", "e": "only", "n": ""},
+  {"f": "solu", "i": "/ˈso.lu/", "p": "adv", "e": "alone", "n": "solmente is the adverb of restriction"},
+  {"f": "solutiun", "i": "/so.lu.ˈti.un/", "p": "n", "e": "solution", "n": ""},
+  {"f": "solve", "i": "/ˈsol.ve/", "p": "v", "e": "solve, settle", "n": ""},
+  {"f": "somalian", "i": "/so.ma.ˈli.an/", "p": "adj", "e": "Somali", "n": "demonym of Somalia"},
+  {"f": "son", "i": "/son/", "p": "n", "e": "sound", "n": ""},
+  {"f": "sona", "i": "/ˈso.na/", "p": "v", "e": "sound, ring", "n": ""},
+  {"f": "sonda", "i": "/ˈson.da/", "p": "v", "e": "survey, poll", "n": ""},
+  {"f": "sondaj", "i": "/son.ˈdaʒ/", "p": "n", "e": "a survey", "n": "sonda is the act; sondaj is the published result"},
+  {"f": "sonia", "i": "/so.ˈni.a/", "p": "v", "e": "dream", "n": ""},
+  {"f": "sonio", "i": "/so.ˈni.o/", "p": "n", "e": "dream", "n": "the verb is sonia"},
+  {"f": "sorece", "i": "/so.ˈre.t͡ʃe/", "p": "n", "e": "mouse", "n": ""},
+  {"f": "sorore", "i": "/so.ˈro.re/", "p": "n", "e": "sister", "n": ""},
+  {"f": "sorta", "i": "/ˈsor.ta/", "p": "v", "e": "sort", "n": "of post and of parts; sorti is to draw by lot"},
+  {"f": "sorti", "i": "/ˈsor.ti/", "p": "v", "e": "draw by lot", "n": ""},
+  {"f": "sortida", "i": "/sor.ˈti.da/", "p": "n", "e": "exit", "n": ""},
+  {"f": "sortitiun", "i": "/sor.ti.ˈti.un/", "p": "n", "e": "selection by lot", "n": ""},
+  {"f": "sovente", "i": "/so.ˈven.te/", "p": "adv", "e": "often", "n": ""},
+  {"f": "soveranitate", "i": "/so.ve.ra.ni.ˈta.te/", "p": "n", "e": "sovereignty", "n": ""},
+  {"f": "spalla", "i": "/ˈspa.la/", "p": "n", "e": "shoulder", "n": ""},
+  {"f": "special", "i": "/ˈspe.t͡ʃal/", "p": "adj", "e": "special", "n": ""},
+  {"f": "specialisa", "i": "/spe.t͡ʃi.a.ˈli.sa/", "p": "v", "e": "specialise", "n": ""},
+  {"f": "specialment", "i": "/spe.t͡ʃi.ˈal.ment/", "p": "adv", "e": "specially", "n": ""},
+  {"f": "spera", "i": "/ˈspe.ra/", "p": "v", "e": "hope", "n": ""},
+  {"f": "sperantia", "i": "/spe.ran.ˈti.a/", "p": "n", "e": "hope", "n": "spera is the verb"},
+  {"f": "spessura", "i": "/spe.ˈsu.ra/", "p": "n", "e": "thickness", "n": ""},
+  {"f": "spetia", "i": "/spe.ˈti.a/", "p": "n", "e": "spice", "n": "the southern crossroads brought most of them"},
+  {"f": "spia", "i": "/ˈspi.a/", "p": "v", "e": "watch covertly", "n": ""},
+  {"f": "spira", "i": "/ˈspi.ra/", "p": "v", "e": "screw in", "n": ""},
+  {"f": "sponte", "i": "/ˈspon.te/", "p": "adv", "e": "of one's own accord", "n": ""},
+  {"f": "sport", "i": "/sport/", "p": "n", "e": "sport", "n": ""},
+  {"f": "sposa", "i": "/ˈspo.sa/", "p": "n", "e": "wife", "n": ""},
+  {"f": "spue", "i": "/ˈspu.e/", "p": "v", "e": "spit", "n": ""},
+  {"f": "srilancan", "i": "/sri.ˈlan.kan/", "p": "adj", "e": "Sri Lankan", "n": "demonym of Sri Lanca"},
+  {"f": "sta", "i": "/sta/", "p": "v", "e": "stand, be situated", "n": ""},
+  {"f": "stabilitate", "i": "/sta.bi.li.ˈta.te/", "p": "n", "e": "stability", "n": ""},
+  {"f": "stall", "i": "/stal/", "p": "n", "e": "market stall", "n": "the mercat de Cra fills the piatza"},
+  {"f": "stalp", "i": "/stalp/", "p": "n", "e": "pole, mast", "n": "plural stalpi"},
+  {"f": "stalpi", "i": "/ˈstal.pi/", "p": "n", "e": "poles", "n": "irregular plural of stalp; the rule would give stalpes"},
+  {"f": "stat", "i": "/stat/", "p": "n", "e": "state", "n": ""},
+  {"f": "statim", "i": "/ˈsta.tim/", "p": "adv", "e": "at once", "n": "on the platforms, in place of immediatament"},
+  {"f": "stationa", "i": "/sta.ti.ˈo.na/", "p": "v", "e": "stand, be stabled", "n": "of stock held at a depot"},
+  {"f": "statiun", "i": "/sta.ˈti.un/", "p": "n", "e": "stop, station, formal", "n": ""},
+  {"f": "statunitan", "i": "/sta.tu.ˈni.tan/", "p": "adj", "e": "of the United States", "n": "demonym of Stat Unit"},
+  {"f": "statutu", "i": "/sta.ˈtu.tu/", "p": "n", "e": "statute", "n": ""},
+  {"f": "stela", "i": "/ˈste.la/", "p": "n", "e": "star", "n": "adjective stelar"},
+  {"f": "sternuta", "i": "/ster.ˈnu.ta/", "p": "v", "e": "sneeze", "n": ""},
+  {"f": "stinge", "i": "/ˈstin.d͡ʒe/", "p": "v", "e": "put out, extinguish", "n": "stinge se foc, put the fire out"},
+  {"f": "stipula", "i": "/sti.ˈpu.la/", "p": "v", "e": "stipulate", "n": ""},
+  {"f": "stiva", "i": "/ˈsti.va/", "p": "v", "e": "stow", "n": ""},
+  {"f": "stoc", "i": "/stok/", "p": "n", "e": "stock", "n": ""},
+  {"f": "stoca", "i": "/ˈsto.ka/", "p": "v", "e": "stock, hold in store", "n": "stoc is the stock"},
+  {"f": "stol", "i": "/stol/", "p": "n", "e": "table, everyday", "n": "formal mesa"},
+  {"f": "strada", "i": "/ˈstra.da/", "p": "n", "e": "street", "n": "adjective stradal"},
+  {"f": "strexa", "i": "/ˈstre.ʃa/", "p": "n", "e": "roof, eave", "n": ""},
+  {"f": "stringe", "i": "/ˈstrin.d͡ʒe/", "p": "v", "e": "squeeze, tighten", "n": ""},
+  {"f": "stronz", "i": "/stronz/", "p": "n", "e": "a bad sort", "n": "a loan and an insult; never used in the register"},
+  {"f": "structura", "i": "/struk.ˈtu.ra/", "p": "n", "e": "structure", "n": ""},
+  {"f": "studente", "i": "/stu.ˈden.te/", "p": "n", "e": "student", "n": ""},
+  {"f": "studia", "i": "/stu.ˈdi.a/", "p": "v", "e": "study", "n": "of a subject; aprende of a skill"},
+  {"f": "subito", "i": "/su.ˈbi.to/", "p": "adv", "e": "suddenly", "n": "of a stop and of a change of weather"},
+  {"f": "subject", "i": "/sub.ˈd͡ʒekt/", "p": "n", "e": "subject of a verb", "n": "the subject is never dropped"},
+  {"f": "subprodutu", "i": "/sub.pro.ˈdu.tu/", "p": "n", "e": "byproduct", "n": "what the lagun cooperative works from"},
+  {"f": "subregional", "i": "/sub.re.d͡ʒi.o.ˈnal/", "p": "adj", "e": "sub-regional", "n": "irregular adjective of subregiun, on the pattern of regional"},
+  {"f": "subregiun", "i": "/su.ˈbre.d͡ʒun/", "p": "n", "e": "sub-region", "n": ""},
+  {"f": "subscriva", "i": "/subs.ˈkri.va/", "p": "v", "e": "subscribe, sign underneath", "n": ""},
+  {"f": "substantiv", "i": "/subs.ˈtan.tiv/", "p": "n", "e": "noun", "n": ""},
+  {"f": "substitue", "i": "/subs.ti.ˈtu.e/", "p": "v", "e": "stand in for", "n": ""},
+  {"f": "substituit", "i": "/subs.ti.ˈtu.it/", "p": "adj", "e": "replaced", "n": "the participle of substitue kept in the trade; the rule would give substituet"},
+  {"f": "subtil", "i": "/ˈsub.til/", "p": "adj", "e": "thin", "n": ""},
+  {"f": "subventiona", "i": "/sub.ven.ti.ˈo.na/", "p": "v", "e": "subsidise", "n": ""},
+  {"f": "suc", "i": "/suk/", "p": "n", "e": "juice", "n": ""},
+  {"f": "successiun", "i": "/su.t͡ʃe.ˈsi.un/", "p": "n", "e": "succession", "n": ""},
+  {"f": "sud", "i": "/sud/", "p": "n", "e": "south", "n": ""},
+  {"f": "sudafrican", "i": "/su.da.ˈfri.kan/", "p": "adj", "e": "South African", "n": "demonym of Africa Sud"},
+  {"f": "sudanan sud", "i": "/su.ˈda.nan sud/", "p": "adj", "e": "South Sudanese", "n": "demonym of Sudan Sud"},
+  {"f": "sudanian", "i": "/su.da.ˈni.an/", "p": "adj", "e": "Sudanese", "n": "demonym of Sudan"},
+  {"f": "sudora", "i": "/su.ˈdo.ra/", "p": "v", "e": "sweat", "n": ""},
+  {"f": "sue", "i": "/ˈsu.e/", "p": "det", "e": "his, her, its, their", "n": ""},
+  {"f": "suffla", "i": "/ˈsu.fla/", "p": "v", "e": "blow", "n": ""},
+  {"f": "sufix", "i": "/ˈsu.fiʃ/", "p": "n", "e": "suffix", "n": ""},
+  {"f": "sufragiu", "i": "/su.ˈfra.d͡ʒu/", "p": "n", "e": "suffrage", "n": ""},
+  {"f": "suge", "i": "/ˈsu.d͡ʒe/", "p": "v", "e": "suck", "n": ""},
+  {"f": "suggere", "i": "/su.ˈd͡ʒe.re/", "p": "v", "e": "suggest", "n": ""},
+  {"f": "sulcu", "i": "/ˈsul.ku/", "p": "n", "e": "furrow", "n": ""},
+  {"f": "summa", "i": "/ˈsu.ma/", "p": "n", "e": "sum", "n": ""},
+  {"f": "supa", "i": "/ˈsu.pa/", "p": "n", "e": "soup", "n": ""},
+  {"f": "supervisore", "i": "/su.per.vi.ˈso.re/", "p": "n", "e": "supervisor", "n": "supravigila is the verb"},
+  {"f": "suplementar", "i": "/su.ple.men.ˈtar/", "p": "adj", "e": "supplementary", "n": ""},
+  {"f": "suporta", "i": "/su.ˈpor.ta/", "p": "v", "e": "put up with, bear", "n": ""},
+  {"f": "suppone", "i": "/su.ˈpo.ne/", "p": "v", "e": "suppose", "n": ""},
+  {"f": "supra", "i": "/ˈsu.pra/", "p": "prep", "e": "on, onto, above", "n": ""},
+  {"f": "supracil", "i": "/su.ˈpra.t͡ʃil/", "p": "n", "e": "eyebrow", "n": ""},
+  {"f": "supraveglianza", "i": "/su.pra.ve.gli.ˈan.za/", "p": "n", "e": "oversight", "n": ""},
+  {"f": "supravigila", "i": "/su.pra.vi.ˈd͡ʒi.la/", "p": "v", "e": "oversee, supervise", "n": ""},
+  {"f": "surge", "i": "/ˈsur.d͡ʒe/", "p": "v", "e": "get up, rise from bed", "n": "of rising from bed; leva of lifting a thing"},
+  {"f": "surhora", "i": "/sur.ˈho.ra/", "p": "n", "e": "overtime", "n": "hora is the hour"},
+  {"f": "surinamian", "i": "/su.ri.na.ˈmi.an/", "p": "adj", "e": "Surinamese", "n": "demonym of Surinam"},
+  {"f": "surpres", "i": "/ˈsur.pres/", "p": "adj", "e": "surprised", "n": ""},
+  {"f": "surprisa", "i": "/sur.ˈpri.sa/", "p": "n", "e": "surprise", "n": ""},
+  {"f": "surride", "i": "/su.ˈri.de/", "p": "v", "e": "smile", "n": ""},
+  {"f": "suspecta", "i": "/sus.ˈpek.ta/", "p": "v", "e": "suspect", "n": ""},
+  {"f": "suspende", "i": "/sus.ˈpen.de/", "p": "v", "e": "hang, suspend", "n": ""},
+  {"f": "suspira", "i": "/sus.ˈpi.ra/", "p": "v", "e": "sigh", "n": ""},
+  {"f": "sustene", "i": "/sus.ˈte.ne/", "p": "v", "e": "support, hold up", "n": "of a structure; tena of a person"},
+  {"f": "susura", "i": "/su.ˈsu.ra/", "p": "v", "e": "whisper", "n": "Ravelluri and the lagoon communes"},
+  {"f": "suz", "i": "/suz/", "p": "prep", "e": "under", "n": ""},
+  {"f": "svede", "i": "/ˈsve.de/", "p": "adj", "e": "Swedish", "n": "demonym of Sveden"},
+  {"f": "svetlo", "i": "/ˈsve.tlo/", "p": "n", "e": "light, everyday", "n": "formal luce; svetlo of a lamp, luce of daylight"},
+  {"f": "taberna", "i": "/ta.ˈber.na/", "p": "n", "e": "pub, formal", "n": "everyday hospoda"},
+  {"f": "tablou-electric", "i": "/ta.blo.u.e.ˈlek.trik/", "p": "n", "e": "switchboard", "n": ""},
+  {"f": "tabula", "i": "/ta.ˈbu.la/", "p": "n", "e": "table of figures, chart", "n": ""},
+  {"f": "tace", "i": "/ˈta.t͡ʃe/", "p": "v", "e": "fall silent, hold one's tongue", "n": "tace, se tren veni, quiet, the train is coming"},
+  {"f": "taia", "i": "/ˈtai.a/", "p": "v", "e": "cut", "n": ""},
+  {"f": "tailandian", "i": "/tai.lan.ˈdi.an/", "p": "adj", "e": "Thai", "n": "demonym of Tailand"},
+  {"f": "taivane", "i": "/tai.ˈva.ne/", "p": "adj", "e": "Taiwanese", "n": "demonym of Taivan"},
+  {"f": "tajiquistanian", "i": "/ta.ʒi.kis.ta.ˈni.an/", "p": "adj", "e": "Tajik", "n": "demonym of Tajiquistan"},
+  {"f": "tale", "i": "/ˈta.le/", "p": "det", "e": "such", "n": ""},
+  {"f": "talia", "i": "/ta.ˈli.a/", "p": "n", "e": "waist", "n": ""},
+  {"f": "tanto", "i": "/ˈtan.to/", "p": "adv", "e": "so much", "n": ""},
+  {"f": "tanzanian", "i": "/tan.za.ˈni.an/", "p": "adj", "e": "Tanzanian", "n": "demonym of Tanzania"},
+  {"f": "tapa", "i": "/ˈta.pa/", "p": "v", "e": "plug, seal off", "n": ""},
+  {"f": "tapete", "i": "/ta.ˈpe.te/", "p": "n", "e": "rug", "n": ""},
+  {"f": "tarde", "i": "/ˈtar.de/", "p": "n", "e": "afternoon", "n": ""},
+  {"f": "tarifa", "i": "/ta.ˈri.fa/", "p": "n", "e": "fare", "n": "paga is the act of paying"},
+  {"f": "tarz", "i": "/tarz/", "p": "adj", "e": "late", "n": ""},
+  {"f": "tasca", "i": "/ˈtas.ka/", "p": "n", "e": "task", "n": ""},
+  {"f": "tassa", "i": "/ˈta.sa/", "p": "n", "e": "cup", "n": ""},
+  {"f": "tasta", "i": "/ˈtas.ta/", "p": "v", "e": "feel out, touch to test", "n": ""},
+  {"f": "tata", "i": "/ˈta.ta/", "p": "n", "e": "father, everyday", "n": ""},
+  {"f": "taxa", "i": "/ˈta.ʃa/", "p": "v", "e": "levy, charge", "n": "of a levy; paga of the payment"},
+  {"f": "taxi", "i": "/ˈta.ʃi/", "p": "n", "e": "taxi", "n": ""},
+  {"f": "te", "i": "/te/", "p": "prep", "e": "to, toward", "n": "te Marendo, to Marendo"},
+  {"f": "teatru", "i": "/te.ˈa.tru/", "p": "n", "e": "theatre", "n": "adjective teatral"},
+  {"f": "technic", "i": "/ˈtekh.nik/", "p": "adj", "e": "technical", "n": ""},
+  {"f": "tectu", "i": "/ˈtek.tu/", "p": "n", "e": "canopy, roof plate", "n": ""},
+  {"f": "tediat", "i": "/te.ˈdi.at/", "p": "adj", "e": "bored", "n": ""},
+  {"f": "tedio", "i": "/te.ˈdi.o/", "p": "n", "e": "boredom", "n": ""},
+  {"f": "telefon", "i": "/te.ˈle.fon/", "p": "n", "e": "telephone", "n": ""},
+  {"f": "televisiun", "i": "/te.le.vi.ˈsi.un/", "p": "n", "e": "television", "n": ""},
+  {"f": "tema", "i": "/ˈte.ma/", "p": "n", "e": "homework, topic", "n": ""},
+  {"f": "temeros", "i": "/te.ˈme.ros/", "p": "adj", "e": "fearful", "n": "time is the verb"},
+  {"f": "temor", "i": "/ˈte.mor/", "p": "n", "e": "fear", "n": "time is the verb, temeros the adjective"},
+  {"f": "temp", "i": "/temp/", "p": "n", "e": "time", "n": ""},
+  {"f": "temperatura", "i": "/tem.pe.ra.ˈtu.ra/", "p": "n", "e": "temperature", "n": ""},
+  {"f": "tempesta", "i": "/tem.ˈpes.ta/", "p": "n", "e": "storm", "n": ""},
+  {"f": "temporari", "i": "/tem.po.ˈra.ri/", "p": "adj", "e": "temporary", "n": ""},
+  {"f": "temporariment", "i": "/tem.po.ra.ˈri.ment/", "p": "adv", "e": "temporarily", "n": ""},
+  {"f": "temprano", "i": "/tem.ˈpra.no/", "p": "adv", "e": "early", "n": "avanz is the adjective"},
+  {"f": "tena", "i": "/ˈte.na/", "p": "v", "e": "hold, hold on, keep going", "n": ""},
+  {"f": "tenalia", "i": "/te.na.ˈli.a/", "p": "n", "e": "pliers", "n": ""},
+  {"f": "tende", "i": "/ˈten.de/", "p": "v", "e": "stretch out, hold out", "n": ""},
+  {"f": "tendentia", "i": "/ten.den.ˈti.a/", "p": "n", "e": "tendency", "n": ""},
+  {"f": "tensiun", "i": "/ten.ˈsi.un/", "p": "n", "e": "tension", "n": "of a wire and of a situation"},
+  {"f": "tenta", "i": "/ˈten.ta/", "p": "v", "e": "try", "n": ""},
+  {"f": "tenue", "i": "/te.ˈnu.e/", "p": "adj", "e": "thin", "n": ""},
+  {"f": "teoria", "i": "/te.o.ˈri.a/", "p": "n", "e": "theory", "n": ""},
+  {"f": "teoric", "i": "/te.ˈo.rik/", "p": "adj", "e": "theoretical", "n": "teoria is the noun"},
+  {"f": "teoricament", "i": "/te.o.ri.ˈka.ment/", "p": "adv", "e": "in theory", "n": ""},
+  {"f": "teplo", "i": "/ˈte.plo/", "p": "n", "e": "heat, heating", "n": ""},
+  {"f": "ter", "i": "/ter/", "p": "adv", "e": "three times", "n": ""},
+  {"f": "terge", "i": "/ˈter.d͡ʒe/", "p": "v", "e": "wipe", "n": "of a surface; lava of a garment"},
+  {"f": "termic", "i": "/ˈter.mik/", "p": "adj", "e": "thermal", "n": ""},
+  {"f": "termin", "i": "/ˈter.min/", "p": "n", "e": "term, a named word", "n": "se academia prefere et termin"},
+  {"f": "termine", "i": "/ter.ˈmi.ne/", "p": "n", "e": "term", "n": ""},
+  {"f": "termocentral", "i": "/ter.mo.ˈt͡ʃen.tral/", "p": "n", "e": "power station", "n": ""},
+  {"f": "terra", "i": "/ˈte.ra/", "p": "n", "e": "ground, land", "n": "adjective terren"},
+  {"f": "terramotu", "i": "/te.ra.ˈmo.tu/", "p": "n", "e": "earthquake, urgent", "n": "seism in the record and in science; terramotu while the ground moves"},
+  {"f": "terrassa", "i": "/te.ˈra.sa/", "p": "n", "e": "terrace", "n": ""},
+  {"f": "territoriu", "i": "/te.ri.to.ˈri.u/", "p": "n", "e": "territory", "n": ""},
+  {"f": "tertie", "i": "/ter.ˈti.e/", "p": "n", "e": "third, a fraction", "n": ""},
+  {"f": "testimonia", "i": "/tes.ti.mo.ˈni.a/", "p": "v", "e": "testify, give evidence", "n": ""},
+  {"f": "testimoniu", "i": "/tes.ti.mo.ˈni.u/", "p": "n", "e": "evidence, testimony", "n": ""},
+  {"f": "text", "i": "/teʃt/", "p": "n", "e": "text", "n": ""},
+  {"f": "textura", "i": "/teʃ.ˈtu.ra/", "p": "n", "e": "texture", "n": "of a surface felt rather than seen"},
+  {"f": "tia", "i": "/ˈti.a/", "p": "n", "e": "aunt", "n": ""},
+  {"f": "timbru", "i": "/ˈtim.bru/", "p": "n", "e": "postage stamp", "n": ""},
+  {"f": "time", "i": "/ˈti.me/", "p": "v", "e": "fear", "n": ""},
+  {"f": "timid", "i": "/ˈti.mid/", "p": "adj", "e": "timid", "n": ""},
+  {"f": "timoran", "i": "/ti.ˈmo.ran/", "p": "adj", "e": "Timorese", "n": "demonym of Timor Est"},
+  {"f": "tinta", "i": "/ˈtin.ta/", "p": "n", "e": "tint", "n": ""},
+  {"f": "tip", "i": "/tip/", "p": "n", "e": "type", "n": "tip P-4 names the type; serie is the run built to it"},
+  {"f": "tira", "i": "/ˈti.ra/", "p": "v", "e": "pull, draw", "n": ""},
+  {"f": "titul", "i": "/ˈti.tul/", "p": "n", "e": "title, part of a law", "n": ""},
+  {"f": "tiu", "i": "/ˈti.u/", "p": "n", "e": "uncle", "n": ""},
+  {"f": "toaleta", "i": "/to.a.ˈle.ta/", "p": "n", "e": "toilet", "n": ""},
+  {"f": "tocar", "i": "/to.ˈkar/", "p": "v", "e": "touch, come into contact", "n": "the form after a preposition, as restar stands beside resta: sin tocar se placa"},
+  {"f": "tocat", "i": "/to.ˈkat/", "p": "adj", "e": "touched, disturbed", "n": "participle of tocar: se tectu no es tocat per se laboro"},
+  {"f": "tocca", "i": "/ˈto.ka/", "p": "v", "e": "touch", "n": ""},
+  {"f": "togole", "i": "/to.ˈgo.le/", "p": "adj", "e": "Togolese", "n": "demonym of Togo"},
+  {"f": "tolera", "i": "/to.ˈle.ra/", "p": "v", "e": "tolerate", "n": ""},
+  {"f": "tomat", "i": "/ˈto.mat/", "p": "n", "e": "tomato", "n": ""},
+  {"f": "tongan", "i": "/ˈton.gan/", "p": "adj", "e": "Tongan", "n": "demonym of Tonga"},
+  {"f": "tonitru", "i": "/to.ˈni.tru/", "p": "n", "e": "thunder", "n": ""},
+  {"f": "torna", "i": "/ˈtor.na/", "p": "v", "e": "turn", "n": ""},
+  {"f": "torta", "i": "/ˈtor.ta/", "p": "n", "e": "cake", "n": ""},
+  {"f": "tosto", "i": "/ˈtos.to/", "p": "adv", "e": "soon", "n": "presto is at once"},
+  {"f": "tot", "i": "/tot/", "p": "det", "e": "all, whole", "n": ""},
+  {"f": "total", "i": "/ˈto.tal/", "p": "adj", "e": "total", "n": ""},
+  {"f": "totalite", "i": "/to.ta.ˈli.te/", "p": "n", "e": "the whole of a thing", "n": ""},
+  {"f": "totalment", "i": "/to.ˈtal.ment/", "p": "adv", "e": "totally", "n": "totalite is the noun"},
+  {"f": "totevia", "i": "/to.te.ˈvi.a/", "p": "conj", "e": "however, nevertheless", "n": ""},
+  {"f": "toti", "i": "/ˈto.ti/", "p": "pron", "e": "everyone", "n": ""},
+  {"f": "tracta", "i": "/ˈtrak.ta/", "p": "v", "e": "haul, work a train", "n": ""},
+  {"f": "tractatu", "i": "/trak.ˈta.tu/", "p": "n", "e": "treaty", "n": ""},
+  {"f": "traduce", "i": "/tra.ˈdu.t͡ʃe/", "p": "v", "e": "translate", "n": ""},
+  {"f": "traductiun", "i": "/tra.duk.ˈti.un/", "p": "n", "e": "translation", "n": ""},
+  {"f": "traductor", "i": "/tra.ˈduk.tor/", "p": "n", "e": "translator", "n": ""},
+  {"f": "tram", "i": "/tram/", "p": "n", "e": "tram", "n": "transbord te tram nove"},
+  {"f": "tramvay", "i": "/ˈtram.vai/", "p": "n", "e": "tram", "n": ""},
+  {"f": "trans", "i": "/trans/", "p": "prep", "e": "across", "n": ""},
+  {"f": "transbord", "i": "/ˈtrans.bord/", "p": "n", "e": "transfer, change", "n": ""},
+  {"f": "transborda", "i": "/trans.ˈbor.da/", "p": "v", "e": "transfer between services", "n": "transbord is the noun"},
+  {"f": "transcriva", "i": "/trans.ˈkri.va/", "p": "v", "e": "transcribe", "n": ""},
+  {"f": "transfera", "i": "/trans.ˈfe.ra/", "p": "v", "e": "transfer", "n": ""},
+  {"f": "transformator", "i": "/trans.for.ˈma.tor/", "p": "n", "e": "transformer", "n": ""},
+  {"f": "transita", "i": "/tran.ˈsi.ta/", "p": "v", "e": "pass through, transit", "n": "transita sin statiun, pass through without stopping"},
+  {"f": "transmitor", "i": "/trans.ˈmi.tor/", "p": "n", "e": "transmitter", "n": ""},
+  {"f": "transparent", "i": "/trans.ˈpa.rent/", "p": "adj", "e": "transparent", "n": "transparentia is the noun"},
+  {"f": "transparentia", "i": "/trans.pa.ren.ˈti.a/", "p": "n", "e": "transparency", "n": ""},
+  {"f": "transporta", "i": "/trans.ˈpor.ta/", "p": "v", "e": "transport", "n": ""},
+  {"f": "tratamentu", "i": "/tra.ta.ˈmen.tu/", "p": "n", "e": "treatment", "n": ""},
+  {"f": "traul", "i": "/ˈtra.ul/", "p": "n", "e": "trawl", "n": ""},
+  {"f": "traversa", "i": "/tra.ˈver.sa/", "p": "v", "e": "cross", "n": ""},
+  {"f": "traxa", "i": "/ˈtra.ʃa/", "p": "v", "e": "drag, haul", "n": ""},
+  {"f": "trema", "i": "/ˈtre.ma/", "p": "v", "e": "tremble, shake", "n": "of a person or a structure; tremor is the noun"},
+  {"f": "trembuja", "i": "/trem.ˈbu.ʒa/", "p": "n", "e": "construction, highway, works", "n": ""},
+  {"f": "trembujat", "i": "/trem.ˈbu.ʒat/", "p": "adj", "e": "dug up, under works", "n": "of a street the works have not left"},
+  {"f": "tremor", "i": "/ˈtre.mor/", "p": "n", "e": "tremor, shaking", "n": ""},
+  {"f": "tren", "i": "/tren/", "p": "n", "e": "train", "n": ""},
+  {"f": "trenu", "i": "/ˈtre.nu/", "p": "v", "e": "pull", "n": ""},
+  {"f": "tri", "i": "/tri/", "p": "num", "e": "three", "n": ""},
+  {"f": "tribunal", "i": "/tri.ˈbu.nal/", "p": "n", "e": "tribunal", "n": "corte is the ordinary court"},
+  {"f": "trinidadan", "i": "/tri.ni.ˈda.dan/", "p": "adj", "e": "Trinidadian", "n": "demonym of Trinidad"},
+  {"f": "trinta", "i": "/ˈtrin.ta/", "p": "num", "e": "thirty", "n": ""},
+  {"f": "trist", "i": "/trist/", "p": "adj", "e": "sad", "n": ""},
+  {"f": "tristia", "i": "/tris.ˈti.a/", "p": "n", "e": "sadness", "n": "trist is the adjective"},
+  {"f": "troca", "i": "/ˈtro.ka/", "p": "v", "e": "barter", "n": ""},
+  {"f": "tropo", "i": "/ˈtro.po/", "p": "adv", "e": "too, too much", "n": "tropo tarde, too late"},
+  {"f": "trova", "i": "/ˈtro.va/", "p": "v", "e": "find", "n": ""},
+  {"f": "tu", "i": "/tu/", "p": "pron", "e": "you, singular", "n": ""},
+  {"f": "tubu", "i": "/ˈtu.bu/", "p": "n", "e": "pipe", "n": ""},
+  {"f": "tuca", "i": "/ˈtu.ka/", "p": "v", "e": "touch", "n": "no tuca se cabli supra se stalpi"},
+  {"f": "tumba", "i": "/ˈtum.ba/", "p": "v", "e": "topple, fall over", "n": ""},
+  {"f": "tunc", "i": "/tunk/", "p": "adv", "e": "then, at that time", "n": ""},
+  {"f": "tunel", "i": "/ˈtu.nel/", "p": "n", "e": "tunnel", "n": ""},
+  {"f": "tunisian", "i": "/tu.ni.ˈsi.an/", "p": "adj", "e": "Tunisian", "n": "demonym of Tunisia"},
+  {"f": "turbina", "i": "/tur.ˈbi.na/", "p": "n", "e": "turbine", "n": ""},
+  {"f": "turc", "i": "/turk/", "p": "adj", "e": "Turkish", "n": ""},
+  {"f": "turchese", "i": "/turk.ˈhe.se/", "p": "adj", "e": "turquoise", "n": ""},
+  {"f": "turcmenistanian", "i": "/turk.me.nis.ta.ˈni.an/", "p": "adj", "e": "Turkmen", "n": "demonym of Turcmenistan"},
+  {"f": "turma", "i": "/ˈtur.ma/", "p": "n", "e": "flock", "n": ""},
+  {"f": "turnu", "i": "/ˈtur.nu/", "p": "n", "e": "shift", "n": "turnu de nox, the night shift"},
+  {"f": "tuse", "i": "/ˈtu.se/", "p": "n", "e": "cough", "n": "the verb is tusi"},
+  {"f": "tusi", "i": "/ˈtu.si/", "p": "v", "e": "cough", "n": ""},
+  {"f": "tutor-legal", "i": "/tu.tor.ˈle.gal/", "p": "n", "e": "legal guardian", "n": ""},
+  {"f": "tuvalan", "i": "/tu.ˈva.lan/", "p": "adj", "e": "Tuvaluan", "n": "demonym of Tuvalu"},
+  {"f": "ubi", "i": "/ˈu.bi/", "p": "adv", "e": "where", "n": "ubi es se statiun"},
+  {"f": "ubique", "i": "/u.ˈbi.ke/", "p": "adv", "e": "everywhere", "n": "ubi is where"},
+  {"f": "ucrainan", "i": "/u.ˈkrai.nan/", "p": "adj", "e": "Ukrainian", "n": "demonym of Ucraina"},
+  {"f": "ugandan", "i": "/u.ˈgan.dan/", "p": "adj", "e": "Ugandan", "n": "demonym of Uganda"},
+  {"f": "ultim", "i": "/ˈul.tim/", "p": "adj", "e": "last", "n": ""},
+  {"f": "ultimo", "i": "/ul.ˈti.mo/", "p": "adv", "e": "lastly", "n": "ultim is the adjective"},
+  {"f": "ultra", "i": "/ˈul.tra/", "p": "prep", "e": "beyond", "n": ""},
+  {"f": "umbra", "i": "/ˈum.bra/", "p": "v", "e": "shade, cast shade", "n": ""},
+  {"f": "umbrela", "i": "/um.ˈbre.la/", "p": "n", "e": "umbrella", "n": ""},
+  {"f": "umid", "i": "/ˈu.mid/", "p": "adj", "e": "wet, damp", "n": ""},
+  {"f": "umiditate", "i": "/u.mi.di.ˈta.te/", "p": "n", "e": "humidity", "n": ""},
+  {"f": "umor", "i": "/ˈu.mor/", "p": "n", "e": "mood", "n": ""},
+  {"f": "un", "i": "/un/", "p": "art", "e": "a, one", "n": ""},
+  {"f": "uncta", "i": "/ˈunk.ta/", "p": "v", "e": "grease, oil", "n": ""},
+  {"f": "unde", "i": "/ˈun.de/", "p": "adv", "e": "whence, from where", "n": ""},
+  {"f": "ungar", "i": "/ˈun.gar/", "p": "adj", "e": "Hungarian", "n": ""},
+  {"f": "unic", "i": "/ˈu.nik/", "p": "adj", "e": "single, sole", "n": ""},
+  {"f": "unitate", "i": "/u.ni.ˈta.te/", "p": "n", "e": "unity, a unit", "n": "of measurement and of a body held together"},
+  {"f": "universal", "i": "/u.ni.ˈver.sal/", "p": "adj", "e": "universal", "n": ""},
+  {"f": "universalment", "i": "/u.ni.ver.ˈsal.ment/", "p": "adv", "e": "universally", "n": ""},
+  {"f": "universitate", "i": "/u.ni.ver.si.ˈta.te/", "p": "n", "e": "university", "n": "the region runs them"},
+  {"f": "urban", "i": "/ˈur.ban/", "p": "adj", "e": "urban", "n": "of a commune with a town at its centre"},
+  {"f": "urgentia", "i": "/ur.d͡ʒen.ˈti.a/", "p": "n", "e": "emergency", "n": ""},
+  {"f": "urs", "i": "/urs/", "p": "n", "e": "bear", "n": ""},
+  {"f": "uruguaian", "i": "/u.ru.gu.ˈai.an/", "p": "adj", "e": "Uruguayan", "n": "demonym of Uruguai"},
+  {"f": "usa", "i": "/ˈu.sa/", "p": "v", "e": "use", "n": ""},
+  {"f": "usaj", "i": "/ˈu.saʒ/", "p": "n", "e": "usage", "n": ""},
+  {"f": "usator", "i": "/u.ˈsa.tor/", "p": "n", "e": "user", "n": ""},
+  {"f": "usque", "i": "/ˈus.ke/", "p": "prep", "e": "until", "n": ""},
+  {"f": "util", "i": "/ˈu.til/", "p": "adj", "e": "useful", "n": ""},
+  {"f": "utilitate", "i": "/u.ti.li.ˈta.te/", "p": "n", "e": "usefulness", "n": ""},
+  {"f": "utiliza", "i": "/u.ti.ˈli.za/", "p": "v", "e": "use, draw down", "n": "of a fund or an allocation"},
+  {"f": "uva", "i": "/ˈu.va/", "p": "n", "e": "grape", "n": ""},
+  {"f": "uzbequistanian", "i": "/uz.be.kis.ta.ˈni.an/", "p": "adj", "e": "Uzbek", "n": "demonym of Uzbequistan"},
+  {"f": "va", "i": "/va/", "p": "v", "e": "will", "n": "future particle: va ariva, will arrive"},
+  {"f": "vaca", "i": "/ˈva.ka/", "p": "n", "e": "cow", "n": ""},
+  {"f": "vacantia", "i": "/va.kan.ˈti.a/", "p": "n", "e": "holiday", "n": "of leave taken; congedu of leave granted"},
+  {"f": "vaccin", "i": "/ˈva.t͡ʃin/", "p": "n", "e": "vaccine", "n": ""},
+  {"f": "vacu", "i": "/ˈva.ku/", "p": "adj", "e": "empty", "n": ""},
+  {"f": "vacua", "i": "/va.ˈku.a/", "p": "v", "e": "empty", "n": "from vacu"},
+  {"f": "vad", "i": "/vad/", "p": "n", "e": "ford", "n": ""},
+  {"f": "vagon", "i": "/ˈva.gon/", "p": "n", "e": "carriage", "n": "vuz is the tram car"},
+  {"f": "vague", "i": "/va.ˈgu.e/", "p": "adj", "e": "vague", "n": ""},
+  {"f": "vaguement", "i": "/va.gu.ˈe.ment/", "p": "adv", "e": "vaguely", "n": ""},
+  {"f": "vai", "i": "/vai/", "p": "v", "e": "go, imperative of ir", "n": ""},
+  {"f": "valid", "i": "/ˈva.lid/", "p": "adj", "e": "valid", "n": ""},
+  {"f": "valisa", "i": "/va.ˈli.sa/", "p": "n", "e": "suitcase", "n": ""},
+  {"f": "valle", "i": "/ˈva.le/", "p": "n", "e": "valley", "n": ""},
+  {"f": "valor", "i": "/ˈva.lor/", "p": "n", "e": "value", "n": ""},
+  {"f": "valora", "i": "/va.ˈlo.ra/", "p": "v", "e": "be worth", "n": "valor is the value"},
+  {"f": "valvula", "i": "/val.ˈvu.la/", "p": "n", "e": "valve", "n": ""},
+  {"f": "vanuatan", "i": "/va.nu.ˈa.tan/", "p": "adj", "e": "Ni-Vanuatu", "n": "demonym of Vanuatu"},
+  {"f": "vapor", "i": "/ˈva.por/", "p": "n", "e": "steam", "n": ""},
+  {"f": "variante", "i": "/va.ri.ˈan.te/", "p": "n", "e": "variant", "n": "a form held by one sub-region against the rest"},
+  {"f": "vast", "i": "/vast/", "p": "adj", "e": "vast", "n": ""},
+  {"f": "vaticanian", "i": "/va.ti.ka.ˈni.an/", "p": "adj", "e": "Vatican", "n": "demonym of Vatican"},
+  {"f": "vecere", "i": "/ve.ˈt͡ʃe.re/", "p": "n", "e": "evening meal, everyday", "n": "formal cena"},
+  {"f": "veglia", "i": "/ve.ˈgli.a/", "p": "v", "e": "sit up with, watch over", "n": "at a sickbed and at a wake alike"},
+  {"f": "vehicul", "i": "/ve.ˈhi.kul/", "p": "n", "e": "vehicle, formal", "n": ""},
+  {"f": "vellus", "i": "/ˈve.lus/", "p": "n", "e": "fleece", "n": "lana is the wool once shorn"},
+  {"f": "vende", "i": "/ˈven.de/", "p": "v", "e": "sell", "n": ""},
+  {"f": "veneri", "i": "/ve.ˈne.ri/", "p": "n", "e": "Friday", "n": ""},
+  {"f": "venezuelan", "i": "/ve.ne.zu.ˈe.lan/", "p": "adj", "e": "Venezuelan", "n": "demonym of Venezuela"},
+  {"f": "veni", "i": "/ˈve.ni/", "p": "v", "e": "come", "n": ""},
+  {"f": "vent", "i": "/vent/", "p": "n", "e": "wind", "n": "adjective ventos"},
+  {"f": "ventre", "i": "/ˈven.tre/", "p": "n", "e": "belly, stomach", "n": ""},
+  {"f": "ver", "i": "/ver/", "p": "adj", "e": "true", "n": ""},
+  {"f": "verbu", "i": "/ˈver.bu/", "p": "n", "e": "verb", "n": ""},
+  {"f": "verd", "i": "/verd/", "p": "adj", "e": "green", "n": ""},
+  {"f": "vergonia", "i": "/ver.go.ˈni.a/", "p": "n", "e": "shame", "n": ""},
+  {"f": "vergonios", "i": "/ver.go.ˈni.os/", "p": "adj", "e": "ashamed", "n": ""},
+  {"f": "verifica", "i": "/ve.ri.ˈfi.ka/", "p": "v", "e": "verify", "n": ""},
+  {"f": "verificatiun", "i": "/ve.ri.fi.ka.ˈti.un/", "p": "n", "e": "verification", "n": ""},
+  {"f": "veritate", "i": "/ve.ri.ˈta.te/", "p": "n", "e": "truth", "n": ""},
+  {"f": "vernisa", "i": "/ver.ˈni.sa/", "p": "v", "e": "varnish", "n": ""},
+  {"f": "versa", "i": "/ˈver.sa/", "p": "v", "e": "pour", "n": ""},
+  {"f": "versu", "i": "/ˈver.su/", "p": "prep", "e": "towards", "n": "versu se peron, towards the platform"},
+  {"f": "vertical", "i": "/ver.ˈti.kal/", "p": "adj", "e": "vertical", "n": ""},
+  {"f": "vesti", "i": "/ˈves.ti/", "p": "v", "e": "dress, wear", "n": ""},
+  {"f": "vestibul", "i": "/ves.ˈti.bul/", "p": "n", "e": "entrance hall", "n": ""},
+  {"f": "vestimente", "i": "/ves.ti.ˈmen.te/", "p": "n", "e": "clothes", "n": ""},
+  {"f": "veto", "i": "/ˈve.to/", "p": "n", "e": "veto", "n": ""},
+  {"f": "vetu", "i": "/ˈve.tu/", "p": "adj", "e": "old", "n": ""},
+  {"f": "via", "i": "/ˈvi.a/", "p": "n", "e": "road, way, formal", "n": ""},
+  {"f": "viaja", "i": "/vi.ˈa.ʒa/", "p": "v", "e": "travel", "n": ""},
+  {"f": "viaje", "i": "/vi.ˈa.ʒe/", "p": "n", "e": "journey", "n": ""},
+  {"f": "vibra", "i": "/ˈvi.bra/", "p": "v", "e": "vibrate", "n": ""},
+  {"f": "vice", "i": "/ˈvi.t͡ʃe/", "p": "n", "e": "time, occasion", "n": "tri vices, three times"},
+  {"f": "vicin", "i": "/ˈvi.t͡ʃin/", "p": "n", "e": "neighbour", "n": ""},
+  {"f": "vidi", "i": "/ˈvi.di/", "p": "v", "e": "see", "n": ""},
+  {"f": "vidue", "i": "/vi.ˈdu.e/", "p": "n", "e": "widow or widower", "n": ""},
+  {"f": "vietname", "i": "/vi.et.ˈna.me/", "p": "adj", "e": "Vietnamese", "n": "demonym of Vietnam"},
+  {"f": "vigor", "i": "/ˈvi.gor/", "p": "n", "e": "force, effect", "n": "en vigor, in force"},
+  {"f": "vilaje", "i": "/vi.ˈla.ʒe/", "p": "n", "e": "village", "n": ""},
+  {"f": "vin", "i": "/vin/", "p": "n", "e": "wine", "n": ""},
+  {"f": "vinagre", "i": "/vi.ˈna.gre/", "p": "n", "e": "vinegar", "n": ""},
+  {"f": "vincentan", "i": "/vin.ˈt͡ʃen.tan/", "p": "adj", "e": "Vincentian", "n": "demonym of San Vincent"},
+  {"f": "vinia", "i": "/vi.ˈni.a/", "p": "n", "e": "vineyard", "n": ""},
+  {"f": "vinte", "i": "/ˈvin.te/", "p": "num", "e": "twenty", "n": ""},
+  {"f": "visa", "i": "/ˈvi.sa/", "p": "n", "e": "visa", "n": ""},
+  {"f": "visita", "i": "/vi.ˈsi.ta/", "p": "v", "e": "visit", "n": ""},
+  {"f": "vita", "i": "/ˈvi.ta/", "p": "n", "e": "life", "n": "adjective vital"},
+  {"f": "vite", "i": "/ˈvi.te/", "p": "n", "e": "screw", "n": "spira is the act of screwing in"},
+  {"f": "vitri", "i": "/ˈvi.tri/", "p": "n", "e": "pane, glazing", "n": "vitru is the material; vitri is the counted pane, so okna con tri vitri is triple glazing"},
+  {"f": "vitru", "i": "/ˈvi.tru/", "p": "n", "e": "glass", "n": "the material and the drinking glass alike"},
+  {"f": "vive", "i": "/ˈvi.ve/", "p": "v", "e": "live, be alive", "n": "habita is to live in a place"},
+  {"f": "vlak", "i": "/vlak/", "p": "n", "e": "train, everyday", "n": "formal tren; vlak in the east"},
+  {"f": "voca", "i": "/ˈvo.ka/", "p": "v", "e": "call, summon", "n": ""},
+  {"f": "vocabular", "i": "/vo.ka.ˈbu.lar/", "p": "n", "e": "vocabulary", "n": ""},
+  {"f": "vocal", "i": "/ˈvo.kal/", "p": "n", "e": "vowel", "n": ""},
+  {"f": "vocifera", "i": "/vo.t͡ʃi.ˈfe.ra/", "p": "v", "e": "shout, call out loudly", "n": "Ravelluri and the eastern seaboard; clama elsewhere"},
+  {"f": "voda", "i": "/ˈvo.da/", "p": "n", "e": "water, everyday", "n": ""},
+  {"f": "vola", "i": "/ˈvo.la/", "p": "v", "e": "fly", "n": "of aircraft and of birds alike"},
+  {"f": "vole", "i": "/ˈvo.le/", "p": "v", "e": "want", "n": ""},
+  {"f": "voltaje", "i": "/vol.ˈta.ʒe/", "p": "n", "e": "voltage", "n": "read at the tablou-electric"},
+  {"f": "volume", "i": "/vo.ˈlu.me/", "p": "n", "e": "volume", "n": "of a solid; cantitate of an amount"},
+  {"f": "volve", "i": "/ˈvol.ve/", "p": "v", "e": "wrap, roll up", "n": ""},
+  {"f": "vomi", "i": "/ˈvo.mi/", "p": "v", "e": "vomit", "n": ""},
+  {"f": "vos", "i": "/vos/", "p": "pron", "e": "you, plural", "n": ""},
+  {"f": "vostre", "i": "/ˈvos.tre/", "p": "det", "e": "your, plural", "n": ""},
+  {"f": "vota", "i": "/ˈvo.ta/", "p": "v", "e": "vote", "n": ""},
+  {"f": "votu", "i": "/ˈvo.tu/", "p": "n", "e": "a vote", "n": ""},
+  {"f": "vreme", "i": "/ˈvre.me/", "p": "n", "e": "weather", "n": ""},
+  {"f": "vulpe", "i": "/ˈvul.pe/", "p": "n", "e": "fox", "n": ""},
+  {"f": "vuz", "i": "/vuz/", "p": "n", "e": "tram car, vehicle, everyday", "n": ""},
+  {"f": "vychod", "i": "/ˈvi.kod/", "p": "n", "e": "exit, everyday", "n": "formal sortida; vychod on the older signs"},
+  {"f": "vytah", "i": "/ˈvi.tah/", "p": "n", "e": "lift", "n": ""},
+  {"f": "xal", "i": "/ʃal/", "p": "n", "e": "scarf", "n": ""},
+  {"f": "xef", "i": "/ʃef/", "p": "n", "e": "chief, head of a team", "n": ""},
+  {"f": "xu-", "i": "", "p": "pref", "e": "deliberately, on purpose", "n": ""},
+  {"f": "xuclar", "i": "/ˈʃu.klar/", "p": "adj", "e": "corrupt", "n": "from xu, on purpose, and clar, clear"},
+  {"f": "xulent", "i": "/ˈʃu.lent/", "p": "adj", "e": "slowed on purpose", "n": "of a service degraded to force a decision"},
+  {"f": "zambian", "i": "/zam.ˈbi.an/", "p": "adj", "e": "Zambian", "n": "demonym of Zambia"},
+  {"f": "zasta", "i": "/ˈzas.ta/", "p": "n", "e": "nothing, not a thing", "n": ""},
+  {"f": "zeli", "i": "/ˈze.li/", "p": "n", "e": "cabbage", "n": ""},
+  {"f": "zero", "i": "/ˈze.ro/", "p": "num", "e": "zero", "n": ""},
+  {"f": "zida", "i": "/ˈzi.da/", "p": "v", "e": "wall up, build in brick", "n": ""},
+  {"f": "zimbabvan", "i": "/zim.ˈbab.van/", "p": "adj", "e": "Zimbabwean", "n": "demonym of Zimbabve"},
+  {"f": "zolt", "i": "/zolt/", "p": "adj", "e": "yellow", "n": "tena se linia zolt, keep behind the yellow line"},
+  {"f": "zucre", "i": "/ˈzu.kre/", "p": "n", "e": "sugar", "n": ""}
 ];

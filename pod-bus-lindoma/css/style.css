@@ -18,6 +18,10 @@
   --accent-sixth: #aeb985;
   --accent-seventh: #c48fb4;
   --accent-eighth: #b9a06a;
+  --accent-ninth: #cf9f7a;
+  --accent-tenth: #8fc4c4;
+  --accent-eleventh: #9ec27f;
+  --accent-twelfth: #b79ad6;
   --mark: #3a3120;
 
   --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
@@ -27,6 +31,7 @@
   --who-col: 5rem;
   --gap: 1.5rem;
   --measure: 41rem;
+  --rhythm: 2.12rem;
   --step: clamp(1rem, 0.95rem + 0.32vw, 1.15rem);
 }
 
@@ -66,7 +71,7 @@ body {
 
 .masthead h1 {
   font: 600 clamp(1.5rem, 1.2rem + 1.6vw, 2.2rem) / 1.15 var(--serif);
-  margin: 0 0 0.35rem;
+  margin-block: 0 0.35rem;
   letter-spacing: -0.01em;
 }
 
@@ -97,7 +102,7 @@ body {
 }
 
 .contents h2 {
-  margin: 0 0 0.6rem;
+  margin-block: 0 0.6rem;
   font: 600 0.72rem/1 var(--sans);
   text-transform: uppercase;
   letter-spacing: 0.12em;
@@ -143,7 +148,7 @@ body {
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  margin: 2.12rem 0 2.12rem;
+  margin-block: var(--rhythm);
   font: 600 0.72rem/1 var(--sans);
   text-transform: uppercase;
   letter-spacing: 0.14em;
@@ -232,11 +237,23 @@ section:first-of-type .sep {
 }
 
 .said > p {
-  margin: 0 0 0.7rem;
+  margin-block: 0 0.7rem;
   text-wrap: pretty;
 }
 
-.said > p:last-child {
+.said > :first-child,
+.scene > :first-child,
+.doc > :first-child,
+.screen > :first-child,
+.thread > :first-child {
+  margin-block-start: 0;
+}
+
+.said > :last-child,
+.scene > :last-child,
+.doc > :last-child,
+.screen > :last-child,
+.thread > :last-child {
   margin-block-end: 0;
 }
 
@@ -244,10 +261,10 @@ section:first-of-type .sep {
   color: var(--ink-soft);
 }
 
-/* the opening stage direction */
+/* stage directions, one paragraph or several */
 
 .scene {
-  margin: 0 0 2rem;
+  margin-block: var(--rhythm);
   padding-inline-start: 1rem;
   border-inline-start: 2px solid var(--rule-strong);
   color: var(--ink-soft);
@@ -257,7 +274,7 @@ section:first-of-type .sep {
 /* ---------- documents read aloud ---------- */
 
 .doc {
-  margin: 1rem 0;
+  margin-block: 1rem;
   padding: 1.1rem 1.25rem;
   background: var(--paper-raised);
   border: 1px solid var(--rule);
@@ -266,16 +283,8 @@ section:first-of-type .sep {
   font-size: 0.94em;
 }
 
-.doc > :first-child {
-  margin-block-start: 0;
-}
-
-.doc > :last-child {
-  margin-block-end: 0;
-}
-
 .doc p {
-  margin: 0 0 0.65rem;
+  margin-block: 0 0.65rem;
 }
 
 .doc .head {
@@ -292,7 +301,7 @@ section:first-of-type .sep {
 }
 
 .doc h4 {
-  margin: 1.1rem 0 0.2rem;
+  margin-block: 1.1rem 0.2rem;
   font: 600 0.76rem/1.4 var(--sans);
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -313,7 +322,7 @@ section:first-of-type .sep {
 }
 
 .doc pre {
-  margin: 0.85rem 0;
+  margin-block: 0.85rem;
   padding: 0.85rem 1rem;
   background: var(--paper);
   border: 1px solid var(--rule);
@@ -326,7 +335,7 @@ section:first-of-type .sep {
 /* ---------- tables inside documents ---------- */
 
 .table-wrap {
-  margin: 0.9rem 0;
+  margin-block: 0.9rem;
   overflow-x: auto;
 }
 
@@ -378,7 +387,7 @@ section:first-of-type .sep {
 /* ---------- screens and interfaces ---------- */
 
 .screen {
-  margin: 1rem 0;
+  margin-block: 1rem;
   padding: 1rem 1.15rem;
   background: #101110;
   border: 1px solid var(--rule-strong);
@@ -387,16 +396,8 @@ section:first-of-type .sep {
   color: var(--ink-soft);
 }
 
-.screen > :first-child {
-  margin-block-start: 0;
-}
-
-.screen > :last-child {
-  margin-block-end: 0;
-}
-
 .screen p {
-  margin: 0 0 0.6rem;
+  margin-block: 0 0.6rem;
 }
 
 .screen .head {
@@ -410,7 +411,7 @@ section:first-of-type .sep {
 }
 
 .screen h4 {
-  margin: 1.05rem 0 0.35rem;
+  margin-block: 1.05rem 0.35rem;
   font: 600 0.74rem/1.45 var(--sans);
   letter-spacing: 0.07em;
   text-transform: uppercase;
@@ -432,13 +433,13 @@ section:first-of-type .sep {
 }
 
 .screen .opts {
-  margin: 0.45rem 0 0.85rem;
+  margin-block: 0.45rem 0.85rem;
   padding: 0;
   list-style: none;
 }
 
 .screen .opts li {
-  margin: 0 0 0.34rem;
+  margin-block: 0 0.34rem;
   padding: 0.3rem 0.6rem;
   background: var(--paper-raised);
   border: 1px solid var(--rule);
@@ -519,24 +520,50 @@ section:first-of-type .sep {
   color: var(--accent-eighth);
 }
 
+/* ---------- speakers introduced in part 8 ---------- */
+
+.turn-ilvena .who {
+  color: var(--accent-ninth);
+}
+
+.turn-engineer .who {
+  color: var(--accent-tenth);
+}
+
+.turn-crew .who {
+  color: var(--accent-eleventh);
+}
+
+.turn-water .who {
+  color: var(--accent-twelfth);
+}
+
+.turn-resident .who {
+  color: var(--ink-soft);
+}
+
+.turn-control .who,
+.turn-megaphone .who {
+  color: var(--accent-fifth);
+  font-family: var(--mono);
+  text-transform: none;
+  letter-spacing: 0.04em;
+}
+
 .gloss {
   color: var(--ink-faint);
 }
 
-/* a stage direction of several paragraphs */
+/* paragraphs inside a stage direction */
 
 .scene p {
-  margin: 0 0 0.8rem;
-}
-
-.scene p:last-child {
-  margin-block-end: 0;
+  margin-block: 0 0.8rem;
 }
 
 /* ---------- the messaging thread ---------- */
 
 .thread {
-  margin: 1rem 0;
+  margin-block: 1rem;
   padding: 1rem 1.15rem 1.15rem;
   background: var(--paper-raised);
   border: 1px solid var(--rule);
@@ -549,7 +576,7 @@ section:first-of-type .sep {
   letter-spacing: 0.02em;
   text-transform: uppercase;
   color: var(--ink-soft);
-  margin: 0 0 0.75rem;
+  margin-block: 0 0.75rem;
   padding-block-end: 0.65rem;
   border-block-end: 1px solid var(--rule);
 }
@@ -602,28 +629,40 @@ section:first-of-type .sep {
 
 #t7-ja:checked ~ .thread-controls label[for="t7-ja"],
 #t7-rj:checked ~ .thread-controls label[for="t7-rj"],
-#t7-en:checked ~ .thread-controls label[for="t7-en"] {
+#t7-en:checked ~ .thread-controls label[for="t7-en"],
+#t8-ja:checked ~ .thread-controls label[for="t8-ja"],
+#t8-rj:checked ~ .thread-controls label[for="t8-rj"],
+#t8-en:checked ~ .thread-controls label[for="t8-en"] {
   color: var(--ink);
   border-color: var(--accent-fourth);
 }
 
 #t7-ja:checked ~ .thread-controls label[for="t7-ja"]::before,
 #t7-rj:checked ~ .thread-controls label[for="t7-rj"]::before,
-#t7-en:checked ~ .thread-controls label[for="t7-en"]::before {
+#t7-en:checked ~ .thread-controls label[for="t7-en"]::before,
+#t8-ja:checked ~ .thread-controls label[for="t8-ja"]::before,
+#t8-rj:checked ~ .thread-controls label[for="t8-rj"]::before,
+#t8-en:checked ~ .thread-controls label[for="t8-en"]::before {
   content: "\2713\00a0\00a0";
   color: var(--accent-fourth);
 }
 
 .thread .vis:focus-visible ~ .thread-controls label[for="t7-ja"],
 .thread .vis:focus-visible ~ .thread-controls label[for="t7-rj"],
-.thread .vis:focus-visible ~ .thread-controls label[for="t7-en"] {
+.thread .vis:focus-visible ~ .thread-controls label[for="t7-en"],
+.thread .vis:focus-visible ~ .thread-controls label[for="t8-ja"],
+.thread .vis:focus-visible ~ .thread-controls label[for="t8-rj"],
+.thread .vis:focus-visible ~ .thread-controls label[for="t8-en"] {
   outline: 2px solid var(--accent);
   outline-offset: 2px;
 }
 
 #t7-ja:not(:checked) ~ .msgs .ln-ja,
 #t7-rj:not(:checked) ~ .msgs .ln-rj,
-#t7-en:not(:checked) ~ .msgs .ln-en {
+#t7-en:not(:checked) ~ .msgs .ln-en,
+#t8-ja:not(:checked) ~ .msgs .ln-ja,
+#t8-rj:not(:checked) ~ .msgs .ln-rj,
+#t8-en:not(:checked) ~ .msgs .ln-en {
   display: none;
 }
 
@@ -637,7 +676,7 @@ section:first-of-type .sep {
 }
 
 .msgs .msg {
-  max-width: 40rem;
+  max-width: 38rem;
   padding: 0.6rem 0.85rem;
   border: 1px solid var(--rule);
   border-radius: 10px;
@@ -657,7 +696,7 @@ section:first-of-type .sep {
 }
 
 .msgs .meta {
-  margin: 0 0 0.4rem;
+  margin-block: 0 0.4rem;
   font: 500 0.68rem/1.5 var(--mono);
   letter-spacing: 0.04em;
   color: var(--ink-faint);
@@ -669,7 +708,7 @@ section:first-of-type .sep {
 }
 
 .msgs .ln {
-  margin: 0 0 0.3rem;
+  margin-block: 0 0.3rem;
 }
 
 .msgs .ln:last-child {
@@ -688,6 +727,12 @@ section:first-of-type .sep {
 
 .msgs .ln-en {
   color: var(--ink-soft);
+}
+
+.msgs .ln-url {
+  font-family: var(--mono);
+  font-size: 0.84em;
+  word-break: break-all;
 }
 
 @media (max-width: 34rem) {
@@ -758,7 +803,7 @@ section:first-of-type .sep {
 }
 
 .parts p {
-  margin: 0.3rem 0 0;
+  margin-block: 0.3rem 0;
   color: var(--ink-soft);
   font-size: 0.95rem;
 }
@@ -774,7 +819,7 @@ section:first-of-type .sep {
 }
 
 .colophon p {
-  margin: 0 0 0.3rem;
+  margin-block: 0 0.3rem;
 }
 
 a {
