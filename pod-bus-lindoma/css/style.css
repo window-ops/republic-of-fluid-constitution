@@ -213,12 +213,7 @@ section:first-of-type .sep {
   letter-spacing: 0.11em;
   color: var(--ink-faint);
   text-align: right;
-  white-space: nowrap;
-}
-
-.who > span {
-  display: inline-block;
-  white-space: normal;
+  text-wrap: balance;
 }
 
 .turn-sarena .who {
