@@ -23,6 +23,7 @@
   --accent-eleventh: #9ec27f;
   --accent-twelfth: #b79ad6;
   --accent-thirteenth: #6fa8a0;
+  --accent-fourteenth: #a8b6cf;
   --mark: #3a3120;
 
   --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
@@ -547,6 +548,12 @@ section:first-of-type .sep {
   color: var(--ink-soft);
 }
 
+/* ---------- speaker introduced in part 9 ---------- */
+
+.turn-teller .who {
+  color: var(--accent-fourteenth);
+}
+
 .turn-control .who,
 .turn-megaphone .who {
   color: var(--accent-fifth);
@@ -557,6 +564,15 @@ section:first-of-type .sep {
 
 .gloss {
   color: var(--ink-faint);
+}
+
+.said .name {
+  margin: 0.9rem 0;
+  padding-inline-start: 1rem;
+  border-inline-start: 2px solid var(--rule-strong);
+  font-size: 2.1rem;
+  line-height: 1.5;
+  letter-spacing: 0.12em;
 }
 
 /* paragraphs inside a stage direction */
@@ -637,7 +653,19 @@ section:first-of-type .sep {
 #t7-en:checked ~ .thread-controls label[for="t7-en"],
 #t8-ja:checked ~ .thread-controls label[for="t8-ja"],
 #t8-rj:checked ~ .thread-controls label[for="t8-rj"],
-#t8-en:checked ~ .thread-controls label[for="t8-en"] {
+#t8-en:checked ~ .thread-controls label[for="t8-en"],
+#t9a-ja:checked ~ .thread-controls label[for="t9a-ja"],
+#t9a-rj:checked ~ .thread-controls label[for="t9a-rj"],
+#t9a-en:checked ~ .thread-controls label[for="t9a-en"],
+#t9b-ja:checked ~ .thread-controls label[for="t9b-ja"],
+#t9b-rj:checked ~ .thread-controls label[for="t9b-rj"],
+#t9b-en:checked ~ .thread-controls label[for="t9b-en"],
+#t9c-ja:checked ~ .thread-controls label[for="t9c-ja"],
+#t9c-rj:checked ~ .thread-controls label[for="t9c-rj"],
+#t9c-en:checked ~ .thread-controls label[for="t9c-en"],
+#t9d-ja:checked ~ .thread-controls label[for="t9d-ja"],
+#t9d-rj:checked ~ .thread-controls label[for="t9d-rj"],
+#t9d-en:checked ~ .thread-controls label[for="t9d-en"] {
   color: var(--ink);
   border-color: var(--accent-fourth);
 }
@@ -647,7 +675,19 @@ section:first-of-type .sep {
 #t7-en:checked ~ .thread-controls label[for="t7-en"]::before,
 #t8-ja:checked ~ .thread-controls label[for="t8-ja"]::before,
 #t8-rj:checked ~ .thread-controls label[for="t8-rj"]::before,
-#t8-en:checked ~ .thread-controls label[for="t8-en"]::before {
+#t8-en:checked ~ .thread-controls label[for="t8-en"]::before,
+#t9a-ja:checked ~ .thread-controls label[for="t9a-ja"]::before,
+#t9a-rj:checked ~ .thread-controls label[for="t9a-rj"]::before,
+#t9a-en:checked ~ .thread-controls label[for="t9a-en"]::before,
+#t9b-ja:checked ~ .thread-controls label[for="t9b-ja"]::before,
+#t9b-rj:checked ~ .thread-controls label[for="t9b-rj"]::before,
+#t9b-en:checked ~ .thread-controls label[for="t9b-en"]::before,
+#t9c-ja:checked ~ .thread-controls label[for="t9c-ja"]::before,
+#t9c-rj:checked ~ .thread-controls label[for="t9c-rj"]::before,
+#t9c-en:checked ~ .thread-controls label[for="t9c-en"]::before,
+#t9d-ja:checked ~ .thread-controls label[for="t9d-ja"]::before,
+#t9d-rj:checked ~ .thread-controls label[for="t9d-rj"]::before,
+#t9d-en:checked ~ .thread-controls label[for="t9d-en"]::before {
   content: "\2713\00a0\00a0";
   color: var(--accent-fourth);
 }
@@ -657,7 +697,19 @@ section:first-of-type .sep {
 .thread .vis:focus-visible ~ .thread-controls label[for="t7-en"],
 .thread .vis:focus-visible ~ .thread-controls label[for="t8-ja"],
 .thread .vis:focus-visible ~ .thread-controls label[for="t8-rj"],
-.thread .vis:focus-visible ~ .thread-controls label[for="t8-en"] {
+.thread .vis:focus-visible ~ .thread-controls label[for="t8-en"],
+.thread .vis:focus-visible ~ .thread-controls label[for="t9a-ja"],
+.thread .vis:focus-visible ~ .thread-controls label[for="t9a-rj"],
+.thread .vis:focus-visible ~ .thread-controls label[for="t9a-en"],
+.thread .vis:focus-visible ~ .thread-controls label[for="t9b-ja"],
+.thread .vis:focus-visible ~ .thread-controls label[for="t9b-rj"],
+.thread .vis:focus-visible ~ .thread-controls label[for="t9b-en"],
+.thread .vis:focus-visible ~ .thread-controls label[for="t9c-ja"],
+.thread .vis:focus-visible ~ .thread-controls label[for="t9c-rj"],
+.thread .vis:focus-visible ~ .thread-controls label[for="t9c-en"],
+.thread .vis:focus-visible ~ .thread-controls label[for="t9d-ja"],
+.thread .vis:focus-visible ~ .thread-controls label[for="t9d-rj"],
+.thread .vis:focus-visible ~ .thread-controls label[for="t9d-en"] {
   outline: 2px solid var(--accent);
   outline-offset: 2px;
 }
@@ -667,7 +719,19 @@ section:first-of-type .sep {
 #t7-en:not(:checked) ~ .msgs .ln-en,
 #t8-ja:not(:checked) ~ .msgs .ln-ja,
 #t8-rj:not(:checked) ~ .msgs .ln-rj,
-#t8-en:not(:checked) ~ .msgs .ln-en {
+#t8-en:not(:checked) ~ .msgs .ln-en,
+#t9a-ja:not(:checked) ~ .msgs .ln-ja,
+#t9a-rj:not(:checked) ~ .msgs .ln-rj,
+#t9a-en:not(:checked) ~ .msgs .ln-en,
+#t9b-ja:not(:checked) ~ .msgs .ln-ja,
+#t9b-rj:not(:checked) ~ .msgs .ln-rj,
+#t9b-en:not(:checked) ~ .msgs .ln-en,
+#t9c-ja:not(:checked) ~ .msgs .ln-ja,
+#t9c-rj:not(:checked) ~ .msgs .ln-rj,
+#t9c-en:not(:checked) ~ .msgs .ln-en,
+#t9d-ja:not(:checked) ~ .msgs .ln-ja,
+#t9d-rj:not(:checked) ~ .msgs .ln-rj,
+#t9d-en:not(:checked) ~ .msgs .ln-en {
   display: none;
 }
 
@@ -681,7 +745,7 @@ section:first-of-type .sep {
 }
 
 .msgs .msg {
-  max-width: 34.5rem;
+  max-width: 36.5rem;
   padding: 0.6rem 0.85rem;
   border: 1px solid var(--rule);
   border-radius: 10px;
@@ -732,6 +796,53 @@ section:first-of-type .sep {
 
 .msgs .ln-en {
   color: var(--ink-soft);
+}
+
+.msgs .msg-doc {
+  max-width: none;
+  align-self: stretch;
+}
+
+.frame {
+  margin-block-start: 0.7rem;
+  padding: 0.9rem 1rem;
+  background: var(--paper-raised);
+  border: 1px solid var(--rule);
+  border-inline-start: 3px solid var(--rule-strong);
+  border-radius: 2px;
+  font-size: 0.96em;
+}
+
+.frame .frame-head {
+  font: 500 0.68rem/1.5 var(--mono);
+  letter-spacing: 0.04em;
+  text-transform: lowercase;
+  color: var(--ink-faint);
+  margin-block: 0 0.6rem;
+  padding-block-end: 0.5rem;
+  border-block-end: 1px solid var(--rule);
+}
+
+.frame h4 {
+  font: 600 1rem/1.5 var(--sans);
+  margin-block: 0 0.6rem;
+}
+
+.frame p {
+  margin-block: 0 0.65rem;
+}
+
+.frame ul {
+  margin-block: 0 0.65rem;
+  padding-inline-start: 1.1rem;
+}
+
+.frame li {
+  margin-block-end: 0.5rem;
+}
+
+.frame > :last-child {
+  margin-block-end: 0;
 }
 
 .msgs .ln-url {
