@@ -24,6 +24,7 @@
   --accent-twelfth: #b79ad6;
   --accent-thirteenth: #6fa8a0;
   --accent-fourteenth: #a8b6cf;
+  --accent-fifteenth: #c9a3a0;
   --mark: #3a3120;
 
   --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
@@ -287,6 +288,15 @@ section:first-of-type .sep {
 
 .doc p {
   margin-block: 0 0.65rem;
+}
+
+.doc ul {
+  margin-block: 0 0.65rem;
+  padding-inline-start: 1.1rem;
+}
+
+.doc li {
+  margin-block-end: 0.5rem;
 }
 
 .doc .head {
@@ -554,6 +564,12 @@ section:first-of-type .sep {
   color: var(--accent-fourteenth);
 }
 
+/* ---------- speaker introduced in part 10 ---------- */
+
+.turn-costin .who {
+  color: var(--accent-fifteenth);
+}
+
 .turn-control .who,
 .turn-megaphone .who {
   color: var(--accent-fifth);
@@ -796,6 +812,10 @@ section:first-of-type .sep {
 
 .msgs .ln-en {
   color: var(--ink-soft);
+}
+
+.thread-plain .thread-head {
+  margin-block-end: 1rem;
 }
 
 .msgs .msg-doc {
