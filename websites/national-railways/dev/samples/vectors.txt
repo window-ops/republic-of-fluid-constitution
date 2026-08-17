@@ -33,7 +33,7 @@ only.
    Knet      a1b2c3d4 e5f60718 293a4b5c 6d7e8f90
    record    0dcb41a0                      stamp   2026-08-02 08:22 local
              00000000 004c494e            station  LIN-CTR
-             4c494e00 4c455200            section  Lindoma to Leriduson
+             4c494e00 4c455200            section  Lindoma to Torvena
              02                            count    2
              00                            kind     gate
              0001                          operator northern-coast
