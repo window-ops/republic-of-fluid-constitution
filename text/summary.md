@@ -1,6 +1,6 @@
 # Official summary of the Constitution of the Republic of Fluid
 
-Published under Article 315. **This summary carries no legal force.** It cannot create, extend, restrict or interpret a right, an obligation or a competence, and no court decides a case upon it. Where it misstates an article, the Office of Constitutional Revision corrects it within ninety days and publishes the correction.
+Published under Article 315. **This summary has no legal force.** It cannot create, extend, restrict or interpret a right, an obligation or a competence, and no court decides a case upon it. Where it misstates an article, the Office of Constitutional Revision corrects it within ninety days and publishes the correction.
 
 ## The Constitution in one paragraph
 
