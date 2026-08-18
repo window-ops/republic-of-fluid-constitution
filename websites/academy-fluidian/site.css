@@ -3,10 +3,10 @@
    The academy is a licensed cooperative and not an organ of the Republic,
    so it loads none of the shared state frame.
 
-   The design is taken from the object the academy actually prints: the
+   The design is taken from the object the academy usually prints: the
    pocket dictionary. Warm paper, a dark headword bar, entries set as
-   blocks rather than ruled columns, and one red used only for the marks a
-   corrector makes. Nothing is loaded from outside this folder. */
+   blocks, and one red from the color of the corrector marks.
+   Nothing is loaded from outside this folder. */
 
 :root {
   --paper:    #f7f4ec;
