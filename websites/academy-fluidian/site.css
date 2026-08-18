@@ -357,7 +357,6 @@ button {
 button:hover { background: var(--red); border-color: var(--red); }
 
 .out {
-  margin-block-start: 0.9rem;
   padding: 0.85rem 0.95rem;
   background: var(--paper);
   border: 1px dashed var(--rule);
