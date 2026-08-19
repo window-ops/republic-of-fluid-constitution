@@ -34,7 +34,7 @@
 
   --who-col: 5rem;
   --gap: 1.5rem;
-  --measure: 41.8rem;
+  --measure: 42rem;
   --rhythm: 2.12rem;
   --step: clamp(1rem, 0.95rem + 0.32vw, 1.15rem);
 }
