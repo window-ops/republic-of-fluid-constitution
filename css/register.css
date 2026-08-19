@@ -161,7 +161,7 @@ a:focus-visible, button:focus-visible {
   font-weight: 700;
 }
 
-.title-head { margin: 0 0 2.25rem; padding-bottom: 1rem; border-bottom: 3px solid var(--ink); }
+.title-head { padding-bottom: 1rem; border-bottom: 3px solid var(--ink); }
 .title-head .eyebrow {
   font-family: var(--sans);
   font-size: 0.78rem;
@@ -783,7 +783,7 @@ h2.chapter:first-child { margin-top: 0; }
 }
 
 /* ============ continuous rule between the text column and the rail ============ */
-/* The article grid is  tab(3.5) | gap(1.25) | text(36) | gap(1.25) | rail(12).
+/* The article grid is tab(3.5) | gap(1.25) | text(36) | gap(1.25) | rail(12).
    The rule sits in the middle of the second gap, plus the sheet's own padding. */
 
 @media (min-width: 1040px) {
@@ -1113,7 +1113,7 @@ blockquote > :last-child { margin-bottom: 0; }
 .crumbs { margin: 0 0 1.5rem; }
 .pager { margin-top: 2.05rem; }
 .article { margin: 0 0 2.25rem; }
-.title-head { margin: 0 0 2.25rem; }
+.title-head { margin: 0 0 1.5rem; }
 .timeline h2.era { margin-top: 2.05rem; }
 .prose h2.chapter { margin-top: 2.05rem; }
 .onthispage { margin: 0; }
@@ -1408,7 +1408,7 @@ h3.subhead.tl-era {
 .tablewrap { overflow-x: visible; }
 .tablewrap .ptab { min-width: 0; }
 .ptab.seats td:first-child,
-.ptab.seats th:first-child { padding-left: 0.6rem; }
+.ptab.seats th:first-child { padding-left: 0.5rem; }
 
 /* disclaimers: none above the questions one, space above the encyclopedic ones */
 .qa ~ .disclaim { margin-top: 0; }
