@@ -1,4 +1,4 @@
-/* Public Register of the Republic of Fluid — shared behaviour.
+/* Public Register of the Republic of Fluid - shared behaviour.
    No dependencies. Nothing is loaded from outside the Republic. */
 (function () {
   "use strict";
