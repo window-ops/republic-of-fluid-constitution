@@ -156,7 +156,7 @@ Articles 37 to 81.
 
 **69. Energy, mobility and communication** - Energy, transport and network access sufficient for public life are guaranteed.
 
-**70. Contribution** - Everyone contributes according to capacity, everyone is presumed to, and nothing depends on proving it.
+**70. Contribution** - Everyone contributes according to capacity, everyone is presumed to, and no service depends on proving it.
 
 **71. Conditions of labour** - Work must be safe, workers govern their enterprise, and dismissal never touches provision.
 
