@@ -815,7 +815,6 @@ code.inline {
   padding: 0.25rem 0;
   list-style: none;
   background: var(--band-2);
-  border-top: 3px solid #fff;
   box-shadow: 0 8px 18px rgba(16, 32, 44, 0.28);
 }
 

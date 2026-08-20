@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Application interfaces &middot; National Railways Federation</title>
-  <meta name="description" content="api.nrf.rof version 1: stations, routes, timetable, platforms, changes and reports, with the shapes of a departure, a change and a report, and how the Podnik position feed joins to it.">
+  <meta name="description" content="api.nrf.rof version 1: stations, routes, timetable, platforms, changes and reports, with the formats of a departure, a change and a report, and how the Podnik position feed joins to it.">
   <meta name="theme-color" content="#0b4ea2">
   <link rel="stylesheet" href="../site.css">
   <link rel="icon" href="../../../assets/flag.png">
@@ -124,46 +124,75 @@
         <h2>A departure, a change, a report</h2>
       </div>
       <div class="wrap">
-        <pre class="code">GET /v1/timetable?stop=LIN-CTR&amp;from=2026-08-02T08:00
+        <pre class="code" style="margin-bottom:1.2rem">GET /v1/timetable?stop=LIN-CTR&amp;from=2026-08-02T08:00
 
-{"stop": "LIN-CTR",
- "generated": "2026-08-02T08:14:02+02:00",
- "departures": [
-   {"service": "S-35-0812",
-    "route": 35,
-    "group": "northern-coast",
-    "destination": "TOR-001",
-    "published": "2026-08-02T08:20:00+02:00",
-    "platform": 2,
-    "calls": [{"station": "NUR-001", "published": "2026-08-02T08:41:00+02:00"},
-              {"station": "ORT-001", "published": "2026-08-02T09:22:00+02:00"},
-              {"station": "TOR-001", "published": "2026-08-02T10:40:00+02:00"}],
-    "vehicle_hint": "SED-R9"}]}</pre>
-        <pre class="code">GET /v1/changes?since=2026-07-30T00:00
+{
+  "stop": "LIN-CTR",
+  "generated": "2026-08-02T08:14:02+02:00",
+  "departures": [
+    {
+      "service": "S-35-0812",
+      "route": 35,
+      "group": "northern-coast",
+      "destination": "TOR-001",
+      "published": "2026-08-02T08:20:00+02:00",
+      "platform": 2,
+      "calls": [
+        {
+          "station": "NUR-001",
+          "published": "2026-08-02T08:41:00+02:00"
+        },
+        {
+          "station": "ORT-001",
+          "published": "2026-08-02T09:22:00+02:00"
+        },
+        {
+          "station": "TOR-001",
+          "published": "2026-08-02T10:40:00+02:00"
+        }
+      ],
+      "vehicle_hint": "SED-R9"
+    }
+  ]
+}</pre>
+<pre class="code" style="margin-bottom:1.2rem">GET /v1/changes?since=2026-07-30T00:00
 
-{"changes": [
-   {"id": "C-2026-07-30-0114",
-    "service": "S-13-1440",
-    "route": 13,
-    "kind": "platform",
-    "was": 2, "now": 4, "at": "VES-001",
-    "decided_by": "southern/duty-office",
-    "decided_at": "2026-07-30T11:26:00+02:00",
-    "reason": "engineering possession on platform 2 until 12 August"}]}</pre>
-        <pre class="code">POST /v1/reports
+{
+  "changes": [
+    {
+      "id": "C-2026-07-30-0114",
+      "service": "S-13-1440",
+      "route": 13,
+      "kind": "platform",
+      "was": 2,
+      "now": 4,
+      "at": "VES-001",
+      "decided_by": "southern/duty-office",
+      "decided_at": "2026-07-30T11:26:00+02:00",
+      "reason": "engineering possession on platform 2 until 12 August"
+    }
+  ]
+}</pre>
+<pre class="code" >POST /v1/reports
 Content-Type: application/json
 
-{"kind": "station",
- "station": "SOR-001",
- "vehicle": null,
- "text": "The lift in the north subway is out of use.",
- "reply_to": null}
+{
+  "kind": "station",
+  "station": "SOR-001",
+  "vehicle": null,
+  "text": "The lift in the north subway is out of use.",
+  "reply_to": null
+}
 
 201 Created
-{"id": "R-2026-08-02-0338",
- "group": "south-east-coast",
- "acknowledge_by": "2026-08-05",
- "published": "https://nrf.rof/reports/R-2026-08-02-0338"}</pre>      </div>
+
+{
+  "id": "R-2026-08-02-0338",
+  "group": "south-east-coast",
+  "acknowledge_by": "2026-08-05",
+  "published": "https://nrf.rof/reports/R-2026-08-02-0338"
+}</pre>
+      </div>
     </section>
     <section class="block">
       <div class="wrap">
@@ -171,7 +200,7 @@ Content-Type: application/json
         <h2>Rates, caching and errors</h2>
       </div>
       <div class="wrap">
-        <ul class="plates">
+        <ul class="plates two">
           <li>
             <h3>Conditional requests</h3>
             <p>Every response comes with an ETag and Last-Modified. A conditional request that returns 304 costs nothing and is not counted against anything, because nothing is counted.</p>
@@ -182,7 +211,7 @@ Content-Type: application/json
           </li>
           <li>
             <h3>Errors</h3>
-            <p>Problem details, RFC 9457, with <code class="inline">type</code>, <code class="inline">title</code> and <code class="inline">detail</code> in the language of the Accept-Language header where the message has a translation.</p>
+            <p>Problem details in RFC 9457, with <code class="inline">type</code>, <code class="inline">title</code> and <code class="inline">detail</code> in the language of the Accept-Language header where the message has a translation.</p>
           </li>
           <li>
             <h3>Bulk</h3>
