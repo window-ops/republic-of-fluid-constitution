@@ -257,7 +257,8 @@ card   -&gt; reader  uuid=04:9C:2E:7B:41:80:00 issuer=... sig=Ed25519(...)
 reader -&gt; card   <b>AUTH</b> keyref=00 rndR=8B
 card   -&gt; reader  rndC=8B  macC=AES-CMAC(K, rndR || rndC)[0..7]
 reader -&gt; card   <b>AUTH</b> keyref=00 macR=AES-CMAC(K, rndC || rndR)[0..7]
-card   -&gt; reader  SW=9000   <i>session open, SK = AES-CMAC(K, rndR || rndC)</i></pre>        <div class="essay">
+card   -&gt; reader  SW=9000   <i>session open, SK = AES-CMAC(K, rndR || rndC)</i></pre>
+        <div class="essay">
           <p>The session key seals every frame that follows until the field drops or 0x0F is sent. A reader that fails the second pass gets 0x6300 and three attempts before the card refuses the key reference for 200 ms, which is long enough to make a search pointless at a gate and short enough that a person who taps twice notices nothing.</p>
         </div>
       </div>
@@ -275,7 +276,8 @@ card   -&gt; reader  SW=9000   <i>session open, SK = AES-CMAC(K, rndR || rndC)</
 20  u8   count      <i>1 to 9</i>
 21  u8   kind       <i>0 gate 1 machine 2 aboard 3 merge 4 issue</i>
 22  u16  operator   <i>cooperative identifier</i>
-24  u64  seal       <i>AES-CMAC(Knet, bytes 0..23 || uuid)[0..7]</i></pre>        <div class="essay">
+24  u64  seal       <i>AES-CMAC(Knet, bytes 0..23 || uuid)[0..7]</i></pre>
+        <div class="essay">
           <p>The seal is taken under the network key, not the per-card key, so a record written in Iosmein is checkable by a Fluid gate that holds the Iosmein network key and by nothing else. A gate that cannot check a seal counts the record and marks it unverified in its own log; it never refuses passage over it.</p>
           <p>A record with kind 3 puts the UUID of the card it came from in the section field, and the count field says how many records followed it.</p>
         </div>

@@ -294,7 +294,8 @@ cd rep-vectors
 ./run --implementation /path/to/yours --family presentation --report report.txt
 
 # the four misestimated events alone
-./run --implementation /path/to/yours --select err-*</code></pre>    <div class="prose">
+./run --implementation /path/to/yours --select err-*</code></pre>
+    <div class="prose">
       <p>The runner prints one line per vector with the expected and actual values and the margin by which each passed or failed. Its exit status is the count of failures. Nothing in the harness communicates with the cooperative, and a device may be tested without notifying anybody.</p>
       <p>Inside the cooperative the set gates the warning path. A change to any tree that touches detection, estimation, encoding or presentation runs the whole set before it may be merged, and a failure blocks the merge. Where a vector is expected to fail, the expectation is recorded in the tree with the reference of the defect it belongs to, and an unexplained failure blocks the merge regardless.</p>
     </div>

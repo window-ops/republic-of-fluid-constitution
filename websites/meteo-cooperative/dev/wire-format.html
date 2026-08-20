@@ -108,7 +108,8 @@
                                            bit 2 revision, bit 3 foreign territory
   16      n    body                        see below
 16+n     64    signature                   Ed25519 over bytes 0 to 15+n
-80+n      4    checksum                    CRC-32 over bytes 0 to 79+n</code></pre>    <div class="prose">
+80+n      4    checksum                    CRC-32 over bytes 0 to 79+n</code></pre>
+    <div class="prose">
       <p>A decoder that fails the checksum discards the frame in silence. A decoder that fails the signature discards the frame and records the failure, since a valid frame with a bad signature indicates an attempt to inject a warning.</p>
     </div>
     <h2>Common header</h2>
@@ -319,7 +320,8 @@
    2      1    value           REP step, or severity for LEW and FEW
    3      1    flags           bit 0 foreign territory, bit 1 highest value
                                in this message, bit 2 estimate superseded
-                               by observation</code></pre>    <div class="prose">
+                               by observation</code></pre>
+    <div class="prose">
       <p>Segment 1 sends the receiving area alone. Segment 3 sends every area in descending order of value, which produces the national reading heard in a broadcast. Area codes for the Republic are in <code>rep-wire</code>; a fork replaces that table and nothing else.</p>
       <p>The foreign territory flag marks areas outside the Republic. It is set on the Aporean areas of any event on the eastern segment of the margin, and a device presents those areas after the domestic ones and states that they lie beyond the frontier.</p>
     </div>

@@ -221,7 +221,8 @@
     <div class="prose">
       <p>The station computes an instrumental intensity from the three components of ground acceleration. The three components are filtered to the frequency band that shakes buildings and combined into a single motion. The size that motion reaches, for a total of 0.3 s during the event, is taken as the amplitude. That amplitude enters a logarithmic expression producing a continuous number, which is rounded down to the whole step.</p>
       <pre><code>I_R = 2 * log10(a) + 0.94         a in m/s^2, vector amplitude
-REP = floor(I_R)                  clipped to the range 1 to 10</code></pre>      <p>The continuous value is retained everywhere it is used. A broadcast states the whole step, and the archive, the shake maps and the conformance vectors hold the continuous number to two decimal places.</p>
+REP = floor(I_R)                  clipped to the range 1 to 10</code></pre>
+      <p>The continuous value is retained everywhere it is used. A broadcast states the whole step, and the archive, the shake maps and the conformance vectors hold the continuous number to two decimal places.</p>
     </div>
     <h2>Intensity and magnitude</h2>
     <div class="box">
