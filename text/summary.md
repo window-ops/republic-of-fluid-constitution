@@ -4,7 +4,7 @@ Published under Article 315. **This summary has no legal force.** It cannot crea
 
 ## The Constitution in one paragraph
 
-The Republic of Fluid is a participatory democracy. Its land, water, air, workplaces and knowledge are held in common, and nobody draws an income simply from owning something that produces. The economy is planned in real quantities to meet the needs people register, inside limits set by what nature can renew. Food, water, housing, energy, healthcare, education, care and transport are free and depend on nothing you do. One elected Assembly of two hundred makes the laws and carries them out through committees of its own members. Courts drawn by lot, planners answerable to those who elect them, and five independent watchdogs hold that Assembly to the limits written here. Some of those limits can never be removed, by anyone, by any majority.
+The Republic of Fluid is a participatory democracy. Its land, water, air, workplaces and knowledge are held in common, and nobody draws an income simply from owning something that produces. The economy is planned in real quantities to meet the needs people register, inside limits set by what nature can renew. Food, water, housing, energy, healthcare, education, care and transport are free and depend on nothing you do. One elected Assembly of two hundred makes the laws and executes them through committees of its own members. Courts drawn by lot, planners answerable to those who elect them, and five independent watchdogs hold that Assembly to the limits written here. Some of those limits can never be removed, by anyone, by any majority.
 
 ## Title I: Foundations Of The Republic
 
@@ -124,7 +124,7 @@ Articles 37 to 81.
 
 **53. Expression and information** - You may say what you think, censorship is prohibited, and no opinion earns a prison term.
 
-**54. Means of communication** - Communication infrastructure is socially owned, carried without discrimination, and never concentrated.
+**54. Means of communication** - Communication infrastructure is socially owned, transmitted without discrimination, and never concentrated.
 
 **55. Assembly** - Peaceful assembly needs no permission, and strikes and occupations are protected.
 
@@ -262,7 +262,7 @@ Articles 82 to 118.
 
 Articles 119 to 144.
 
-**119. The Assembly of the Republic** - A single Assembly of two hundred members makes the laws and carries them out.
+**119. The Assembly of the Republic** - A single Assembly of two hundred members makes the laws and executes them.
 
 **120. The electoral system** - Members are elected by open list in the sub-regions, with seats shared out nationally in proportion.
 
@@ -292,7 +292,7 @@ Articles 119 to 144.
 
 **133. Initiative** - Bills may come from members, committees, regions, communes, planners, producers or residents.
 
-**134. Assessment and consultation** - Every bill carries a published assessment of its effect on rights, ecology and resources.
+**134. Assessment and consultation** - Every bill has a published assessment of its effect on rights, ecology and resources.
 
 **135. Procedure** - Bills get three readings, with amendments and the final text published in advance.
 
@@ -556,7 +556,7 @@ Articles 233 to 267.
 
 **257. Powers** - The Commissioner is heard in the Assembly and in the plan, and can sue.
 
-**258. Long-term impact statements** - Bills, plans and long-lived projects carry a published long-term impact statement.
+**258. Long-term impact statements** - Bills, plans and long-lived projects have a published long-term impact statement.
 
 **259. Function** - The Office of Democratic Integrity monitors, verifies and refers, and holds no other power.
 
@@ -682,7 +682,7 @@ Articles 306 to 319.
 
 **314. Consolidation and publication** - The consolidated text is published free, in open formats, with a full cross-reference table.
 
-**315. The official summary** - An official plain-language summary exists, carries no legal force, and must be corrected if it diverges.
+**315. The official summary** - An official plain-language summary exists, has no legal force, and must be corrected if it diverges.
 
 **316. Distribution** - A free printed copy goes to every dwelling, in every language and accessible format.
 

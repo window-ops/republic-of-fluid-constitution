@@ -144,4 +144,40 @@
       if (e.target.closest('a')) { ol.hidden = true; ob.setAttribute('aria-expanded', 'false'); }
     });
   }
+  /* ---------- infobox: hide and show the whole column ---------- */
+
+  Array.prototype.forEach.call(document.querySelectorAll('aside.infobox'), function (box, i) {
+    var layout = box.closest ? box.closest('.artlayout') : box.parentNode;
+    if (!layout) return;
+    var body = layout.querySelector('.artbody');
+    if (!body) return;
+
+    box.id = box.id || 'infobox-' + (i + 1);
+
+    var control = document.createElement('p');
+    control.className = 'ib-control';
+
+    var btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'ib-toggle';
+    btn.setAttribute('aria-controls', box.id);
+    control.appendChild(btn);
+    body.insertBefore(control, body.firstChild);
+
+    var key = 'fluid.infobox.' + location.pathname.replace(/[^a-z0-9]+/gi, '-') + '.' + i;
+
+    function apply(hidden, remember) {
+      box.hidden = hidden;
+      layout.classList.toggle('nobox', hidden);
+      btn.setAttribute('aria-expanded', String(!hidden));
+      btn.textContent = hidden ? 'Show the details panel' : 'Hide the details panel';
+      if (remember) { try { localStorage.setItem(key, hidden ? '1' : '0'); } catch (e) {} }
+    }
+
+    var stored = null;
+    try { stored = localStorage.getItem(key); } catch (e) {}
+    apply(stored === '1', false);
+
+    btn.addEventListener('click', function () { apply(!box.hidden, true); });
+  });
 })();

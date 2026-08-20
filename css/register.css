@@ -803,7 +803,7 @@ h2.chapter:first-child { margin-top: 0; }
 
 /* ============ assembly ============ */
 
-.hemiwrap { margin: 0 0 1.5rem; max-width: 46rem; }
+.hemiwrap { margin: 0 0 1.5rem; }
 .hemi { display: block; width: 100%; height: auto; }
 .hemi circle { stroke: #fff; stroke-width: 1.8; }
 .hemi-n { font: 700 30px var(--sans); fill: var(--ink); }
@@ -1241,6 +1241,19 @@ ol.parties { list-style: none; margin: 1.5rem 0; padding: 0; }
   font-size: 0.7rem; letter-spacing: 0.08em; text-transform: uppercase;
 }
 .infobox .mp-row:last-child { border-bottom: none; }
+.infobox .h {
+  display: flex; align-items: baseline; justify-content: space-between; gap: 0.6rem;
+}
+.ib-toggle {
+  font-family: var(--sans); font-size: 0.65rem; font-weight: 600;
+  letter-spacing: 0.09em; text-transform: uppercase;
+  color: var(--state); background: var(--paper);
+  border: 1px solid var(--rule); border-radius: 2px;
+  padding: 0.15rem 0.45rem; cursor: pointer; flex: none;
+}
+.ib-toggle:hover, .ib-toggle:focus-visible { border-color: var(--state); }
+.artlayout.nobox { grid-template-columns: minmax(0, 1fr); }
+.ib-control { margin: 0 0 1.1rem; }
 
 .toc {
   border: 1px solid var(--rule);
@@ -1448,10 +1461,6 @@ h3.subhead.tl-era {
 
 /* ============ concepts: categories, glossary, everyday words ============ */
 
-.catnote {
-  font-family: var(--sans); font-size: 0.82rem; color: var(--ink-soft);
-  margin: 0 0 1rem; max-width: 100%;
-}
 dl.gloss { margin: 1.5rem 0; }
 dl.gloss dt {
   font-family: var(--sans); font-weight: 700; font-size: 0.95rem;
@@ -1491,3 +1500,78 @@ dl.gloss dd .chips { margin: 0; }
   .ptab.words td { border: none; padding: 0.1rem 0; }
   .ptab.words .legalterm::before { content: "\2192\00a0"; color: var(--ink-faint); }
 }
+
+/* ============ assembly and projection: figures, icon cards, seat bars ============ */
+
+.icards {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(36rem, 1fr));
+  gap: 1rem; margin: 1.5rem 0;
+}
+.icard { border: 1px solid var(--rule); background: var(--paper); padding: 1rem 1.1rem 1.05rem; }
+.icard .ih { display: flex; align-items: center; gap: 0.55rem; margin: 0 0 0.55rem; }
+.icard .ih svg, .icard .ih .ic { flex: none; width: 1.15rem; height: 1.15rem; color: var(--state); }
+.icard .ih b { font-family: var(--sans); font-weight: 700; font-size: 0.95rem; color: var(--ink); }
+.icard p { margin: 0 0 0.7rem; font-size: 0.92rem; line-height: 1.55; color: var(--ink-soft); max-width: none; }
+.icard p:last-child { margin-bottom: 0; }
+.icard .chips { margin: 0; }
+
+ul.ruleset { list-style: none; margin: 1.5rem 0; padding: 0; display: grid; gap: 1rem; }
+ul.ruleset li { display: grid; grid-template-columns: 1.4rem 1fr; gap: 0.75rem; }
+ul.ruleset svg, ul.ruleset .ic { width: 1.15rem; height: 1.15rem; color: var(--state); margin-top: 0.2rem; }
+ul.ruleset b { display: block; font-family: var(--sans); font-size: 0.9rem; color: var(--ink); }
+ul.ruleset p { margin: 0.2rem 0 0; font-size: 0.93rem; line-height: 1.55; color: var(--ink-soft); }
+
+.ptab.seats, .ptab.proj, .ptab.hist { table-layout: fixed; width: 100%; }
+.ptab.seats th:nth-child(1), .ptab.seats td:nth-child(1) { width: 34%; }
+.ptab.seats th:nth-child(2), .ptab.seats td:nth-child(2) { width: 22%; }
+.ptab.seats th:nth-child(3), .ptab.seats td:nth-child(3) { width: 22%; }
+.ptab.seats th:nth-child(4), .ptab.seats td:nth-child(4) { width: 22%; }
+.ptab.proj th:nth-child(1), .ptab.proj td:nth-child(1) { width: 30%; }
+.ptab.proj th:nth-child(2), .ptab.proj td:nth-child(2) { width: 13%; }
+.ptab.proj th:nth-child(3), .ptab.proj td:nth-child(3) { width: 14%; }
+.ptab.proj th:nth-child(4), .ptab.proj td:nth-child(4) { width: 12%; }
+.ptab.proj th:nth-child(5), .ptab.proj td:nth-child(5) { width: 19%; }
+.ptab.proj th:nth-child(6), .ptab.proj td:nth-child(6) { width: 12%; }
+.ptab.hist th:nth-child(1), .ptab.hist td:nth-child(1) { width: 28%; }
+.ptab.hist th:nth-child(2), .ptab.hist td:nth-child(2) { width: 16%; }
+.ptab.hist th:nth-child(3), .ptab.hist td:nth-child(3) { width: 56%; }
+.ptab .seatcell { text-align: left; font-family: var(--sans); white-space: nowrap; }
+.ptab .seatcell .sn { font-weight: 700; font-variant-numeric: tabular-nums; }
+.ptab .seatcell .sbar { display: block; height: 4px; background: var(--shell); margin-top: 0.35rem; }
+.ptab .seatcell .sbar i { display: block; height: 100%; background: var(--state); }
+.ptab .swatch { display: inline-block; width: 0.6rem; height: 0.6rem; margin-right: 0.45rem; vertical-align: baseline; }
+.ptab .delta { font-family: var(--sans); font-size: 0.82rem; font-variant-numeric: tabular-nums; }
+.ptab .delta.up { color: var(--inforce); }
+.ptab .delta.dn { color: var(--repealed); }
+.ptab .delta.fl { color: var(--ink-faint); }
+
+@media (max-width: 700px) {
+  .ptab.seats, .ptab.proj, .ptab.hist { table-layout: auto; }
+  .ptab.seats th, .ptab.seats td,
+  .ptab.proj th, .ptab.proj td,
+  .ptab.hist th, .ptab.hist td { width: auto; }
+}
+
+a.pname { color: var(--state); text-decoration: none; border-bottom: 1px solid var(--state-lift); }
+a.pname:hover { border-bottom-color: var(--state); }
+a.pname:focus-visible { outline: 2px solid var(--state); outline-offset: 2px; }
+
+/* party pages: topic subheadings and quotation attribution */
+.prose h3.topic {
+  font-family: var(--sans); font-size: 1rem; font-weight: 700;
+  color: var(--ink); margin: 0.6rem 0 0.6rem;
+}
+.prose blockquote cite {
+  display: block; margin-top: 0.5rem; font-style: normal;
+  font-family: var(--sans); font-size: 0.78rem; color: var(--ink-soft);
+}
+.prose p.chips { margin: 0.4rem 0 1.2rem; }
+
+/* a party block standing alone on its own page */
+.party.solo { border-top: none; border-bottom: none; padding: 0 0 0.4rem; }
+.pfig .ic { width: 1rem; height: 1rem; vertical-align: -0.15rem; margin-right: 0.4rem; }
+
+/* a plain bulleted list inside prose */
+.prose ul.points { margin: 0 0 1.1rem; padding-left: 1.1rem; }
+.prose ul.points li { margin: 0 0 0.45rem; font-size: 0.96rem; line-height: 1.6; color: var(--ink-soft); }
+.prose ul.points li:last-child { margin-bottom: 0; }

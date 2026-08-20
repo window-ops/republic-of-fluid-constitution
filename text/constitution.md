@@ -89,7 +89,7 @@ We, the residents of the Republic of Fluid, adopt this Constitution. We must tak
 4. A norm, act, plan or decision that conflicts with this Constitution is void to the extent of the conflict.
 
 **Article 5. Ecological foundation**
-1. The Republic subsists within a finite biosphere. Maintenance of its regenerative capacity conditions the validity of all economic planning.
+1. The Republic exists within a finite biosphere. Maintenance of its regenerative capacity conditions the validity of all economic planning.
 2. Public authorities, communes, regions and economic organisations conduct their activity within the ecological budgets established under Title II.
 3. Ecological harm is prevented at source. Where prevention fails, restoration is owed to the affected system and to the persons and communities injured.
 4. Scientific uncertainty about the extent of an ecological harm justifies protective measures and furnishes no ground for deferring them.
