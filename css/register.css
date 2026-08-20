@@ -804,7 +804,7 @@ h2.chapter:first-child { margin-top: 0; }
 /* ============ assembly ============ */
 
 .hemiwrap { margin: 0 0 1.5rem; }
-.hemi { display: block; width: 100%; height: auto; }
+.hemi { display: block; width: 85%; height: auto; margin: 0 auto; }
 .hemi circle { stroke: #fff; stroke-width: 1.8; }
 .hemi-n { font: 700 30px var(--sans); fill: var(--ink); }
 .hemi-l {
