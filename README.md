@@ -30,7 +30,7 @@ assembly/                  composition of the chamber and the party register
 map/                       interactive map, geography, and 22 town pages
 world/                     the union, neighbouring states, and relations beyond the bloc
 history/                   narrative history and chronology
-register/                  publication notes, external links, archive index
+about/                  publication notes, external links, archive index
 websites/                  16 organ sites, one directory per organ, with a shared frame
 text/                      machine-readable sources
 assets/                    flag and region geometry
