@@ -552,7 +552,7 @@ Articles 233 to 267.
 
 **255. Inspection of places of detention** - Another division inspects places of detention unannounced, and publishes what it finds.
 
-**256. Function** - The Commissioner for Future Generations speaks for people not yet born.
+**256. Function** - The Commissioner for Future Generations represents people not yet born.
 
 **257. Powers** - The Commissioner is heard in the Assembly and in the plan, and can sue.
 
