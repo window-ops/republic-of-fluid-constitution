@@ -26,6 +26,7 @@
   --accent-fourteenth: #a8b6cf;
   --accent-fifteenth: #c9a3a0;
   --accent-sixteenth: #cbb37a;
+  --accent-seventeenth: #7fa9bf;
   --mark: #3a3120;
 
   --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
@@ -575,6 +576,12 @@ section:first-of-type .sep {
 
 .turn-nozaki .who {
   color: var(--accent-sixteenth);
+}
+
+/* ---------- speaker introduced in part 13.2 ---------- */
+
+.turn-satomi .who {
+  color: var(--accent-seventeenth);
 }
 
 .turn-control .who,

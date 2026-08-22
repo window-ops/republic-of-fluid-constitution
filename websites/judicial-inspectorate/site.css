@@ -1,6 +1,4 @@
-/* Judicial Inspectorate - own skin over the shared state frame.
-   A narrow single column, heavy rules, and the prohibition of Article
-   214(6) stated at the head of every page it bears on. */
+/* Judicial Inspectorate - own skin over the shared state frame. */
 
 :root {
   --accent:      #6b2233;

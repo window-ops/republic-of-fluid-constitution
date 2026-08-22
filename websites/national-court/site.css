@@ -1,6 +1,4 @@
-/* National Court - own skin over the shared state frame.
-   Cassation reports: cream paper, bronze rules, citations in monospace,
-   the divergence table given the width of the page. */
+/* National Court - own skin over the shared state frame. */
 
 :root {
   --accent:      #6d5535;
@@ -31,7 +29,7 @@ body { background: #ece7dc; }
 h2 { font-weight: 600; border-bottom: 3px double var(--rule2); padding-bottom: .3rem; }
 .legal { background: var(--accent-soft); border-left-color: var(--accent); }
 
-/* ---------- rulings on divergence, which bind every court ---------- */
+/* ---------- rulings on divergence ---------- */
 .rulings { margin: 1.2rem 0; }
 .rulings article { border: 1px solid var(--rule2); background: var(--f-paper); margin-bottom: .7rem; }
 .rulings .bar { background: var(--accent-soft); padding: .5rem .9rem; display: flex; flex-wrap: wrap; gap: .5rem 1rem; align-items: baseline; border-bottom: 1px solid var(--rule2); }

@@ -1,6 +1,4 @@
-/* Planning Secretariat - own skin over the shared state frame.
-   A computation sheet: ochre rules, monospace balances, variants set
-   side by side, and no decision anywhere on the page. */
+/* Planning Secretariat - own skin over the shared state frame. */
 
 :root {
   --accent:      #7a5a2f;
@@ -33,7 +31,7 @@ h2 { font-weight: 600; font-size: 1.22rem; }
 
 .legal { background: var(--accent-soft); }
 
-/* ---------- balance sheet: need against offer ---------- */
+/* ---------- balance sheet ---------- */
 
 .balances { border: 1px solid var(--grid); background: var(--f-paper); margin: 1.3rem 0; }
 .balances .hd,

@@ -1,6 +1,4 @@
-/* Office of Constitutional Revision - own skin over the shared frame.
-   The house style of the register it maintains: state blue, serif text,
-   and a coherence report set out as a list of defects found. */
+/* Office of Constitutional Revision - own skin over the shared frame. */
 
 :root {
   --accent:      #2f5680;

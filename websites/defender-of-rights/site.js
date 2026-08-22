@@ -52,7 +52,7 @@
     },
     'court': {
       body: 'A court',
-      text: 'Where you want an order, a court decides. This office may bring the proceeding in its own name or in support of you under Article 252(2), so the complaint may still start here.',
+      text: 'An order is made by a court. The Defender may bring the proceeding in its own name or in support of the complainant under Article 252(2), and the complaint may therefore be lodged here.',
       link: 'process.html',
       label: 'How a complaint reaches a court'
     }
@@ -66,7 +66,7 @@
     function show() {
       var key = pick.value;
       if (!key) {
-        out.innerHTML = '<strong>Choose what happened</strong>Every route below is free, and none of them requires you to have tried another one first.';
+        out.innerHTML = '<strong>Choose what happened</strong>Every route below is free of charge, and none of them requires that another has been tried first.';
         return;
       }
       var r = ROUTES[key];

@@ -1,6 +1,4 @@
-/* Ecological Budget Authority - own skin over the shared state frame.
-   A measuring instrument: moss green on pale ground, ceilings drawn as
-   headroom bars, every figure in the physical unit it was measured in. */
+/* Ecological Budget Authority - own skin over the shared state frame. */
 
 :root {
   --accent:      #4a6a2f;
@@ -35,7 +33,7 @@ h2 {
 
 .legal { background: var(--accent-soft); }
 
-/* ---------- headroom: consumption against the ceiling ---------- */
+/* ---------- headroom ---------- */
 
 .budget { border: 1px solid var(--edge); background: var(--f-paper); margin: 1.3rem 0; }
 .budget .cap {

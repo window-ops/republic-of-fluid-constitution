@@ -59,7 +59,7 @@
       var given = normalise(field.value);
       if (!given) {
         out.className = 'verdict';
-        out.textContent = 'Enter the checksum reported by your device.';
+        out.textContent = 'The checksum reported by the device is entered above.';
         return;
       }
       if (given === official) {

@@ -1,7 +1,4 @@
-/* Commissioner for Future Generations - own skin over the shared frame.
-   Everything here is arranged along a horizon: deep teal, wide tracking,
-   a timeline on the page, and dates that go out further than
-   any term of office. */
+/* Commissioner for Future Generations - own skin over the shared frame. */
 
 :root {
   --accent:      #1f5a63;
@@ -26,7 +23,6 @@ body { background: #dde6e6; }
 .orghead .orgname a { color: #fff; }
 .orghead .basis { color: var(--far); }
 
-/* Navigation as a horizon line under the masthead. */
 .orgnav { background: #17434a; border-bottom: 1px solid var(--accent); }
 .orgnav a { color: #cfe3e5; }
 .orgnav a:hover { background: rgba(255,255,255,.1); color: #fff; }
@@ -36,7 +32,7 @@ h2 { font-weight: 500; letter-spacing: .005em; color: var(--accent-deep); }
 
 .legal { background: var(--accent-soft); }
 
-/* ---------- the horizon: obligations laid out along time ---------- */
+/* ---------- the horizon ---------- */
 .horizon .scale {
   display: flex; gap: .4rem; margin-bottom: 1.1rem; flex-wrap: wrap;
   font-family: var(--f-sans); font-size: .8rem;

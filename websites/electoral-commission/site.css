@@ -1,6 +1,4 @@
-/* Electoral Commission - own skin over the shared state frame.
-   Register of the ballot: indigo, sans-serif headings, ruled tables,
-   a masthead carrying the grid of a counted tally sheet. */
+/* Electoral Commission - own skin over the shared state frame. */
 
 :root {
   --accent:      #2b3f6b;
@@ -53,7 +51,7 @@ h2, h3 { font-family: var(--f-sans); font-weight: 700; letter-spacing: -.015em; 
 .duties .t { display: block; font-family: var(--f-sans); font-weight: 700; font-size: .98rem; color: var(--accent-deep); }
 .duties .d { display: block; font-size: .88rem; color: var(--f-ink-soft); margin-top: .35rem; max-width: none; }
 
-/* ---------- result strip: paper counts published station by station ---------- */
+/* ---------- result strip ---------- */
 .strip { border: 1px solid var(--f-rule); border-left: 5px solid var(--accent); padding: .85rem 1rem; margin: .8rem 0; background: var(--f-paper); }
 .strip .head { display: flex; flex-wrap: wrap; gap: .5rem 1rem; align-items: baseline; }
 .strip .when { font-family: var(--f-sans); font-size: .74rem; text-transform: uppercase; letter-spacing: .08em; color: var(--f-ink-faint); }

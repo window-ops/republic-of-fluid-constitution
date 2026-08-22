@@ -1,7 +1,4 @@
-/* Defender of Rights - own skin over the shared state frame.
-   Built for someone with a problem and little patience for institutions:
-   sans-serif throughout, large type, wide measure, the complaint route
-   placed before any explanation of the office. */
+/* Defender of Rights - own skin over the shared state frame. */
 
 :root {
   --accent:      #9a3324;
@@ -25,7 +22,6 @@ body { background: #f0e9e6; line-height: 1.58; }
 .orghead .kicker { color: var(--accent); }
 .orghead .orgname { font-size: 1.62rem; font-weight: 700; letter-spacing: -.025em; }
 
-/* Navigation as pills on warm ground. */
 .orgnav { background: var(--warm); border-bottom: 1px solid var(--edge); }
 .orgnav .wrap { gap: .35rem; padding-top: .55rem; padding-bottom: .55rem; }
 .orgnav a {

@@ -1,5 +1,5 @@
 /* Audit Office - own skin over the shared state frame.
-   The house style of a ledger: buff paper, ruled lines, figures set
+   The style of a ledger: buff paper, ruled lines, figures set
    in monospace, quantities counted in physical units and never in money. */
 
 :root {
@@ -28,8 +28,7 @@ body { background: #e6e7e0; }
 .orghead .orgname { font-weight: 600; font-size: 1.55rem; }
 .orghead .basis { font-family: var(--f-mono); font-size: .72rem; letter-spacing: -.01em; }
 
-/* The navigation reads as a ledger rule, light on the accent. */
-.orgnav { background: var(--buff); border-top: 2px solid var(--accent); border-bottom: 1px solid var(--ledger); }
+.orgnav { background: var(--buff); border-bottom: 1px solid var(--ledger); }
 .orgnav a { color: var(--accent-deep); padding: .62rem .9rem; }
 .orgnav a:hover { background: var(--accent-soft); color: var(--accent-deep); }
 .orgnav a[aria-current="page"] { border-bottom-color: var(--accent); background: var(--accent-soft); }
@@ -38,7 +37,7 @@ h2 { font-weight: 600; border-bottom: 1px solid var(--ledger); padding-bottom: .
 
 .legal { background: #eef1ea; border-left-color: var(--accent); }
 
-/* ---------- balance block: the figures a money audit could never produce ---------- */
+/* ---------- balance block ---------- */
 .balance { border: 1px solid var(--ledger); background: var(--f-paper); margin: 1.3rem 0; }
 .balance .cap {
   font-family: var(--f-sans); font-size: .72rem; text-transform: uppercase;
