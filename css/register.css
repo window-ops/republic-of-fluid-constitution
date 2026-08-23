@@ -333,8 +333,7 @@ p.single { margin: 0; }
 .contents { border-top: 1px solid var(--rule); margin: 0 0 2.5rem; }
 .contents a.row {
   display: grid;
-  grid-template-columns: 3.2rem minmax(0,1fr) auto;
-  gap: 1.4rem;
+  grid-template-columns: 4rem minmax(0,1fr) auto;
   align-items: baseline;
   padding: 0.75rem 0.4rem;
   border-bottom: 1px solid var(--rule);
@@ -861,7 +860,7 @@ h2.chapter:first-child { margin-top: 0; }
 .statecard.closed { border-left-color: var(--repealed); }
 .statecard h3 { font-family: var(--sans); font-size: 1.02rem; margin: 0 0 0.3rem; }
 .statecard .srel {
-  display: flex; flex-wrap: wrap; gap: 0.35rem 1rem; margin: 0 0 0.7rem;
+  display: flex; flex-wrap: wrap; gap: 0.36rem; margin: 0 0 0.7rem;
   font-family: var(--sans); font-size: 0.76rem; color: var(--ink-faint);
 }
 .statecard .srel span::before { content: "\00b7\00a0"; }
