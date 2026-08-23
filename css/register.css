@@ -1071,7 +1071,6 @@ ul.arts,
 .article { margin: 0 0 2.5rem; }
 h2.chapter { margin: 1.1rem 0 1.1rem; }
 
-/* nothing dangles a margin at the foot of its container */
 p:last-child,
 ol:last-child,
 ul:last-child,
