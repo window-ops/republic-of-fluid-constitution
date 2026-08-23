@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Apor &middot; Free Republic of Reformed Luces Aporia</title>
+  <meta name="description" content="Apor holds the legislation of the Republic as text files. Anyone entitled to propose a law may pull a copy, edit it and push the change.">
+  <link rel="stylesheet" href="css/aporia.css">
+  <link rel="icon" href="assets/flag.svg">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to the text</a>
+  <header class="masthead">
+    <div class="bar">
+      <a class="crest" href="index.html"><img src="assets/flag.png" alt="Flag of the Free Republic of Reformed Luces Aporia"></a>
+      <span class="names">
+        <a class="state" href="index.html">Free Republic of Reformed Luces Aporia</a>
+        <span class="organ">Ministry of External Relations &middot; portal published in the Republic of Fluid</span>
+      </span>
+    </div>
+    <nav class="sections" aria-label="Sections">
+      <div class="bar">
+        <a href="index.html">Portal</a>
+        <a href="constitution.html">Constitution</a>
+        <a href="summary.html">Summary</a>
+        <a href="country.html">The country</a>
+        <a href="relations.html">Relations with Fluid</a>
+        <a href="downloads.html">Downloads</a>
+        <a href="apor.html" aria-current="page">Apor</a>
+        <a class="out" href="../index.html">Back to the World section</a>
+      </div>
+    </nav>
+  </header>
+  <main id="main" class="sheet">
+    <p class="crumbs"><a href="index.html">Portal</a> &rsaquo; Apor</p>
+    <div class="title-head">
+      <h1>Apor</h1>
+      <p class="range">The legislation of the Republic, stored as text files that any person may copy, edit and propose</p>
+    </div>
+    <p class="lead">The Commission on Information and Data keeps the laws of the Republic as markdown files in a single repository. Any person may take a copy without an account and without stating a reason. Changes are written in an ordinary text editor. A person or a collective entitled to propose a law signs the change and sends it, and it enters the channel that Article 103(1) of the Constitution establishes.</p>
+    <p>The service opened on 3 March 2026. It is freely available, and the program that reads and sends the files is published with its source.</p>
+    <h2 class="chapter">What the repository contains</h2>
+    <dl class="facts">
+      <dt>constitution.md</dt><dd>The consolidated text, with the Amendments. The file is readable and cannot be pushed against. Revision of the Constitution follows Title XI and passes through the Assembly in two readings.</dd>
+      <dt>organic/</dt><dd>The organic laws listed in Article 102(3), one file for each.</dd>
+      <dt>laws/</dt><dd>The ordinary laws in force, one file for each, with the date of the last amendment in the first line.</dd>
+      <dt>districts/</dt><dd>The regulations of the districts and communes, in a folder for each unit of local self-government.</dd>
+      <dt>archive/</dt><dd>Texts that have been repealed, kept with the law that repealed them.</dd>
+      <dt>register/</dt><dd>Every push that has been sent, with its date, its signature count and what became of it.</dd>
+    </dl>
+    <h2 class="chapter">The commands</h2>
+    <div class="cmds">
+      <div><code>apor pull</code><p>Takes a copy of the whole repository, or of one folder. No account and no key is needed to pull.</p></div>
+      <div><code>apor status</code><p>Lists the files changed since the copy was taken.</p></div>
+      <div><code>apor diff</code><p>Shows the change line by line, in the form the Assembly receives it.</p></div>
+      <div><code>apor sign</code><p>Adds a signature to the change, using the key of the person or of a member of the collective.</p></div>
+      <div><code>apor push</code><p>Sends the signed change to the district council named in the command. The register entry appears within the hour.</p></div>
+      <div><code>apor log</code><p>Shows what happened to a push after it was sent, including the reasons a council gave for rejecting it.</p></div>
+    </div>
+    <pre class="session"><span class="pr">$</span> apor pull laws/
+1,204 files, 38 MB, verified against the register
+<span class="pr">$</span> apor status
+laws/housing-allocation.md   4 lines changed
+<span class="pr">$</span> apor sign
+key 7F2C, issued by the Electoral Commission, signature 1 added
+<span class="pr">$</span> apor push --council osterna
+push 2026-0714 opened, awaiting the quorum of the collective</pre>
+    <h2 class="chapter">Who may push, and with what key</h2>
+    <div class="panels">
+      <div class="panel">
+        <h3>A person</h3>
+        <p>A citizen entered on the register of voters receives one key from the Electoral Commission, on request and free of charge. The key signs a change. It states that a person entitled to sign has signed, and it does not contain the name of that person into the repository.</p>
+      </div>
+      <div class="panel sea">
+        <h3>A collective or a registered association</h3>
+        <p>Every member holds a key of their own. There is no officer key, so no small group can act in the name of the collective. A push is sent when the number of member keys that have signed reaches the quorum, which organic law fixes as a fraction of the members.</p>
+        <p>Keys expire at the end of each period. The collective issues the new set from the membership it has at that date, so a member who has left signs nothing in the following period.</p>
+      </div>
+    </div>
+    <p>The Commission on Information and Data holds the keys and the counts, and Article 32 governs what it may store and for how long. The register shows how many signed and which collective sent the push, and it does not show who signed.</p>
+    <h2 class="chapter">Where a push goes</h2>
+    <div class="panels">
+      <div class="panel gold">
+        <h3>A local push</h3>
+        <p>A change to a file under <code>districts/</code> is placed on the agenda of the council concerned, which votes at its next ordinary sitting. Where the council rejects the change, it publishes its reasons, and the sitting is public under Article 136(3).</p>
+      </div>
+      <div class="panel">
+        <h3>A national push</h3>
+        <p>A change to a file under <code>laws/</code> or <code>organic/</code> that carries signatures above the number fixed by organic law is transmitted by the district council in which it was opened, which lays it before the Assembly of the Republic under Article 103(1) and takes no decision on its merits. The Assembly examines it in committee under Article 104(1).</p>
+      </div>
+    </div>
+    <p>A push below the signature threshold stays in the register and may be signed further at any time. Nothing expires except the keys.</p>
+    <h2 class="chapter">The limits of the service</h2>
+    <ul class="towns">
+      <li><div><b>A push is a proposal</b></div><p>A change becomes law when the Assembly adopts it, the President promulgates it and it appears in the Official Gazette. Article 4(2) fixes the date it takes effect.</p></li>
+      <li><div><b>The Constitution is outside</b></div><p>Revision follows Article 174 and Article 175: two readings, two thirds of the members, and a referendum where a third of the members or the stated number of citizens demand one.</p></li>
+      <li><div><b>The plan is outside</b></div><p>The plan and the budget are laid by the Government alone under Article 103(2). The rounds of negotiation under Article 60 are the route for those.</p></li>
+      <li><div><b>Form is checked, content is not</b></div><p>The Commission checks that a push is signed, that it applies cleanly to the current text and that it names a file it may amend. It forms no view on what the change says.</p></li>
+    </ul>
+    <h2 class="chapter">The record so far</h2>
+    <dl class="facts">
+      <dt>Opened</dt><dd>3 March 2026</dd>
+      <dt>Pushes sent</dt><dd>1,412, of which 1,106 by collectives and registered associations</dd>
+      <dt>Placed on a council agenda</dt><dd>318</dd>
+      <dt>Laid before the Assembly</dt><dd>96</dd>
+      <dt>Adopted</dt><dd>7, the first being the amendment to the law on the repair of goods, adopted on 19 June 2026</dd>
+      <dt>Copies taken</dt><dd>The Commission publishes the count of pulls each quarter and keeps no record of who takes a copy</dd>
+    </dl>
+    <h2 class="chapter">Elsewhere on this portal</h2>
+    <div class="panels">
+      <div class="panel"><h3><a href="constitution.html#a103">Article 103</a></h3><p>The article that gives a district council the right to lay a proposal of law.</p></div>
+      <div class="panel sea"><h3><a href="downloads.html">Downloads</a></h3><p>The consolidated Constitution and the plain-text summary, for readers who want the text without the tool.</p></div>
+    </div>
+  </main>
+  <footer class="reg">
+    <div class="bar">
+      <div>
+        <p class="h">The portal</p>
+        <p><a href="constitution.html">Constitution</a></p>
+        <p><a href="summary.html">Summary</a></p>
+        <p><a href="country.html">The country</a></p>
+        <p><a href="relations.html">Relations with Fluid</a></p>
+        <p><a href="downloads.html">Downloads</a></p>
+        <p><a href="apor.html">Apor</a></p>
+      </div>
+      <div>
+        <p class="h">Published by</p>
+        <p>Ministry of External Relations of the Free Republic of Reformed Luces Aporia, Sluland.</p>
+        <p>Under Article 178(2), free of charge, without licence, registration or account.</p>
+      </div>
+      <div>
+        <p class="h">Hosted by</p>
+        <p><a href="../index.html">The World section</a> of the Public Register of the Republic of Fluid, under the authorisation of 4 June 2026.</p>
+        <p><a href="../../index.html">Register home</a></p>
+      </div>
+      <div>
+        <p class="h">Design</p>
+        <p>These pages use the layout and the accessibility rules of the Fluidian register, with the colours of the Aporean flag. The stylesheet is separate and is maintained by this Ministry.</p>
+        <p>No external resource is loaded by this page.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

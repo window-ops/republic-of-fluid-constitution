@@ -912,7 +912,7 @@ h2.chapter:first-child { margin-top: 0; }
   background: var(--state); color: #fff; border-color: var(--state); font-weight: 700;
 }
 
-/* nine sections: scroll rather than stack on narrow screens */
+/* scroll rather than stack on narrow screens */
 @media (max-width: 900px) {
   .sections .bar { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: thin; }
   .sections a { white-space: nowrap; }
