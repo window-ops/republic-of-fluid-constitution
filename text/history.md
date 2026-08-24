@@ -149,7 +149,7 @@ The Convention adopted the draft on 12 April 2026 by 148 votes to 52. A referend
 
 **1848** - The March Rising. Peasants from Durorilaqui and shipyard workers from Lindoma take the capital for nineteen days. The Crown retakes it with mercenaries hired from Bor Brashavenko. Two hundred and six people are executed, and the memory of the foreign troops fixes a suspicion of the southern border that outlives the monarchy.
 
-**1860s-70s** - Thin coal at Vandorum and Kelvaqui and the first mechanised looms in Tessilius pull people into the towns. The seams are shallow and poor and are worked out faster than anyone expects, which is one reason the Republic will later go looking underground for something else. A working class forms faster than a bourgeoisie does. Nobody with money is strong enough to buy the state, and nobody without it is willing to keep serving one.
+**1860s-70s** - Thin coal at Vandorum and Kelvaqui and the first mechanised looms in Tessilius pull people into the towns. The seams are shallow and poor and are worked out faster than anyone expects, which is one reason the Republic will later go looking underground for something else. A working class forms faster than a bourgeoisie does. No one with money is strong enough to buy the state.
 
 **1881-89** - Four parties form: the Agrarians in the arable west, the Unionists in the ports, the Scientific Party among teachers and engineers, and the Youth Party in the schools. They quarrel constantly and agree on one thing, which is that the monarchy has to go.
 
@@ -191,7 +191,7 @@ The Convention adopted the draft on 12 April 2026 by 148 votes to 52. A referend
 
 **1971** - The dockers at Lutoliluri strike over a target they say cannot be met safely. Three are killed when a crane is worked past its limit. Within eleven days the shipyards at Lindoma are out, then Durorilaqui, then everything.
 
-**1971-73** - The Strike Wave. Two years of it, on and off. The demands are consistent and procedural: publish the plan, let the assemblies decide, count the hours honestly, cut the week. Nobody demands markets and nobody demands a strongman.
+**1971-73** - The Strike Wave, two years of it. The demands are procedural: publish the plan, let the assemblies decide, count the hours correctly, cut the week.
 
 **1972** - Reactor workers at Ferrista join the strike wave, and the demand they add is publication: the safety records of the plants had never been shown to the people who worked inside them. Article 35(1) now requires the condition of every installation to be measured continuously and published.
 
@@ -215,7 +215,7 @@ The Convention adopted the draft on 12 April 2026 by 148 votes to 52. A referend
 
 **2003** - The first foreign economic entities are licensed to operate inside the Republic, handling the shipping, certification, insurance and brokerage of the export trade, which the Republic's own institutions are not equipped to conduct in foreign jurisdictions. The licences are revocable, limited in time, and conditioned on the transfer of technique to the knowledge commons. Article 21 now states those conditions on the face of the Constitution.
 
-**2008-12** - The financial crisis passes through Fluid mostly as collapsed orders from abroad. The Republic sends materials and medical staff to two Bloc members and receives nothing back, which nobody expects.
+**2008-12** - The financial crisis passes through Fluid mostly as collapsed orders from abroad. The Republic sends materials and medical staff to two Bloc members and receives nothing back.
 
 **2013-19** - The climate arrives on schedule. Coastal retreat at Ravelluri, three failed harvests in Quintorum, and the Sornorum floods of 2017, which displace four thousand people from a floodplain the spatial plans had never stopped anyone building on.
 
@@ -263,7 +263,7 @@ Eleven articles governed for a hundred and thirty-four years, which is a long ti
 
 ### What the Directorate taught
 
-The Directorate was not a coup and nobody defended it as an ideal. It grew because an embargo made secrecy defensible, and then the secrecy outlived the embargo. It failed in a specific and instructive way: targets in tonnage produced heavy goods and killed repair, and an unpublished plan could not be argued with by the people it governed. Both lessons are now constitutional. Article 90(4) publishes the plan and its variants. Article 33 requires goods to be repairable by their user. Article 116 requires arduous tasks to be registered publicly and engineered away, which is what the Lutoliluri dockers were asking for in 1971. The reactors are the sharpest case of all: a programme that kept a blockaded country in electricity was run for sixteen years without publishing a single safety record, and the people most exposed to it were the last to be told anything.
+The Directorate was not a coup and no one defended it as an ideal. It grew because an embargo made secrecy defensible, and then the secrecy outlived the embargo. It failed in a specific and instructive way: targets in tonnage produced heavy goods and killed repair, and an unpublished plan could not be argued with by the people it governed. Both lessons are now constitutional. Article 90(4) publishes the plan and its variants. Article 33 requires goods to be repairable by their user. Article 116 requires arduous tasks to be registered publicly and engineered away, which is what the Lutoliluri dockers were asking for in 1971. The reactors are the sharpest case of all: a programme that kept a blockaded country in electricity was run for sixteen years without publishing a single safety record, and the people most exposed to it were the last to be told anything.
 
 ### Why the second constitution failed
 
