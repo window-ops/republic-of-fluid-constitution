@@ -255,7 +255,7 @@ The Convention adopted the draft on 12 April 2026 by 148 votes to 52. A referend
 
 **7 Jul 2026** - Commencement. The constitutions of 2024 and 1890 are repealed and preserved. The Judicial Council is to be drawn within a hundred and twenty days, the first Assembly of two hundred elected within a year, and the first ecological budgets published within two.
 
-## Assessment
+## Assessment (Opinion)
 
 ### Why the first constitution lasted
 
