@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Economy &middot; Allied States of Iosmein</title>
+  <meta name="description" content="Prices, wages, poverty, the two currencies, the debt and the aid balance of the Allied States of Iosmein, with the figures the Federal Office of Statistics publishes.">
+  <link rel="stylesheet" href="css/iosmein.css">
+  <link rel="icon" href="assets/flag.svg">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to the text</a>
+  <header class="masthead">
+    <div class="bar">
+      <a class="crest" href="index.html"><img src="assets/flag.png" alt="Flag of the Allied States of Iosmein"></a>
+      <span class="names">
+        <a class="state" href="index.html">Allied States of Iosmein</a>
+        <span class="organ">Ministry of External Relations &middot; portal published in the Republic of Fluid</span>
+      </span>
+    </div>
+    <nav class="sections" aria-label="Sections">
+      <div class="bar">
+        <a href="index.html">Portal</a>
+        <a href="constitution.html">Constitution</a>
+        <a href="summary.html">Summary</a>
+        <a href="country.html">The country</a>
+        <a href="economy.html" aria-current="page">Economy</a>
+        <a href="relations.html">Relations with Fluid</a>
+        <a href="rescue.html">The rescue</a>
+        <a href="downloads.html">Downloads</a>
+        <a class="out" href="../index.html">Back to the World section</a>
+      </div>
+    </nav>
+  </header>
+  <main id="main" class="sheet">
+    <p class="crumbs"><a href="index.html">Portal</a> &rsaquo; Economy</p>
+    <div class="title-head">
+      <h1>The economy</h1>
+      <p class="range">Prices, wages, poverty, the two currencies, the debt and the aid balance, as they stood in June 2026</p>
+    </div>
+    <p class="lead">Iosmein is the poorest of the three member states of the Democratic Socialist Bloc. Median income has risen in each year since 2019 and one household in four remains below the national poverty line. This page sets out the figures the Federal Office of Statistics publishes, and it is written from the position of the households at the bottom of the distribution, because that is where the difference between the published averages and the lived arithmetic is widest.</p>
+    <div class="keyfigs">
+      <div class="keyfig"><span class="v">11,000</span><span class="l">Median net monthly income, vela, June 2026. About 458 euro, about 379 marek.</span></div>
+      <div class="keyfig gold"><span class="v">24.8%</span><span class="l">Households below the national poverty line, down from 34 per cent in 2017.</span></div>
+      <div class="keyfig"><span class="v">13.0%</span><span class="l">Consumer prices, twelve months to June 2026. The rate has fallen in each year since 2021.</span></div>
+      <div class="keyfig gold"><span class="v">0.28</span><span class="l">Gini coefficient of net income, down from 0.36 in 2017.</span></div>
+      <div class="keyfig"><span class="v">146%</span><span class="l">External obligations outstanding, as a share of annual output, end of 2025.</span></div>
+      <div class="keyfig gold"><span class="v">6 to 1</span><span class="l">Bloc assistance received against assistance given, 2025.</span></div>
+    </div>
+    <h2 class="chapter">Two currencies and a euro reference</h2>
+    <p>The vela is the currency of the Republic under <a href="constitution.html#a106">Article 106</a>. It replaced the sarn in 2011 under Amendment X. Exchange within the Bloc is settled in goods, labour, technique and knowledge, recorded in physical units, so the rate below governs no Bloc settlement. It governs what a visitor pays, what an imported good costs and what a wage buys when it is compared with a wage earned elsewhere.</p>
+    <p>The euro and marek (the currency of Reformed Luces Aporia) appear here as a reference and for no other reason. No Iosmen wage, price or obligation has ever been expressed in it, and <a href="constitution.html#a106">Article 106</a>(4) forbids joining a monetary union or adopting the currency of another state.</p>
+    <table class="reg">
+      <caption>Rates quoted by the Bank of the Republic, 30 June 2026</caption>
+      <thead><tr><th scope="col">Unit</th><th scope="col" class="num">In vela</th><th scope="col" class="num">In marek</th><th scope="col" class="num">In euro</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">1 vela</th><td class="num">1.00</td><td class="num">0.034</td><td class="num">0.042</td></tr>
+        <tr><th scope="row">1 marek</th><td class="num">29.00</td><td class="num">1.00</td><td class="num">1.21</td></tr>
+        <tr><th scope="row">1 euro</th><td class="num">24.00</td><td class="num">0.83</td><td class="num">1.00</td></tr>
+      </tbody>
+    </table>
+    <figure class="chart">
+      <figcaption>The vela against the marek and the euro, 2011 to 2026</figcaption>
+      <p class="src">Vela per unit, annual average. Bank of the Republic.</p>
+      <div class="plot"><canvas id="c-fx" role="img" aria-label="Line chart. Vela per marek rises from 9.0 in 2011 to a peak of 31.4 in 2021 and eases to 29.0 in 2026. Vela per euro rises from 7.8 to a peak of 26.0 and eases to 24.0."></canvas></div>
+      <details>
+        <summary>The figures behind this chart</summary>
+        <table class="reg">
+          <thead><tr><th scope="col">Year</th><th scope="col" class="num">Vela per marek</th><th scope="col" class="num">Vela per euro</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">2011</th><td class="num">9.0</td><td class="num">7.8</td></tr>
+            <tr><th scope="row">2013</th><td class="num">10.1</td><td class="num">8.7</td></tr>
+            <tr><th scope="row">2015</th><td class="num">11.9</td><td class="num">10.0</td></tr>
+            <tr><th scope="row">2016</th><td class="num">13.6</td><td class="num">11.3</td></tr>
+            <tr><th scope="row">2017</th><td class="num">21.5</td><td class="num">17.8</td></tr>
+            <tr><th scope="row">2018</th><td class="num">27.0</td><td class="num">22.3</td></tr>
+            <tr><th scope="row">2021</th><td class="num">31.4</td><td class="num">26.0</td></tr>
+            <tr><th scope="row">2023</th><td class="num">30.4</td><td class="num">25.2</td></tr>
+            <tr><th scope="row">2026</th><td class="num">29.0</td><td class="num">24.0</td></tr>
+          </tbody>
+        </table>
+      </details>
+    </figure>
+    <p>The vela lost about three fifths of its external value between 2016 and 2018. The fall stopped in 2021, the year Amendment XII entered into force, and the rate has recovered by about 8 per cent since. A household holding vela and buying imported goods carries that movement directly, which is why the imported items in the price table below cost several weeks of work at the minimum remuneration.</p>
+    <h2 class="chapter">Prices</h2>
+    <p>Consumer prices rose by 13.0 per cent in the twelve months to June 2026. The rate has fallen in each year since 2021 and remains the highest in the Bloc by a wide margin. Aporean prices rose by 2.4 per cent over the same period.</p>
+    <figure class="chart gold">
+      <figcaption>Consumer prices, annual change, Iosmein and Reformed Luces Aporia</figcaption>
+      <p class="src">Per cent, twelve months to June of each year. Federal Office of Statistics, and the Aporean statistical service.</p>
+      <div class="plot"><canvas id="c-cpi" role="img" aria-label="Line chart. Iosmen inflation runs at 4 per cent in 2015, peaks at 38.5 per cent in 2017, and falls in stages to 13.0 per cent in 2026. Aporean inflation stays between 1.8 and 4.6 per cent throughout."></canvas></div>
+      <details>
+        <summary>The figures behind this chart</summary>
+        <table class="reg">
+          <thead><tr><th scope="col">Year</th><th scope="col" class="num">Iosmein</th><th scope="col" class="num">Aporia</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">2015</th><td class="num">4.1</td><td class="num">1.8</td></tr>
+            <tr><th scope="row">2016</th><td class="num">6.8</td><td class="num">2.0</td></tr>
+            <tr><th scope="row">2017</th><td class="num">38.5</td><td class="num">2.6</td></tr>
+            <tr><th scope="row">2018</th><td class="num">27.2</td><td class="num">3.1</td></tr>
+            <tr><th scope="row">2019</th><td class="num">19.4</td><td class="num">2.7</td></tr>
+            <tr><th scope="row">2020</th><td class="num">16.8</td><td class="num">1.9</td></tr>
+            <tr><th scope="row">2021</th><td class="num">18.1</td><td class="num">2.8</td></tr>
+            <tr><th scope="row">2022</th><td class="num">17.2</td><td class="num">4.6</td></tr>
+            <tr><th scope="row">2023</th><td class="num">15.9</td><td class="num">3.5</td></tr>
+            <tr><th scope="row">2024</th><td class="num">14.6</td><td class="num">2.9</td></tr>
+            <tr><th scope="row">2025</th><td class="num">13.7</td><td class="num">2.6</td></tr>
+            <tr><th scope="row">2026</th><td class="num">13.0</td><td class="num">2.4</td></tr>
+          </tbody>
+        </table>
+      </details>
+    </figure>
+    <p>A part of consumption is free. <a href="constitution.html#a71">Article 71</a> and <a href="constitution.html#a83">Article 83</a> place health care, medicines on the federal list, schooling with its materials, meals and transport, water for domestic use and public transport within a state outside the reach of money. The index below covers what is priced, and the section on free provision covers the rest.</p>
+    <table class="reg">
+      <caption>What things cost in Talmeru, June 2026</caption>
+      <thead><tr><th scope="col">Item</th><th scope="col" class="num">Vela</th><th scope="col" class="num">Euro</th><th scope="col" class="num">Marek</th><th scope="col" class="num">Hours of work</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Bread, 1 kg</th><td class="num">46</td><td class="num">1.92</td><td class="num">1.59</td><td class="num">1.3</td></tr>
+        <tr><th scope="row">Milk, 1 litre</th><td class="num">38</td><td class="num">1.58</td><td class="num">1.31</td><td class="num">1.1</td></tr>
+        <tr><th scope="row">Potatoes, 1 kg</th><td class="num">22</td><td class="num">0.92</td><td class="num">0.76</td><td class="num">0.6</td></tr>
+        <tr><th scope="row">Eggs, ten</th><td class="num">71</td><td class="num">2.96</td><td class="num">2.45</td><td class="num">2.0</td></tr>
+        <tr><th scope="row">Cooking oil, 1 litre</th><td class="num">128</td><td class="num">5.33</td><td class="num">4.41</td><td class="num">3.6</td></tr>
+        <tr><th scope="row">Coffee, 250 g, imported</th><td class="num">210</td><td class="num">8.75</td><td class="num">7.24</td><td class="num">5.9</td></tr>
+        <tr><th scope="row">Canteen meal</th><td class="num">140</td><td class="num">5.83</td><td class="num">4.83</td><td class="num">3.9</td></tr>
+        <tr><th scope="row">Restaurant meal</th><td class="num">460</td><td class="num">19.17</td><td class="num">15.86</td><td class="num">12.9</td></tr>
+        <tr><th scope="row">Coal, sack of 50 kg</th><td class="num">640</td><td class="num">26.67</td><td class="num">22.07</td><td class="num">18.0</td></tr>
+        <tr><th scope="row">Petrol, 1 litre</th><td class="num">74</td><td class="num">3.08</td><td class="num">2.55</td><td class="num">2.1</td></tr>
+        <tr><th scope="row">Electricity above the allowance, 1 kWh</th><td class="num">3.10</td><td class="num">0.13</td><td class="num">0.11</td><td class="num">0.1</td></tr>
+        <tr><th scope="row">Work shoes, made at Ilmesca</th><td class="num">1,450</td><td class="num">60.42</td><td class="num">50.00</td><td class="num">40.7</td></tr>
+        <tr><th scope="row">Shoes, imported</th><td class="num">4,900</td><td class="num">204.17</td><td class="num">168.97</td><td class="num">137.6</td></tr>
+        <tr><th scope="row">Winter coat, domestic</th><td class="num">2,600</td><td class="num">108.33</td><td class="num">89.66</td><td class="num">73.0</td></tr>
+        <tr><th scope="row">Bicycle, domestic</th><td class="num">3,900</td><td class="num">162.50</td><td class="num">134.48</td><td class="num">109.6</td></tr>
+        <tr><th scope="row">Refrigerator, domestic</th><td class="num">9,800</td><td class="num">408.33</td><td class="num">337.93</td><td class="num">275.3</td></tr>
+        <tr><th scope="row">Telephone, imported, entry model</th><td class="num">12,400</td><td class="num">516.67</td><td class="num">427.59</td><td class="num">348.3</td></tr>
+        <tr><th scope="row">Rail ticket, Talmeru to Vetruna</th><td class="num">180</td><td class="num">7.50</td><td class="num">6.21</td><td class="num">5.1</td></tr>
+        <tr><th scope="row">Health care, medicines on the list, schooling, domestic water, transport within a state</th><td class="free" colspan="4">Free at the point of use under Articles 71 and 83</td></tr>
+      </tbody>
+    </table>
+    <p class="chips"><span>Minimum remuneration 6,200 vela a month</span><span>174 hours a month</span><span>35.6 vela an hour</span></p>
+    <h2 class="chapter">The same prices, seen from three positions</h2>
+    <p>The table below states the same four items in hours of work for an Iosmen household at the minimum remuneration, for an Iosmen household at the median, and for an Aporean visitor at the Aporean median of 1,150 marek a month.</p>
+    <table class="reg">
+      <caption>Hours of work required, June 2026</caption>
+      <thead><tr><th scope="col">Item</th><th scope="col" class="num">Iosmen minimum</th><th scope="col" class="num">Iosmen median</th><th scope="col" class="num">Aporean median</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Restaurant meal</th><td class="num">12.9</td><td class="num">7.3</td><td class="num">2.4</td></tr>
+        <tr><th scope="row">Shoes, imported</th><td class="num">137.6</td><td class="num">77.5</td><td class="num">25.6</td></tr>
+        <tr><th scope="row">Refrigerator, domestic</th><td class="num">275.3</td><td class="num">155.1</td><td class="num">51.1</td></tr>
+        <tr><th scope="row">Telephone, imported</th><td class="num">348.3</td><td class="num">196.2</td><td class="num">64.7</td></tr>
+      </tbody>
+    </table>
+    <p>An Aporean travelling from Dubrazec finds a restaurant meal at a sixth of the hours it costs an Iosmen worker on the minimum, and reports that Iosmein is inexpensive. The worker at Ilmesca pays the same 460 vela and reports that it is expensive. Both statements are correct as each describes the gap between the two wage levels.</p>
+    <h2 class="chapter">Income, poverty and the distribution</h2>
+    <p>Median net monthly income was 11,000 vela in June 2026. Measured in euro at the rate of each year, it fell from about 295 euro in 2011 to about 230 euro in 2017 and has since risen to about 458 euro. The rise since 2019 is the longest continuous one the Office has recorded.</p>
+    <figure class="chart">
+      <figcaption>Median net monthly income, in vela and in euro at the rate of each year</figcaption>
+      <p class="src">Federal Office of Statistics, household survey. The euro series uses the annual average rate.</p>
+      <div class="plot"><canvas id="c-inc" role="img" aria-label="Chart with two axes, annual from 2011 to 2026. Median income in vela rises from 2,300 to 11,000. The same income in euro rises to 360 in 2015, falls to 229 in 2018, and then rises in every year to 458."></canvas></div>
+      <details>
+        <summary>The figures behind this chart</summary>
+        <table class="reg">
+          <thead><tr><th scope="col">Year</th><th scope="col" class="num">Vela a month</th><th scope="col" class="num">Euro a month</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">2011</th><td class="num">2,300</td><td class="num">295</td></tr>
+            <tr><th scope="row">2012</th><td class="num">2,550</td><td class="num">311</td></tr>
+            <tr><th scope="row">2013</th><td class="num">2,820</td><td class="num">324</td></tr>
+            <tr><th scope="row">2014</th><td class="num">3,150</td><td class="num">342</td></tr>
+            <tr><th scope="row">2015</th><td class="num">3,600</td><td class="num">360</td></tr>
+            <tr><th scope="row">2016</th><td class="num">3,850</td><td class="num">341</td></tr>
+            <tr><th scope="row">2017</th><td class="num">4,100</td><td class="num">230</td></tr>
+            <tr><th scope="row">2018</th><td class="num">5,100</td><td class="num">229</td></tr>
+            <tr><th scope="row">2019</th><td class="num">6,400</td><td class="num">263</td></tr>
+            <tr><th scope="row">2020</th><td class="num">7,300</td><td class="num">287</td></tr>
+            <tr><th scope="row">2021</th><td class="num">8,200</td><td class="num">315</td></tr>
+            <tr><th scope="row">2022</th><td class="num">9,000</td><td class="num">350</td></tr>
+            <tr><th scope="row">2023</th><td class="num">9,700</td><td class="num">385</td></tr>
+            <tr><th scope="row">2024</th><td class="num">10,200</td><td class="num">411</td></tr>
+            <tr><th scope="row">2025</th><td class="num">10,600</td><td class="num">436</td></tr>
+            <tr><th scope="row">2026</th><td class="num">11,000</td><td class="num">458</td></tr>
+          </tbody>
+        </table>
+      </details>
+    </figure>
+    <p>The national poverty line is 60 per cent of median equivalised income. In June 2026 it stands at 6,600 vela a month for a single adult and 13,860 vela for two adults and one child. One household in four falls below it, against one in three in 2017.</p>
+    <figure class="chart gold">
+      <figcaption>Poverty rate and the Gini coefficient of net income</figcaption>
+      <p class="src">Per cent of households below the national line, left axis. Gini coefficient, right axis. Federal Office of Statistics.</p>
+      <div class="plot"><canvas id="c-pov" role="img" aria-label="Chart with two axes, annual from 2011 to 2026. The poverty rate rises from 19.0 per cent to a peak of 34.0 per cent in 2017 and falls in every year since to 24.8 per cent. The Gini coefficient rises from 0.33 to 0.36 in 2017 and falls to 0.28."></canvas></div>
+      <details>
+        <summary>The figures behind this chart</summary>
+        <table class="reg">
+          <thead><tr><th scope="col">Year</th><th scope="col" class="num">Below the line, per cent</th><th scope="col" class="num">Gini</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">2011</th><td class="num">19.0</td><td class="num">0.33</td></tr>
+            <tr><th scope="row">2012</th><td class="num">19.6</td><td class="num">0.33</td></tr>
+            <tr><th scope="row">2013</th><td class="num">20.3</td><td class="num">0.335</td></tr>
+            <tr><th scope="row">2014</th><td class="num">21.1</td><td class="num">0.34</td></tr>
+            <tr><th scope="row">2015</th><td class="num">22.0</td><td class="num">0.34</td></tr>
+            <tr><th scope="row">2016</th><td class="num">24.5</td><td class="num">0.35</td></tr>
+            <tr><th scope="row">2017</th><td class="num">34.0</td><td class="num">0.36</td></tr>
+            <tr><th scope="row">2018</th><td class="num">32.6</td><td class="num">0.35</td></tr>
+            <tr><th scope="row">2019</th><td class="num">31.0</td><td class="num">0.34</td></tr>
+            <tr><th scope="row">2020</th><td class="num">30.1</td><td class="num">0.33</td></tr>
+            <tr><th scope="row">2021</th><td class="num">29.0</td><td class="num">0.32</td></tr>
+            <tr><th scope="row">2022</th><td class="num">28.0</td><td class="num">0.31</td></tr>
+            <tr><th scope="row">2023</th><td class="num">27.0</td><td class="num">0.30</td></tr>
+            <tr><th scope="row">2024</th><td class="num">26.1</td><td class="num">0.295</td></tr>
+            <tr><th scope="row">2025</th><td class="num">25.4</td><td class="num">0.29</td></tr>
+            <tr><th scope="row">2026</th><td class="num">24.8</td><td class="num">0.28</td></tr>
+          </tbody>
+        </table>
+      </details>
+    </figure>
+    <p>The Gini of 0.28 places the distribution among the more equal in Europe, and it coexists with a poverty rate of nearly 25 per cent, because the distribution is compressed around a low median. A country can be equal and poor at the same time.</p>
+    <h2 class="chapter">A household at the bottom</h2>
+    <p>The budget below is the mean of the bottom decile in Ilmesca, a household of two adults and one child, for a month in the heating season. It is published each year by the Office in this form.</p>
+    <table class="reg">
+      <caption>Bottom decile, Ilmesca, three persons, January 2026, vela a month</caption>
+      <thead><tr><th scope="col">Item</th><th scope="col" class="num">Vela</th><th scope="col" class="num">Euro</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Wage, textile enterprise, full time</th><td class="num">6,400</td><td class="num">267</td></tr>
+        <tr><th scope="row">Wage, second adult, part time and own account</th><td class="num">2,900</td><td class="num">121</td></tr>
+        <tr><th scope="row">Child allowance</th><td class="num">900</td><td class="num">38</td></tr>
+        <tr class="total"><th scope="row">Income</th><td class="num">10,200</td><td class="num">425</td></tr>
+        <tr><th scope="row">Food and household goods</th><td class="num">4,850</td><td class="num">202</td></tr>
+        <tr><th scope="row">Heating fuel and electricity above the allowance</th><td class="num">1,640</td><td class="num">68</td></tr>
+        <tr><th scope="row">Clothing and footwear</th><td class="num">720</td><td class="num">30</td></tr>
+        <tr><th scope="row">Repairs, tools and school extras</th><td class="num">540</td><td class="num">23</td></tr>
+        <tr><th scope="row">Housing maintenance charge</th><td class="num">480</td><td class="num">20</td></tr>
+        <tr><th scope="row">Telephone and network</th><td class="num">310</td><td class="num">13</td></tr>
+        <tr><th scope="row">Transport outside the free network</th><td class="num">260</td><td class="num">11</td></tr>
+        <tr class="total"><th scope="row">Spending</th><td class="num">8,800</td><td class="num">367</td></tr>
+        <tr class="total"><th scope="row">Remaining</th><td class="num">1,400</td><td class="num">58</td></tr>
+      </tbody>
+    </table>
+    <p>Food takes 48 per cent of the income of this household, against 21 per cent for a household at the median. Heating takes a further 16 per cent for five months of the year and almost nothing for the other seven. What remains, 1,400 vela, is 58 euro.</p>
+    <p>Anually, on average, the household is 26 per cent below the poverty line for its size. It is above the line in the summer months and below it in the winter due to electricity cost peaks in the winter and falls in the summer.</p>
+    <h2 class="chapter">What costs nothing, and where the queues are</h2>
+    <p>The guaranteed provision is the reason a household on 10,200 vela a month is housed, treated and schooled. <a href="constitution.html#a83">Article 83</a>(3) requires the plan to allocate for the guaranteed list before it allocates for any other purpose, and <a href="constitution.html#a71">Article 71</a>(2) allows the list to be cut only by a two-thirds law published with the evidence of exhausted resources. No such law has been adopted.</p>
+    <p>The list covers health care and the medicines on it, schooling at every level with materials, meals and transport, water for domestic use, public transport within a state, and a nursery place from the end of parental leave. A dwelling from the public stock, despite having no rent, needs to be maintained.</p>
+    <p>For the bottom decile the constraint appears as waiting.</p>
+    <ul class="towns">
+      <li><div><b>19 months</b><span class="role">Dwelling from the public stock</span></div><p>National median wait for an allocation from the list kept under <a href="constitution.html#a64">Article 64</a>(2). The wait is 31 months at Ilmesca and 24 months in the Talmeru district, and 9 months in Velmar. Allocations made are published, and the order of the list is public.</p></li>
+      <li><div><b>26 days</b><span class="role">Specialist appointment</span></div><p>National median wait. The wait reaches 41 days in Sarnovein, where two of the four district hospitals were operating below their established staffing in the returns for 2025.</p></li>
+      <li><div><b>Full price</b><span class="role">Medicines outside the federal list</span></div><p>A medicine that is not on the list is paid for in full. The list is extended at each planning period under <a href="constitution.html#a63">Article 63</a>(3), and the extension of 2025 added twenty-one preparations.</p></li>
+      <li><div><b>Free, and distant</b><span class="role">Transport across a state boundary</span></div><p>Public transport within a state is free at the point of use. A journey crossing a state boundary is paid, at 180 vela for Talmeru to Vetruna, which is 5.1 hours at the minimum remuneration and is a reason internal migration for work is lower here than in Fluid.</p></li>
+    </ul>
+    <h2 class="chapter">The debt</h2>
+    <p>External obligations outstanding stood at 146 per cent of annual output at the end of 2025. They peaked at 178 per cent in 2017. The fall of 19 points between 2018 and 2019 is the effect of <a href="constitution.html#a210">Article 210</a>(2), which provides that an obligation contracted without the authorisation the law then required, or applied to a purpose other than the one declared, creates no debt of the Republic. The remainder is discharged on the schedule of the settlement of 2017, and each payment is published.</p>
+    <figure class="chart">
+      <figcaption>External obligations outstanding, as a share of annual output</figcaption>
+      <p class="src">Per cent, end of year. Court of Accounts, schedule published under Article 210(1).</p>
+      <div class="plot"><canvas id="c-debt" role="img" aria-label="Line chart, annual from 2008 to 2025. External obligations rise from 41 per cent of annual output to a peak of 178 per cent in 2017, drop to 152 per cent in 2019, and ease to 146 per cent by the end of 2025."></canvas></div>
+      <details>
+        <summary>The figures behind this chart</summary>
+        <table class="reg">
+          <thead><tr><th scope="col">Year</th><th scope="col" class="num">Per cent of output</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">2008</th><td class="num">41</td></tr>
+            <tr><th scope="row">2009</th><td class="num">49</td></tr>
+            <tr><th scope="row">2010</th><td class="num">58</td></tr>
+            <tr><th scope="row">2011</th><td class="num">65</td></tr>
+            <tr><th scope="row">2012</th><td class="num">74</td></tr>
+            <tr><th scope="row">2013</th><td class="num">88</td></tr>
+            <tr><th scope="row">2014</th><td class="num">103</td></tr>
+            <tr><th scope="row">2015</th><td class="num">121</td></tr>
+            <tr><th scope="row">2016</th><td class="num">141</td></tr>
+            <tr><th scope="row">2017</th><td class="num">178</td></tr>
+            <tr><th scope="row">2018</th><td class="num">171</td></tr>
+            <tr><th scope="row">2019</th><td class="num">152</td></tr>
+            <tr><th scope="row">2020</th><td class="num">151</td></tr>
+            <tr><th scope="row">2021</th><td class="num">150</td></tr>
+            <tr><th scope="row">2022</th><td class="num">149</td></tr>
+            <tr><th scope="row">2023</th><td class="num">148</td></tr>
+            <tr><th scope="row">2024</th><td class="num">147</td></tr>
+            <tr><th scope="row">2025</th><td class="num">146</td></tr>
+          </tbody>
+        </table>
+      </details>
+    </figure>
+    <p>The service of that debt is the reason the plan allocates less to investment than the Federal Planning Office proposes in each of its drafts. <a href="constitution.html#a210">Article 210</a>(5) forbids contracting a new obligation for the purpose of discharging one on the schedule, so the payments come from current output and the schedule runs to 2041 on present terms.</p>
+    <h2 class="chapter">Assistance received and given</h2>
+    <p>The Republic received about six times the assistance it gave in 2025. What is received is furnished in goods, labour, technique and training, recorded in physical units through the external account, and published each year by state and by form under <a href="constitution.html#a115">Article 115</a>(3). Iosmein is the largest recipient of the solidarity transfers required by Article 303 of the Constitution of the Republic of Fluid.</p>
+    <figure class="chart gold">
+      <figcaption>Bloc assistance received and given</figcaption>
+      <p class="src">Billions of vela equivalent at 2026 prices. Federal Office of Statistics, external account.</p>
+      <div class="plot"><canvas id="c-aid" role="img" aria-label="Bar chart. Assistance received falls from 96 billion vela in 2017 to 44 billion in 2025. Assistance given rises from 2 billion to 7.4 billion over the same period."></canvas></div>
+      <details>
+        <summary>The figures behind this chart</summary>
+        <table class="reg">
+          <thead><tr><th scope="col">Year</th><th scope="col" class="num">Received</th><th scope="col" class="num">Given</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">2017</th><td class="num">96.0</td><td class="num">2.0</td></tr>
+            <tr><th scope="row">2018</th><td class="num">88.0</td><td class="num">3.0</td></tr>
+            <tr><th scope="row">2019</th><td class="num">74.0</td><td class="num">4.0</td></tr>
+            <tr><th scope="row">2020</th><td class="num">66.0</td><td class="num">5.0</td></tr>
+            <tr><th scope="row">2021</th><td class="num">61.0</td><td class="num">6.0</td></tr>
+            <tr><th scope="row">2022</th><td class="num">55.0</td><td class="num">6.0</td></tr>
+            <tr><th scope="row">2023</th><td class="num">51.0</td><td class="num">7.0</td></tr>
+            <tr><th scope="row">2024</th><td class="num">47.0</td><td class="num">7.0</td></tr>
+            <tr><th scope="row">2025</th><td class="num">44.0</td><td class="num">7.4</td></tr>
+          </tbody>
+        </table>
+      </details>
+    </figure>
+    <p>What is given is small and it is rising, and it is furnished on the terms <a href="constitution.html#a115">Article 115</a>(2) states: it creates no debt on the recipient and has no condition touching the internal affairs, the form of government or the alignment of the recipient. Those are also the terms on which the Republic received assistance between 2017 and 2021.</p>
+    <h2 class="chapter">A eurocrisis without a Troika</h2>
+    <p>The period of 2016 to 2019 is called the eurocrisis here. The euro had no part in it, and the Republic has at no time used that currency. That name was borrowed from the sovereign debt crises of the euro area because the position was recognizable: that of a state that had borrowed abroad, could no longer pay, and had lost the value of its currency in two years.</p>
+    <p>However, in Iosmein, no external body set conditions for the assistance that arrived. No creditor committee sat in Talmeru, no ministry was placed under the supervision of a foreign administration, no sale of public property was required, and no reduction of pensions or of the guaranteed list was demanded. <a href="constitution.html#a20">Article 20</a>(4) now states the rule in the text, and it states what was already the practice of the Bloc.</p>
+    <p>Adjustment came by three routes. Obligations contracted without authorisation were declared to create no debt under <a href="constitution.html#a210">Article 210</a>(2), and the officers who contracted them are personally liable under <a href="constitution.html#a20">Article 20</a>(3). Supply of medicines, fuel, spare parts and grain arrived from the Bloc in physical units and was recorded in the external account. The constitutional provisions that had allowed the borrowing were replaced by Amendment XII in 2021.</p>
+    <p>The cost of the adjustment was tolerated domestically, and the charts on this page show where it fell. Prices rose by 38.5 per cent in 2017 and the rate has taken nine years to return toward 13 per cent. Median income measured in euro fell by a fifth between 2015 and 2017 and took until 2021 to pass its 2011 level. The poverty rate rose by twelve points in two years and has taken nine years to recover eight of them.</p>
+    <div class="note">
+      <p>In the Republic of Fluid the phrase is used differently. Article 117(5) of the Fluidian Constitution forbids the Republic to borrow outside the Bloc at all, so the sequence that occurred here has no route into that country. The fear expressed there concerns a situation its own text has closed. Here the same fear describes something that happened, and the arithmetic of it is in the tables above.</p>
+    </div>
+    <h2 class="chapter">Elsewhere on this portal</h2>
+    <div class="panels">
+      <div class="panel"><h3><a href="rescue.html">The rescue</a></h3><p>The borrowing, the default, the assistance and the joint committee that supervises the settlement.</p></div>
+      <div class="panel gold"><h3><a href="country.html">The country</a></h3><p>The five states, the towns, the ownership settlement and the chronology.</p></div>
+    </div>
+  </main>
+  <footer class="reg">
+    <div class="bar">
+      <div>
+        <p class="h">The portal</p>
+        <p><a href="constitution.html">Constitution</a></p>
+        <p><a href="summary.html">Summary</a></p>
+        <p><a href="economy.html">Economy</a></p>
+        <p><a href="downloads.html">Downloads</a></p>
+      </div>
+      <div>
+        <p class="h">Published by</p>
+        <p>Ministry of External Relations of the Allied States of Iosmein, Talmeru.</p>
+        <p>Under Article 17(3), free of charge, without licence, registration or account.</p>
+      </div>
+      <div>
+        <p class="h">Hosted by</p>
+        <p><a href="../index.html">The World section</a> of the Public Register of the Republic of Fluid.</p>
+        <p><a href="../../index.html">Register home</a></p>
+      </div>
+      <div>
+        <p class="h">Design</p>
+        <p>These pages use the layout and the accessibility rules of the Fluidian register, with the colours of the Iosmen flag. The stylesheet is separate and is maintained by this Ministry.</p>
+        <p>No external resource is loaded by this page.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/chart.min.js"></script>
+  <script>
+  (function () {
+    if (typeof Chart === 'undefined') { return; }
+    var ink = '#241a1c', soft = '#5a4b4e', faint = '#77676a';
+    var crimson = '#b22234', gold = '#d9a900', rule = '#ddd2bd';
+    var sans = 'ui-sans-serif, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif';
+
+    Chart.defaults.font.family = sans;
+    Chart.defaults.font.size = 12;
+    Chart.defaults.color = soft;
+    Chart.defaults.animation = false;
+    Chart.defaults.maintainAspectRatio = false;
+
+    function axis(title, opts) {
+      var a = {
+        title: { display: !!title, text: title, color: faint, font: { size: 11 } },
+        grid: { color: rule, drawTicks: false },
+        border: { color: rule },
+        ticks: { color: soft, padding: 6 }
+      };
+      if (opts) { for (var k in opts) { a[k] = opts[k]; } }
+      return a;
+    }
+
+    function line(id, labels, sets, yTitle, extra) {
+      var el = document.getElementById(id);
+      if (!el) { return; }
+      var scales = { x: axis('', { grid: { display: false, drawTicks: false } }), y: axis(yTitle) };
+      if (extra && extra.y1) { scales.y1 = extra.y1; }
+      new Chart(el, {
+        type: 'line',
+        data: { labels: labels, datasets: sets },
+        options: {
+          responsive: true,
+          interaction: { mode: 'index', intersect: false },
+          plugins: {
+            legend: { display: sets.length > 1, labels: { boxWidth: 14, boxHeight: 3, color: soft } },
+            tooltip: { backgroundColor: ink, borderColor: rule, borderWidth: 1, padding: 8 }
+          },
+          scales: scales
+        }
+      });
+    }
+
+    function series(label, data, colour, axisId) {
+      var s = {
+        label: label, data: data, borderColor: colour, backgroundColor: colour,
+        borderWidth: 2, pointRadius: 2.5, pointHoverRadius: 4, tension: 0
+      };
+      if (axisId) { s.yAxisID = axisId; }
+      return s;
+    }
+
+    line('c-fx',
+      ['2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024', '2025', '2026'],
+      [ series('Vela per marek', [9.0, 9.4, 10.1, 10.8, 11.9, 13.6, 21.5, 27.0, 29.5, 30.8, 31.4, 31.0, 30.4, 29.9, 29.3, 29.0], crimson),
+        series('Vela per euro', [7.8, 8.2, 8.7, 9.2, 10.0, 11.3, 17.8, 22.3, 24.3, 25.4, 26.0, 25.7, 25.2, 24.8, 24.3, 24.0], gold) ],
+      'Vela');
+
+    line('c-cpi',
+      ['2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024', '2025', '2026'],
+      [ series('Iosmein', [4.1, 6.8, 38.5, 27.2, 19.4, 16.8, 18.1, 17.2, 15.9, 14.6, 13.7, 13.0], crimson),
+        series('Reformed Luces Aporia', [1.8, 2.0, 2.6, 3.1, 2.7, 1.9, 2.8, 4.6, 3.5, 2.9, 2.6, 2.4], gold) ],
+      'Per cent a year');
+
+    line('c-inc',
+      ['2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024', '2025', '2026'],
+      [ series('Vela a month', [2300, 2550, 2820, 3150, 3600, 3850, 4100, 5100, 6400, 7300, 8200, 9000, 9700, 10200, 10600, 11000], crimson),
+        series('Euro a month', [295, 311, 324, 342, 360, 341, 230, 229, 263, 287, 315, 350, 385, 411, 436, 458], gold, 'y1') ],
+      'Vela',
+      { y1: {
+          position: 'right',
+          title: { display: true, text: 'Euro', color: faint, font: { size: 11 } },
+          grid: { drawOnChartArea: false },
+          border: { color: rule },
+          ticks: { color: soft, padding: 6 }
+        } });
+
+    line('c-pov',
+      ['2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024', '2025', '2026'],
+      [ series('Below the poverty line, per cent', [19.0, 19.6, 20.3, 21.1, 22.0, 24.5, 34.0, 32.6, 31.0, 30.1, 29.0, 28.0, 27.0, 26.1, 25.4, 24.8], crimson),
+        series('Gini coefficient', [0.33, 0.33, 0.335, 0.34, 0.34, 0.35, 0.36, 0.35, 0.34, 0.33, 0.32, 0.31, 0.3, 0.295, 0.29, 0.28], gold, 'y1') ],
+      'Per cent',
+      { y1: {
+          position: 'right',
+          min: 0.2, max: 0.4,
+          title: { display: true, text: 'Gini', color: faint, font: { size: 11 } },
+          grid: { drawOnChartArea: false },
+          border: { color: rule },
+          ticks: { color: soft, padding: 6 }
+        } });
+
+    line('c-debt',
+      ['2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024', '2025'],
+      [ series('Per cent of annual output', [41, 49, 58, 65, 74, 88, 103, 121, 141, 178, 171, 152, 151, 150, 149, 148, 147, 146], crimson) ],
+      'Per cent');
+
+    var aid = document.getElementById('c-aid');
+    if (aid) {
+      new Chart(aid, {
+        type: 'bar',
+        data: {
+          labels: ['2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024', '2025'],
+          datasets: [
+            { label: 'Received', data: [96, 88, 74, 66, 61, 55, 51, 47, 44], backgroundColor: crimson },
+            { label: 'Given', data: [2, 3, 4, 5, 6, 6, 7, 7, 7.4], backgroundColor: gold }
+          ]
+        },
+        options: {
+          responsive: true,
+          plugins: {
+            legend: { labels: { boxWidth: 14, boxHeight: 10, color: soft } },
+            tooltip: { backgroundColor: ink, borderColor: rule, borderWidth: 1, padding: 8 }
+          },
+          scales: {
+            x: { grid: { display: false, drawTicks: false }, border: { color: rule }, ticks: { color: soft, padding: 6 } },
+            y: {
+              title: { display: true, text: 'Billions of vela at 2026 prices', color: faint, font: { size: 11 } },
+              grid: { color: rule, drawTicks: false }, border: { color: rule }, ticks: { color: soft, padding: 6 }
+            }
+          }
+        }
+      });
+    }
+  })();
+  </script>
+</body>
+</html>

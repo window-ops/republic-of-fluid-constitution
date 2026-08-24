@@ -657,7 +657,7 @@ We joined the union established at Lindoma in 1994 and remain in it. We record t
 
 **Article 106: Currency**
 1. The currency of the Republic is the vela, issued by the Bank of the Republic, which alone issues it.
-2. Wages, pensions, prices in retail supply and obligations between persons in the Republic are expressed in vela.
+2. Wages, pensions, prices in retail supply and obligations between persons are expressed in vela.
 3. An obligation expressed in the currency of another state, or indexed to it, is void, except where a federal law permits it for exchange with a state outside the Democratic Socialist Bloc.
 4. The Republic joins no monetary union and adopts the currency of no other state.
 
@@ -709,7 +709,7 @@ We joined the union established at Lindoma in 1994 and remain in it. We record t
 
 **Article 115: Solidarity**
 1. The Republic contributes to the peoples in want the share of the plan a federal law fixes, in goods, labour, technique and training, recorded in physical units.
-2. A contribution creates no debt of the recipient and carries no condition touching the internal affairs, the form of government or the alignment of the recipient.
+2. A contribution creates no debt on the recipient and has no condition touching the internal affairs, the form of government or the alignment of the recipient.
 3. The Republic receives solidarity from the member states of the Bloc on the same terms, and publishes each year what it has received, from which state and in what form.
 4. Solidarity received is applied to the purposes the plan states, and the Court of Accounts audits its application.
 

@@ -115,7 +115,7 @@ td > :last-child, th > :last-child, li > :last-child, dd > :last-child { margin-
   max-width: var(--frame); margin: 0 auto; padding: 0 var(--pad);
   display: flex; flex-wrap: wrap; gap: 0.15rem;
 }
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
   .sections .bar { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: thin; }
   .sections a { white-space: nowrap; }
 }
@@ -440,3 +440,54 @@ a.dlcard .cl { display: block; font-size: 0.94rem; color: var(--ink-soft); }
 @media print {
   .article, .annex { break-inside: avoid; }
 }
+
+/* ---------- figures and charts ---------- */
+
+figure.chart {
+  margin: 1.6rem 0 1.9rem;
+  border: 1px solid var(--rule);
+  border-top: 4px solid var(--state);
+  background: var(--paper);
+  padding: 1.1rem 1.25rem 1.25rem;
+}
+figure.chart.gold { border-top-color: var(--gold-edge); }
+figure.chart > figcaption {
+  font-family: var(--sans); font-size: 0.86rem; font-weight: 700;
+  letter-spacing: 0.04em; margin: 0 0 0.15rem;
+}
+figure.chart > .src {
+  font-family: var(--sans); font-size: 0.78rem; color: var(--ink-faint);
+  margin: 0 0 0.9rem;
+}
+figure.chart > .plot { position: relative; height: 320px; }
+@media (max-width: 48rem) { figure.chart > .plot { height: 260px; } }
+figure.chart canvas { display: block; }
+
+figure.chart details { margin: 0.5rem 0 0; }
+figure.chart summary {
+  font-family: var(--sans); font-size: 0.78rem; letter-spacing: 0.05em;
+  text-transform: uppercase; color: var(--ink-soft);
+  cursor: pointer; padding: 0.25rem 0;
+}
+figure.chart summary:hover { color: var(--ink); }
+figure.chart details table.reg { margin: 0; font-size: 0.86rem; }
+
+.nochart {
+  font-family: var(--sans); font-size: 0.82rem; color: var(--ink-soft);
+  background: var(--shell); border-left: 4px solid var(--gold-edge);
+  padding: 0.7rem 0.95rem; margin: 0.9rem 0 0;
+}
+
+/* ---------- money figures in tables ---------- */
+
+table.reg td.num, table.reg th.num { text-align: right; white-space: nowrap; }
+table.reg tr.total td, table.reg tr.total th { border-top: 2px solid var(--ink); font-weight: 700; }
+table.reg td.free { color: var(--inforce); font-weight: 700; }
+
+/* ---------- two-column key figures ---------- */
+
+.keyfigs { display: grid; grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+.keyfig { border: 1px solid var(--rule); border-left: 4px solid var(--state); padding: 0.85rem 1rem; background: var(--paper); }
+.keyfig .v { font-family: var(--sans); font-size: 1.5rem; font-weight: 700; line-height: 1.1; display: block; }
+.keyfig .l { font-family: var(--sans); font-size: 0.78rem; color: var(--ink-soft); display: block; margin-top: 0.3rem; }
+.keyfig.gold { border-left-color: var(--gold-edge); }
