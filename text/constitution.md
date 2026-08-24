@@ -895,7 +895,7 @@ In no case is a provision of this Title to be read as conferring a right to enga
 
 **Article 116. Arduous tasks, rotation and training**
 1. Tasks that are dangerous, unhealthy, monotonous or degrading are registered publicly, and their elimination by technique, by redesign or by automation is a standing objective of the plan, which reports annually on the reduction achieved.
-2. While such tasks persist, they are distributed by rotation accepted voluntarily, carry reduced working time and additional rest under Article 72(4), and are concentrated upon no group defined by a ground listed in Article 38(2).
+2. While such tasks persist, they are distributed by rotation accepted voluntarily, have reduced working time and additional rest under Article 72(4), and are concentrated upon no group defined by a ground listed in Article 38(2).
 3. Every person may obtain the training required for the contribution they choose, at public cost and without limit of age, and Article 67(3) governs.
 4. Enterprises furnish training in the tasks they require, and the time spent in training is contribution under Article 70(2).
 5. Automation displacing a task confers upon the persons who performed it the right to training, to transfer conforming with Article 70(6), and to the retention of their provision in full, and Article 22(3) governs the application of the gain.
