@@ -116,7 +116,7 @@ Articles 37 to 81.
 
 **49. Liberty and security** - Detention needs legal grounds and a judge within forty-eight hours, and the remedy is never suspended.
 
-**50. Private life and the home** - Your home, family life and messages are private, and mass surveillance can never be authorised.
+**50. Private life and the home** - Home, family life and messages are private, and mass surveillance can never be authorised.
 
 **51. Data and automated decision** - Your data is yours, cannot be traded, and no machine may decide anything about you.
 
