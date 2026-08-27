@@ -1,11 +1,6 @@
 /* External Currency Translation Cooperative - own stylesheet.
    This is a licensed cooperative and no organ of the Republic, so it loads
-   none of the shared state frame. Everything here is local to this site.
-
-   The design carries one idea: the cooperative sits on a seam between two
-   systems that do not share a unit. Warm brass and paper stand for the
-   Republic side, cool teal and white for the euro side, and the translation
-   slip on each page is torn down the middle between them. */
+   none of the shared state frame. */
 
 :root {
   --paper:  #fbf9f4;
@@ -203,7 +198,7 @@ h3 { font-size: 1rem; font-weight: 700; margin: 1.5rem 0 .4rem; }
 
 /* ---------- steps ---------- */
 
-.steps { list-style: none; padding: 0; margin: 1.4rem 0; counter-reset: st; }
+.steps { list-style: none; padding: 0; counter-reset: st; }
 .steps li {
   counter-increment: st;
   position: relative;
