@@ -27,6 +27,7 @@
   --accent-fifteenth: #c9a3a0;
   --accent-sixteenth: #cbb37a;
   --accent-seventeenth: #7fa9bf;
+  --accent-eighteenth: #969fd0;
   --mark: #3a3120;
 
   --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
@@ -446,43 +447,52 @@ section:first-of-type .sep {
   font-weight: 600;
 }
 
-.screen .opts {
+.screen .opts,
+.doc .opts {
   margin-block: 0.45rem 0.85rem;
   padding: 0;
   list-style: none;
 }
 
-.screen .opts li {
+.screen .opts li,
+.doc .opts li {
   margin-block: 0 0.34rem;
   padding: 0.3rem 0.6rem;
   background: var(--paper-raised);
   border: 1px solid var(--rule);
   border-radius: 2px;
 }
+.opts:last-child { margin-bottom: 0; }
 
-.screen .opts.grid {
+.screen .opts.grid,
+.doc .opts.grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
   gap: 0.34rem;
 }
 
 .screen .opts.grid li,
-.screen .opts.row li {
+.screen .opts.row li,
+.doc .opts.grid li,
+.doc .opts.row li {
   margin: 0;
 }
 
-.screen .opts.row {
+.screen .opts.row,
+.doc .opts.row {
   display: flex;
   flex-wrap: wrap;
   gap: 0.34rem;
 }
 
-.screen .opts li.on {
+.screen .opts li.on,
+.doc .opts li.on {
   border-color: var(--accent-fourth);
   color: var(--ink);
 }
 
-.screen .opts .lab {
+.screen .opts .lab,
+.doc .opts .lab {
   color: var(--ink);
 }
 
@@ -582,6 +592,12 @@ section:first-of-type .sep {
 
 .turn-satomi .who {
   color: var(--accent-seventeenth);
+}
+
+/* ---------- speaker introduced in part 15 ---------- */
+
+.turn-linda .who {
+  color: var(--accent-eighteenth);
 }
 
 .turn-control .who,
