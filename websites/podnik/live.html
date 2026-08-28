@@ -44,7 +44,7 @@
     <section class="opening">
       <div class="wrap">
         <h1>Open data</h1>
-        <p class="lede">Every vehicle in traffic reports its position, and the whole of it is published without an account, a key or a quota. Apps use it with OpenStreetMap to show where a tram is and how long a rider is going to stand at the stop.</p>
+        <p class="lede">Every vehicle in traffic reports its position, and the whole of it is published without an account, a key or a quota. Apps use it with OpenStreetMap to show where a tram is and how long a rider waits at the stop.</p>
       </div>
     </section>
     <section class="block">
@@ -74,7 +74,7 @@
           <li>
             <span class="tag">GET /v1/vehicle/{id}</span>
             <h3>One vehicle</h3>
-            <p>Position, line, journey, model code, depot of allocation, and for a pod the identifier of the controller supervising it. The model code links straight into the catalogue, so an app can show a rider which vehicle is arriving before it comes round the corner.</p>
+            <p>Position, line, journey, model code, depot of allocation, and for a pod the identifier of the controller supervising it. The model code links straight into the catalogue, so an app can show a rider which vehicle is arriving before it arrives.</p>
           </li>
         </ul>
       </div>
@@ -122,7 +122,7 @@
         <ol class="steps">
           <li>
             <h3>Ask the stop, not the vehicle</h3>
-            <p>Call <code class="inline">/v1/journeys?stop=LIN-0412</code>. The reply already accounts for vehicles that have not yet started their journey, which a position feed alone cannot tell you about.</p>
+            <p>Call <code class="inline">/v1/journeys?stop=LIN-0412</code>. The reply already accounts for vehicles that have not yet started their journey, which a position feed alone cannot show.</p>
           </li>
           <li>
             <h3>Take the difference, then widen it</h3>
@@ -134,7 +134,7 @@
           </li>
           <li>
             <h3>Fall back to the timetable</h3>
-            <p>When <code class="inline">predicted</code> is absent the vehicle has not reported for more than two minutes, show the scheduled time and state that it is scheduled. The field <code class="inline">stale_s</code> tells you how long the silence has run.</p>
+            <p>When <code class="inline">predicted</code> is absent the vehicle has not reported for more than two minutes, show the scheduled time and state that it is scheduled. The field <code class="inline">stale_s</code> gives the length of the silence.</p>
           </li>
         </ol>
       </div>
@@ -146,8 +146,8 @@
       <div class="wrap">
         <div class="essay">
           <p><strong>Podnik publishes identifiers, and OpenStreetMap helps place them.</strong> Every stop in the feed names the node it matches, and every line gives the ordered ways it runs over. Drawing a live map needs the two together: the feed for the moving points and the map for everything standing still.</p>
-          <p><strong>The tagging goes like this:</strong> stops are <code class="inline">public_transport=stop_position</code> with <code class="inline">network=Podnik</code> and the Podnik identifier in <code class="inline">ref:podnik</code>. Routes use <code class="inline">route=tram</code>, <code class="inline">route=bus</code>, <code class="inline">route=train</code>, <code class="inline">route=ferry</code> and, for the Lindoma lanes, <code class="inline">route=bus</code> with <code class="inline">podnik:pod=yes</code>. Corrections go to OpenStreetMap directly, and the federation surveys the whole network against it twice a year.</p>
-          <p><strong>The two are published under different terms.</strong> The Podnik feed is in the public domain, since it was made with public resources and patents are banned here. OpenStreetMap data comes under the Open Database Licence, and an application mixing them stays subject to that licence for the map part.</p>
+          <p><strong>The tagging is as follows:</strong> stops are <code class="inline">public_transport=stop_position</code> with <code class="inline">network=Podnik</code> and the Podnik identifier in <code class="inline">ref:podnik</code>. Routes use <code class="inline">route=tram</code>, <code class="inline">route=bus</code>, <code class="inline">route=train</code>, <code class="inline">route=ferry</code> and, for the Lindoma lanes, <code class="inline">route=bus</code> with <code class="inline">podnik:pod=yes</code>. Corrections go to OpenStreetMap directly, and the federation surveys the whole network against it twice a year.</p>
+          <p><strong>The two are published under different terms.</strong> The Podnik feed is in the public domain, since it was made with public resources and patents are prohibited here. OpenStreetMap data comes under the Open Database Licence, and an application mixing them stays subject to that licence for the map part.</p>
         </div>
       </div>
     </section>
@@ -159,7 +159,7 @@
         <ul class="plates">
           <li>
             <h3>No account, no key, no quota</h3>
-            <p>There is nothing to register for and nothing to sign. The feed answers the same to a resident with a phone, a commune with a departure board and a company abroad.</p>
+            <p>There is no registration and no agreement to sign. The feed answers the same to a resident with a phone, a commune with a departure board and a company abroad.</p>
           </li>
           <li>
             <h3>Mirrors at every regional exchange</h3>
@@ -167,7 +167,7 @@
           </li>
           <li>
             <h3>Cache the slow things</h3>
-            <p>Lines and stops change a few times a year. Positions change every ten seconds. Fetching the first as often as the second can waste the endpoint's electricity.</p>
+            <p>Lines and stops change a few times a year. Positions change every ten seconds. Fetching the first as often as the second wastes energy at the endpoint.</p>
           </li>
           <li>
             <h3>Faults are published</h3>
