@@ -394,7 +394,7 @@ In no case is a provision of this Title to be read as conferring a right to enga
 7. The conditions under which a person suffering an incurable and grievous condition may obtain assistance to end their life are fixed by organic law, which secures the voluntary character of the decision and protects against pressure arising from want, isolation or the burden borne by others.
 
 **Article 47. Prohibition of torture**
-1. Torture and cruel, inhuman or degrading treatment or punishment are prohibited absolutely.
+1. Torture and cruel, inhuman or degrading treatment or punishment are prohibited.
 2. Expulsion, return or extradition of a person to a place where they face a real risk of such treatment, of persecution, of the death penalty, or of enforced disappearance is prohibited, and in no case does an assurance furnished by the receiving authority displace this prohibition.
 3. A statement obtained by such treatment is inadmissible in any proceeding, except in a proceeding against its author.
 4. Places of detention are open to unannounced inspection by an independent body and by the courts.

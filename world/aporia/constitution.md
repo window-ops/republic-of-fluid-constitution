@@ -168,7 +168,7 @@ We preserve the social ownership won in 1946 and abandon the direction of it by 
 
 **Article 27: Integrity of the person**
 1. The physical and mental integrity of the person is inviolable.
-2. Torture and cruel, inhuman or degrading treatment or punishment are prohibited absolutely.
+2. Torture and cruel, inhuman or degrading treatment or punishment are prohibited.
 3. A medical or scientific intervention on a person requires their free and informed consent, given in the forms laid down by law.
 4. A statement obtained by torture, by threat or by deception shall be inadmissible in any proceeding.
 

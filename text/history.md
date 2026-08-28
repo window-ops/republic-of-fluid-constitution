@@ -107,7 +107,7 @@ Environment and Justice entered government for the first time in 1978, and ecolo
 
 The Corvaluri crossing to Iosmein reopened in 1989 after ninety-nine years. The Democratic Socialist Bloc was founded at Lindoma in 1994 by Fluid, Iosmein and Reformed Luces Aporia.
 
-Export of uranium concentrate began in 1985 and later extended to fuel assemblies and specialised components; every licence has carried a safeguards condition, nuclear weapons being prohibited absolutely. From 2003 foreign economic entities were licensed to conduct the shipping, certification, insurance and brokerage that the Republic's own institutions could not perform in foreign jurisdictions. The renewable programme began in earnest in 1998 with the wind resource above Corcina, and public administration moved to free and open software from 2001.
+Export of uranium concentrate began in 1985 and later extended to fuel assemblies and specialised components; every licence has carried a safeguards condition, nuclear weapons being prohibited. From 2003 foreign economic entities were licensed to conduct the shipping, certification, insurance and brokerage that the Republic's own institutions could not perform in foreign jurisdictions. The renewable programme began in earnest in 1998 with the wind resource above Corcina, and public administration moved to free and open software from 2001.
 
 ### Climate impacts
 

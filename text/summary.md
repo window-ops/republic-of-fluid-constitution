@@ -110,7 +110,7 @@ Articles 37 to 81.
 
 **46. Integrity and autonomy of the person** - You decide about your own body, including reproduction, gender care and refusing treatment.
 
-**47. Prohibition of torture** - Torture is absolutely prohibited, as is sending anyone anywhere they risk it.
+**47. Prohibition of torture** - Torture is prohibited, as is sending anyone anywhere they risk it.
 
 **48. Servitude and forced labour** - Slavery, trafficking and forced labour are prohibited, including labour demanded in return for provision.
 
