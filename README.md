@@ -27,6 +27,7 @@ concepts/                  guidance: usufruct, sortition, minimum core, steady s
 questions/                 questions put to committee chairs and office holders, with answers
 economy/                   the economic order, its objections, and its unresolved problems
 assembly/                  composition of the chamber and the party register
+search/                    full-text search of the constitution, summary and history
 map/                       interactive map, geography, and 22 town pages
 world/                     the union, neighbouring states, and relations beyond the bloc
 history/                   narrative history and chronology
@@ -45,7 +46,7 @@ Serve the directory with any static file server and open `index.html`.
 
 Nothing is fetched from outside the repository, so the site works offline once the relative links resolve.
 
-The article finder loads `js/articles.js`, a single array of all 340 headings and one-line summaries.
+The search overlay and the search page load `js/search-data.js`, which holds the text of the constitution, the official summary and the history. A script tag loads it, so search works when a page is opened from the file system.
 
 ## Documentation
 
@@ -56,6 +57,8 @@ The article finder loads `js/articles.js`, a single array of all 340 headings an
 | [`docs/real-life-implications.md`](docs/real-life-implications.md) | Where the Republic sits, legislation outside the economy, provisions derived from EU law, and the autarky classification |
 | [`docs/quirks.md`](docs/quirks.md) | Transport, Exceptional Transports, the common vehicle fleet, public transport, the technological sector, social norms, and other regulations that differ from the norm |
 | [`docs/method-and-archive.md`](docs/method-and-archive.md) | How the text was drafted, the use of machine assistance, and the standing of the archived constitutions |
+| [`docs/search.md`](docs/search.md) | How to keep the search text updated |
+
 
 ## Licensing
 

@@ -8,18 +8,19 @@
     return l ? l.getAttribute('href').replace(/css\/register\.css$/, '') : '';
   })();
 
-  /* ---------- Find an article: overlay search across all 340 ---------- */
+  /* ---------- Search: overlay over the constitution, summary and history ---------- */
 
   function buildFinder() {
-    if (!window.FLUID) return null;
+    var S = window.FluidSearch;
+    if (!S) return null;
     var wrap = document.createElement('div');
     wrap.className = 'finderlay';
     wrap.hidden = true;
     wrap.innerHTML =
-      '<div class="fl-box" role="dialog" aria-modal="true" aria-label="Find an article">' +
-        '<input class="fl-in" type="search" autocomplete="off" ' +
-          'placeholder="Article number, heading, or a few words">' +
-        '<p class="fl-hint">Type a number to jump straight to it. Esc closes.</p>' +
+      '<div class="fl-box" role="dialog" aria-modal="true" aria-label="Search the register">' +
+        '<input class="fl-in" type="search" autocomplete="off" spellcheck="false" ' +
+          'placeholder="A word, a phrase in quotes, or an article number">' +
+        '<p class="fl-hint">Enter opens the full results or selected result. A number opens that article. Esc closes.</p>' +
         '<ul class="fl-res"></ul>' +
       '</div>';
     document.body.appendChild(wrap);
@@ -27,44 +28,57 @@
     var input = wrap.querySelector('.fl-in'),
         res = wrap.querySelector('.fl-res'),
         hint = wrap.querySelector('.fl-hint'),
-        sel = -1, rows = [];
+        sel = -1, rows = [], jump = null;
 
-    function href(a) { return root + 'constitution/title-' + a[1] + '.html#a' + a[0]; }
+    var LABEL = {};
+    S.docs.forEach(function (d) { LABEL[d.key] = d.label; });
+    var LIMIT = 12;
 
-    function esc(s) {
-      return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    function full() {
+      try { sessionStorage.setItem(S.key, input.value); } catch (e) {}
+      window.location.href = root + 'search/index.html';
     }
 
-    function render(list) {
+    function render(list, terms) {
       rows = list;
-      sel = list.length ? 0 : -1;
-      res.innerHTML = list.map(function (a, i) {
-        return '<li' + (i === 0 ? ' class="on"' : '') + '><a href="' + href(a) + '">' +
-          '<span class="n">' + a[0] + '</span>' +
-          '<span class="h">' + esc(a[2]) + '</span>' +
-          '<span class="g">' + esc(a[3]) + '</span></a></li>';
+      sel = -1;
+      res.innerHTML = list.map(function (r) {
+        var n = S.number(r.doc, r.rec);
+        return '<li><a href="' + S.href(r.doc, r.rec) + '">' +
+          '<span class="n">' + (n || '&middot;') + '</span>' +
+          '<span class="h">' + S.marks(S.heading(r.doc, r.rec), terms) + '</span>' +
+          '<span class="src">' + LABEL[r.doc] + '</span>' +
+          '<span class="g">' + S.snippet(S.body(r.doc, r.rec), terms, 110) + '</span></a></li>';
       }).join('');
     }
 
     function search() {
-      var v = input.value.trim().toLowerCase();
+      var v = input.value.trim();
+      jump = null;
       if (!v) {
         res.innerHTML = ''; rows = []; sel = -1;
-        hint.textContent = 'Type a number to jump straight to it. Esc closes.';
+        hint.textContent = 'Enter opens the full results or selected result. A number opens that article. Esc closes.';
         return;
       }
-      var exact = [], starts = [], words = [];
-      window.FLUID.arts.forEach(function (a) {
-        var num = String(a[0]);
-        if (num === v) exact.push(a);
-        else if (num.indexOf(v) === 0) starts.push(a);
-        else if ((a[2] + ' ' + a[3]).toLowerCase().indexOf(v) > -1) words.push(a);
+      var out = window.FluidSearch.run(v);
+      if (out.q.num && v === String(out.q.num)) jump = S.articleHref(out.q.num);
+      var flat = [];
+      out.groups.forEach(function (g) {
+        g.hits.forEach(function (h) { flat.push(h); });
       });
-      var list = exact.concat(starts, words).slice(0, 30);
-      hint.textContent = list.length
-        ? list.length + ' shown. Enter opens the first, arrows move.'
-        : 'No article matches.';
-      render(list);
+      var list = flat.slice(0, LIMIT);
+      if (jump) {
+        hint.textContent = 'Enter opens Article ' + out.q.num +
+          (out.total ? '. Arrows move through the list.' : '.');
+      } else if (!out.total) {
+        hint.textContent = 'Nothing matches that.';
+      } else {
+        hint.textContent = out.total + ' found' +
+          (out.total > list.length ? ', ' + list.length + ' shown' : '') +
+          (out.widened ? ', matched in any order' : '') +
+          '. Enter opens the full results or selected result.';
+      }
+      render(list, out.terms);
     }
 
     function move(d) {
@@ -80,9 +94,15 @@
     input.addEventListener('keydown', function (e) {
       if (e.key === 'ArrowDown') { e.preventDefault(); move(1); }
       else if (e.key === 'ArrowUp') { e.preventDefault(); move(-1); }
-      else if (e.key === 'Enter' && sel > -1) {
+      else if (e.key === 'Enter') {
         e.preventDefault();
-        window.location.href = href(rows[sel]);
+        if (sel > -1 && rows[sel]) {
+          window.location.href = S.href(rows[sel].doc, rows[sel].rec);
+        } else if (jump) {
+          window.location.href = jump;
+        } else if (input.value.trim()) {
+          full();
+        }
       }
     });
     wrap.addEventListener('click', function (e) { if (e.target === wrap) close(); });
@@ -103,7 +123,10 @@
 
   var finder = buildFinder();
   var btn = document.getElementById('findbtn');
-  if (btn && finder) btn.addEventListener('click', finder.open);
+  if (btn && finder) {
+    btn.innerHTML = 'Search <kbd>/</kbd>';
+    btn.addEventListener('click', finder.open);
+  }
 
   document.addEventListener('keydown', function (e) {
     var tag = (e.target.tagName || '').toLowerCase();

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Search &middot; Public Register of the Republic of Fluid</title>
+  <meta name="description" content="Full-text search of the Constitution, the official summary, the history and the register pages.">
+  <link rel="stylesheet" href="../css/register.css">
+  <link rel="icon" href="../assets/flag.svg">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to the text</a>
+  <header class="masthead">
+    <div class="bar">
+      <a class="crest" href="../index.html"><img src="../assets/flag.png" alt=""></a>
+      <span class="names">
+        <a class="state" href="../index.html">Republic of Fluid</a>
+        <span class="organ">Public Register &middot; Office of Constitutional Revision</span>
+      </span>
+      <button class="findbtn" id="findbtn" type="button">Search <kbd>/</kbd></button>
+    </div>
+    <nav class="sections" aria-label="Sections">
+      <div class="bar">
+        <a href="../constitution/">Constitution</a>
+        <a href="../summary/">Summary</a>
+        <a href="../concepts/">Concepts</a>
+        <a href="../questions/">Questions</a>
+        <a href="../economy/">Economy</a>
+        <a href="../assembly/">Assembly</a>
+        <a href="../map/">Map</a>
+        <a href="../world/">World</a>
+        <a href="../history/">History</a>
+        <a href="../about/">About</a>
+      </div>
+    </nav>
+  </header>
+  <main id="main" class="sheet">
+    <p class="crumbs"><a href="../index.html">Register</a> &rsaquo; Search</p>
+    <div class="title-head">
+      <p class="eyebrow">Public Register</p>
+      <h1>Search</h1>
+      <p class="range">The Constitution, the official summary, the history and the pages of the register, in full text.</p>
+    </div>
+
+    <div id="searchpage" class="searchpage">
+      <p class="sfield">
+        <label class="vh" for="sq">Search the register</label>
+        <input id="sq" class="sin" type="search" autocomplete="off" spellcheck="false" placeholder="A word, a phrase in quotes, or an article number">
+      </p>
+      <div id="facets" class="facets"></div>
+      <p id="note" class="snote"></p>
+      <div id="results" class="sresults"></div>
+      <details class="shelp">
+        <summary>How the search works</summary>
+        <p>The words are matched as one continuous phrase. When that finds nothing, the words are matched again in any order. Double quotes search the exact phrase and suppress the second pass. A number on its own opens that article.</p>
+        <p>Filters can be typed as well as clicked: <code>in:constitution</code>, <code>in:summary</code>, <code>in:history</code>, <code>in:concepts</code>, <code>in:economy</code>, <code>in:questions</code>, <code>in:assembly</code>, <code>in:map</code>, <code>in:world</code>, <code>in:about</code>, <code>title:5</code>, <code>chapter:2</code>, <code>art:100-140</code>, <code>period:directorate</code>. Filters of the same kind widen the search, filters of different kinds narrow it. The title, chapter, article and period filters apply to the constitution, the summary and the history, and selecting one of them sets the register pages aside.</p>
+        <p>The searched text sits in <code>js/search-data.js</code>, a flattened copy of <code>text/constitution.md</code>, <code>text/summary.md</code> and <code>text/history.md</code>, together with the concepts, economy, questions, assembly, map and about pages.</p>
+      </details>
+    </div>
+  </main>
+  <footer class="reg">
+    <div class="bar">
+      <div>
+        <p class="h">The register</p>
+        <p><a href="../constitution/">Constitution in force</a></p>
+        <p><a href="../summary/">Official summary</a></p>
+        <p><a href="../concepts/">Concepts explained</a></p>
+      </div>
+      <div>
+        <p class="h">Territory and history</p>
+        <p><a href="../map/">Regions and sub-regions</a></p>
+        <p><a href="../about/archive.html">Repealed constitutions</a></p>
+        <p><a href="../archive/">The 2024 programme</a></p>
+        <p><a href="../about/links.html">Sites of the organs</a></p>
+      </div>
+      <div>
+        <p class="h">Published under</p>
+        <p>Articles 14(2), 314, 315 and 316</p>
+        <p>Free of charge, without licence, registration or account.</p>
+        <p>No external resource is loaded by this page.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="../js/search-data.js" defer></script>
+  <script src="../js/search.js" defer></script>
+  <script src="../js/register.js" defer></script>
+</body>
+</html>
