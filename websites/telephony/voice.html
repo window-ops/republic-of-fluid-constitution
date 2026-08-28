@@ -35,13 +35,13 @@
     <div class="wrap">
       <section class="opening">
         <h1>Calling</h1>
-        <p class="lede">Nothing is metered, so nothing is counted. Most calls are carried directly between the two people making them, which helps keeps the main lines clear and leaves the exchange with nothing to overhear.</p>
+        <p class="lede">Nothing is metered, so nothing is counted. Most calls are routed directly between the two people making them, which reduces load on the main lines and leaves no media at the exchange.</p>
       </section>
       <section class="sheet">
         <p class="runhead">The basis<span class="span">No billing system exists</span></p>
         <h2>Free at the point of use</h2>
         <div class="prose">
-          <p><b>Calls are not metered, timed or counted.</b> There is no billing system, which is worth saying plainly because it explains most of the rest of this site: a network that never had to answer the question "who called whom, and for how long" was never built to be able to.</p>
+          <p><b>Calls are not metered, timed or counted.</b> No billing system exists, so the network was never built to record who called whom or for how long.</p>
           <p>Every number in the plan below is reachable from a handset with no SIM in the case of the short codes, and from any SIP client that can reach <code class="inline">sip.telephony.rof</code>.</p>
         </div>
       </section>
@@ -53,14 +53,14 @@
           <li class="entry"><span class="what">Emergency</span><span class="lead" aria-hidden="true"></span><span class="host">112</span><span class="also">Fire, ambulance, communal police, sea and mountain rescue</span></li>
           <li class="entry"><span class="what">Operator</span><span class="lead" aria-hidden="true"></span><span class="host">100</span><span class="also">Telephony support, at any hour</span></li>
           <li class="entry"><span class="what">Line faults</span><span class="lead" aria-hidden="true"></span><span class="host">101</span><span class="also">Dead line, noisy line, exchange down</span></li>
-          <li class="entry"><span class="what">Directory</span><span class="lead" aria-hidden="true"></span><span class="host">105</span><span class="also">Look up a number, or ask for a page to be read to you</span></li>
+          <li class="entry"><span class="what">Directory</span><span class="lead" aria-hidden="true"></span><span class="host">105</span><span class="also">Look up a number, or request that a page be read aloud</span></li>
           <li class="entry"><span class="what">Text and speech relay</span><span class="lead" aria-hidden="true"></span><span class="host">108</span><span class="also">Between text and speech, in both directions, on every service</span></li>
-          <li class="entry"><span class="what">Commune switchboard</span><span class="lead" aria-hidden="true"></span><span class="host">110</span><span class="also">Your own commune office, wherever you are calling from</span></li>
+          <li class="entry"><span class="what">Commune switchboard</span><span class="lead" aria-hidden="true"></span><span class="host">110</span><span class="also">The caller's own commune office, from any line</span></li>
           <li class="entry"><span class="what">Missing person</span><span class="lead" aria-hidden="true"></span><span class="host">116</span><span class="also">Held jointly with the communal police</span></li>
           <li class="entry"><span class="what">Medical advice</span><span class="lead" aria-hidden="true"></span><span class="host">118</span><span class="also">A clinician, at any hour</span></li>
-          <li class="entry"><span class="what">Line test</span><span class="lead" aria-hidden="true"></span><span class="host">119</span><span class="also">Echo test and loop measurement, useful before you report a fault</span></li>
+          <li class="entry"><span class="what">Line test</span><span class="lead" aria-hidden="true"></span><span class="host">119</span><span class="also">Echo test and loop measurement, for use before reporting a fault</span></li>
           <li class="entry"><span class="what">Speaking clock</span><span class="lead" aria-hidden="true"></span><span class="host">120</span><span class="also">Fed from the same clocks as ntp.telephony.rof</span></li>
-          <li class="entry"><span class="what">Your voicemail</span><span class="lead" aria-hidden="true"></span><span class="host">121</span><span class="also">If you have chosen to keep any; see below</span></li>
+          <li class="entry"><span class="what">Voicemail</span><span class="lead" aria-hidden="true"></span><span class="host">121</span><span class="also">Reaches the subscriber's own equipment; see below</span></li>
         </ul>
       </section>
       <section class="sheet">
@@ -68,9 +68,9 @@
         <h2>Peer to peer, for traffic reasons</h2>
         <div class="stock stock-blue prose">
           <h3>Most calls never touch a server</h3>
-          <p>When two people call each other, the exchange does the signalling and then gets out of the way. The two ends negotiate over WebRTC and carry the audio directly between themselves. The exchange knows the call was set up; it never carries a single packet of what was said.</p>
-          <p><b>The reason is traffic before it is anything else.</b> A relayed call crosses the network twice and lands on lines that are thin in the countryside and cross a single gateway at the border. Routing calls directly halves that load, and on a bonded voiceband line it is the difference between a call working and not working.</p>
-          <p><b>turn.telephony.rof</b> relays only when the two ends genuinely cannot reach each other, which happens on about 6 per cent of calls.</p>
+          <p>When two people call each other, the exchange completes the signalling and takes no further part. The two ends negotiate over WebRTC and carry the audio directly between themselves. The exchange knows the call was set up; it never carries a single packet of what was said.</p>
+          <p><b>The principal reason is network load.</b> A relayed call crosses the network twice and lands on lines that are thin in the countryside and cross a single gateway at the border. Routing calls directly halves that load, and on a bonded voiceband line it is the difference between a call working and not working.</p>
+          <p><b>turn.telephony.rof</b> relays only where the two ends cannot reach each other directly, which happens on about 6 per cent of calls.</p>
         </div>
       </section>
       <section class="sheet">
@@ -133,20 +133,20 @@
             </tbody>
           </table>
         </div>
-        <p class="tbl-note">Digits two and three are the exchange. Seventy-four exchanges are in service. Ranges 4 and 7 are unassigned, and there are no premium numbers because there is nothing to charge for.</p>
+        <p class="tbl-note">Digits two and three are the exchange. Seventy-four exchanges are in service. Ranges 4 and 7 are unassigned, and there are no premium numbers, since no call is charged.</p>
       </section>
       <section class="sheet">
-        <p class="runhead">Older and stranger<span class="span">Nine mechanical exchanges</span></p>
+        <p class="runhead">Mechanical exchanges<span class="span">Nine in service</span></p>
         <div class="cols">
           <div class="prose">
             <h3>The old exchanges</h3>
             <p>Nine mechanical exchanges are still in service, all of them in sub-regions that voted to keep them. They route about 8,000 lines between them and they interwork with everything else through a gateway at Sederna.</p>
-            <p>A resident on one of these will notice that dialling is slower and that the ring cadence is wrong. Nothing else differs, and the short codes work.</p>
+            <p>On these exchanges dialling is slower and the ring cadence differs. Nothing else differs, and the short codes work.</p>
           </div>
           <div class="prose">
-            <h3>Voicemail, if you want it</h3>
-            <p>There is no central mailbox and no message store on the network. If you want messages taken, your own equipment takes them: the TS-24 router contains an answering function, and any SIP client can do the same.</p>
-            <p><b>121</b> reaches whatever you are running, on your own line, in your own house. If you run nothing, an unanswered call is simply unanswered.</p>
+            <h3>Voicemail</h3>
+            <p>There is no central mailbox and no message store on the network. Where messages are to be taken, the subscriber's own equipment takes them: the TS-24 router contains an answering function, and any SIP client can do the same.</p>
+            <p><b>121</b> reaches the equipment on the subscriber's own line. Where no answering equipment is present, an unanswered call is not recorded.</p>
           </div>
         </div>
       </section>

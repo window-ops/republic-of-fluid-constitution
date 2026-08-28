@@ -35,7 +35,7 @@
     <div class="wrap">
       <section class="opening">
         <h1>Meeting</h1>
-        <p class="lede">Rooms you can join from a browser, a handset or a telephone. Small calls are carried directly between the people in them, and larger ones are mixed as close to you as possible.</p>
+        <p class="lede">Rooms open from a browser, a handset or a telephone. Small calls are routed directly between the people in them, and larger ones are mixed at the nearest available exchange.</p>
       </section>
       <section class="sheet">
         <p class="runhead">Addresses<span class="span">Jitsi, Talk, TURN</span></p>
@@ -51,18 +51,18 @@
       </section>
       <section class="sheet">
         <p class="runhead">How a room is created<span class="span">Direct below four</span></p>
-        <h2>Peer to peer first, mixer second</h2>
+        <h2>Direct routing below four participants</h2>
         <div class="prose">
-          <p><b>Two or three people talking is not a conference and is not treated as one.</b> Below four participants the room hands the call to WebRTC and the ends route between themselves, exactly as an ordinary call is carried. No mixer is involved and no server sees the media.</p>
-          <p><b>At four and above a mixer becomes cheaper than the mesh</b>, and the room selects one: the one at your own exchange first, then the one in your sub-region, and only then anything further away. A meeting whose participants are all in one sub-region never leaves it.</p>
+          <p><b>A room of two or three participants is treated as an ordinary call.</b> Below four participants the room hands the call to WebRTC and the ends route between themselves, exactly as an ordinary call is carried. No mixer is involved and no server sees the media.</p>
+          <p><b>At four and above a mixer becomes cheaper than the mesh</b>, and the room selects one: the local exchange first, then the sub-region, and only then a more distant site. A meeting whose participants are all in one sub-region never leaves it.</p>
         </div>
       </section>
       <section class="sheet">
-        <p class="runhead">What it costs your line<span class="span">Down to one voiceband pair</span></p>
+        <p class="runhead">Demand on the line<span class="span">Down to one voiceband pair</span></p>
         <h2>Bandwidth</h2>
         <div class="tbl-scroll">
           <table class="tbl">
-            <caption>What a room asks of your line</caption>
+            <caption>What a room asks of the line</caption>
             <thead>
               <tr>
                 <th>Participants</th>
@@ -86,7 +86,7 @@
               </tr>
               <tr>
                 <td>4 to 12</td>
-                <td>Mixer at your exchange</td>
+                <td>Mixer at the local exchange</td>
                 <td class="num">300 kbit/s</td>
                 <td>Three bonded pairs, ISDN, anything faster</td>
               </tr>

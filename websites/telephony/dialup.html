@@ -35,14 +35,14 @@
     <div class="wrap">
       <section class="opening">
         <h1>The voiceband network</h1>
-        <p class="lede">1,368,000 households connect over a pair of copper wires and a modem, because their assembly voted against digging up the lane. The federation answered by making the modem better.</p>
+        <p class="lede">1,368,000 households connect over a pair of copper wires and a modem, because their assembly voted against digging up the lane. The federation responded by improving the modem specifications.</p>
       </section>
       <section class="sheet">
         <p class="runhead">Why it persists<span class="span">1,368,000 households</span></p>
-        <h2>A choice the lane made</h2>
+        <h2>Why the voiceband network persists</h2>
         <div class="prose">
-          <p><b>1,368,000 households dial in, and almost none of them are poor.</b> The copper is already in the ground. Laying fibre down a lane means a trencher, a road closure and a week of noise, and the assembly that would have to approve it is made up of the people who live on the lane. Proposals for a mast do worse, because somebody always objects to a crane behind their house.</p>
-          <p><b>So the federation went the other way.</b> Where the network could not be replaced it was made better, which meant designing modems that get more out of a voiceband pair than anybody outside expects. The specifications are published and any workshop may build to them.</p>
+          <p><b>1,368,000 households connect by dial-up, across all income levels.</b> The copper is already in the ground. Laying fibre down a lane means a trencher, a road closure and a week of noise, and the assembly that would have to approve it is made up of the people who live on the lane. Proposals for a mast are refused more often, since objections to the structure are common.</p>
+          <p><b>The federation therefore improved the equipment.</b> Where the network could not be replaced, the design work went into the modems, raising the throughput a voiceband pair delivers. The specifications are published and any workshop may build to them.</p>
         </div>
       </section>
       <section class="sheet">
@@ -50,20 +50,20 @@
         <h2>Getting more out of a pair</h2>
         <div class="cols">
           <div class="prose">
-            <h3>Past 56K, and how</h3>
+            <h3>Throughput above 56 kbit/s</h3>
             <p>The 56K ceiling was never a property of copper. It came from assuming one end sits on a digital exchange feeding an eight-bit codec, and from leaving the upper voiceband unused.</p>
-            <p><b>TS-14</b> drops that assumption and shapes across the whole band the pair will pass, reaching 64 kbit/s on a clean line. <b>TS-22</b> adds echo cancellation on the two-wire loop and full-duplex shaping, reaching 96 kbit/s, and it falls back gracefully as the line gets worse.</p>
+            <p><b>TS-14</b> drops that assumption and shapes across the whole band the pair will pass, reaching 64 kbit/s on a clean line. <b>TS-22</b> adds echo cancellation on the two-wire loop and full-duplex shaping, reaching 96 kbit/s, and it steps down to lower rates as line quality falls.</p>
           </div>
           <div class="prose">
-            <h3>Bonding what you already have</h3>
+            <h3>Bonding existing pairs</h3>
             <p>Most rural households hold more than one pair, because the copper was laid generously in the fifties. <b>TS-16</b> runs multi-link PPP across two or three of them and presents one connection.</p>
-            <p>Three bonded TS-22 lines give a hamlet 288 kbit/s, which is enough to access any static page or simple web content and video call.</p>
+            <p>Three bonded TS-22 lines give a hamlet 288 kbit/s, which is enough for static pages, simple web content and a video call.</p>
           </div>
         </div>
       </section>
       <section class="sheet">
-        <p class="runhead">What it gives you<span class="span">2025 line survey</span></p>
-        <h2>Speeds you can expect</h2>
+        <p class="runhead">Measured throughput<span class="span">2025 line survey</span></p>
+        <h2>Expected speeds</h2>
         <div class="tbl-scroll">
           <table class="tbl">
             <caption>Measured throughput, mean across the 2025 line survey</caption>
@@ -115,14 +115,14 @@
             </tbody>
           </table>
         </div>
-        <p class="tbl-note">ISDN functions the same way regardless of what the weather does. A single basic rate is more efficient than a single dial-up pair, and three bonded dial-up pairs are more efficient than a single basic rate.</p>
+        <p class="tbl-note">ISDN throughput is unaffected by weather. A single basic rate is more efficient than a single dial-up pair, and three bonded dial-up pairs are more efficient than a single basic rate.</p>
       </section>
       <section class="sheet">
         <p class="runhead">The upgrade<span class="span">432,000 households and rising</span></p>
         <h2>ISDN</h2>
         <div class="stock stock-blue prose">
-          <h3>ISDN is the upgrade, not the leftover</h3>
-          <p>Elsewhere ISDN was a thing that came before broadband and then went away. Here it is what a village could use when dial-up stops being enough and nobody will let a trencher down the lane. It runs on the same pair, it is unaffected by rain and line noise, and it comes up in under a second where a modem spends twenty seconds negotiating.</p>
+          <h3>ISDN as the upgrade path</h3>
+          <p>In other countries ISDN preceded broadband and was later withdrawn. In the Republic it is the upgrade available where dial-up is insufficient and excavation has been refused. It runs on the same pair, it is unaffected by rain and line noise, and it comes up in under a second where a modem spends twenty seconds negotiating.</p>
           <p>432,000 households use it and the number rises every year. Sixteen exchanges were re-equipped for basic rate service in 2024 alone, all of them in sub-regions with no fibre plan at all.</p>
         </div>
       </section>
@@ -131,7 +131,7 @@
         <h2>Why calls do not go through a server</h2>
         <div class="prose">
           <p>Calls between two residents are carried peer to peer over WebRTC wherever the two ends can reach each other, so the audio never climbs to a server and comes back down. On a bonded voiceband connection that reduces traffic.</p>
-          <p>Conference rooms of two or three people work the same way. Only above that does a mixer get involved, and the mixer at your own exchange is preferred over any other. See <a href="voice.html">calling</a> and <a href="meet.html">conferencing</a>.</p>
+          <p>Conference rooms of two or three people work the same way. Only above that does a mixer get involved, and the mixer at the local exchange is selected first. See <a href="voice.html">calling</a> and <a href="meet.html">conferencing</a>.</p>
         </div>
       </section>
       <section class="sheet">
