@@ -3,9 +3,9 @@
 (function () {
   "use strict";
 
-  var root = (function () {
-    var l = document.querySelector('link[rel=stylesheet]');
-    return l ? l.getAttribute('href').replace(/css\/register\.css$/, '') : '';
+  const root = (() => {
+    const pathname = window.location.pathname;
+    return pathname.substring(0, pathname.lastIndexOf('/') + 1);
   })();
 
   /* ---------- Search: overlay over the constitution, summary and history ---------- */

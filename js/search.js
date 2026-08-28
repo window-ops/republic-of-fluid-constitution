@@ -8,9 +8,9 @@
   var D = window.FLUID_SEARCH;
   if (!D) return;
 
-  var ROOT = (function () {
-    var l = document.querySelector('link[rel=stylesheet]');
-    return l ? l.getAttribute('href').replace(/css\/register\.css$/, '') : '';
+  const ROOT = (() => {
+    const pathname = window.location.pathname;
+    return pathname.substring(0, pathname.lastIndexOf('/') + 1);
   })();
 
   var DOCS = [
