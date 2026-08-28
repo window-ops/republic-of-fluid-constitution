@@ -2,11 +2,9 @@
    cooperatives, constituted under Article 89.
 
    The federation is not an organ of the Republic, so this site loads none of the
-   shared state frame. The design comes off the vehicles themselves: white
+   shared state frame. The design is inspired from the vehicles themselves: white
    flank, deep blue band, and the wave that Sederna presses into the panel
-   below the windows. The band runs under the masthead and returns as the
-   separator between sections. Data is set in the mono face the depot boards
-   use, prose in the serif the conditions of carriage are printed in. */
+   below the windows. */
 
 @font-face {
   font-family: "Source Serif 4";
@@ -195,7 +193,6 @@ h1, h2, h3 {
 
 .nav {
   background: var(--band-2);
-  position: sticky;
   top: 0;
   z-index: 30;
 }
