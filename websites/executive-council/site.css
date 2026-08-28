@@ -13,10 +13,19 @@
 
 /* ---------- ground, masthead and navigation ---------- */
 
-body { background: #e6e9ee; }
+body {
+  background: #e6e9ee;
+}
 
-.orghead { background: var(--accent-deep); }
-.orghead .kicker { color: #adb9cd; letter-spacing: .15em; }
+.orghead {
+  background: var(--accent-deep);
+}
+
+.orghead .kicker {
+  color: #adb9cd;
+  letter-spacing: 0.15em;
+}
+
 .orghead .orgname,
 .orghead .orgname a {
   color: #fff;
@@ -24,15 +33,33 @@ body { background: #e6e9ee; }
   font-size: 1.45rem;
   letter-spacing: -.02em;
 }
-.orghead .basis { color: #9aa7bd; }
 
-.orgnav { background: var(--accent); }
-.orgnav a[aria-current="page"] { border-bottom-color: #dfe6f2; }
+.orghead .basis {
+  color: #9aa7bd;
+}
 
-h2 { font-weight: 600; font-size: 1.24rem; color: var(--accent-deep); }
+.orgnav {
+  background: var(--accent);
+}
 
-.legal { background: var(--accent-soft); }
-.legal.stop { background: #f6e7e7; border-left-color: var(--f-warn); }
+.orgnav a[aria-current="page"] {
+  border-bottom-color: #dfe6f2;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 1.24rem;
+  color: var(--accent-deep);
+}
+
+.legal {
+  background: var(--accent-soft);
+}
+
+.legal.stop {
+  background: #f6e7e7;
+  border-left-color: var(--f-warn);
+}
 
 /* ---------- committees as fields ---------- */
 
@@ -42,19 +69,41 @@ h2 { font-weight: 600; font-size: 1.24rem; color: var(--accent-deep); }
   grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
   margin: 1.2rem 0;
 }
+
 .fields article {
   border: 1px solid var(--edge);
   border-top: 4px solid var(--accent);
   background: var(--f-paper);
   padding: .9rem 1rem;
 }
-.fields h3 { margin: 0 0 .2rem; font-size: 1rem; }
-.fields .chair { font-family: var(--f-mono); font-size: .76rem; color: var(--f-ink-soft); margin: 0 0 .5rem; }
-.fields p { margin: 0; font-size: .88rem; color: var(--f-ink-soft); max-width: none; }
+
+.fields h3 {
+  margin: 0 0 0.2rem;
+  font-size: 1rem;
+}
+
+.fields .chair {
+  font-family: var(--f-mono);
+  font-size: 0.76rem;
+  color: var(--f-ink-soft);
+  margin: 0 0 0.5rem;
+}
+
+.fields p {
+  margin: 0;
+  font-size: 0.88rem;
+  color: var(--f-ink-soft);
+  max-width: none;
+}
 
 /* ---------- prohibitions ---------- */
 
-.stops { list-style: none; padding: 0; margin: 1.2rem 0; }
+.stops {
+  list-style: none;
+  padding: 0;
+  margin: 1.2rem 0;
+}
+
 .stops li {
   border-left: 5px solid var(--f-warn);
   background: #fbf6f6;
@@ -63,6 +112,7 @@ h2 { font-weight: 600; font-size: 1.24rem; color: var(--accent-deep); }
   max-width: 44rem;
   font-size: .94rem;
 }
+
 .stops li strong {
   display: block;
   color: var(--f-warn);
@@ -72,5 +122,10 @@ h2 { font-weight: 600; font-size: 1.24rem; color: var(--accent-deep); }
   margin-bottom: .2rem;
 }
 
-table.reg thead th { border-bottom-color: var(--accent); }
-table.reg tbody tr:hover { background: var(--accent-soft); }
+table.reg thead th {
+  border-bottom-color: var(--accent);
+}
+
+table.reg tbody tr:hover {
+  background: var(--accent-soft);
+}

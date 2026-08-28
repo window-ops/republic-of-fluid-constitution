@@ -61,15 +61,13 @@
   <main id="main">
     <section class="opening">
       <div class="wrap">
-        <p class="eyebrow">Dubrazec standard, revision 3, wire protocol</p>
-        <h1>What a reader sends, and what comes back</h1>
+        <h1>Dubrazec standard, revision 3, wire protocol</h1>
         <p class="lede">The layout of the card, its memories and its electrical figures are on the <a href="../card.html">CARD-ROM page</a>. This document is the protocol: frame format, the twelve commands in their encoding, the authentication sequence, how a record is sealed, and the status words a reader must handle.</p>
       </div>
     </section>
     <section class="block">
       <div class="wrap">
-        <p class="eyebrow">Frames</p>
-        <h2>Above ISO 14443-3</h2>
+        <h2>Frames</h2>
       </div>
       <div class="wrap">
         <div class="essay">
@@ -130,8 +128,7 @@
     </section>
     <section class="block">
       <div class="wrap">
-        <p class="eyebrow">Commands</p>
-        <h2>Encoding and arguments</h2>
+        <h2>Commands</h2>
       </div>
       <div class="wrap">
         <div class="tablewrap">
@@ -241,8 +238,7 @@
     </section>
     <section class="block">
       <div class="wrap">
-        <p class="eyebrow">Authentication</p>
-        <h2>Four passes, AES-128</h2>
+        <h2>Authentication</h2>
       </div>
       <div class="wrap">
         <pre class="code">reader -&gt; card   <b>SELECT</b>
@@ -265,8 +261,7 @@ card   -&gt; reader  SW=9000   <i>session open, SK = AES-CMAC(K, rndR || rndC)</
     </section>
     <section class="block">
       <div class="wrap">
-        <p class="eyebrow">Records</p>
-        <h2>Encoding and the seal</h2>
+        <h2>Records</h2>
       </div>
       <div class="wrap">
         <pre class="code"><i>32 bytes, big endian throughout</i>
@@ -285,8 +280,7 @@ card   -&gt; reader  SW=9000   <i>session open, SK = AES-CMAC(K, rndR || rndC)</
     </section>
     <section class="block">
       <div class="wrap">
-        <p class="eyebrow">Status words</p>
-        <h2>What a reader has to handle</h2>
+        <h2>Status words</h2>
       </div>
       <div class="wrap">
         <div class="tablewrap">

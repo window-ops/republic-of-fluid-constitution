@@ -1,0 +1,56 @@
+footer.reg {
+  background: var(--ink);
+  color: #b9c6d1;
+  font-family: var(--sans);
+  font-size: 0.78rem;
+}
+
+footer.reg .bar {
+  max-width: 62rem;
+  margin: 0 auto;
+  padding: 1.5rem 1.25rem 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  gap: 1.25rem;
+}
+
+footer.reg a {
+  color: #dce6ee;
+}
+
+footer.reg p {
+  margin: 0.3rem 0;
+}
+
+footer.reg .h {
+  color: #fff;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  margin: 0 0 0.4rem;
+}
+
+footer.reg .bar {
+  padding: 1.75rem 1.25rem;
+}
+
+.prose > :last-child,
+.ans > :last-child,
+.body > :last-child,
+.panel > :last-child,
+.card > :last-child,
+.blocbox > :last-child,
+.statecard > :last-child,
+.whole > :last-child,
+.note > :last-child,
+.preamble > :last-child,
+.townfacts > :last-child,
+.mappanel > :last-child,
+.qa > :last-child,
+.seealso > :last-child,
+.title-head > :last-child,
+.tl-what > :last-child,
+footer.reg .bar > div > :last-child,
+blockquote > :last-child {
+  margin-bottom: 0;
+}

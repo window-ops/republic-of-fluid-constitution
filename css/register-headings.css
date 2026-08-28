@@ -1,0 +1,63 @@
+/* ---------- headings ---------- */
+
+.doc-title {
+  font-size: clamp(1.6rem, 4.5vw, 2.4rem);
+  line-height: 1.15;
+  margin: 0 0 0.4rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+h2.chapter {
+  font-family: var(--sans);
+  font-size: 0.86rem;
+  font-weight: 700;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  margin: 3rem 0 1.25rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+.prose h2.chapter {
+  margin-top: 2.05rem;
+}
+
+h2.chapter:first-child {
+  margin-top: 0;
+}
+
+.prose h2.chapter:first-child {
+  margin-top: 0;
+}
+
+h2.chapter {
+  margin: 1.1rem 0 1.1rem;
+}
+
+.prose h2.chapter {
+  margin-top: 2.05rem;
+}
+
+/* ============ the rail column belongs to the citations alone ============ */
+
+@media (min-width: 1040px) {
+  /* headings and their rules stop at the edge of the text column */
+  .railzone h2.chapter {
+    max-width: calc(3.5rem + 1.25rem + 36rem);
+  }
+  /* the rule above a citation list spans the whole rail column */
+  .citedby {
+    padding: 0.5rem 0 0;
+  }
+}
+
+h2.chapter .tn {
+  color: var(--state-lift);
+}
+
+/* tighter section breaks inside articles */
+.prose h2.chapter {
+  margin-top: 1.75rem;
+}

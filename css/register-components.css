@@ -1,0 +1,11 @@
+/* find overlay */
+.finderlay {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  background: rgba(10, 18, 26, 0.55);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 6vh 1rem 1rem;
+}

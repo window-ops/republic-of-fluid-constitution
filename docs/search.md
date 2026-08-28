@@ -42,4 +42,4 @@ The array for each register section is named by its key, and `"secs"` lists thos
 
 ## Note
 
-The queries typed in the search dialog (which takes the form of a lightbox) are transmitted using sessionStorage, which requires the presence of an HTTP server. On file:// this transmission does not work, which means the search page will receive an empty query after Enter has been pressed.
+The queries typed in the find overlay (which takes the form of a lightbox) are transmitted using sessionStorage, which requires the presence of an HTTP server. On file:// this transmission does not work, which means the search page will receive an empty query after Enter has been pressed.

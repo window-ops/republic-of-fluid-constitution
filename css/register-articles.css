@@ -1,0 +1,127 @@
+ol.paras {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  counter-reset: none;
+}
+
+ol.paras > li {
+  display: grid;
+  grid-template-columns: 1.6rem minmax(0, 1fr);
+  margin: 0 0 0.5rem;
+}
+
+ol.paras > li > .pn {
+  font-family: var(--sans);
+  font-size: 0.82rem;
+  color: var(--ink-faint);
+  padding-top: 0.18rem;
+}
+
+ol.subs {
+  list-style: none;
+  margin: 0.35rem 0 0.1rem;
+  padding: 0;
+}
+
+ol.subs > li {
+  display: grid;
+  grid-template-columns: 1.5rem minmax(0, 1fr);
+  margin: 0 0 0.25rem !important;
+}
+
+ol.subs > li > .sn {
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  color: var(--ink-faint);
+  padding-top: 0.15rem;
+}
+
+/* ================= one list form at every width ================= */
+/* Paragraph and sub-paragraph numbers run inline, so every line of the text
+   starts at the same left edge and uses the full measure. The previous
+   hanging-indent grid pushed a sub-paragraph 3.1rem in, which on a narrow
+   screen cost a seventh of the line. */
+
+ol.paras > li,
+ol.subs > li {
+  display: block;
+  grid-template-columns: none;
+  margin: 0 0 0.7rem;
+}
+
+ol.paras > li:last-child,
+ol.subs > li:last-child {
+  margin-bottom: 0;
+}
+
+ol.paras > li > .pn,
+ol.subs > li > .sn {
+  display: inline;
+  padding: 0;
+  margin-right: 0.4rem;
+  font-family: var(--sans);
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--ink-faint);
+}
+
+ol.subs {
+  display: block;
+  margin: 0.55rem 0.75rem 0.15rem;
+  padding: 0;
+}
+
+/* ============ encyclopedic article layout ============ */
+
+.artlayout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 19rem);
+  gap: 2rem;
+  align-items: start;
+}
+
+/* ================= citation rail: one behaviour, three widths ================= */
+/* The rail track is a fixed 12rem and the text track takes the rest, so the
+   column rule can be anchored from the right and stays exact at every width. */
+
+@media (min-width: 820px) {
+  .article {
+    grid-template-columns: var(--tab) minmax(0, 1fr) 12rem;
+  }
+  .citedby {
+    grid-column: 3;
+    grid-row: 1;
+    align-self: start;
+    margin: 0 0.75rem 0 0;
+    padding: 0.5rem 0 0;
+    border-top: 1px dashed var(--rule);
+    border-left: none;
+    max-width: none;
+  }
+  .citedby .lbl {
+    display: block;
+    margin: 0 0 0.35rem;
+  }
+  .railzone::before {
+    left: auto;
+    right: calc(12rem + 0.625rem);
+  }
+  .railzone h2.chapter {
+    max-width: none;
+    margin-right: calc(12rem + 1.25rem);
+  }
+  .sheet.railed::before {
+    content: none;
+  }
+}
+
+.ptab thead th.num {
+  text-align: right;
+}
+
+.ptab thead th,
+.ptab thead th.num,
+.ptab thead th.pos {
+  font-size: 0.72rem;
+}

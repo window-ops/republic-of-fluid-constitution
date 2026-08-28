@@ -14,15 +14,36 @@
 
 /* ---------- ground, masthead and navigation ---------- */
 
-body { background: #e6ebe0; }
-.sheet { background: var(--pale); }
+body {
+  background: #e6ebe0;
+}
 
-.orghead { background: var(--pale); }
-.orghead .wrap { padding-top: 1.5rem; padding-bottom: 1.35rem; }
-.orghead .kicker { color: var(--accent); letter-spacing: .15em; }
-.orghead .orgname { font-size: 1.5rem; font-weight: 500; }
+.sheet {
+  background: var(--pale);
+}
 
-.orgnav { background: var(--accent-deep); }
+.orghead {
+  background: var(--pale);
+}
+
+.orghead .wrap {
+  padding-top: 1.5rem;
+  padding-bottom: 1.35rem;
+}
+
+.orghead .kicker {
+  color: var(--accent);
+  letter-spacing: 0.15em;
+}
+
+.orghead .orgname {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.orgnav {
+  background: var(--accent-deep);
+}
 
 h2 {
   font-weight: 500;
@@ -31,11 +52,18 @@ h2 {
   padding-bottom: .3rem;
 }
 
-.legal { background: var(--accent-soft); }
+.legal {
+  background: var(--accent-soft);
+}
 
 /* ---------- headroom ---------- */
 
-.budget { border: 1px solid var(--edge); background: var(--f-paper); margin: 1.3rem 0; }
+.budget {
+  border: 1px solid var(--edge);
+  background: var(--f-paper);
+  margin: 1.3rem 0;
+}
+
 .budget .cap {
   background: var(--accent);
   color: #fff;
@@ -46,8 +74,16 @@ h2 {
   text-transform: uppercase;
   margin: 0;
 }
-.budget .line { padding: .7rem .95rem; border-bottom: 1px solid var(--edge); }
-.budget .line:last-child { border-bottom: 0; }
+
+.budget .line {
+  padding: 0.7rem 0.95rem;
+  border-bottom: 1px solid var(--edge);
+}
+
+.budget .line:last-child {
+  border-bottom: 0;
+}
+
 .budget .top {
   display: flex;
   justify-content: space-between;
@@ -57,8 +93,17 @@ h2 {
   font-size: .88rem;
   margin-top: 0;
 }
-.budget .top b { font-weight: 600; }
-.budget .top span { font-family: var(--f-mono); font-size: .82rem; color: var(--f-ink-soft); }
+
+.budget .top b {
+  font-weight: 600;
+}
+
+.budget .top span {
+  font-family: var(--f-mono);
+  font-size: 0.82rem;
+  color: var(--f-ink-soft);
+}
+
 .budget .track {
   height: .85rem;
   background: var(--f-shell);
@@ -66,14 +111,41 @@ h2 {
   margin-top: .4rem;
   position: relative;
 }
-.budget .fill { display: block; height: 100%; background: var(--accent); }
-.budget .fill.over { background: var(--f-warn); }
-.budget .mark { position: absolute; top: -3px; bottom: -3px; width: 2px; background: var(--accent-deep); }
-.budget .note { font-size: .82rem; color: var(--f-ink-soft); margin: .35rem 0 0; max-width: none; }
+
+.budget .fill {
+  display: block;
+  height: 100%;
+  background: var(--accent);
+}
+
+.budget .fill.over {
+  background: var(--f-warn);
+}
+
+.budget .mark {
+  position: absolute;
+  top: -3px;
+  bottom: -3px;
+  width: 2px;
+  background: var(--accent-deep);
+}
+
+.budget .note {
+  font-size: 0.82rem;
+  color: var(--f-ink-soft);
+  margin: 0.35rem 0 0;
+  max-width: none;
+}
 
 /* ---------- sources of evidence ---------- */
 
-.sources { list-style: none; padding: 0; margin: 1.1rem 0; counter-reset: src; }
+.sources {
+  list-style: none;
+  padding: 0;
+  margin: 1.1rem 0;
+  counter-reset: src;
+}
+
 .sources li {
   counter-increment: src;
   position: relative;
@@ -81,6 +153,7 @@ h2 {
   border-bottom: 1px solid var(--edge);
   max-width: 44rem;
 }
+
 .sources li::before {
   content: counter(src, lower-alpha) ")";
   position: absolute;
@@ -100,9 +173,27 @@ h2 {
   margin: 1.2rem 0;
   max-width: 44rem;
 }
-.objection h3 { margin: 0 0 .4rem; font-size: 1rem; }
-.objection p { margin: 0 0 .5rem; font-size: .95rem; }
-.objection p:last-child { margin: 0; }
 
-table.reg thead th { border-bottom-color: var(--accent); }
-table.reg td.num { font-family: var(--f-mono); text-align: right; white-space: nowrap; }
+.objection h3 {
+  margin: 0 0 0.4rem;
+  font-size: 1rem;
+}
+
+.objection p {
+  margin: 0 0 0.5rem;
+  font-size: 0.95rem;
+}
+
+.objection p:last-child {
+  margin: 0;
+}
+
+table.reg thead th {
+  border-bottom-color: var(--accent);
+}
+
+table.reg td.num {
+  font-family: var(--f-mono);
+  text-align: right;
+  white-space: nowrap;
+}

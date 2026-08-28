@@ -143,9 +143,9 @@ body {
 }
 
 @media (max-width: 34rem) {
-  .contents ol {
-    columns: 1;
-  }
+.contents ol {
+  columns: 1;
+}
 }
 
 /* ---------- section separators ---------- */
@@ -462,7 +462,10 @@ section:first-of-type .sep {
   border: 1px solid var(--rule);
   border-radius: 2px;
 }
-.opts:last-child { margin-bottom: 0; }
+
+.opts:last-child {
+  margin-bottom: 0;
+}
 
 .screen .opts.grid,
 .doc .opts.grid {
@@ -902,9 +905,9 @@ section:first-of-type .sep {
 }
 
 @media (max-width: 34rem) {
-  .msgs .msg {
-    max-width: none;
-  }
+.msgs .msg {
+  max-width: none;
+}
 }
 
 /* ---------- pagination ---------- */
@@ -1020,18 +1023,18 @@ a:focus-visible {
 
   .who,
   .said,
-  .scene {
-    grid-column: 1;
-  }
+.scene {
+  grid-column: 1;
+}
 
   .who {
     text-align: left;
     margin-block-start: 1rem;
   }
 
-  .turn:first-child .who {
-    margin-block-start: 0;
-  }
+.turn:first-child .who {
+  margin-block-start: 0;
+}
 }
 
 /* ---------- print ---------- */
@@ -1048,15 +1051,15 @@ a:focus-visible {
   .contents,
   .sep .perma,
   .skip,
-  .thread-controls {
-    display: none;
-  }
+.thread-controls {
+  display: none;
+}
 
   .msgs .ln-ja,
   .msgs .ln-rj,
-  .msgs .ln-en {
-    display: block;
-  }
+.msgs .ln-en {
+  display: block;
+}
 
   .page {
     max-width: none;
@@ -1065,7 +1068,7 @@ a:focus-visible {
 
   .turn,
   .doc,
-  .msgs .msg {
-    break-inside: avoid;
-  }
+.msgs .msg {
+  break-inside: avoid;
+}
 }
