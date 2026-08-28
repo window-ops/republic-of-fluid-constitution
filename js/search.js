@@ -8,9 +8,21 @@
   var D = window.FLUID_SEARCH;
   if (!D) return;
 
+  /* The site root, derived from the URL of this script, which stays the same at every directory depth. */
   const ROOT = (() => {
-    const pathname = window.location.pathname;
-    return pathname.substring(0, pathname.lastIndexOf('/') + 1);
+    let el = document.currentScript;
+    if (!el) {
+      const all = document.getElementsByTagName('script');
+      for (let i = all.length - 1; i >= 0; i--) {
+        if (/(^|\/)js\/search\.js(\?|#|$)/.test(all[i].getAttribute('src') || '')) {
+          el = all[i];
+          break;
+        }
+      }
+    }
+    const src = el ? el.src : '';
+    const cut = src.lastIndexOf('/js/');
+    return cut > -1 ? src.slice(0, cut + 1) : '/';
   })();
 
   var DOCS = [

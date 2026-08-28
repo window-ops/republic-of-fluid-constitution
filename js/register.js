@@ -3,9 +3,21 @@
 (function () {
   "use strict";
 
+  /* The site root, derived from the URL of this script, which stays the same at every directory depth. */
   const root = (() => {
-    const pathname = window.location.pathname;
-    return pathname.substring(0, pathname.lastIndexOf('/') + 1);
+    let el = document.currentScript;
+    if (!el) {
+      const all = document.getElementsByTagName('script');
+      for (let i = all.length - 1; i >= 0; i--) {
+        if (/(^|\/)js\/register\.js(\?|#|$)/.test(all[i].getAttribute('src') || '')) {
+          el = all[i];
+          break;
+        }
+      }
+    }
+    const src = el ? el.src : '';
+    const cut = src.lastIndexOf('/js/');
+    return cut > -1 ? src.slice(0, cut + 1) : '/';
   })();
 
   /* ---------- Search: overlay over the constitution, summary and history ---------- */
@@ -20,7 +32,7 @@
       '<div class="fl-box" role="dialog" aria-modal="true" aria-label="Search the register">' +
         '<input class="fl-in" type="search" autocomplete="off" spellcheck="false" ' +
           'placeholder="A word, a phrase in quotes, or an article number">' +
-        '<p class="fl-hint">Enter opens the full results or selected result. A number opens that article. Esc closes.</p>' +
+        '<p class="fl-hint">Enter opens the full results. A number opens that article. Esc closes.</p>' +
         '<ul class="fl-res"></ul>' +
       '</div>';
     document.body.appendChild(wrap);
@@ -28,7 +40,14 @@
     var input = wrap.querySelector('.fl-in'),
         res = wrap.querySelector('.fl-res'),
         hint = wrap.querySelector('.fl-hint'),
-        sel = -1, rows = [], jump = null;
+        sel = -1, rows = [], jump = null, baseHint = '';
+
+    var IDLE_HINT = 'Enter opens the full results. A number opens that article. Esc closes.',
+        SEL_HINT = 'Enter opens the selected result. Esc closes.';
+
+    function showHint() {
+      hint.textContent = sel > -1 ? SEL_HINT : baseHint;
+    }
 
     var LABEL = {};
     S.docs.forEach(function (d) { LABEL[d.key] = d.label; });
@@ -57,7 +76,8 @@
       jump = null;
       if (!v) {
         res.innerHTML = ''; rows = []; sel = -1;
-        hint.textContent = 'Enter opens the full results or selected result. A number opens that article. Esc closes.';
+        baseHint = IDLE_HINT;
+        showHint();
         return;
       }
       var out = window.FluidSearch.run(v);
@@ -68,26 +88,39 @@
       });
       var list = flat.slice(0, LIMIT);
       if (jump) {
-        hint.textContent = 'Enter opens Article ' + out.q.num +
+        baseHint = 'Enter opens Article ' + out.q.num +
           (out.total ? '. Arrows move through the list.' : '.');
       } else if (!out.total) {
-        hint.textContent = 'Nothing matches that.';
+        baseHint = 'Nothing matches that.';
       } else {
-        hint.textContent = out.total + ' found' +
+        baseHint = out.total + ' found' +
           (out.total > list.length ? ', ' + list.length + ' shown' : '') +
           (out.widened ? ', matched in any order' : '') +
-          '. Enter opens the full results or selected result.';
+          '. Enter opens the full results.';
       }
       render(list, out.terms);
+      showHint();
+    }
+
+    function select(i) {
+      var items = res.children;
+      if (sel > -1 && items[sel]) items[sel].classList.remove('on');
+      sel = i;
+      if (sel > -1 && items[sel]) items[sel].classList.add('on');
+      showHint();
+      if (sel > -1 && items[sel]) items[sel].scrollIntoView({ block: 'nearest' });
     }
 
     function move(d) {
       var items = res.children;
       if (!items.length) return;
-      if (sel > -1) items[sel].classList.remove('on');
-      sel = (sel + d + items.length) % items.length;
-      items[sel].classList.add('on');
-      items[sel].scrollIntoView({ block: 'nearest' });
+      if (sel < 0) {
+        if (d > 0) select(0);
+        return;
+      }
+      var next = sel + d;
+      if (next < 0) { select(-1); return; }
+      select(next >= items.length ? 0 : next);
     }
 
     input.addEventListener('input', search);
