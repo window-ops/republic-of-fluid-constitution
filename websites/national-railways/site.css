@@ -171,8 +171,8 @@ h1, h2, h3 {
   color: var(--ink-3);
 }
 
-/* The signature: the flank of the vehicle. A blue band with the pressed wave
-   running along its upper edge, repeated across the full width. */
+/* Signature: the flank of the vehicle. A blue band with the pressed wave running along its upper edge, repeated across the full width. */
+
 .band {
   height: 26px;
   background:
