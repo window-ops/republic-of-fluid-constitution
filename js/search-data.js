@@ -1,4 +1,4 @@
-/* Flattened copy of  text/constitution.md, text/summary.md and text/history.md, together with the pages of concepts/, economy/, questions/, assembly/, map/ including the town pages, about/, and world/index.html, loaded by the search overlay and by search/index.html. */
+/* Flattened copy of text/constitution.md, text/summary.md and text/history.md, together with the pages of concepts/, economy/, questions/, assembly/, map/ including the town pages, about/, and world/index.html, loaded by the search overlay and by search/index.html. */
 window.FLUID_SEARCH = {
   "v": 1,
   "titles": {

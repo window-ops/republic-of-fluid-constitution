@@ -1,5 +1,5 @@
 /* Full-text search over the constitution, the official summary and the history.
-   Reads window.FLUID_SEARCH from js/search-data.js. No dependencies.
+   Reads window.FLUID_SEARCH from js/search-data.js.
    Part one is the engine, shared with the overlay in js/register.js.
    Part two runs the search page and does nothing on any other page. */
 (function () {
