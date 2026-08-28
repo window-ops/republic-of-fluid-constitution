@@ -375,7 +375,7 @@
 
     note.textContent = res.total + (res.total === 1 ? ' result.' : ' results.') +
       (jump ? ' Enter opens Article ' + res.q.num + '.' : '') +
-      (res.widened ? ' The exact phrase found nothing, so the words were matched in any order.' : '');
+      (res.widened ? ' The exact phrase was not found, so the words were matched in any order.' : '');
 
     var h = pinned;
     if (res.front.length) {
