@@ -847,6 +847,22 @@ section:first-of-type .sep {
   color: var(--ink-soft);
 }
 
+.msgs .attach {
+  margin-block: 0 0.45rem;
+  padding: 0.42rem 0.6rem;
+  border: 1px dashed var(--rule-strong);
+  border-radius: 6px;
+  font: 500 0.7rem/1.5 var(--mono);
+  letter-spacing: 0.04em;
+  color: var(--ink-faint);
+}
+
+/* part 17 introduced the photographs sent inside a thread */
+.msgs .attach::before {
+  content: "attachment\00a0\00a0";
+  color: var(--ink-faint);
+}
+
 .thread-plain .thread-head {
   margin-block-end: 1rem;
 }
