@@ -3,11 +3,11 @@
    Own stylesheet. Telephony loads nothing from the state frame and nothing
    from any other cooperative, because it is none of them.
 
-   The design is the printed telephone directory the federation still posts to
-   every household: cheap grey-buff stock, offset black that sits slightly warm,
-   hairline rules, tight leading, and the blue pages at the front where the
-   services are listed. The repeating unit is a directory entry: the name of a
-   thing on the left, a row of dots, and the address it answers on at the right. */
+   The design is from the printed telephone directory the federation posts to
+   every household: cheap grey-buff stock, tight leading, and the blue pages
+   at the front where the services are listed. The repeating unit is a
+   directory entry: the name of a thing on the left, and the
+   address it answers on at the right. */
 
 :root {
   /* paper stocks */
@@ -192,7 +192,7 @@ a:hover {
 /* ---------- page opening ---------- */
 
 .opening {
-  padding: 2rem 0 1.5rem;
+  padding: 2rem 0 0;
 }
 
 .opening h1 {

@@ -29,6 +29,7 @@
   --accent-seventeenth: #7fa9bf;
   --accent-eighteenth: #969fd0;
   --mark: #3a3120;
+  --call-rule: #7f8a94;
 
   --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
   --sans: "IBM Plex Sans", system-ui, sans-serif;
@@ -630,6 +631,31 @@ section:first-of-type .sep {
   margin-block: 0 0.8rem;
 }
 
+/* ---------- telephone and video calls, introduced in part 18 ---------- */
+
+.exchange.call {
+  margin-block: 1.35rem;
+  padding: 1.2rem 1.3rem;
+  background: var(--paper-raised);
+  border: 1px solid var(--rule);
+  border-inline-start: 3px solid var(--call-rule);
+  border-radius: 2px;
+}
+
+.exchange.call + .exchange.call {
+  margin-block-start: 1rem;
+}
+
+.exchange.call .said {
+  max-width: none;
+}
+
+@media (max-width: 34rem) {
+.exchange.call {
+  padding: 0.95rem 1rem;
+}
+}
+
 /* ---------- the messaging thread ---------- */
 
 .thread {
@@ -991,6 +1017,34 @@ section:first-of-type .sep {
   margin-block: 0.3rem 0;
   color: var(--ink-soft);
   font-size: 0.95rem;
+}
+
+/* grouped parts: one title over the halves that belong to it */
+
+.parts .group {
+  display: block;
+  font: 600 1.12rem/1.4 var(--serif);
+  color: var(--ink);
+}
+
+.parts .halves {
+  margin-block: 0.5rem 0;
+  padding: 0;
+  list-style: none;
+}
+
+.parts .halves li {
+  border-block: 0;
+  padding-block: 0.16rem;
+}
+
+.parts .halves .no {
+  display: inline;
+  margin-inline-end: 0.55rem;
+}
+
+.parts .halves a {
+  font: 500 0.98rem/1.5 var(--serif);
 }
 
 /* ---------- footer ---------- */
