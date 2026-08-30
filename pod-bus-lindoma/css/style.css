@@ -1070,6 +1070,109 @@ section:first-of-type .sep {
   font: 500 0.98rem/1.5 var(--serif);
 }
 
+/* ---------- the letter, one sheet at a time, part 19 ---------- */
+
+/* the sheet selector is three radio buttons with the first one checked in
+   the markup, so all three sheets are shown when no stylesheet loads */
+
+.letter {
+  margin-block: 1rem;
+  padding: 1.15rem 1.3rem;
+  background: var(--paper-raised);
+  border: 1px solid var(--rule);
+  border-inline-start: 3px solid var(--rule-strong);
+  border-radius: 2px;
+}
+
+.letter .pg {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.letter-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.4rem;
+  margin-block-end: 1.1rem;
+  font: 0.74rem/1.6 var(--sans);
+}
+
+.letter-controls .lab {
+  color: var(--ink-faint);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-inline-end: 0.25rem;
+}
+
+.letter-controls label {
+  cursor: pointer;
+  padding: 0.16rem 0.6rem;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  color: var(--ink-faint);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  user-select: none;
+}
+
+#lt1:checked ~ .letter-controls label[for="lt1"],
+#lt2:checked ~ .letter-controls label[for="lt2"],
+#lt3:checked ~ .letter-controls label[for="lt3"] {
+  color: var(--ink);
+  border-color: var(--accent-fourth);
+}
+
+.letter .pg:focus-visible ~ .letter-controls label[for="lt1"],
+.letter .pg:focus-visible ~ .letter-controls label[for="lt2"],
+.letter .pg:focus-visible ~ .letter-controls label[for="lt3"] {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.sheets .sheet {
+  display: none;
+}
+
+#lt1:checked ~ .sheets .sheet-1,
+#lt2:checked ~ .sheets .sheet-2,
+#lt3:checked ~ .sheets .sheet-3 {
+  display: block;
+}
+
+.sheet-head {
+  margin-block: 0 0.9rem;
+  font: 600 0.72rem/1.4 var(--sans);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+.sheet p {
+  margin-block: 0 0.75rem;
+  line-height: 1.95;
+}
+
+.sheet p:last-child {
+  margin-block-end: 0;
+}
+
+@media print {
+  .letter-controls {
+    display: none;
+  }
+
+  .sheets .sheet {
+    display: block;
+  }
+}
+
 /* ---------- footer ---------- */
 
 .colophon {
