@@ -27,6 +27,7 @@
   --accent-seventeenth: #7fa9bf;
   --accent-eighteenth: #969fd0;
   --accent-nineteenth: #6f93bf;
+  --accent-twentieth: #a8927f;
   --mark: #3a3120;
   --call-rule: #7f8a94;
 
@@ -608,6 +609,11 @@ section:first-of-type .sep {
   color: var(--accent-nineteenth);
 }
 
+/* the man at the long-term care counter, part 19.2 */
+.turn-clerk .who {
+  color: var(--accent-twentieth);
+}
+
 .turn-control .who,
 .turn-megaphone .who {
   color: var(--accent-fifth);
@@ -741,7 +747,7 @@ section:first-of-type .sep {
 }
 
 .thread-controls label::before {
-  content: "\2715\00a0\00a0";
+  content: "\2715\00a0";
   font-family: var(--mono);
   font-size: 0.8em;
 }
@@ -786,7 +792,7 @@ section:first-of-type .sep {
 #t9d-ja:checked ~ .thread-controls label[for="t9d-ja"]::before,
 #t9d-rj:checked ~ .thread-controls label[for="t9d-rj"]::before,
 #t9d-en:checked ~ .thread-controls label[for="t9d-en"]::before {
-  content: "\2713\00a0\00a0";
+  content: "\2713\00a0";
   color: var(--accent-fourth);
 }
 
@@ -908,7 +914,7 @@ section:first-of-type .sep {
 
 /* part 17 introduced the photographs sent inside a thread */
 .msgs .attach::before {
-  content: "attachment\00a0\00a0";
+  content: "attachment\00a0";
   color: var(--ink-faint);
 }
 
@@ -1163,6 +1169,11 @@ section:first-of-type .sep {
   margin-block-end: 0;
 }
 
+.small-line {
+  font-size: 0.95rem;
+  color: var(--ink-faint);
+}
+
 @media print {
   .letter-controls {
     display: none;
@@ -1210,7 +1221,7 @@ section:first-of-type .sep {
 }
 
 .tr-toggle::before {
-  content: "\2715\00a0\00a0";
+  content: "\2715\00a0";
   font-family: var(--mono);
   font-size: 0.8em;
 }
@@ -1221,7 +1232,7 @@ section:first-of-type .sep {
 }
 
 .msg .tr:checked ~ .tr-toggle::before {
-  content: "\2713\00a0\00a0";
+  content: "\2713\00a0";
   color: var(--accent-fourth);
 }
 
