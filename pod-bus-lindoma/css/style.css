@@ -1173,6 +1173,92 @@ section:first-of-type .sep {
   }
 }
 
+/* ---------- a voice message with the transcript folded away, part 19.1 ---------- */
+
+/* the toggle is an ordinary checkbox left unchecked in the markup, so the
+   transcript is printed in full when no stylesheet loads */
+
+.msg .tr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.voice {
+  font: 0.78rem/1.6 var(--sans);
+  color: var(--ink-soft);
+  letter-spacing: 0.02em;
+}
+
+.tr-toggle {
+  display: inline-block;
+  margin-block-start: 0.45rem;
+  cursor: pointer;
+  padding: 0.14rem 0.6rem;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  color: var(--ink-faint);
+  font: 0.72rem/1.6 var(--sans);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  user-select: none;
+}
+
+.tr-toggle::before {
+  content: "\2715\00a0\00a0";
+  font-family: var(--mono);
+  font-size: 0.8em;
+}
+
+.msg .tr:checked ~ .tr-toggle {
+  color: var(--ink);
+  border-color: var(--accent-fourth);
+}
+
+.msg .tr:checked ~ .tr-toggle::before {
+  content: "\2713\00a0\00a0";
+  color: var(--accent-fourth);
+}
+
+.msg .tr:focus-visible ~ .tr-toggle {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.transcript {
+  display: none;
+  margin-block-start: 0.7rem;
+  padding-inline-start: 0.9rem;
+  border-inline-start: 2px solid var(--rule);
+}
+
+.msg .tr:checked ~ .transcript {
+  display: block;
+}
+
+.transcript p {
+  margin-block: 0 0.6rem;
+}
+
+.transcript p:last-child {
+  margin-block-end: 0;
+}
+
+@media print {
+  .tr-toggle {
+    display: none;
+  }
+
+  .transcript {
+    display: block;
+  }
+}
+
 /* ---------- footer ---------- */
 
 .colophon {
