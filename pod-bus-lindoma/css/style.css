@@ -654,7 +654,7 @@ section:first-of-type .sep {
   margin-block: 0 0.8rem;
 }
 
-/* ---------- telephone and video calls, introduced in part 18 ---------- */
+/* ---------- telephone and video calls, introduced in part 2 ---------- */
 
 .exchange.call {
   margin-block: 1.35rem;
@@ -674,9 +674,9 @@ section:first-of-type .sep {
 }
 
 @media (max-width: 34rem) {
-.exchange.call {
-  padding: 0.95rem 1rem;
-}
+  .exchange.call {
+    padding: 0.95rem 1rem;
+  }
 }
 
 /* ---------- the messaging thread ---------- */
