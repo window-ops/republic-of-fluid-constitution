@@ -1305,18 +1305,18 @@ a:focus-visible {
 
   .who,
   .said,
-.scene {
-  grid-column: 1;
-}
+  .scene {
+    grid-column: 1;
+  }
 
   .who {
     text-align: left;
     margin-block-start: 1rem;
   }
 
-.turn:first-child .who {
-  margin-block-start: 0;
-}
+  .turn:first-child .who {
+    margin-block-start: 0;
+  }
 }
 
 /* ---------- print ---------- */
@@ -1339,9 +1339,9 @@ a:focus-visible {
 
   .msgs .ln-ja,
   .msgs .ln-rj,
-.msgs .ln-en {
-  display: block;
-}
+  .msgs .ln-en {
+    display: block;
+  }
 
   .page {
     max-width: none;
@@ -1350,7 +1350,7 @@ a:focus-visible {
 
   .turn,
   .doc,
-.msgs .msg {
-  break-inside: avoid;
-}
+  .msgs .msg {
+    break-inside: avoid;
+  }
 }
