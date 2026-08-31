@@ -1279,7 +1279,7 @@ In no case is a provision of this Title to be read as conferring a right to enga
 1. The Republic is organised in four governing tiers: the commune, the sub-region, the region and the Republic.
 2. The commune is the village or the city with its territory. Sub-regions comprise the communes within them. The two regions comprise the sub-regions within them, nine in the western region and eleven in the eastern.
 3. Each tier governs itself through organs elected or constituted under this Title, holds the competences this Title assigns to it, and receives resources under Chapter 6.
-4. The Republic is unitary under Article 1(2). In no case does a tier hold sovereignty, a right of secession, a constitution of its own, or a legal order separate from that of the Republic.
+4. The Republic is unitary under Article 1(2). In no case does a tier have sovereignty, a right of secession, a constitution of its own, or a legal order separate from that of the Republic.
 5. The two regions hold identical competences, and in no case is a competence conferred upon one region alone.
 
 **Article 167. General competence and subsidiarity**
