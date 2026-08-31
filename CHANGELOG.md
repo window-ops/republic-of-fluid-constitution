@@ -105,7 +105,7 @@ Title II supplies the apparatus:
 
 ## 7. Rights declared with no enforcement
 
-The preamble of the current text states the failure plainly: the earlier texts declared rights and named nobody to enforce them. Article 4 of the 2024 text listed sixteen rights drawn from the Universal Declaration, with no direct effect, no limitation test, no non-derogable list and no remedy.
+The preamble of the current text states the failure: the earlier texts declared rights and named nobody to enforce them. Article 4 of the 2024 text listed sixteen rights drawn from the Universal Declaration, with no direct effect, no limitation test, no non-derogable list and no remedy.
 
 Title III carries the machinery. Article 37 extends every right to every person present, documented or otherwise, and Article 39 gives the rights direct effect without implementing legislation, binding employers and services.
 

@@ -271,4 +271,4 @@ The 2024 text was written by people who had watched four years of paralysis and 
 
 ### What the third constitution is for
 
-It is longer than both of its predecessors combined. The 1890 text was silent and relied on convention. The 2024 text was aspirational and relied on good faith. This one writes down what happens when things go wrong: when an enterprise fails, when a commune defaults, when an election cannot be held, when the plan runs short, when a majority wants to do something the Republic has decided no majority may do. Article 319 concedes the cost of that plainly, and Article 318 makes the Republic answer for it every ten years.
+It is longer than both of its predecessors combined. The 1890 text was silent and relied on convention. The 2024 text was aspirational and relied on good faith. This one writes down what happens when things go wrong: when an enterprise fails, when a commune defaults, when an election cannot be held, when the plan runs short, when a majority wants to do something the Republic has decided no majority may do. Article 319 concedes the cost of that, and Article 318 makes the Republic answer for it every ten years.
