@@ -762,7 +762,7 @@ ol.paras > li:last-child {
     grid-column: 3;
     grid-row: 1;
     margin: 0;
-    padding: 0.1rem 0 0.1rem 1.1rem;
+    padding: 0.1rem 0 0.1rem 0.7rem;
     border-top: none;
     border-left: 1px dashed var(--rule);
     align-self: stretch;
