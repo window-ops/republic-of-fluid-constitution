@@ -65,7 +65,7 @@ body {
 .page {
   max-width: calc(var(--who-col) + var(--gap) + var(--measure) + 5rem);
   margin-inline: auto;
-  padding: clamp(1.25rem, 4vw, 3.5rem) clamp(1rem, 4vw, 2rem) 6rem;
+  padding: clamp(1.25rem, 4vw, 3.5rem) clamp(1rem, 4vw, 2rem) 3.5rem;
 }
 
 /* ---------- masthead ---------- */
@@ -989,7 +989,7 @@ section:first-of-type .sep {
   align-items: baseline;
   justify-content: space-between;
   gap: 0.75rem;
-  margin-block-start: 3.5rem;
+  margin-block-start: 3rem;
   padding-block-start: 1.25rem;
   border-block-start: 1px solid var(--rule);
   font: 0.82rem/1.7 var(--sans);
