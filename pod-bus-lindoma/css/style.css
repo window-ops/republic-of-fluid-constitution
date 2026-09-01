@@ -28,6 +28,7 @@
   --accent-eighteenth: #969fd0;
   --accent-nineteenth: #6f93bf;
   --accent-twentieth: #a8927f;
+  --accent-twenty-first: #9f8fa8;
   --mark: #3a3120;
   --call-rule: #7f8a94;
 
@@ -37,7 +38,7 @@
 
   --who-col: 5rem;
   --gap: 1.5rem;
-  --measure: 42rem;
+  --measure: 43rem;
   --rhythm: 2.12rem;
   --step: clamp(1rem, 0.95rem + 0.32vw, 1.15rem);
 }
@@ -614,6 +615,14 @@ section:first-of-type .sep {
   color: var(--accent-twentieth);
 }
 
+/* the foreign bulletin on the external channels, part 20 */
+.turn-television .who {
+  color: var(--accent-twenty-first);
+  font-family: var(--mono);
+  text-transform: none;
+  letter-spacing: 0.04em;
+}
+
 .turn-control .who,
 .turn-megaphone .who {
   color: var(--accent-fifth);
@@ -849,12 +858,13 @@ section:first-of-type .sep {
 }
 
 .msgs .msg {
-  max-width: 36.5rem;
+  max-width: 36rem;
   padding: 0.6rem 0.85rem;
   border: 1px solid var(--rule);
   border-radius: 10px;
   background: var(--paper);
   font-size: 0.94em;
+  text-wrap: pretty;
 }
 
 .msgs .msg-in {
@@ -1163,6 +1173,7 @@ section:first-of-type .sep {
 .sheet p {
   margin-block: 0 0.75rem;
   line-height: 1.95;
+  text-wrap: pretty;
 }
 
 .sheet p:last-child {
