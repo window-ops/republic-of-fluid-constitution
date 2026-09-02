@@ -29,6 +29,7 @@
   --accent-nineteenth: #6f93bf;
   --accent-twentieth: #a8927f;
   --accent-twenty-first: #9f8fa8;
+  --accent-twenty-second: #bfae55;
   --mark: #3a3120;
   --call-rule: #7f8a94;
 
@@ -613,6 +614,11 @@ section:first-of-type .sep {
 /* the man at the long-term care counter, part 19.2 */
 .turn-clerk .who {
   color: var(--accent-twentieth);
+}
+
+/* the woman at the stand, part 21 */
+.turn-katia .who {
+  color: var(--accent-twenty-second);
 }
 
 /* the foreign bulletin on the external channels, part 20 */
