@@ -149,7 +149,7 @@ function buildTranslator(formId, inId, outId, dirId) {
     let html = "";
     if (whole) {
       html += "<p><strong>" + whole + "</strong></p>";
-      html += '<p class="lit">word by word: ' + g.html + "</p>";
+      html += '<p class="lit" style="margin-bottom:0">word by word: ' + g.html + "</p>";
     } else {
       html += "<p>" + g.html + "</p>";
       html += '<p class="lit" style="margin-bottom:0">' + (g.total - g.unknown) + " of " + g.total +
