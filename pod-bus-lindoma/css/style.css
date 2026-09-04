@@ -30,6 +30,7 @@
   --accent-twentieth: #a8927f;
   --accent-twenty-first: #9f8fa8;
   --accent-twenty-second: #bfae55;
+  --accent-twenty-third: #86c46a;
   --mark: #3a3120;
   --call-rule: #7f8a94;
 
@@ -39,7 +40,7 @@
 
   --who-col: 5rem;
   --gap: 1.5rem;
-  --measure: 43rem;
+  --measure: 42rem;
   --rhythm: 2.12rem;
   --step: clamp(1rem, 0.95rem + 0.32vw, 1.15rem);
 }
@@ -619,6 +620,11 @@ section:first-of-type .sep {
 /* the woman at the stand, part 21 */
 .turn-katia .who {
   color: var(--accent-twenty-second);
+}
+
+/* her son, part 22 */
+.turn-emil .who {
+  color: var(--accent-twenty-third);
 }
 
 /* the foreign bulletin on the external channels, part 20 */

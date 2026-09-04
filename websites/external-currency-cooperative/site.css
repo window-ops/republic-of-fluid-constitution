@@ -215,15 +215,6 @@ main {
   margin-bottom: 0;
 }
 
-.eyebrow {
-  font-family: var(--mono);
-  font-size: .7rem;
-  letter-spacing: .15em;
-  text-transform: uppercase;
-  color: var(--brass-deep);
-  margin: 0 0 .5rem;
-}
-
 h1.title {
   font-size: 2.1rem;
   font-weight: 800;

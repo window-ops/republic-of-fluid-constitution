@@ -276,15 +276,6 @@ main {
   margin-top: -0.5rem;
 }
 
-.eyebrow {
-  margin: 0 0 0.4rem;
-  font-family: var(--mono);
-  font-size: 0.71rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--ink-3);
-}
-
 .sub {
   color: var(--ink-2);
   font-size: 0.97rem;

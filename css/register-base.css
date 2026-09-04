@@ -198,15 +198,6 @@ button:focus-visible {
   border-bottom: 3px solid var(--ink);
 }
 
-.title-head .eyebrow {
-  font-family: var(--sans);
-  font-size: 0.78rem;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: var(--state);
-  margin: 0 0 0.3rem;
-}
-
 .title-head h1 {
   font-size: clamp(1.4rem, 3.6vw, 2rem);
   margin: 0 0 0.35rem;

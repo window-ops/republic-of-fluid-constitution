@@ -62,7 +62,7 @@
     <section class="opening">
       <div class="wrap">
         <h1>CARD-ROM, Dubrazec standard, revision 3</h1>
-        <p class="lede">CARD-ROM is a removable storage device. A read-only block holds the identity, an 8 KB EEPROM keeps the options, the display language and 7.6 KB the holder may write, and a minified NAND stores the last ninety days of records. The gates and machines that read it run FreeRTOS and mount the card as a block device. Fluid issues these cards without a fare module, so the card cannot hold money.</p>
+        <p class="lede">CARD-ROM is a removable storage device. A read-only block stores the identity, an 8 KB EEPROM keeps the options, the display language and 7.6 KB the holder may write, and a minified NAND stores the last ninety days of records. The gates and machines that read it run FreeRTOS and mount the card as a block device. Fluid issues these cards without a fare module, so the card cannot hold money.</p>
         <ul class="figures">
           <li><b>3</b> memories</li>
           <li><b>2 MB</b> NAND</li>
@@ -233,7 +233,7 @@
     <section class="block">
       <div class="wrap">
         <h2>Records</h2>
-        <p class="sub">The NAND stores a list of records. A card can hold about 60,000 of them, far past what is practically necessary, and the oldest are overwritten first.</p>
+        <p class="sub">The NAND stores a list of records. A card can store about 60,000 of them, far past what is practically necessary, and the oldest are overwritten first.</p>
       </div>
       <div class="wrap">
         <div class="tablewrap">
@@ -424,7 +424,7 @@
           <dt>Power drawn</dt>
           <dd>4.5 mW reading, 9.8 mW during a NAND commit</dd>
           <dt>Reservoir</dt>
-          <dd>4.7 &micro;F, holds a commit through 40 ms out of field</dd>
+          <dd>4.7 &micro;F, sustains a commit through 40 ms out of field</dd>
           <dt>Contact pads</dt>
           <dd>6, ISO 7816-2 positions C1 to C4, C7, C8</dd>
           <dt>Contact supply</dt>
@@ -488,8 +488,8 @@
       </div>
       <div class="wrap">
         <div class="essay">
-          <p><strong>The card has no processor.</strong> It answers commands and holds bytes. Everything decided in a transaction is decided by the gate or the machine.</p>
-          <p><strong>The gates and machines run FreeRTOS.</strong> The gate is a Cortex-M4 at 120 MHz with 256 KiB of RAM and has been programmed with four tasks: field, transaction, door, and the panel. The transaction task holds a deadline of 300 ms, and the door task will not open on a transaction that missed it.</p>
+          <p><strong>The card has no processor.</strong> It answers commands and stores bytes. Everything decided in a transaction is decided by the gate or the machine.</p>
+          <p><strong>The gates and machines run FreeRTOS.</strong> The gate is a Cortex-M4 at 120 MHz with 256 KiB of RAM and has been programmed with four tasks: field, transaction, door, and the panel. The transaction task has a deadline of 300 ms, and the door task will not open on a transaction that missed it.</p>
           <p><strong>The card mounts as a block device.</strong> The reference driver presents the three regions to FreeRTOS as read-only, read-write and append-only devices. It is 3,100 lines of C, it allocates nothing after start, and it is published with the standard.</p>
           <p><strong>A machine is the same board with a slot.</strong> The concourse machine adds the contact carrier, the printer and the panel, and runs the same driver over the pads at 15 mA.</p>
         </div>
@@ -507,7 +507,7 @@
           </li>
           <li>
             <h3>Signatures</h3>
-            <p>The ROM block is signed by the issuer with Ed25519. A reader anywhere in the Bloc can check that a card is authentic without holding any network key.</p>
+            <p>The ROM block is signed by the issuer with Ed25519. A reader anywhere in the Bloc can check that a card is authentic without storing any network key.</p>
           </li>
           <li>
             <h3>Records are sealed</h3>
