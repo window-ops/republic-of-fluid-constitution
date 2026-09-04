@@ -1,0 +1,141 @@
+@import url("fonts.css");
+
+/* Judicial Inspectorate - own skin over the shared state frame. */
+
+:root {
+  --accent:      #6b2233;
+  --accent-deep: #47101d;
+  --accent-soft: #f2e4e7;
+  --accent-ink:  #ffffff;
+
+  --org-measure: 33rem;
+  --ash: #eceaea;
+}
+
+/* ---------- ground, masthead and navigation ---------- */
+
+body {
+  background: #e8e4e5;
+}
+
+.orghead {
+  background: var(--f-paper);
+}
+
+.orghead .wrap {
+  padding-top: 1.35rem;
+  padding-bottom: 1.25rem;
+}
+
+.orghead .kicker {
+  color: var(--accent);
+  letter-spacing: 0.18em;
+}
+
+.orghead .orgname {
+  font-size: 1.45rem;
+  font-weight: 600;
+}
+
+.orgnav {
+  background: var(--f-paper);
+  border-bottom: 1px solid var(--f-rule);
+}
+
+.orgnav a {
+  color: var(--accent-deep);
+  font-size: 0.82rem;
+}
+
+.orgnav a:hover {
+  background: var(--accent-soft);
+  color: var(--accent-deep);
+}
+
+.orgnav a[aria-current="page"] {
+  border-bottom-color: var(--accent);
+  font-weight: 600;
+}
+
+.statebar .wrap, .orgfoot .wrap {
+  max-width: 52rem;
+}
+
+h2 {
+  font-weight: 600;
+  border-top: 2px solid var(--accent);
+  padding-top: 0.55rem;
+}
+
+.legal {
+  background: var(--accent-soft);
+}
+
+/* ---------- the standing prohibition, set at the head of a page ---------- */
+.forbidden {
+  border: 2px solid var(--accent); background: var(--f-paper);
+  padding: .95rem 1.1rem; margin: 1.3rem 0;
+}
+
+.forbidden h3 {
+  margin: 0 0 0.35rem;
+  font-family: var(--f-sans);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--accent);
+}
+
+.forbidden p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+/* ---------- inspections, set as a plain running list ---------- */
+.inspections {
+  margin: 1.2rem 0;
+}
+
+.inspections .row {
+  display: grid; grid-template-columns: 7rem 1fr; gap: .9rem;
+  padding: .7rem 0; border-bottom: 1px solid var(--f-rule); align-items: start;
+}
+
+.inspections .when {
+  font-family: var(--f-mono);
+  font-size: 0.78rem;
+  color: var(--accent);
+  padding-top: 0.12rem;
+}
+
+.inspections h3 {
+  margin: 0 0 0.2rem;
+  font-size: 0.98rem;
+  font-weight: 600;
+}
+
+.inspections p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--f-ink-soft);
+}
+
+.inspections .out {
+  font-family: var(--f-sans);
+  font-size: 0.78rem;
+  color: var(--accent-deep);
+  margin-top: 0.3rem;
+  display: block;
+}
+
+table.reg thead th {
+  border-bottom-color: var(--accent);
+}
+
+/* ---------- narrow screens ---------- */
+
+@media (max-width: 40rem) {
+  .inspections .row { grid-template-columns: 1fr;
+  gap: 0.2rem;
+}
+}

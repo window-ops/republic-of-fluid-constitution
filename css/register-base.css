@@ -1,3 +1,5 @@
+@import url("fonts.css");
+
 /* Republic of Fluid - Public Register
    Palette sampled from the state flag. No external resources are loaded.
    Articles 109(5) and 301 require public systems to run without a foreign supplier. */
@@ -16,10 +18,10 @@
   --inforce: #1a6f37;
   --repealed: #a8131b;
 
-  --serif: "Charter", "Bitstream Charter", "Sitka Text", Cambria, "Georgia",
-    "Times New Roman", serif;
-  --sans: ui-sans-serif, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial,
-    sans-serif;
+  --serif: "Charis SIL", "Charter", "Bitstream Charter", "Sitka Text",
+    Cambria, "Georgia", "Times New Roman", serif;
+  --sans: "Noto Sans", ui-sans-serif, system-ui, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
 
   --measure: 34rem;
   --tab: 3rem;

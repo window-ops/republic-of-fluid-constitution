@@ -1,0 +1,209 @@
+@import url("fonts.css");
+
+/* Judicial Council - own skin over the shared state frame. */
+
+:root {
+  --accent:      #4b3f7a;
+  --accent-deep: #2f2652;
+  --accent-soft: #e6e2f2;
+  --accent-ink:  #ffffff;
+
+  --org-measure: 38rem;
+  --lot:  #4b3f7a;
+  --elected: #8d84b8;
+}
+
+/* ---------- ground, masthead and navigation ---------- */
+
+body {
+  background: #e4e1ee;
+}
+
+.orghead {
+  background: var(--accent-deep);
+}
+
+.orghead .wrap {
+  padding-top: 1.5rem;
+  padding-bottom: 1.4rem;
+}
+
+.orghead .kicker {
+  color: #b6adde;
+  letter-spacing: 0.16em;
+}
+
+.orghead .orgname {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: -0-.02em;
+}
+
+.orghead .orgname a {
+  color: #fff;
+}
+
+.orghead .basis {
+  color: #a49aca;
+}
+
+.orgnav {
+  background: var(--accent);
+}
+
+.orgnav a[aria-current="page"] {
+  border-bottom-color: #d7d0ee;
+}
+
+h2 {
+  font-weight: 700;
+  letter-spacing: -0-.02em;
+  font-size: 1.28rem;
+}
+
+.legal {
+  background: var(--accent-soft);
+}
+
+/* ---------- composition of the twenty-one seats ---------- */
+.seats {
+  margin: 1.3rem 0;
+}
+
+.seats .rowline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  margin-bottom: 0.7rem;
+}
+
+.seats .s {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  display: block;
+}
+
+.seats .s.lot {
+  background: var(--lot);
+}
+
+.seats .s.el {
+  background: var(--elected);
+}
+
+.seats .key {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  font-size: 0.85rem;
+}
+
+.seats .key span {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.seats .key i {
+  width: 0.95rem;
+  height: 0.95rem;
+  border-radius: 50%;
+  display: block;
+}
+
+/* ---------- record of sittings ---------- */
+.record {
+  border-left: 3px solid var(--accent);
+  padding-left: 1.2rem;
+  margin: 1.3rem 0;
+}
+
+.record .item {
+  position: relative;
+  padding-bottom: 1.1rem;
+}
+
+.record .item::before {
+  content: "";
+  position: absolute;
+  left: -1.63rem;
+  top: 0.4rem;
+  width: 0.75rem;
+  height: 0.75rem;
+  background: var(--f-paper);
+  border: 2px solid var(--accent);
+  border-radius: 50%;
+}
+
+.record .when {
+  font-family: var(--f-mono);
+  font-size: 0.76rem;
+  color: var(--accent);
+}
+
+.record h3 {
+  margin: 0.1rem 0 0.25rem;
+  font-size: 1rem;
+}
+
+.record p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--f-ink-soft);
+}
+
+/* ---------- votes recorded by name ---------- */
+.votes {
+  border: 1px solid var(--f-rule);
+  background: var(--f-paper);
+  margin: 1.2rem 0;
+}
+
+.votes .h {
+  background: var(--accent-soft);
+  padding: 0.55rem 0.9rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--accent-deep);
+}
+
+.votes ul {
+  list-style: none;
+  margin: 0;
+  padding: 0.6rem 0.9rem;
+  display: grid;
+  gap: 0.3rem 0.9rem;
+  grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr));
+}
+
+.votes li {
+  font-size: 0.87rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 0.6rem;
+  border-bottom: 1px dotted var(--f-rule);
+  padding-bottom: 0.25rem;
+}
+
+.votes li b {
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+.votes li b.for {
+  color: var(--f-live);
+}
+
+.votes li b.against {
+  color: var(--f-warn);
+}
+
+.votes li b.abstain {
+  color: var(--f-ink-faint);
+}
+
+table.reg thead th {
+  border-bottom-color: var(--accent);
+}

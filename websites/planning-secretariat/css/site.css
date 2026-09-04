@@ -1,0 +1,240 @@
+@import url("fonts.css");
+
+/* Planning Secretariat - own skin over the shared state frame. */
+
+:root {
+  --accent:      #7a5a2f;
+  --accent-deep: #553c1c;
+  --accent-soft: #f0e7d6;
+  --accent-ink:  #ffffff;
+
+  --org-measure: 38rem;
+
+  --grid:    #e2d6bd;
+  --sheetbg: #fdfbf6;
+}
+
+/* ---------- ground, masthead and navigation ---------- */
+
+body {
+  background: #eae3d6;
+}
+
+.sheet {
+  background: var(--sheetbg);
+}
+
+.orghead {
+  background: var(--sheetbg);
+}
+
+.orghead .kicker {
+  color: var(--accent);
+}
+
+.orghead .orgname {
+  font-weight: 600;
+  font-size: 1.45rem;
+  letter-spacing: -0-.02em;
+}
+
+.orghead .basis {
+  font-family: var(--f-mono);
+  font-size: 0.72rem;
+}
+
+.orgnav {
+  background: var(--sheetbg);
+  border-bottom: 1px solid var(--grid);
+}
+
+.orgnav a {
+  color: var(--accent-deep);
+}
+
+.orgnav a:hover {
+  background: var(--accent-soft);
+  color: var(--accent-deep);
+}
+
+.orgnav a[aria-current="page"] {
+  background: var(--accent-soft);
+  border-bottom-color: var(--accent);
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 1.22rem;
+}
+
+.legal {
+  background: var(--accent-soft);
+}
+
+/* ---------- balance sheet ---------- */
+
+.balances {
+  border: 1px solid var(--grid);
+  background: var(--f-paper);
+  margin: 1.3rem 0;
+}
+
+.balances .hd,
+.balances .rw {
+  display: grid;
+  grid-template-columns: 1fr 7rem 7rem 7rem;
+  gap: .6rem;
+  padding: .5rem .9rem;
+  align-items: baseline;
+}
+
+.balances .hd {
+  background: var(--accent-soft);
+  font-size: .73rem;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: var(--accent-deep);
+  font-weight: 700;
+}
+
+.balances .rw {
+  border-top: 1px solid var(--grid);
+  font-size: 0.9rem;
+}
+
+.balances .rw span:not(:first-child) {
+  font-family: var(--f-mono);
+  font-size: 0.84rem;
+  text-align: left;
+}
+
+.balances .def {
+  color: var(--f-warn);
+}
+
+.balances .sur {
+  color: var(--f-live);
+}
+
+/* ---------- variants placed side by side ---------- */
+
+.variants {
+  display: grid;
+  gap: .8rem;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  margin: 1.2rem 0;
+}
+
+.variants article {
+  border: 1px solid var(--grid);
+  border-top: 4px solid var(--accent);
+  background: var(--f-paper);
+  padding: .9rem 1rem;
+}
+
+.variants h3 {
+  margin: 0 0 0.3rem;
+  font-size: 0.98rem;
+}
+
+.variants dl {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: .2rem .6rem;
+  margin: .5rem 0 0;
+  font-size: .85rem;
+}
+
+.variants dt {
+  color: var(--f-ink-soft);
+}
+
+.variants dd {
+  margin: 0;
+  font-family: var(--f-mono);
+  text-align: right;
+}
+
+.variants .tail {
+  font-size: 0.84rem;
+  color: var(--f-ink-soft);
+  margin: 0.6rem 0 0;
+  max-width: none;
+}
+
+/* ---------- stage rail for the six-stage cycle ---------- */
+
+.stages {
+  list-style: none;
+  padding: 0;
+  margin: 1.2rem 0;
+  counter-reset: stg;
+}
+
+.stages li {
+  counter-increment: stg;
+  position: relative;
+  padding: 0 0 1.1rem 3rem;
+  border-left: 2px solid var(--grid);
+  margin-left: 1rem;
+  max-width: 42rem;
+}
+
+.stages li:last-child {
+  border-left-color: transparent;
+  padding-bottom: 0;
+}
+
+.stages li::before {
+  content: counter(stg, lower-alpha);
+  position: absolute;
+  left: -1.05rem;
+  top: 0;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 700;
+  font-size: .85rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stages h3 {
+  margin: 0.2rem 0 0.25rem;
+  font-size: 1rem;
+}
+
+.stages p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--f-ink-soft);
+}
+
+.stages .here {
+  border-left-color: var(--accent);
+}
+
+.stages .here::before {
+  background: var(--accent-deep);
+}
+
+table.reg thead th {
+  border-bottom-color: var(--accent);
+}
+
+/* ---------- narrow screens ---------- */
+
+@media (max-width: 44rem) {
+  .balances .hd,
+.balances .rw {
+  grid-template-columns: 1fr 5rem 5rem;
+  font-size: 0.82rem;
+}
+  .balances .hd span:nth-child(4),
+.balances .rw span:nth-child(4) {
+  display: none;
+}
+}

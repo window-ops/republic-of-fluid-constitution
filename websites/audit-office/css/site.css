@@ -1,0 +1,250 @@
+@import url("fonts.css");
+
+/* Audit Office - own skin over the shared state frame.
+   The style of a ledger: buff paper, ruled lines, figures set
+   in monospace, quantities counted in physical units and never in money. */
+
+:root {
+  --accent:      #37503f;
+  --accent-deep: #23362a;
+  --accent-soft: #e2e9e0;
+  --accent-ink:  #ffffff;
+
+  --org-measure: 34rem;
+
+  --buff:   #faf8f1;
+  --ledger: #d9d3c0;
+}
+
+/* ---------- ground, masthead and navigation ---------- */
+
+body {
+  background: #e6e7e0;
+}
+
+.sheet {
+  background: var(--buff);
+}
+
+.orghead {
+  background: var(--buff);
+  border-bottom: 0;
+}
+
+.orghead .wrap {
+  padding-top: 1.4rem;
+  padding-bottom: 1.2rem;
+  align-items: flex-end;
+}
+
+.orghead .kicker {
+  color: var(--accent);
+  letter-spacing: 0.16em;
+}
+
+.orghead .orgname {
+  font-weight: 600;
+  font-size: 1.55rem;
+}
+
+.orghead .basis {
+  font-family: var(--f-mono);
+  font-size: 0.72rem;
+  letter-spacing: -0-.01em;
+}
+
+.orgnav {
+  background: var(--buff);
+  border-bottom: 1px solid var(--ledger);
+}
+
+.orgnav a {
+  color: var(--accent-deep);
+  padding: 0.62rem 0.9rem;
+}
+
+.orgnav a:hover {
+  background: var(--accent-soft);
+  color: var(--accent-deep);
+}
+
+.orgnav a[aria-current="page"] {
+  border-bottom-color: var(--accent);
+  background: var(--accent-soft);
+}
+
+h2 {
+  font-weight: 600;
+  border-bottom: 1px solid var(--ledger);
+  padding-bottom: 0.3rem;
+}
+
+.legal {
+  background: #eef1ea;
+  border-left-color: var(--accent);
+}
+
+/* ---------- balance block ---------- */
+.balance {
+  border: 1px solid var(--ledger);
+  background: var(--f-paper);
+  margin: 1.3rem 0;
+}
+
+.balance .cap {
+  font-family: var(--f-sans); font-size: .72rem; text-transform: uppercase;
+  letter-spacing: .1em; color: var(--f-ink-soft);
+  padding: .55rem .9rem; border-bottom: 1px solid var(--ledger); background: var(--accent-soft);
+  margin: 0;
+}
+
+.balance dl {
+  margin: 0;
+}
+
+.balance .line {
+  display: grid; grid-template-columns: 1fr auto auto; gap: .8rem;
+  padding: .48rem .9rem; border-bottom: 1px solid var(--ledger); align-items: baseline;
+}
+
+.balance .line:last-child {
+  border-bottom: 0;
+}
+
+.balance dt {
+  margin: 0;
+  font-size: 0.92rem;
+}
+
+.balance .qty {
+  font-family: var(--f-mono);
+  font-size: 0.88rem;
+  text-align: right;
+  min-width: 8rem;
+}
+
+.balance .var {
+  font-family: var(--f-mono);
+  font-size: 0.82rem;
+  text-align: right;
+  min-width: 5rem;
+}
+
+.balance .over {
+  color: var(--f-warn);
+}
+
+.balance .under {
+  color: var(--accent);
+}
+
+/* ---------- audit entries ---------- */
+.audits {
+  margin: 1.1rem 0;
+}
+
+.audits details {
+  border: 1px solid var(--ledger); border-left: 4px solid var(--accent);
+  background: var(--f-paper); margin-bottom: .6rem;
+}
+
+.audits summary {
+  cursor: pointer; padding: .7rem .9rem; list-style: none;
+  display: grid; grid-template-columns: 1fr auto; gap: .6rem; align-items: baseline;
+}
+
+.audits summary::-webkit-details-marker {
+  display: none;
+}
+
+.audits summary:hover {
+  background: var(--accent-soft);
+}
+
+.audits .who {
+  font-family: var(--f-sans);
+  font-weight: 600;
+  font-size: 0.94rem;
+}
+
+.audits .meta {
+  font-family: var(--f-mono);
+  font-size: 0.74rem;
+  color: var(--f-ink-soft);
+  display: block;
+  margin-top: 0.18rem;
+}
+
+.audits .body {
+  padding: 0 0.9rem 1rem;
+  border-top: 1px solid var(--ledger);
+}
+
+.audits .body p {
+  margin: 0.8rem 0 0;
+  font-size: 0.93rem;
+}
+
+/* ---------- petition gauge ---------- */
+.gauge {
+  border: 1px solid var(--ledger);
+  background: var(--f-paper);
+  padding: 0.9rem 1rem;
+  margin: 1.2rem 0;
+  max-width: 40rem;
+}
+
+.gauge h3 {
+  margin: 0 0 0.5rem;
+  font-size: 0.95rem;
+  font-family: var(--f-sans);
+}
+
+.gauge .track {
+  background: var(--f-shell);
+  height: 1.05rem;
+  border: 1px solid var(--ledger);
+}
+
+.gauge .fill {
+  display: block;
+  background: var(--accent);
+  height: 100%;
+}
+
+.gauge .nums {
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--f-mono);
+  font-size: 0.78rem;
+  color: var(--f-ink-soft);
+  margin-top: 0.35rem;
+}
+
+.gauge .nums strong {
+  color: var(--accent-deep);
+}
+
+table.reg thead th {
+  border-bottom-color: var(--accent);
+}
+
+table.reg tbody tr:hover {
+  background: var(--accent-soft);
+}
+
+table.reg td.num {
+  font-family: var(--f-mono);
+  white-space: nowrap;
+}
+
+/* ---------- narrow screens ---------- */
+
+@media (max-width: 40rem) {
+  .balance .line { grid-template-columns: 1fr auto;
+}
+
+.balance .var {
+  grid-column: 2;
+}
+}

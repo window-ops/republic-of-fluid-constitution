@@ -17,9 +17,9 @@
   --f-live:      #1a6f37;
   --f-warn:      #a8131b;
 
-  --f-serif: "Charter", "Bitstream Charter", "Sitka Text", Cambria, Georgia, "Times New Roman", serif;
-  --f-sans: ui-sans-serif, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  --f-mono: ui-monospace, "Cascadia Mono", "SF Mono", Menlo, Consolas, monospace;
+  --f-serif: "Charis SIL", "Charter", "Bitstream Charter", "Sitka Text", Cambria, Georgia, "Times New Roman", serif;
+  --f-sans: "Noto Sans", ui-sans-serif, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --f-mono: "Cascadia Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
 
   /* Overridden by each organ. */
   --accent:      #2f5680;

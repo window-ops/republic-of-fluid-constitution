@@ -1,0 +1,990 @@
+@import url("fonts.css");
+
+/* Meteorological Cooperative of the Republic.
+   This site does not load the state frame used by the organs. The
+   cooperative holds a public mandate by organic law and is not an
+   organ, so it keeps its own sheet, its own masthead and its own
+   navigation. Ochre and sand over paper, the colours of the printed
+   synoptic charts the cooperative issued from 1911 to 1994.
+   No external resource is loaded and no font is fetched. */
+
+:root {
+  --ink:        #241f16;
+  --ink-soft:   #574c3c;
+  --ink-faint:  #8a7d68;
+  --paper:      #fffdf7;
+  --sand:       #ece2cc;
+  --sand-deep:  #ddd0b3;
+  --rule:       #d5c7a8;
+  --rule-soft:  #e6dcc4;
+
+  --ochre:      #9a6516;
+  --ochre-deep: #5f3d0c;
+  --ochre-soft: #f5ecd8;
+  --ochre-ink:  #fffdf7;
+
+  --alert:      #a4141c;
+  --alert-soft: #f7e4e2;
+  --water:      #2b5c73;
+  --water-soft: #e2ecf1;
+  --ground:     #6a6a3c;
+
+  --wrap: 64rem;
+  --pad: 1.25rem;
+  --space: 1.1rem;
+  --boxpad: .9rem 1rem;
+
+  --serif: "Charis SIL", "Charter", "Bitstream Charter", "Sitka Text", Cambria, Georgia, "Times New Roman", serif;
+  --sans: "Noto Sans", ui-sans-serif, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --mono: "Cascadia Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+
+}
+
+/* ---------- ground ---------- */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--sand);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 17px;
+  line-height: 1.6;
+  font-variant-numeric: tabular-nums;
+}
+
+a {
+  color: var(--ochre-deep);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  color: var(--ink);
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+summary:focus-visible {
+  outline: 3px solid var(--ochre);
+  outline-offset: 2px;
+}
+
+.skip {
+  position: absolute;
+  left: -9999px;
+  background: var(--ink);
+  color: #fff;
+  padding: .6rem 1rem;
+  z-index: 40;
+}
+
+.skip:focus {
+  left: 0.5rem;
+  top: 0.5rem;
+}
+
+.wrap {
+  max-width: var(--wrap);
+  margin: 0 auto;
+  padding: 0 var(--pad);
+}
+
+/* ---------- masthead ---------- */
+
+.masthead {
+  background: var(--paper);
+  border-bottom: 3px solid var(--ochre);
+}
+
+.masthead .wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.05rem;
+  padding-top: 1.15rem;
+  padding-bottom: 1.15rem;
+}
+
+.masthead .marque {
+  flex: none;
+  width: 58px;
+  height: 58px;
+}
+
+.masthead .marque svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.masthead .idblock {
+  min-width: 0;
+}
+
+.masthead .coopname {
+  margin: 0;
+  font-size: 1.44rem;
+  line-height: 1.16;
+  font-weight: 500;
+}
+
+.masthead .coopname a {
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.masthead .coopname a:hover {
+  color: var(--ochre-deep);
+}
+
+.masthead .basis {
+  margin: .25rem 0 0;
+  font-size: .84rem;
+  color: var(--ink-soft);
+}
+
+/* ---------- navigation, two bands ---------- */
+
+/* ---------- navigation ---------- */
+
+/* The groups are <details>. With no script at all they open on a tap and
+   close on a second one, which is what makes the bar usable on a touch
+   screen. Script adds three things: only one group stands open, a fine
+   pointer opens one on hover, and a click elsewhere or the escape key
+   shuts it. The pattern follows the railways site. */
+
+.mainnav {
+  background: var(--ochre-deep);
+  top: 0;
+  z-index: 30;
+}
+
+.mainnav .wrap {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  padding: 0;
+}
+
+.navtop,
+.grp > summary {
+  flex: 0 0 auto;
+  min-height: 46px;
+  display: flex;
+  align-items: center;
+  padding: 0 .85rem;
+  font-family: var(--sans);
+  font-size: .82rem;
+  white-space: nowrap;
+  color: #f0e4cb;
+  text-decoration: none;
+  cursor: pointer;
+  list-style: none;
+  border-bottom: 3px solid transparent;
+}
+
+.grp {
+  flex: 0 0 auto;
+}
+
+.grp > summary::-webkit-details-marker {
+  display: none;
+}
+
+.grp > summary::after {
+  content: "";
+  margin-left: .4rem;
+  border: 4px solid transparent;
+  border-top-color: currentColor;
+  transform: translateY(2px);
+}
+
+.grp[open] > summary::after {
+  transform: translateY(-1px) rotate(180deg);
+}
+
+.navtop:hover,
+.grp > summary:hover {
+  background: #4d3009;
+  color: #fff;
+}
+
+.navtop[aria-current],
+.grp > summary.on {
+  background: var(--ochre);
+  color: #fff;
+  border-bottom-color: var(--sand-deep);
+}
+
+.grp[open] > summary {
+  background: #4d3009;
+  color: #fff;
+}
+
+.grp > ul {
+  position: fixed;
+  top: 46px;
+  left: 0;
+  z-index: 31;
+  min-width: 15rem;
+  width: max-content;
+  max-width: min(24rem, 92vw);
+  margin: 0;
+  padding: .25rem 0;
+  list-style: none;
+  background: var(--ochre-deep);
+  border: 1px solid #4d3009;
+  box-shadow: 0 8px 18px rgba(36, 31, 22, .3);
+}
+
+.grp > ul a {
+  display: flex;
+  align-items: center;
+  min-height: 46px;
+  padding: .5rem .9rem;
+  font-family: var(--sans);
+  font-size: .82rem;
+  color: #f0e4cb;
+  text-decoration: none;
+  border-left: 4px solid transparent;
+}
+
+.grp > ul a:hover {
+  background: var(--ochre);
+  color: #fff;
+  border-left-color: #fff;
+}
+
+.grp > ul a[aria-current] {
+  color: #fff;
+  font-weight: 600;
+  border-left-color: #fff;
+}
+
+/* The third level is a <details> of its own, so it stays hidden until
+   the entry above it is opened, on the same terms as the second level.
+   The summary holds the parent's own link, and the chevron beside it is
+   the toggle: the text navigates, the chevron opens. */
+.grp ul details.sub > summary {
+  display: flex;
+  align-items: stretch;
+  list-style: none;
+  cursor: pointer;
+}
+
+.grp ul details.sub > summary::-webkit-details-marker {
+  display: none;
+}
+
+.grp ul details.sub > summary > a {
+  flex: 1 1 auto;
+}
+
+.grp ul details.sub > summary::after {
+  content: "";
+  flex: 0 0 auto;
+  align-self: center;
+  margin: 0 .9rem 0 .3rem;
+  border: 4px solid transparent;
+  border-top-color: #dccbaa;
+  transform: translateY(2px);
+}
+
+.grp ul details.sub[open] > summary::after {
+  transform: translateY(-1px) rotate(180deg);
+}
+
+.grp ul details.sub[open] > summary > a {
+  background: #4d3009;
+  color: #fff;
+}
+
+.grp ul details.sub > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background: #4d3009;
+  border-top: 1px solid #6b4610;
+  border-bottom: 1px solid #6b4610;
+}
+
+.grp ul details.sub > ul a {
+  padding-left: 2rem;
+  color: #dccbaa;
+  min-height: 42px;
+}
+
+.grp ul details.sub > ul a::before {
+  content: "\203A";
+  margin-right: .45rem;
+  color: #a08a63;
+}
+
+.grp ul details.sub > ul a[aria-current]::before {
+  color: #fff;
+}
+
+/* The bar scrolls sideways at every width and never runs to a second
+   line. A scrolling box clips an absolutely positioned child, so the
+   panels are fixed to the viewport . Script anchors each
+   panel under its own summary; with no script it opens at the left
+   edge, which still works. */
+
+/* ---------- sheet ---------- */
+
+.sheet {
+  background: var(--paper);
+  max-width: var(--wrap);
+  margin: 0 auto;
+  padding: var(--space) var(--pad) 2.2rem;
+  border-left: 1px solid var(--rule-soft);
+  border-right: 1px solid var(--rule-soft);
+}
+
+.crumb {
+  font-family: var(--sans);
+  font-size: .76rem;
+  color: var(--ink-faint);
+  margin: 0 0 var(--space);
+}
+
+.crumb a {
+  color: var(--ink-faint);
+}
+
+.page-title {
+  font-size: 1.95rem;
+  font-weight: 500;
+  line-height: 1.14;
+  margin: 0 0 .45rem;
+}
+
+.lede {
+  font-size: 1.06rem;
+  color: var(--ink-soft);
+  margin: 0 0 var(--space);
+}
+
+h2 {
+  font-size: 1.24rem;
+  font-weight: 500;
+  color: var(--ochre-deep);
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: .25rem;
+}
+
+h3 {
+  font-size: 1.02rem;
+  font-weight: 600;
+  margin: var(--space) 0 .45rem;
+}
+
+h4 {
+  font-family: var(--sans);
+  font-size: .8rem;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  margin: var(--space) 0 .4rem;
+}
+
+.prose p {
+  margin: 0 0 0.8rem;
+}
+
+.prose ul, .prose ol {
+  padding-left: 1.2rem;
+}
+
+ul:last-child {
+  margin-bottom: 0;
+}
+
+.prose li {
+  margin-bottom: 0.35rem;
+}
+
+.note {
+  font-size: .85rem;
+  color: var(--ink-faint);
+}
+
+/* ---------- tables ---------- */
+
+.tablewrap {
+  overflow-x: auto;
+  margin: var(--space) 0;
+}
+
+table.data {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: .87rem;
+  background: var(--paper);
+}
+
+table.data caption {
+  text-align: left;
+  font-family: var(--sans);
+  font-size: .74rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--ochre-ink);
+  background: var(--ochre);
+  padding: .55rem 1rem;
+}
+
+table.data th, table.data td {
+  border: 1px solid var(--rule);
+  padding: .45rem .6rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+table.data thead th {
+  background: var(--ochre-soft);
+  font-family: var(--sans);
+  font-size: .76rem;
+  font-weight: 600;
+  letter-spacing: .02em;
+  white-space: nowrap;
+}
+
+table.data thead th[data-sort] {
+  cursor: pointer;
+}
+
+table.data thead th[aria-sort="ascending"]::after {
+  content: " \2191";
+}
+
+table.data thead th[aria-sort="descending"]::after {
+  content: " \2193";
+}
+
+table.data tbody tr:nth-child(even) {
+  background: #fbf7ec;
+}
+
+table.data td.num, table.data th.num {
+  text-align: left;
+  white-space: nowrap;
+}
+
+table.data .sci {
+  font-style: italic;
+}
+
+/* ---------- intensity steps ---------- */
+
+table.data td.step {
+  font-family: var(--sans);
+  font-weight: 600;
+  text-align: center;
+  white-space: nowrap;
+  width: 3.4rem;
+}
+
+.s1, .s2 {
+  background: #eef1e6;
+}
+
+.s3, .s4 {
+  background: #f6efd4;
+}
+
+.s5, .s6 {
+  background: #f4e2bd;
+}
+
+.s7, .s8 {
+  background: #edcba4;
+}
+
+.s9, .s10 {
+  background: #e0b19a;
+}
+
+/* ---------- red list marks ---------- */
+
+.rl {
+  font-family: var(--sans);
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .04em;
+  padding: .08rem .34rem;
+  border: 1px solid var(--rule);
+  white-space: nowrap;
+}
+
+.rl-CR {
+  background: #f0cfcb;
+}
+
+.rl-EN {
+  background: #f4dcc0;
+}
+
+.rl-VU {
+  background: #f6ecc4;
+}
+
+.rl-NT {
+  background: #e9eed6;
+}
+
+.rl-LC {
+  background: #dfeadb;
+}
+
+.rl-DD {
+  background: #e6e2da;
+}
+
+.rl-NE {
+  background: #efece5;
+  color: var(--ink-soft);
+}
+
+/* ---------- boxes ---------- */
+
+.box {
+  border: 1px solid var(--rule);
+  background: var(--ochre-soft);
+  padding: var(--boxpad);
+  margin: var(--space) 0;
+}
+
+.box p {
+  margin: 0 0 0.6rem;
+}
+
+.box p:last-child {
+  margin-bottom: 0;
+}
+
+.box .lbl {
+  font-family: var(--sans);
+  font-size: .72rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--ochre-deep);
+  display: block;
+  margin-bottom: .3rem;
+}
+
+.box.limit {
+  background: var(--alert-soft);
+  border-color: #dcbcb8;
+}
+
+.box.limit .lbl {
+  color: var(--alert);
+}
+
+.box.water {
+  background: var(--water-soft);
+  border-color: #c3d7e0;
+}
+
+.box.water .lbl {
+  color: var(--water);
+}
+
+/* ---------- broadcast specimen ---------- */
+
+.cast {
+  border: 1px solid var(--rule);
+  background: #fbf7ec;
+  margin: var(--space) 0;
+}
+
+.cast .head {
+  background: var(--ink);
+  color: #f0e4cb;
+  font-family: var(--sans);
+  font-size: .73rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  padding: .5rem .8rem;
+}
+
+.cast .body {
+  padding: var(--boxpad);
+}
+
+.cast .flu, .cast .eng {
+  margin: 0 0 0.7rem;
+}
+
+.cast .flu {
+  font-style: italic;
+  color: var(--ink-soft);
+}
+
+.cast .eng {
+  margin-bottom: 0;
+}
+
+.cast .seg {
+  border-top: 1px dashed var(--rule);
+  padding-top: .7rem;
+  margin-top: .7rem;
+}
+
+.cast .tag {
+  font-family: var(--sans);
+  font-size: .68rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  display: block;
+  margin-bottom: .25rem;
+  margin-top: 0;
+}
+
+/* ---------- code ---------- */
+
+pre, code, .mono {
+  font-family: var(--mono);
+}
+
+pre {
+  background: #f3eee1;
+  border: 1px solid var(--rule);
+  border-left: 3px solid var(--ochre);
+  padding: var(--boxpad);
+  overflow-x: auto;
+  font-size: .8rem;
+  line-height: 1.5;
+  margin: var(--space) 0;
+}
+
+code {
+  font-size: 0.88em;
+  background: #f3eee1;
+  padding: 0.05rem 0.22rem;
+}
+
+pre code {
+  background: none;
+  padding: 0;
+  font-size: 1em;
+}
+
+/* ---------- filter bar ---------- */
+
+.filters {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  gap: .7rem .9rem;
+  align-items: end;
+  background: var(--ochre-soft);
+  border: 1px solid var(--rule);
+  padding: var(--boxpad);
+  margin: var(--space) 0 .5rem;
+}
+
+.filters .field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.22rem;
+  min-width: 0;
+}
+
+.filters label {
+  font-family: var(--sans);
+  font-size: .7rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+.filters input, .filters select {
+  font: inherit;
+  font-size: .87rem;
+  width: 100%;
+  min-width: 0;
+  padding: .42rem .5rem;
+  border: 1px solid var(--rule);
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.filters button {
+  font-family: var(--sans);
+  font-size: .8rem;
+  width: 100%;
+  padding: .48rem .8rem;
+  border: 1px solid var(--ochre);
+  background: var(--paper);
+  color: var(--ochre-deep);
+  cursor: pointer;
+}
+
+.filters button:hover {
+  background: var(--ochre);
+  color: #fff;
+}
+
+.count {
+  font-family: var(--sans);
+  font-size: .78rem;
+  color: var(--ink-faint);
+  margin: 0 0 .5rem;
+}
+
+/* ---------- index cards ---------- */
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: .9rem;
+  margin: var(--space) 0;
+}
+
+.card {
+  border: 1px solid var(--rule);
+  background: var(--paper);
+  padding: var(--boxpad);
+}
+
+.card h3 {
+  margin: 0 0 0.35rem;
+  font-size: 0.98rem;
+}
+
+.card h3 a {
+  text-decoration: none;
+}
+
+.card h3 a:hover {
+  text-decoration: underline;
+}
+
+.card p {
+  margin: 0;
+  font-size: 0.87rem;
+  color: var(--ink-soft);
+}
+
+/* ---------- definition rows ---------- */
+
+.facts {
+  border: 1px solid var(--rule);
+  background: var(--paper);
+  margin: var(--space) 0;
+}
+
+.facts .row {
+  display: flex;
+  gap: .9rem;
+  padding: .45rem 1rem;
+  border-bottom: 1px solid var(--rule-soft);
+  font-size: .87rem;
+}
+
+.facts .row:last-child {
+  border-bottom: 0;
+}
+
+.facts .k {
+  flex: none;
+  width: 13rem;
+  font-family: var(--sans);
+  font-size: .78rem;
+  color: var(--ink-faint);
+}
+
+.facts .v {
+  min-width: 0;
+}
+
+/* ---------- counted strip and pseudolinks ---------- */
+
+/* A pseudolink names a host or a path inside the Republic. It is set
+   apart from prose and is never an anchor, since nothing outside the
+   Republic resolves it. The pattern follows the other sites. */
+.host {
+  font-family: var(--mono);
+  font-size: .88em;
+  background: #f3eee1;
+  border-bottom: 1px dotted var(--ochre);
+  padding: .04rem .24rem;
+  white-space: nowrap;
+}
+
+.figures {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem 2rem;
+  margin: var(--space) 0;
+  padding: .7rem 0;
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  font-family: var(--sans);
+  font-size: .82rem;
+  color: var(--ink-soft);
+}
+
+.figures b {
+  display: block;
+  font-family: var(--serif);
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--ochre-deep);
+  line-height: 1.1;
+}
+
+/* ---------- numbered procedure ---------- */
+
+.steps {
+  list-style: none;
+  margin: var(--space) 0;
+  padding: 0;
+  counter-reset: step;
+}
+
+.steps > li {
+  counter-increment: step;
+  border-left: 3px solid var(--ochre);
+  background: #fbf7ec;
+  padding: .7rem 1rem .7rem 2.6rem;
+  margin-bottom: .5rem;
+  position: relative;
+}
+
+.steps > li::before {
+  content: counter(step);
+  position: absolute;
+  left: .85rem;
+  top: .7rem;
+  font-family: var(--sans);
+  font-size: .95rem;
+  font-weight: 700;
+  color: var(--ochre);
+}
+
+.steps h3 {
+  margin: 0 0 0.3rem;
+  font-size: 0.98rem;
+}
+
+.steps p {
+  margin: 0 0 0.5rem;
+}
+
+.steps p:last-child {
+  margin-bottom: 0;
+}
+
+/* ---------- footer ---------- */
+
+.coopfoot {
+  background: var(--ink);
+  color: #cec3ac;
+  font-size: .84rem;
+  padding: 1.5rem 0 1.8rem;
+  margin-top: calc(var(--space) * 1.5);
+}
+
+.coopfoot a {
+  color: #e6d9bf;
+}
+
+.coopfoot a:hover {
+  color: #fff;
+}
+
+.coopfoot .cols {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  gap: 1.2rem;
+}
+
+.coopfoot h4 {
+  color: #9c8f77;
+  margin-top: 0;
+}
+
+.coopfoot ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.coopfoot li {
+  margin-bottom: 0.28rem;
+}
+
+.coopfoot .basis {
+  border-top: 1px solid #3d362a;
+  margin-top: 1.3rem;
+  padding-top: .9rem;
+  color: #9c8f77;
+  font-size: .8rem;
+}
+
+/* ---------- narrow ---------- */
+
+@media (max-width: 40rem) {
+  body { font-size: 16px;
+}
+
+:root {
+  --pad: 1rem;
+}
+
+.page-title {
+  font-size: 1.6rem;
+}
+
+.facts .row {
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.facts .k {
+  width: auto;
+}
+
+.masthead .wrap {
+  gap: 0.8rem;
+}
+
+.masthead .marque {
+  width: 46px;
+  height: 46px;
+}
+
+.filters input, .filters select, .filters button {
+  min-height: 44px;
+}
+}
+
+@media print {
+  .mainnav, .filters, .skip { display: none;
+}
+
+body {
+  background: #fff;
+  font-size: 11pt;
+}
+
+.sheet {
+  border: 0;
+}
+}

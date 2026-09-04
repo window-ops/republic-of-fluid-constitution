@@ -14,9 +14,9 @@
   --mathilda: #2f5f7a;
   --mark: #e3ddcd;
 
-  --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
-  --sans: "IBM Plex Sans", system-ui, sans-serif;
-  --mono: "IBM Plex Mono", ui-monospace, monospace;
+  --serif: "Source Serif 4", "Noto Sans JP", Georgia, "Times New Roman", serif;
+  --sans: "IBM Plex Sans", "Noto Sans JP", system-ui, sans-serif;
+  --mono: "IBM Plex Mono", "Noto Sans JP", ui-monospace, monospace;
 
   --who-col: 5.5rem;
   --gap: 1.75rem;
