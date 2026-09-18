@@ -1035,7 +1035,7 @@ We joined the union established at Lindoma in 1994 and remain in it. We record t
 3. An instruction given by a minister to an official is recorded in writing, and an instruction which the official states in writing to be unlawful is executed only where the minister confirms it in writing. The confirmation is transmitted to the Public Integrity Office and published.
 
 **Article 171: The public administration**
-1. The public administration serves the population, acts on a legal basis, treats like cases alike and states the reasons for every decision it takes.
+1. The public administration serves the population, acts on a legal basis, treats similar cases alike and states the reasons for every decision it takes.
 2. A person is entitled to a decision on any application within thirty days, and silence beyond that period is a refusal which may be contested before the courts.
 3. Every organ keeps a register of the applications received and the periods taken to decide them, and publishes it each quarter.
 

@@ -741,7 +741,7 @@ We preserve the social ownership won in 1946 and abandon the direction of it by 
 ## Chapter 3: The administration
 
 **Article 127: Principles of the administration**
-1. The administration serves the population, acts on the basis of law, and treats like cases alike.
+1. The administration serves the population, acts on the basis of law, and treats similar cases alike.
 2. An act of the administration affecting a person states its reasons and the means of contesting it, and takes effect on notification to that person.
 3. Where the administration fails to decide within the period fixed by law, the person concerned may apply to the administrative court as though the application had been refused.
 4. Procedures before the administration are free of charge, except for charges fixed by law and published.

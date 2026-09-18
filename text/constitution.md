@@ -54,10 +54,6 @@
 | Replacement | Convention elected for the purpose, ratified by referendum, core survives |
 | Accessibility | Official summary without legal force, booklet to every dwelling, ten-year review |
 
-## Territory of record
-
-Two regions. The western region holds nine sub-regions, the eastern eleven, twenty in total. Area approximately 230,000 km². Named settlements: Lindoma (capital, northern port, west), Durorilaqui (inland, west), Leriduson (east), Cortius (east), Sornorum (south centre), Lutoliluri (southern port). The land border with Bor Brashavenko is closed. The border with Iosmein is open. The corridor to Reformed Luces Aporia is maritime. Sub-region names remain to be invented.
-
 ---
 
 ## PREAMBLE
@@ -316,7 +312,7 @@ We, the residents of the Republic of Fluid, adopt this Constitution. We must tak
 
 **Article 36. Ecological emergency**
 1. Upon evidence of imminent and grave ecological harm, the Ecological Budget Authority declares an ecological emergency, defining its territory, its duration and the measures required.
-2. The declaration takes immediate effect. It lapses after one hundred and eighty days unless the Assembly confirms it, and confirmation may be renewed for like periods.
+2. The declaration takes immediate effect. It lapses after one hundred and eighty days unless the Assembly confirms it, and confirmation may be renewed for the same period.
 3. Emergency measures may restrict production, transport, extraction and discharge, and may direct labour and materials to protection and restoration.
 4. In no case does a declaration under this Article suspend the essential provision of Title IV, the rights guaranteed in Title III or the procedures of Title V.
 5. The declaration and every measure taken under it are reviewable under Article 27 at the instance of any person.
@@ -336,7 +332,7 @@ We, the residents of the Republic of Fluid, adopt this Constitution. We must tak
 **Article 38. Equality**
 1. All persons are equal in dignity and before the law and are entitled to equal protection of the law.
 2. Discrimination is prohibited on grounds of origin, ancestry, ethnicity, colour, language, nationality, status of residence, belief, religion, opinion, sex, gender, gender identity, sexual orientation, bodily characteristics, age, disability, state of health, form of family, condition of work or occupation, or any comparable ground.
-3. Discrimination comprises unequal treatment of like cases, uniform treatment of materially different cases, and apparently neutral measures that burden a protected group disproportionately.
+3. Discrimination comprises unequal treatment of similar cases, uniform treatment of materially different cases, and apparently neutral measures that burden a protected group disproportionately.
 4. Measures that correct an established disadvantage are lawful, are reviewed periodically, and last as long as the disadvantage they correct.
 5. Where a claimant establishes facts from which discrimination may be presumed, the burden of proving its absence lies upon the respondent.
 
@@ -1107,7 +1103,7 @@ In no case is a provision of this Title to be read as conferring a right to enga
    a) that the plan or the decision fails to satisfy the minimum core of Article 41, departs from the order of priority of Article 91(2), breaches an ecological budget, or leaves a registered essential need unmet without stating reasons;
    b) that the participation this Constitution requires has not taken place, comprising the rounds of Article 97(1)(c), the answers to objections required by Article 97(2), the publication required by Article 90(4) and Article 97(4), the accessibility of registration under Article 63(1), the convening of the assemblies of Articles 92 and 93, and the participation floors fixed by organic law.
 10. Upon a ground under paragraph 9 the Court may annul the decision in whole or in part, order the stage of the cycle to be conducted afresh within a fixed period, order the extension of registration and of the periods of objection, and order the publication withheld. Pending compliance, essential provision continues on the quantities of the preceding period under Article 98(5).
-11. A conflict of competence between the Assembly and the planning bodies is decided by the Constitutional Court at the instance of either, and the decision states the boundary in terms applicable to like cases.
+11. A conflict of competence between the Assembly and the planning bodies is decided by the Constitutional Court at the instance of either, and the decision states the boundary in terms applicable to similar cases.
 
 **Article 144. Control of execution**
 1. Every member may address written and oral questions to an executive committee, which answers within the period fixed by the rules of procedure.
@@ -1435,7 +1431,7 @@ In no case is a provision of this Title to be read as conferring a right to enga
 
 **Article 189. Conflicts of competence**
 1. A conflict between tiers concerning competence is decided by the Constitutional Court at the instance of any territory concerned, of the Coordinating Bureau, or of any person affected by the act in dispute.
-2. The Court states the boundary in terms applicable to like cases, and Article 167(4) governs doubt.
+2. The Court states the boundary in terms applicable to similar cases, and Article 167(4) governs doubt.
 3. Pending decision, the act in dispute continues in effect, except where the Court suspends it upon a showing of irreparable harm.
 4. An act of a tier exceeding its competence is void to the extent of the excess.
 
@@ -1487,7 +1483,7 @@ In no case is a provision of this Title to be read as conferring a right to enga
 1. Where a court cannot decide a case without resolving a question of the conformity of a norm with this Constitution, and where conforming interpretation under Article 194(2) is impossible, the court stays the case and refers the question to the Constitutional Chamber.
 2. A court refers on its own motion or upon the application of a party, and a refusal to refer states reasons and is appealable.
 3. The reference states the question, the norm in issue, the facts on which it bears and the reasoning of the referring court, and is published.
-4. The Chamber answers within ninety days. Its answer binds the referring court, binds every court in like cases, and is published with reasons and with dissenting opinions.
+4. The Chamber answers within ninety days. Its answer binds the referring court, binds every court in similar cases, and is published with reasons and with dissenting opinions.
 5. In no case does a reference suspend the essential provision of Article 62 or the interim protection of Article 43(5).
 
 **Article 196. Publicity of justice**
