@@ -649,7 +649,7 @@ In no case is a provision of this Title to be read as conferring a right to enga
 
 **Article 82. The forms and their relation**
 1. The means of production are held in the four forms established by Article 6(2), and organic law creates no fifth.
-2. Each form carries a distinct mode of governance: the commons by the whole people through the organs of Chapter 2, cooperative usufruct by those who work in the enterprise, communal and regional enterprise by the inhabitants through their councils, and public establishments by their users, their workers and the Republic jointly.
+2. Each form has a distinct mode of governance: the commons by the whole people through the organs of Chapter 2, cooperative usufruct by those who work in the enterprise, communal and regional enterprise by the inhabitants through their councils, and public establishments by their users, their workers and the Republic jointly.
 3. A productive asset is assigned to one form. Assignment follows the scale of the activity, the number of persons affected, and the character of the need served, and is fixed by organic law and revisable by the procedure it establishes.
 4. Conversion between forms follows a public procedure, requires the consent of those who work in the enterprise and of the affected users, and transfers no asset out of social ownership.
 
